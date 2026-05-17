@@ -1,30 +1,10 @@
-import { readFile } from 'fs/promises'
-import { resolve } from 'path'
+import teamsData from '~/data/teams.json'
 import type { TeamListItem } from '~/types'
 
-// 模块级缓存
-let teamsCache: TeamListItem[] | null = null
-
-async function loadTeams(): Promise<TeamListItem[]> {
-  if (teamsCache) return teamsCache
-
-  const filePath = resolve(process.cwd(), 'data/teams.json')
-  try {
-    const raw = await readFile(filePath, 'utf-8')
-    teamsCache = JSON.parse(raw) as TeamListItem[]
-    return teamsCache
-  } catch (err: any) {
-    if (err.code === 'ENOENT') {
-      return []
-    }
-    throw err
-  }
-}
+const teams = teamsData as TeamListItem[]
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event)
-
-  const teams = await loadTeams()
 
   if (teams.length === 0) {
     return {

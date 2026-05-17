@@ -1,30 +1,10 @@
-import { readFile } from 'fs/promises'
-import { resolve } from 'path'
+import matchesData from '~/data/matches.json'
 import type { MatchItem } from '~/types'
 
-// 模块级缓存
-let matchesCache: MatchItem[] | null = null
-
-async function loadMatches(): Promise<MatchItem[]> {
-  if (matchesCache) return matchesCache
-
-  const filePath = resolve(process.cwd(), 'data/matches.json')
-  try {
-    const raw = await readFile(filePath, 'utf-8')
-    matchesCache = JSON.parse(raw) as MatchItem[]
-    return matchesCache
-  } catch (err: any) {
-    if (err.code === 'ENOENT') {
-      return []
-    }
-    throw err
-  }
-}
+const matches = matchesData as MatchItem[]
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event)
-
-  const matches = await loadMatches()
 
   if (matches.length === 0) {
     return {
