@@ -2,6 +2,12 @@
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
 
+// SEO
+useSeoConfig({
+  title: '世界杯IQ挑战 - WorldCupDex',
+  description: '10道趣味题目，测试你的世界杯知识储备，挑战全球球迷排名。',
+})
+
 // 参与人数计算
 const participantCount = ref(0)
 
@@ -25,162 +31,540 @@ function handleStart() {
 </script>
 
 <template>
-  <div class="quiz-landing">
-    <div class="quiz-landing__content">
-      <!-- 标题 -->
-      <h1 class="quiz-landing__title">
-        {{ t('quiz.title') }}
-      </h1>
+  <div class="quiz-page">
+    <!-- Hero 区域 -->
+    <section class="hero">
+      <!-- 体育场灯光效果 -->
+      <div class="hero__lights"></div>
+      <div class="hero__container">
+        <!-- 左列：文字 -->
+        <div class="hero__text">
+          <h1 class="hero__title">
+            <span class="hero__title-small">测测你的</span>
+            <span class="hero__title-big">世界杯 <em class="hero__title-iq">IQ</em></span>
+          </h1>
+          <p class="hero__subtitle">5 道趣味题目，挑战你的世界杯知识储备</p>
+          <div class="hero__divider"></div>
+        </div>
 
-      <!-- 副标题 -->
-      <p class="quiz-landing__subtitle">
-        {{ t('quiz.subtitle') }}
-      </p>
-
-      <!-- 挑战文案 -->
-      <p class="quiz-landing__challenge">
-        {{ t('quiz.challengeFriends') }}
-      </p>
-
-      <!-- 规则标签 -->
-      <div class="quiz-landing__rules">
-        <span class="quiz-landing__rule-tag">🧠 5 {{ locale === 'zh' ? '题' : locale === 'es' ? ' preguntas' : ' questions' }}</span>
-        <span class="quiz-landing__rule-tag">⏱️ 30s</span>
-        <span class="quiz-landing__rule-tag">⚡ {{ locale === 'zh' ? '即时出分' : locale === 'es' ? 'Instantáneo' : 'Instant' }}</span>
       </div>
+    </section>
 
-      <!-- 开始按钮 -->
-      <button
-        class="quiz-landing__start-btn"
-        @click="handleStart"
-      >
-        {{ t('quiz.startButton') }}
+    <!-- 特性卡片区域 -->
+    <section class="features">
+      <div class="features__card">
+        <div class="features__item">
+          <div class="features__icon features__icon--blue">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="4" y="3" width="16" height="18" rx="2" stroke="white" stroke-width="1.5"/>
+              <line x1="8" y1="8" x2="16" y2="8" stroke="white" stroke-width="1.5"/>
+              <line x1="8" y1="12" x2="16" y2="12" stroke="white" stroke-width="1.5"/>
+              <line x1="8" y1="16" x2="13" y2="16" stroke="white" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="features__text">
+            <h3>5 道题目</h3>
+            <p>涵盖历史、球星、战术等<br>多维度知识</p>
+          </div>
+        </div>
+        <div class="features__item">
+          <div class="features__icon features__icon--green">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="9" stroke="white" stroke-width="1.5"/>
+              <polyline points="12,7 12,12 16,14" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="features__text">
+            <h3>限时 30 秒 / 题</h3>
+            <p>快速作答，冲击高分<br>挑战你的反应力</p>
+          </div>
+        </div>
+        <div class="features__item">
+          <div class="features__icon features__icon--purple">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9V4h12v5c0 3.5-2.5 6.5-6 7.5-3.5-1-6-4-6-7.5z" stroke="white" stroke-width="1.5"/>
+              <path d="M9 20h6" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M12 16.5V20" stroke="white" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="features__text">
+            <h3>即时出分</h3>
+            <p>完成挑战立即获得得分<br>与全球球迷一较高下</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA 按钮区域 -->
+    <section class="cta">
+      <button class="cta__button" @click="handleStart">
+        开始挑战
+        <span class="cta__arrow">→</span>
       </button>
+      <div class="cta__participants">
+        <span class="cta__count">已有 <strong>{{ participantCount.toLocaleString() }}</strong> 人参与挑战</span>
+        <div class="cta__avatars">
+          <span class="cta__avatar" style="background:#E67E22;"></span>
+          <span class="cta__avatar" style="background:#3498DB;"></span>
+          <span class="cta__avatar" style="background:#9B59B6;"></span>
+          <span class="cta__avatar" style="background:#1ABC9C;"></span>
+          <span class="cta__avatar" style="background:#E74C3C;"></span>
+          <span class="cta__avatar" style="background:#F39C12;"></span>
+          <span class="cta__dot">…</span>
+        </div>
+      </div>
+    </section>
 
-      <!-- 参与人数 -->
-      <p class="quiz-landing__participants">
-        {{ t('quiz.participants', { count: participantCount.toLocaleString() }) }}
-      </p>
-    </div>
+    <!-- 挑战流程区域 -->
+    <section class="flow">
+      <div class="flow__card">
+        <h2 class="flow__title">
+          <span class="flow__diamond">◇</span>
+          挑战流程
+          <span class="flow__diamond">◇</span>
+        </h2>
+        <div class="flow__steps">
+          <div class="flow__step">
+            <div class="flow__step-icon flow__step-icon--1">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <rect x="4" y="3" width="16" height="18" rx="2" stroke="white" stroke-width="1.5"/>
+                <line x1="8" y1="8" x2="16" y2="8" stroke="white" stroke-width="1.5"/>
+                <line x1="8" y1="12" x2="16" y2="12" stroke="white" stroke-width="1.5"/>
+                <line x1="8" y1="16" x2="13" y2="16" stroke="white" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <div class="flow__connector"></div>
+            <h4>1. 开始挑战</h4>
+            <p>点击按钮进入答题</p>
+          </div>
+          <div class="flow__step">
+            <div class="flow__step-icon flow__step-icon--2">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="9" stroke="white" stroke-width="1.5"/>
+                <polyline points="12,7 12,12 16,14" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="flow__connector"></div>
+            <h4>2. 回答题目</h4>
+            <p>每题 30 秒，选择最佳答案</p>
+          </div>
+          <div class="flow__step">
+            <div class="flow__step-icon flow__step-icon--3">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                <path d="M6 9V4h12v5c0 3.5-2.5 6.5-6 7.5-3.5-1-6-4-6-7.5z" stroke="white" stroke-width="1.5"/>
+                <path d="M9 20h6" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M12 16.5V20" stroke="white" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h4>3. 查看成绩</h4>
+            <p>完成答题，查看你的得分与排名</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <style scoped>
-.quiz-landing {
-  min-height: calc(100vh - 170px);
-  background: linear-gradient(180deg, #000F49 0%, #1A237E 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
+/* ========== 全局页面 ========== */
+.quiz-page {
+  background: #0a0e2a;
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif;
 }
 
-.quiz-landing__content {
-  text-align: center;
-  max-width: 600px;
+/* ========== Hero 区域 ========== */
+.hero {
+  position: relative;
   width: 100%;
+  min-height: 360px;
+  height: 24vw;
+  max-height: 440px;
+  overflow: hidden;
+  background: url('/images/quiz-hero-bg.png') center center / cover no-repeat;
+  background-color: #0d1440;
 }
 
-.quiz-landing__title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 800;
+.hero__lights {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background:
+    linear-gradient(90deg, rgba(10, 14, 42, 0.85) 0%, rgba(10, 14, 42, 0.55) 50%, rgba(10, 14, 42, 0.15) 100%),
+    linear-gradient(180deg, transparent 60%, rgba(10, 14, 42, 0.9) 100%);
+  pointer-events: none;
+}
+
+.hero__container {
+  position: relative;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 40px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero__text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.hero__title {
+  margin: 0 0 20px;
+  line-height: 1.1;
+}
+
+.hero__title-small {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.hero__title-big {
+  display: block;
+  font-size: 3.8rem;
+  font-weight: 900;
+  color: #fff;
+}
+
+.hero__title-iq {
+  font-style: italic;
   color: #FFD700;
-  margin-bottom: 16px;
-  line-height: 1.2;
+  font-size: 4.2rem;
 }
 
-.quiz-landing__subtitle {
-  font-family: 'Inter', sans-serif;
-  font-size: 1.2rem;
-  color: white;
-  margin-bottom: 12px;
-  opacity: 0.9;
+.hero__subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 20px;
+  line-height: 1.6;
 }
 
-.quiz-landing__challenge {
-  font-family: 'Inter', sans-serif;
-  font-size: 1rem;
-  color: #FFD700;
-  margin-bottom: 32px;
-  opacity: 0.85;
+.hero__divider {
+  width: 40px;
+  height: 3px;
+  background: #FFD700;
+  border-radius: 2px;
 }
 
-.quiz-landing__rules {
+/* ========== 特性卡片区域 ========== */
+.features {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 28px 20px 0;
+}
+
+.features__card {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 32px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.features__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  flex: 1;
+}
+
+.features__icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
 }
 
-.quiz-landing__rule-tag {
+.features__icon--blue {
+  background: #4A5FE0;
+}
+
+.features__icon--green {
+  background: #22C55E;
+}
+
+.features__icon--purple {
+  background: #8B5CF6;
+}
+
+.features__text h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: #fff;
+}
+
+.features__text p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ========== CTA 按钮区域 ========== */
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 28px 20px 20px;
+}
+
+.cta__button {
   display: inline-flex;
   align-items: center;
-  padding: 8px 16px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 215, 0, 0.3);
-  color: white;
-  font-size: 0.9rem;
-  font-weight: 500;
-}
-
-.quiz-landing__start-btn {
-  display: inline-block;
-  padding: 16px 48px;
-  min-width: 220px;
-  border-radius: 12px;
+  justify-content: center;
+  gap: 16px;
+  padding: 18px 60px;
+  min-width: 280px;
+  border-radius: 50px;
   background: #FFD700;
-  color: #000F49;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.2rem;
+  color: #0a0e2a;
+  font-size: 1.3rem;
   font-weight: 700;
   border: none;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+  box-shadow: 0 4px 24px rgba(255, 215, 0, 0.3);
 }
 
-.quiz-landing__start-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 30px rgba(255, 215, 0, 0.5);
+.cta__button:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 32px rgba(255, 215, 0, 0.5);
 }
 
-.quiz-landing__start-btn:active {
-  transform: scale(0.98);
+.cta__button:active {
+  transform: scale(0.97);
 }
 
-.quiz-landing__participants {
+.cta__arrow {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.cta__participants {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin-top: 24px;
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.5);
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-/* 移动端响应式 */
-@media (max-width: 640px) {
-  .quiz-landing__title {
-    font-size: 1.8rem;
+.cta__count {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.cta__count strong {
+  color: #FFD700;
+}
+
+.cta__avatars {
+  display: flex;
+  align-items: center;
+}
+
+.cta__avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  margin-left: -6px;
+  border: 2px solid #0a0e2a;
+  display: inline-block;
+}
+
+.cta__avatar:first-child {
+  margin-left: 0;
+}
+
+.cta__dot {
+  margin-left: 4px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.2rem;
+}
+
+/* ========== 挑战流程区域 ========== */
+.flow {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 20px 40px;
+}
+
+.flow__card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.flow__title {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 24px;
+  color: #fff;
+}
+
+.flow__diamond {
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0 8px;
+  font-size: 0.9rem;
+}
+
+.flow__steps {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+.flow__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  position: relative;
+}
+
+.flow__step-icon {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0e2a;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.flow__step-icon--1 {
+  background: linear-gradient(135deg, #1a237e, #0a0e2a);
+  border-color: rgba(74, 95, 224, 0.5);
+}
+
+.flow__step-icon--2 {
+  background: linear-gradient(135deg, #1a237e, #0a0e2a);
+  border-color: rgba(34, 197, 94, 0.5);
+}
+
+.flow__step-icon--3 {
+  background: linear-gradient(135deg, #1a237e, #0a0e2a);
+  border-color: rgba(139, 92, 246, 0.5);
+}
+
+.flow__connector {
+  position: absolute;
+  top: 36px;
+  left: calc(50% + 40px);
+  width: calc(100% - 80px);
+  height: 0;
+  border-top: 2px dashed rgba(255, 255, 255, 0.2);
+  z-index: 1;
+}
+
+.flow__step:last-child .flow__connector {
+  display: none;
+}
+
+.flow__step h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: #fff;
+}
+
+.flow__step p {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.55);
+  margin: 0;
+  max-width: 160px;
+}
+
+/* ========== 响应式 ========== */
+@media (max-width: 768px) {
+  .hero__container {
+    flex-direction: column;
+    padding: 50px 20px 40px;
+    text-align: center;
   }
 
-  .quiz-landing__subtitle {
-    font-size: 1rem;
+  .hero__text {
+    max-width: 100%;
   }
 
-  .quiz-landing__start-btn {
-    padding: 14px 36px;
+  .hero__title-small {
+    font-size: 1.5rem;
+  }
+
+  .hero__title-big {
+    font-size: 2.8rem;
+  }
+
+  .hero__title-iq {
+    font-size: 3.2rem;
+  }
+
+  .hero__divider {
+    margin: 0 auto;
+  }
+
+  .hero {
+    min-height: 300px;
+    height: auto;
+    max-height: none;
+    background-position: 65% center;
+  }
+
+  .hero__lights {
+    background:
+      linear-gradient(180deg, rgba(10, 14, 42, 0.8) 0%, rgba(10, 14, 42, 0.6) 50%, rgba(10, 14, 42, 0.9) 100%);
+  }
+
+  .features__card {
+    flex-direction: column;
+    padding: 24px;
+    gap: 20px;
+  }
+
+  .cta__button {
+    min-width: 240px;
+    padding: 16px 40px;
     font-size: 1.1rem;
-    min-width: 180px;
   }
 
-  .quiz-landing__rules {
-    gap: 8px;
+  .flow__card {
+    padding: 24px;
   }
 
-  .quiz-landing__rule-tag {
-    padding: 6px 12px;
-    font-size: 0.8rem;
+  .flow__steps {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .flow__connector {
+    display: none;
+  }
+
+  .flow__step {
+    flex-direction: column;
   }
 }
 </style>

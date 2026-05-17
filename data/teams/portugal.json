@@ -22,7 +22,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1993-01-17",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xpyvxy1469528923.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/xpyvxy1469528923.jpg"
     },
     {
       "name": "Rui Silva",
@@ -31,7 +34,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1994-02-07",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/30bu6h1762291097.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2elqkh1723792779.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/30bu6h1762291097.png"
     },
     {
       "name": "Ricardo Velho",
@@ -40,7 +46,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1998-08-20",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Rúben Neves",
@@ -49,7 +58,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1997-03-13",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/86rcde1750272409.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ac8teq1750760630.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/86rcde1750272409.png"
     },
     {
       "name": "João Félix",
@@ -58,7 +70,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "1999-11-10",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/m8aqft1725214728.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/b253cy1724311014.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/m8aqft1725214728.png"
     },
     {
       "name": "Joao Neves",
@@ -67,7 +82,10 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2004-09-27",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/2q9ahn1766335473.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/463f8a1770217760.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2q9ahn1766335473.png"
     },
     {
       "name": "Mateus Fernandes",
@@ -76,7 +94,10 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "2004-07-10",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/gd8frh1772133322.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/oej5bs1725546442.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gd8frh1772133322.png"
     },
     {
       "name": "Antonio Silva",
@@ -85,7 +106,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2003-10-31",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Renato Veiga",
@@ -94,7 +118,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2003-07-29",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rxefp81762889381.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1u0amz1678362097.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rxefp81762889381.png"
     },
     {
       "name": "Vitinha",
@@ -103,7 +130,10 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "2000-02-13",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q6mw6n1766335544.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/a0b12b1770218109.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q6mw6n1766335544.png"
     },
     {
       "name": "Tomas Araujo",
@@ -112,7 +142,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2002-05-16",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0l8tzn1741768720.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/er26ze1741768576.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0l8tzn1741768720.png"
     },
     {
       "name": "Francisco Conceição",
@@ -121,7 +154,10 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2002-12-14",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ekqivz1759225498.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4z17u11617881496.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ekqivz1759225498.png"
     },
     {
       "name": "Gonçalo Inácio",
@@ -130,7 +166,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2001-08-25",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/m00erp1762291029.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/htv6wy1636109063.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/m00erp1762291029.png"
     },
     {
       "name": "Nuno Mendes",
@@ -139,7 +178,10 @@
       "positionZh": "Left-Back",
       "dateOfBirth": "2002-06-19",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zhdk3h1766335452.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ocycug1770217690.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zhdk3h1766335452.png"
     },
     {
       "name": "Samuel Almeida Costa",
@@ -148,7 +190,10 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2000-11-27",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Gonçalo Ramos",
@@ -157,7 +202,10 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2001-06-20",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/47dx051766335509.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ki0ein1770217883.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/47dx051766335509.png"
     },
     {
       "name": "Pedro Gonçalves",
@@ -166,7 +214,10 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "1998-06-28",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/uik0vy1762290994.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tc86pt1617010078.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/uik0vy1762290994.png"
     },
     {
       "name": "Matheus Nunes",
@@ -175,7 +226,10 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1998-08-27",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qsv6us1757098631.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/fm3isa1703327534.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qsv6us1757098631.png"
     },
     {
       "name": "Ricardo Horta",
@@ -184,7 +238,10 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "1994-09-15",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tp8yt21668118493.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0cx24h1702564255.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tp8yt21668118493.png"
     },
     {
       "name": "Paulinho",
@@ -193,7 +250,10 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1992-11-09",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lpga0c1684943642.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xwjybz1514552169.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lpga0c1684943642.png"
     },
     {
       "name": "Trincão",
@@ -202,7 +262,10 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "1999-12-29",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7xcl5d1762290739.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4icmr01597831379.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7xcl5d1762290739.png"
     },
     {
       "name": "Diogo Dalot",
@@ -211,7 +274,10 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "1999-03-18",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ow1nh31766826552.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0rv14y1706525697.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ow1nh31766826552.png"
     },
     {
       "name": "Gonçalo Guedes",
@@ -220,7 +286,10 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "1996-11-29",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/75dldp1762709030.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/492i5g1535493262.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/75dldp1762709030.png"
     },
     {
       "name": "Bruno Fernandes",
@@ -229,7 +298,10 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "1994-09-08",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/jhasls1766826690.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1kfayc1700821747.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jhasls1766826690.png"
     },
     {
       "name": "Pedro Neto",
@@ -238,7 +310,10 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2000-03-09",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/g63rmf1757003837.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/g1325q1771427940.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/g63rmf1757003837.png"
     },
     {
       "name": "João Cancelo",
@@ -247,7 +322,10 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "1994-05-27",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zqjhte1771260324.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/8vj8tm1771260403.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zqjhte1771260324.png"
     }
   ],
   "recentMatches": []

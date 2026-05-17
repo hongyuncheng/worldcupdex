@@ -22,7 +22,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1994-11-04",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/25vgh91577041718.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/lf3jxy1577041608.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/25vgh91577041718.png"
     },
     {
       "name": "Márcio Rosa",
@@ -31,7 +34,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1997-02-23",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Vózinha",
@@ -40,7 +46,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1986-06-03",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tpnrqy1705487023.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/311rus1705486950.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tpnrqy1705487023.png"
     },
     {
       "name": "C.J. dos Santos",
@@ -49,7 +58,10 @@
       "positionZh": "门将",
       "dateOfBirth": "2000-08-24",
       "nationality": "USA",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ngtq6m1750329281.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/dtzj2i1512752332.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ngtq6m1750329281.png"
     },
     {
       "name": "Steven Moreira",
@@ -58,7 +70,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1994-08-13",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/2mxyy11766428190.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/m7dkfl1691077984.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2mxyy11766428190.png"
     },
     {
       "name": "Ricardo",
@@ -67,7 +82,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1995-06-18",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wrupsy1432743178.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xvuwqy1432743242.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wrupsy1432743178.png"
     },
     {
       "name": "Roberto Lopes",
@@ -76,7 +94,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1992-06-17",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/73sp9f1705487377.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tzl2ni1705487160.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/73sp9f1705487377.png"
     },
     {
       "name": "Diney Borges",
@@ -85,7 +106,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1995-01-17",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Stopira",
@@ -94,7 +118,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1988-05-20",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Jójó",
@@ -103,7 +130,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "2001-05-19",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Jorginho Soares",
@@ -112,7 +142,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1999-07-18",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Sidny Lopes Cabral",
@@ -121,7 +154,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "2002-09-18",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Kelvin Pires",
@@ -130,7 +166,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "2000-06-05",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "David Moreira",
@@ -139,7 +178,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "2004-04-18",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/h9llon1565882993.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/wupxpr1432313827.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/h9llon1565882993.png"
     },
     {
       "name": "Deroy Duarte",
@@ -148,7 +190,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1999-07-04",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0sfigd1700769748.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/kboxxu1700768246.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0sfigd1700769748.png"
     },
     {
       "name": "Garry Rodrigues",
@@ -157,7 +202,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1990-11-27",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/a5dkph1669547130.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ts35fw1669547014.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/a5dkph1669547130.png"
     },
     {
       "name": "Kevin Pina",
@@ -166,7 +214,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1997-10-27",
       "nationality": "Cape Verde",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/utdzem1705487819.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5qdlty1705487789.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/utdzem1705487819.png"
     },
     {
       "name": "Laros Duarte",
@@ -175,7 +226,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1997-02-28",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/j0e80u1723140331.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/j0e80u1723140331.jpg"
     },
     {
       "name": "João Paulo",
@@ -184,7 +238,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1999-08-04",
       "nationality": "Brazil",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Jamiro Monteiro",
@@ -193,7 +250,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1993-11-23",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/2uh5az1764539734.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nr9slg1652709187.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2uh5az1764539734.png"
     },
     {
       "name": "Jordan Mendes Correia",
@@ -202,7 +262,10 @@
       "positionZh": "中场",
       "dateOfBirth": "2004-03-07",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Ayoni Santos",
@@ -211,7 +274,10 @@
       "positionZh": "中场",
       "dateOfBirth": "2005-07-18",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lbx32g1765730213.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/75e2m61765730191.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lbx32g1765730213.png"
     },
     {
       "name": "Aílson Tavares",
@@ -220,7 +286,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1998-07-20",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Willy Semedo",
@@ -229,7 +298,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "1994-04-27",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Ryan Mendes",
@@ -238,7 +310,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "1990-01-08",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Jovane Cabral",
@@ -247,7 +322,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "1998-06-14",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/b4t16t1707691652.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rbga4d1643744891.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b4t16t1707691652.png"
     },
     {
       "name": "Gilson Tavares",
@@ -256,7 +334,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "2001-12-29",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Hélio Varela",
@@ -265,7 +346,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "2002-05-03",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/znj0qi1767870998.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/phf9f11767870978.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/znj0qi1767870998.png"
     },
     {
       "name": "Ieltsin Camões",
@@ -274,7 +358,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "1999-04-16",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Heriberto Tavares",
@@ -283,7 +370,10 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "1997-02-19",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Alessio Da Cruz",
@@ -292,7 +382,10 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "1997-01-18",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ac4r0b1727194978.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/e17mtv1723232205.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ac4r0b1727194978.png"
     },
     {
       "name": "Wagner Pina",
@@ -301,7 +394,10 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "2002-11-03",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Dailon Rocha Livramento",
@@ -310,7 +406,10 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2001-05-04",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zb6vte1741897417.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mwu5tv1741897409.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zb6vte1741897417.png"
     },
     {
       "name": "Nuno Da Costa",
@@ -319,7 +418,10 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1991-02-10",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qoetyz1680955675.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/faywzi1605100264.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qoetyz1680955675.png"
     },
     {
       "name": "Telmo Arcanjo",
@@ -328,7 +430,10 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2001-06-21",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     }
   ],
   "recentMatches": []

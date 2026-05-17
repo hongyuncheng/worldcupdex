@@ -22,7 +22,10 @@
       "positionZh": "门将",
       "dateOfBirth": "2001-02-25",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Johny Placide",
@@ -31,7 +34,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1988-01-29",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/v6gt5k1779018079.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rthmvv1511792821.jpg",
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/v6gt5k1779018079.png"
     },
     {
       "name": "Martin Expérience",
@@ -40,7 +46,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1999-03-09",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Ricardo Adé",
@@ -49,7 +58,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1990-05-21",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/v6ilf71779017873.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/e2pvg41724686010.jpg",
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/v6ilf71779017873.png"
     },
     {
       "name": "Delentz Pierre",
@@ -58,7 +70,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "2000-11-16",
       "nationality": "USA",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Wilguens Paugain",
@@ -67,7 +82,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "2001-08-24",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pcndmt1767018044.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/sfd4he1767012159.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pcndmt1767018044.png"
     },
     {
       "name": "Leverton Pierre",
@@ -76,7 +94,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1998-03-09",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Derrick Etienne Jr.",
@@ -85,7 +106,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1996-11-25",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9kwou81766575620.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yv4k1k1548617647.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9kwou81766575620.png"
     },
     {
       "name": "Danley Jean Jacques",
@@ -94,7 +118,10 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-05-20",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/ms0fhw1778670096.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/d32z011705661987.jpg",
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/ms0fhw1778670096.png"
     },
     {
       "name": "Woobens Pacius",
@@ -103,7 +130,10 @@
       "positionZh": "中场",
       "dateOfBirth": "2001-05-11",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/snet5p1778246120.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/sqdane1778245071.jpg",
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/snet5p1778246120.png"
     },
     {
       "name": "Carl Sainté",
@@ -112,7 +142,10 @@
       "positionZh": "中场",
       "dateOfBirth": "2002-08-09",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Duckens Nazon",
@@ -121,7 +154,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "1994-04-07",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Frantzdy Pierrot",
@@ -130,7 +166,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "1995-03-29",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Yassin Fortune",
@@ -139,7 +178,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "1999-01-30",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Louicius Don Deedson",
@@ -148,7 +190,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "2001-02-11",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/nkwjba1766513552.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4eduwv1702384072.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/nkwjba1766513552.png"
     },
     {
       "name": "Ruben Providence",
@@ -157,7 +202,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "2001-07-07",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/meoa7o1728505560.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/p8q3py1726603880.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/meoa7o1728505560.png"
     },
     {
       "name": "Duke LaCroix",
@@ -166,7 +214,10 @@
       "positionZh": "",
       "dateOfBirth": "1993-10-14",
       "nationality": "USA",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Josué Casimir",
@@ -175,7 +226,10 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2001-09-24",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/646k801765920339.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/49klkm1702292605.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/646k801765920339.png"
     },
     {
       "name": "Wilson Isidor",
@@ -184,7 +238,10 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2000-08-27",
       "nationality": "France",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/x53hzm1757073049.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/e2aojz1772029671.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/x53hzm1757073049.png"
     },
     {
       "name": "Hannes Delcroix",
@@ -193,7 +250,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1999-02-28",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/if7dpw1757174383.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/n5wvwz1772368779.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/if7dpw1757174383.png"
     },
     {
       "name": "Jean-Ricner Bellegarde",
@@ -202,7 +262,10 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1998-06-27",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/i0niw51756975825.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4raydv1772032154.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/i0niw51756975825.png"
     },
     {
       "name": "Jean-Kevin Duverne",
@@ -211,7 +274,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1997-08-12",
       "nationality": "France",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0h4tr61767536620.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/riv0pr1607794428.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0h4tr61767536620.png"
     },
     {
       "name": "Carlens Arcus",
@@ -220,7 +286,10 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "1996-06-28",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/2e5idv1765913925.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tm8vet1701459658.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2e5idv1765913925.png"
     }
   ],
   "recentMatches": []

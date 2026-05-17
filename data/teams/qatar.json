@@ -22,7 +22,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1998-02-14",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/eztua91707596619.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5j9iey1709396147.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/eztua91707596619.png"
     },
     {
       "name": "Mahmoud Abunada",
@@ -31,7 +34,10 @@
       "positionZh": "门将",
       "dateOfBirth": "2000-02-05",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Shehab Mamdouh Ellethy",
@@ -40,7 +46,10 @@
       "positionZh": "门将",
       "dateOfBirth": "2000-04-18",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Niall Mason",
@@ -49,7 +58,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1997-01-10",
       "nationality": "England",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/76kynb1539267889.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/76kynb1539267889.jpg"
     },
     {
       "name": "Assim Madibo",
@@ -58,7 +70,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1996-10-22",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3o6qq81668609347.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/hflwtj1668601261.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3o6qq81668609347.png"
     },
     {
       "name": "Tarek Salman",
@@ -67,7 +82,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1997-12-05",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1v3o6p1707598183.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/o0fjio1707598303.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1v3o6p1707598183.png"
     },
     {
       "name": "Jassem Gaber Abdulsallam",
@@ -76,7 +94,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "2002-02-20",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Homam Ahmed",
@@ -85,7 +106,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1999-08-25",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/4j713o1668598216.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/z029sy1709483867.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4j713o1668598216.png"
     },
     {
       "name": "Lucas Mendes",
@@ -94,7 +118,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1990-07-03",
       "nationality": "Brazil",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/fhxgzr1707601353.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/s5z8bu1707601067.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fhxgzr1707601353.png"
     },
     {
       "name": "Sultan Al Brake",
@@ -103,7 +130,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1996-04-07",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Al Hashmi Al Hussain",
@@ -112,7 +142,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "2003-08-15",
       "nationality": "Spain",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Ayoub Al-Oui",
@@ -121,7 +154,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "2005-03-11",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Yousef Ayman",
@@ -130,7 +166,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1999-03-21",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Mohammed Waad",
@@ -139,7 +178,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1999-09-18",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/cblwsg1707597264.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/volr051709398797.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/cblwsg1707597264.png"
     },
     {
       "name": "Abdulaziz Hatem",
@@ -148,7 +190,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1990-10-28",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zsl75o1668609309.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/npn0y41668600605.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zsl75o1668609309.png"
     },
     {
       "name": "Ahmed Fathy",
@@ -157,7 +202,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1993-01-25",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Akram Afif",
@@ -166,7 +214,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "1996-11-18",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rv8cvv1707592143.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pkfve31707592229.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rv8cvv1707592143.png"
     },
     {
       "name": "Mohammed Muntari",
@@ -175,7 +226,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "1993-12-20",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/gixdmu1668609407.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/r3q86z1668605720.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gixdmu1668609407.png"
     },
     {
       "name": "Mohamed Khaled Gouda",
@@ -184,7 +238,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "2005-01-26",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Khalid Ali Sabah",
@@ -193,7 +250,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "2001-10-05",
       "nationality": "Qatar",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Edmílson",
@@ -202,7 +262,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "1994-08-19",
       "nationality": "Belgium",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/e9l6xi1752314650.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1mzzt91596140619.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/e9l6xi1752314650.png"
     },
     {
       "name": "Ahmed Alaaeldin",
@@ -211,7 +274,10 @@
       "positionZh": "",
       "dateOfBirth": "1993-01-31",
       "nationality": "",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0vj7zr1668609076.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/njz5r31709610904.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0vj7zr1668609076.png"
     }
   ],
   "recentMatches": []

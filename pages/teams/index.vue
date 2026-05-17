@@ -288,7 +288,8 @@ const paginationItems = computed(() => {
 })
 
 // SEO
-useHead({
-  title: () => `${t('teams.title')} - WorldCupDex`,
+useSeoConfig({
+  title: `${t('teams.title')} - WorldCupDex`,
+  description: '浏览2026世界杯所有参赛球队，了解阵容、历史战绩和小组赛分组。',
 })
 </script>

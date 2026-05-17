@@ -9,7 +9,8 @@
     "wiki": "Wiki",
     "venues": "Venues",
     "login": "Login / Register",
-    "quiz": "IQ Quiz"
+    "quiz": "IQ Quiz",
+    "fanCard": "Fan Card"
   },
   "hero": {
     "title": "FIFA WORLD CUP 2026™",
@@ -34,6 +35,8 @@
     "hotTeams": "Popular Teams",
     "viewAllTeams": "View All Teams →",
     "predictThis": "Predict →",
+    "predictHuman": "Manual Predict",
+    "predictAi": "AI Predict",
     "groupMatch": "Group Stage",
     "group": "Group",
     "statsTeamsCount": "48",
@@ -49,12 +52,15 @@
     "ctaSubtitle": "Join predictions, climb the leaderboard, earn exclusive honors!",
     "ctaButton": "Join Now →",
     "quizCta": "Test Your World Cup IQ",
-    "quizCtaSub": "Can you beat 90% of fans?",
+    "quizCtaSub": "10 fun questions to challenge your World Cup knowledge",
+    "quizFeature1": "Covers history, stars, tactics and more",
+    "quizFeature2": "Earn exclusive titles and rankings",
     "fanCardCta": "Create Your Fan Card",
-    "fanCardCtaSub": "Show your colors",
-    "ctaParticipants": "{count} people joined",
-    "startChallenge": "Start Challenge →",
-    "generateCard": "Generate Now →"
+    "fanCardCtaSub": "Create your unique fan identity, show your passion",
+    "fanCardFeature1": "Customize avatar, team and motto",
+    "fanCardFeature2": "Share your card, connect with fans",
+    "startChallenge": "Start Challenge \u2192",
+    "generateCard": "Generate Card \u2192"
   },
   "common": {
     "viewAll": "View All",
@@ -413,6 +419,7 @@
     "titleSenior": "Senior Fan",
     "titleAmateur": "Amateur",
     "titleNewbie": "Casual Viewer",
+    "shareYourScore": "Share Your Score",
     "playAgain": "Play Again",
     "participants": "{count} people joined today",
     "rules": "5 Questions \u00b7 30s each \u00b7 Instant results",

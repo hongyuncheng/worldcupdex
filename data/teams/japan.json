@@ -22,7 +22,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1999-07-28",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/u74p4h1779016529.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/ggj2871779016432.jpg",
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/u74p4h1779016529.png"
     },
     {
       "name": "Zion Suzuki",
@@ -31,7 +34,10 @@
       "positionZh": "门将",
       "dateOfBirth": "2002-08-21",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/24eahn1759780929.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/258ra11709185873.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/24eahn1759780929.png"
     },
     {
       "name": "Tomoki Hayakawa",
@@ -40,7 +46,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1999-03-03",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/6r28sq1779016297.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/t89aqq1779016273.jpg",
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/6r28sq1779016297.png"
     },
     {
       "name": "Ayumu Seko",
@@ -49,7 +58,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "2000-06-07",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/jdghy41765990722.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1k8ce51747686025.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jdghy41765990722.png"
     },
     {
       "name": "Tsuyoshi Watanabe",
@@ -58,7 +70,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1997-02-05",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qv35e31758189015.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/j2g80k1683813405.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qv35e31758189015.png"
     },
     {
       "name": "Shogo Taniguchi",
@@ -67,7 +82,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "2004-01-02",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/jo3sz21767196242.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ppe91r1668623199.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jo3sz21767196242.png"
     },
     {
       "name": "Kaishu Sano",
@@ -76,7 +94,10 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-12-30",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/fkpbew1763558803.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ux088i1741702335.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fkpbew1763558803.png"
     },
     {
       "name": "Joel Fujita",
@@ -85,7 +106,10 @@
       "positionZh": "中场",
       "dateOfBirth": "2002-02-16",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7efkjc1756310153.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/dpvc661710577143.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7efkjc1756310153.png"
     },
     {
       "name": "Junnosuke Suzuki",
@@ -94,7 +118,10 @@
       "positionZh": "中场",
       "dateOfBirth": "2003-07-12",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/duood61779016362.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ufudlf1762288681.jpg",
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/duood61779016362.png"
     },
     {
       "name": "Ryunosuke Sato",
@@ -103,7 +130,10 @@
       "positionZh": "中场",
       "dateOfBirth": "2006-10-16",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Daizen Maeda",
@@ -112,7 +142,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "1997-10-20",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/oohjhs1777019949.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/b7h2mt1668618535.jpg",
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/oohjhs1777019949.png"
     },
     {
       "name": "Yuito Suzuki",
@@ -121,7 +154,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "2001-10-25",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/f0e6t11763329132.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/06wuk11681570896.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/f0e6t11763329132.png"
     },
     {
       "name": "Kento Shiogai",
@@ -130,7 +166,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "2005-03-26",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q2sfl91764537536.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iajov41726736211.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q2sfl91764537536.png"
     },
     {
       "name": "Keisuke Goto",
@@ -139,7 +178,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "2005-06-03",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ek0h0b1767196386.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gd2i271767196523.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ek0h0b1767196386.png"
     },
     {
       "name": "Kodai Sano",
@@ -148,7 +190,10 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "2003-09-25",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rvr9eh1759758564.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/imkorn1701021788.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rvr9eh1759758564.png"
     },
     {
       "name": "Shuto Machino",
@@ -157,7 +202,10 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2002-12-14",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6k0vdb1756313727.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/wa2miq1668541725.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6k0vdb1756313727.png"
     },
     {
       "name": "Kaoru Mitoma",
@@ -166,7 +214,10 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "1997-05-20",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1hwrck1756998804.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5kog1b1772017310.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1hwrck1756998804.png"
     },
     {
       "name": "Ayase Ueda",
@@ -175,7 +226,10 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1998-09-10",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5ezc8v1758188908.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/l14g0v1668623556.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5ezc8v1758188908.png"
     },
     {
       "name": "Ao Tanaka",
@@ -184,7 +238,10 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1998-09-10",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xptxxr1424975941.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/wwsxtv1432843083.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xptxxr1424975941.png"
     },
     {
       "name": "Junya Ito",
@@ -193,7 +250,10 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "1993-03-09",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/sl5pc01767641839.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iunpjk1668541347.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/sl5pc01767641839.png"
     },
     {
       "name": "Daiki Hashioka",
@@ -202,7 +262,10 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "1999-05-17",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7oqmb41708032041.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/js3j6m1708032030.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7oqmb41708032041.png"
     },
     {
       "name": "Yukinari Sugawara",
@@ -211,7 +274,10 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "2000-06-28",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9znmfg1763666295.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2a85n91679158480.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9znmfg1763666295.png"
     },
     {
       "name": "Koki Ogawa",
@@ -220,7 +286,10 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1997-08-08",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8lo6s51759758672.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7o2k3r1701020512.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8lo6s51759758672.png"
     },
     {
       "name": "Hiroki Ito",
@@ -229,7 +298,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1999-05-12",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Keito Nakamura",
@@ -238,7 +310,10 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "2000-07-28",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rvg6ub1678454947.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/6blhf21678454876.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rvg6ub1678454947.png"
     },
     {
       "name": "Ritsu Doan",
@@ -247,7 +322,10 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "1998-06-16",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6526j01762287692.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iwhry11605453793.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6526j01762287692.png"
     },
     {
       "name": "Daichi Kamada",
@@ -256,7 +334,10 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "1996-08-05",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xajscx1761492482.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ol23bf1772140877.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xajscx1761492482.png"
     }
   ],
   "recentMatches": []

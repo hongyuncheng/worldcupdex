@@ -22,7 +22,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1998-01-22",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/vku13u1758187123.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gtz7xy1668376531.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vku13u1758187123.png"
     },
     {
       "name": "Mark Flekken",
@@ -31,7 +34,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1993-06-13",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/idcabl1756315818.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/98he2o1578087724.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/idcabl1756315818.png"
     },
     {
       "name": "Bart Verbruggen",
@@ -40,7 +46,10 @@
       "positionZh": "门将",
       "dateOfBirth": "2002-08-18",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5ak40b1756999759.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2ldxic1772017667.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5ak40b1756999759.png"
     },
     {
       "name": "Kees Smit",
@@ -49,7 +58,10 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "2006-01-21",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8ztyhp1722970012.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/8jwpnx1722970115.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8ztyhp1722970012.png"
     },
     {
       "name": "Jorrel Hato",
@@ -58,7 +70,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2006-03-07",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wfjw1a1757003535.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bj183a1771427587.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wfjw1a1757003535.png"
     },
     {
       "name": "Luciano Valente",
@@ -67,7 +82,10 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "2003-10-04",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8ceukg1764436990.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qxwhv61723141205.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8ceukg1764436990.png"
     },
     {
       "name": "Xavi Simons",
@@ -76,7 +94,10 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2003-04-21",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/uc5tjn1757016055.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7n6vkm1628845984.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/uc5tjn1757016055.png"
     },
     {
       "name": "Mickey van de Ven",
@@ -85,7 +106,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2001-04-19",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Jeremie Frimpong",
@@ -94,7 +118,10 @@
       "positionZh": "Right Midfield",
       "dateOfBirth": "2000-12-10",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ehf7fi1757088020.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4vfl5h1611865283.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ehf7fi1757088020.png"
     },
     {
       "name": "Jan Paul van Hecke",
@@ -103,7 +130,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2000-06-08",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/37rw1u1756994375.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3bddx31772016988.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/37rw1u1756994375.png"
     },
     {
       "name": "Quinten Timber",
@@ -112,7 +142,10 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "2001-06-17",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/fjzod11758188857.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/knniw71679243113.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fjzod11758188857.png"
     },
     {
       "name": "Brian Brobbey",
@@ -121,7 +154,10 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2002-02-01",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q3qz441762198721.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7odze71772029250.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q3qz441762198721.png"
     },
     {
       "name": "Ryan Gravenberch",
@@ -130,7 +166,10 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2002-05-16",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/4f7y1o1757088226.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/s2jcp81603836997.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4f7y1o1757088226.png"
     },
     {
       "name": "Jerdy Schouten",
@@ -139,7 +178,10 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1997-01-12",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wjok7s1764608972.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/t6a4501586286290.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wjok7s1764608972.png"
     },
     {
       "name": "Nathan Aké",
@@ -148,7 +190,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1995-02-18",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/dqu7y91769182942.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bclq8j1708244468.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/dqu7y91769182942.png"
     },
     {
       "name": "Virgil van Dijk",
@@ -157,7 +202,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1991-07-08",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9cxf2q1757087742.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9fe0tn1720452118.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9cxf2q1757087742.png"
     },
     {
       "name": "Wout Weghorst",
@@ -166,7 +214,10 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1992-08-07",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/i58a2q1726603016.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/l0lr521578226693.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/i58a2q1726603016.png"
     },
     {
       "name": "Tijjani Reijnders",
@@ -175,7 +226,10 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1998-07-29",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/edgl5b1769182353.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/kiacxt1679158182.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/edgl5b1769182353.png"
     },
     {
       "name": "Teun Koopmeiners",
@@ -184,7 +238,10 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "1998-02-28",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pvqhh01759225850.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9rlzkj1622152930.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pvqhh01759225850.png"
     },
     {
       "name": "Noa Lang",
@@ -193,7 +250,10 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "1999-06-17",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xl1q291772105450.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0qp5m41623841295.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xl1q291772105450.png"
     },
     {
       "name": "Lutsharel Geertruida",
@@ -202,7 +262,10 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "2000-07-18",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/f72hv61762198555.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/8g5b7f1772029392.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/f72hv61762198555.png"
     },
     {
       "name": "Cody Gakpo",
@@ -211,7 +274,10 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "1999-05-07",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lwkl5n1757088091.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/m9g2ki1669145821.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lwkl5n1757088091.png"
     },
     {
       "name": "Donyell Malen",
@@ -220,7 +286,10 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "1999-01-19",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/t2xdih1777708654.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/y6zoqt1770201257.jpg",
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/t2xdih1777708654.png"
     },
     {
       "name": "Denzel Dumfries",
@@ -229,7 +298,10 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "1996-04-18",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1hd7ox1759408866.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7uz0v61544971521.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1hd7ox1759408866.png"
     },
     {
       "name": "Stefan de Vrij",
@@ -238,7 +310,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1992-02-05",
       "nationality": "Netherlands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/oe7gv21759409004.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pic6id1546190283.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/oe7gv21759409004.png"
     }
   ],
   "recentMatches": []

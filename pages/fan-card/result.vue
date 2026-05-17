@@ -20,6 +20,9 @@ useSeoMeta({
   twitterCard: 'summary_large_image',
 })
 
+// Hreflang alternate links
+useHreflang()
+
 // ── 从 query 或 localStorage 读取参数 ──
 const teamId = ref('')
 const playerIndex = ref(-1)

@@ -6,8 +6,9 @@ const localePath = useLocalePath()
 const { generateFanNumber, saveFanCard } = useFanCard()
 
 // SEO
-useHead({
-  title: () => `${t('fanCard.title')} | WorldCupDex`,
+useSeoConfig({
+  title: `${t('fanCard.title')} - WorldCupDex`,
+  description: '创建你的专属球迷身份卡，展示你支持的球队和座右铭。',
 })
 
 // ── Step state ──
@@ -16,6 +17,8 @@ const searchQuery = ref('')
 const selectedTeamId = ref('')
 const selectedPlayerIdx = ref(-1)
 const nickname = ref('')
+// 昵称输入弹窗显隐
+const showNicknameModal = ref(false)
 
 // ── Step 1: 加载球队列表 ──
 const { data: teamsResponse } = useFetch<PaginatedResponse<TeamListItem>>('/api/teams', {
@@ -87,6 +90,12 @@ function positionColor(position: string): string {
 
 function selectPlayer(idx: number) {
   selectedPlayerIdx.value = idx
+  // 选中球员后立即弹出昵称输入弹窗
+  showNicknameModal.value = true
+}
+
+function closeNicknameModal() {
+  showNicknameModal.value = false
 }
 
 function getPlayerInitial(name: string) {
@@ -238,28 +247,26 @@ const selectedTeam = computed(() => {
         {{ t('common.noResults') }}
       </div>
 
-      <!-- 下一步按钮 -->
+      <!-- 下一步按钮：紧贴网格下方，内联展示 -->
       <Transition
         enter-active-class="transition duration-300 ease-out"
         enter-from-class="opacity-0 translate-y-4"
         enter-to-class="opacity-100 translate-y-0"
       >
-        <div v-if="selectedTeamId" class="fixed bottom-0 left-0 right-0 p-4 z-40" style="background: linear-gradient(transparent, #000F49);">
-          <div class="max-w-md mx-auto">
-            <button
-              class="w-full py-3.5 rounded-xl text-[#000F49] font-bold text-base transition-all hover:scale-[1.02] active:scale-95"
-              style="background: #FFD700; font-family: 'Montserrat', sans-serif; box-shadow: 0 4px 15px rgba(255,215,0,0.3);"
-              @click="goToStep2"
-            >
-              {{ t('fanCard.step2Title') }} →
-            </button>
-          </div>
+        <div v-if="selectedTeamId" class="mt-8 flex justify-center">
+          <button
+            class="w-full max-w-md py-3.5 rounded-xl text-[#000F49] font-bold text-base transition-all hover:scale-[1.02] active:scale-95"
+            style="background: #FFD700; font-family: 'Montserrat', sans-serif; box-shadow: 0 4px 15px rgba(255,215,0,0.3);"
+            @click="goToStep2"
+          >
+            {{ t('fanCard.step2Title') }} →
+          </button>
         </div>
       </Transition>
     </div>
 
     <!-- Step 2: 选球员 + 输入昵称 -->
-    <div v-else-if="currentStep === 2" class="max-w-4xl mx-auto px-4 pb-32">
+    <div v-else-if="currentStep === 2" class="max-w-4xl mx-auto px-4 pb-12">
       <!-- 返回按钮 -->
       <button
         class="flex items-center gap-1 text-white/60 hover:text-white text-sm mb-4 transition-colors"
@@ -276,22 +283,6 @@ const selectedTeam = computed(() => {
       <div v-if="selectedTeam" class="flex items-center gap-2 mb-6 text-white/70 text-sm">
         <img :src="selectedTeam.flag" class="w-6 h-4 object-cover rounded" :alt="getTeamName(selectedTeam)">
         <span>{{ getTeamName(selectedTeam) }}</span>
-      </div>
-
-      <!-- 昵称输入（放在球员列表前，确保用户看到） -->
-      <div class="mb-6 p-4 rounded-xl" style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);">
-        <label class="block text-white/80 text-sm font-semibold mb-2" style="font-family: 'Inter', sans-serif;">
-          {{ t('fanCard.nickname') }} *
-        </label>
-        <input
-          v-model="nickname"
-          type="text"
-          maxlength="12"
-          :placeholder="t('fanCard.nicknamePlaceholder')"
-          class="w-full max-w-md px-4 py-3 rounded-xl bg-white/10 text-white placeholder-white/40 border border-white/20 focus:border-[#FFD700] focus:outline-none transition-colors"
-          style="font-family: 'Inter', sans-serif;"
-        >
-        <div class="text-white/30 text-xs mt-1">{{ nickname.length }}/12</div>
       </div>
 
       <!-- 球员网格 -->
@@ -348,31 +339,103 @@ const selectedTeam = computed(() => {
       <div v-else class="text-center py-8 text-white/50">
         {{ t('common.loading') }}
       </div>
-
-      <!-- 缺少条件时的提示 -->
-      <div v-if="selectedPlayerIdx >= 0 && !nickname.trim()" class="mb-4 text-center">
-        <span class="text-[#FFD700]/80 text-sm">⬆ {{ t('fanCard.nickname') }}</span>
-      </div>
-
-      <!-- 生成按钮 -->
-      <div class="fixed bottom-0 left-0 right-0 p-4 z-40" style="background: linear-gradient(transparent, #000F49);">
-        <div class="max-w-md mx-auto">
-          <button
-            class="w-full py-3.5 rounded-xl font-bold text-base transition-all"
-            :style="{
-              background: canGenerate ? '#FFD700' : 'rgba(255,255,255,0.1)',
-              color: canGenerate ? '#000F49' : 'rgba(255,255,255,0.3)',
-              cursor: canGenerate ? 'pointer' : 'not-allowed',
-              fontFamily: 'Montserrat, sans-serif',
-              boxShadow: canGenerate ? '0 4px 15px rgba(255,215,0,0.3)' : 'none',
-            }"
-            :disabled="!canGenerate"
-            @click="handleGenerate"
-          >
-            {{ t('fanCard.generate') }}
-          </button>
-        </div>
-      </div>
     </div>
+
+    <!-- 昵称输入弹窗：选中球员后弹出，输入昵称并生成身份卡 -->
+    <Teleport to="body">
+      <Transition
+        enter-active-class="transition duration-200 ease-out"
+        enter-from-class="opacity-0"
+        enter-to-class="opacity-100"
+        leave-active-class="transition duration-150 ease-in"
+        leave-from-class="opacity-100"
+        leave-to-class="opacity-0"
+      >
+        <div
+          v-if="showNicknameModal"
+          class="fixed inset-0 z-50 flex items-center justify-center px-4"
+          style="background: rgba(0, 8, 36, 0.75); backdrop-filter: blur(4px);"
+          @click.self="closeNicknameModal"
+        >
+          <div
+            class="w-full max-w-sm rounded-2xl p-6 shadow-2xl"
+            style="background: linear-gradient(180deg, #0F1F5C 0%, #000F49 100%); border: 1px solid rgba(255,215,0,0.2);"
+          >
+            <!-- 已选球员预览 -->
+            <div
+              v-if="selectedPlayerIdx >= 0 && sortedSquad[selectedPlayerIdx]"
+              class="flex items-center gap-3 mb-5 pb-5 border-b border-white/10"
+            >
+              <div
+                class="w-14 h-14 min-w-[56px] rounded-full overflow-hidden flex items-center justify-center"
+                style="background: rgba(255,255,255,0.1); border: 2px solid #FFD700;"
+              >
+                <img
+                  v-if="sortedSquad[selectedPlayerIdx].photo"
+                  :src="sortedSquad[selectedPlayerIdx].photo || ''"
+                  :alt="getPlayerName(sortedSquad[selectedPlayerIdx])"
+                  class="w-full h-full object-cover"
+                >
+                <span v-else class="text-xl font-bold text-white/60">
+                  {{ getPlayerInitial(sortedSquad[selectedPlayerIdx].name) }}
+                </span>
+              </div>
+              <div class="min-w-0 flex-1">
+                <div class="text-white text-base font-bold truncate" style="font-family: 'Inter', sans-serif;">
+                  {{ getPlayerName(sortedSquad[selectedPlayerIdx]) }}
+                </div>
+                <span
+                  class="inline-block text-[10px] font-semibold px-2 py-0.5 rounded-full mt-1 text-white"
+                  :style="{ backgroundColor: positionColor(sortedSquad[selectedPlayerIdx].position) }"
+                >
+                  {{ getPlayerPosition(sortedSquad[selectedPlayerIdx]) }}
+                </span>
+              </div>
+            </div>
+
+            <!-- 昵称输入 -->
+            <label class="block text-white/80 text-sm font-semibold mb-2" style="font-family: 'Inter', sans-serif;">
+              {{ t('fanCard.nickname') }} *
+            </label>
+            <input
+              v-model="nickname"
+              type="text"
+              maxlength="12"
+              autofocus
+              :placeholder="t('fanCard.nicknamePlaceholder')"
+              class="w-full px-4 py-3 rounded-xl bg-white/10 text-white placeholder-white/40 border border-white/20 focus:border-[#FFD700] focus:outline-none transition-colors"
+              style="font-family: 'Inter', sans-serif;"
+              @keyup.enter="canGenerate && handleGenerate()"
+            >
+            <div class="text-white/30 text-xs mt-1">{{ nickname.length }}/12</div>
+
+            <!-- 操作按钮 -->
+            <div class="mt-6 flex gap-3">
+              <button
+                class="flex-1 py-3 rounded-xl font-semibold text-sm text-white/70 hover:text-white hover:bg-white/10 transition-colors"
+                style="border: 1px solid rgba(255,255,255,0.15);"
+                @click="closeNicknameModal"
+              >
+                {{ t('common.back') }}
+              </button>
+              <button
+                class="flex-[2] py-3 rounded-xl font-bold text-sm transition-all"
+                :style="{
+                  background: canGenerate ? '#FFD700' : 'rgba(255,255,255,0.1)',
+                  color: canGenerate ? '#000F49' : 'rgba(255,255,255,0.3)',
+                  cursor: canGenerate ? 'pointer' : 'not-allowed',
+                  fontFamily: 'Montserrat, sans-serif',
+                  boxShadow: canGenerate ? '0 4px 15px rgba(255,215,0,0.3)' : 'none',
+                }"
+                :disabled="!canGenerate"
+                @click="handleGenerate"
+              >
+                {{ t('fanCard.generate') }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </Transition>
+    </Teleport>
   </div>
 </template>

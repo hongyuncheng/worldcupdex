@@ -25,6 +25,8 @@ export interface SquadPlayer {
   nationality: string
   shirtNumber: number | null
   photo?: string | null
+  photoCutout?: string | null
+  photoThumb?: string | null
 }
 
 // 近期比赛（球队详情用）

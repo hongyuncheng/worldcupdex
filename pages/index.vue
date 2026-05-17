@@ -77,6 +77,7 @@
         <MatchCard
           v-for="match in upcomingMatches"
           :key="match.id"
+          :match-id="String(match.id)"
           :group="match.group || ''"
           :team1-name="match.homeTeam.nameZh"
           :team1-flag="match.homeTeam.flag"
@@ -102,24 +103,25 @@
         <div v-if="teamsPending" class="flex items-center justify-center py-8">
           <div class="animate-spin w-8 h-8 border-4 border-gray-200 border-t-[#FFD700] rounded-full"></div>
         </div>
-        <div v-else ref="teamsScrollRef" class="flex gap-4 overflow-x-auto scrollbar-hide pb-2">
+        <div v-else class="flex gap-4 overflow-x-auto scrollbar-hide pb-2">
           <TeamCard
             v-for="team in hotTeams"
             :key="team.code"
+            :team-id="team.id"
             :name="team.nameZh"
             :flag="team.flag"
             :rank="team.fifaRank"
           />
         </div>
-        <!-- Scroll arrow right -->
-        <button
+        <!-- Scroll arrow right (跳转球队列表页) -->
+        <NuxtLinkLocale
+          to="/teams"
           class="absolute right-0 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:shadow-lg transition-shadow z-10"
-          @click="scrollTeams"
         >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
           </svg>
-        </button>
+        </NuxtLinkLocale>
       </div>
     </section>
 
@@ -156,48 +158,106 @@
 
     <!-- Quiz & Fan Card CTA Section -->
     <section class="max-w-7xl mx-auto px-4 lg:px-8 pb-8">
-      <div
-        class="rounded-2xl p-8 grid grid-cols-1 md:grid-cols-2 gap-8"
-        style="background: #000F49; border: 1px solid #FFD700;"
-      >
-        <!-- Quiz CTA -->
-        <div class="flex flex-col items-start gap-3">
-          <span class="text-3xl">🧠</span>
-          <h3 class="font-bold text-white" style="font-family: 'Montserrat', sans-serif; font-size: 20px;">
-            {{ $t('home.quizCta') }}
-          </h3>
-          <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(255,255,255,0.7);">
-            {{ $t('home.quizCtaSub') }}
-          </p>
-          <NuxtLinkLocale
-            to="/quiz"
-            class="inline-flex items-center justify-center font-bold hover:opacity-90 transition-opacity"
-            style="background: #FFD700; color: #000F49; font-family: 'Montserrat', sans-serif; font-size: 14px; border-radius: 8px; padding: 10px 20px; margin-top: 4px;"
-          >
-            {{ $t('home.startChallenge') }}
-          </NuxtLinkLocale>
-        </div>
-        <!-- Fan Card CTA -->
-        <div class="flex flex-col items-start gap-3">
-          <span class="text-3xl">🃏</span>
-          <h3 class="font-bold text-white" style="font-family: 'Montserrat', sans-serif; font-size: 20px;">
-            {{ $t('home.fanCardCta') }}
-          </h3>
-          <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(255,255,255,0.7);">
-            {{ $t('home.fanCardCtaSub') }}
-          </p>
-          <NuxtLinkLocale
-            to="/fan-card"
-            class="inline-flex items-center justify-center font-bold hover:opacity-90 transition-opacity"
-            style="border: 1px solid #FFD700; color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size: 14px; border-radius: 8px; padding: 10px 20px; margin-top: 4px; background: transparent;"
-          >
-            {{ $t('home.generateCard') }}
-          </NuxtLinkLocale>
-        </div>
-        <!-- Participants count -->
-        <div class="md:col-span-2 text-center" style="font-family: 'Inter', sans-serif; font-size: 13px; color: rgba(255,255,255,0.5); margin-top: -4px;">
-          {{ $t('home.ctaParticipants', { count: participantCount }) }}
-        </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Quiz CTA Card -->
+        <NuxtLinkLocale
+          to="/quiz"
+          class="relative overflow-hidden rounded-2xl p-8 flex flex-col justify-center cursor-pointer no-underline hover:shadow-lg transition-shadow"
+          style="background: linear-gradient(135deg, #0a1628 0%, #0d1b3e 60%, #162d5a 100%); min-height: 280px;"
+        >
+          <!-- Decorative image -->
+          <img
+            :src="'/images/quiz_cta_bg.png'"
+            alt=""
+            class="absolute right-0 bottom-0 w-48 h-auto opacity-80 pointer-events-none select-none"
+            style="max-height: 90%;"
+          />
+          <!-- Content -->
+          <div class="relative z-10 flex flex-col items-start gap-3">
+            <h3 class="font-bold text-white" style="font-family: 'Montserrat', sans-serif; font-size: 22px;">
+              {{ $t('home.quizCta') }}
+            </h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(255,255,255,0.7);">
+              {{ $t('home.quizCtaSub') }}
+            </p>
+            <!-- Feature list -->
+            <div class="flex flex-col gap-2 mt-2">
+              <div class="flex items-center gap-2">
+                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full" style="background: #22c55e;">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 13px; color: rgba(255,255,255,0.85);">
+                  {{ $t('home.quizFeature1') }}
+                </span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full" style="background: #22c55e;">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 13px; color: rgba(255,255,255,0.85);">
+                  {{ $t('home.quizFeature2') }}
+                </span>
+              </div>
+            </div>
+            <!-- Button (不再使用嵌套链接，整卡可点击) -->
+            <span
+              class="inline-flex items-center justify-center font-bold mt-4"
+              style="background: #E67E22; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 14px; border-radius: 8px; padding: 12px 24px;"
+            >
+              {{ $t('home.startChallenge') }}
+            </span>
+          </div>
+        </NuxtLinkLocale>
+
+        <!-- Fan Card CTA Card -->
+        <NuxtLinkLocale
+          to="/fan-card"
+          class="relative overflow-hidden rounded-2xl p-8 flex flex-col justify-center cursor-pointer no-underline hover:shadow-lg transition-shadow"
+          style="background: linear-gradient(135deg, #1a0533 0%, #2d1b69 60%, #3b2080 100%); min-height: 280px;"
+        >
+          <!-- Decorative image -->
+          <img
+            :src="'/images/fancard_cta_bg.png'"
+            alt=""
+            class="absolute right-0 bottom-0 w-48 h-auto opacity-80 pointer-events-none select-none"
+            style="max-height: 90%;"
+          />
+          <!-- Content -->
+          <div class="relative z-10 flex flex-col items-start gap-3">
+            <h3 class="font-bold text-white" style="font-family: 'Montserrat', sans-serif; font-size: 22px;">
+              {{ $t('home.fanCardCta') }}
+            </h3>
+            <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(255,255,255,0.7);">
+              {{ $t('home.fanCardCtaSub') }}
+            </p>
+            <!-- Feature list -->
+            <div class="flex flex-col gap-2 mt-2">
+              <div class="flex items-center gap-2">
+                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full" style="background: #22c55e;">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 13px; color: rgba(255,255,255,0.85);">
+                  {{ $t('home.fanCardFeature1') }}
+                </span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full" style="background: #22c55e;">
+                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                </span>
+                <span style="font-family: 'Inter', sans-serif; font-size: 13px; color: rgba(255,255,255,0.85);">
+                  {{ $t('home.fanCardFeature2') }}
+                </span>
+              </div>
+            </div>
+            <!-- Button (整卡可点击) -->
+            <span
+              class="inline-flex items-center justify-center font-bold mt-4"
+              style="background: #7C3AED; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 14px; border-radius: 8px; padding: 12px 24px;"
+            >
+              {{ $t('home.generateCard') }}
+            </span>
+          </div>
+        </NuxtLinkLocale>
       </div>
     </section>
 
@@ -231,13 +291,41 @@
 <script setup lang="ts">
 import type { MatchItem } from '~/types'
 
-const teamsScrollRef = ref<HTMLElement | null>(null)
+// SEO
+useSeoConfig({
+  title: 'WorldCupDex - 2026世界杯百科与预测',
+  description: '2026年FIFA世界杯百科全书，包含球队资料、赛程赛果、比分预测和球迷互动。',
+})
 
+// JSON-LD Structured Data
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'WebSite',
+        name: 'WorldCupDex',
+        url: 'https://worldcupdex.org',
+        description: '2026 FIFA World Cup Encyclopedia & Predictions',
+        potentialAction: {
+          '@type': 'SearchAction',
+          target: 'https://worldcupdex.org/teams?q={search_term_string}',
+          'query-input': 'required name=search_term_string',
+        },
+      }),
+    },
+  ],
+})
+
+const teamsScrollRef = ref<HTMLElement | null>(null)
+// 保留 scrollTeams 以备后续使用（当前右侧箭头改为跳转球队列表页）
 function scrollTeams() {
   if (teamsScrollRef.value) {
     teamsScrollRef.value.scrollBy({ left: 300, behavior: 'smooth' })
   }
 }
+void scrollTeams
 
 // Date formatting helper
 function formatMatchDate(date: string, time: string): string {
@@ -256,18 +344,5 @@ const { data: teamsResponse, pending: teamsPending } = useTeamList()
 const hotTeams = computed(() => {
   const teams = teamsResponse.value?.data || []
   return [...teams].sort((a, b) => a.fifaRank - b.fifaRank).slice(0, 8)
-})
-
-// Participant count from localStorage + fixed base
-const BASE_PARTICIPANTS = 12847
-const participantCount = ref(BASE_PARTICIPANTS)
-
-onMounted(() => {
-  try {
-    const quizCount = parseInt(localStorage.getItem('wcd_quiz_count') || '0', 10)
-    participantCount.value = BASE_PARTICIPANTS + quizCount
-  } catch {
-    // fallback
-  }
 })
 </script>

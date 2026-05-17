@@ -24,10 +24,22 @@
       <p>{{ date }}</p>
       <p>{{ venue }}</p>
     </div>
-    <!-- Predict button -->
-    <div class="px-4 pb-4 text-center">
-      <button class="btn btn-sm btn-outline border-[#FFD700] text-[#000F49] hover:bg-[#FFD700] hover:text-[#000F49] font-bold" style="border-radius: 8px;">
-        {{ $t('home.predictThis') }}
+    <!-- Predict buttons -->
+    <div class="px-4 pb-4 grid grid-cols-2 gap-2">
+      <NuxtLinkLocale
+        :to="`/predict/${matchId}`"
+        class="btn btn-sm border-none bg-[#FFD700] text-[#000F49] hover:bg-[#E6C200] font-bold no-underline shadow-sm"
+        style="border-radius: 8px;"
+      >
+        {{ $t('home.predictHuman') }}
+      </NuxtLinkLocale>
+      <button
+        type="button"
+        class="btn btn-sm border-none bg-[#7C3AED] text-white hover:bg-[#6D28D9] font-bold shadow-sm"
+        style="border-radius: 8px;"
+        @click.prevent="onAiPredict"
+      >
+        {{ $t('home.predictAi') }}
       </button>
     </div>
   </div>
@@ -35,6 +47,7 @@
 
 <script setup lang="ts">
 defineProps<{
+  matchId: string
   group: string
   team1Name: string
   team1Flag: string
@@ -43,4 +56,9 @@ defineProps<{
   date: string
   venue: string
 }>()
+
+// AI 预测逻辑后续接入，这里先留空
+function onAiPredict() {
+  // TODO: 跳转或弹出 AI 预测详情。现阶段不做处理。
+}
 </script>

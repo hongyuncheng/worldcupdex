@@ -245,8 +245,9 @@ import type { MatchItem } from '~/types'
 const { t } = useI18n()
 
 // ─── SEO ───
-useHead({
-  title: () => `${t('predict.heroTitle')} - WorldCupDex`,
+useSeoConfig({
+  title: `${t('predict.heroTitle')} - WorldCupDex`,
+  description: '预测2026世界杯比赛结果，与全球球迷一起竞猜。',
 })
 
 // ─── Tab State ───

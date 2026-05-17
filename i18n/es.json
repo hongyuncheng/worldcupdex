@@ -9,7 +9,8 @@
     "wiki": "Wiki",
     "venues": "Sedes",
     "login": "Iniciar / Registrar",
-    "quiz": "Quiz IQ"
+    "quiz": "Quiz IQ",
+    "fanCard": "Tarjeta Fan"
   },
   "hero": {
     "title": "FIFA WORLD CUP 2026™",
@@ -34,6 +35,8 @@
     "hotTeams": "Equipos Populares",
     "viewAllTeams": "Ver Todos los Equipos →",
     "predictThis": "Predecir →",
+    "predictHuman": "Predicción manual",
+    "predictAi": "Predicción IA",
     "groupMatch": "Fase de Grupos",
     "group": "Grupo",
     "statsTeamsCount": "48",
@@ -49,12 +52,15 @@
     "ctaSubtitle": "Participa en predicciones, sube en el ranking y gana honores exclusivos!",
     "ctaButton": "Participar →",
     "quizCta": "Pon a prueba tu IQ del Mundial",
-    "quizCtaSub": "¿Puedes superar al 90% de los fans?",
+    "quizCtaSub": "10 preguntas divertidas para desafiar tu conocimiento",
+    "quizFeature1": "Cubre historia, estrellas, t\u00e1cticas y m\u00e1s",
+    "quizFeature2": "Obt\u00e9n t\u00edtulos exclusivos y ranking",
     "fanCardCta": "Crea tu Tarjeta de Fan",
-    "fanCardCtaSub": "Muestra tus colores",
-    "ctaParticipants": "{count} personas participaron",
-    "startChallenge": "Comenzar →",
-    "generateCard": "Generar Ahora →"
+    "fanCardCtaSub": "Crea tu identidad \u00fanica de fan, muestra tu pasi\u00f3n",
+    "fanCardFeature1": "Personaliza avatar, equipo y lema",
+    "fanCardFeature2": "Comparte tu tarjeta, conoce otros fans",
+    "startChallenge": "Comenzar \u2192",
+    "generateCard": "Generar Tarjeta \u2192"
   },
   "common": {
     "viewAll": "Ver todo",
@@ -126,6 +132,7 @@
     "titleSenior": "Fan Experto",
     "titleAmateur": "Aficionado",
     "titleNewbie": "Espectador Casual",
+    "shareYourScore": "Comparte tu puntuación",
     "playAgain": "Jugar de Nuevo",
     "participants": "{count} personas participaron hoy",
     "rules": "5 preguntas \u00b7 30s cada una \u00b7 Resultados instant\u00e1neos",

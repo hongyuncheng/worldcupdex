@@ -169,7 +169,7 @@ const navLinks = [
   { to: '/', label: 'nav.home' },
   { to: '/teams', label: 'nav.teams' },
   { to: '/schedule', label: 'nav.matches' },
-  { to: '/data', label: 'nav.data' },
+  { to: '/fan-card', label: 'nav.fanCard' },
   { to: '/predict', label: 'nav.predict' },
   { to: '/quiz', label: 'nav.quiz' },
 ]

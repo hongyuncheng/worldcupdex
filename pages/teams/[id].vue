@@ -360,9 +360,16 @@ const filteredSquad = computed(() => {
   return squad
 })
 
-// SEO
-useHead({
-  title: () => team.value ? `${locale.value === 'en' ? team.value.nameEn : team.value.nameZh} - WorldCupDex` : 'WorldCupDex',
+// SEO - dynamic based on team data
+watchEffect(() => {
+  if (team.value) {
+    const teamName = locale.value === 'en' ? team.value.nameEn : team.value.nameZh
+    useSeoConfig({
+      title: `${teamName} - WorldCupDex`,
+      description: `${teamName}的详细资料，包括FIFA排名#${team.value.fifaRank}、${team.value.group}组小组赛、教练、阵容名单等信息。`,
+      ogType: 'article',
+    })
+  }
 })
 </script>
 

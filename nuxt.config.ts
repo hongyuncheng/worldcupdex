@@ -70,6 +70,10 @@ export default defineNuxtConfig({
     url: 'https://worldcupdex.org',
   },
 
+  sitemap: {
+    autoI18n: true,
+  },
+
   app: {
     pageTransition: false,
     head: {

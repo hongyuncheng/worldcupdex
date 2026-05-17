@@ -33,7 +33,7 @@ let stats = {
   total: 0,
   success: 0,
   failed: 0,
-  skipped: 0 // 已有 photo 的跳过
+  skipped: 0 // 已有 photoCutout/photoThumb 的跳过
 };
 
 // 失败记录
@@ -102,7 +102,7 @@ async function fetchWithRetry(url, retries = MAX_RETRIES) {
  * 搜索球员照片
  * @param {string} playerName - 球员英文名
  * @param {string} nationality - 球员国籍（用于辅助匹配）
- * @returns {string|null} 照片 URL 或 null
+ * @returns {{cutout: string|null, thumb: string|null}|null} 照片对象或 null（API 无结果时）
  */
 async function searchPlayerPhoto(playerName, nationality) {
   const url = `${SEARCH_PLAYER_URL}?p=${encodeURIComponent(playerName)}`;
@@ -136,9 +136,10 @@ async function searchPlayerPhoto(playerName, nationality) {
       bestMatch = nationalityMatch || soccerPlayers[0];
     }
 
-    // 优先 strCutout，其次 strThumb
-    const photo = bestMatch.strCutout || bestMatch.strThumb || null;
-    return photo;
+    // 分别提取 strCutout 和 strThumb
+    const cutout = bestMatch.strCutout || null;
+    const thumb = bestMatch.strThumb || null;
+    return { cutout, thumb };
   } catch (err) {
     console.log(`    ✗ 搜索失败 [${playerName}]: ${err.message}`);
     return null;
@@ -175,22 +176,27 @@ async function processTeam(teamId, teamIndex, totalTeams) {
     const player = squad[i];
     stats.total++;
 
-    // 增量更新：如果已有 photo 字段且不为 null，跳过
-    if (player.photo !== undefined && player.photo !== null) {
+    // 增量更新：如果已有 photoCutout 和 photoThumb（都不为 undefined）则跳过
+    if (player.photoCutout !== undefined && player.photoThumb !== undefined) {
       stats.skipped++;
       teamSkipped++;
       continue;
     }
 
     // 搜索球员照片
-    const photo = await searchPlayerPhoto(player.name, player.nationality || '');
+    const result = await searchPlayerPhoto(player.name, player.nationality || '');
 
-    if (photo) {
-      player.photo = photo;
+    if (result) {
+      player.photoCutout = result.cutout;
+      player.photoThumb = result.thumb;
+      // 向后兼容：photo = cutout || thumb || null
+      player.photo = result.cutout || result.thumb || null;
       stats.success++;
       teamSuccess++;
-      console.log(`  ✓ [${i + 1}/${squad.length}] ${player.name}`);
+      console.log(`  ✓ [${i + 1}/${squad.length}] ${player.name} (cutout: ${result.cutout ? '✓' : '✗'}, thumb: ${result.thumb ? '✓' : '✗'})`);
     } else {
+      player.photoCutout = null;
+      player.photoThumb = null;
       player.photo = null;
       stats.failed++;
       teamFailed++;

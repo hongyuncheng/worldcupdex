@@ -22,7 +22,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1996-02-01",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ib5u2k1769721863.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/l3miqv1622123635.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ib5u2k1769721863.png"
     },
     {
       "name": "Patrick Pentz",
@@ -31,7 +34,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1997-01-02",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/4p78sd1765317561.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5tw4w71610221442.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4p78sd1765317561.png"
     },
     {
       "name": "Tobias Lawal",
@@ -40,7 +46,10 @@
       "positionZh": "门将",
       "dateOfBirth": "2000-06-07",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qg9mm11767641904.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/spb3rl1701012140.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qg9mm11767641904.png"
     },
     {
       "name": "Florian Wiegele",
@@ -49,7 +58,10 @@
       "positionZh": "门将",
       "dateOfBirth": "2001-03-21",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "David Affengruber",
@@ -58,7 +70,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "2001-03-19",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/cbj56y1762371666.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/npsrj41724145158.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/cbj56y1762371666.png"
     },
     {
       "name": "Alessandro Schöpf",
@@ -67,7 +82,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1994-02-07",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ogm41e1770391582.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xmja4e1578167356.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ogm41e1770391582.png"
     },
     {
       "name": "Alexander Prass",
@@ -76,7 +94,10 @@
       "positionZh": "中场",
       "dateOfBirth": "2001-05-26",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1iv3r61763494556.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9tz1gi1653940225.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1iv3r61763494556.png"
     },
     {
       "name": "Paul Wanner",
@@ -85,7 +106,10 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2005-12-23",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rbijya1764608918.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/v0ycev1659990820.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rbijya1764608918.png"
     },
     {
       "name": "Carney Chukwuemeka",
@@ -94,7 +118,10 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "2003-10-20",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/oa3p4i1741868651.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/6ymbm51636630303.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/oa3p4i1741868651.png"
     },
     {
       "name": "Patrick Wimmer",
@@ -103,7 +130,10 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2001-05-30",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/4vcyyu1763669658.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1klupn1658324092.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4vcyyu1763669658.png"
     },
     {
       "name": "Nicolas  Seiwald",
@@ -112,7 +142,10 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "2001-05-04",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/h7mvys1763561377.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2a3flk1634811127.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/h7mvys1763561377.png"
     },
     {
       "name": "Michael Svoboda",
@@ -121,7 +154,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1998-10-15",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/sw0w2q1633104637.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/idenc71633104631.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/sw0w2q1633104637.png"
     },
     {
       "name": "Christoph Baumgartner",
@@ -130,7 +166,10 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "1999-08-01",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7gy4ar1763561036.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jc1e0h1718996010.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7gy4ar1763561036.png"
     },
     {
       "name": "Romano Schmid",
@@ -139,7 +178,10 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2000-01-27",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pc39yd1763666231.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2uxmwf1609170446.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pc39yd1763666231.png"
     },
     {
       "name": "Xaver Schlager",
@@ -148,7 +190,10 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1997-09-28",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1bvq9r1763561361.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/oh2xk71622123333.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1bvq9r1763561361.png"
     },
     {
       "name": "Saša Kalajdžić",
@@ -157,7 +202,10 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1997-07-07",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3i5yu71769635904.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/y4zkcg1609169729.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3i5yu71769635904.png"
     },
     {
       "name": "Marcel Sabitzer",
@@ -166,7 +214,10 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1994-03-17",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/m0if0e1756326525.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ox9wte1717423416.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/m0if0e1756326525.png"
     },
     {
       "name": "Konrad Laimer",
@@ -175,7 +226,10 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1997-05-27",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/dzukrz1756409157.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/vm9ui01770541591.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/dzukrz1756409157.png"
     },
     {
       "name": "Philipp Lienhart",
@@ -184,7 +238,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1996-07-11",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3scndj1763328973.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mqy4ri1622122767.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3scndj1763328973.png"
     },
     {
       "name": "Marco Friedl",
@@ -193,7 +250,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1998-03-16",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/k2wp561763666046.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i1dlve1622121306.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/k2wp561763666046.png"
     },
     {
       "name": "Marko Arnautovic",
@@ -202,7 +262,10 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1989-04-19",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/gnkzom1697979946.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/uqczgv1622121230.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gnkzom1697979946.png"
     },
     {
       "name": "Maximilian Wöber",
@@ -211,7 +274,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1998-02-04",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wi4qc91763666341.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ykhxgu1610921006.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wi4qc91763666341.png"
     },
     {
       "name": "Michael Gregoritsch",
@@ -220,7 +286,10 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1994-04-18",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/g46w261765376250.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yjkyhp1585495858.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/g46w261765376250.png"
     },
     {
       "name": "Kevin Danso",
@@ -229,7 +298,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1998-09-19",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/unhinl1739274856.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nef5l21770824051.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/unhinl1739274856.png"
     },
     {
       "name": "Philipp Mwene",
@@ -238,7 +310,10 @@
       "positionZh": "Left-Back",
       "dateOfBirth": "1994-01-29",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": null,
+      "photoThumb": null,
+      "photo": null
     },
     {
       "name": "Florian Grillitsch",
@@ -247,7 +322,10 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1995-08-07",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0bk2ad1709933135.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qu7fyc1622121368.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0bk2ad1709933135.png"
     },
     {
       "name": "Stefan Posch",
@@ -256,7 +334,10 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "1997-05-14",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1swesw1775205659.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/y1g9mq1622122875.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1swesw1775205659.png"
     },
     {
       "name": "David Alaba",
@@ -265,7 +346,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1992-06-24",
       "nationality": "Austria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zxblp31733653341.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/sdcmqe1702815753.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zxblp31733653341.png"
     }
   ],
   "recentMatches": []

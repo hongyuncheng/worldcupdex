@@ -239,43 +239,13 @@
         </div>
 
         <!-- View Full Schedule Button -->
-        <div class="btn-view-more-wrapper">
-          <button class="btn-view-more">{{ $t('schedule.viewFullSchedule') }} (72{{ locale === 'zh' ? '场' : '' }}) →</button>
+        <div v-if="!showAll" class="btn-view-more-wrapper">
+          <button class="btn-view-more" @click="showAll = true">{{ $t('schedule.viewFullSchedule') }} ({{ filteredMatches.length }}{{ locale === 'zh' ? '场' : '' }}) →</button>
         </div>
       </main>
     </div>
 
-    <!-- Bottom Info Bar -->
-    <div class="info-bar">
-      <div class="info-item">
-        <span class="info-icon">⏰</span>
-        <div>
-          <div class="info-title">{{ $t('schedule.infoTimeZone') }}</div>
-          <div class="info-desc">{{ $t('schedule.infoTimeZoneDesc') }}</div>
-        </div>
-      </div>
-      <div class="info-item">
-        <span class="info-icon">📺</span>
-        <div>
-          <div class="info-title">{{ $t('schedule.infoBroadcast') }}</div>
-          <div class="info-desc">{{ $t('schedule.infoBroadcastDesc') }}</div>
-        </div>
-      </div>
-      <div class="info-item">
-        <span class="info-icon">🎫</span>
-        <div>
-          <div class="info-title">{{ $t('schedule.infoTicket') }}</div>
-          <div class="info-desc">{{ $t('schedule.infoTicketDesc') }}</div>
-        </div>
-      </div>
-      <div class="info-item">
-        <span class="info-icon">📋</span>
-        <div>
-          <div class="info-title">{{ $t('schedule.infoUpdate') }}</div>
-          <div class="info-desc">{{ $t('schedule.infoUpdateDesc') }}</div>
-        </div>
-      </div>
-    </div>
+
     </template>
   </div>
 </template>
@@ -317,6 +287,7 @@ function formatDateLabel(dateStr: string, loc: string): string {
 }
 
 // ─── State ───
+const showAll = ref(false)
 const selectedStageTab = ref('all')
 const selectedDate = ref('')
 const selectedVenue = ref('')
@@ -404,13 +375,21 @@ const filteredMatches = computed(() => {
   if (selectedVenue.value) {
     result = result.filter(m => (locale.value === 'zh' ? m.venue.nameZh : m.venue.name) === selectedVenue.value)
   }
+  // 过滤掉 TBD 比赛
+  result = result.filter(m => m.homeTeam.id !== 'tbd' && m.awayTeam.id !== 'tbd')
   return result
+})
+
+// ─── Displayed Matches (折叠/展开) ───
+const displayedMatches = computed(() => {
+  if (showAll.value) return filteredMatches.value
+  return filteredMatches.value.slice(0, 10)
 })
 
 // ─── Grouped by date ───
 const groupedMatches = computed(() => {
   const map: Record<string, MatchItem[]> = {}
-  filteredMatches.value.forEach(m => {
+  displayedMatches.value.forEach(m => {
     const key = formatDateLabel(m.date, locale.value)
     if (!map[key]) map[key] = []
     map[key].push(m)
@@ -471,8 +450,9 @@ function selectCalendarDate(day: number) {
 }
 
 // ─── SEO ───
-useHead({
-  title: () => `${t('schedule.title')} - WorldCupDex`,
+useSeoConfig({
+  title: `${t('schedule.title')} - WorldCupDex`,
+  description: '2026世界杯完整赛程时间表，小组赛到决赛的所有比赛安排。',
 })
 </script>
 
@@ -904,51 +884,5 @@ useHead({
   }
 }
 
-/* ===== Info Bar ===== */
-.info-bar {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 0;
-  background: #FFFFFF;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  padding: 20px 0;
-  margin-top: 32px;
-}
-.info-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 0 24px;
-  border-right: 1px solid #F0F0F0;
-}
-.info-item:last-child {
-  border-right: none;
-}
-.info-icon {
-  font-size: 20px;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-.info-title {
-  font-size: 13px;
-  font-weight: 700;
-  color: #000F49;
-}
-.info-desc {
-  font-size: 12px;
-  color: #999;
-  margin-top: 2px;
-}
-@media (max-width: 768px) {
-  .info-bar {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
-    padding: 16px;
-  }
-  .info-item {
-    border-right: none;
-    padding: 0;
-  }
-}
 </style>
+
