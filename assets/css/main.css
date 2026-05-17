@@ -1,0 +1,149 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: worldcup --default, dark;
+}
+
+/* ===== Custom DaisyUI Theme: worldcup ===== */
+@plugin "daisyui/theme" {
+  name: "worldcup";
+  default: true;
+  color-scheme: light;
+  --color-base-100: #FFFFFF;
+  --color-base-200: #F5F5F5;
+  --color-base-300: #E0E0E0;
+  --color-base-content: #1a1a2e;
+  --color-primary: #1A237E;
+  --color-primary-content: #FFFFFF;
+  --color-secondary: #FFD700;
+  --color-secondary-content: #1a1a2e;
+  --color-accent: #D32F2F;
+  --color-accent-content: #FFFFFF;
+  --color-neutral: #1a1a2e;
+  --color-neutral-content: #FFFFFF;
+  --color-info: #1976D2;
+  --color-info-content: #FFFFFF;
+  --color-success: #388E3C;
+  --color-success-content: #FFFFFF;
+  --color-warning: #FFD700;
+  --color-warning-content: #1a1a2e;
+  --color-error: #D32F2F;
+  --color-error-content: #FFFFFF;
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.75rem;
+  --font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* ===== Theme Variables ===== */
+:root {
+  --color-deep-blue: #1A237E;
+  --color-gold: #FFD700;
+  --color-red: #D32F2F;
+  --color-bg: #F5F5F5;
+  --color-text: #1a1a2e;
+
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-card-hover: 0 8px 24px rgba(26, 35, 126, 0.12), 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-elevated: 0 16px 48px rgba(26, 35, 126, 0.15), 0 8px 24px rgba(0, 0, 0, 0.1);
+
+  --font-family-base: 'Inter', system-ui, sans-serif;
+  --font-family-heading: 'Montserrat', system-ui, sans-serif;
+}
+
+/* ===== Font Fallback ===== */
+@font-face {
+  font-family: 'Inter Fallback';
+  src: local('Arial');
+  size-adjust: 107%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
+/* ===== Global Styles ===== */
+body {
+  font-family: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  background-color: #F5F5F5;
+  color: #1a1a2e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Inter', system-ui, sans-serif;
+}
+
+/* ===== Card Styles ===== */
+.card {
+  border-radius: 12px;
+  box-shadow: var(--shadow-card);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card-hover);
+}
+
+/* ===== Gold Shimmer Text ===== */
+.text-gold {
+  color: #FFD700;
+}
+
+.text-gold-shimmer {
+  background: linear-gradient(135deg, #FFD700 0%, #FFA000 50%, #FFD700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== Gradient Text ===== */
+.text-gradient-blue {
+  background: linear-gradient(135deg, #1A237E, #283593);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F5F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #1A237E;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #283593;
+}
+
+/* ===== Scrollbar Hide Utility ===== */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* ===== View More Button ===== */
+.btn-view-more {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  color: #000F49;
+  background: #F0F2F5;
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.btn-view-more:hover {
+  background: #E4E7EC;
+}
+.btn-view-more-wrapper {
+  text-align: center;
+  margin-top: 16px;
+}

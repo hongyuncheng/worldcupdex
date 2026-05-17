@@ -1,0 +1,102 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "teams": "Equipos",
+    "matches": "Partidos",
+    "data": "Datos",
+    "predict": "Predicción",
+    "news": "Noticias",
+    "wiki": "Wiki",
+    "venues": "Sedes",
+    "login": "Iniciar / Registrar"
+  },
+  "hero": {
+    "title": "FIFA WORLD CUP 2026™",
+    "subtitle": "Cuenta regresiva",
+    "countdown": "Cuenta regresiva",
+    "days": "Días",
+    "hours": "Horas",
+    "minutes": "Min",
+    "seconds": "Seg",
+    "explorTeams": "Explorar Equipos",
+    "makePrediction": "Hacer Predicción",
+    "startPredict": "Predecir →",
+    "viewSchedule": "Ver Calendario",
+    "statsTeams": "48 Equipos",
+    "statsMatches": "104 Partidos",
+    "statsCities": "16 Ciudades",
+    "statsCountries": "3 Países"
+  },
+  "home": {
+    "upcomingMatches": "Próximos Partidos",
+    "viewAllMatches": "Ver Todos los Partidos →",
+    "hotTeams": "Equipos Populares",
+    "viewAllTeams": "Ver Todos los Equipos →",
+    "predictThis": "Predecir →",
+    "groupMatch": "Fase de Grupos",
+    "group": "Grupo",
+    "statsTeamsCount": "48",
+    "statsTeamsTitle": "Equipos",
+    "statsTeamsDesc": "Los mejores equipos de 6 continentes",
+    "statsMatchesCount": "104",
+    "statsMatchesTitle": "Partidos",
+    "statsMatchesDesc": "De la fase de grupos a la final",
+    "statsCitiesCount": "16",
+    "statsCitiesTitle": "Ciudades Sede",
+    "statsCitiesDesc": "Estadios de clase mundial en 3 países",
+    "ctaTitle": "¿Quién levantará el trofeo?",
+    "ctaSubtitle": "Participa en predicciones, sube en el ranking y gana honores exclusivos!",
+    "ctaButton": "Participar →"
+  },
+  "common": {
+    "viewAll": "Ver todo",
+    "predict": "Predecir",
+    "search": "Buscar",
+    "loading": "Cargando...",
+    "noResults": "Sin resultados",
+    "back": "Volver",
+    "share": "Compartir",
+    "language": "Idioma",
+    "vs": "VS"
+  },
+  "teams": {
+    "title": "Enciclopedia de Equipos",
+    "subtitle": "Perfiles completos de los 48 equipos participantes",
+    "group": "Grupo",
+    "ranking": "Ranking FIFA",
+    "coach": "Director Técnico",
+    "players": "Plantilla",
+    "all": "Todos",
+    "groupSuffix": "",
+    "searchPlaceholder": "Buscar equipo...",
+    "sortByGroup": "Orden: Por Grupo",
+    "sortByRank": "Orden: Por Ranking",
+    "noResults": "No se encontraron equipos"
+  },
+  "matches": {
+    "title": "Calendario de Partidos",
+    "subtitle": "Calendario completo con resultados y marcadores",
+    "groupStage": "Fase de Grupos",
+    "roundOf32": "Dieciseisavos",
+    "roundOf16": "Octavos de Final",
+    "quarterFinal": "Cuartos de Final",
+    "semiFinal": "Semifinal",
+    "final": "Final",
+    "vs": "vs",
+    "kickoff": "Hora de Inicio"
+  },
+  "predict": {
+    "title": "Predicciones",
+    "subtitle": "Predice los resultados y compite con aficionados de todo el mundo",
+    "makeYourPick": "Haz tu predicción",
+    "submit": "Enviar Predicción"
+  },
+  "footer": {
+    "siteDesc": "WorldCupDex — Tu guía definitiva de la Copa del Mundo FIFA 2026",
+    "copyright": "© 2026 WorldCupDex",
+    "disclaimer": "Proyecto de comunidad de fans, sin afiliación oficial con la FIFA",
+    "about": "Acerca de",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Uso"
+  }
+}
