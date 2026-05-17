@@ -1,5 +1,0 @@
-name = "worldcupdex"
-compatibility_date = "2025-05-16"
-compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = "dist"
-no_bundle = true

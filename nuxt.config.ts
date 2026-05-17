@@ -94,9 +94,7 @@ export default defineNuxtConfig({
 
   sourcemap: false,
 
-  nitro: {
-    preset: 'cloudflare-pages',
-  },
+  // nitro preset auto-detected by CF Pages framework preset
 
   routeRules: {
     '/**': {
