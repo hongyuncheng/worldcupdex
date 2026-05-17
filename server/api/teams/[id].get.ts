@@ -1,21 +1,4 @@
-import type { TeamDetail } from '~/types'
-
-let _teamsMap: Map<string, TeamDetail> | null = null
-
-async function getTeamsMap(): Promise<Map<string, TeamDetail>> {
-  if (!_teamsMap) {
-    const teamModules = import.meta.glob<{ default: TeamDetail }>('../../../data/teams/*.json')
-    _teamsMap = new Map<string, TeamDetail>()
-    for (const [path, loader] of Object.entries(teamModules)) {
-      const id = path.split('/').pop()?.replace('.json', '')
-      if (id) {
-        const mod = await loader()
-        _teamsMap.set(id, mod.default)
-      }
-    }
-  }
-  return _teamsMap
-}
+import { getTeamDetail } from '../../utils/teams-manifest'
 
 export default defineEventHandler(async (event) => {
   const id = getRouterParam(event, 'id')
@@ -27,8 +10,7 @@ export default defineEventHandler(async (event) => {
     })
   }
 
-  const teamsMap = await getTeamsMap()
-  const team = teamsMap.get(id)
+  const team = getTeamDetail(id)
 
   if (!team) {
     throw createError({
