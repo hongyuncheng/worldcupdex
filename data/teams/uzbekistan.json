@@ -36,8 +36,8 @@
       "nationality": "Uzbekistan",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/e1v8xf1778633021.jpg",
+      "photo": "https://www.thesportsdb.com/images/media/player/thumb/e1v8xf1778633021.jpg"
     },
     {
       "name": "Utkir Yusupov",
@@ -108,8 +108,8 @@
       "nationality": "Uzbekistan",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yv52pv1712555322.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/yv52pv1712555322.jpg"
     },
     {
       "name": "Sherzod Nasrullayev",
@@ -228,8 +228,8 @@
       "nationality": "Uzbekistan",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/707nxb1712353710.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/707nxb1712353710.jpg"
     },
     {
       "name": "Ibrokhim Ibrokhimov",
@@ -275,9 +275,9 @@
       "dateOfBirth": "2004-02-29",
       "nationality": "Uzbekistan",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/da8tg41769182137.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ov4b1d1712297858.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/da8tg41769182137.png"
     },
     {
       "name": "Eldor Shomurodov",
