@@ -17,6 +17,17 @@
       {{ $t('schedule.subtitle') }}
     </p>
 
+    <!-- Loading -->
+    <div v-if="pending" class="text-center py-16">
+      <p style="color: #999; font-size: 16px;">加载中...</p>
+    </div>
+
+    <!-- Error -->
+    <div v-else-if="error" class="text-center py-16">
+      <p style="color: #c00; font-size: 16px;">数据加载失败，请先运行 npm run fetch-data</p>
+    </div>
+
+    <template v-else>
     <!-- Filter Bar -->
     <div class="filter-bar mb-6">
       <!-- Left Tabs -->
@@ -203,13 +214,13 @@
               <div class="col-matchup">
                 <div class="matchup-content">
                   <span class="team-info team-info--home">
-                    <span class="team-flag">{{ match.homeFlag }}</span>
-                    <span class="team-name">{{ locale === 'zh' ? match.homeNameZh : match.homeNameEn }}</span>
+                    <span class="team-flag"><img :src="match.homeTeam.flag" :alt="match.homeTeam.nameEn" style="width: 24px; height: 16px; object-fit: contain;" /></span>
+                    <span class="team-name">{{ locale === 'zh' ? match.homeTeam.nameZh : match.homeTeam.nameEn }}</span>
                   </span>
                   <span class="vs-badge">VS</span>
                   <span class="team-info team-info--away">
-                    <span class="team-name">{{ locale === 'zh' ? match.awayNameZh : match.awayNameEn }}</span>
-                    <span class="team-flag">{{ match.awayFlag }}</span>
+                    <span class="team-name">{{ locale === 'zh' ? match.awayTeam.nameZh : match.awayTeam.nameEn }}</span>
+                    <span class="team-flag"><img :src="match.awayTeam.flag" :alt="match.awayTeam.nameEn" style="width: 24px; height: 16px; object-fit: contain;" /></span>
                   </span>
                 </div>
               </div>
@@ -217,8 +228,8 @@
                 <span class="group-tag">{{ match.group }}{{ locale === 'zh' ? $t('schedule.groupSuffix') : '' }}</span>
               </div>
               <div class="col-venue">
-                <div class="venue-name">{{ locale === 'zh' ? match.venueZh : match.venueEn }}</div>
-                <div class="venue-city">{{ locale === 'zh' ? match.cityZh : match.cityEn }}</div>
+                <div class="venue-name">{{ locale === 'zh' ? match.venue.nameZh : match.venue.name }}</div>
+                <div class="venue-city">{{ locale === 'zh' ? match.venue.cityZh : match.venue.city }}</div>
               </div>
               <div class="col-actions">
                 <button class="predict-btn">{{ $t('schedule.predictMatch') }}</button>
@@ -265,32 +276,16 @@
         </div>
       </div>
     </div>
+    </template>
   </div>
 </template>
 
 <script setup lang="ts">
+import type { MatchItem } from '~/types'
+
 const { t, locale } = useI18n()
 
 // ─── Types ───
-interface Match {
-  id: number
-  date: string
-  dateLabel: string
-  dateLabelEn: string
-  time: string
-  homeFlag: string
-  homeNameZh: string
-  homeNameEn: string
-  awayFlag: string
-  awayNameZh: string
-  awayNameEn: string
-  group: string
-  venueZh: string
-  venueEn: string
-  cityZh: string
-  cityEn: string
-  stage: string
-}
 
 interface Stage {
   key: string
@@ -300,12 +295,33 @@ interface Stage {
   count: number
 }
 
+// ─── API Data ───
+const { data: matchesResponse, pending, error } = useMatchList()
+const allMatches = computed<MatchItem[]>(() => matchesResponse.value?.data ?? [])
+
+// ─── Date Formatting ───
+const weekdayNamesZh = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
+const weekdayNamesEn = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+function formatDateLabel(dateStr: string, loc: string): string {
+  const d = new Date(dateStr + 'T00:00:00')
+  const year = d.getFullYear()
+  const month = d.getMonth() + 1
+  const day = d.getDate()
+  const weekday = d.getDay()
+  if (loc === 'zh') {
+    return `${year}年${month}月${day}日 ${weekdayNamesZh[weekday]}`
+  }
+  return `${weekdayNamesEn[weekday]}, ${monthNames[d.getMonth()]} ${day}, ${year}`
+}
+
 // ─── State ───
 const selectedStageTab = ref('all')
 const selectedDate = ref('')
 const selectedVenue = ref('')
 const selectedGroup = ref('')
-const selectedSidebarStage = ref('group')
+const selectedSidebarStage = ref('GROUP_STAGE')
 const calendarYear = ref(2026)
 const calendarMonth = ref(6)
 const selectedCalendarDay = ref(12)
@@ -318,15 +334,18 @@ const stageTabs = computed(() => [
 ])
 
 // ─── Sidebar Stages ───
-const stages = computed<Stage[]>(() => [
-  { key: 'group', name: t('schedule.stageGroupStage'), nameEn: 'Group Stage', dateRange: locale.value === 'zh' ? '6月12日 - 7月3日' : 'Jun 12 - Jul 3', count: 72 },
-  { key: 'r16', name: t('schedule.stageRoundOf16'), nameEn: 'Round of 16', dateRange: locale.value === 'zh' ? '7月4日 - 7月7日' : 'Jul 4 - Jul 7', count: 16 },
-  { key: 'r8', name: t('schedule.stageRoundOf8'), nameEn: 'Round of 8', dateRange: locale.value === 'zh' ? '7月8日 - 7月11日' : 'Jul 8 - Jul 11', count: 8 },
-  { key: 'qf', name: t('schedule.stageQuarterFinal'), nameEn: 'Quarter-Final', dateRange: locale.value === 'zh' ? '7月12日 - 7月13日' : 'Jul 12 - Jul 13', count: 4 },
-  { key: 'sf', name: t('schedule.stageSemiFinal'), nameEn: 'Semi-Final', dateRange: locale.value === 'zh' ? '7月15日 - 7月16日' : 'Jul 15 - Jul 16', count: 2 },
-  { key: '3rd', name: t('schedule.stageThirdPlace'), nameEn: 'Third Place', dateRange: locale.value === 'zh' ? '7月18日' : 'Jul 18', count: 1 },
-  { key: 'final', name: t('schedule.stageFinal'), nameEn: 'Final', dateRange: locale.value === 'zh' ? '7月19日' : 'Jul 19', count: 1 },
-])
+const stages = computed<Stage[]>(() => {
+  const countByStage = (stage: string) => allMatches.value.filter(m => m.stage === stage).length
+  return [
+    { key: 'GROUP_STAGE', name: t('schedule.stageGroupStage'), nameEn: 'Group Stage', dateRange: locale.value === 'zh' ? '6月12日 - 7月3日' : 'Jun 12 - Jul 3', count: countByStage('GROUP_STAGE') || 72 },
+    { key: 'ROUND_OF_32', name: t('schedule.stageRoundOf16'), nameEn: 'Round of 32', dateRange: locale.value === 'zh' ? '7月4日 - 7月7日' : 'Jul 4 - Jul 7', count: countByStage('ROUND_OF_32') || 16 },
+    { key: 'ROUND_OF_16', name: t('schedule.stageRoundOf8'), nameEn: 'Round of 8', dateRange: locale.value === 'zh' ? '7月8日 - 7月11日' : 'Jul 8 - Jul 11', count: countByStage('ROUND_OF_16') || 8 },
+    { key: 'QUARTER_FINALS', name: t('schedule.stageQuarterFinal'), nameEn: 'Quarter-Final', dateRange: locale.value === 'zh' ? '7月12日 - 7月13日' : 'Jul 12 - Jul 13', count: countByStage('QUARTER_FINALS') || 4 },
+    { key: 'SEMI_FINALS', name: t('schedule.stageSemiFinal'), nameEn: 'Semi-Final', dateRange: locale.value === 'zh' ? '7月15日 - 7月16日' : 'Jul 15 - Jul 16', count: countByStage('SEMI_FINALS') || 2 },
+    { key: 'THIRD_PLACE', name: t('schedule.stageThirdPlace'), nameEn: 'Third Place', dateRange: locale.value === 'zh' ? '7月18日' : 'Jul 18', count: countByStage('THIRD_PLACE') || 1 },
+    { key: 'FINAL', name: t('schedule.stageFinal'), nameEn: 'Final', dateRange: locale.value === 'zh' ? '7月19日' : 'Jul 19', count: countByStage('FINAL') || 1 },
+  ]
+})
 
 const currentStageName = computed(() => {
   const s = stages.value.find(st => st.key === selectedSidebarStage.value)
@@ -334,63 +353,65 @@ const currentStageName = computed(() => {
 })
 
 // ─── Groups ───
-const groups = ['A', 'B', 'C', 'D', 'E']
-
-// ─── Mock Match Data ───
-const allMatches: Match[] = [
-  // June 12 (Friday) - Opening Day
-  { id: 1, date: '2026-06-12', dateLabel: '2026年6月12日 星期五', dateLabelEn: 'Friday, June 12, 2026', time: '03:00', homeFlag: '🇲🇽', homeNameZh: '墨西哥', homeNameEn: 'Mexico', awayFlag: '🇦🇷', awayNameZh: '阿根廷', awayNameEn: 'Argentina', group: 'A', venueZh: '阿兹特克球场', venueEn: 'Azteca Stadium', cityZh: '墨西哥城', cityEn: 'Mexico City', stage: 'group' },
-  { id: 2, date: '2026-06-12', dateLabel: '2026年6月12日 星期五', dateLabelEn: 'Friday, June 12, 2026', time: '06:00', homeFlag: '🇺🇸', homeNameZh: '美国', homeNameEn: 'USA', awayFlag: '🏴󠁧󠁢󠁥󠁮󠁧󠁿', awayNameZh: '英格兰', awayNameEn: 'England', group: 'B', venueZh: 'MetLife球场', venueEn: 'MetLife Stadium', cityZh: '东卢瑟福', cityEn: 'East Rutherford', stage: 'group' },
-  { id: 3, date: '2026-06-12', dateLabel: '2026年6月12日 星期五', dateLabelEn: 'Friday, June 12, 2026', time: '09:00', homeFlag: '🇨🇦', homeNameZh: '加拿大', homeNameEn: 'Canada', awayFlag: '🇭🇷', awayNameZh: '克罗地亚', awayNameEn: 'Croatia', group: 'B', venueZh: 'BMO球场', venueEn: 'BMO Field', cityZh: '多伦多', cityEn: 'Toronto', stage: 'group' },
-  // June 13 (Saturday)
-  { id: 4, date: '2026-06-13', dateLabel: '2026年6月13日 星期六', dateLabelEn: 'Saturday, June 13, 2026', time: '00:00', homeFlag: '🇪🇸', homeNameZh: '西班牙', homeNameEn: 'Spain', awayFlag: '🇺🇾', awayNameZh: '乌拉圭', awayNameEn: 'Uruguay', group: 'C', venueZh: '硬石体育场', venueEn: 'Hard Rock Stadium', cityZh: '迈阿密', cityEn: 'Miami', stage: 'group' },
-  { id: 5, date: '2026-06-13', dateLabel: '2026年6月13日 星期六', dateLabelEn: 'Saturday, June 13, 2026', time: '03:00', homeFlag: '🇧🇷', homeNameZh: '巴西', homeNameEn: 'Brazil', awayFlag: '🇩🇪', awayNameZh: '德国', awayNameEn: 'Germany', group: 'C', venueZh: 'AT&T球场', venueEn: 'AT&T Stadium', cityZh: '阿灵顿', cityEn: 'Arlington', stage: 'group' },
-  { id: 6, date: '2026-06-13', dateLabel: '2026年6月13日 星期六', dateLabelEn: 'Saturday, June 13, 2026', time: '06:00', homeFlag: '🇲🇦', homeNameZh: '摩洛哥', homeNameEn: 'Morocco', awayFlag: '🇯🇵', awayNameZh: '日本', awayNameEn: 'Japan', group: 'D', venueZh: '林肯金融球场', venueEn: 'Lincoln Financial Field', cityZh: '费城', cityEn: 'Philadelphia', stage: 'group' },
-  // June 14 (Sunday)
-  { id: 7, date: '2026-06-14', dateLabel: '2026年6月14日 星期日', dateLabelEn: 'Sunday, June 14, 2026', time: '00:00', homeFlag: '🇩🇪', homeNameZh: '德国', homeNameEn: 'Germany', awayFlag: '🏴󠁧󠁢󠁳󠁣󠁴󠁿', awayNameZh: '苏格兰', awayNameEn: 'Scotland', group: 'D', venueZh: '梅赛德斯-奔驰体育场', venueEn: 'Mercedes-Benz Stadium', cityZh: '亚特兰大', cityEn: 'Atlanta', stage: 'group' },
-  { id: 8, date: '2026-06-14', dateLabel: '2026年6月14日 星期日', dateLabelEn: 'Sunday, June 14, 2026', time: '03:00', homeFlag: '🇫🇷', homeNameZh: '法国', homeNameEn: 'France', awayFlag: '🇸🇳', awayNameZh: '塞内加尔', awayNameEn: 'Senegal', group: 'E', venueZh: 'SoFi体育场', venueEn: 'SoFi Stadium', cityZh: '洛杉矶', cityEn: 'Los Angeles', stage: 'group' },
-  { id: 9, date: '2026-06-14', dateLabel: '2026年6月14日 星期日', dateLabelEn: 'Sunday, June 14, 2026', time: '06:00', homeFlag: '🇳🇱', homeNameZh: '荷兰', homeNameEn: 'Netherlands', awayFlag: '🇦🇹', awayNameZh: '奥地利', awayNameEn: 'Austria', group: 'E', venueZh: '达拉斯体育场', venueEn: 'Cotton Bowl', cityZh: '达拉斯', cityEn: 'Dallas', stage: 'group' },
-]
+const groups = computed(() => {
+  const set = new Set<string>()
+  allMatches.value.forEach(m => { if (m.group) set.add(m.group) })
+  return Array.from(set).sort()
+})
 
 // ─── Venues list ───
 const venues = computed(() => {
   const set = new Set<string>()
-  allMatches.forEach(m => set.add(locale.value === 'zh' ? m.venueZh : m.venueEn))
+  allMatches.value.forEach(m => set.add(locale.value === 'zh' ? m.venue.nameZh : m.venue.name))
   return Array.from(set)
 })
 
 // ─── Available dates ───
 const availableDates = computed(() => {
-  const set = new Set<string>()
-  allMatches.forEach(m => set.add(locale.value === 'zh' ? m.dateLabel.split(' ')[0] : m.dateLabelEn))
-  return Array.from(set)
+  const dates = [...new Set(allMatches.value.map(m => m.date))].sort()
+  return dates.map(d => {
+    if (locale.value === 'zh') {
+      const dt = new Date(d + 'T00:00:00')
+      return `${dt.getFullYear()}年${dt.getMonth() + 1}月${dt.getDate()}日`
+    }
+    return formatDateLabel(d, 'en')
+  })
 })
 
 // ─── Match dates for calendar highlighting ───
-const matchDays = new Set([1, 2, 3, 4, 5, 7, 8, 12, 13, 14, 15, 17, 18, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29])
+const matchDaysByMonth = computed(() => {
+  const map: Record<string, Set<number>> = {}
+  allMatches.value.forEach(m => {
+    const d = new Date(m.date + 'T00:00:00')
+    const key = `${d.getFullYear()}-${d.getMonth() + 1}`
+    if (!map[key]) map[key] = new Set()
+    map[key].add(d.getDate())
+  })
+  return map
+})
 
 // ─── Filtered Matches ───
 const filteredMatches = computed(() => {
-  let result = [...allMatches]
+  let result = [...allMatches.value]
   if (selectedStageTab.value === 'group') {
-    result = result.filter(m => m.stage === 'group')
+    result = result.filter(m => m.stage === 'GROUP_STAGE')
   } else if (selectedStageTab.value === 'knockout') {
-    result = result.filter(m => m.stage !== 'group')
+    result = result.filter(m => m.stage !== 'GROUP_STAGE')
   }
   if (selectedGroup.value) {
     result = result.filter(m => m.group === selectedGroup.value)
   }
   if (selectedVenue.value) {
-    result = result.filter(m => (locale.value === 'zh' ? m.venueZh : m.venueEn) === selectedVenue.value)
+    result = result.filter(m => (locale.value === 'zh' ? m.venue.nameZh : m.venue.name) === selectedVenue.value)
   }
   return result
 })
 
 // ─── Grouped by date ───
 const groupedMatches = computed(() => {
-  const map: Record<string, Match[]> = {}
+  const map: Record<string, MatchItem[]> = {}
   filteredMatches.value.forEach(m => {
-    const key = locale.value === 'zh' ? m.dateLabel : m.dateLabelEn
+    const key = formatDateLabel(m.date, locale.value)
     if (!map[key]) map[key] = []
     map[key].push(m)
   })
@@ -398,8 +419,6 @@ const groupedMatches = computed(() => {
 })
 
 // ─── Calendar Logic ───
-const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
-
 const weekdayLabels = computed(() => {
   if (locale.value === 'zh') {
     return t('schedule.weekdays').split('')
@@ -413,16 +432,17 @@ const calendarCells = computed(() => {
   const firstDay = new Date(year, month - 1, 1).getDay()
   const daysInMonth = new Date(year, month, 0).getDate()
   const cells: { day: number | null; hasMatch: boolean; isSelected: boolean }[] = []
+  const monthKey = `${year}-${month}`
 
   for (let i = 0; i < firstDay; i++) {
     cells.push({ day: null, hasMatch: false, isSelected: false })
   }
   for (let d = 1; d <= daysInMonth; d++) {
-    const hasMatch = month === 6 ? matchDays.has(d) : (month === 7 && d <= 19)
+    const hasMatch = matchDaysByMonth.value[monthKey]?.has(d) ?? false
     cells.push({
       day: d,
       hasMatch,
-      isSelected: d === selectedCalendarDay.value && month === 6,
+      isSelected: d === selectedCalendarDay.value && month === calendarMonth.value,
     })
   }
   return cells

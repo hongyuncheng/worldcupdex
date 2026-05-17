@@ -76,8 +76,18 @@
       </div>
     </div>
 
+    <!-- Loading -->
+    <div v-if="pending" class="text-center py-16">
+      <p style="color: #999; font-size: 16px;">加载中...</p>
+    </div>
+
+    <!-- Error -->
+    <div v-else-if="error" class="text-center py-16">
+      <p style="color: #c00; font-size: 16px;">数据加载失败，请先运行 npm run fetch-data</p>
+    </div>
+
     <!-- No results -->
-    <div v-if="filteredTeams.length === 0" class="text-center py-16">
+    <div v-else-if="filteredTeams.length === 0" class="text-center py-16">
       <p style="color: #999; font-size: 16px;">{{ $t('teams.noResults') }}</p>
     </div>
 
@@ -91,7 +101,7 @@
         style="box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-radius: 12px; text-decoration: none; display: block;"
       >
         <img
-          :src="`https://flagcdn.com/w160/${team.code}.png`"
+          :src="team.flag"
           :alt="team.nameEn"
           class="mx-auto mb-3"
           style="width: 80px; height: 55px; object-fit: contain;"
@@ -143,80 +153,15 @@
 </template>
 
 <script setup lang="ts">
+import type { TeamListItem } from '~/types'
+
 const { t, locale } = useI18n()
 
-interface Team {
-  id: string
-  nameZh: string
-  nameEn: string
-  code: string
-  group: string
-  confederation: string
-  fifaRank: number
-}
+// 从 API 获取全部球队数据
+const { data: teamsResponse, pending, error } = useTeamList({ pageSize: 100 })
 
-const allTeams: Team[] = [
-  // Group A
-  { id: 'mx-a', nameZh: '墨西哥', nameEn: 'Mexico', code: 'mx', group: 'A', confederation: 'CONCACAF', fifaRank: 15 },
-  { id: 'ar-a', nameZh: '阿根廷', nameEn: 'Argentina', code: 'ar', group: 'A', confederation: 'CONMEBOL', fifaRank: 1 },
-  { id: 'pl-a', nameZh: '波兰', nameEn: 'Poland', code: 'pl', group: 'A', confederation: 'UEFA', fifaRank: 28 },
-  { id: 'sa-a', nameZh: '沙特阿拉伯', nameEn: 'Saudi Arabia', code: 'sa', group: 'A', confederation: 'AFC', fifaRank: 56 },
-  // Group B
-  { id: 'fr-b', nameZh: '法国', nameEn: 'France', code: 'fr', group: 'B', confederation: 'UEFA', fifaRank: 2 },
-  { id: 'us-b', nameZh: '美国', nameEn: 'USA', code: 'us', group: 'B', confederation: 'CONCACAF', fifaRank: 11 },
-  { id: 'en-b', nameZh: '英格兰', nameEn: 'England', code: 'gb-eng', group: 'B', confederation: 'UEFA', fifaRank: 4 },
-  { id: 'ir-b', nameZh: '伊朗', nameEn: 'Iran', code: 'ir', group: 'B', confederation: 'AFC', fifaRank: 22 },
-  // Group C
-  { id: 'br-c', nameZh: '巴西', nameEn: 'Brazil', code: 'br', group: 'C', confederation: 'CONMEBOL', fifaRank: 5 },
-  { id: 'de-c', nameZh: '德国', nameEn: 'Germany', code: 'de', group: 'C', confederation: 'UEFA', fifaRank: 12 },
-  { id: 'jp-c', nameZh: '日本', nameEn: 'Japan', code: 'jp', group: 'C', confederation: 'AFC', fifaRank: 18 },
-  { id: 'ma-c', nameZh: '摩洛哥', nameEn: 'Morocco', code: 'ma', group: 'C', confederation: 'CAF', fifaRank: 14 },
-  // Group D
-  { id: 'es-d', nameZh: '西班牙', nameEn: 'Spain', code: 'es', group: 'D', confederation: 'UEFA', fifaRank: 8 },
-  { id: 'nl-d', nameZh: '荷兰', nameEn: 'Netherlands', code: 'nl', group: 'D', confederation: 'UEFA', fifaRank: 7 },
-  { id: 'ec-d', nameZh: '厄瓜多尔', nameEn: 'Ecuador', code: 'ec', group: 'D', confederation: 'CONMEBOL', fifaRank: 32 },
-  { id: 'sn-d', nameZh: '塞内加尔', nameEn: 'Senegal', code: 'sn', group: 'D', confederation: 'CAF', fifaRank: 20 },
-  // Group E
-  { id: 'pt-e', nameZh: '葡萄牙', nameEn: 'Portugal', code: 'pt', group: 'E', confederation: 'UEFA', fifaRank: 6 },
-  { id: 'be-e', nameZh: '比利时', nameEn: 'Belgium', code: 'be', group: 'E', confederation: 'UEFA', fifaRank: 3 },
-  { id: 'kr-e', nameZh: '韩国', nameEn: 'South Korea', code: 'kr', group: 'E', confederation: 'AFC', fifaRank: 25 },
-  { id: 'gh-e', nameZh: '加纳', nameEn: 'Ghana', code: 'gh', group: 'E', confederation: 'CAF', fifaRank: 36 },
-  // Group F
-  { id: 'hr-f', nameZh: '克罗地亚', nameEn: 'Croatia', code: 'hr', group: 'F', confederation: 'UEFA', fifaRank: 10 },
-  { id: 'uy-f', nameZh: '乌拉圭', nameEn: 'Uruguay', code: 'uy', group: 'F', confederation: 'CONMEBOL', fifaRank: 16 },
-  { id: 'ca-f', nameZh: '加拿大', nameEn: 'Canada', code: 'ca', group: 'F', confederation: 'CONCACAF', fifaRank: 43 },
-  { id: 'cm-f', nameZh: '喀麦隆', nameEn: 'Cameroon', code: 'cm', group: 'F', confederation: 'CAF', fifaRank: 45 },
-  // Group G
-  { id: 'it-g', nameZh: '意大利', nameEn: 'Italy', code: 'it', group: 'G', confederation: 'UEFA', fifaRank: 9 },
-  { id: 'co-g', nameZh: '哥伦比亚', nameEn: 'Colombia', code: 'co', group: 'G', confederation: 'CONMEBOL', fifaRank: 17 },
-  { id: 'au-g', nameZh: '澳大利亚', nameEn: 'Australia', code: 'au', group: 'G', confederation: 'AFC', fifaRank: 27 },
-  { id: 'ng-g', nameZh: '尼日利亚', nameEn: 'Nigeria', code: 'ng', group: 'G', confederation: 'CAF', fifaRank: 30 },
-  // Group H
-  { id: 'dk-h', nameZh: '丹麦', nameEn: 'Denmark', code: 'dk', group: 'H', confederation: 'UEFA', fifaRank: 19 },
-  { id: 'ch-h', nameZh: '瑞士', nameEn: 'Switzerland', code: 'ch', group: 'H', confederation: 'UEFA', fifaRank: 13 },
-  { id: 'tn-h', nameZh: '突尼斯', nameEn: 'Tunisia', code: 'tn', group: 'H', confederation: 'CAF', fifaRank: 35 },
-  { id: 'cr-h', nameZh: '哥斯达黎加', nameEn: 'Costa Rica', code: 'cr', group: 'H', confederation: 'CONCACAF', fifaRank: 40 },
-  // Group I
-  { id: 'rs-i', nameZh: '塞尔维亚', nameEn: 'Serbia', code: 'rs', group: 'I', confederation: 'UEFA', fifaRank: 24 },
-  { id: 'wl-i', nameZh: '威尔士', nameEn: 'Wales', code: 'gb-wls', group: 'I', confederation: 'UEFA', fifaRank: 26 },
-  { id: 'id-i', nameZh: '印度尼西亚', nameEn: 'Indonesia', code: 'id', group: 'I', confederation: 'AFC', fifaRank: 134 },
-  { id: 'nz-i', nameZh: '新西兰', nameEn: 'New Zealand', code: 'nz', group: 'I', confederation: 'OFC', fifaRank: 93 },
-  // Group J
-  { id: 'se-j', nameZh: '瑞典', nameEn: 'Sweden', code: 'se', group: 'J', confederation: 'UEFA', fifaRank: 21 },
-  { id: 'cl-j', nameZh: '智利', nameEn: 'Chile', code: 'cl', group: 'J', confederation: 'CONMEBOL', fifaRank: 34 },
-  { id: 'tr-j', nameZh: '土耳其', nameEn: 'Turkey', code: 'tr', group: 'J', confederation: 'AFC', fifaRank: 38 },
-  { id: 'gn-j', nameZh: '几内亚', nameEn: 'Guinea', code: 'gn', group: 'J', confederation: 'CAF', fifaRank: 76 },
-  // Group K
-  { id: 'no-k', nameZh: '挪威', nameEn: 'Norway', code: 'no', group: 'K', confederation: 'UEFA', fifaRank: 47 },
-  { id: 'py-k', nameZh: '巴拉圭', nameEn: 'Paraguay', code: 'py', group: 'K', confederation: 'CONMEBOL', fifaRank: 50 },
-  { id: 'sau-k', nameZh: '沙特阿拉伯U23', nameEn: 'Saudi Arabia U23', code: 'sa', group: 'K', confederation: 'AFC', fifaRank: 60 },
-  { id: 'tz-k', nameZh: '坦桑尼亚', nameEn: 'Tanzania', code: 'tz', group: 'K', confederation: 'CAF', fifaRank: 108 },
-  // Group L
-  { id: 'sc-l', nameZh: '苏格兰', nameEn: 'Scotland', code: 'gb-sct', group: 'L', confederation: 'UEFA', fifaRank: 39 },
-  { id: 'pe-l', nameZh: '秘鲁', nameEn: 'Peru', code: 'pe', group: 'L', confederation: 'CONMEBOL', fifaRank: 31 },
-  { id: 'bh-l', nameZh: '巴林', nameEn: 'Bahrain', code: 'bh', group: 'L', confederation: 'AFC', fifaRank: 86 },
-  { id: 'ml-l', nameZh: '马里', nameEn: 'Mali', code: 'ml', group: 'L', confederation: 'CAF', fifaRank: 48 },
-]
+// 提取球队数组，保持与原来 allTeams 相同的使用方式
+const allTeams = computed<TeamListItem[]>(() => teamsResponse.value?.data ?? [])
 
 const groups = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L']
 const confederations = ['UEFA', 'CONMEBOL', 'CAF', 'AFC', 'CONCACAF', 'OFC']
@@ -231,7 +176,7 @@ const perPage = 12
 
 // Group tabs with counts
 const groupTabs = computed(() => {
-  const all = { value: null as string | null, label: `${t('teams.all')} (${allTeams.length})` }
+  const all = { value: null as string | null, label: `${t('teams.all')} (${allTeams.value.length})` }
   const groupItems = groups.map(g => ({
     value: g,
     label: locale.value === 'en' ? `Group ${g}` : `${g}${t('teams.groupSuffix')}`
@@ -242,7 +187,7 @@ const groupTabs = computed(() => {
 // Confederation tabs with counts
 const confederationTabs = computed(() => {
   return confederations.map(c => {
-    const count = allTeams.filter(team => team.confederation === c).length
+    const count = allTeams.value.filter(team => team.confederation === c).length
     return { value: c, label: `${c}(${count})` }
   })
 })
@@ -254,7 +199,7 @@ function toggleConfederation(value: string) {
 
 // Filtered and sorted teams
 const filteredTeams = computed(() => {
-  let result = [...allTeams]
+  let result = [...allTeams.value]
 
   // Group filter
   if (selectedGroup.value) {

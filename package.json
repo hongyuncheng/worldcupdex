@@ -7,7 +7,12 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "fetch-data": "node scripts/fetch-worldcup-data.mjs",
+    "enrich-data": "node scripts/enrich-data.mjs",
+    "fetch-recent": "node scripts/fetch-recent-matches.mjs",
+    "fetch-photos": "node scripts/fetch-player-photos.mjs",
+    "generate-predictions": "node scripts/generate-ai-predictions.mjs"
   },
   "dependencies": {
     "@nuxt/content": "^3.5.1",
@@ -17,6 +22,7 @@
     "@tailwindcss/vite": "^4.2.4",
     "daisyui": "^5.0.0",
     "fuse.js": "^7.3.0",
+    "html2canvas-pro": "^2.0.2",
     "nuxt": "^3.17.4",
     "sql.js": "^1.14.1",
     "tailwindcss": "^4.2.4",
@@ -24,6 +30,7 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@types/node": "^25.8.0",
     "@vite-pwa/nuxt": "^1.1.1"
   }
 }

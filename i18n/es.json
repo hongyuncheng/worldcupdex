@@ -8,7 +8,8 @@
     "news": "Noticias",
     "wiki": "Wiki",
     "venues": "Sedes",
-    "login": "Iniciar / Registrar"
+    "login": "Iniciar / Registrar",
+    "quiz": "Quiz IQ"
   },
   "hero": {
     "title": "FIFA WORLD CUP 2026™",
@@ -46,7 +47,14 @@
     "statsCitiesDesc": "Estadios de clase mundial en 3 países",
     "ctaTitle": "¿Quién levantará el trofeo?",
     "ctaSubtitle": "Participa en predicciones, sube en el ranking y gana honores exclusivos!",
-    "ctaButton": "Participar →"
+    "ctaButton": "Participar →",
+    "quizCta": "Pon a prueba tu IQ del Mundial",
+    "quizCtaSub": "¿Puedes superar al 90% de los fans?",
+    "fanCardCta": "Crea tu Tarjeta de Fan",
+    "fanCardCtaSub": "Muestra tus colores",
+    "ctaParticipants": "{count} personas participaron",
+    "startChallenge": "Comenzar →",
+    "generateCard": "Generar Ahora →"
   },
   "common": {
     "viewAll": "Ver todo",
@@ -71,7 +79,8 @@
     "searchPlaceholder": "Buscar equipo...",
     "sortByGroup": "Orden: Por Grupo",
     "sortByRank": "Orden: Por Ranking",
-    "noResults": "No se encontraron equipos"
+    "noResults": "No se encontraron equipos",
+    "becomeFan": "Hazte fan de {team}"
   },
   "matches": {
     "title": "Calendario de Partidos",
@@ -98,5 +107,60 @@
     "about": "Acerca de",
     "privacy": "Política de Privacidad",
     "terms": "Términos de Uso"
+  },
+  "quiz": {
+    "title": "Desafío IQ del Mundial",
+    "subtitle": "¿Cuánto sabes sobre el Mundial 2026?",
+    "startButton": "Comenzar",
+    "question": "Pregunta {current}/{total}",
+    "timeLeft": "{seconds}s restantes",
+    "correct": "¡Correcto!",
+    "wrong": "Incorrecto",
+    "resultTitle": "Tu IQ del Mundial",
+    "score": "{score} pts",
+    "percentile": "Mejor que el {percent}% de los fans",
+    "correctCount": "{correct}/{total} correctas",
+    "timeSpent": "Tiempo: {time}s",
+    "titleEncyclopedia": "Enciclopedia del Mundial",
+    "titleMaster": "Maestro Táctico",
+    "titleSenior": "Fan Experto",
+    "titleAmateur": "Aficionado",
+    "titleNewbie": "Espectador Casual",
+    "playAgain": "Jugar de Nuevo",
+    "participants": "{count} personas participaron hoy",
+    "rules": "5 preguntas \u00b7 30s cada una \u00b7 Resultados instant\u00e1neos",
+    "challengeFriends": "¿Puedes superar al 90% de los fans?"
+  },
+  "fanCard": {
+    "title": "Crea tu Tarjeta de Fan",
+    "subtitle": "Muestra tus colores antes de que comience el Mundial",
+    "step1Title": "Elige tu equipo",
+    "step2Title": "Elige tu jugador favorito",
+    "step3Title": "Tu Tarjeta de Fan",
+    "searchTeam": "Buscar equipos...",
+    "nickname": "Tu Apodo",
+    "nicknamePlaceholder": "Ingresa tu apodo",
+    "generate": "Generar Tarjeta",
+    "fanNumber": "No. de Fan",
+    "firstMatch": "Primer Partido",
+    "vs": "vs",
+    "cardTitle": "FAN CARD",
+    "buyJersey": "Comprar camiseta oficial de {team}",
+    "supportTeam": "Apoya a tu equipo, viste la camiseta oficial"
+  },
+  "share": {
+    "download": "Descargar Imagen",
+    "shareTo": "Compartir en",
+    "copyLink": "Copiar Enlace",
+    "copied": "¡Copiado!",
+    "twitter": "Twitter",
+    "facebook": "Facebook",
+    "whatsapp": "WhatsApp",
+    "reddit": "Reddit",
+    "nativeShare": "Compartir",
+    "alsoTry": "Tambi\u00e9n te puede interesar",
+    "tryQuiz": "Prueba tu IQ del Mundial",
+    "tryFanCard": "Crea tu Tarjeta de Fan",
+    "viewTeam": "Ver Detalles del Equipo"
   }
 }

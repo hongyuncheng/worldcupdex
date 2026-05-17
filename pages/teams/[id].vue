@@ -1,5 +1,17 @@
 <template>
   <div style="background: #FAFAFA; min-height: 100vh;">
+    <!-- Loading -->
+    <div v-if="pending" class="flex items-center justify-center" style="min-height: 60vh;">
+      <div class="animate-spin w-10 h-10 border-4 border-gray-200 border-t-[#FFD700] rounded-full"></div>
+    </div>
+    <!-- Error -->
+    <div v-else-if="error" class="flex flex-col items-center justify-center" style="min-height: 60vh;">
+      <div style="font-size: 48px; margin-bottom: 16px;">⚠️</div>
+      <p style="font-size: 18px; color: #666;">{{ error.statusCode === 404 ? '找不到该球队' : '加载失败' }}</p>
+      <NuxtLinkLocale to="/teams" style="margin-top: 16px; color: #000F49; font-weight: 600;">返回球队列表</NuxtLinkLocale>
+    </div>
+    <!-- Content -->
+    <template v-else-if="team">
     <!-- Breadcrumb -->
     <div class="max-w-7xl mx-auto px-4 lg:px-8" style="padding-top: 20px; padding-bottom: 16px;">
       <nav style="font-size: 13px; color: #999;">
@@ -41,20 +53,16 @@
               <!-- Key Stats Row -->
               <div style="display: flex; flex-wrap: wrap; gap: 24px;">
                 <div>
-                  <div style="font-size: 13px; color: rgba(255,255,255,0.55);">{{ $t('teams.appearances') }}</div>
-                  <div class="font-bold text-white" style="font-size: 16px;">{{ team.appearances }}{{ $t('teams.times') }}</div>
-                </div>
-                <div>
-                  <div style="font-size: 13px; color: rgba(255,255,255,0.55);">{{ $t('teams.bestResult') }}</div>
-                  <div class="font-bold text-white" style="font-size: 16px;">{{ $t('teams.champion') }} ({{ team.bestYears }})</div>
-                </div>
-                <div>
                   <div style="font-size: 13px; color: rgba(255,255,255,0.55);">{{ $t('teams.fifaRanking') }}</div>
                   <div class="font-bold text-white" style="font-size: 16px;">#{{ team.fifaRank }}</div>
                 </div>
                 <div>
                   <div style="font-size: 13px; color: rgba(255,255,255,0.55);">{{ $t('teams.confederation') }}</div>
                   <div class="font-bold text-white" style="font-size: 16px;">{{ team.confederation }}</div>
+                </div>
+                <div>
+                  <div style="font-size: 13px; color: rgba(255,255,255,0.55);">{{ $t('teams.founded') }}</div>
+                  <div class="font-bold text-white" style="font-size: 16px;">{{ team.founded }}</div>
                 </div>
               </div>
             </div>
@@ -86,392 +94,276 @@
       </div>
     </div>
 
-    <!-- Tabs -->
-    <div class="max-w-7xl mx-auto px-4 lg:px-8">
-      <div class="flex gap-6 border-b" style="border-color: #E0E0E0;">
-        <button
-          v-for="tab in tabs"
-          :key="tab.key"
-          class="py-3 px-1 text-sm font-semibold transition-colors relative cursor-pointer"
-          :style="activeTab === tab.key
-            ? 'color: #000F49;'
-            : 'color: #999;'"
-          @click="activeTab = tab.key"
-        >
-          {{ tab.label }}
-          <span
-            v-if="activeTab === tab.key"
-            class="absolute bottom-0 left-0 right-0 h-[3px] rounded-t"
-            style="background: #000F49;"
-          ></span>
-        </button>
-      </div>
-    </div>
-
-    <!-- Tab Content -->
+    <!-- Content Area -->
     <div class="max-w-7xl mx-auto px-4 lg:px-8 py-6">
-      <!-- Overview Tab -->
-      <div v-if="activeTab === 'overview'" class="overview-grid">
-        <!-- Left Column -->
-        <div class="overview-left" style="display: flex; flex-direction: column; gap: 24px;">
-          <!-- Team Info Card -->
-          <div class="bg-white rounded-xl p-5" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-            <h3 class="font-bold mb-4" style="font-family: 'Montserrat', sans-serif; font-size: 16px; color: #000F49;">{{ $t('teams.teamInfo') }}</h3>
-            <div class="flex flex-col gap-3.5">
-              <div class="flex items-start gap-3">
-                <span style="font-size: 16px;">📅</span>
-                <div class="flex-1 flex items-center justify-between">
-                  <span style="font-size: 13px; color: #666;">{{ $t('teams.founded') }}</span>
-                  <span class="font-semibold" style="font-size: 13px; color: #333;">{{ team.founded }}{{ locale === 'zh' ? '年' : '' }}</span>
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <span style="font-size: 16px;">🌐</span>
-                <div class="flex-1 flex items-center justify-between">
-                  <span style="font-size: 13px; color: #666;">{{ $t('teams.joinedFifa') }}</span>
-                  <span class="font-semibold" style="font-size: 13px; color: #333;">{{ team.joinedFifa }}{{ locale === 'zh' ? '年' : '' }}</span>
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <span style="font-size: 16px;">👔</span>
-                <div class="flex-1">
-                  <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px;">
-                    <span style="font-size: 13px; color: #666; white-space: nowrap; flex-shrink: 0;">{{ $t('teams.headCoach') }}</span>
-                    <span class="font-semibold" style="font-size: 13px; color: #333; text-align: right;">{{ locale === 'en' ? team.coachEn : team.coachZh }}</span>
-                  </div>
-                  <div style="font-size: 12px; color: #999; text-align: right;">{{ locale === 'en' ? team.coachZh : team.coachEn }}</div>
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <span style="font-size: 16px;">©️</span>
-                <div class="flex-1">
-                  <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px;">
-                    <span style="font-size: 13px; color: #666; white-space: nowrap; flex-shrink: 0;">{{ $t('teams.captain') }}</span>
-                    <span class="font-semibold" style="font-size: 13px; color: #333; text-align: right;">{{ locale === 'en' ? team.captainEn : team.captainZh }}</span>
-                  </div>
-                  <div style="font-size: 12px; color: #999; text-align: right;">{{ locale === 'en' ? team.captainZh : team.captainEn }}</div>
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <span style="font-size: 16px;">🏟️</span>
-                <div class="flex-1">
-                  <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px;">
-                    <span style="font-size: 13px; color: #666; white-space: nowrap; flex-shrink: 0;">{{ $t('teams.homeStadium') }}</span>
-                    <span class="font-semibold" style="font-size: 13px; color: #333; text-align: right;">{{ locale === 'en' ? team.stadiumEn : team.stadiumZh }}</span>
-                  </div>
-                  <div style="font-size: 12px; color: #999; text-align: right;">{{ locale === 'en' ? team.stadiumLocationEn : team.stadiumLocationZh }}</div>
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <span style="font-size: 16px;">⚡</span>
-                <div style="flex: 1; display: flex; justify-content: space-between; align-items: center; gap: 8px;">
-                  <span style="font-size: 13px; color: #666; white-space: nowrap; flex-shrink: 0;">{{ $t('teams.nickname') }}</span>
-                  <span class="font-semibold" style="font-size: 13px; color: #333; text-align: right;">{{ locale === 'en' ? team.nicknameEn : team.nicknameZh }}</span>
-                </div>
-              </div>
-              <div class="flex items-start gap-3">
-                <span style="font-size: 16px;">🎨</span>
-                <div class="flex-1 flex items-center justify-between">
-                  <span style="font-size: 13px; color: #666;">{{ $t('teams.teamColors') }}</span>
-                  <div class="flex items-center gap-1.5">
-                    <span v-for="(color, i) in team.colors" :key="i" class="inline-block w-4 h-4 rounded-full border" :style="`background: ${color}; border-color: #ddd;`"></span>
-                    <span style="font-size: 12px; color: #999; margin-left: 4px;">{{ locale === 'en' ? team.colorNameEn : team.colorNameZh }}</span>
-                  </div>
-                </div>
+      <!-- Fan Actions -->
+      <div class="flex flex-wrap items-center gap-3 mb-6">
+        <NuxtLinkLocale
+          :to="`/fan-card?team=${team.code}`"
+          class="inline-flex items-center gap-2 font-bold hover:opacity-90 transition-opacity"
+          style="background: #FFD700; color: #000F49; font-family: 'Montserrat', sans-serif; font-size: 14px; border-radius: 8px; padding: 10px 20px;"
+        >
+          ⚽ {{ $t('teams.becomeFan', { team: locale === 'en' ? team.nameEn : team.nameZh }) }}
+        </NuxtLinkLocale>
+        <!-- Fanatics Affiliate Placeholder -->
+        <a
+          href="#"
+          class="inline-flex items-center gap-2 font-semibold hover:opacity-90 transition-opacity"
+          style="border: 1px solid #FFD700; color: #FFD700; font-family: 'Inter', sans-serif; font-size: 14px; border-radius: 8px; padding: 10px 20px; background: transparent;"
+        >
+          👕 {{ $t('fanCard.buyJersey', { team: locale === 'en' ? team.nameEn : team.nameZh }) }}
+        </a>
+      </div>
+      <!-- Top: Team Info + Key Stats (two-column) -->
+      <div class="info-stats-grid">
+        <!-- Left: Team Info Card -->
+        <div class="bg-white rounded-xl p-6" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+          <h3 class="font-bold mb-5" style="font-family: 'Montserrat', sans-serif; font-size: 16px; color: #000F49;">{{ $t('teams.teamInfo') }}</h3>
+          <div class="flex flex-col gap-4">
+            <div class="flex items-center gap-3">
+              <span style="font-size: 18px;">📅</span>
+              <div class="flex-1 flex items-center justify-between">
+                <span style="font-size: 14px; color: #666;">{{ $t('teams.founded') }}</span>
+                <span class="font-semibold" style="font-size: 14px; color: #333;">{{ team.founded }}{{ locale === 'zh' ? '年' : '' }}</span>
               </div>
             </div>
-          </div>
-          <!-- Honors Card -->
-          <div class="bg-white rounded-xl p-5" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06); flex: 1; display: flex; flex-direction: column;">
-            <h3 class="font-bold mb-4" style="font-family: 'Montserrat', sans-serif; font-size: 16px; color: #000F49;">{{ $t('teams.honors') }}</h3>
-            <div class="flex flex-col gap-3" style="flex: 1;">
-              <div v-for="(honor, i) in team.honors" :key="i" class="flex items-center gap-2">
-                <span style="font-size: 16px;">🏆</span>
-                <span class="flex-1" style="font-size: 13px; color: #333;">{{ locale === 'en' ? honor.nameEn : honor.nameZh }}</span>
-                <span class="font-semibold" style="font-size: 13px; color: #000F49;">{{ honor.count }}{{ locale === 'zh' ? '次' : '' }} {{ honor.years ? `(${honor.years})` : '' }}</span>
+            <div class="flex items-start gap-3">
+              <span style="font-size: 18px;">👔</span>
+              <div class="flex-1">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px;">
+                  <span style="font-size: 14px; color: #666; white-space: nowrap; flex-shrink: 0;">{{ $t('teams.headCoach') }}</span>
+                  <span class="font-semibold" style="font-size: 14px; color: #333; text-align: right;">{{ locale === 'en' ? team.coach.nameEn : team.coach.nameZh }}</span>
+                </div>
+                <div style="font-size: 12px; color: #999; text-align: right;">{{ locale === 'en' ? team.coach.nameZh : team.coach.nameEn }}</div>
               </div>
             </div>
-            <div class="btn-view-more-wrapper">
-              <button class="btn-view-more">{{ $t('teams.viewAllHonors') }}</button>
+            <div class="flex items-center gap-3">
+              <span style="font-size: 18px;">🌐</span>
+              <div class="flex-1 flex items-center justify-between">
+                <span style="font-size: 14px; color: #666;">{{ $t('teams.confederation') }}</span>
+                <span class="font-semibold" style="font-size: 14px; color: #333;">{{ team.confederation }}</span>
+              </div>
+            </div>
+            <div v-if="team.venue" class="flex items-center gap-3">
+              <span style="font-size: 18px;">🏟️</span>
+              <div class="flex-1">
+                <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px;">
+                  <span style="font-size: 14px; color: #666; white-space: nowrap; flex-shrink: 0;">{{ $t('teams.homeStadium') }}</span>
+                  <span class="font-semibold" style="font-size: 14px; color: #333; text-align: right;">{{ team.venue }}</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Center Column -->
-        <div class="overview-center" style="display: flex; flex-direction: column; gap: 24px;">
-          <!-- Key Stats Card -->
-          <div class="bg-white rounded-xl p-5" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-            <div class="flex items-center justify-between mb-4">
-              <h3 class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 16px; color: #000F49;">{{ $t('teams.keyStats') }}</h3>
-              <span style="font-size: 12px; color: #999;">{{ $t('teams.asOf') }}</span>
+        <!-- Right: Key Stats Card -->
+        <div class="bg-white rounded-xl p-6" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+          <h3 class="font-bold mb-5" style="font-family: 'Montserrat', sans-serif; font-size: 16px; color: #000F49;">{{ $t('teams.keyStats') }}</h3>
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; text-align: center;">
+            <div style="padding: 12px; background: #FFFBEA; border-radius: 12px;">
+              <div class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 32px; color: #FFD700;">#{{ team.fifaRank }}</div>
+              <div style="font-size: 12px; color: #666; margin-top: 4px;">{{ $t('teams.fifaRanking') }}</div>
             </div>
-            <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; text-align: center;">
-              <div>
-                <div class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 28px; color: #FFD700;">{{ team.stats.ranking }}</div>
-                <div style="font-size: 12px; color: #666;">{{ $t('teams.fifaRanking') }}</div>
-                <div style="font-size: 11px; color: #999;">{{ $t('teams.worldRanking') }}</div>
-              </div>
-              <div>
-                <div class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 28px; color: #FFD700;">{{ team.stats.points }}</div>
-                <div style="font-size: 12px; color: #666;">{{ locale === 'zh' ? '积分' : 'Points' }}</div>
-                <div style="font-size: 11px; color: #999;">{{ $t('teams.fifaPoints') }}</div>
-              </div>
-              <div>
-                <div class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 28px; color: #FFD700;">{{ team.stats.winRate }}</div>
-                <div style="font-size: 12px; color: #666;">{{ $t('teams.winRate') }}</div>
-                <div style="font-size: 11px; color: #999;">{{ $t('teams.last50') }}</div>
-              </div>
-              <div>
-                <div class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 28px; color: #FFD700;">{{ team.stats.goalsPerMatch }}</div>
-                <div style="font-size: 12px; color: #666;">{{ $t('teams.goalsPerMatch') }}</div>
-                <div style="font-size: 11px; color: #999;">{{ $t('teams.last50') }}</div>
-              </div>
-              <div>
-                <div class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 28px; color: #FFD700;">{{ team.stats.concededPerMatch }}</div>
-                <div style="font-size: 12px; color: #666;">{{ $t('teams.concededPerMatch') }}</div>
-                <div style="font-size: 11px; color: #999;">{{ $t('teams.last50') }}</div>
-              </div>
+            <div style="padding: 12px; background: #EEF2FF; border-radius: 12px;">
+              <div class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 32px; color: #000F49;">{{ team.group }}</div>
+              <div style="font-size: 12px; color: #666; margin-top: 4px;">{{ $t('teams.worldCupGroup') }}</div>
             </div>
-          </div>
-
-          <!-- Recent Matches Card -->
-          <div class="bg-white rounded-xl p-5" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-            <h3 class="font-bold mb-4" style="font-family: 'Montserrat', sans-serif; font-size: 16px; color: #000F49;">{{ $t('teams.recentMatches') }}</h3>
-            <div class="overflow-x-auto">
-              <table class="w-full" style="font-size: 13px;">
-                <tbody>
-                  <tr v-for="(match, i) in team.recentMatches" :key="i" class="border-b last:border-b-0" style="border-color: #F0F0F0;">
-                    <td class="py-2.5 pr-2" style="color: #999; white-space: nowrap; font-size: 12px;">
-                      {{ match.date }}<br>
-                      <span style="font-size: 11px;">{{ locale === 'en' ? match.competitionEn : match.competitionZh }}</span>
-                    </td>
-                    <td class="py-2.5 px-2">
-                      <div class="flex items-center gap-1.5">
-                        <img :src="`https://flagcdn.com/w40/${match.homeCode}.png`" style="width: 20px; height: 14px; object-fit: cover; border-radius: 1px;" />
-                        <span :class="match.homeCode === team.code ? 'font-semibold' : ''" style="color: #333;">{{ locale === 'en' ? match.homeEn : match.homeZh }}</span>
-                      </div>
-                    </td>
-                    <td class="py-2.5 px-2 text-center font-bold" style="color: #000F49; white-space: nowrap;">{{ match.score }}</td>
-                    <td class="py-2.5 px-2">
-                      <div class="flex items-center gap-1.5">
-                        <img :src="`https://flagcdn.com/w40/${match.awayCode}.png`" style="width: 20px; height: 14px; object-fit: cover; border-radius: 1px;" />
-                        <span :class="match.awayCode === team.code ? 'font-semibold' : ''" style="color: #333;">{{ locale === 'en' ? match.awayEn : match.awayZh }}</span>
-                      </div>
-                    </td>
-                    <td class="py-2.5 pl-2 text-right">
-                      <span
-                        class="inline-block px-2.5 py-0.5 rounded-full text-xs font-bold text-white"
-                        :style="match.result === 'win' ? 'background: #4CAF50;' : match.result === 'loss' ? 'background: #F44336;' : 'background: #FF9800;'"
-                      >
-                        {{ match.result === 'win' ? $t('teams.win') : match.result === 'loss' ? $t('teams.loss') : $t('teams.draw') }}
-                      </span>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+            <div style="padding: 12px; background: #F0FDF4; border-radius: 12px;">
+              <div class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 32px; color: #16A34A;">{{ team.squad?.length || 0 }}</div>
+              <div style="font-size: 12px; color: #666; margin-top: 4px;">{{ locale === 'en' ? 'Squad Size' : '球队人数' }}</div>
             </div>
-            <div class="btn-view-more-wrapper">
-              <button class="btn-view-more">{{ $t('teams.viewAllMatches') }}</button>
-            </div>
-          </div>
-
-          <!-- World Cup History Card -->
-          <div class="bg-white rounded-xl p-5" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06); flex: 1; display: flex; flex-direction: column;">
-            <h3 class="font-bold mb-4" style="font-family: 'Montserrat', sans-serif; font-size: 16px; color: #000F49;">{{ $t('teams.worldCupHistory') }}</h3>
-            <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; text-align: center; margin-bottom: 20px;">
-              <div v-for="(stat, i) in team.wcStats" :key="i">
-                <div class="font-bold" :style="`font-family: 'Montserrat', sans-serif; font-size: 24px; color: ${i === 0 ? '#FFD700' : '#000F49'};`">{{ stat.value }}</div>
-                <div style="font-size: 11px; color: #666;">{{ locale === 'en' ? stat.labelEn : stat.labelZh }}</div>
-              </div>
-            </div>
-            <div style="display: flex; flex-wrap: wrap; gap: 16px; margin-bottom: 16px; padding-top: 12px; border-top: 1px solid #F0F0F0;">
-              <div class="flex items-center gap-2">
-                <span style="font-size: 18px;">🏆</span>
-                <div>
-                  <div style="font-size: 12px; color: #999;">{{ $t('teams.wcBestResult') }}</div>
-                  <div class="font-bold" style="font-size: 14px; color: #000F49;">{{ $t('teams.champion') }} {{ team.bestYears }}</div>
-                </div>
-              </div>
-              <div class="flex items-center gap-2">
-                <span style="font-size: 18px;">⚽</span>
-                <div>
-                  <div style="font-size: 12px; color: #999;">{{ $t('teams.wcLatest') }}</div>
-                  <div class="font-bold" style="font-size: 14px; color: #000F49;">2022 {{ locale === 'zh' ? '卡塔尔世界杯' : 'Qatar World Cup' }} 🏆 {{ $t('teams.champion') }}</div>
-                </div>
-              </div>
-            </div>
-            <div class="btn-view-more-wrapper" style="margin-top: auto; padding-top: 16px;">
-              <button class="btn-view-more">{{ $t('teams.viewDetailHistory') }}</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Column -->
-        <div class="overview-right" style="display: flex; flex-direction: column; gap: 24px;">
-          <!-- Key Players Card -->
-          <div class="bg-white rounded-xl p-5" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-            <h3 class="font-bold mb-4" style="font-family: 'Montserrat', sans-serif; font-size: 16px; color: #000F49;">{{ $t('teams.keyPlayers') }}</h3>
-            <div class="flex flex-col gap-3">
-              <div v-for="(player, i) in team.keyPlayers" :key="i" class="flex items-center gap-3">
-                <img
-                  :src="`https://ui-avatars.com/api/?name=${encodeURIComponent(player.nameEn)}&background=000F49&color=fff&size=80`"
-                  :alt="player.nameEn"
-                  class="flex-shrink-0 rounded-full"
-                  style="width: 40px; height: 40px; object-fit: cover;"
-                />
-                <div class="flex-1 min-w-0">
-                  <div class="font-semibold truncate" style="font-size: 13px; color: #333;">{{ locale === 'en' ? player.nameEn : player.nameZh }}</div>
-                  <div class="truncate" style="font-size: 11px; color: #999;">{{ locale === 'en' ? player.nameZh : player.nameEn }}</div>
-                </div>
-                <div class="text-right flex-shrink-0">
-                  <div style="font-size: 12px; color: #666;">{{ locale === 'en' ? player.positionEn : player.positionZh }}</div>
-                </div>
-                <div class="font-bold flex-shrink-0" style="font-size: 14px; color: #000F49; min-width: 24px; text-align: right;">{{ player.number }}</div>
-              </div>
-            </div>
-            <div class="btn-view-more-wrapper">
-              <button class="btn-view-more">{{ $t('teams.viewFullSquad') }}</button>
-            </div>
-          </div>
-
-          <!-- Formation Card -->
-          <div class="bg-white rounded-xl p-5" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06); flex: 1;">
-            <div class="flex items-center justify-between mb-4">
-              <h3 class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 16px; color: #000F49;">{{ $t('teams.formation') }}</h3>
-              <span class="font-bold" style="font-size: 16px; color: #333;">4-3-3</span>
-            </div>
-            <!-- Football pitch -->
-            <div class="relative mx-auto" style="width: 100%; aspect-ratio: 3/4; background: #2E7D32; border-radius: 8px; overflow: hidden;">
-              <!-- Pitch lines -->
-              <div class="absolute inset-2" style="border: 2px solid rgba(255,255,255,0.4); border-radius: 4px;"></div>
-              <!-- Center line -->
-              <div class="absolute left-2 right-2" style="top: 50%; height: 2px; background: rgba(255,255,255,0.4);"></div>
-              <!-- Center circle -->
-              <div class="absolute" style="top: 50%; left: 50%; width: 60px; height: 60px; transform: translate(-50%, -50%); border: 2px solid rgba(255,255,255,0.4); border-radius: 50%;"></div>
-              <!-- Top penalty area -->
-              <div class="absolute" style="top: 8px; left: 50%; transform: translateX(-50%); width: 55%; height: 18%; border: 2px solid rgba(255,255,255,0.4); border-radius: 0 0 2px 2px;"></div>
-              <!-- Bottom penalty area -->
-              <div class="absolute" style="bottom: 8px; left: 50%; transform: translateX(-50%); width: 55%; height: 18%; border: 2px solid rgba(255,255,255,0.4); border-radius: 2px 2px 0 0;"></div>
-              <!-- Players - 4-3-3 formation (attacking upward) -->
-              <!-- GK -->
-              <div class="absolute flex items-center justify-center rounded-full text-white text-xs font-bold" style="width: 28px; height: 28px; background: #000F49; border: 2px solid #FFD700; bottom: 6%; left: 50%; transform: translateX(-50%);">23</div>
-              <!-- Defenders (4) -->
-              <div class="absolute flex items-center justify-center rounded-full text-white text-xs font-bold" style="width: 28px; height: 28px; background: #000F49; border: 2px solid white; bottom: 22%; left: 12%;">3</div>
-              <div class="absolute flex items-center justify-center rounded-full text-white text-xs font-bold" style="width: 28px; height: 28px; background: #000F49; border: 2px solid white; bottom: 22%; left: 35%;">19</div>
-              <div class="absolute flex items-center justify-center rounded-full text-white text-xs font-bold" style="width: 28px; height: 28px; background: #000F49; border: 2px solid white; bottom: 22%; right: 35%;">13</div>
-              <div class="absolute flex items-center justify-center rounded-full text-white text-xs font-bold" style="width: 28px; height: 28px; background: #000F49; border: 2px solid white; bottom: 22%; right: 12%;">26</div>
-              <!-- Midfielders (3) -->
-              <div class="absolute flex items-center justify-center rounded-full text-white text-xs font-bold" style="width: 28px; height: 28px; background: #000F49; border: 2px solid white; bottom: 44%; left: 18%;">7</div>
-              <div class="absolute flex items-center justify-center rounded-full text-white text-xs font-bold" style="width: 28px; height: 28px; background: #000F49; border: 2px solid white; bottom: 44%; left: 50%; transform: translateX(-50%);">24</div>
-              <div class="absolute flex items-center justify-center rounded-full text-white text-xs font-bold" style="width: 28px; height: 28px; background: #000F49; border: 2px solid white; bottom: 44%; right: 18%;">20</div>
-              <!-- Forwards (3) -->
-              <div class="absolute flex items-center justify-center rounded-full text-white text-xs font-bold" style="width: 28px; height: 28px; background: #1565C0; border: 2px solid #FFD700; top: 14%; left: 15%;">10</div>
-              <div class="absolute flex items-center justify-center rounded-full text-white text-xs font-bold" style="width: 28px; height: 28px; background: #1565C0; border: 2px solid #FFD700; top: 14%; left: 50%; transform: translateX(-50%);">22</div>
-              <div class="absolute flex items-center justify-center rounded-full text-white text-xs font-bold" style="width: 28px; height: 28px; background: #1565C0; border: 2px solid #FFD700; top: 14%; right: 15%;">11</div>
+            <div style="padding: 12px; background: #FFF1F2; border-radius: 12px;">
+              <div class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 32px; color: #E11D48;">{{ averageAge }}</div>
+              <div style="font-size: 12px; color: #666; margin-top: 4px;">{{ locale === 'en' ? 'Avg Age' : '平均年龄' }}</div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Other tabs placeholder -->
-      <div v-else class="text-center py-20">
-        <div style="font-size: 48px; margin-bottom: 16px;">🚧</div>
-        <p style="font-size: 18px; color: #666; font-family: 'Montserrat', sans-serif; font-weight: 600;">{{ $t('teams.tabPlaceholder') }}</p>
+      <!-- Bottom: Full Squad -->
+      <div class="bg-white rounded-xl p-6 mt-6" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
+          <h3 class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 18px; color: #000F49;">
+            {{ $t('teams.squad') }} ({{ team.squad?.length || 0 }})
+          </h3>
+          <!-- Position Filter -->
+          <div class="flex flex-wrap gap-2">
+            <button
+              v-for="pos in positionGroups"
+              :key="pos.key"
+              :class="['btn btn-sm', selectedPosition === pos.key ? 'btn-primary' : 'btn-ghost']"
+              style="border-radius: 999px;"
+              @click="selectedPosition = pos.key"
+            >
+              {{ pos.label }} ({{ pos.count }})
+            </button>
+          </div>
+        </div>
+
+        <!-- Player Grid -->
+        <div class="player-grid">
+          <div
+            v-for="player in filteredSquad"
+            :key="player.name"
+            class="bg-base-100 rounded-xl p-4 flex flex-col items-center text-center transition-shadow hover:shadow-md"
+            style="border: 1px solid #f0f0f0;"
+          >
+            <!-- Player Photo -->
+            <div class="w-16 h-16 rounded-full overflow-hidden flex items-center justify-center mb-3 flex-shrink-0" style="background: rgba(0,15,73,0.08);">
+              <img
+                v-if="player.photo && !photoErrors.has(player.name)"
+                :src="player.photo"
+                :alt="player.name"
+                class="w-full h-full object-cover"
+                loading="lazy"
+                @error="() => photoErrors.add(player.name)"
+              />
+              <img
+                v-else
+                :src="`https://ui-avatars.com/api/?name=${encodeURIComponent(player.name)}&background=000F49&color=fff&size=128`"
+                :alt="player.name"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <!-- Player Name -->
+            <div class="font-semibold truncate w-full" style="font-size: 14px; color: #333;">{{ getPlayerDisplayName(player).primary }}</div>
+            <div v-if="getPlayerDisplayName(player).secondary" class="truncate w-full" style="font-size: 12px; color: #999; margin-top: 2px;">{{ getPlayerDisplayName(player).secondary }}</div>
+            <!-- Position Badge -->
+            <span
+              class="inline-block mt-2 px-2.5 py-0.5 rounded-full text-xs font-semibold text-white"
+              :style="{ background: getPositionColor(player.position) }"
+            >
+              {{ locale === 'en' ? player.position : player.positionZh }}
+            </span>
+            <!-- Age & Nationality -->
+            <div class="flex items-center gap-3 mt-2" style="font-size: 12px; color: #666;">
+              <span>{{ getPlayerAge(player.dateOfBirth) }}{{ locale === 'zh' ? '岁' : '' }}</span>
+              <span>{{ player.nationality }}</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+    </template>
   </div>
 </template>
 
 <script setup lang="ts">
+import type { TeamDetail, SquadPlayer } from '~/types'
+
 const { t, locale } = useI18n()
 const route = useRoute()
 
-const activeTab = ref('overview')
+const teamId = computed(() => route.params.id as string)
 
-const tabs = computed(() => [
-  { key: 'overview', label: t('teams.overview') },
-  { key: 'squad', label: t('teams.squad') },
-  { key: 'history', label: t('teams.matchHistory') },
-  { key: 'stats', label: t('teams.statistics') },
-  { key: 'news', label: t('teams.newsTab') },
-])
+// Fetch team detail from API
+const { data: team, pending, error } = useTeamDetail(teamId)
 
-// Mock data for Argentina
-const team = {
-  id: 'argentina',
-  nameZh: '阿根廷',
-  nameEn: 'Argentina',
-  code: 'ar',
-  group: 'A',
-  confederation: 'CONMEBOL',
-  fifaRank: 1,
-  appearances: 18,
-  bestYears: '1978, 1986',
-  founded: 1893,
-  joinedFifa: 1912,
-  coachZh: '莱昂内尔·斯卡洛尼',
-  coachEn: 'Lionel Scaloni',
-  captainZh: '莱昂内尔·梅西',
-  captainEn: 'Lionel Messi',
-  stadiumZh: '纪念碑球场 (Estadio Monumental)',
-  stadiumEn: 'Estadio Monumental',
-  stadiumLocationZh: '布宜诺斯艾利斯, 阿根廷',
-  stadiumLocationEn: 'Buenos Aires, Argentina',
-  nicknameZh: '潘帕斯雄鹰 (La Albiceleste)',
-  nicknameEn: 'La Albiceleste',
-  colors: ['#75AADB', '#FFFFFF'],
-  colorNameZh: '天蓝白',
-  colorNameEn: 'Sky Blue & White',
-  honors: [
-    { nameZh: '世界杯冠军', nameEn: 'World Cup', count: 2, years: '1978, 1986' },
-    { nameZh: '美洲杯冠军', nameEn: 'Copa América', count: 15, years: '' },
-    { nameZh: '联合会杯冠军', nameEn: 'Confederations Cup', count: 1, years: '1992' },
-    { nameZh: '联美杯冠军', nameEn: 'CONMEBOL–UEFA Cup', count: 1, years: '1993' },
-  ],
-  stats: {
-    ranking: 1,
-    points: '1855.2',
-    winRate: '85.7%',
-    goalsPerMatch: '2.1',
-    concededPerMatch: '0.8',
-  },
-  recentMatches: [
-    { date: '2024-03-21', competitionZh: '友谊赛', competitionEn: 'Friendly', homeZh: '阿根廷', homeEn: 'Argentina', homeCode: 'ar', score: '3 - 1', awayZh: '哥斯达黎加', awayEn: 'Costa Rica', awayCode: 'cr', result: 'win' },
-    { date: '2024-03-23', competitionZh: '友谊赛', competitionEn: 'Friendly', homeZh: '阿根廷', homeEn: 'Argentina', homeCode: 'ar', score: '2 - 0', awayZh: '萨尔瓦多', awayEn: 'El Salvador', awayCode: 'sv', result: 'win' },
-    { date: '2023-11-22', competitionZh: '友谊赛', competitionEn: 'Friendly', homeZh: '阿根廷', homeEn: 'Argentina', homeCode: 'ar', score: '1 - 0', awayZh: '巴西', awayEn: 'Brazil', awayCode: 'br', result: 'win' },
-    { date: '2023-11-17', competitionZh: '世预赛', competitionEn: 'WC Qualifier', homeZh: '阿根廷', homeEn: 'Argentina', homeCode: 'ar', score: '0 - 2', awayZh: '乌拉圭', awayEn: 'Uruguay', awayCode: 'uy', result: 'loss' },
-    { date: '2023-10-18', competitionZh: '友谊赛', competitionEn: 'Friendly', homeZh: '阿根廷', homeEn: 'Argentina', homeCode: 'ar', score: '1 - 0', awayZh: '秘鲁', awayEn: 'Peru', awayCode: 'pe', result: 'win' },
-  ],
-  wcStats: [
-    { value: 18, labelZh: '参赛次数', labelEn: 'Appearances' },
-    { value: 81, labelZh: '总场次', labelEn: 'Matches' },
-    { value: 46, labelZh: '胜场', labelEn: 'Wins' },
-    { value: 17, labelZh: '平场', labelEn: 'Draws' },
-    { value: 18, labelZh: '负场', labelEn: 'Losses' },
-    { value: 137, labelZh: '进球', labelEn: 'Goals' },
-    { value: 80, labelZh: '失球', labelEn: 'Conceded' },
-  ],
-  keyPlayers: [
-    { nameZh: '莱昂内尔·梅西', nameEn: 'Lionel Messi', positionZh: '前锋', positionEn: 'Forward', number: 10 },
-    { nameZh: '劳塔罗·马丁内斯', nameEn: 'Lautaro Martinez', positionZh: '前锋', positionEn: 'Forward', number: 22 },
-    { nameZh: '罗德里戈·德保罗', nameEn: 'Rodrigo De Paul', positionZh: '中场', positionEn: 'Midfielder', number: 7 },
-    { nameZh: '恩佐·费尔南德斯', nameEn: 'Enzo Fernández', positionZh: '中场', positionEn: 'Midfielder', number: 24 },
-    { nameZh: '克里斯蒂安·罗梅罗', nameEn: 'Cristian Romero', positionZh: '后卫', positionEn: 'Defender', number: 13 },
-  ],
+const selectedPosition = ref('all')
+
+// Track photo load errors for fallback
+const photoErrors = reactive(new Set<string>())
+
+// Group teams (from same group)
+const groupTeams = computed(() => {
+  if (!team.value) return []
+  return [{ nameZh: team.value.nameZh, nameEn: team.value.nameEn, code: team.value.code }]
+})
+
+// Player name display logic
+function getPlayerDisplayName(player: SquadPlayer) {
+  const hasChineseName = player.nameZh && player.nameZh !== player.name
+  if (locale.value === 'en') {
+    return {
+      primary: player.name,
+      secondary: hasChineseName ? player.nameZh : ''
+    }
+  }
+  if (hasChineseName) {
+    return {
+      primary: player.nameZh,
+      secondary: player.name
+    }
+  }
+  return {
+    primary: player.name,
+    secondary: ''
+  }
 }
 
-// Group A teams for the group card
-const groupTeams = [
-  { nameZh: '阿根廷', nameEn: 'Argentina', code: 'ar' },
-  { nameZh: '墨西哥', nameEn: 'Mexico', code: 'mx' },
-  { nameZh: '波兰', nameEn: 'Poland', code: 'pl' },
-  { nameZh: '沙特阿拉伯', nameEn: 'Saudi Arabia', code: 'sa' },
-]
+// Calculate player age from dateOfBirth
+function getPlayerAge(dateOfBirth: string): number | string {
+  if (!dateOfBirth) return '-'
+  const birth = new Date(dateOfBirth)
+  const today = new Date()
+  let age = today.getFullYear() - birth.getFullYear()
+  const monthDiff = today.getMonth() - birth.getMonth()
+  if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+    age--
+  }
+  return age
+}
+
+// Calculate average age
+const averageAge = computed(() => {
+  const squad = team.value?.squad || []
+  if (squad.length === 0) return '-'
+  const ages = squad
+    .map(p => getPlayerAge(p.dateOfBirth))
+    .filter((a): a is number => typeof a === 'number')
+  if (ages.length === 0) return '-'
+  return (ages.reduce((sum, age) => sum + age, 0) / ages.length).toFixed(1)
+})
+
+// Position color mapping
+function getPositionColor(position: string): string {
+  if (position === 'Goalkeeper') return '#16A34A'
+  if (isDefender(position)) return '#2563EB'
+  if (isMidfielder(position)) return '#EA580C'
+  if (isForward(position)) return '#DC2626'
+  return '#6B7280'
+}
+
+// Position groups for filter
+const positionGroups = computed(() => {
+  const squad = team.value?.squad || []
+  const groups = [
+    { key: 'all', label: locale.value === 'en' ? 'All' : '全部', count: squad.length },
+    { key: 'Goalkeeper', label: locale.value === 'en' ? 'GK' : '门将', count: squad.filter(p => p.position === 'Goalkeeper').length },
+    { key: 'Defence', label: locale.value === 'en' ? 'DEF' : '后卫', count: squad.filter(p => isDefender(p.position)).length },
+    { key: 'Midfield', label: locale.value === 'en' ? 'MID' : '中场', count: squad.filter(p => isMidfielder(p.position)).length },
+    { key: 'Attack', label: locale.value === 'en' ? 'FWD' : '前锋', count: squad.filter(p => isForward(p.position)).length },
+  ]
+  return groups.filter(g => g.key === 'all' || g.count > 0)
+})
+
+function isDefender(pos: string) {
+  return pos === 'Defence' || pos.includes('Back') || pos.includes('Centre-Back')
+}
+
+function isMidfielder(pos: string) {
+  return pos === 'Midfield' || pos.includes('Midfield')
+}
+
+function isForward(pos: string) {
+  return pos === 'Offence' || pos.includes('Forward') || pos.includes('Winger') || pos === 'Centre-Forward'
+}
+
+const filteredSquad = computed(() => {
+  const squad = team.value?.squad || []
+  if (selectedPosition.value === 'all') return squad
+  if (selectedPosition.value === 'Goalkeeper') return squad.filter(p => p.position === 'Goalkeeper')
+  if (selectedPosition.value === 'Defence') return squad.filter(p => isDefender(p.position))
+  if (selectedPosition.value === 'Midfield') return squad.filter(p => isMidfielder(p.position))
+  if (selectedPosition.value === 'Attack') return squad.filter(p => isForward(p.position))
+  return squad
+})
 
 // SEO
 useHead({
-  title: () => `${locale.value === 'en' ? team.nameEn : team.nameZh} - WorldCupDex`,
-});
+  title: () => team.value ? `${locale.value === 'en' ? team.value.nameEn : team.value.nameZh} - WorldCupDex` : 'WorldCupDex',
+})
 </script>
 
 <style scoped>
@@ -512,16 +404,41 @@ useHead({
   }
 }
 
-/* Overview grid */
-.overview-grid {
+/* Info + Stats two-column grid */
+.info-stats-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
 }
 
+@media (min-width: 768px) {
+  .info-stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Player card grid */
+.player-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .player-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 1024px) {
-  .overview-grid {
-    grid-template-columns: 3fr 6fr 3fr;
+  .player-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .player-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 </style>

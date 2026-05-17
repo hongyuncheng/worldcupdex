@@ -67,7 +67,7 @@ export default defineNuxtConfig({
   // },
 
   site: {
-    url: 'https://worldcupdex.com',
+    url: 'https://worldcupdex.org',
   },
 
   app: {

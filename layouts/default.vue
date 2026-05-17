@@ -171,6 +171,7 @@ const navLinks = [
   { to: '/schedule', label: 'nav.matches' },
   { to: '/data', label: 'nav.data' },
   { to: '/predict', label: 'nav.predict' },
+  { to: '/quiz', label: 'nav.quiz' },
 ]
 
 const scrollToTop = () => {

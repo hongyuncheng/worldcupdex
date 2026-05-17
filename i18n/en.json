@@ -8,7 +8,8 @@
     "news": "News",
     "wiki": "Wiki",
     "venues": "Venues",
-    "login": "Login / Register"
+    "login": "Login / Register",
+    "quiz": "IQ Quiz"
   },
   "hero": {
     "title": "FIFA WORLD CUP 2026™",
@@ -46,7 +47,14 @@
     "statsCitiesDesc": "World-class stadiums in 3 countries",
     "ctaTitle": "Who Will Lift the Trophy?",
     "ctaSubtitle": "Join predictions, climb the leaderboard, earn exclusive honors!",
-    "ctaButton": "Join Now →"
+    "ctaButton": "Join Now →",
+    "quizCta": "Test Your World Cup IQ",
+    "quizCtaSub": "Can you beat 90% of fans?",
+    "fanCardCta": "Create Your Fan Card",
+    "fanCardCtaSub": "Show your colors",
+    "ctaParticipants": "{count} people joined",
+    "startChallenge": "Start Challenge →",
+    "generateCard": "Generate Now →"
   },
   "common": {
     "viewAll": "View All",
@@ -131,7 +139,8 @@
     "goalkeeper": "Goalkeeper",
     "viewFullSquad": "View Full Squad →",
     "formation": "Formation",
-    "times": "times"
+    "times": "times",
+    "becomeFan": "Become a {team} Fan"
   },
   "matches": {
     "title": "Match Schedule",
@@ -385,5 +394,60 @@
     "hotArticle3": "Classic World Cup Final Recaps",
     "hotArticle4": "How to Become a Professional Footballer",
     "hotArticle5": "Introduction to World-Famous Football Clubs"
+  },
+  "quiz": {
+    "title": "World Cup IQ Challenge",
+    "subtitle": "How much do you know about the 2026 World Cup?",
+    "startButton": "Start Challenge",
+    "question": "Question {current}/{total}",
+    "timeLeft": "{seconds}s left",
+    "correct": "Correct!",
+    "wrong": "Wrong",
+    "resultTitle": "Your World Cup IQ",
+    "score": "{score} pts",
+    "percentile": "Better than {percent}% of fans",
+    "correctCount": "{correct}/{total} correct",
+    "timeSpent": "Time: {time}s",
+    "titleEncyclopedia": "World Cup Encyclopedia",
+    "titleMaster": "Tactical Master",
+    "titleSenior": "Senior Fan",
+    "titleAmateur": "Amateur",
+    "titleNewbie": "Casual Viewer",
+    "playAgain": "Play Again",
+    "participants": "{count} people joined today",
+    "rules": "5 Questions \u00b7 30s each \u00b7 Instant results",
+    "challengeFriends": "Can you beat 90% of fans?"
+  },
+  "fanCard": {
+    "title": "Create Your Fan Card",
+    "subtitle": "Show your colors before the World Cup begins",
+    "step1Title": "Choose your team",
+    "step2Title": "Pick your favorite player",
+    "step3Title": "Your Fan Card",
+    "searchTeam": "Search teams...",
+    "nickname": "Your Nickname",
+    "nicknamePlaceholder": "Enter your nickname",
+    "generate": "Generate Card",
+    "fanNumber": "Fan No.",
+    "firstMatch": "First Match",
+    "vs": "vs",
+    "cardTitle": "FAN CARD",
+    "buyJersey": "Buy {team} Official Jersey",
+    "supportTeam": "Support your team, wear the official jersey"
+  },
+  "share": {
+    "download": "Download Image",
+    "shareTo": "Share to",
+    "copyLink": "Copy Link",
+    "copied": "Copied!",
+    "twitter": "Twitter",
+    "facebook": "Facebook",
+    "whatsapp": "WhatsApp",
+    "reddit": "Reddit",
+    "nativeShare": "Share",
+    "alsoTry": "You might also like",
+    "tryQuiz": "Test your World Cup IQ",
+    "tryFanCard": "Create your Fan Card",
+    "viewTeam": "View Team Details"
   }
 }

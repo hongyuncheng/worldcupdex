@@ -69,36 +69,45 @@
         <div class="predict-main">
           <!-- Match List Card -->
           <div class="predict-card">
-            <h2 class="card-title">{{ $t('predict.pendingMatches') }} ({{ matches.length }})</h2>
+            <h2 class="card-title">{{ $t('predict.pendingMatches') }} ({{ displayMatches.length }})</h2>
+            <!-- Loading -->
+            <div v-if="matchesPending" class="text-center py-12">
+              <div class="animate-spin w-8 h-8 border-4 border-gray-200 border-t-[#FFD700] rounded-full mx-auto"></div>
+            </div>
+            <!-- Error -->
+            <div v-else-if="matchesError" class="text-center py-12" style="color: #999; font-size: 14px;">
+              加载失败，请稍后重试
+            </div>
+            <template v-else>
             <div class="match-list">
-              <div v-for="(match, idx) in matches" :key="idx" class="match-item" :class="{ 'match-item--last': idx === matches.length - 1 }">
+              <div v-for="(match, idx) in displayMatches" :key="match.id" class="match-item" :class="{ 'match-item--last': idx === displayMatches.length - 1 }">
                 <!-- Date/Time -->
                 <div class="match-date-col">
-                  <div class="match-date">{{ match.date }} {{ match.weekday }}</div>
+                  <div class="match-date">{{ formatDate(match.date) }} {{ getWeekday(match.date) }}</div>
                   <div class="match-time">{{ match.time }}</div>
                 </div>
                 <!-- Teams -->
                 <div class="match-teams-col">
                   <div class="match-team match-team--home">
-                    <img :src="`https://flagcdn.com/w40/${match.home.code === 'gb-eng' ? 'gb-eng' : match.home.code}.png`" :alt="match.home.name" class="team-flag-img" />
+                    <img :src="match.homeTeam.flag" :alt="match.homeTeam.nameZh" class="team-flag-img" />
                     <div class="team-info">
-                      <span class="team-name">{{ match.home.name }}</span>
-                      <span class="team-group">{{ match.home.group }}{{ $t('schedule.groupSuffix') }}</span>
+                      <span class="team-name">{{ match.homeTeam.nameZh }}</span>
+                      <span class="team-group">{{ match.group || '' }}{{ $t('schedule.groupSuffix') }}</span>
                     </div>
                   </div>
                   <span class="match-vs">vs</span>
                   <div class="match-team match-team--away">
-                    <img :src="`https://flagcdn.com/w40/${match.away.code === 'gb-eng' ? 'gb-eng' : match.away.code}.png`" :alt="match.away.name" class="team-flag-img" />
+                    <img :src="match.awayTeam.flag" :alt="match.awayTeam.nameZh" class="team-flag-img" />
                     <div class="team-info">
-                      <span class="team-name">{{ match.away.name }}</span>
-                      <span class="team-group">{{ match.away.group }}{{ $t('schedule.groupSuffix') }}</span>
+                      <span class="team-name">{{ match.awayTeam.nameZh }}</span>
+                      <span class="team-group">{{ match.group || '' }}{{ $t('schedule.groupSuffix') }}</span>
                     </div>
                   </div>
                 </div>
                 <!-- Action -->
                 <div class="match-action-col">
-                  <NuxtLinkLocale :to="`/predict/${idx + 1}`" class="btn-go-predict">{{ $t('predict.goPredict') }}</NuxtLinkLocale>
-                  <span class="match-deadline">{{ $t('predict.deadlinePrefix') }} {{ match.deadline }}</span>
+                  <NuxtLinkLocale :to="`/predict/${match.id}`" class="btn-go-predict">{{ $t('predict.goPredict') }}</NuxtLinkLocale>
+                  <span class="match-deadline">{{ $t('predict.deadlinePrefix') }} {{ getDeadline(match.date, match.time) }}</span>
                 </div>
               </div>
             </div>
@@ -106,6 +115,7 @@
             <div class="btn-view-more-wrapper">
               <button class="btn-view-more">{{ $t('predict.viewAllPending') }}</button>
             </div>
+            </template>
           </div>
         </div>
 
@@ -230,6 +240,8 @@
 </template>
 
 <script setup lang="ts">
+import type { MatchItem } from '~/types'
+
 const { t } = useI18n()
 
 // ─── SEO ───
@@ -271,17 +283,35 @@ onUnmounted(() => {
   if (timer) clearInterval(timer)
 })
 
-// ─── Mock Match Data ───
-const matches = [
-  { date: '6月12日', weekday: '周五', time: '03:00', home: { name: '墨西哥', flag: '🇲🇽', code: 'mx', group: 'A' }, away: { name: '阿根廷', flag: '🇦🇷', code: 'ar', group: 'A' }, deadline: '02:59:08' },
-  { date: '6月12日', weekday: '周五', time: '06:00', home: { name: '美国', flag: '🇺🇸', code: 'us', group: 'B' }, away: { name: '英格兰', flag: '🏴󠁧󠁢󠁥󠁮󠁧󠁿', code: 'gb-eng', group: 'B' }, deadline: '05:59:08' },
-  { date: '6月13日', weekday: '周六', time: '03:00', home: { name: '巴西', flag: '🇧🇷', code: 'br', group: 'C' }, away: { name: '德国', flag: '🇩🇪', code: 'de', group: 'C' }, deadline: '02:59:08' },
-  { date: '6月13日', weekday: '周六', time: '06:00', home: { name: '法国', flag: '🇫🇷', code: 'fr', group: 'D' }, away: { name: '日本', flag: '🇯🇵', code: 'jp', group: 'D' }, deadline: '05:59:08' },
-  { date: '6月13日', weekday: '周六', time: '09:00', home: { name: '西班牙', flag: '🇪🇸', code: 'es', group: 'E' }, away: { name: '乌拉圭', flag: '🇺🇾', code: 'uy', group: 'E' }, deadline: '08:59:08' },
-  { date: '6月14日', weekday: '周日', time: '00:00', home: { name: '摩洛哥', flag: '🇲🇦', code: 'ma', group: 'F' }, away: { name: '克罗地亚', flag: '🇭🇷', code: 'hr', group: 'F' }, deadline: '23:59:08' },
-]
+// ─── Fetch Matches from API ───
+const { data: upcomingMatches, pending: matchesPending, error: matchesError } = useUpcomingMatches(6)
 
-// ─── Leaderboard Mock ───
+const displayMatches = computed(() => upcomingMatches.value || [])
+
+// ─── Date Formatting Helpers ───
+function formatDate(dateStr: string): string {
+  const d = new Date(dateStr)
+  const month = d.getMonth() + 1
+  const day = d.getDate()
+  return `${month}月${day}日`
+}
+
+function getWeekday(dateStr: string): string {
+  const d = new Date(dateStr)
+  const weekdays = ['周日', '周一', '周二', '周三', '周四', '周五', '周六']
+  return weekdays[d.getDay()]
+}
+
+function getDeadline(dateStr: string, time: string): string {
+  // Deadline is 1 minute before match time
+  const [hours, minutes] = time.split(':').map(Number)
+  const deadlineMinutes = (hours * 60 + minutes - 1 + 24 * 60) % (24 * 60)
+  const dH = String(Math.floor(deadlineMinutes / 60)).padStart(2, '0')
+  const dM = String(deadlineMinutes % 60).padStart(2, '0')
+  return `${dH}:${dM}:00`
+}
+
+// ─── Leaderboard Mock (用户交互数据，非外部 API) ───
 const leaderboard = [
   { rank: 1, medal: '🥇', avatar: '👨‍💼', name: 'FootballKing', points: '2,580' },
   { rank: 2, medal: '🥈', avatar: '👨‍🎓', name: 'SoccerGuru', points: '2,310' },

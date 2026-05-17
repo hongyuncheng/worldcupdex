@@ -8,7 +8,8 @@
     "news": "新闻资讯",
     "wiki": "知识百科",
     "venues": "场馆",
-    "login": "登录 / 注册"
+    "login": "登录 / 注册",
+    "quiz": "IQ挑战"
   },
   "hero": {
     "title": "FIFA WORLD CUP 2026™",
@@ -46,7 +47,14 @@
     "statsCitiesDesc": "3个国家的顶级球场",
     "ctaTitle": "谁将捧起大力神杯？",
     "ctaSubtitle": "参与预测，争夺排行榜头名，赢取专属荣誉！",
-    "ctaButton": "立即参与 →"
+    "ctaButton": "立即参与 →",
+    "quizCta": "测测你的世界杯 IQ",
+    "quizCtaSub": "你能超过 90% 的球迷吗？",
+    "fanCardCta": "生成球迷身份卡",
+    "fanCardCtaSub": "亮出你的立场",
+    "ctaParticipants": "已有 {count} 人参与",
+    "startChallenge": "开始挑战 →",
+    "generateCard": "立即生成 →"
   },
   "common": {
     "viewAll": "查看全部",
@@ -131,7 +139,8 @@
     "goalkeeper": "门将",
     "viewFullSquad": "查看全部名单 →",
     "formation": "常用阵型",
-    "times": "次"
+    "times": "次",
+    "becomeFan": "成为 {team} 球迷"
   },
   "matches": {
     "title": "赛程安排",
@@ -385,5 +394,60 @@
     "hotArticle3": "世界杯经典决赛回顾",
     "hotArticle4": "如何成为一名职业足球运动员",
     "hotArticle5": "世界著名足球俱乐部简介"
+  },
+  "quiz": {
+    "title": "世界杯 IQ 挑战",
+    "subtitle": "测测你对2026世界杯了解多少",
+    "startButton": "开始挑战",
+    "question": "第 {current}/{total} 题",
+    "timeLeft": "剩余 {seconds} 秒",
+    "correct": "答对了！",
+    "wrong": "答错了",
+    "resultTitle": "你的世界杯 IQ",
+    "score": "{score} 分",
+    "percentile": "超过了 {percent}% 的球迷",
+    "correctCount": "答对 {correct}/{total}",
+    "timeSpent": "用时 {time} 秒",
+    "titleEncyclopedia": "世界杯百科全书",
+    "titleMaster": "战术大师",
+    "titleSenior": "资深球迷",
+    "titleAmateur": "业余爱好者",
+    "titleNewbie": "吃瓜群众",
+    "playAgain": "再来一次",
+    "participants": "今日已有 {count} 人参与",
+    "rules": "5题 · 30秒/题 · 即时出分",
+    "challengeFriends": "你能超过 90% 的球迷吗？"
+  },
+  "fanCard": {
+    "title": "生成球迷身份卡",
+    "subtitle": "在世界杯开始前，亮出你的立场",
+    "step1Title": "选择你支持的球队",
+    "step2Title": "选择你最喜欢的球员",
+    "step3Title": "你的球迷身份卡",
+    "searchTeam": "搜索球队...",
+    "nickname": "你的昵称",
+    "nicknamePlaceholder": "输入你的昵称",
+    "generate": "生成身份卡",
+    "fanNumber": "球迷编号",
+    "firstMatch": "首场比赛",
+    "vs": "vs",
+    "cardTitle": "FAN CARD",
+    "buyJersey": "购买 {team} 官方球衣",
+    "supportTeam": "支持你的球队，穿上官方球衣"
+  },
+  "share": {
+    "download": "下载图片",
+    "shareTo": "分享到",
+    "copyLink": "复制链接",
+    "copied": "已复制！",
+    "twitter": "Twitter",
+    "facebook": "Facebook",
+    "whatsapp": "WhatsApp",
+    "reddit": "Reddit",
+    "nativeShare": "分享",
+    "alsoTry": "你可能还想",
+    "tryQuiz": "测试你的世界杯IQ",
+    "tryFanCard": "生成球迷身份卡",
+    "viewTeam": "查看球队详情"
   }
 }

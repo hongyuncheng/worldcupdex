@@ -67,17 +67,23 @@
           {{ $t('home.viewAllMatches') }}
         </NuxtLinkLocale>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div v-if="matchesPending" class="text-center py-12">
+        <div class="animate-spin w-8 h-8 border-4 border-gray-200 border-t-[#FFD700] rounded-full mx-auto"></div>
+      </div>
+      <div v-else-if="matchesError" class="text-center py-12 text-red-500">
+        {{ matchesError.message || '加载失败' }}
+      </div>
+      <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <MatchCard
           v-for="match in upcomingMatches"
           :key="match.id"
-          :group="match.group"
-          :team1-name="match.team1Name"
-          :team1-flag="match.team1Flag"
-          :team2-name="match.team2Name"
-          :team2-flag="match.team2Flag"
-          :date="match.date"
-          :venue="match.venue"
+          :group="match.group || ''"
+          :team1-name="match.homeTeam.nameZh"
+          :team1-flag="match.homeTeam.flag"
+          :team2-name="match.awayTeam.nameZh"
+          :team2-flag="match.awayTeam.flag"
+          :date="formatMatchDate(match.date, match.time)"
+          :venue="match.venue.nameZh"
         />
       </div>
     </section>
@@ -93,13 +99,16 @@
         </NuxtLinkLocale>
       </div>
       <div class="relative">
-        <div ref="teamsScrollRef" class="flex gap-4 overflow-x-auto scrollbar-hide pb-2">
+        <div v-if="teamsPending" class="flex items-center justify-center py-8">
+          <div class="animate-spin w-8 h-8 border-4 border-gray-200 border-t-[#FFD700] rounded-full"></div>
+        </div>
+        <div v-else ref="teamsScrollRef" class="flex gap-4 overflow-x-auto scrollbar-hide pb-2">
           <TeamCard
             v-for="team in hotTeams"
             :key="team.code"
-            :name="team.name"
+            :name="team.nameZh"
             :flag="team.flag"
-            :rank="team.rank"
+            :rank="team.fifaRank"
           />
         </div>
         <!-- Scroll arrow right -->
@@ -138,6 +147,60 @@
       </div>
     </section>
 
+    <!-- AdSense Placeholder -->
+    <section class="max-w-7xl mx-auto px-4 lg:px-8 pb-4">
+      <div class="w-full p-4 border border-dashed border-gray-300 rounded-lg text-center text-gray-400 text-sm">
+        Ad Space
+      </div>
+    </section>
+
+    <!-- Quiz & Fan Card CTA Section -->
+    <section class="max-w-7xl mx-auto px-4 lg:px-8 pb-8">
+      <div
+        class="rounded-2xl p-8 grid grid-cols-1 md:grid-cols-2 gap-8"
+        style="background: #000F49; border: 1px solid #FFD700;"
+      >
+        <!-- Quiz CTA -->
+        <div class="flex flex-col items-start gap-3">
+          <span class="text-3xl">🧠</span>
+          <h3 class="font-bold text-white" style="font-family: 'Montserrat', sans-serif; font-size: 20px;">
+            {{ $t('home.quizCta') }}
+          </h3>
+          <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(255,255,255,0.7);">
+            {{ $t('home.quizCtaSub') }}
+          </p>
+          <NuxtLinkLocale
+            to="/quiz"
+            class="inline-flex items-center justify-center font-bold hover:opacity-90 transition-opacity"
+            style="background: #FFD700; color: #000F49; font-family: 'Montserrat', sans-serif; font-size: 14px; border-radius: 8px; padding: 10px 20px; margin-top: 4px;"
+          >
+            {{ $t('home.startChallenge') }}
+          </NuxtLinkLocale>
+        </div>
+        <!-- Fan Card CTA -->
+        <div class="flex flex-col items-start gap-3">
+          <span class="text-3xl">🃏</span>
+          <h3 class="font-bold text-white" style="font-family: 'Montserrat', sans-serif; font-size: 20px;">
+            {{ $t('home.fanCardCta') }}
+          </h3>
+          <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(255,255,255,0.7);">
+            {{ $t('home.fanCardCtaSub') }}
+          </p>
+          <NuxtLinkLocale
+            to="/fan-card"
+            class="inline-flex items-center justify-center font-bold hover:opacity-90 transition-opacity"
+            style="border: 1px solid #FFD700; color: #FFFFFF; font-family: 'Montserrat', sans-serif; font-size: 14px; border-radius: 8px; padding: 10px 20px; margin-top: 4px; background: transparent;"
+          >
+            {{ $t('home.generateCard') }}
+          </NuxtLinkLocale>
+        </div>
+        <!-- Participants count -->
+        <div class="md:col-span-2 text-center" style="font-family: 'Inter', sans-serif; font-size: 13px; color: rgba(255,255,255,0.5); margin-top: -4px;">
+          {{ $t('home.ctaParticipants', { count: participantCount }) }}
+        </div>
+      </div>
+    </section>
+
     <!-- CTA Banner -->
     <section class="max-w-7xl mx-auto px-4 lg:px-8 pb-8">
       <div class="rounded-2xl overflow-hidden relative" style="background: url('/images/cta_banner.png') center / 100% 100% no-repeat;">
@@ -166,6 +229,8 @@
 </template>
 
 <script setup lang="ts">
+import type { MatchItem } from '~/types'
+
 const teamsScrollRef = ref<HTMLElement | null>(null)
 
 function scrollTeams() {
@@ -174,49 +239,35 @@ function scrollTeams() {
   }
 }
 
-// Mock data - Upcoming matches
-const upcomingMatches = [
-  {
-    id: 1,
-    group: 'A',
-    team1Name: '墨西哥',
-    team1Flag: 'https://flagcdn.com/w80/mx.png',
-    team2Name: '阿根廷',
-    team2Flag: 'https://flagcdn.com/w80/ar.png',
-    date: '6月12日 03:00',
-    venue: '阿兹特克球场',
-  },
-  {
-    id: 2,
-    group: 'B',
-    team1Name: '美国',
-    team1Flag: 'https://flagcdn.com/w80/us.png',
-    team2Name: '英格兰',
-    team2Flag: 'https://flagcdn.com/w80/gb-eng.png',
-    date: '6月12日 03:00',
-    venue: 'MetLife球场',
-  },
-  {
-    id: 3,
-    group: 'C',
-    team1Name: '巴西',
-    team1Flag: 'https://flagcdn.com/w80/br.png',
-    team2Name: '德国',
-    team2Flag: 'https://flagcdn.com/w80/de.png',
-    date: '6月12日 03:00',
-    venue: 'AT&T球场',
-  },
-]
+// Date formatting helper
+function formatMatchDate(date: string, time: string): string {
+  const d = new Date(date)
+  const month = d.getMonth() + 1
+  const day = d.getDate()
+  return `${month}月${day}日 ${time}`
+}
 
-// Mock data - Hot teams
-const hotTeams = [
-  { name: '阿根廷', code: 'ar', flag: 'https://flagcdn.com/w80/ar.png', rank: 1 },
-  { name: '法国', code: 'fr', flag: 'https://flagcdn.com/w80/fr.png', rank: 2 },
-  { name: '比利时', code: 'be', flag: 'https://flagcdn.com/w80/be.png', rank: 3 },
-  { name: '英格兰', code: 'gb-eng', flag: 'https://flagcdn.com/w80/gb-eng.png', rank: 4 },
-  { name: '巴西', code: 'br', flag: 'https://flagcdn.com/w80/br.png', rank: 5 },
-  { name: '葡萄牙', code: 'pt', flag: 'https://flagcdn.com/w80/pt.png', rank: 6 },
-  { name: '荷兰', code: 'nl', flag: 'https://flagcdn.com/w80/nl.png', rank: 7 },
-  { name: '西班牙', code: 'es', flag: 'https://flagcdn.com/w80/es.png', rank: 8 },
-]
+// Fetch upcoming matches
+const { data: upcomingMatches, pending: matchesPending, error: matchesError } = useUpcomingMatches(8)
+
+// Fetch teams and compute top 8 by ranking
+const { data: teamsResponse, pending: teamsPending } = useTeamList()
+
+const hotTeams = computed(() => {
+  const teams = teamsResponse.value?.data || []
+  return [...teams].sort((a, b) => a.fifaRank - b.fifaRank).slice(0, 8)
+})
+
+// Participant count from localStorage + fixed base
+const BASE_PARTICIPANTS = 12847
+const participantCount = ref(BASE_PARTICIPANTS)
+
+onMounted(() => {
+  try {
+    const quizCount = parseInt(localStorage.getItem('wcd_quiz_count') || '0', 10)
+    participantCount.value = BASE_PARTICIPANTS + quizCount
+  } catch {
+    // fallback
+  }
+})
 </script>
