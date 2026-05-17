@@ -94,6 +94,10 @@ export default defineNuxtConfig({
 
   sourcemap: false,
 
+  nitro: {
+    preset: 'cloudflare-pages',
+  },
+
   routeRules: {
     '/**': {
       headers: {
