@@ -1,0 +1,218 @@
+{
+  "id": "south-africa",
+  "nameZh": "南非",
+  "nameEn": "South Africa",
+  "code": "za",
+  "group": "I",
+  "confederation": "CAF",
+  "fifaRank": 34,
+  "flag": "https://flagcdn.com/w80/za.png",
+  "coach": {
+    "nameEn": "Hugo Broos",
+    "nameZh": "雨果·布鲁斯",
+    "nationality": ""
+  },
+  "founded": 1991,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Ronwen Williams",
+      "nameZh": "Ronwen Williams",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1992-01-21",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ricardo Goss",
+      "nameZh": "Ricardo Goss",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1994-04-02",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Aubrey Modiba",
+      "nameZh": "Aubrey Modiba",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-07-22",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nkosinathi Sibisi",
+      "nameZh": "Nkosinathi Sibisi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-09-22",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Samukelo Kabini",
+      "nameZh": "Samukelo Kabini",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2004-03-15",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ime Okon",
+      "nameZh": "Ime Okon",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2004-02-20",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mbekezeli Mbokazi",
+      "nameZh": "Mbekezeli Mbokazi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2005-09-19",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Khulumani Ndamane",
+      "nameZh": "Khulumani Ndamane",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2004-02-05",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tholo Matuludi",
+      "nameZh": "Tholo Matuludi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-01-14",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Themba Zwane",
+      "nameZh": "Themba Zwane",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1989-08-03",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Teboho Mokoena",
+      "nameZh": "Teboho Mokoena",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-01-24",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Khuliso Mudau",
+      "nameZh": "Khuliso Mudau",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1995-04-26",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Oswin Appollis",
+      "nameZh": "Oswin Appollis",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-08-25",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Sphephelo Sithole",
+      "nameZh": "Sphephelo Sithole",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-03-03",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jayden Adams",
+      "nameZh": "Jayden Adams",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-05-05",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Thapelo Maseko",
+      "nameZh": "Thapelo Maseko",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-11-11",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Relebohile Mofokeng",
+      "nameZh": "Relebohile Mofokeng",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2004-10-23",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Thalente Mbatha",
+      "nameZh": "Thalente Mbatha",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-03-06",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tshepang Moremi",
+      "nameZh": "Tshepang Moremi",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-10-02",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Bongokuhle Hlongwane",
+      "nameZh": "Bongokuhle Hlongwane",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-06-20",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Evidence Makgopa",
+      "nameZh": "Evidence Makgopa",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-06-05",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lyle Foster",
+      "nameZh": "Lyle Foster",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2000-09-04",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

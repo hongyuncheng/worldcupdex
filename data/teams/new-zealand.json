@@ -1,0 +1,227 @@
+{
+  "id": "new-zealand",
+  "nameZh": "新西兰",
+  "nameEn": "New Zealand",
+  "code": "nz",
+  "group": "C",
+  "confederation": "OFC",
+  "fifaRank": 42,
+  "flag": "https://flagcdn.com/w80/nz.png",
+  "coach": {
+    "nameEn": "Darren Bazeley",
+    "nameZh": "达伦·巴兹利",
+    "nationality": ""
+  },
+  "founded": 1891,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Max Crocombe",
+      "nameZh": "Max Crocombe",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1993-08-12",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Michael Woud",
+      "nameZh": "Michael Woud",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1999-01-16",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alex Paulsen",
+      "nameZh": "Alex Paulsen",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2002-07-04",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "James McGarry",
+      "nameZh": "James McGarry",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-04-09",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Bill Tuiloma",
+      "nameZh": "Bill Tuiloma",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-03-27",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Callan Elliot",
+      "nameZh": "Callan Elliot",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-07-07",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tim Payne",
+      "nameZh": "Tim Payne",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1994-01-10",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Finn Surman",
+      "nameZh": "Finn Surman",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2003-09-23",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tyler Bindon",
+      "nameZh": "Tyler Bindon",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2005-01-27",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alex Rufer",
+      "nameZh": "Alex Rufer",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1996-06-12",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Francis De Vries",
+      "nameZh": "Francis De Vries",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1994-11-28",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Joe Bell",
+      "nameZh": "Joe Bell",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-04-27",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Marko Stamenic",
+      "nameZh": "Marko Stamenic",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-02-19",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kosta Barbarouses",
+      "nameZh": "Kosta Barbarouses",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1990-02-19",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Logan Rogerson",
+      "nameZh": "Logan Rogerson",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1998-05-28",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Andre de Jong",
+      "nameZh": "Andre de Jong",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1996-11-02",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ben Waine",
+      "nameZh": "Ben Waine",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-06-11",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Elijah Just",
+      "nameZh": "Elijah Just",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-05-01",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Callum McCowatt",
+      "nameZh": "Callum McCowatt",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1999-04-30",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lachlan Bayliss",
+      "nameZh": "Lachlan Bayliss",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2002-07-24",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jesse Randall",
+      "nameZh": "Jesse Randall",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2002-08-19",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ben Old",
+      "nameZh": "Ben Old",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2002-08-13",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ryan Thomas",
+      "nameZh": "Ryan Thomas",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1994-12-20",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

@@ -1,0 +1,236 @@
+{
+  "id": "brazil",
+  "nameZh": "巴西",
+  "nameEn": "Brazil",
+  "code": "br",
+  "group": "B",
+  "confederation": "CONMEBOL",
+  "fifaRank": 5,
+  "flag": "https://flagcdn.com/w80/br.png",
+  "coach": {
+    "nameEn": "Dorival Júnior",
+    "nameZh": "多里瓦尔·儒尼奥尔",
+    "nationality": ""
+  },
+  "founded": 1914,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Ederson",
+      "nameZh": "埃德森",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1993-08-17",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hugo Souza",
+      "nameZh": "乌戈·索萨",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1999-01-31",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Bento",
+      "nameZh": "本托",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1999-06-10",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Roger Ibañez",
+      "nameZh": "罗杰·伊巴涅斯",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-11-23",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Douglas Santos",
+      "nameZh": "道格拉斯·桑托斯",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1994-03-22",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Léo Pereira",
+      "nameZh": "莱奥·佩雷拉",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-01-31",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kaiki",
+      "nameZh": "卡伊基",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2002-03-08",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Fabinho",
+      "nameZh": "法比尼奥",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1993-10-23",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gabriel Sara",
+      "nameZh": "加布里埃尔·萨拉",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-06-26",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Rayan",
+      "nameZh": "拉扬",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2006-08-03",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Vitor Reis",
+      "nameZh": "维托尔·雷斯",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2006-01-12",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Endrick",
+      "nameZh": "恩德里克",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2006-07-21",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Andrey Santos",
+      "nameZh": "安德雷·桑托斯",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2004-05-03",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Danilo dos Santos de Oliveira",
+      "nameZh": "达尼洛·多斯桑托斯·德奥利韦拉",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "2001-04-29",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Luiz Henrique",
+      "nameZh": "路易斯·恩里克",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2001-01-02",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Thiago",
+      "nameZh": "蒂亚戈",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2001-06-26",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "João Pedro",
+      "nameZh": "若昂·佩德罗",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2001-09-26",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Martinelli",
+      "nameZh": "马丁内利",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2001-06-18",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Matheus Cunha",
+      "nameZh": "马特乌斯·库尼亚",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1999-05-27",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Danilo",
+      "nameZh": "达尼洛",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1991-07-15",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Casemiro",
+      "nameZh": "卡塞米罗",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1992-02-23",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Marquinhos",
+      "nameZh": "马尔基尼奥斯",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1994-05-14",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Vinicius Junior",
+      "nameZh": "维尼修斯·儒尼奥尔",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2000-07-12",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Bremer",
+      "nameZh": "布雷默",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1997-03-18",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

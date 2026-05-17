@@ -1,0 +1,254 @@
+{
+  "id": "colombia",
+  "nameZh": "哥伦比亚",
+  "nameEn": "Colombia",
+  "code": "co",
+  "group": "A",
+  "confederation": "CONMEBOL",
+  "fifaRank": 12,
+  "flag": "https://flagcdn.com/w80/co.png",
+  "coach": {
+    "nameEn": "Néstor Lorenzo",
+    "nameZh": "内斯托尔·洛伦佐",
+    "nationality": ""
+  },
+  "founded": 1924,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Camilo Vargas",
+      "nameZh": "Camilo Vargas",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1989-03-09",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "David Ospina",
+      "nameZh": "大卫·奥斯皮纳",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1988-08-31",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Álvaro Montero",
+      "nameZh": "Álvaro Montero",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1995-03-29",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Santiago Arias",
+      "nameZh": "Santiago Arias",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1992-01-13",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Juan Fernando Quintero",
+      "nameZh": "胡安·费尔南多·金特罗",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1993-01-18",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jhon Arias",
+      "nameZh": "Jhon Arias",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-09-21",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jorge Carrascal",
+      "nameZh": "Jorge Carrascal",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-05-25",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kevin Castaño",
+      "nameZh": "Kevin Castaño",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-09-29",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jaminton Campaz",
+      "nameZh": "Jaminton Campaz",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-05-24",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Richard Rios",
+      "nameZh": "Richard Rios",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-06-02",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jhon Córdoba",
+      "nameZh": "Jhon Córdoba",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1993-05-11",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Johan Carbonero",
+      "nameZh": "Johan Carbonero",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1999-07-20",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Luis Suárez",
+      "nameZh": "路易斯·苏亚雷斯",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1997-12-02",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Carlos Andrés Gómez",
+      "nameZh": "Carlos Andrés Gómez",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2002-09-22",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gustavo Puerta",
+      "nameZh": "Gustavo Puerta",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2003-07-23",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Yerson Mosquera",
+      "nameZh": "Yerson Mosquera",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2001-05-02",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Juan Cabal",
+      "nameZh": "Juan Cabal",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "2001-01-08",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Luis Díaz",
+      "nameZh": "路易斯·迪亚斯",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "1997-01-13",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jhon Lucumí",
+      "nameZh": "Jhon Lucumí",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1998-06-26",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Daniel Muñoz",
+      "nameZh": "Daniel Muñoz",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1996-05-26",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Rafael Borré",
+      "nameZh": "拉斐尔·博雷",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1995-09-15",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Deiver Machado",
+      "nameZh": "Deiver Machado",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1993-09-02",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jefferson Lerma",
+      "nameZh": "杰弗森·莱尔马",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1994-10-25",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Davinson Sánchez",
+      "nameZh": "达文森·桑切斯",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1996-06-12",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Johan Mojica",
+      "nameZh": "Johan Mojica",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1992-08-21",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "James Rodríguez",
+      "nameZh": "哈梅斯·罗德里格斯",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "1991-07-12",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

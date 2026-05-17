@@ -1,0 +1,254 @@
+{
+  "id": "paraguay",
+  "nameZh": "巴拉圭",
+  "nameEn": "Paraguay",
+  "code": "py",
+  "group": "D",
+  "confederation": "CONMEBOL",
+  "fifaRank": 39,
+  "flag": "https://flagcdn.com/w80/py.png",
+  "coach": {
+    "nameEn": "Alfaro Moreno",
+    "nameZh": "阿尔法罗·莫雷诺",
+    "nationality": ""
+  },
+  "founded": 1906,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Gastón Olveira",
+      "nameZh": "Gastón Olveira",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1993-04-21",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Roberto Fernández",
+      "nameZh": "Roberto Fernández",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1988-03-29",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Orlando Gill",
+      "nameZh": "Orlando Gill",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2000-06-11",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Fabián Balbuena",
+      "nameZh": "Fabián Balbuena",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1991-08-23",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gustavo Gómez",
+      "nameZh": "Gustavo Gómez",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1993-05-06",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Júnior Alonso",
+      "nameZh": "Júnior Alonso",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1993-02-09",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nicolás Fernández",
+      "nameZh": "Nicolás Fernández",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-03-02",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Juan Cáceres",
+      "nameZh": "Juan Cáceres",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-06-01",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alan Benitez",
+      "nameZh": "Alan Benitez",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1994-01-25",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gustavo Velázquez",
+      "nameZh": "Gustavo Velázquez",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1991-04-17",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alexandro Maidana",
+      "nameZh": "Alexandro Maidana",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2005-07-26",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mauricio",
+      "nameZh": "Mauricio",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-06-22",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Braian Ojeda",
+      "nameZh": "Braian Ojeda",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-06-27",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Matías Galarza",
+      "nameZh": "Matías Galarza",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-02-11",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Damian Bobadilla",
+      "nameZh": "Damian Bobadilla",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-07-11",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gustavo Caballero",
+      "nameZh": "Gustavo Caballero",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-09-21",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lucas Romero",
+      "nameZh": "Lucas Romero",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-08-29",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gabriel Ávalos",
+      "nameZh": "Gabriel Ávalos",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1990-10-12",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alex Arce",
+      "nameZh": "Alex Arce",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1995-06-16",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Diego Gómez",
+      "nameZh": "Diego Gómez",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2003-03-27",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "José Canale",
+      "nameZh": "José Canale",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1996-07-20",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Julio Enciso",
+      "nameZh": "Julio Enciso",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "2004-01-23",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ramón Sosa",
+      "nameZh": "Ramón Sosa",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "1999-08-31",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Miguel Almirón",
+      "nameZh": "Miguel Almirón",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "1994-02-10",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Omar Alderete",
+      "nameZh": "Omar Alderete",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1996-12-26",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Antonio Sanabria",
+      "nameZh": "Antonio Sanabria",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1996-03-04",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

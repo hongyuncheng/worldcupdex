@@ -1,0 +1,254 @@
+{
+  "id": "canada",
+  "nameZh": "加拿大",
+  "nameEn": "Canada",
+  "code": "ca",
+  "group": "D",
+  "confederation": "CONCACAF",
+  "fifaRank": 30,
+  "flag": "https://flagcdn.com/w80/ca.png",
+  "coach": {
+    "nameEn": "Jesse Marsch",
+    "nameZh": "杰西·马尔施",
+    "nationality": ""
+  },
+  "founded": null,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Maxime Crépeau",
+      "nameZh": "Maxime Crépeau",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1994-05-11",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Dayne St. Clair",
+      "nameZh": "Dayne St. Clair",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1997-05-09",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Owen Goodman",
+      "nameZh": "Owen Goodman",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2003-11-27",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Richie Laryea",
+      "nameZh": "Richie Laryea",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-01-07",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Joel Waterman",
+      "nameZh": "Joel Waterman",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-01-24",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kamal Miller",
+      "nameZh": "Kamal Miller",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-05-16",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jahkeele Marshall-Rutty",
+      "nameZh": "Jahkeele Marshall-Rutty",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2004-06-16",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ali Ahmed",
+      "nameZh": "Ali Ahmed",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-10-10",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Niko Sigur",
+      "nameZh": "Niko Sigur",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2003-09-09",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Junior Hoilett",
+      "nameZh": "Junior Hoilett",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1990-06-05",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jonathan Osorio",
+      "nameZh": "Jonathan Osorio",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1992-12-06",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mathieu Choinière",
+      "nameZh": "Mathieu Choinière",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-02-07",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ralph Priso-Mbongue",
+      "nameZh": "Ralph Priso-Mbongue",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-08-02",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nathan-Dylan Saliba",
+      "nameZh": "Nathan-Dylan Saliba",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2004-02-07",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Aribim Pepple",
+      "nameZh": "Aribim Pepple",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2002-12-25",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tani Oluwaseyi",
+      "nameZh": "Tani Oluwaseyi",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-05-15",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jacen Russell-Rowe",
+      "nameZh": "Jacen Russell-Rowe",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2002-09-13",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Luc De Fougerolles",
+      "nameZh": "Luc De Fougerolles",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2005-10-12",
+      "nationality": "England",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ismaël Koné",
+      "nameZh": "Ismaël Koné",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2002-06-16",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Daniel Jebbison",
+      "nameZh": "Daniel Jebbison",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2003-07-11",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Marcelo Flores",
+      "nameZh": "Marcelo Flores",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2003-10-01",
+      "nationality": "Mexico",
+      "shirtNumber": null
+    },
+    {
+      "name": "Derek Cornelius",
+      "nameZh": "Derek Cornelius",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1997-11-25",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tajon Buchanan",
+      "nameZh": "Tajon Buchanan",
+      "position": "Right Midfield",
+      "positionZh": "Right Midfield",
+      "dateOfBirth": "1999-02-08",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Liam Millar",
+      "nameZh": "Liam Millar",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "1999-09-27",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Cyle Larin",
+      "nameZh": "Cyle Larin",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1995-04-17",
+      "nationality": "Canada",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jonathan David",
+      "nameZh": "Jonathan David",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2000-01-14",
+      "nationality": "Canada",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

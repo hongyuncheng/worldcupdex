@@ -1,0 +1,652 @@
+[
+  {
+    "id": "h1",
+    "type": "history",
+    "question": { "zh": "哪个国家夺得世界杯冠军次数最多？", "en": "Which country has won the most World Cup titles?", "es": "¿Qué país ha ganado más títulos de Copa del Mundo?" },
+    "options": [
+      { "zh": "德国", "en": "Germany", "es": "Alemania" },
+      { "zh": "巴西", "en": "Brazil", "es": "Brasil" },
+      { "zh": "阿根廷", "en": "Argentina", "es": "Argentina" },
+      { "zh": "意大利", "en": "Italy", "es": "Italia" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h2",
+    "type": "history",
+    "question": { "zh": "2022年卡塔尔世界杯冠军是哪支球队？", "en": "Which team won the 2022 Qatar World Cup?", "es": "¿Qué equipo ganó el Mundial de Qatar 2022?" },
+    "options": [
+      { "zh": "法国", "en": "France", "es": "Francia" },
+      { "zh": "阿根廷", "en": "Argentina", "es": "Argentina" },
+      { "zh": "巴西", "en": "Brazil", "es": "Brasil" },
+      { "zh": "克罗地亚", "en": "Croatia", "es": "Croacia" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h3",
+    "type": "history",
+    "question": { "zh": "贝利一共夺得过几次世界杯冠军？", "en": "How many World Cup titles did Pelé win?", "es": "¿Cuántos títulos de Copa del Mundo ganó Pelé?" },
+    "options": [
+      { "zh": "2次", "en": "2", "es": "2" },
+      { "zh": "3次", "en": "3", "es": "3" },
+      { "zh": "4次", "en": "4", "es": "4" },
+      { "zh": "1次", "en": "1", "es": "1" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h4",
+    "type": "history",
+    "question": { "zh": "马拉多纳的'上帝之手'发生在哪届世界杯？", "en": "In which World Cup did Maradona's 'Hand of God' goal occur?", "es": "¿En qué Mundial ocurrió la 'Mano de Dios' de Maradona?" },
+    "options": [
+      { "zh": "1982年西班牙", "en": "1982 Spain", "es": "1982 España" },
+      { "zh": "1986年墨西哥", "en": "1986 Mexico", "es": "1986 México" },
+      { "zh": "1990年意大利", "en": "1990 Italy", "es": "1990 Italia" },
+      { "zh": "1994年美国", "en": "1994 USA", "es": "1994 EE.UU." }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h5",
+    "type": "history",
+    "question": { "zh": "2026年世界杯将在哪些国家举办？", "en": "Which countries will host the 2026 World Cup?", "es": "¿Qué países serán sede del Mundial 2026?" },
+    "options": [
+      { "zh": "美国、加拿大、墨西哥", "en": "USA, Canada, Mexico", "es": "EE.UU., Canadá, México" },
+      { "zh": "美国、英国、法国", "en": "USA, UK, France", "es": "EE.UU., Reino Unido, Francia" },
+      { "zh": "巴西、阿根廷、乌拉圭", "en": "Brazil, Argentina, Uruguay", "es": "Brasil, Argentina, Uruguay" },
+      { "zh": "卡塔尔、沙特、阿联酋", "en": "Qatar, Saudi Arabia, UAE", "es": "Qatar, Arabia Saudita, EAU" }
+    ],
+    "correctIndex": 0,
+    "difficulty": 1
+  },
+  {
+    "id": "h6",
+    "type": "history",
+    "question": { "zh": "2026年世界杯将有多少支球队参赛？", "en": "How many teams will participate in the 2026 World Cup?", "es": "¿Cuántos equipos participarán en el Mundial 2026?" },
+    "options": [
+      { "zh": "32支", "en": "32", "es": "32" },
+      { "zh": "40支", "en": "40", "es": "40" },
+      { "zh": "48支", "en": "48", "es": "48" },
+      { "zh": "64支", "en": "64", "es": "64" }
+    ],
+    "correctIndex": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "h7",
+    "type": "history",
+    "question": { "zh": "世界杯历史上进球最多的球员是谁？", "en": "Who is the all-time top scorer in World Cup history?", "es": "¿Quién es el máximo goleador en la historia de los Mundiales?" },
+    "options": [
+      { "zh": "贝利", "en": "Pelé", "es": "Pelé" },
+      { "zh": "罗纳尔多", "en": "Ronaldo", "es": "Ronaldo" },
+      { "zh": "米罗斯拉夫·克洛泽", "en": "Miroslav Klose", "es": "Miroslav Klose" },
+      { "zh": "盖德·穆勒", "en": "Gerd Müller", "es": "Gerd Müller" }
+    ],
+    "correctIndex": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "h8",
+    "type": "history",
+    "question": { "zh": "第一届世界杯在哪一年举办？", "en": "In what year was the first World Cup held?", "es": "¿En qué año se celebró la primera Copa del Mundo?" },
+    "options": [
+      { "zh": "1926年", "en": "1926", "es": "1926" },
+      { "zh": "1930年", "en": "1930", "es": "1930" },
+      { "zh": "1934年", "en": "1934", "es": "1934" },
+      { "zh": "1928年", "en": "1928", "es": "1928" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h9",
+    "type": "history",
+    "question": { "zh": "第一届世界杯的举办国是？", "en": "Which country hosted the first World Cup?", "es": "¿Qué país organizó la primera Copa del Mundo?" },
+    "options": [
+      { "zh": "巴西", "en": "Brazil", "es": "Brasil" },
+      { "zh": "意大利", "en": "Italy", "es": "Italia" },
+      { "zh": "乌拉圭", "en": "Uruguay", "es": "Uruguay" },
+      { "zh": "英格兰", "en": "England", "es": "Inglaterra" }
+    ],
+    "correctIndex": 2,
+    "difficulty": 1
+  },
+  {
+    "id": "h10",
+    "type": "history",
+    "question": { "zh": "齐达内在2006年世界杯决赛中头撞了谁？", "en": "Who did Zidane headbutt in the 2006 World Cup final?", "es": "¿A quién le dio el cabezazo Zidane en la final del Mundial 2006?" },
+    "options": [
+      { "zh": "卡纳瓦罗", "en": "Cannavaro", "es": "Cannavaro" },
+      { "zh": "马特拉齐", "en": "Materazzi", "es": "Materazzi" },
+      { "zh": "布冯", "en": "Buffon", "es": "Buffon" },
+      { "zh": "加图索", "en": "Gattuso", "es": "Gattuso" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h11",
+    "type": "history",
+    "question": { "zh": "德国队一共夺得过几次世界杯冠军？", "en": "How many World Cup titles has Germany won?", "es": "¿Cuántos títulos de Copa del Mundo ha ganado Alemania?" },
+    "options": [
+      { "zh": "3次", "en": "3", "es": "3" },
+      { "zh": "4次", "en": "4", "es": "4" },
+      { "zh": "5次", "en": "5", "es": "5" },
+      { "zh": "2次", "en": "2", "es": "2" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h12",
+    "type": "history",
+    "question": { "zh": "2018年俄罗斯世界杯冠军是哪支球队？", "en": "Which team won the 2018 Russia World Cup?", "es": "¿Qué equipo ganó el Mundial de Rusia 2018?" },
+    "options": [
+      { "zh": "克罗地亚", "en": "Croatia", "es": "Croacia" },
+      { "zh": "法国", "en": "France", "es": "Francia" },
+      { "zh": "比利时", "en": "Belgium", "es": "Bélgica" },
+      { "zh": "英格兰", "en": "England", "es": "Inglaterra" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h13",
+    "type": "history",
+    "question": { "zh": "世界杯历史上单场比赛进球最多的球员是谁（单场5球）？", "en": "Who scored the most goals in a single World Cup match (5 goals)?", "es": "¿Quién anotó más goles en un solo partido del Mundial (5 goles)?" },
+    "options": [
+      { "zh": "尤西比奥", "en": "Eusébio", "es": "Eusébio" },
+      { "zh": "奥列格·萨连科", "en": "Oleg Salenko", "es": "Oleg Salenko" },
+      { "zh": "盖德·穆勒", "en": "Gerd Müller", "es": "Gerd Müller" },
+      { "zh": "朱斯特·方丹", "en": "Just Fontaine", "es": "Just Fontaine" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "h14",
+    "type": "history",
+    "question": { "zh": "哪位球员在单届世界杯中进球最多（13球）？", "en": "Who scored the most goals in a single World Cup tournament (13 goals)?", "es": "¿Quién anotó más goles en una sola edición del Mundial (13 goles)?" },
+    "options": [
+      { "zh": "盖德·穆勒", "en": "Gerd Müller", "es": "Gerd Müller" },
+      { "zh": "朱斯特·方丹", "en": "Just Fontaine", "es": "Just Fontaine" },
+      { "zh": "罗纳尔多", "en": "Ronaldo", "es": "Ronaldo" },
+      { "zh": "克洛泽", "en": "Klose", "es": "Klose" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "h15",
+    "type": "history",
+    "question": { "zh": "西班牙队在哪一年首次夺得世界杯冠军？", "en": "In which year did Spain win their first World Cup?", "es": "¿En qué año ganó España su primera Copa del Mundo?" },
+    "options": [
+      { "zh": "2006年", "en": "2006", "es": "2006" },
+      { "zh": "2010年", "en": "2010", "es": "2010" },
+      { "zh": "2014年", "en": "2014", "es": "2014" },
+      { "zh": "2002年", "en": "2002", "es": "2002" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h16",
+    "type": "history",
+    "question": { "zh": "2014年巴西世界杯半决赛中，德国以多少比分击败巴西？", "en": "What was the score when Germany beat Brazil in the 2014 World Cup semi-final?", "es": "¿Cuál fue el marcador cuando Alemania venció a Brasil en la semifinal del Mundial 2014?" },
+    "options": [
+      { "zh": "5-0", "en": "5-0", "es": "5-0" },
+      { "zh": "7-1", "en": "7-1", "es": "7-1" },
+      { "zh": "6-1", "en": "6-1", "es": "6-1" },
+      { "zh": "4-0", "en": "4-0", "es": "4-0" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h17",
+    "type": "history",
+    "question": { "zh": "英格兰队唯一一次世界杯夺冠是在哪一年？", "en": "In which year did England win their only World Cup?", "es": "¿En qué año ganó Inglaterra su único Mundial?" },
+    "options": [
+      { "zh": "1962年", "en": "1962", "es": "1962" },
+      { "zh": "1966年", "en": "1966", "es": "1966" },
+      { "zh": "1970年", "en": "1970", "es": "1970" },
+      { "zh": "1958年", "en": "1958", "es": "1958" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h18",
+    "type": "history",
+    "question": { "zh": "世界杯历史上参赛次数最多的球队是？", "en": "Which team has participated in the most World Cups?", "es": "¿Qué equipo ha participado en más Mundiales?" },
+    "options": [
+      { "zh": "德国", "en": "Germany", "es": "Alemania" },
+      { "zh": "巴西", "en": "Brazil", "es": "Brasil" },
+      { "zh": "阿根廷", "en": "Argentina", "es": "Argentina" },
+      { "zh": "意大利", "en": "Italy", "es": "Italia" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h19",
+    "type": "history",
+    "question": { "zh": "哪届世界杯首次使用了VAR（视频助理裁判）技术？", "en": "Which World Cup first used VAR technology?", "es": "¿En qué Mundial se usó por primera vez la tecnología VAR?" },
+    "options": [
+      { "zh": "2014年巴西", "en": "2014 Brazil", "es": "2014 Brasil" },
+      { "zh": "2018年俄罗斯", "en": "2018 Russia", "es": "2018 Rusia" },
+      { "zh": "2022年卡塔尔", "en": "2022 Qatar", "es": "2022 Qatar" },
+      { "zh": "2010年南非", "en": "2010 South Africa", "es": "2010 Sudáfrica" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h20",
+    "type": "history",
+    "question": { "zh": "2002年世界杯是由哪两个国家联合举办的？", "en": "Which two countries co-hosted the 2002 World Cup?", "es": "¿Qué dos países organizaron conjuntamente el Mundial 2002?" },
+    "options": [
+      { "zh": "中国和日本", "en": "China and Japan", "es": "China y Japón" },
+      { "zh": "韩国和日本", "en": "South Korea and Japan", "es": "Corea del Sur y Japón" },
+      { "zh": "韩国和中国", "en": "South Korea and China", "es": "Corea del Sur y China" },
+      { "zh": "日本和澳大利亚", "en": "Japan and Australia", "es": "Japón y Australia" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h21",
+    "type": "history",
+    "question": { "zh": "世界杯金球奖（最佳球员奖）在2022年颁给了谁？", "en": "Who won the Golden Ball at the 2022 World Cup?", "es": "¿Quién ganó el Balón de Oro en el Mundial 2022?" },
+    "options": [
+      { "zh": "姆巴佩", "en": "Mbappé", "es": "Mbappé" },
+      { "zh": "梅西", "en": "Messi", "es": "Messi" },
+      { "zh": "格列兹曼", "en": "Griezmann", "es": "Griezmann" },
+      { "zh": "莫德里奇", "en": "Modrić", "es": "Modrić" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h22",
+    "type": "history",
+    "question": { "zh": "世界杯奖杯被称为什么？", "en": "What is the World Cup trophy called?", "es": "¿Cómo se llama el trofeo de la Copa del Mundo?" },
+    "options": [
+      { "zh": "金球杯", "en": "Golden Ball Cup", "es": "Copa Balón de Oro" },
+      { "zh": "大力神杯", "en": "FIFA World Cup Trophy", "es": "Trofeo de la Copa del Mundo" },
+      { "zh": "雷米特杯", "en": "Jules Rimet Trophy", "es": "Trofeo Jules Rimet" },
+      { "zh": "冠军杯", "en": "Champions Cup", "es": "Copa de Campeones" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h23",
+    "type": "history",
+    "question": { "zh": "哪位球员在2022年世界杯决赛中上演帽子戏法？", "en": "Who scored a hat-trick in the 2022 World Cup final?", "es": "¿Quién anotó un hat-trick en la final del Mundial 2022?" },
+    "options": [
+      { "zh": "梅西", "en": "Messi", "es": "Messi" },
+      { "zh": "姆巴佩", "en": "Mbappé", "es": "Mbappé" },
+      { "zh": "迪马利亚", "en": "Di María", "es": "Di María" },
+      { "zh": "吉鲁", "en": "Giroud", "es": "Giroud" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h24",
+    "type": "history",
+    "question": { "zh": "意大利队一共夺得过几次世界杯冠军？", "en": "How many World Cup titles has Italy won?", "es": "¿Cuántos títulos de Copa del Mundo ha ganado Italia?" },
+    "options": [
+      { "zh": "2次", "en": "2", "es": "2" },
+      { "zh": "3次", "en": "3", "es": "3" },
+      { "zh": "4次", "en": "4", "es": "4" },
+      { "zh": "5次", "en": "5", "es": "5" }
+    ],
+    "correctIndex": 2,
+    "difficulty": 2
+  },
+  {
+    "id": "h25",
+    "type": "history",
+    "question": { "zh": "法国队一共夺得过几次世界杯冠军？", "en": "How many World Cup titles has France won?", "es": "¿Cuántos títulos de Copa del Mundo ha ganado Francia?" },
+    "options": [
+      { "zh": "1次", "en": "1", "es": "1" },
+      { "zh": "2次", "en": "2", "es": "2" },
+      { "zh": "3次", "en": "3", "es": "3" },
+      { "zh": "4次", "en": "4", "es": "4" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h26",
+    "type": "history",
+    "question": { "zh": "世界杯历史上第一个进球是谁打进的？", "en": "Who scored the first goal in World Cup history?", "es": "¿Quién anotó el primer gol en la historia del Mundial?" },
+    "options": [
+      { "zh": "吕西安·洛朗", "en": "Lucien Laurent", "es": "Lucien Laurent" },
+      { "zh": "贝利", "en": "Pelé", "es": "Pelé" },
+      { "zh": "赫克托·卡斯特罗", "en": "Héctor Castro", "es": "Héctor Castro" },
+      { "zh": "吉列尔莫·斯塔比莱", "en": "Guillermo Stábile", "es": "Guillermo Stábile" }
+    ],
+    "correctIndex": 0,
+    "difficulty": 3
+  },
+  {
+    "id": "h27",
+    "type": "history",
+    "question": { "zh": "2010年世界杯在哪个国家举办？", "en": "In which country was the 2010 World Cup held?", "es": "¿En qué país se celebró el Mundial 2010?" },
+    "options": [
+      { "zh": "巴西", "en": "Brazil", "es": "Brasil" },
+      { "zh": "南非", "en": "South Africa", "es": "Sudáfrica" },
+      { "zh": "德国", "en": "Germany", "es": "Alemania" },
+      { "zh": "日本", "en": "Japan", "es": "Japón" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h28",
+    "type": "history",
+    "question": { "zh": "世界杯历史上最年轻的进球球员是谁？", "en": "Who is the youngest goal scorer in World Cup history?", "es": "¿Quién es el goleador más joven en la historia del Mundial?" },
+    "options": [
+      { "zh": "梅西", "en": "Messi", "es": "Messi" },
+      { "zh": "贝利", "en": "Pelé", "es": "Pelé" },
+      { "zh": "姆巴佩", "en": "Mbappé", "es": "Mbappé" },
+      { "zh": "鲁尼", "en": "Rooney", "es": "Rooney" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h29",
+    "type": "history",
+    "question": { "zh": "罗纳尔多在世界杯历史上一共打进多少球？", "en": "How many World Cup goals did Ronaldo (Brazil) score in total?", "es": "¿Cuántos goles anotó Ronaldo (Brasil) en total en Mundiales?" },
+    "options": [
+      { "zh": "12球", "en": "12", "es": "12" },
+      { "zh": "15球", "en": "15", "es": "15" },
+      { "zh": "18球", "en": "18", "es": "18" },
+      { "zh": "10球", "en": "10", "es": "10" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "h30",
+    "type": "history",
+    "question": { "zh": "1950年世界杯决赛中，哪支球队在马拉卡纳球场爆冷夺冠？", "en": "Which team caused an upset in the 1950 World Cup final at the Maracanã?", "es": "¿Qué equipo dio la sorpresa en la final del Mundial 1950 en el Maracanã?" },
+    "options": [
+      { "zh": "巴西", "en": "Brazil", "es": "Brasil" },
+      { "zh": "乌拉圭", "en": "Uruguay", "es": "Uruguay" },
+      { "zh": "瑞典", "en": "Sweden", "es": "Suecia" },
+      { "zh": "西班牙", "en": "Spain", "es": "España" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h31",
+    "type": "history",
+    "question": { "zh": "哪个国家从未缺席过任何一届世界杯？", "en": "Which country has never missed a World Cup?", "es": "¿Qué país nunca ha faltado a un Mundial?" },
+    "options": [
+      { "zh": "德国", "en": "Germany", "es": "Alemania" },
+      { "zh": "巴西", "en": "Brazil", "es": "Brasil" },
+      { "zh": "阿根廷", "en": "Argentina", "es": "Argentina" },
+      { "zh": "意大利", "en": "Italy", "es": "Italia" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h32",
+    "type": "history",
+    "question": { "zh": "世界杯历史上比分最悬殊的比赛是？", "en": "What is the biggest margin of victory in World Cup history?", "es": "¿Cuál es la mayor goleada en la historia del Mundial?" },
+    "options": [
+      { "zh": "德国7-1巴西", "en": "Germany 7-1 Brazil", "es": "Alemania 7-1 Brasil" },
+      { "zh": "匈牙利10-1萨尔瓦多", "en": "Hungary 10-1 El Salvador", "es": "Hungría 10-1 El Salvador" },
+      { "zh": "匈牙利9-0韩国", "en": "Hungary 9-0 South Korea", "es": "Hungría 9-0 Corea del Sur" },
+      { "zh": "南斯拉夫9-0扎伊尔", "en": "Yugoslavia 9-0 Zaire", "es": "Yugoslavia 9-0 Zaire" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "h33",
+    "type": "history",
+    "question": { "zh": "2006年世界杯决赛中，意大利通过什么方式击败法国夺冠？", "en": "How did Italy beat France in the 2006 World Cup final?", "es": "¿Cómo venció Italia a Francia en la final del Mundial 2006?" },
+    "options": [
+      { "zh": "加时赛进球", "en": "Extra time goal", "es": "Gol en tiempo extra" },
+      { "zh": "点球大战", "en": "Penalty shootout", "es": "Tanda de penaltis" },
+      { "zh": "常规时间进球", "en": "Regular time goal", "es": "Gol en tiempo reglamentario" },
+      { "zh": "金球制", "en": "Golden goal", "es": "Gol de oro" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h34",
+    "type": "history",
+    "question": { "zh": "世界杯金靴奖颁给什么人？", "en": "What is the World Cup Golden Boot awarded for?", "es": "¿Qué premia la Bota de Oro del Mundial?" },
+    "options": [
+      { "zh": "最佳球员", "en": "Best player", "es": "Mejor jugador" },
+      { "zh": "最佳射手", "en": "Top scorer", "es": "Máximo goleador" },
+      { "zh": "最佳守门员", "en": "Best goalkeeper", "es": "Mejor portero" },
+      { "zh": "最佳年轻球员", "en": "Best young player", "es": "Mejor jugador joven" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h35",
+    "type": "history",
+    "question": { "zh": "哪支球队被称为'桑巴军团'？", "en": "Which team is known as 'The Samba Boys'?", "es": "¿Qué equipo es conocido como 'La Canarinha'?" },
+    "options": [
+      { "zh": "阿根廷", "en": "Argentina", "es": "Argentina" },
+      { "zh": "巴西", "en": "Brazil", "es": "Brasil" },
+      { "zh": "西班牙", "en": "Spain", "es": "España" },
+      { "zh": "葡萄牙", "en": "Portugal", "es": "Portugal" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h36",
+    "type": "history",
+    "question": { "zh": "阿根廷队一共夺得过几次世界杯冠军？", "en": "How many World Cup titles has Argentina won?", "es": "¿Cuántos títulos de Copa del Mundo ha ganado Argentina?" },
+    "options": [
+      { "zh": "2次", "en": "2", "es": "2" },
+      { "zh": "3次", "en": "3", "es": "3" },
+      { "zh": "4次", "en": "4", "es": "4" },
+      { "zh": "1次", "en": "1", "es": "1" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h37",
+    "type": "history",
+    "question": { "zh": "2022年世界杯金靴奖（最佳射手）是谁获得的？", "en": "Who won the Golden Boot at the 2022 World Cup?", "es": "¿Quién ganó la Bota de Oro en el Mundial 2022?" },
+    "options": [
+      { "zh": "梅西", "en": "Messi", "es": "Messi" },
+      { "zh": "姆巴佩", "en": "Mbappé", "es": "Mbappé" },
+      { "zh": "吉鲁", "en": "Giroud", "es": "Giroud" },
+      { "zh": "阿尔瓦雷斯", "en": "Álvarez", "es": "Álvarez" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h38",
+    "type": "history",
+    "question": { "zh": "1994年世界杯决赛在哪个国家举行？", "en": "In which country was the 1994 World Cup final held?", "es": "¿En qué país se jugó la final del Mundial 1994?" },
+    "options": [
+      { "zh": "墨西哥", "en": "Mexico", "es": "México" },
+      { "zh": "美国", "en": "USA", "es": "EE.UU." },
+      { "zh": "巴西", "en": "Brazil", "es": "Brasil" },
+      { "zh": "法国", "en": "France", "es": "Francia" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h39",
+    "type": "history",
+    "question": { "zh": "世界杯每几年举办一次？", "en": "How often is the World Cup held?", "es": "¿Cada cuántos años se celebra el Mundial?" },
+    "options": [
+      { "zh": "每2年", "en": "Every 2 years", "es": "Cada 2 años" },
+      { "zh": "每4年", "en": "Every 4 years", "es": "Cada 4 años" },
+      { "zh": "每3年", "en": "Every 3 years", "es": "Cada 3 años" },
+      { "zh": "每5年", "en": "Every 5 years", "es": "Cada 5 años" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h40",
+    "type": "history",
+    "question": { "zh": "克洛泽在世界杯历史上一共打进多少球（最多纪录）？", "en": "How many World Cup goals did Klose score (all-time record)?", "es": "¿Cuántos goles anotó Klose en Mundiales (récord histórico)?" },
+    "options": [
+      { "zh": "14球", "en": "14", "es": "14" },
+      { "zh": "16球", "en": "16", "es": "16" },
+      { "zh": "15球", "en": "15", "es": "15" },
+      { "zh": "18球", "en": "18", "es": "18" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h41",
+    "type": "history",
+    "question": { "zh": "2026年世界杯决赛将在哪座城市举行？", "en": "In which city will the 2026 World Cup final be held?", "es": "¿En qué ciudad se jugará la final del Mundial 2026?" },
+    "options": [
+      { "zh": "洛杉矶", "en": "Los Angeles", "es": "Los Ángeles" },
+      { "zh": "纽约/新泽西", "en": "New York/New Jersey", "es": "Nueva York/Nueva Jersey" },
+      { "zh": "迈阿密", "en": "Miami", "es": "Miami" },
+      { "zh": "达拉斯", "en": "Dallas", "es": "Dallas" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h42",
+    "type": "history",
+    "question": { "zh": "1998年世界杯在哪个国家举办？", "en": "Which country hosted the 1998 World Cup?", "es": "¿Qué país organizó el Mundial 1998?" },
+    "options": [
+      { "zh": "英格兰", "en": "England", "es": "Inglaterra" },
+      { "zh": "法国", "en": "France", "es": "Francia" },
+      { "zh": "德国", "en": "Germany", "es": "Alemania" },
+      { "zh": "西班牙", "en": "Spain", "es": "España" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h43",
+    "type": "history",
+    "question": { "zh": "世界杯历史上获得红牌最多的球队是？", "en": "Which country has received the most red cards in World Cup history?", "es": "¿Qué país ha recibido más tarjetas rojas en la historia del Mundial?" },
+    "options": [
+      { "zh": "阿根廷", "en": "Argentina", "es": "Argentina" },
+      { "zh": "巴西", "en": "Brazil", "es": "Brasil" },
+      { "zh": "德国", "en": "Germany", "es": "Alemania" },
+      { "zh": "乌拉圭", "en": "Uruguay", "es": "Uruguay" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "h44",
+    "type": "history",
+    "question": { "zh": "2026世界杯小组赛阶段，每组有多少支球队？", "en": "How many teams will be in each group in the 2026 World Cup group stage?", "es": "¿Cuántos equipos habrá en cada grupo en la fase de grupos del Mundial 2026?" },
+    "options": [
+      { "zh": "3支", "en": "3", "es": "3" },
+      { "zh": "4支", "en": "4", "es": "4" },
+      { "zh": "5支", "en": "5", "es": "5" },
+      { "zh": "6支", "en": "6", "es": "6" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h45",
+    "type": "history",
+    "question": { "zh": "2022世界杯是第几届？", "en": "The 2022 World Cup was the __th edition?", "es": "¿El Mundial 2022 fue la __ edición?" },
+    "options": [
+      { "zh": "第21届", "en": "21st", "es": "21ª" },
+      { "zh": "第22届", "en": "22nd", "es": "22ª" },
+      { "zh": "第20届", "en": "20th", "es": "20ª" },
+      { "zh": "第23届", "en": "23rd", "es": "23ª" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h46",
+    "type": "history",
+    "question": { "zh": "乌拉圭队一共夺得过几次世界杯冠军？", "en": "How many World Cup titles has Uruguay won?", "es": "¿Cuántos títulos de Copa del Mundo ha ganado Uruguay?" },
+    "options": [
+      { "zh": "1次", "en": "1", "es": "1" },
+      { "zh": "2次", "en": "2", "es": "2" },
+      { "zh": "3次", "en": "3", "es": "3" },
+      { "zh": "4次", "en": "4", "es": "4" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  },
+  {
+    "id": "h47",
+    "type": "history",
+    "question": { "zh": "2022世界杯是首次在哪个季节举办的世界杯？", "en": "The 2022 World Cup was the first to be held in which season (Northern Hemisphere)?", "es": "¿El Mundial 2022 fue el primero en celebrarse en qué estación (hemisferio norte)?" },
+    "options": [
+      { "zh": "春季", "en": "Spring", "es": "Primavera" },
+      { "zh": "冬季", "en": "Winter", "es": "Invierno" },
+      { "zh": "秋季", "en": "Autumn", "es": "Otoño" },
+      { "zh": "夏季", "en": "Summer", "es": "Verano" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h48",
+    "type": "history",
+    "question": { "zh": "世界杯历史上哪位守门员被称为'黑蜘蛛'？", "en": "Which World Cup goalkeeper was nicknamed the 'Black Spider'?", "es": "¿Qué portero del Mundial fue apodado la 'Araña Negra'?" },
+    "options": [
+      { "zh": "布冯", "en": "Buffon", "es": "Buffon" },
+      { "zh": "雅辛", "en": "Yashin", "es": "Yashin" },
+      { "zh": "卡恩", "en": "Kahn", "es": "Kahn" },
+      { "zh": "佐夫", "en": "Zoff", "es": "Zoff" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 3
+  },
+  {
+    "id": "h49",
+    "type": "history",
+    "question": { "zh": "2014年世界杯冠军是哪支球队？", "en": "Which team won the 2014 World Cup?", "es": "¿Qué equipo ganó el Mundial 2014?" },
+    "options": [
+      { "zh": "巴西", "en": "Brazil", "es": "Brasil" },
+      { "zh": "德国", "en": "Germany", "es": "Alemania" },
+      { "zh": "阿根廷", "en": "Argentina", "es": "Argentina" },
+      { "zh": "荷兰", "en": "Netherlands", "es": "Países Bajos" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 1
+  },
+  {
+    "id": "h50",
+    "type": "history",
+    "question": { "zh": "2026世界杯将有多少个小组？", "en": "How many groups will there be in the 2026 World Cup?", "es": "¿Cuántos grupos habrá en el Mundial 2026?" },
+    "options": [
+      { "zh": "8个", "en": "8", "es": "8" },
+      { "zh": "12个", "en": "12", "es": "12" },
+      { "zh": "16个", "en": "16", "es": "16" },
+      { "zh": "10个", "en": "10", "es": "10" }
+    ],
+    "correctIndex": 1,
+    "difficulty": 2
+  }
+]

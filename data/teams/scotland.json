@@ -1,0 +1,254 @@
+{
+  "id": "scotland",
+  "nameZh": "苏格兰",
+  "nameEn": "Scotland",
+  "code": "gb-sct",
+  "group": "",
+  "confederation": "",
+  "fifaRank": 37,
+  "flag": "https://flagcdn.com/w80/gb-sct.png",
+  "coach": {
+    "nameEn": "Steve Clarke",
+    "nameZh": "史蒂夫·克拉克",
+    "nationality": ""
+  },
+  "founded": 1873,
+  "venue": "Hampden Park",
+  "squad": [
+    {
+      "name": "Angus Gunn",
+      "nameZh": "Angus Gunn",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1996-01-22",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Scott Bain",
+      "nameZh": "Scott Bain",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1991-11-22",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Liam Kelly",
+      "nameZh": "Liam Kelly",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1996-01-23",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jack Hendry",
+      "nameZh": "Jack Hendry",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-05-07",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Anthony Ralston",
+      "nameZh": "Anthony Ralston",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-11-16",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "John Souttar",
+      "nameZh": "John Souttar",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-09-25",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lennon Miller",
+      "nameZh": "Lennon Miller",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2006-08-25",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lyndon Dykes",
+      "nameZh": "Lyndon Dykes",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1995-10-07",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Findlay Curtis",
+      "nameZh": "Findlay Curtis",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Andy Irving",
+      "nameZh": "Andy Irving",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2000-05-13",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tommy Conway",
+      "nameZh": "Tommy Conway",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2002-08-06",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nathan Patterson",
+      "nameZh": "Nathan Patterson",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "2001-10-16",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Billy Gilmour",
+      "nameZh": "Billy Gilmour",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "2001-06-11",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ross McCrorie",
+      "nameZh": "Ross McCrorie",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1998-03-18",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "John McGinn",
+      "nameZh": "John McGinn",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1994-10-18",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lewis Ferguson",
+      "nameZh": "Lewis Ferguson",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "1999-08-24",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ryan Christie",
+      "nameZh": "Ryan Christie",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1995-02-22",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kenny McLean",
+      "nameZh": "Kenny McLean",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1992-01-08",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Scott McKenna",
+      "nameZh": "Scott McKenna",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1996-11-12",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "George Hirst",
+      "nameZh": "George Hirst",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1999-02-15",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kieran Tierney",
+      "nameZh": "Kieran Tierney",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1997-06-05",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Scott McTominay",
+      "nameZh": "Scott McTominay",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1996-12-08",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Andrew Robertson",
+      "nameZh": "Andrew Robertson",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1994-03-11",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Dominic Hyam",
+      "nameZh": "Dominic Hyam",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1995-12-20",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Che Adams",
+      "nameZh": "Che Adams",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1996-07-13",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    },
+    {
+      "name": "Grant Hanley",
+      "nameZh": "Grant Hanley",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1991-11-20",
+      "nationality": "Scotland",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

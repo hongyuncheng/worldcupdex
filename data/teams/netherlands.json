@@ -1,0 +1,245 @@
+{
+  "id": "netherlands",
+  "nameZh": "荷兰",
+  "nameEn": "Netherlands",
+  "code": "nl",
+  "group": "G",
+  "confederation": "UEFA",
+  "fifaRank": 7,
+  "flag": "https://flagcdn.com/w80/nl.png",
+  "coach": {
+    "nameEn": "Ronald Koeman",
+    "nameZh": "罗纳德·科曼",
+    "nationality": ""
+  },
+  "founded": 1889,
+  "venue": "Johan Cruyff ArenA",
+  "squad": [
+    {
+      "name": "Justin Bijlow",
+      "nameZh": "Justin Bijlow",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1998-01-22",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mark Flekken",
+      "nameZh": "Mark Flekken",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1993-06-13",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Bart Verbruggen",
+      "nameZh": "Bart Verbruggen",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2002-08-18",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kees Smit",
+      "nameZh": "Kees Smit",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2006-01-21",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jorrel Hato",
+      "nameZh": "Jorrel Hato",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2006-03-07",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Luciano Valente",
+      "nameZh": "Luciano Valente",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2003-10-04",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Xavi Simons",
+      "nameZh": "哈维·西蒙斯",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "2003-04-21",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mickey van de Ven",
+      "nameZh": "米奇·范德芬",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2001-04-19",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jeremie Frimpong",
+      "nameZh": "杰雷米·弗林蓬",
+      "position": "Right Midfield",
+      "positionZh": "Right Midfield",
+      "dateOfBirth": "2000-12-10",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jan Paul van Hecke",
+      "nameZh": "Jan Paul van Hecke",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2000-06-08",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Quinten Timber",
+      "nameZh": "Quinten Timber",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2001-06-17",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Brian Brobbey",
+      "nameZh": "布莱恩·布罗比",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2002-02-01",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ryan Gravenberch",
+      "nameZh": "瑞恩·赫拉芬贝赫",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "2002-05-16",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jerdy Schouten",
+      "nameZh": "Jerdy Schouten",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1997-01-12",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nathan Aké",
+      "nameZh": "内森·阿克",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1995-02-18",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Virgil van Dijk",
+      "nameZh": "维吉尔·范戴克",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1991-07-08",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Wout Weghorst",
+      "nameZh": "沃特·韦霍斯特",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1992-08-07",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tijjani Reijnders",
+      "nameZh": "蒂贾尼·雷恩德斯",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1998-07-29",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Teun Koopmeiners",
+      "nameZh": "特恩·科普迈纳斯",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "1998-02-28",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Noa Lang",
+      "nameZh": "Noa Lang",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "1999-06-17",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lutsharel Geertruida",
+      "nameZh": "Lutsharel Geertruida",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "2000-07-18",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Cody Gakpo",
+      "nameZh": "科迪·加克波",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "1999-05-07",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Donyell Malen",
+      "nameZh": "多尼尔·马伦",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "1999-01-19",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Denzel Dumfries",
+      "nameZh": "邓泽尔·邓弗里斯",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1996-04-18",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Stefan de Vrij",
+      "nameZh": "斯特凡·德弗赖",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1992-02-05",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

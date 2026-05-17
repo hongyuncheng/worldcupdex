@@ -1,0 +1,182 @@
+{
+  "id": "iran",
+  "nameZh": "伊朗",
+  "nameEn": "Iran",
+  "code": "ir",
+  "group": "F",
+  "confederation": "AFC",
+  "fifaRank": 20,
+  "flag": "https://flagcdn.com/w80/ir.png",
+  "coach": {
+    "nameEn": "Amir Ghalenoei",
+    "nameZh": "阿米尔·加莱诺伊",
+    "nationality": ""
+  },
+  "founded": 1920,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Hossein Hosseini",
+      "nameZh": "Hossein Hosseini",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1992-06-30",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Payam Niazmand",
+      "nameZh": "Payam Niazmand",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1995-04-06",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alireza Beiranvand",
+      "nameZh": "Alireza Beiranvand",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1992-09-21",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ehsan Hajsafi",
+      "nameZh": "Ehsan Hajsafi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1990-02-25",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ramin Rezaeian",
+      "nameZh": "Ramin Rezaeian",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1990-03-21",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Roozbeh Cheshmi",
+      "nameZh": "Roozbeh Cheshmi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1993-07-24",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Milad Mohammadi",
+      "nameZh": "Milad Mohammadi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1993-09-29",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Omid Noorafkan",
+      "nameZh": "Omid Noorafkan",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-04-09",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hossein Kanaani",
+      "nameZh": "Hossein Kanaani",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1994-03-23",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Shoja Khalilzadeh",
+      "nameZh": "Shoja Khalilzadeh",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1989-05-14",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Saleh Hardani",
+      "nameZh": "Saleh Hardani",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-09-14",
+      "nationality": "",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ariya Yousefi",
+      "nameZh": "Ariya Yousefi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2002-04-22",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Aref Aghasi",
+      "nameZh": "Aref Aghasi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-01-02",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Amirhossein Hosseinzadeh",
+      "nameZh": "Amirhossein Hosseinzadeh",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-10-30",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mehdi Torabi",
+      "nameZh": "Mehdi Torabi",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1994-09-10",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mehdi Hashemnejad",
+      "nameZh": "Mehdi Hashemnejad",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-10-27",
+      "nationality": "",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kasra Taheri",
+      "nameZh": "Kasra Taheri",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2006-08-06",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ali Alipour",
+      "nameZh": "Ali Alipour",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1995-11-11",
+      "nationality": "Iran",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

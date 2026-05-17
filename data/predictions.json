@@ -1,0 +1,1738 @@
+[
+  {
+    "matchId": 537327,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "confidence": 62,
+    "homeWinProb": 51,
+    "drawProb": 25,
+    "awayWinProb": 24,
+    "analysis": "墨西哥(FIFA第16)排名领先于南非(FIFA第34)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。墨西哥作为东道主之一，主场氛围将成为重要的第十二人。综合分析，AI预测南非将以客场1-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "主场优势",
+      "小组赛首场"
+    ]
+  },
+  {
+    "matchId": 537328,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 1,
+      "away": 3
+    },
+    "confidence": 63,
+    "homeWinProb": 48,
+    "drawProb": 25,
+    "awayWinProb": 27,
+    "analysis": "韩国(FIFA第21)排名领先于捷克(FIFA第36)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测捷克将以客场3-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场"
+    ]
+  },
+  {
+    "matchId": 537333,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "confidence": 80,
+    "homeWinProb": 60,
+    "drawProb": 25,
+    "awayWinProb": 15,
+    "analysis": "加拿大(FIFA第30)排名领先于波黑(FIFA第53)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。加拿大作为东道主之一，主场氛围将成为重要的第十二人。综合分析，AI预测加拿大将以2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "主场优势",
+      "小组赛首场"
+    ]
+  },
+  {
+    "matchId": 537345,
+    "result": "DRAW",
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "confidence": 63,
+    "homeWinProb": 51,
+    "drawProb": 25,
+    "awayWinProb": 24,
+    "analysis": "美国(FIFA第17)排名领先于巴拉圭(FIFA第39)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。美国作为东道主之一，主场氛围将成为重要的第十二人。综合分析，AI预测双方将以0-0握手言和。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "主场优势",
+      "小组赛首场"
+    ]
+  },
+  {
+    "matchId": 537334,
+    "result": "DRAW",
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "confidence": 63,
+    "homeWinProb": 27,
+    "drawProb": 25,
+    "awayWinProb": 48,
+    "analysis": "瑞士(FIFA第15)排名高于卡塔尔(FIFA第48)，客队实力更强。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测双方将以1-1握手言和。",
+    "keyFactors": [
+      "FIFA排名劣势逆袭",
+      "小组赛首场",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537339,
+    "result": "DRAW",
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "confidence": 63,
+    "homeWinProb": 43,
+    "drawProb": 25,
+    "awayWinProb": 32,
+    "analysis": "巴西(FIFA第5)排名领先于摩洛哥(FIFA第14)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测双方将以1-1握手言和。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场",
+      "历史强队底蕴"
+    ]
+  },
+  {
+    "matchId": 537340,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "confidence": 70,
+    "homeWinProb": 40,
+    "drawProb": 25,
+    "awayWinProb": 35,
+    "analysis": "苏格兰(FIFA第37)排名高于海地(FIFA第52)，客队实力更强。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测海地将以1-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537346,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "confidence": 70,
+    "homeWinProb": 41,
+    "drawProb": 25,
+    "awayWinProb": 34,
+    "analysis": "澳大利亚(FIFA第23)与土耳其(FIFA第19)排名接近，实力在伯仲之间。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测澳大利亚将以1-0取胜。",
+    "keyFactors": [
+      "FIFA排名接近",
+      "小组赛首场"
+    ]
+  },
+  {
+    "matchId": 537351,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "confidence": 60,
+    "homeWinProb": 54,
+    "drawProb": 25,
+    "awayWinProb": 21,
+    "analysis": "德国(FIFA第10)排名领先于库拉索(FIFA第55)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测库拉索将以客场1-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537357,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 0,
+      "away": 2
+    },
+    "confidence": 67,
+    "homeWinProb": 41,
+    "drawProb": 25,
+    "awayWinProb": 34,
+    "analysis": "荷兰(FIFA第7)排名领先于日本(FIFA第15)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测日本将以客场2-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场"
+    ]
+  },
+  {
+    "matchId": 537352,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 1,
+      "away": 3
+    },
+    "confidence": 69,
+    "homeWinProb": 38,
+    "drawProb": 25,
+    "awayWinProb": 37,
+    "analysis": "厄瓜多尔(FIFA第28)排名高于科特迪瓦(FIFA第39)，客队实力更强。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测厄瓜多尔将以客场3-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场"
+    ]
+  },
+  {
+    "matchId": 537358,
+    "result": "DRAW",
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "confidence": 63,
+    "homeWinProb": 47,
+    "drawProb": 25,
+    "awayWinProb": 28,
+    "analysis": "瑞典(FIFA第23)排名领先于突尼斯(FIFA第29)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测双方将以1-1握手言和。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场"
+    ]
+  },
+  {
+    "matchId": 537369,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "confidence": 62,
+    "homeWinProb": 51,
+    "drawProb": 25,
+    "awayWinProb": 24,
+    "analysis": "西班牙(FIFA第3)排名领先于佛得角(FIFA第54)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测佛得角将以客场2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场",
+      "历史强队底蕴"
+    ]
+  },
+  {
+    "matchId": 537363,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "confidence": 76,
+    "homeWinProb": 52,
+    "drawProb": 25,
+    "awayWinProb": 23,
+    "analysis": "比利时(FIFA第8)排名领先于埃及(FIFA第35)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测比利时将以2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场"
+    ]
+  },
+  {
+    "matchId": 537370,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 0,
+      "away": 2
+    },
+    "confidence": 70,
+    "homeWinProb": 34,
+    "drawProb": 25,
+    "awayWinProb": 41,
+    "analysis": "乌拉圭(FIFA第13)排名高于沙特阿拉伯(FIFA第32)，客队实力更强。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测乌拉圭将以客场2-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场"
+    ]
+  },
+  {
+    "matchId": 537364,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 3,
+      "away": 0
+    },
+    "confidence": 74,
+    "homeWinProb": 49,
+    "drawProb": 25,
+    "awayWinProb": 26,
+    "analysis": "伊朗(FIFA第20)排名领先于新西兰(FIFA第42)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测伊朗将以3-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场"
+    ]
+  },
+  {
+    "matchId": 537391,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "confidence": 68,
+    "homeWinProb": 40,
+    "drawProb": 25,
+    "awayWinProb": 35,
+    "analysis": "法国(FIFA第2)排名领先于塞内加尔(FIFA第18)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测塞内加尔将以客场2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场",
+      "历史强队底蕴"
+    ]
+  },
+  {
+    "matchId": 537392,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "confidence": 70,
+    "homeWinProb": 36,
+    "drawProb": 25,
+    "awayWinProb": 39,
+    "analysis": "挪威(FIFA第38)排名高于伊拉克(FIFA第50)，客队实力更强。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测挪威将以客场2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537397,
+    "result": "DRAW",
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "confidence": 63,
+    "homeWinProb": 53,
+    "drawProb": 25,
+    "awayWinProb": 22,
+    "analysis": "阿根廷(FIFA第1)排名领先于阿尔及利亚(FIFA第33)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测双方将以0-0握手言和。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场",
+      "历史强队底蕴"
+    ]
+  },
+  {
+    "matchId": 537398,
+    "result": "DRAW",
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "confidence": 63,
+    "homeWinProb": 52,
+    "drawProb": 25,
+    "awayWinProb": 23,
+    "analysis": "奥地利(FIFA第22)排名领先于约旦(FIFA第51)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测双方将以1-1握手言和。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537403,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 3,
+      "away": 0
+    },
+    "confidence": 76,
+    "homeWinProb": 51,
+    "drawProb": 25,
+    "awayWinProb": 24,
+    "analysis": "葡萄牙(FIFA第6)排名领先于刚果(金)(FIFA第47)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测葡萄牙将以3-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537409,
+    "result": "DRAW",
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "confidence": 63,
+    "homeWinProb": 40,
+    "drawProb": 25,
+    "awayWinProb": 35,
+    "analysis": "英格兰(FIFA第4)排名领先于克罗地亚(FIFA第11)，纸面实力占优。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测双方将以0-0握手言和。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场",
+      "历史强队底蕴"
+    ]
+  },
+  {
+    "matchId": 537410,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "confidence": 68,
+    "homeWinProb": 38,
+    "drawProb": 25,
+    "awayWinProb": 37,
+    "analysis": "加纳(FIFA第36)与巴拿马(FIFA第35)排名接近，实力在伯仲之间。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测巴拿马将以客场2-1取胜。",
+    "keyFactors": [
+      "FIFA排名接近",
+      "小组赛首场"
+    ]
+  },
+  {
+    "matchId": 537404,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "confidence": 75,
+    "homeWinProb": 24,
+    "drawProb": 25,
+    "awayWinProb": 51,
+    "analysis": "哥伦比亚(FIFA第12)排名高于乌兹别克斯坦(FIFA第49)，客队实力更强。作为小组赛首轮比赛，双方都希望取得开门红，建立信心。综合分析，AI预测哥伦比亚将以客场1-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组赛首场",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537329,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "confidence": 68,
+    "homeWinProb": 37,
+    "drawProb": 25,
+    "awayWinProb": 38,
+    "analysis": "捷克(FIFA第36)与南非(FIFA第34)排名接近，实力在伯仲之间。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测捷克将以1-0取胜。",
+    "keyFactors": [
+      "FIFA排名接近",
+      "防守稳固"
+    ]
+  },
+  {
+    "matchId": 537335,
+    "result": "DRAW",
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "confidence": 63,
+    "homeWinProb": 54,
+    "drawProb": 25,
+    "awayWinProb": 21,
+    "analysis": "瑞士(FIFA第15)排名领先于波黑(FIFA第53)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测双方将以0-0握手言和。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537336,
+    "result": "DRAW",
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "confidence": 63,
+    "homeWinProb": 56,
+    "drawProb": 25,
+    "awayWinProb": 19,
+    "analysis": "加拿大(FIFA第30)排名领先于卡塔尔(FIFA第48)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。加拿大作为东道主之一，主场氛围将成为重要的第十二人。综合分析，AI预测双方将以1-1握手言和。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "主场优势",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537330,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "confidence": 75,
+    "homeWinProb": 50,
+    "drawProb": 25,
+    "awayWinProb": 25,
+    "analysis": "墨西哥(FIFA第16)与韩国(FIFA第21)排名接近，实力在伯仲之间。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。墨西哥作为东道主之一，主场氛围将成为重要的第十二人。综合分析，AI预测墨西哥将以2-1取胜。",
+    "keyFactors": [
+      "FIFA排名接近",
+      "主场优势"
+    ]
+  },
+  {
+    "matchId": 537348,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "confidence": 77,
+    "homeWinProb": 54,
+    "drawProb": 25,
+    "awayWinProb": 21,
+    "analysis": "美国(FIFA第17)排名领先于澳大利亚(FIFA第23)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。美国作为东道主之一，主场氛围将成为重要的第十二人。综合分析，AI预测美国将以2-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "主场优势"
+    ]
+  },
+  {
+    "matchId": 537342,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "confidence": 69,
+    "homeWinProb": 37,
+    "drawProb": 25,
+    "awayWinProb": 38,
+    "analysis": "摩洛哥(FIFA第14)排名高于苏格兰(FIFA第37)，客队实力更强。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测摩洛哥将以客场1-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "攻击力突出"
+    ]
+  },
+  {
+    "matchId": 537341,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "confidence": 58,
+    "homeWinProb": 59,
+    "drawProb": 25,
+    "awayWinProb": 16,
+    "analysis": "巴西(FIFA第5)排名领先于海地(FIFA第52)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测海地将以客场1-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "历史强队底蕴",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537347,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "confidence": 63,
+    "homeWinProb": 49,
+    "drawProb": 25,
+    "awayWinProb": 26,
+    "analysis": "土耳其(FIFA第19)排名领先于巴拉圭(FIFA第39)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测巴拉圭将以客场2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "攻击力突出"
+    ]
+  },
+  {
+    "matchId": 537359,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 3,
+      "away": 0
+    },
+    "confidence": 70,
+    "homeWinProb": 41,
+    "drawProb": 25,
+    "awayWinProb": 34,
+    "analysis": "荷兰(FIFA第7)排名领先于瑞典(FIFA第23)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测荷兰将以3-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "攻击力突出"
+    ]
+  },
+  {
+    "matchId": 537353,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "confidence": 77,
+    "homeWinProb": 54,
+    "drawProb": 25,
+    "awayWinProb": 21,
+    "analysis": "德国(FIFA第10)排名领先于科特迪瓦(FIFA第39)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测德国将以3-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "攻击力突出"
+    ]
+  },
+  {
+    "matchId": 537354,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "confidence": 75,
+    "homeWinProb": 50,
+    "drawProb": 25,
+    "awayWinProb": 25,
+    "analysis": "厄瓜多尔(FIFA第28)排名领先于库拉索(FIFA第55)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测厄瓜多尔将以2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537360,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "confidence": 69,
+    "homeWinProb": 37,
+    "drawProb": 25,
+    "awayWinProb": 38,
+    "analysis": "日本(FIFA第15)排名高于突尼斯(FIFA第29)，客队实力更强。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测日本将以客场1-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "防守稳固"
+    ]
+  },
+  {
+    "matchId": 537371,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "confidence": 73,
+    "homeWinProb": 46,
+    "drawProb": 25,
+    "awayWinProb": 29,
+    "analysis": "西班牙(FIFA第3)排名领先于沙特阿拉伯(FIFA第32)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测西班牙将以2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "历史强队底蕴"
+    ]
+  },
+  {
+    "matchId": 537365,
+    "result": "DRAW",
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "confidence": 63,
+    "homeWinProb": 39,
+    "drawProb": 25,
+    "awayWinProb": 36,
+    "analysis": "比利时(FIFA第8)排名领先于伊朗(FIFA第20)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测双方将以0-0握手言和。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "攻击力突出"
+    ]
+  },
+  {
+    "matchId": 537372,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "confidence": 60,
+    "homeWinProb": 56,
+    "drawProb": 25,
+    "awayWinProb": 19,
+    "analysis": "乌拉圭(FIFA第13)排名领先于佛得角(FIFA第54)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测佛得角将以客场2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537366,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 1,
+      "away": 3
+    },
+    "confidence": 67,
+    "homeWinProb": 41,
+    "drawProb": 25,
+    "awayWinProb": 34,
+    "analysis": "埃及(FIFA第35)排名高于新西兰(FIFA第42)，客队实力更强。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测埃及将以客场3-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "防守稳固"
+    ]
+  },
+  {
+    "matchId": 537399,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "confidence": 75,
+    "homeWinProb": 50,
+    "drawProb": 25,
+    "awayWinProb": 25,
+    "analysis": "阿根廷(FIFA第1)排名领先于奥地利(FIFA第22)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测阿根廷将以2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "历史强队底蕴"
+    ]
+  },
+  {
+    "matchId": 537393,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "confidence": 78,
+    "homeWinProb": 55,
+    "drawProb": 25,
+    "awayWinProb": 20,
+    "analysis": "法国(FIFA第2)排名领先于伊拉克(FIFA第50)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测法国将以2-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "历史强队底蕴",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537394,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "confidence": 69,
+    "homeWinProb": 38,
+    "drawProb": 25,
+    "awayWinProb": 37,
+    "analysis": "塞内加尔(FIFA第18)排名高于挪威(FIFA第38)，客队实力更强。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测挪威将以3-1取胜。",
+    "keyFactors": [
+      "FIFA排名劣势逆袭",
+      "攻击力突出"
+    ]
+  },
+  {
+    "matchId": 537400,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "confidence": 72,
+    "homeWinProb": 31,
+    "drawProb": 25,
+    "awayWinProb": 44,
+    "analysis": "阿尔及利亚(FIFA第33)排名高于约旦(FIFA第51)，客队实力更强。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测阿尔及利亚将以客场1-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537405,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "confidence": 76,
+    "homeWinProb": 52,
+    "drawProb": 25,
+    "awayWinProb": 23,
+    "analysis": "葡萄牙(FIFA第6)排名领先于乌兹别克斯坦(FIFA第49)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测葡萄牙将以3-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537411,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "confidence": 77,
+    "homeWinProb": 53,
+    "drawProb": 25,
+    "awayWinProb": 22,
+    "analysis": "英格兰(FIFA第4)排名领先于加纳(FIFA第36)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测英格兰将以2-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "历史强队底蕴"
+    ]
+  },
+  {
+    "matchId": 537412,
+    "result": "DRAW",
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "confidence": 63,
+    "homeWinProb": 33,
+    "drawProb": 25,
+    "awayWinProb": 42,
+    "analysis": "克罗地亚(FIFA第11)排名高于巴拿马(FIFA第35)，客队实力更强。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测双方将以1-1握手言和。",
+    "keyFactors": [
+      "FIFA排名劣势逆袭",
+      "攻击力突出"
+    ]
+  },
+  {
+    "matchId": 537406,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "confidence": 62,
+    "homeWinProb": 50,
+    "drawProb": 25,
+    "awayWinProb": 25,
+    "analysis": "哥伦比亚(FIFA第12)排名领先于刚果(金)(FIFA第47)，纸面实力占优。小组赛第二轮，双方对形势都有了更清晰的判断，战术针对性更强。综合分析，AI预测刚果(金)将以客场2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537337,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "confidence": 64,
+    "homeWinProb": 48,
+    "drawProb": 25,
+    "awayWinProb": 27,
+    "analysis": "瑞士(FIFA第15)排名领先于加拿大(FIFA第30)，纸面实力占优。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测加拿大将以客场2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "客场挑战",
+      "小组出线关键战"
+    ]
+  },
+  {
+    "matchId": 537338,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "confidence": 68,
+    "homeWinProb": 36,
+    "drawProb": 25,
+    "awayWinProb": 39,
+    "analysis": "波黑(FIFA第53)与卡塔尔(FIFA第48)排名接近，实力在伯仲之间。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测波黑将以2-0取胜。",
+    "keyFactors": [
+      "FIFA排名接近",
+      "小组出线关键战",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537344,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "confidence": 77,
+    "homeWinProb": 54,
+    "drawProb": 25,
+    "awayWinProb": 21,
+    "analysis": "摩洛哥(FIFA第14)排名领先于海地(FIFA第52)，纸面实力占优。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测摩洛哥将以1-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组出线关键战",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537343,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "confidence": 74,
+    "homeWinProb": 26,
+    "drawProb": 25,
+    "awayWinProb": 49,
+    "analysis": "巴西(FIFA第5)排名高于苏格兰(FIFA第37)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测巴西将以客场1-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组出线关键战",
+      "历史强队底蕴"
+    ]
+  },
+  {
+    "matchId": 537331,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 0,
+      "away": 2
+    },
+    "confidence": 73,
+    "homeWinProb": 29,
+    "drawProb": 25,
+    "awayWinProb": 46,
+    "analysis": "墨西哥(FIFA第16)排名高于捷克(FIFA第36)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测墨西哥将以客场2-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "客场挑战",
+      "小组出线关键战"
+    ]
+  },
+  {
+    "matchId": 537332,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "confidence": 68,
+    "homeWinProb": 36,
+    "drawProb": 25,
+    "awayWinProb": 39,
+    "analysis": "韩国(FIFA第21)排名高于南非(FIFA第34)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测南非将以1-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组出线关键战"
+    ]
+  },
+  {
+    "matchId": 537355,
+    "result": "DRAW",
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "confidence": 63,
+    "homeWinProb": 33,
+    "drawProb": 25,
+    "awayWinProb": 42,
+    "analysis": "德国(FIFA第10)排名高于厄瓜多尔(FIFA第28)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测双方将以1-1握手言和。",
+    "keyFactors": [
+      "FIFA排名劣势逆袭",
+      "小组出线关键战"
+    ]
+  },
+  {
+    "matchId": 537356,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "confidence": 69,
+    "homeWinProb": 36,
+    "drawProb": 25,
+    "awayWinProb": 39,
+    "analysis": "科特迪瓦(FIFA第39)排名高于库拉索(FIFA第55)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测科特迪瓦将以客场2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组出线关键战",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537361,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 0,
+      "away": 2
+    },
+    "confidence": 68,
+    "homeWinProb": 38,
+    "drawProb": 25,
+    "awayWinProb": 37,
+    "analysis": "荷兰(FIFA第7)排名高于突尼斯(FIFA第29)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测荷兰将以客场2-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组出线关键战"
+    ]
+  },
+  {
+    "matchId": 537362,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 2,
+      "away": 0
+    },
+    "confidence": 69,
+    "homeWinProb": 39,
+    "drawProb": 25,
+    "awayWinProb": 36,
+    "analysis": "日本(FIFA第15)排名领先于瑞典(FIFA第23)，纸面实力占优。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测日本将以2-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组出线关键战"
+    ]
+  },
+  {
+    "matchId": 537349,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "confidence": 69,
+    "homeWinProb": 39,
+    "drawProb": 25,
+    "awayWinProb": 36,
+    "analysis": "土耳其(FIFA第19)与美国(FIFA第17)排名接近，实力在伯仲之间。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测土耳其将以3-1取胜。",
+    "keyFactors": [
+      "FIFA排名接近",
+      "客场挑战",
+      "小组出线关键战"
+    ]
+  },
+  {
+    "matchId": 537350,
+    "result": "DRAW",
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "confidence": 63,
+    "homeWinProb": 34,
+    "drawProb": 25,
+    "awayWinProb": 41,
+    "analysis": "澳大利亚(FIFA第23)排名高于巴拉圭(FIFA第39)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测双方将以1-1握手言和。",
+    "keyFactors": [
+      "FIFA排名劣势逆袭",
+      "小组出线关键战"
+    ]
+  },
+  {
+    "matchId": 537395,
+    "result": "DRAW",
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "confidence": 63,
+    "homeWinProb": 25,
+    "drawProb": 25,
+    "awayWinProb": 50,
+    "analysis": "法国(FIFA第2)排名高于挪威(FIFA第38)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测双方将以0-0握手言和。",
+    "keyFactors": [
+      "FIFA排名劣势逆袭",
+      "小组出线关键战",
+      "历史强队底蕴"
+    ]
+  },
+  {
+    "matchId": 537396,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 3,
+      "away": 1
+    },
+    "confidence": 75,
+    "homeWinProb": 50,
+    "drawProb": 25,
+    "awayWinProb": 25,
+    "analysis": "塞内加尔(FIFA第18)排名领先于伊拉克(FIFA第50)，纸面实力占优。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测塞内加尔将以3-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组出线关键战",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537373,
+    "result": "DRAW",
+    "score": {
+      "home": 0,
+      "away": 0
+    },
+    "confidence": 63,
+    "homeWinProb": 32,
+    "drawProb": 25,
+    "awayWinProb": 43,
+    "analysis": "西班牙(FIFA第3)排名高于乌拉圭(FIFA第13)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测双方将以0-0握手言和。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组出线关键战",
+      "历史强队底蕴"
+    ]
+  },
+  {
+    "matchId": 537374,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "confidence": 68,
+    "homeWinProb": 35,
+    "drawProb": 25,
+    "awayWinProb": 40,
+    "analysis": "沙特阿拉伯(FIFA第32)排名高于佛得角(FIFA第54)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测佛得角将以2-1取胜。",
+    "keyFactors": [
+      "FIFA排名劣势逆袭",
+      "小组出线关键战",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537367,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "confidence": 74,
+    "homeWinProb": 27,
+    "drawProb": 25,
+    "awayWinProb": 48,
+    "analysis": "比利时(FIFA第8)排名高于新西兰(FIFA第42)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测比利时将以客场2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组出线关键战"
+    ]
+  },
+  {
+    "matchId": 537368,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 2,
+      "away": 1
+    },
+    "confidence": 66,
+    "homeWinProb": 32,
+    "drawProb": 25,
+    "awayWinProb": 43,
+    "analysis": "伊朗(FIFA第20)排名高于埃及(FIFA第35)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测埃及将以2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组出线关键战"
+    ]
+  },
+  {
+    "matchId": 537413,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "confidence": 71,
+    "homeWinProb": 33,
+    "drawProb": 25,
+    "awayWinProb": 42,
+    "analysis": "英格兰(FIFA第4)排名高于巴拿马(FIFA第35)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测英格兰将以客场1-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组出线关键战",
+      "历史强队底蕴"
+    ]
+  },
+  {
+    "matchId": 537414,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 1,
+      "away": 3
+    },
+    "confidence": 62,
+    "homeWinProb": 51,
+    "drawProb": 25,
+    "awayWinProb": 24,
+    "analysis": "克罗地亚(FIFA第11)排名领先于加纳(FIFA第36)，纸面实力占优。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测加纳将以客场3-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组出线关键战"
+    ]
+  },
+  {
+    "matchId": 537407,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 1,
+      "away": 2
+    },
+    "confidence": 71,
+    "homeWinProb": 33,
+    "drawProb": 25,
+    "awayWinProb": 42,
+    "analysis": "葡萄牙(FIFA第6)排名高于哥伦比亚(FIFA第12)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测葡萄牙将以客场2-1取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组出线关键战"
+    ]
+  },
+  {
+    "matchId": 537408,
+    "result": "HOME_WIN",
+    "score": {
+      "home": 1,
+      "away": 0
+    },
+    "confidence": 69,
+    "homeWinProb": 39,
+    "drawProb": 25,
+    "awayWinProb": 36,
+    "analysis": "刚果(金)(FIFA第47)与乌兹别克斯坦(FIFA第49)排名接近，实力在伯仲之间。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测刚果(金)将以1-0取胜。",
+    "keyFactors": [
+      "FIFA排名接近",
+      "小组出线关键战",
+      "新军冲击力"
+    ]
+  },
+  {
+    "matchId": 537401,
+    "result": "DRAW",
+    "score": {
+      "home": 1,
+      "away": 1
+    },
+    "confidence": 63,
+    "homeWinProb": 20,
+    "drawProb": 25,
+    "awayWinProb": 55,
+    "analysis": "阿根廷(FIFA第1)排名高于约旦(FIFA第51)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测双方将以1-1握手言和。",
+    "keyFactors": [
+      "FIFA排名劣势逆袭",
+      "小组出线关键战",
+      "历史强队底蕴"
+    ]
+  },
+  {
+    "matchId": 537402,
+    "result": "AWAY_WIN",
+    "score": {
+      "home": 0,
+      "away": 1
+    },
+    "confidence": 68,
+    "homeWinProb": 38,
+    "drawProb": 25,
+    "awayWinProb": 37,
+    "analysis": "奥地利(FIFA第22)排名高于阿尔及利亚(FIFA第33)，客队实力更强。小组赛末轮生死战，出线形势使得比赛充满变数和紧迫感。综合分析，AI预测奥地利将以客场1-0取胜。",
+    "keyFactors": [
+      "FIFA排名优势",
+      "小组出线关键战"
+    ]
+  },
+  {
+    "matchId": 537417,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537423,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537415,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537418,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537424,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537416,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537425,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537426,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537422,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537421,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537420,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537419,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537429,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537428,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537427,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537430,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "32强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537376,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "16强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537375,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "16强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537377,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "16强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537378,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "16强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537379,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "16强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537380,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "16强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537381,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "16强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537382,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "16强赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537383,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "四分之一决赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537384,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "四分之一决赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537385,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "四分之一决赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537386,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "四分之一决赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537387,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "半决赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537388,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "半决赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537389,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "三四名决赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  },
+  {
+    "matchId": 537390,
+    "result": null,
+    "score": null,
+    "confidence": 0,
+    "homeWinProb": 33,
+    "drawProb": 34,
+    "awayWinProb": 33,
+    "analysis": "决赛对阵双方尚未确定，AI将在小组赛结束后更新预测。",
+    "keyFactors": [
+      "淘汰赛压力",
+      "待定对阵"
+    ],
+    "pending": true
+  }
+]

@@ -1,0 +1,254 @@
+{
+  "id": "sweden",
+  "nameZh": "瑞典",
+  "nameEn": "Sweden",
+  "code": "se",
+  "group": "",
+  "confederation": "",
+  "fifaRank": 23,
+  "flag": "https://flagcdn.com/w80/se.png",
+  "coach": {
+    "nameEn": "Jon Dahl Tomasson",
+    "nameZh": "约翰·达尔·托马森",
+    "nationality": ""
+  },
+  "founded": 1904,
+  "venue": "Friends Arena",
+  "squad": [
+    {
+      "name": "Kristoffer Nordfeldt",
+      "nameZh": "Kristoffer Nordfeldt",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1989-06-23",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Noel Törnqvist",
+      "nameZh": "Noel Törnqvist",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2002-02-01",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Melker Ellborg",
+      "nameZh": "Melker Ellborg",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2003-05-22",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Daniel Svensson",
+      "nameZh": "Daniel Svensson",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2002-02-12",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gustaf Lagerbielke",
+      "nameZh": "Gustaf Lagerbielke",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-04-10",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Herman Johansson",
+      "nameZh": "Herman Johansson",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-10-16",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Besfort Zeneli",
+      "nameZh": "Besfort Zeneli",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-11-21",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Taha Ali",
+      "nameZh": "Taha Ali",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-07-01",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Roony Bardghji",
+      "nameZh": "Roony Bardghji",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2005-11-15",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Elliot Stroud",
+      "nameZh": "Elliot Stroud",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-06-22",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gustaf Nilsson",
+      "nameZh": "Gustaf Nilsson",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1997-05-23",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Benjamin Nygren",
+      "nameZh": "Benjamin Nygren",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-07-08",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gustav Lundgren",
+      "nameZh": "Gustav Lundgren",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1997-09-25",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lucas Bergvall",
+      "nameZh": "Lucas Bergvall",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2006-02-02",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hugo Larsson",
+      "nameZh": "Hugo Larsson",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2004-06-27",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Williot Swedberg",
+      "nameZh": "Williot Swedberg",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2004-02-01",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Isak Hien",
+      "nameZh": "Isak Hien",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1999-01-13",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Anthony Elanga",
+      "nameZh": "Anthony Elanga",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2002-04-27",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Yasin Ayari",
+      "nameZh": "Yasin Ayari",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2003-10-06",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Eric Smith",
+      "nameZh": "Eric Smith",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1997-01-08",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gabriel Gudmundsson",
+      "nameZh": "Gabriel Gudmundsson",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1999-04-29",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jesper Karlström",
+      "nameZh": "Jesper Karlström",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1995-06-21",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Carl Starfelt",
+      "nameZh": "Carl Starfelt",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1995-06-01",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mattias Svanberg",
+      "nameZh": "Mattias Svanberg",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1999-01-05",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Viktor Gyökeres",
+      "nameZh": "Viktor Gyökeres",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1998-06-04",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Victor Nilsson-Lindelöf",
+      "nameZh": "Victor Nilsson-Lindelöf",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1994-07-17",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

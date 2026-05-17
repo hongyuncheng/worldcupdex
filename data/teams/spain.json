@@ -1,0 +1,263 @@
+{
+  "id": "spain",
+  "nameZh": "西班牙",
+  "nameEn": "Spain",
+  "code": "es",
+  "group": "D",
+  "confederation": "UEFA",
+  "fifaRank": 3,
+  "flag": "https://flagcdn.com/w80/es.png",
+  "coach": {
+    "nameEn": "Luis de la Fuente",
+    "nameZh": "路易斯·德拉富恩特",
+    "nationality": ""
+  },
+  "founded": 1909,
+  "venue": "Estadio Alfredo Di Stéfano",
+  "squad": [
+    {
+      "name": "David Raya",
+      "nameZh": "大卫·拉亚",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1995-09-15",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Álex Remiro",
+      "nameZh": "阿莱克斯·雷米罗",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1995-03-24",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Unai Simón",
+      "nameZh": "乌奈·西蒙",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1997-06-11",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Joan García",
+      "nameZh": "霍安·加西亚",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2001-05-04",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Víctor Muñoz",
+      "nameZh": "维克托·穆尼奥斯",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2003-07-13",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Pau Cubarsí",
+      "nameZh": "保·库巴尔西",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2007-01-22",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Fermín López",
+      "nameZh": "费尔明·洛佩斯",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2003-05-11",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lamine Yamal",
+      "nameZh": "拉明·亚马尔",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2007-07-13",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Dean Huijsen",
+      "nameZh": "迪恩·赫伊森",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2005-04-14",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mikel Oyarzabal",
+      "nameZh": "米克尔·奥亚萨巴尔",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1997-04-21",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Cristhian Mosquera",
+      "nameZh": "克里斯蒂安·莫斯克拉",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2004-06-27",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Yeremi Pino",
+      "nameZh": "耶雷米·皮诺",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2002-10-20",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alejandro Baena",
+      "nameZh": "亚历杭德罗·巴埃纳",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2001-07-20",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Pedri",
+      "nameZh": "佩德里",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2002-11-25",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Martín Zubimendi",
+      "nameZh": "马丁·苏比门迪",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1999-02-02",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ander Barrenetxea",
+      "nameZh": "安德尔·巴雷内切亚",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2001-12-27",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Pedro Porro",
+      "nameZh": "佩德罗·波罗",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1999-09-13",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ferrán Torres",
+      "nameZh": "费兰·托雷斯",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2000-02-29",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Carlos Soler",
+      "nameZh": "卡洛斯·索莱尔",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1997-01-02",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Pablo Fornals",
+      "nameZh": "巴勃罗·福纳尔斯",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "1996-02-22",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Borja Iglesias",
+      "nameZh": "博尔哈·伊格莱西亚斯",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1993-01-17",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Dani Olmo",
+      "nameZh": "达尼·奥尔莫",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "1998-05-07",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alejandro Grimaldo",
+      "nameZh": "亚历杭德罗·格里马尔多",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1995-09-20",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Cucurella",
+      "nameZh": "库库雷利亚",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1998-07-22",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Aymeric Laporte",
+      "nameZh": "艾梅里克·拉波尔特",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1994-05-27",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Rodri",
+      "nameZh": "罗德里",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1996-06-22",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Marcos Llorente",
+      "nameZh": "马科斯·略伦特",
+      "position": "Right Midfield",
+      "positionZh": "Right Midfield",
+      "dateOfBirth": "1995-01-30",
+      "nationality": "Spain",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

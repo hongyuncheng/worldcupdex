@@ -1,0 +1,140 @@
+{
+  "id": "mexico",
+  "nameZh": "墨西哥",
+  "nameEn": "Mexico",
+  "code": "mx",
+  "group": "A",
+  "confederation": "CONCACAF",
+  "fifaRank": 16,
+  "flag": "https://flagcdn.com/w80/mx.png",
+  "coach": {
+    "nameEn": "Javier Aguirre",
+    "nameZh": "哈维尔·阿吉雷",
+    "nationality": ""
+  },
+  "founded": 1927,
+  "venue": "Levi's Stadium",
+  "squad": [
+    {
+      "name": "Carlos Acevedo",
+      "nameZh": "Carlos Acevedo",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1996-04-19",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": null
+    },
+    {
+      "name": "José Rangel",
+      "nameZh": "José Rangel",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2000-02-25",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": null
+    },
+    {
+      "name": "Brian Gutiérrez",
+      "nameZh": "Brian Gutiérrez",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2003-06-17",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ardabg1766490164.png"
+    },
+    {
+      "name": "Gilberto Mora",
+      "nameZh": "Gilberto Mora",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "2008-10-14",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": null
+    },
+    {
+      "name": "Armando González",
+      "nameZh": "Armando González",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2003-04-20",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": null
+    },
+    {
+      "name": "Israel Reyes",
+      "nameZh": "Israel Reyes",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "2000-05-23",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gopczi1750327134.png"
+    },
+    {
+      "name": "Erik Lira",
+      "nameZh": "埃里克·利拉",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "2000-05-08",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": null
+    },
+    {
+      "name": "Luis Romo",
+      "nameZh": "路易斯·罗莫",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1995-06-05",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/w5g1po1716821279.png"
+    },
+    {
+      "name": "Guillermo Martínez",
+      "nameZh": "Guillermo Martínez",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1995-03-15",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/j0m63f1716820105.png"
+    },
+    {
+      "name": "Alexis Vega",
+      "nameZh": "阿莱克西斯·贝加",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "1997-11-25",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/0mmqo91776412620.png"
+    },
+    {
+      "name": "Roberto Alvarado",
+      "nameZh": "罗伯托·阿尔瓦拉多",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "1998-09-07",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/dup2qf1630164554.png"
+    },
+    {
+      "name": "Jesús Gallardo",
+      "nameZh": "赫苏斯·加亚尔多",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1994-08-15",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/syauia1776427423.png"
+    }
+  ],
+  "recentMatches": []
+}

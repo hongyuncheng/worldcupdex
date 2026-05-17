@@ -1,0 +1,227 @@
+{
+  "id": "bosnia-herzegovina",
+  "nameZh": "波黑",
+  "nameEn": "Bosnia-Herzegovina",
+  "code": "ba",
+  "group": "",
+  "confederation": "",
+  "fifaRank": 53,
+  "flag": "https://flagcdn.com/w80/ba.png",
+  "coach": {
+    "nameEn": "Sergej Barbarez",
+    "nameZh": "塞尔盖·巴巴雷茨",
+    "nationality": ""
+  },
+  "founded": 1992,
+  "venue": "Stadion Bilino Polje",
+  "squad": [
+    {
+      "name": "Osman Hadžikić",
+      "nameZh": "Osman Hadžikić",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1996-03-12",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Martin Zlomislić",
+      "nameZh": "Martin Zlomislić",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1998-08-16",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nikola Vasilj",
+      "nameZh": "Nikola Vasilj",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1995-12-02",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nihad Mujakić",
+      "nameZh": "Nihad Mujakić",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-04-15",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nikola Katić",
+      "nameZh": "Nikola Katić",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-10-10",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Stjepan Radeljić",
+      "nameZh": "Stjepan Radeljić",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-09-05",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ivan Šunjić",
+      "nameZh": "Ivan Šunjić",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1996-10-09",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Amir Hadžiahmetović",
+      "nameZh": "Amir Hadžiahmetović",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-03-08",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Armin Gigovic",
+      "nameZh": "Armin Gigovic",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-04-06",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ivan Bašić",
+      "nameZh": "Ivan Bašić",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-04-30",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Esmir Bajraktarevic",
+      "nameZh": "Esmir Bajraktarevic",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2005-03-10",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kerim Alajbegović",
+      "nameZh": "Kerim Alajbegović",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2007-09-21",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Edin Džeko",
+      "nameZh": "Edin Džeko",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1986-03-17",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Haris Tabaković",
+      "nameZh": "Haris Tabaković",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1994-06-20",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Samed Bazdar",
+      "nameZh": "Samed Bazdar",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2004-01-31",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Amar Memić",
+      "nameZh": "Amar Memić",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-01-20",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nidal Čelik",
+      "nameZh": "Nidal Čelik",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2006-07-17",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Benjamin Tahirovic",
+      "nameZh": "Benjamin Tahirovic",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "2003-03-03",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tarik Muharemović",
+      "nameZh": "Tarik Muharemović",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2003-02-28",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Amar Dedić",
+      "nameZh": "Amar Dedić",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "2002-08-18",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ermedin Demirovic",
+      "nameZh": "Ermedin Demirovic",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1998-03-25",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Dženis Burnić",
+      "nameZh": "Dženis Burnić",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1998-05-22",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    },
+    {
+      "name": "Sead Kolašinac",
+      "nameZh": "Sead Kolašinac",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1993-06-20",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

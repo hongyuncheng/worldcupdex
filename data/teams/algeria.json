@@ -1,0 +1,236 @@
+{
+  "id": "algeria",
+  "nameZh": "阿尔及利亚",
+  "nameEn": "Algeria",
+  "code": "dz",
+  "group": "",
+  "confederation": "",
+  "fifaRank": 33,
+  "flag": "https://flagcdn.com/w80/dz.png",
+  "coach": {
+    "nameEn": "Vladimir Petković",
+    "nameZh": "弗拉迪米尔·佩特科维奇",
+    "nationality": ""
+  },
+  "founded": 1962,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Luca Zidane",
+      "nameZh": "Luca Zidane",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1998-05-13",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Anthony Mandrea",
+      "nameZh": "Anthony Mandrea",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1996-12-25",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Melvin Mastil",
+      "nameZh": "Melvin Mastil",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2000-02-19",
+      "nationality": "France",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kilian Belazzoug",
+      "nameZh": "Kilian Belazzoug",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2006-07-18",
+      "nationality": "France",
+      "shirtNumber": null
+    },
+    {
+      "name": "Rafik Belghali",
+      "nameZh": "Rafik Belghali",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2002-06-07",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mehdi Dorval",
+      "nameZh": "Mehdi Dorval",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-02-09",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Zinédine Belaïd",
+      "nameZh": "Zinédine Belaïd",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-03-20",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Riyad Mahrez",
+      "nameZh": "Riyad Mahrez",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1991-02-21",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Yacine Titraoui",
+      "nameZh": "Yacine Titraoui",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2003-07-26",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mohammed Amoura",
+      "nameZh": "Mohammed Amoura",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-05-09",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nadhir Benbouali",
+      "nameZh": "Nadhir Benbouali",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-04-17",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Amin Chiakha",
+      "nameZh": "Amin Chiakha",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2006-03-12",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Farés Ghedjemis",
+      "nameZh": "Farés Ghedjemis",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2002-09-06",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Sohaib Nair",
+      "nameZh": "Sohaib Nair",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2002-04-23",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ibrahim Maza",
+      "nameZh": "Ibrahim Maza",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "2005-11-24",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Fares Chaïbi",
+      "nameZh": "Fares Chaïbi",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "2002-11-28",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Adil Aouchiche",
+      "nameZh": "Adil Aouchiche",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "2002-07-15",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ramiz Zerrouki",
+      "nameZh": "Ramiz Zerrouki",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1998-05-26",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hicham Boudaoui",
+      "nameZh": "Hicham Boudaoui",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1999-09-23",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ramy Bensebaini",
+      "nameZh": "Ramy Bensebaini",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1995-04-16",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Rayan Aït Nouri",
+      "nameZh": "Rayan Aït Nouri",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "2001-06-06",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Amine Gouiri",
+      "nameZh": "Amine Gouiri",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2000-02-16",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Houssem Aouar",
+      "nameZh": "Houssem Aouar",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1998-06-30",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Aïssa Mandi",
+      "nameZh": "Aïssa Mandi",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1991-10-22",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

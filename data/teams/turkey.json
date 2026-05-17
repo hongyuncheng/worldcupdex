@@ -1,0 +1,263 @@
+{
+  "id": "turkey",
+  "nameZh": "土耳其",
+  "nameEn": "Turkey",
+  "code": "tr",
+  "group": "L",
+  "confederation": "UEFA",
+  "fifaRank": 19,
+  "flag": "https://flagcdn.com/w80/tr.png",
+  "coach": {
+    "nameEn": "Vincenzo Montella",
+    "nameZh": "文森佐·蒙特拉",
+    "nationality": ""
+  },
+  "founded": 1923,
+  "venue": "Ali Sami Yen Stadyumu",
+  "squad": [
+    {
+      "name": "Mert Günok",
+      "nameZh": "Mert Günok",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1989-03-01",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Altay Bayındır",
+      "nameZh": "Altay Bayındır",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1998-04-14",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Muhammed Şengezer",
+      "nameZh": "Muhammed Şengezer",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1997-01-05",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Uğurcan Çakır",
+      "nameZh": "Uğurcan Çakır",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1996-04-05",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mert Müldür",
+      "nameZh": "Mert Müldür",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-04-03",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Abdülkerim Bardakcı",
+      "nameZh": "Abdülkerim Bardakcı",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1994-09-07",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Merih Demiral",
+      "nameZh": "Merih Demiral",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-03-05",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Samet Akaydın",
+      "nameZh": "Samet Akaydın",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1994-03-13",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Evren Eren Elmalı",
+      "nameZh": "Evren Eren Elmalı",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-07-07",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kaan Ayhan",
+      "nameZh": "Kaan Ayhan",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1994-11-10",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "İrfan Can Kahveci",
+      "nameZh": "İrfan Can Kahveci",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1995-07-15",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mustafa Eskihellaç",
+      "nameZh": "Mustafa Eskihellaç",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-05-05",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "İsmail Yüksek",
+      "nameZh": "İsmail Yüksek",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-01-26",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Muhammed Kerem Aktürkoğlu",
+      "nameZh": "Muhammed Kerem Aktürkoğlu",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-10-21",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Oguz Aydin",
+      "nameZh": "Oguz Aydin",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-10-27",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Baris Yilmaz",
+      "nameZh": "Baris Yilmaz",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-05-23",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Deniz Gul",
+      "nameZh": "Deniz Gul",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2004-07-02",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kenan Yıldız",
+      "nameZh": "Kenan Yıldız",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2005-05-04",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Arda Guler",
+      "nameZh": "Arda Guler",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2005-02-25",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Yunus Akgün",
+      "nameZh": "Yunus Akgün",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2000-07-07",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ozan Kabak",
+      "nameZh": "Ozan Kabak",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2000-03-25",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Zeki Çelik",
+      "nameZh": "Zeki Çelik",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1997-02-17",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ferdi Kadıoğlu",
+      "nameZh": "Ferdi Kadıoğlu",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1999-10-07",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Orkun Kökçü",
+      "nameZh": "Orkun Kökçü",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2000-12-29",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Atakan Karazor",
+      "nameZh": "Atakan Karazor",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1996-10-13",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hakan Çalhanoğlu",
+      "nameZh": "Hakan Çalhanoğlu",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1994-02-08",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Salih Özcan",
+      "nameZh": "Salih Özcan",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1998-01-11",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

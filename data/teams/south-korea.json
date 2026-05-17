@@ -1,0 +1,254 @@
+{
+  "id": "south-korea",
+  "nameZh": "韩国",
+  "nameEn": "South Korea",
+  "code": "kr",
+  "group": "J",
+  "confederation": "AFC",
+  "fifaRank": 21,
+  "flag": "https://flagcdn.com/w80/kr.png",
+  "coach": {
+    "nameEn": "Hong Myung-bo",
+    "nameZh": "洪明甫",
+    "nationality": ""
+  },
+  "founded": 1928,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Seung-Gyu Kim",
+      "nameZh": "Seung-Gyu Kim",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1990-09-30",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Bum-keun Song",
+      "nameZh": "Bum-keun Song",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1997-10-15",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hyeon-woo Jo",
+      "nameZh": "Hyeon-woo Jo",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1991-09-25",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Moon-hwan Kim",
+      "nameZh": "Moon-hwan Kim",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-08-01",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Yu-min Cho",
+      "nameZh": "Yu-min Cho",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-11-17",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Han-bum Lee",
+      "nameZh": "Han-bum Lee",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2002-06-17",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Young-woo Seol",
+      "nameZh": "Young-woo Seol",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-12-05",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tae-hyeon Kim",
+      "nameZh": "Tae-hyeon Kim",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-09-17",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ju-sung Kim",
+      "nameZh": "Ju-sung Kim",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-12-12",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tae-seok Lee",
+      "nameZh": "Tae-seok Lee",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2002-07-28",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Paik Seungho",
+      "nameZh": "白昇浩",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-03-17",
+      "nationality": "Korea Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "In-beom Hwang",
+      "nameZh": "黄仁范",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1996-09-20",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hyun-seok Hong",
+      "nameZh": "Hyun-seok Hong",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-06-16",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hyun-jun Yang",
+      "nameZh": "Hyun-jun Yang",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-05-25",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jin-Gyu Kim",
+      "nameZh": "Jin-Gyu Kim",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-02-24",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hyeok-kyu Kwon",
+      "nameZh": "Hyeok-kyu Kwon",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-03-13",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jin-seob Park",
+      "nameZh": "Jin-seob Park",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1995-10-23",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gue-Sung Cho",
+      "nameZh": "赵圭成",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1998-01-25",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hyun-Gyu Oh",
+      "nameZh": "Hyun-Gyu Oh",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-04-12",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ji-sung Eom",
+      "nameZh": "Ji-sung Eom",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2002-05-09",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Joon-ho Bae",
+      "nameZh": "Joon-ho Bae",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "2003-08-21",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Heung-min Son",
+      "nameZh": "孙兴慜",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "1992-07-08",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Min-Jae Kim",
+      "nameZh": "金玟哉",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1996-11-15",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lee Kangin",
+      "nameZh": "李刚仁",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2001-02-19",
+      "nationality": "Korea, South",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hwang Heechan",
+      "nameZh": "黄喜灿",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1996-01-26",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lee Jaesung",
+      "nameZh": "李在城",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "1992-08-10",
+      "nationality": "Korea, South",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

@@ -1,0 +1,263 @@
+{
+  "id": "iraq",
+  "nameZh": "伊拉克",
+  "nameEn": "Iraq",
+  "code": "iq",
+  "group": "",
+  "confederation": "",
+  "fifaRank": 50,
+  "flag": "https://flagcdn.com/w80/iq.png",
+  "coach": {
+    "nameEn": "Jesús Casas",
+    "nameZh": "赫苏斯·卡萨斯",
+    "nationality": ""
+  },
+  "founded": 1948,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Fahad Talib",
+      "nameZh": "Fahad Talib",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1994-10-21",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ahmed Basil",
+      "nameZh": "Ahmed Basil",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1996-08-19",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kumel Al Rekabe",
+      "nameZh": "Kumel Al Rekabe",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2004-08-19",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Frans Dhia Putros",
+      "nameZh": "Frans Dhia Putros",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1993-07-14",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Maytham Jabbar",
+      "nameZh": "Maytham Jabbar",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-11-10",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Merchas Doski",
+      "nameZh": "Merchas Doski",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-12-07",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Rebin Sulaka",
+      "nameZh": "Rebin Sulaka",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1992-04-12",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Zaid Tahseen",
+      "nameZh": "Zaid Tahseen",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-01-29",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Manaf Younis",
+      "nameZh": "Manaf Younis",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-11-16",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ahmed Maknazi",
+      "nameZh": "Ahmed Maknazi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-09-24",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Zaid Ismail",
+      "nameZh": "Zaid Ismail",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2002-01-03",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Amir Al Ammari",
+      "nameZh": "Amir Al Ammari",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-07-27",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Peter Gwargis",
+      "nameZh": "Peter Gwargis",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-09-04",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kevin Yakob",
+      "nameZh": "Kevin Yakob",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-10-10",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Karar Nabeel",
+      "nameZh": "Karar Nabeel",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-01-16",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Aimar Sher",
+      "nameZh": "Aimar Sher",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-12-20",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ibrahim Bayesh",
+      "nameZh": "Ibrahim Bayesh",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-05-01",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Youssef Amyn",
+      "nameZh": "Youssef Amyn",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2003-08-21",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Marko Farji",
+      "nameZh": "Marko Farji",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2004-03-16",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hasan Abdulkareem",
+      "nameZh": "Hasan Abdulkareem",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-01-01",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Akam Hashem",
+      "nameZh": "Akam Hashem",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-08-16",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Aymen Hussein",
+      "nameZh": "Aymen Hussein",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1996-03-22",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mohanad Ali",
+      "nameZh": "Mohanad Ali",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-06-20",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ali Jassim El-Aibi",
+      "nameZh": "Ali Jassim El-Aibi",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2004-01-20",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ali Al-Hamadi",
+      "nameZh": "Ali Al-Hamadi",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2002-03-01",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Zidane Iqbal",
+      "nameZh": "Zidane Iqbal",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2003-04-27",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hussein Ali",
+      "nameZh": "Hussein Ali",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "2002-03-01",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

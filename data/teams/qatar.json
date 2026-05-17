@@ -1,0 +1,218 @@
+{
+  "id": "qatar",
+  "nameZh": "卡塔尔",
+  "nameEn": "Qatar",
+  "code": "qa",
+  "group": "",
+  "confederation": "",
+  "fifaRank": 48,
+  "flag": "https://flagcdn.com/w80/qa.png",
+  "coach": {
+    "nameEn": "Luis García",
+    "nameZh": "路易斯·加西亚",
+    "nationality": ""
+  },
+  "founded": 1960,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Meshaal Barsham",
+      "nameZh": "Meshaal Barsham",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1998-02-14",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mahmoud Abunada",
+      "nameZh": "Mahmoud Abunada",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2000-02-05",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Shehab Mamdouh Ellethy",
+      "nameZh": "Shehab Mamdouh Ellethy",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2000-04-18",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Niall Mason",
+      "nameZh": "Niall Mason",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-01-10",
+      "nationality": "England",
+      "shirtNumber": null
+    },
+    {
+      "name": "Assim Madibo",
+      "nameZh": "Assim Madibo",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-10-22",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tarek Salman",
+      "nameZh": "Tarek Salman",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-12-05",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jassem Gaber Abdulsallam",
+      "nameZh": "Jassem Gaber Abdulsallam",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2002-02-20",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Homam Ahmed",
+      "nameZh": "Homam Ahmed",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-08-25",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lucas Mendes",
+      "nameZh": "Lucas Mendes",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1990-07-03",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Sultan Al Brake",
+      "nameZh": "Sultan Al Brake",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-04-07",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Al Hashmi Al Hussain",
+      "nameZh": "Al Hashmi Al Hussain",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2003-08-15",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ayoub Al-Oui",
+      "nameZh": "Ayoub Al-Oui",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2005-03-11",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Yousef Ayman",
+      "nameZh": "Yousef Ayman",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-03-21",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mohammed Waad",
+      "nameZh": "Mohammed Waad",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-09-18",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Abdulaziz Hatem",
+      "nameZh": "Abdulaziz Hatem",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1990-10-28",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ahmed Fathy",
+      "nameZh": "Ahmed Fathy",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1993-01-25",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Akram Afif",
+      "nameZh": "Akram Afif",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1996-11-18",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mohammed Muntari",
+      "nameZh": "Mohammed Muntari",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1993-12-20",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mohamed Khaled Gouda",
+      "nameZh": "Mohamed Khaled Gouda",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2005-01-26",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Khalid Ali Sabah",
+      "nameZh": "Khalid Ali Sabah",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-10-05",
+      "nationality": "Qatar",
+      "shirtNumber": null
+    },
+    {
+      "name": "Edmílson",
+      "nameZh": "Edmílson",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1994-08-19",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ahmed Alaaeldin",
+      "nameZh": "Ahmed Alaaeldin",
+      "position": "",
+      "positionZh": "",
+      "dateOfBirth": "1993-01-31",
+      "nationality": "",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

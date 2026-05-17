@@ -1,0 +1,272 @@
+{
+  "id": "senegal",
+  "nameZh": "塞内加尔",
+  "nameEn": "Senegal",
+  "code": "sn",
+  "group": "K",
+  "confederation": "CAF",
+  "fifaRank": 18,
+  "flag": "https://flagcdn.com/w80/sn.png",
+  "coach": {
+    "nameEn": "Pape Thiaw",
+    "nameZh": "帕普·蒂亚乌",
+    "nationality": ""
+  },
+  "founded": 1960,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Edouard Mendy",
+      "nameZh": "爱德华·门迪",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1992-03-01",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Yehvann Diouf",
+      "nameZh": "Yehvann Diouf",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1999-11-16",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mory Diaw",
+      "nameZh": "Mory Diaw",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1993-06-22",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kalidou Koulibaly",
+      "nameZh": "卡利杜·库利巴利",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1991-06-20",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Abdoulaye Seck",
+      "nameZh": "Abdoulaye Seck",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1992-06-04",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "El Hadji Malick Diouf",
+      "nameZh": "El Hadji Malick Diouf",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2023-02-21",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Habib Diallo",
+      "nameZh": "Habib Diallo",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1995-06-18",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Cherif Ndiaye",
+      "nameZh": "Cherif Ndiaye",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1996-01-23",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ibrahim M'Baye",
+      "nameZh": "Ibrahim M'Baye",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2008-01-24",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Assane Diao",
+      "nameZh": "Assane Diao",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2005-09-07",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mamadou Diakhon",
+      "nameZh": "Mamadou Diakhon",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2005-09-22",
+      "nationality": "France",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lamine Camara",
+      "nameZh": "Lamine Camara",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2004-01-01",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mamadou Sarr",
+      "nameZh": "Mamadou Sarr",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2005-08-29",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nobel Mendy",
+      "nameZh": "Nobel Mendy",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2004-08-16",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Habib Diarra",
+      "nameZh": "Habib Diarra",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2004-01-03",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Pape Sarr",
+      "nameZh": "Pape Sarr",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2002-09-14",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Antoine Mendy",
+      "nameZh": "Antoine Mendy",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "2004-05-27",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Cheikh Ahmadou Dieng",
+      "nameZh": "Cheikh Ahmadou Dieng",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2000-09-01",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nicolas Jackson",
+      "nameZh": "尼古拉斯·杰克逊",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2001-06-20",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Boulaye Dia",
+      "nameZh": "布拉耶·迪亚",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1996-11-16",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Iliman Ndiaye",
+      "nameZh": "Iliman Ndiaye",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "1999-07-22",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Pathé Ciss",
+      "nameZh": "Pathé Ciss",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1994-03-16",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Krépin Diatta",
+      "nameZh": "Krépin Diatta",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "1999-02-25",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Moussa Niakhaté",
+      "nameZh": "Moussa Niakhaté",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1996-03-08",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ismaïla Sarr",
+      "nameZh": "伊斯马伊拉·萨尔",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "1998-02-25",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Idrissa Gana Guèye",
+      "nameZh": "伊德里萨·盖耶",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1989-09-26",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Pape Gueye",
+      "nameZh": "Pape Gueye",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1999-01-24",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ismail Jakobs",
+      "nameZh": "Ismail Jakobs",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1999-08-17",
+      "nationality": "Senegal",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

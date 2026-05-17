@@ -1,0 +1,272 @@
+{
+  "id": "austria",
+  "nameZh": "奥地利",
+  "nameEn": "Austria",
+  "code": "at",
+  "group": "",
+  "confederation": "",
+  "fifaRank": 22,
+  "flag": "https://flagcdn.com/w80/at.png",
+  "coach": {
+    "nameEn": "Ralf Rangnick",
+    "nameZh": "拉尔夫·朗尼克",
+    "nationality": ""
+  },
+  "founded": 1904,
+  "venue": "Ernst-Happel-Stadion",
+  "squad": [
+    {
+      "name": "Alexander Schlager",
+      "nameZh": "Alexander Schlager",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1996-02-01",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Patrick Pentz",
+      "nameZh": "Patrick Pentz",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1997-01-02",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tobias Lawal",
+      "nameZh": "Tobias Lawal",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2000-06-07",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Florian Wiegele",
+      "nameZh": "Florian Wiegele",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2001-03-21",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "David Affengruber",
+      "nameZh": "David Affengruber",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-03-19",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alessandro Schöpf",
+      "nameZh": "Alessandro Schöpf",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1994-02-07",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alexander Prass",
+      "nameZh": "Alexander Prass",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-05-26",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Paul Wanner",
+      "nameZh": "Paul Wanner",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "2005-12-23",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Carney Chukwuemeka",
+      "nameZh": "Carney Chukwuemeka",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2003-10-20",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Patrick Wimmer",
+      "nameZh": "Patrick Wimmer",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2001-05-30",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nicolas  Seiwald",
+      "nameZh": "Nicolas  Seiwald",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2001-05-04",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Michael Svoboda",
+      "nameZh": "Michael Svoboda",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1998-10-15",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Christoph Baumgartner",
+      "nameZh": "Christoph Baumgartner",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "1999-08-01",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Romano Schmid",
+      "nameZh": "Romano Schmid",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "2000-01-27",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Xaver Schlager",
+      "nameZh": "Xaver Schlager",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1997-09-28",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Saša Kalajdžić",
+      "nameZh": "Saša Kalajdžić",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1997-07-07",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Marcel Sabitzer",
+      "nameZh": "Marcel Sabitzer",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1994-03-17",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Konrad Laimer",
+      "nameZh": "Konrad Laimer",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1997-05-27",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Philipp Lienhart",
+      "nameZh": "Philipp Lienhart",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1996-07-11",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Marco Friedl",
+      "nameZh": "Marco Friedl",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1998-03-16",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Marko Arnautovic",
+      "nameZh": "Marko Arnautovic",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1989-04-19",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Maximilian Wöber",
+      "nameZh": "Maximilian Wöber",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1998-02-04",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Michael Gregoritsch",
+      "nameZh": "Michael Gregoritsch",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1994-04-18",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kevin Danso",
+      "nameZh": "Kevin Danso",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1998-09-19",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Philipp Mwene",
+      "nameZh": "Philipp Mwene",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1994-01-29",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Florian Grillitsch",
+      "nameZh": "Florian Grillitsch",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1995-08-07",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Stefan Posch",
+      "nameZh": "Stefan Posch",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1997-05-14",
+      "nationality": "Austria",
+      "shirtNumber": null
+    },
+    {
+      "name": "David Alaba",
+      "nameZh": "David Alaba",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1992-06-24",
+      "nationality": "Austria",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

@@ -1,0 +1,263 @@
+{
+  "id": "japan",
+  "nameZh": "日本",
+  "nameEn": "Japan",
+  "code": "jp",
+  "group": "E",
+  "confederation": "AFC",
+  "fifaRank": 15,
+  "flag": "https://flagcdn.com/w80/jp.png",
+  "coach": {
+    "nameEn": "Hajime Moriyasu",
+    "nameZh": "森保一",
+    "nationality": ""
+  },
+  "founded": 1921,
+  "venue": "Stadion Galgenwaard",
+  "squad": [
+    {
+      "name": "Keisuke Ōsako",
+      "nameZh": "Keisuke Ōsako",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1999-07-28",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Zion Suzuki",
+      "nameZh": "Zion Suzuki",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2002-08-21",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tomoki Hayakawa",
+      "nameZh": "Tomoki Hayakawa",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1999-03-03",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ayumu Seko",
+      "nameZh": "Ayumu Seko",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-06-07",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tsuyoshi Watanabe",
+      "nameZh": "Tsuyoshi Watanabe",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-02-05",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Shogo Taniguchi",
+      "nameZh": "Shogo Taniguchi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2004-01-02",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kaishu Sano",
+      "nameZh": "Kaishu Sano",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-12-30",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Joel Fujita",
+      "nameZh": "Joel Fujita",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-02-16",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Junnosuke Suzuki",
+      "nameZh": "Junnosuke Suzuki",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2003-07-12",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ryunosuke Sato",
+      "nameZh": "Ryunosuke Sato",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2006-10-16",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Daizen Maeda",
+      "nameZh": "前田大然",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1997-10-20",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Yuito Suzuki",
+      "nameZh": "Yuito Suzuki",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-10-25",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kento Shiogai",
+      "nameZh": "Kento Shiogai",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2005-03-26",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Keisuke Goto",
+      "nameZh": "Keisuke Goto",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2005-06-03",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kodai Sano",
+      "nameZh": "Kodai Sano",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2003-09-25",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Shuto Machino",
+      "nameZh": "Shuto Machino",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2002-12-14",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kaoru Mitoma",
+      "nameZh": "三笘薫",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "1997-05-20",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ayase Ueda",
+      "nameZh": "上田绮世",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1998-09-10",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ao Tanaka",
+      "nameZh": "田中碧",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1998-09-10",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Junya Ito",
+      "nameZh": "伊东纯也",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "1993-03-09",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Daiki Hashioka",
+      "nameZh": "Daiki Hashioka",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1999-05-17",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Yukinari Sugawara",
+      "nameZh": "菅原由势",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "2000-06-28",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Koki Ogawa",
+      "nameZh": "Koki Ogawa",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1997-08-08",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hiroki Ito",
+      "nameZh": "伊藤洋辉",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1999-05-12",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Keito Nakamura",
+      "nameZh": "中村敬斗",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2000-07-28",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ritsu Doan",
+      "nameZh": "堂安律",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "1998-06-16",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Daichi Kamada",
+      "nameZh": "镰田大地",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "1996-08-05",
+      "nationality": "Japan",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

@@ -1,0 +1,227 @@
+{
+  "id": "uzbekistan",
+  "nameZh": "乌兹别克斯坦",
+  "nameEn": "Uzbekistan",
+  "code": "uz",
+  "group": "",
+  "confederation": "",
+  "fifaRank": 49,
+  "flag": "https://flagcdn.com/w80/uz.png",
+  "coach": {
+    "nameEn": "Srecko Katanec",
+    "nameZh": "斯雷奇科·卡塔内茨",
+    "nationality": ""
+  },
+  "founded": 1946,
+  "venue": "Al-Hamriya Sports Club Stadium",
+  "squad": [
+    {
+      "name": "Botirali Ergashev",
+      "nameZh": "Botirali Ergashev",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1995-06-23",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Abduvakhid Nematov",
+      "nameZh": "Abduvakhid Nematov",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2001-03-20",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Utkir Yusupov",
+      "nameZh": "Utkir Yusupov",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1991-01-04",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Rustam Ashurmatov",
+      "nameZh": "Rustam Ashurmatov",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-07-07",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Umar Eshmurodov",
+      "nameZh": "Umar Eshmurodov",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1992-11-30",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jakhongir O'rozov",
+      "nameZh": "Jakhongir O'rozov",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2004-01-18",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Farrukh Sayfiyev",
+      "nameZh": "Farrukh Sayfiyev",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1991-01-17",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Khodjiakbar Alijonov",
+      "nameZh": "Khodjiakbar Alijonov",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-04-19",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Sherzod Nasrullayev",
+      "nameZh": "Sherzod Nasrullayev",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-07-23",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mukhammadkodir Khamraliev",
+      "nameZh": "Mukhammadkodir Khamraliev",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-07-06",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Dostonbek Xamdamov",
+      "nameZh": "Dostonbek Xamdamov",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1996-07-24",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Otabek Shukurov",
+      "nameZh": "Otabek Shukurov",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1996-06-22",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Oston Urunov",
+      "nameZh": "Oston Urunov",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-12-19",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jamshid Iskanderov",
+      "nameZh": "Jamshid Iskanderov",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1993-10-16",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Akmal Mozgovoy",
+      "nameZh": "Akmal Mozgovoy",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-04-02",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Umarali Rahmonaliyev",
+      "nameZh": "Umarali Rahmonaliyev",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2003-08-18",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Azizjon Ganiev",
+      "nameZh": "Azizjon Ganiev",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-02-22",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Odiljon Hamrobekov",
+      "nameZh": "Odiljon Hamrobekov",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1996-02-13",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ibrokhim Ibrokhimov",
+      "nameZh": "Ibrokhim Ibrokhimov",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-01-12",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Igor Sergeev",
+      "nameZh": "Igor Sergeev",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1993-04-30",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alisher Odilov",
+      "nameZh": "Alisher Odilov",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-07-15",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Abdukodir Khusanov",
+      "nameZh": "Abdukodir Khusanov",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2004-02-29",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Eldor Shomurodov",
+      "nameZh": "Eldor Shomurodov",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1995-06-29",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

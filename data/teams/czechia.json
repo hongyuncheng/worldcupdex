@@ -1,0 +1,236 @@
+{
+  "id": "czechia",
+  "nameZh": "捷克",
+  "nameEn": "Czechia",
+  "code": "cz",
+  "group": "",
+  "confederation": "",
+  "fifaRank": 36,
+  "flag": "https://flagcdn.com/w80/cz.png",
+  "coach": {
+    "nameEn": "Ivan Hašek",
+    "nameZh": "伊万·哈谢克",
+    "nationality": ""
+  },
+  "founded": 1901,
+  "venue": "Sinobo Stadium",
+  "squad": [
+    {
+      "name": "Martin Jedlička",
+      "nameZh": "Martin Jedlička",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1998-01-24",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Matej Kovar",
+      "nameZh": "Matej Kovar",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2000-05-17",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lukáš Horníček",
+      "nameZh": "Lukáš Horníček",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2002-07-13",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jaroslav Zelený",
+      "nameZh": "Jaroslav Zelený",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1992-08-20",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tomáš Holeš",
+      "nameZh": "Tomáš Holeš",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1993-03-31",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Martin Vitík",
+      "nameZh": "Martin Vitík",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2003-01-21",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Robin Hranac",
+      "nameZh": "Robin Hranac",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-01-29",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Štěpán Chaloupek",
+      "nameZh": "Štěpán Chaloupek",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2003-03-08",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Vladimír Darida",
+      "nameZh": "Vladimír Darida",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1990-08-08",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tomáš Ladra",
+      "nameZh": "Tomáš Ladra",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-04-24",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lukáš Provod",
+      "nameZh": "Lukáš Provod",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1996-10-23",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Pavel Šulc",
+      "nameZh": "Pavel Šulc",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-12-29",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lukáš Červ",
+      "nameZh": "Lukáš Červ",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-04-10",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tomáš Chorý",
+      "nameZh": "Tomáš Chorý",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1995-01-26",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jan Kliment",
+      "nameZh": "Jan Kliment",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1993-09-01",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mojmír Chytil",
+      "nameZh": "Mojmír Chytil",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1999-04-29",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Denis Višinský",
+      "nameZh": "Denis Višinský",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2003-03-21",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "David Jurásek",
+      "nameZh": "David Jurásek",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "2000-08-07",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Adam Karabec",
+      "nameZh": "Adam Karabec",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "2003-07-02",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Michal Sadílek",
+      "nameZh": "Michal Sadílek",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1999-05-31",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Vladimir Coufal",
+      "nameZh": "Vladimir Coufal",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1992-08-22",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ladislav Krejčí",
+      "nameZh": "Ladislav Krejčí",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1999-04-20",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Tomáš Souček",
+      "nameZh": "Tomáš Souček",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1995-02-27",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    },
+    {
+      "name": "Patrik Schick",
+      "nameZh": "Patrik Schick",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1996-01-24",
+      "nationality": "Czech Republic",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

@@ -1,0 +1,245 @@
+{
+  "id": "belgium",
+  "nameZh": "比利时",
+  "nameEn": "Belgium",
+  "code": "be",
+  "group": "J",
+  "confederation": "UEFA",
+  "fifaRank": 8,
+  "flag": "https://flagcdn.com/w80/be.png",
+  "coach": {
+    "nameEn": "Domenico Tedesco",
+    "nameZh": "多梅尼科·特德斯科",
+    "nationality": ""
+  },
+  "founded": 1895,
+  "venue": "King Power at Den Dreef Stadion",
+  "squad": [
+    {
+      "name": "Matz Sels",
+      "nameZh": "Matz Sels",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1992-02-26",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Maarten Vandevoordt",
+      "nameZh": "Maarten Vandevoordt",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2002-02-26",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Senne Lammens",
+      "nameZh": "Senne Lammens",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2002-07-07",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Brandon Mechele",
+      "nameZh": "Brandon Mechele",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1993-01-28",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Maxim De Cuyper",
+      "nameZh": "Maxim De Cuyper",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-12-22",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Zeno Debast",
+      "nameZh": "Zeno Debast",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2003-10-24",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nathan Ngoy",
+      "nameZh": "Nathan Ngoy",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2003-06-10",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nicolas Raskin",
+      "nameZh": "Nicolas Raskin",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-02-23",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Joaquin Seys",
+      "nameZh": "Joaquin Seys",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2005-03-28",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nathan De Cat",
+      "nameZh": "Nathan De Cat",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2008-07-19",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mika Godts",
+      "nameZh": "Mika Godts",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2005-06-07",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lucas Stassin",
+      "nameZh": "Lucas Stassin",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2004-11-29",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Koni De Winter",
+      "nameZh": "Koni De Winter",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2002-06-12",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Arthur Theate",
+      "nameZh": "Arthur Theate",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2000-05-25",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Charles De Ketelaere",
+      "nameZh": "夏尔·德凯特拉尔",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "2001-03-10",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Amadou Onana",
+      "nameZh": "阿马杜·奥纳纳",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "2001-08-16",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jeremy Doku",
+      "nameZh": "杰雷米·多库",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2002-05-27",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Loïs Openda",
+      "nameZh": "洛伊斯·奥彭达",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2000-02-16",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alexis Saelemaekers",
+      "nameZh": "Alexis Saelemaekers",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "1999-06-27",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Dodi Lukebakio",
+      "nameZh": "多迪·卢克巴基奥",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "1997-09-24",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Youri Tielemans",
+      "nameZh": "尤里·蒂勒曼斯",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1997-05-07",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Axel Witsel",
+      "nameZh": "阿克塞尔·维特塞尔",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1989-01-12",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kevin De Bruyne",
+      "nameZh": "凯文·德布劳内",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "1991-06-28",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Thomas Meunier",
+      "nameZh": "Thomas Meunier",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1991-09-12",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Timothy Castagne",
+      "nameZh": "Timothy Castagne",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1995-12-05",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

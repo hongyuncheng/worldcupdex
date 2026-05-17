@@ -1,0 +1,281 @@
+{
+  "id": "ghana",
+  "nameZh": "加纳",
+  "nameEn": "Ghana",
+  "code": "gh",
+  "group": "L",
+  "confederation": "CAF",
+  "fifaRank": 36,
+  "flag": "https://flagcdn.com/w80/gh.png",
+  "coach": {
+    "nameEn": "Otto Addo",
+    "nameZh": "奥托·阿多",
+    "nationality": ""
+  },
+  "founded": 1957,
+  "venue": "Cape Coast Sports Stadium",
+  "squad": [
+    {
+      "name": "Lawrence Ati-Zigi",
+      "nameZh": "Lawrence Ati-Zigi",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1996-11-29",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Joseph Anang",
+      "nameZh": "Joseph Anang",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2000-06-08",
+      "nationality": "England",
+      "shirtNumber": null
+    },
+    {
+      "name": "Benjamin Asare",
+      "nameZh": "Benjamin Asare",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1992-07-13",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Derrick Luckassen",
+      "nameZh": "Derrick Luckassen",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-07-03",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alexander Djiku",
+      "nameZh": "Alexander Djiku",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1994-08-09",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Derrick Köhn",
+      "nameZh": "Derrick Köhn",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-02-04",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jerome Opoku",
+      "nameZh": "Jerome Opoku",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-10-14",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jonas Adjei Adjetey",
+      "nameZh": "Jonas Adjei Adjetey",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2003-12-13",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kojo Peprah Oppong",
+      "nameZh": "Kojo Peprah Oppong",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2004-06-04",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Francis Amuzu",
+      "nameZh": "Francis Amuzu",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-08-23",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kwasi Sibo",
+      "nameZh": "Kwasi Sibo",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-06-24",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Caleb Yirenkyi",
+      "nameZh": "Caleb Yirenkyi",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2006-01-15",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Manu Duah",
+      "nameZh": "Manu Duah",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2005-06-05",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Daniel Agyei",
+      "nameZh": "Daniel Agyei",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1997-06-01",
+      "nationality": "England",
+      "shirtNumber": null
+    },
+    {
+      "name": "Christopher Bonsu Baah",
+      "nameZh": "Christopher Bonsu Baah",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2004-12-14",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Prince Adu",
+      "nameZh": "Prince Adu",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2003-09-23",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ibrahim Sulemana",
+      "nameZh": "Ibrahim Sulemana",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "2003-05-22",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Abdul Issahaku",
+      "nameZh": "Abdul Issahaku",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2004-03-08",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jesurun Rak-Sakyi",
+      "nameZh": "Jesurun Rak-Sakyi",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2002-10-05",
+      "nationality": "England",
+      "shirtNumber": null
+    },
+    {
+      "name": "Augustine Boakye",
+      "nameZh": "Augustine Boakye",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "2000-11-03",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Marvin Senaya",
+      "nameZh": "Marvin Senaya",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "2001-01-28",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kamal Deen Sulemana",
+      "nameZh": "Kamal Deen Sulemana",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2002-02-15",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ransford Königsdörffer",
+      "nameZh": "Ransford Königsdörffer",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2001-09-13",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Patric Pfeiffer",
+      "nameZh": "Patric Pfeiffer",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1999-08-20",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gideon Mensah",
+      "nameZh": "Gideon Mensah",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1998-07-18",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Elisha Owusu",
+      "nameZh": "Elisha Owusu",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1997-11-07",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jordan Ayew",
+      "nameZh": "Jordan Ayew",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "1991-09-11",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Antoine Semenyo",
+      "nameZh": "Antoine Semenyo",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2000-01-07",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    },
+    {
+      "name": "Thomas Partey",
+      "nameZh": "Thomas Partey",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1993-06-13",
+      "nationality": "Ghana",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

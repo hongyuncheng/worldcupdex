@@ -1,0 +1,245 @@
+{
+  "id": "australia",
+  "nameZh": "澳大利亚",
+  "nameEn": "Australia",
+  "code": "au",
+  "group": "G",
+  "confederation": "AFC",
+  "fifaRank": 23,
+  "flag": "https://flagcdn.com/w80/au.png",
+  "coach": {
+    "nameEn": "Tony Popovic",
+    "nameZh": "托尼·波波维奇",
+    "nationality": ""
+  },
+  "founded": 1961,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Maty Ryan",
+      "nameZh": "Maty Ryan",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1992-04-08",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Paul Izzo",
+      "nameZh": "Paul Izzo",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1995-01-06",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Aziz Behich",
+      "nameZh": "Aziz Behich",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1990-12-16",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Miloš Degenek",
+      "nameZh": "Miloš Degenek",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1994-04-28",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kai Trewin",
+      "nameZh": "Kai Trewin",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-05-18",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kye Rowles",
+      "nameZh": "Kye Rowles",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-06-24",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jason Geria",
+      "nameZh": "Jason Geria",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1993-05-10",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jordan Bos",
+      "nameZh": "Jordan Bos",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2002-10-29",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Paul Okon-Engstler",
+      "nameZh": "Paul Okon-Engstler",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2005-01-24",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lucas Herrington",
+      "nameZh": "Lucas Herrington",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2007-09-05",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Aiden O'Neill",
+      "nameZh": "Aiden O'Neill",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-07-04",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Awer Mabil",
+      "nameZh": "Awer Mabil",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1995-09-15",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Patrick Yazbek",
+      "nameZh": "Patrick Yazbek",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-08-22",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nestory Irankunda",
+      "nameZh": "Nestory Irankunda",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2006-02-09",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jacob Italiano",
+      "nameZh": "Jacob Italiano",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-07-30",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Martin Boyle",
+      "nameZh": "Martin Boyle",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1993-04-25",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Deni Jurić",
+      "nameZh": "Deni Jurić",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1997-09-03",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nishan Velupillay",
+      "nameZh": "Nishan Velupillay",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-05-07",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ante Šuto",
+      "nameZh": "Ante Šuto",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-06-19",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alessandro Circati",
+      "nameZh": "Alessandro Circati",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2003-10-10",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alex Robertson",
+      "nameZh": "Alex Robertson",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2003-04-17",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ajdin Hrustic",
+      "nameZh": "Ajdin Hrustic",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "1996-07-05",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Cameron Burgess",
+      "nameZh": "Cameron Burgess",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1995-10-21",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Connor Metcalfe",
+      "nameZh": "Connor Metcalfe",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1999-11-05",
+      "nationality": "Australia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Riley McGree",
+      "nameZh": "Riley McGree",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1998-11-02",
+      "nationality": "Australia",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

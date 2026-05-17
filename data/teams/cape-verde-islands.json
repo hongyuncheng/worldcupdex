@@ -1,0 +1,335 @@
+{
+  "id": "cape-verde-islands",
+  "nameZh": "佛得角",
+  "nameEn": "Cape Verde Islands",
+  "code": "cv",
+  "group": "",
+  "confederation": "",
+  "fifaRank": 54,
+  "flag": "https://flagcdn.com/w80/cv.png",
+  "coach": {
+    "nameEn": "Bubista",
+    "nameZh": "布比斯塔",
+    "nationality": ""
+  },
+  "founded": 1982,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Bruno Varela",
+      "nameZh": "Bruno Varela",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1994-11-04",
+      "nationality": "Portugal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Márcio Rosa",
+      "nameZh": "Márcio Rosa",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1997-02-23",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Vózinha",
+      "nameZh": "Vózinha",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1986-06-03",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "C.J. dos Santos",
+      "nameZh": "C.J. dos Santos",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2000-08-24",
+      "nationality": "USA",
+      "shirtNumber": null
+    },
+    {
+      "name": "Steven Moreira",
+      "nameZh": "Steven Moreira",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1994-08-13",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ricardo",
+      "nameZh": "Ricardo",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-06-18",
+      "nationality": "Portugal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Roberto Lopes",
+      "nameZh": "Roberto Lopes",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1992-06-17",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Diney Borges",
+      "nameZh": "Diney Borges",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-01-17",
+      "nationality": "Portugal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Stopira",
+      "nameZh": "Stopira",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1988-05-20",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jójó",
+      "nameZh": "Jójó",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-05-19",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jorginho Soares",
+      "nameZh": "Jorginho Soares",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-07-18",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Sidny Lopes Cabral",
+      "nameZh": "Sidny Lopes Cabral",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2002-09-18",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kelvin Pires",
+      "nameZh": "Kelvin Pires",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-06-05",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "David Moreira",
+      "nameZh": "David Moreira",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2004-04-18",
+      "nationality": "Portugal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Deroy Duarte",
+      "nameZh": "Deroy Duarte",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-07-04",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Garry Rodrigues",
+      "nameZh": "Garry Rodrigues",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1990-11-27",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kevin Pina",
+      "nameZh": "Kevin Pina",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-10-27",
+      "nationality": "Cape Verde",
+      "shirtNumber": null
+    },
+    {
+      "name": "Laros Duarte",
+      "nameZh": "Laros Duarte",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-02-28",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "João Paulo",
+      "nameZh": "João Paulo",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-08-04",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jamiro Monteiro",
+      "nameZh": "Jamiro Monteiro",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1993-11-23",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jordan Mendes Correia",
+      "nameZh": "Jordan Mendes Correia",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2004-03-07",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ayoni Santos",
+      "nameZh": "Ayoni Santos",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2005-07-18",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Aílson Tavares",
+      "nameZh": "Aílson Tavares",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-07-20",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Willy Semedo",
+      "nameZh": "Willy Semedo",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1994-04-27",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ryan Mendes",
+      "nameZh": "Ryan Mendes",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1990-01-08",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jovane Cabral",
+      "nameZh": "Jovane Cabral",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1998-06-14",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gilson Tavares",
+      "nameZh": "Gilson Tavares",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-12-29",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hélio Varela",
+      "nameZh": "Hélio Varela",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2002-05-03",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ieltsin Camões",
+      "nameZh": "Ieltsin Camões",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1999-04-16",
+      "nationality": "Portugal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Heriberto Tavares",
+      "nameZh": "Heriberto Tavares",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "1997-02-19",
+      "nationality": "Portugal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alessio Da Cruz",
+      "nameZh": "Alessio Da Cruz",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "1997-01-18",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Wagner Pina",
+      "nameZh": "Wagner Pina",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "2002-11-03",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Dailon Rocha Livramento",
+      "nameZh": "Dailon Rocha Livramento",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2001-05-04",
+      "nationality": "Netherlands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nuno Da Costa",
+      "nameZh": "Nuno Da Costa",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1991-02-10",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Telmo Arcanjo",
+      "nameZh": "Telmo Arcanjo",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "2001-06-21",
+      "nationality": "Portugal",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

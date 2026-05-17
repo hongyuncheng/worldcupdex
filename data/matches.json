@@ -1,0 +1,3018 @@
+[
+  {
+    "id": 537327,
+    "date": "2026-06-11",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "mexico",
+      "nameZh": "墨西哥",
+      "nameEn": "Mexico",
+      "code": "mx",
+      "flag": "https://flagcdn.com/w80/mx.png"
+    },
+    "awayTeam": {
+      "id": "south-africa",
+      "nameZh": "南非",
+      "nameEn": "South Africa",
+      "code": "za",
+      "flag": "https://flagcdn.com/w80/za.png"
+    },
+    "venue": {
+      "name": "MetLife Stadium",
+      "nameZh": "大都会人寿球场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福"
+    },
+    "group": "A",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537328,
+    "date": "2026-06-12",
+    "time": "02:00",
+    "homeTeam": {
+      "id": "south-korea",
+      "nameZh": "韩国",
+      "nameEn": "South Korea",
+      "code": "kr",
+      "flag": "https://flagcdn.com/w80/kr.png"
+    },
+    "awayTeam": {
+      "id": "czechia",
+      "nameZh": "捷克",
+      "nameEn": "Czechia",
+      "code": "cz",
+      "flag": "https://flagcdn.com/w80/cz.png"
+    },
+    "venue": {
+      "name": "AT&T Stadium",
+      "nameZh": "AT&T球场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿"
+    },
+    "group": "A",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537333,
+    "date": "2026-06-12",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "canada",
+      "nameZh": "加拿大",
+      "nameEn": "Canada",
+      "code": "ca",
+      "flag": "https://flagcdn.com/w80/ca.png"
+    },
+    "awayTeam": {
+      "id": "bosnia-herzegovina",
+      "nameZh": "波黑",
+      "nameEn": "Bosnia-Herzegovina",
+      "code": "ba",
+      "flag": "https://flagcdn.com/w80/ba.png"
+    },
+    "venue": {
+      "name": "SoFi Stadium",
+      "nameZh": "SoFi球场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德"
+    },
+    "group": "B",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537345,
+    "date": "2026-06-13",
+    "time": "01:00",
+    "homeTeam": {
+      "id": "united-states",
+      "nameZh": "美国",
+      "nameEn": "United States",
+      "code": "us",
+      "flag": "https://flagcdn.com/w80/us.png"
+    },
+    "awayTeam": {
+      "id": "paraguay",
+      "nameZh": "巴拉圭",
+      "nameEn": "Paraguay",
+      "code": "py",
+      "flag": "https://flagcdn.com/w80/py.png"
+    },
+    "venue": {
+      "name": "Hard Rock Stadium",
+      "nameZh": "硬石球场",
+      "city": "Miami Gardens",
+      "cityZh": "迈阿密花园"
+    },
+    "group": "D",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537334,
+    "date": "2026-06-13",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "qatar",
+      "nameZh": "卡塔尔",
+      "nameEn": "Qatar",
+      "code": "qa",
+      "flag": "https://flagcdn.com/w80/qa.png"
+    },
+    "awayTeam": {
+      "id": "switzerland",
+      "nameZh": "瑞士",
+      "nameEn": "Switzerland",
+      "code": "ch",
+      "flag": "https://flagcdn.com/w80/ch.png"
+    },
+    "venue": {
+      "name": "Lincoln Financial Field",
+      "nameZh": "林肯金融球场",
+      "city": "Philadelphia",
+      "cityZh": "费城"
+    },
+    "group": "B",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537339,
+    "date": "2026-06-13",
+    "time": "22:00",
+    "homeTeam": {
+      "id": "brazil",
+      "nameZh": "巴西",
+      "nameEn": "Brazil",
+      "code": "br",
+      "flag": "https://flagcdn.com/w80/br.png"
+    },
+    "awayTeam": {
+      "id": "morocco",
+      "nameZh": "摩洛哥",
+      "nameEn": "Morocco",
+      "code": "ma",
+      "flag": "https://flagcdn.com/w80/ma.png"
+    },
+    "venue": {
+      "name": "Mercedes-Benz Stadium",
+      "nameZh": "梅赛德斯-奔驰球场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大"
+    },
+    "group": "C",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537340,
+    "date": "2026-06-14",
+    "time": "01:00",
+    "homeTeam": {
+      "id": "haiti",
+      "nameZh": "海地",
+      "nameEn": "Haiti",
+      "code": "ht",
+      "flag": "https://flagcdn.com/w80/ht.png"
+    },
+    "awayTeam": {
+      "id": "scotland",
+      "nameZh": "苏格兰",
+      "nameEn": "Scotland",
+      "code": "gb-sct",
+      "flag": "https://flagcdn.com/w80/gb-sct.png"
+    },
+    "venue": {
+      "name": "NRG Stadium",
+      "nameZh": "NRG球场",
+      "city": "Houston",
+      "cityZh": "休斯顿"
+    },
+    "group": "C",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537346,
+    "date": "2026-06-14",
+    "time": "04:00",
+    "homeTeam": {
+      "id": "australia",
+      "nameZh": "澳大利亚",
+      "nameEn": "Australia",
+      "code": "au",
+      "flag": "https://flagcdn.com/w80/au.png"
+    },
+    "awayTeam": {
+      "id": "turkey",
+      "nameZh": "土耳其",
+      "nameEn": "Turkey",
+      "code": "tr",
+      "flag": "https://flagcdn.com/w80/tr.png"
+    },
+    "venue": {
+      "name": "Lumen Field",
+      "nameZh": "流明球场",
+      "city": "Seattle",
+      "cityZh": "西雅图"
+    },
+    "group": "D",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537351,
+    "date": "2026-06-14",
+    "time": "17:00",
+    "homeTeam": {
+      "id": "germany",
+      "nameZh": "德国",
+      "nameEn": "Germany",
+      "code": "de",
+      "flag": "https://flagcdn.com/w80/de.png"
+    },
+    "awayTeam": {
+      "id": "cura-ao",
+      "nameZh": "库拉索",
+      "nameEn": "Curaçao",
+      "code": "cw",
+      "flag": "https://flagcdn.com/w80/cw.png"
+    },
+    "venue": {
+      "name": "Gillette Stadium",
+      "nameZh": "吉列球场",
+      "city": "Foxborough",
+      "cityZh": "福克斯堡"
+    },
+    "group": "E",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537357,
+    "date": "2026-06-14",
+    "time": "20:00",
+    "homeTeam": {
+      "id": "netherlands",
+      "nameZh": "荷兰",
+      "nameEn": "Netherlands",
+      "code": "nl",
+      "flag": "https://flagcdn.com/w80/nl.png"
+    },
+    "awayTeam": {
+      "id": "japan",
+      "nameZh": "日本",
+      "nameEn": "Japan",
+      "code": "jp",
+      "flag": "https://flagcdn.com/w80/jp.png"
+    },
+    "venue": {
+      "name": "GEHA Field at Arrowhead Stadium",
+      "nameZh": "箭头球场",
+      "city": "Kansas City",
+      "cityZh": "堪萨斯城"
+    },
+    "group": "F",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537352,
+    "date": "2026-06-14",
+    "time": "23:00",
+    "homeTeam": {
+      "id": "ivory-coast",
+      "nameZh": "科特迪瓦",
+      "nameEn": "Ivory Coast",
+      "code": "ci",
+      "flag": "https://flagcdn.com/w80/ci.png"
+    },
+    "awayTeam": {
+      "id": "ecuador",
+      "nameZh": "厄瓜多尔",
+      "nameEn": "Ecuador",
+      "code": "ec",
+      "flag": "https://flagcdn.com/w80/ec.png"
+    },
+    "venue": {
+      "name": "GEODIS Park",
+      "nameZh": "GEODIS公园球场",
+      "city": "Nashville",
+      "cityZh": "纳什维尔"
+    },
+    "group": "E",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537358,
+    "date": "2026-06-15",
+    "time": "02:00",
+    "homeTeam": {
+      "id": "sweden",
+      "nameZh": "瑞典",
+      "nameEn": "Sweden",
+      "code": "se",
+      "flag": "https://flagcdn.com/w80/se.png"
+    },
+    "awayTeam": {
+      "id": "tunisia",
+      "nameZh": "突尼斯",
+      "nameEn": "Tunisia",
+      "code": "tn",
+      "flag": "https://flagcdn.com/w80/tn.png"
+    },
+    "venue": {
+      "name": "Estadio Azteca",
+      "nameZh": "阿兹特克球场",
+      "city": "Mexico City",
+      "cityZh": "墨西哥城"
+    },
+    "group": "F",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537369,
+    "date": "2026-06-15",
+    "time": "16:00",
+    "homeTeam": {
+      "id": "spain",
+      "nameZh": "西班牙",
+      "nameEn": "Spain",
+      "code": "es",
+      "flag": "https://flagcdn.com/w80/es.png"
+    },
+    "awayTeam": {
+      "id": "cape-verde-islands",
+      "nameZh": "佛得角",
+      "nameEn": "Cape Verde Islands",
+      "code": "cv",
+      "flag": "https://flagcdn.com/w80/cv.png"
+    },
+    "venue": {
+      "name": "Estadio Akron",
+      "nameZh": "阿克隆球场",
+      "city": "Guadalajara",
+      "cityZh": "瓜达拉哈拉"
+    },
+    "group": "H",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537363,
+    "date": "2026-06-15",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "belgium",
+      "nameZh": "比利时",
+      "nameEn": "Belgium",
+      "code": "be",
+      "flag": "https://flagcdn.com/w80/be.png"
+    },
+    "awayTeam": {
+      "id": "egypt",
+      "nameZh": "埃及",
+      "nameEn": "Egypt",
+      "code": "eg",
+      "flag": "https://flagcdn.com/w80/eg.png"
+    },
+    "venue": {
+      "name": "Estadio BBVA",
+      "nameZh": "BBVA球场",
+      "city": "Monterrey",
+      "cityZh": "蒙特雷"
+    },
+    "group": "G",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537370,
+    "date": "2026-06-15",
+    "time": "22:00",
+    "homeTeam": {
+      "id": "saudi-arabia",
+      "nameZh": "沙特阿拉伯",
+      "nameEn": "Saudi Arabia",
+      "code": "sa",
+      "flag": "https://flagcdn.com/w80/sa.png"
+    },
+    "awayTeam": {
+      "id": "uruguay",
+      "nameZh": "乌拉圭",
+      "nameEn": "Uruguay",
+      "code": "uy",
+      "flag": "https://flagcdn.com/w80/uy.png"
+    },
+    "venue": {
+      "name": "BMO Field",
+      "nameZh": "BMO球场",
+      "city": "Toronto",
+      "cityZh": "多伦多"
+    },
+    "group": "H",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537364,
+    "date": "2026-06-16",
+    "time": "01:00",
+    "homeTeam": {
+      "id": "iran",
+      "nameZh": "伊朗",
+      "nameEn": "Iran",
+      "code": "ir",
+      "flag": "https://flagcdn.com/w80/ir.png"
+    },
+    "awayTeam": {
+      "id": "new-zealand",
+      "nameZh": "新西兰",
+      "nameEn": "New Zealand",
+      "code": "nz",
+      "flag": "https://flagcdn.com/w80/nz.png"
+    },
+    "venue": {
+      "name": "BC Place",
+      "nameZh": "BC体育馆",
+      "city": "Vancouver",
+      "cityZh": "温哥华"
+    },
+    "group": "G",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537391,
+    "date": "2026-06-16",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "france",
+      "nameZh": "法国",
+      "nameEn": "France",
+      "code": "fr",
+      "flag": "https://flagcdn.com/w80/fr.png"
+    },
+    "awayTeam": {
+      "id": "senegal",
+      "nameZh": "塞内加尔",
+      "nameEn": "Senegal",
+      "code": "sn",
+      "flag": "https://flagcdn.com/w80/sn.png"
+    },
+    "venue": {
+      "name": "MetLife Stadium",
+      "nameZh": "大都会人寿球场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福"
+    },
+    "group": "I",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537392,
+    "date": "2026-06-16",
+    "time": "22:00",
+    "homeTeam": {
+      "id": "iraq",
+      "nameZh": "伊拉克",
+      "nameEn": "Iraq",
+      "code": "iq",
+      "flag": "https://flagcdn.com/w80/iq.png"
+    },
+    "awayTeam": {
+      "id": "norway",
+      "nameZh": "挪威",
+      "nameEn": "Norway",
+      "code": "no",
+      "flag": "https://flagcdn.com/w80/no.png"
+    },
+    "venue": {
+      "name": "AT&T Stadium",
+      "nameZh": "AT&T球场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿"
+    },
+    "group": "I",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537397,
+    "date": "2026-06-17",
+    "time": "01:00",
+    "homeTeam": {
+      "id": "argentina",
+      "nameZh": "阿根廷",
+      "nameEn": "Argentina",
+      "code": "ar",
+      "flag": "https://flagcdn.com/w80/ar.png"
+    },
+    "awayTeam": {
+      "id": "algeria",
+      "nameZh": "阿尔及利亚",
+      "nameEn": "Algeria",
+      "code": "dz",
+      "flag": "https://flagcdn.com/w80/dz.png"
+    },
+    "venue": {
+      "name": "SoFi Stadium",
+      "nameZh": "SoFi球场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德"
+    },
+    "group": "J",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537398,
+    "date": "2026-06-17",
+    "time": "04:00",
+    "homeTeam": {
+      "id": "austria",
+      "nameZh": "奥地利",
+      "nameEn": "Austria",
+      "code": "at",
+      "flag": "https://flagcdn.com/w80/at.png"
+    },
+    "awayTeam": {
+      "id": "jordan",
+      "nameZh": "约旦",
+      "nameEn": "Jordan",
+      "code": "jo",
+      "flag": "https://flagcdn.com/w80/jo.png"
+    },
+    "venue": {
+      "name": "Hard Rock Stadium",
+      "nameZh": "硬石球场",
+      "city": "Miami Gardens",
+      "cityZh": "迈阿密花园"
+    },
+    "group": "J",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537403,
+    "date": "2026-06-17",
+    "time": "17:00",
+    "homeTeam": {
+      "id": "portugal",
+      "nameZh": "葡萄牙",
+      "nameEn": "Portugal",
+      "code": "pt",
+      "flag": "https://flagcdn.com/w80/pt.png"
+    },
+    "awayTeam": {
+      "id": "congo-dr",
+      "nameZh": "刚果(金)",
+      "nameEn": "Congo DR",
+      "code": "cd",
+      "flag": "https://flagcdn.com/w80/cd.png"
+    },
+    "venue": {
+      "name": "Lincoln Financial Field",
+      "nameZh": "林肯金融球场",
+      "city": "Philadelphia",
+      "cityZh": "费城"
+    },
+    "group": "K",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537409,
+    "date": "2026-06-17",
+    "time": "20:00",
+    "homeTeam": {
+      "id": "england",
+      "nameZh": "英格兰",
+      "nameEn": "England",
+      "code": "gb-eng",
+      "flag": "https://flagcdn.com/w80/gb-eng.png"
+    },
+    "awayTeam": {
+      "id": "croatia",
+      "nameZh": "克罗地亚",
+      "nameEn": "Croatia",
+      "code": "hr",
+      "flag": "https://flagcdn.com/w80/hr.png"
+    },
+    "venue": {
+      "name": "Mercedes-Benz Stadium",
+      "nameZh": "梅赛德斯-奔驰球场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大"
+    },
+    "group": "L",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537410,
+    "date": "2026-06-17",
+    "time": "23:00",
+    "homeTeam": {
+      "id": "ghana",
+      "nameZh": "加纳",
+      "nameEn": "Ghana",
+      "code": "gh",
+      "flag": "https://flagcdn.com/w80/gh.png"
+    },
+    "awayTeam": {
+      "id": "panama",
+      "nameZh": "巴拿马",
+      "nameEn": "Panama",
+      "code": "pa",
+      "flag": "https://flagcdn.com/w80/pa.png"
+    },
+    "venue": {
+      "name": "NRG Stadium",
+      "nameZh": "NRG球场",
+      "city": "Houston",
+      "cityZh": "休斯顿"
+    },
+    "group": "L",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537404,
+    "date": "2026-06-18",
+    "time": "02:00",
+    "homeTeam": {
+      "id": "uzbekistan",
+      "nameZh": "乌兹别克斯坦",
+      "nameEn": "Uzbekistan",
+      "code": "uz",
+      "flag": "https://flagcdn.com/w80/uz.png"
+    },
+    "awayTeam": {
+      "id": "colombia",
+      "nameZh": "哥伦比亚",
+      "nameEn": "Colombia",
+      "code": "co",
+      "flag": "https://flagcdn.com/w80/co.png"
+    },
+    "venue": {
+      "name": "Lumen Field",
+      "nameZh": "流明球场",
+      "city": "Seattle",
+      "cityZh": "西雅图"
+    },
+    "group": "K",
+    "stage": "GROUP_STAGE",
+    "matchday": 1,
+    "score": null
+  },
+  {
+    "id": 537329,
+    "date": "2026-06-18",
+    "time": "16:00",
+    "homeTeam": {
+      "id": "czechia",
+      "nameZh": "捷克",
+      "nameEn": "Czechia",
+      "code": "cz",
+      "flag": "https://flagcdn.com/w80/cz.png"
+    },
+    "awayTeam": {
+      "id": "south-africa",
+      "nameZh": "南非",
+      "nameEn": "South Africa",
+      "code": "za",
+      "flag": "https://flagcdn.com/w80/za.png"
+    },
+    "venue": {
+      "name": "Gillette Stadium",
+      "nameZh": "吉列球场",
+      "city": "Foxborough",
+      "cityZh": "福克斯堡"
+    },
+    "group": "A",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537335,
+    "date": "2026-06-18",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "switzerland",
+      "nameZh": "瑞士",
+      "nameEn": "Switzerland",
+      "code": "ch",
+      "flag": "https://flagcdn.com/w80/ch.png"
+    },
+    "awayTeam": {
+      "id": "bosnia-herzegovina",
+      "nameZh": "波黑",
+      "nameEn": "Bosnia-Herzegovina",
+      "code": "ba",
+      "flag": "https://flagcdn.com/w80/ba.png"
+    },
+    "venue": {
+      "name": "GEHA Field at Arrowhead Stadium",
+      "nameZh": "箭头球场",
+      "city": "Kansas City",
+      "cityZh": "堪萨斯城"
+    },
+    "group": "B",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537336,
+    "date": "2026-06-18",
+    "time": "22:00",
+    "homeTeam": {
+      "id": "canada",
+      "nameZh": "加拿大",
+      "nameEn": "Canada",
+      "code": "ca",
+      "flag": "https://flagcdn.com/w80/ca.png"
+    },
+    "awayTeam": {
+      "id": "qatar",
+      "nameZh": "卡塔尔",
+      "nameEn": "Qatar",
+      "code": "qa",
+      "flag": "https://flagcdn.com/w80/qa.png"
+    },
+    "venue": {
+      "name": "GEODIS Park",
+      "nameZh": "GEODIS公园球场",
+      "city": "Nashville",
+      "cityZh": "纳什维尔"
+    },
+    "group": "B",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537330,
+    "date": "2026-06-19",
+    "time": "01:00",
+    "homeTeam": {
+      "id": "mexico",
+      "nameZh": "墨西哥",
+      "nameEn": "Mexico",
+      "code": "mx",
+      "flag": "https://flagcdn.com/w80/mx.png"
+    },
+    "awayTeam": {
+      "id": "south-korea",
+      "nameZh": "韩国",
+      "nameEn": "South Korea",
+      "code": "kr",
+      "flag": "https://flagcdn.com/w80/kr.png"
+    },
+    "venue": {
+      "name": "Estadio Azteca",
+      "nameZh": "阿兹特克球场",
+      "city": "Mexico City",
+      "cityZh": "墨西哥城"
+    },
+    "group": "A",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537348,
+    "date": "2026-06-19",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "united-states",
+      "nameZh": "美国",
+      "nameEn": "United States",
+      "code": "us",
+      "flag": "https://flagcdn.com/w80/us.png"
+    },
+    "awayTeam": {
+      "id": "australia",
+      "nameZh": "澳大利亚",
+      "nameEn": "Australia",
+      "code": "au",
+      "flag": "https://flagcdn.com/w80/au.png"
+    },
+    "venue": {
+      "name": "Estadio Akron",
+      "nameZh": "阿克隆球场",
+      "city": "Guadalajara",
+      "cityZh": "瓜达拉哈拉"
+    },
+    "group": "D",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537342,
+    "date": "2026-06-19",
+    "time": "22:00",
+    "homeTeam": {
+      "id": "scotland",
+      "nameZh": "苏格兰",
+      "nameEn": "Scotland",
+      "code": "gb-sct",
+      "flag": "https://flagcdn.com/w80/gb-sct.png"
+    },
+    "awayTeam": {
+      "id": "morocco",
+      "nameZh": "摩洛哥",
+      "nameEn": "Morocco",
+      "code": "ma",
+      "flag": "https://flagcdn.com/w80/ma.png"
+    },
+    "venue": {
+      "name": "Estadio BBVA",
+      "nameZh": "BBVA球场",
+      "city": "Monterrey",
+      "cityZh": "蒙特雷"
+    },
+    "group": "C",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537341,
+    "date": "2026-06-20",
+    "time": "00:30",
+    "homeTeam": {
+      "id": "brazil",
+      "nameZh": "巴西",
+      "nameEn": "Brazil",
+      "code": "br",
+      "flag": "https://flagcdn.com/w80/br.png"
+    },
+    "awayTeam": {
+      "id": "haiti",
+      "nameZh": "海地",
+      "nameEn": "Haiti",
+      "code": "ht",
+      "flag": "https://flagcdn.com/w80/ht.png"
+    },
+    "venue": {
+      "name": "BMO Field",
+      "nameZh": "BMO球场",
+      "city": "Toronto",
+      "cityZh": "多伦多"
+    },
+    "group": "C",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537347,
+    "date": "2026-06-20",
+    "time": "03:00",
+    "homeTeam": {
+      "id": "turkey",
+      "nameZh": "土耳其",
+      "nameEn": "Turkey",
+      "code": "tr",
+      "flag": "https://flagcdn.com/w80/tr.png"
+    },
+    "awayTeam": {
+      "id": "paraguay",
+      "nameZh": "巴拉圭",
+      "nameEn": "Paraguay",
+      "code": "py",
+      "flag": "https://flagcdn.com/w80/py.png"
+    },
+    "venue": {
+      "name": "BC Place",
+      "nameZh": "BC体育馆",
+      "city": "Vancouver",
+      "cityZh": "温哥华"
+    },
+    "group": "D",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537359,
+    "date": "2026-06-20",
+    "time": "17:00",
+    "homeTeam": {
+      "id": "netherlands",
+      "nameZh": "荷兰",
+      "nameEn": "Netherlands",
+      "code": "nl",
+      "flag": "https://flagcdn.com/w80/nl.png"
+    },
+    "awayTeam": {
+      "id": "sweden",
+      "nameZh": "瑞典",
+      "nameEn": "Sweden",
+      "code": "se",
+      "flag": "https://flagcdn.com/w80/se.png"
+    },
+    "venue": {
+      "name": "MetLife Stadium",
+      "nameZh": "大都会人寿球场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福"
+    },
+    "group": "F",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537353,
+    "date": "2026-06-20",
+    "time": "20:00",
+    "homeTeam": {
+      "id": "germany",
+      "nameZh": "德国",
+      "nameEn": "Germany",
+      "code": "de",
+      "flag": "https://flagcdn.com/w80/de.png"
+    },
+    "awayTeam": {
+      "id": "ivory-coast",
+      "nameZh": "科特迪瓦",
+      "nameEn": "Ivory Coast",
+      "code": "ci",
+      "flag": "https://flagcdn.com/w80/ci.png"
+    },
+    "venue": {
+      "name": "AT&T Stadium",
+      "nameZh": "AT&T球场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿"
+    },
+    "group": "E",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537354,
+    "date": "2026-06-21",
+    "time": "00:00",
+    "homeTeam": {
+      "id": "ecuador",
+      "nameZh": "厄瓜多尔",
+      "nameEn": "Ecuador",
+      "code": "ec",
+      "flag": "https://flagcdn.com/w80/ec.png"
+    },
+    "awayTeam": {
+      "id": "cura-ao",
+      "nameZh": "库拉索",
+      "nameEn": "Curaçao",
+      "code": "cw",
+      "flag": "https://flagcdn.com/w80/cw.png"
+    },
+    "venue": {
+      "name": "SoFi Stadium",
+      "nameZh": "SoFi球场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德"
+    },
+    "group": "E",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537360,
+    "date": "2026-06-21",
+    "time": "04:00",
+    "homeTeam": {
+      "id": "tunisia",
+      "nameZh": "突尼斯",
+      "nameEn": "Tunisia",
+      "code": "tn",
+      "flag": "https://flagcdn.com/w80/tn.png"
+    },
+    "awayTeam": {
+      "id": "japan",
+      "nameZh": "日本",
+      "nameEn": "Japan",
+      "code": "jp",
+      "flag": "https://flagcdn.com/w80/jp.png"
+    },
+    "venue": {
+      "name": "Hard Rock Stadium",
+      "nameZh": "硬石球场",
+      "city": "Miami Gardens",
+      "cityZh": "迈阿密花园"
+    },
+    "group": "F",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537371,
+    "date": "2026-06-21",
+    "time": "16:00",
+    "homeTeam": {
+      "id": "spain",
+      "nameZh": "西班牙",
+      "nameEn": "Spain",
+      "code": "es",
+      "flag": "https://flagcdn.com/w80/es.png"
+    },
+    "awayTeam": {
+      "id": "saudi-arabia",
+      "nameZh": "沙特阿拉伯",
+      "nameEn": "Saudi Arabia",
+      "code": "sa",
+      "flag": "https://flagcdn.com/w80/sa.png"
+    },
+    "venue": {
+      "name": "Lincoln Financial Field",
+      "nameZh": "林肯金融球场",
+      "city": "Philadelphia",
+      "cityZh": "费城"
+    },
+    "group": "H",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537365,
+    "date": "2026-06-21",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "belgium",
+      "nameZh": "比利时",
+      "nameEn": "Belgium",
+      "code": "be",
+      "flag": "https://flagcdn.com/w80/be.png"
+    },
+    "awayTeam": {
+      "id": "iran",
+      "nameZh": "伊朗",
+      "nameEn": "Iran",
+      "code": "ir",
+      "flag": "https://flagcdn.com/w80/ir.png"
+    },
+    "venue": {
+      "name": "Mercedes-Benz Stadium",
+      "nameZh": "梅赛德斯-奔驰球场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大"
+    },
+    "group": "G",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537372,
+    "date": "2026-06-21",
+    "time": "22:00",
+    "homeTeam": {
+      "id": "uruguay",
+      "nameZh": "乌拉圭",
+      "nameEn": "Uruguay",
+      "code": "uy",
+      "flag": "https://flagcdn.com/w80/uy.png"
+    },
+    "awayTeam": {
+      "id": "cape-verde-islands",
+      "nameZh": "佛得角",
+      "nameEn": "Cape Verde Islands",
+      "code": "cv",
+      "flag": "https://flagcdn.com/w80/cv.png"
+    },
+    "venue": {
+      "name": "NRG Stadium",
+      "nameZh": "NRG球场",
+      "city": "Houston",
+      "cityZh": "休斯顿"
+    },
+    "group": "H",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537366,
+    "date": "2026-06-22",
+    "time": "01:00",
+    "homeTeam": {
+      "id": "new-zealand",
+      "nameZh": "新西兰",
+      "nameEn": "New Zealand",
+      "code": "nz",
+      "flag": "https://flagcdn.com/w80/nz.png"
+    },
+    "awayTeam": {
+      "id": "egypt",
+      "nameZh": "埃及",
+      "nameEn": "Egypt",
+      "code": "eg",
+      "flag": "https://flagcdn.com/w80/eg.png"
+    },
+    "venue": {
+      "name": "Lumen Field",
+      "nameZh": "流明球场",
+      "city": "Seattle",
+      "cityZh": "西雅图"
+    },
+    "group": "G",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537399,
+    "date": "2026-06-22",
+    "time": "17:00",
+    "homeTeam": {
+      "id": "argentina",
+      "nameZh": "阿根廷",
+      "nameEn": "Argentina",
+      "code": "ar",
+      "flag": "https://flagcdn.com/w80/ar.png"
+    },
+    "awayTeam": {
+      "id": "austria",
+      "nameZh": "奥地利",
+      "nameEn": "Austria",
+      "code": "at",
+      "flag": "https://flagcdn.com/w80/at.png"
+    },
+    "venue": {
+      "name": "Gillette Stadium",
+      "nameZh": "吉列球场",
+      "city": "Foxborough",
+      "cityZh": "福克斯堡"
+    },
+    "group": "J",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537393,
+    "date": "2026-06-22",
+    "time": "21:00",
+    "homeTeam": {
+      "id": "france",
+      "nameZh": "法国",
+      "nameEn": "France",
+      "code": "fr",
+      "flag": "https://flagcdn.com/w80/fr.png"
+    },
+    "awayTeam": {
+      "id": "iraq",
+      "nameZh": "伊拉克",
+      "nameEn": "Iraq",
+      "code": "iq",
+      "flag": "https://flagcdn.com/w80/iq.png"
+    },
+    "venue": {
+      "name": "GEHA Field at Arrowhead Stadium",
+      "nameZh": "箭头球场",
+      "city": "Kansas City",
+      "cityZh": "堪萨斯城"
+    },
+    "group": "I",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537394,
+    "date": "2026-06-23",
+    "time": "00:00",
+    "homeTeam": {
+      "id": "norway",
+      "nameZh": "挪威",
+      "nameEn": "Norway",
+      "code": "no",
+      "flag": "https://flagcdn.com/w80/no.png"
+    },
+    "awayTeam": {
+      "id": "senegal",
+      "nameZh": "塞内加尔",
+      "nameEn": "Senegal",
+      "code": "sn",
+      "flag": "https://flagcdn.com/w80/sn.png"
+    },
+    "venue": {
+      "name": "GEODIS Park",
+      "nameZh": "GEODIS公园球场",
+      "city": "Nashville",
+      "cityZh": "纳什维尔"
+    },
+    "group": "I",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537400,
+    "date": "2026-06-23",
+    "time": "03:00",
+    "homeTeam": {
+      "id": "jordan",
+      "nameZh": "约旦",
+      "nameEn": "Jordan",
+      "code": "jo",
+      "flag": "https://flagcdn.com/w80/jo.png"
+    },
+    "awayTeam": {
+      "id": "algeria",
+      "nameZh": "阿尔及利亚",
+      "nameEn": "Algeria",
+      "code": "dz",
+      "flag": "https://flagcdn.com/w80/dz.png"
+    },
+    "venue": {
+      "name": "Estadio Azteca",
+      "nameZh": "阿兹特克球场",
+      "city": "Mexico City",
+      "cityZh": "墨西哥城"
+    },
+    "group": "J",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537405,
+    "date": "2026-06-23",
+    "time": "17:00",
+    "homeTeam": {
+      "id": "portugal",
+      "nameZh": "葡萄牙",
+      "nameEn": "Portugal",
+      "code": "pt",
+      "flag": "https://flagcdn.com/w80/pt.png"
+    },
+    "awayTeam": {
+      "id": "uzbekistan",
+      "nameZh": "乌兹别克斯坦",
+      "nameEn": "Uzbekistan",
+      "code": "uz",
+      "flag": "https://flagcdn.com/w80/uz.png"
+    },
+    "venue": {
+      "name": "Estadio Akron",
+      "nameZh": "阿克隆球场",
+      "city": "Guadalajara",
+      "cityZh": "瓜达拉哈拉"
+    },
+    "group": "K",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537411,
+    "date": "2026-06-23",
+    "time": "20:00",
+    "homeTeam": {
+      "id": "england",
+      "nameZh": "英格兰",
+      "nameEn": "England",
+      "code": "gb-eng",
+      "flag": "https://flagcdn.com/w80/gb-eng.png"
+    },
+    "awayTeam": {
+      "id": "ghana",
+      "nameZh": "加纳",
+      "nameEn": "Ghana",
+      "code": "gh",
+      "flag": "https://flagcdn.com/w80/gh.png"
+    },
+    "venue": {
+      "name": "Estadio BBVA",
+      "nameZh": "BBVA球场",
+      "city": "Monterrey",
+      "cityZh": "蒙特雷"
+    },
+    "group": "L",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537412,
+    "date": "2026-06-23",
+    "time": "23:00",
+    "homeTeam": {
+      "id": "panama",
+      "nameZh": "巴拿马",
+      "nameEn": "Panama",
+      "code": "pa",
+      "flag": "https://flagcdn.com/w80/pa.png"
+    },
+    "awayTeam": {
+      "id": "croatia",
+      "nameZh": "克罗地亚",
+      "nameEn": "Croatia",
+      "code": "hr",
+      "flag": "https://flagcdn.com/w80/hr.png"
+    },
+    "venue": {
+      "name": "BMO Field",
+      "nameZh": "BMO球场",
+      "city": "Toronto",
+      "cityZh": "多伦多"
+    },
+    "group": "L",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537406,
+    "date": "2026-06-24",
+    "time": "02:00",
+    "homeTeam": {
+      "id": "colombia",
+      "nameZh": "哥伦比亚",
+      "nameEn": "Colombia",
+      "code": "co",
+      "flag": "https://flagcdn.com/w80/co.png"
+    },
+    "awayTeam": {
+      "id": "congo-dr",
+      "nameZh": "刚果(金)",
+      "nameEn": "Congo DR",
+      "code": "cd",
+      "flag": "https://flagcdn.com/w80/cd.png"
+    },
+    "venue": {
+      "name": "BC Place",
+      "nameZh": "BC体育馆",
+      "city": "Vancouver",
+      "cityZh": "温哥华"
+    },
+    "group": "K",
+    "stage": "GROUP_STAGE",
+    "matchday": 2,
+    "score": null
+  },
+  {
+    "id": 537337,
+    "date": "2026-06-24",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "switzerland",
+      "nameZh": "瑞士",
+      "nameEn": "Switzerland",
+      "code": "ch",
+      "flag": "https://flagcdn.com/w80/ch.png"
+    },
+    "awayTeam": {
+      "id": "canada",
+      "nameZh": "加拿大",
+      "nameEn": "Canada",
+      "code": "ca",
+      "flag": "https://flagcdn.com/w80/ca.png"
+    },
+    "venue": {
+      "name": "MetLife Stadium",
+      "nameZh": "大都会人寿球场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福"
+    },
+    "group": "B",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537338,
+    "date": "2026-06-24",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "bosnia-herzegovina",
+      "nameZh": "波黑",
+      "nameEn": "Bosnia-Herzegovina",
+      "code": "ba",
+      "flag": "https://flagcdn.com/w80/ba.png"
+    },
+    "awayTeam": {
+      "id": "qatar",
+      "nameZh": "卡塔尔",
+      "nameEn": "Qatar",
+      "code": "qa",
+      "flag": "https://flagcdn.com/w80/qa.png"
+    },
+    "venue": {
+      "name": "AT&T Stadium",
+      "nameZh": "AT&T球场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿"
+    },
+    "group": "B",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537344,
+    "date": "2026-06-24",
+    "time": "22:00",
+    "homeTeam": {
+      "id": "morocco",
+      "nameZh": "摩洛哥",
+      "nameEn": "Morocco",
+      "code": "ma",
+      "flag": "https://flagcdn.com/w80/ma.png"
+    },
+    "awayTeam": {
+      "id": "haiti",
+      "nameZh": "海地",
+      "nameEn": "Haiti",
+      "code": "ht",
+      "flag": "https://flagcdn.com/w80/ht.png"
+    },
+    "venue": {
+      "name": "SoFi Stadium",
+      "nameZh": "SoFi球场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德"
+    },
+    "group": "C",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537343,
+    "date": "2026-06-24",
+    "time": "22:00",
+    "homeTeam": {
+      "id": "scotland",
+      "nameZh": "苏格兰",
+      "nameEn": "Scotland",
+      "code": "gb-sct",
+      "flag": "https://flagcdn.com/w80/gb-sct.png"
+    },
+    "awayTeam": {
+      "id": "brazil",
+      "nameZh": "巴西",
+      "nameEn": "Brazil",
+      "code": "br",
+      "flag": "https://flagcdn.com/w80/br.png"
+    },
+    "venue": {
+      "name": "Hard Rock Stadium",
+      "nameZh": "硬石球场",
+      "city": "Miami Gardens",
+      "cityZh": "迈阿密花园"
+    },
+    "group": "C",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537331,
+    "date": "2026-06-25",
+    "time": "01:00",
+    "homeTeam": {
+      "id": "czechia",
+      "nameZh": "捷克",
+      "nameEn": "Czechia",
+      "code": "cz",
+      "flag": "https://flagcdn.com/w80/cz.png"
+    },
+    "awayTeam": {
+      "id": "mexico",
+      "nameZh": "墨西哥",
+      "nameEn": "Mexico",
+      "code": "mx",
+      "flag": "https://flagcdn.com/w80/mx.png"
+    },
+    "venue": {
+      "name": "Lincoln Financial Field",
+      "nameZh": "林肯金融球场",
+      "city": "Philadelphia",
+      "cityZh": "费城"
+    },
+    "group": "A",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537332,
+    "date": "2026-06-25",
+    "time": "01:00",
+    "homeTeam": {
+      "id": "south-africa",
+      "nameZh": "南非",
+      "nameEn": "South Africa",
+      "code": "za",
+      "flag": "https://flagcdn.com/w80/za.png"
+    },
+    "awayTeam": {
+      "id": "south-korea",
+      "nameZh": "韩国",
+      "nameEn": "South Korea",
+      "code": "kr",
+      "flag": "https://flagcdn.com/w80/kr.png"
+    },
+    "venue": {
+      "name": "Mercedes-Benz Stadium",
+      "nameZh": "梅赛德斯-奔驰球场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大"
+    },
+    "group": "A",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537355,
+    "date": "2026-06-25",
+    "time": "20:00",
+    "homeTeam": {
+      "id": "ecuador",
+      "nameZh": "厄瓜多尔",
+      "nameEn": "Ecuador",
+      "code": "ec",
+      "flag": "https://flagcdn.com/w80/ec.png"
+    },
+    "awayTeam": {
+      "id": "germany",
+      "nameZh": "德国",
+      "nameEn": "Germany",
+      "code": "de",
+      "flag": "https://flagcdn.com/w80/de.png"
+    },
+    "venue": {
+      "name": "NRG Stadium",
+      "nameZh": "NRG球场",
+      "city": "Houston",
+      "cityZh": "休斯顿"
+    },
+    "group": "E",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537356,
+    "date": "2026-06-25",
+    "time": "20:00",
+    "homeTeam": {
+      "id": "cura-ao",
+      "nameZh": "库拉索",
+      "nameEn": "Curaçao",
+      "code": "cw",
+      "flag": "https://flagcdn.com/w80/cw.png"
+    },
+    "awayTeam": {
+      "id": "ivory-coast",
+      "nameZh": "科特迪瓦",
+      "nameEn": "Ivory Coast",
+      "code": "ci",
+      "flag": "https://flagcdn.com/w80/ci.png"
+    },
+    "venue": {
+      "name": "Lumen Field",
+      "nameZh": "流明球场",
+      "city": "Seattle",
+      "cityZh": "西雅图"
+    },
+    "group": "E",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537361,
+    "date": "2026-06-25",
+    "time": "23:00",
+    "homeTeam": {
+      "id": "tunisia",
+      "nameZh": "突尼斯",
+      "nameEn": "Tunisia",
+      "code": "tn",
+      "flag": "https://flagcdn.com/w80/tn.png"
+    },
+    "awayTeam": {
+      "id": "netherlands",
+      "nameZh": "荷兰",
+      "nameEn": "Netherlands",
+      "code": "nl",
+      "flag": "https://flagcdn.com/w80/nl.png"
+    },
+    "venue": {
+      "name": "Gillette Stadium",
+      "nameZh": "吉列球场",
+      "city": "Foxborough",
+      "cityZh": "福克斯堡"
+    },
+    "group": "F",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537362,
+    "date": "2026-06-25",
+    "time": "23:00",
+    "homeTeam": {
+      "id": "japan",
+      "nameZh": "日本",
+      "nameEn": "Japan",
+      "code": "jp",
+      "flag": "https://flagcdn.com/w80/jp.png"
+    },
+    "awayTeam": {
+      "id": "sweden",
+      "nameZh": "瑞典",
+      "nameEn": "Sweden",
+      "code": "se",
+      "flag": "https://flagcdn.com/w80/se.png"
+    },
+    "venue": {
+      "name": "GEHA Field at Arrowhead Stadium",
+      "nameZh": "箭头球场",
+      "city": "Kansas City",
+      "cityZh": "堪萨斯城"
+    },
+    "group": "F",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537349,
+    "date": "2026-06-26",
+    "time": "02:00",
+    "homeTeam": {
+      "id": "turkey",
+      "nameZh": "土耳其",
+      "nameEn": "Turkey",
+      "code": "tr",
+      "flag": "https://flagcdn.com/w80/tr.png"
+    },
+    "awayTeam": {
+      "id": "united-states",
+      "nameZh": "美国",
+      "nameEn": "United States",
+      "code": "us",
+      "flag": "https://flagcdn.com/w80/us.png"
+    },
+    "venue": {
+      "name": "GEODIS Park",
+      "nameZh": "GEODIS公园球场",
+      "city": "Nashville",
+      "cityZh": "纳什维尔"
+    },
+    "group": "D",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537350,
+    "date": "2026-06-26",
+    "time": "02:00",
+    "homeTeam": {
+      "id": "paraguay",
+      "nameZh": "巴拉圭",
+      "nameEn": "Paraguay",
+      "code": "py",
+      "flag": "https://flagcdn.com/w80/py.png"
+    },
+    "awayTeam": {
+      "id": "australia",
+      "nameZh": "澳大利亚",
+      "nameEn": "Australia",
+      "code": "au",
+      "flag": "https://flagcdn.com/w80/au.png"
+    },
+    "venue": {
+      "name": "Estadio Azteca",
+      "nameZh": "阿兹特克球场",
+      "city": "Mexico City",
+      "cityZh": "墨西哥城"
+    },
+    "group": "D",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537395,
+    "date": "2026-06-26",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "norway",
+      "nameZh": "挪威",
+      "nameEn": "Norway",
+      "code": "no",
+      "flag": "https://flagcdn.com/w80/no.png"
+    },
+    "awayTeam": {
+      "id": "france",
+      "nameZh": "法国",
+      "nameEn": "France",
+      "code": "fr",
+      "flag": "https://flagcdn.com/w80/fr.png"
+    },
+    "venue": {
+      "name": "Estadio Akron",
+      "nameZh": "阿克隆球场",
+      "city": "Guadalajara",
+      "cityZh": "瓜达拉哈拉"
+    },
+    "group": "I",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537396,
+    "date": "2026-06-26",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "senegal",
+      "nameZh": "塞内加尔",
+      "nameEn": "Senegal",
+      "code": "sn",
+      "flag": "https://flagcdn.com/w80/sn.png"
+    },
+    "awayTeam": {
+      "id": "iraq",
+      "nameZh": "伊拉克",
+      "nameEn": "Iraq",
+      "code": "iq",
+      "flag": "https://flagcdn.com/w80/iq.png"
+    },
+    "venue": {
+      "name": "Estadio BBVA",
+      "nameZh": "BBVA球场",
+      "city": "Monterrey",
+      "cityZh": "蒙特雷"
+    },
+    "group": "I",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537373,
+    "date": "2026-06-27",
+    "time": "00:00",
+    "homeTeam": {
+      "id": "uruguay",
+      "nameZh": "乌拉圭",
+      "nameEn": "Uruguay",
+      "code": "uy",
+      "flag": "https://flagcdn.com/w80/uy.png"
+    },
+    "awayTeam": {
+      "id": "spain",
+      "nameZh": "西班牙",
+      "nameEn": "Spain",
+      "code": "es",
+      "flag": "https://flagcdn.com/w80/es.png"
+    },
+    "venue": {
+      "name": "BMO Field",
+      "nameZh": "BMO球场",
+      "city": "Toronto",
+      "cityZh": "多伦多"
+    },
+    "group": "H",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537374,
+    "date": "2026-06-27",
+    "time": "00:00",
+    "homeTeam": {
+      "id": "cape-verde-islands",
+      "nameZh": "佛得角",
+      "nameEn": "Cape Verde Islands",
+      "code": "cv",
+      "flag": "https://flagcdn.com/w80/cv.png"
+    },
+    "awayTeam": {
+      "id": "saudi-arabia",
+      "nameZh": "沙特阿拉伯",
+      "nameEn": "Saudi Arabia",
+      "code": "sa",
+      "flag": "https://flagcdn.com/w80/sa.png"
+    },
+    "venue": {
+      "name": "BC Place",
+      "nameZh": "BC体育馆",
+      "city": "Vancouver",
+      "cityZh": "温哥华"
+    },
+    "group": "H",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537367,
+    "date": "2026-06-27",
+    "time": "03:00",
+    "homeTeam": {
+      "id": "new-zealand",
+      "nameZh": "新西兰",
+      "nameEn": "New Zealand",
+      "code": "nz",
+      "flag": "https://flagcdn.com/w80/nz.png"
+    },
+    "awayTeam": {
+      "id": "belgium",
+      "nameZh": "比利时",
+      "nameEn": "Belgium",
+      "code": "be",
+      "flag": "https://flagcdn.com/w80/be.png"
+    },
+    "venue": {
+      "name": "MetLife Stadium",
+      "nameZh": "大都会人寿球场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福"
+    },
+    "group": "G",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537368,
+    "date": "2026-06-27",
+    "time": "03:00",
+    "homeTeam": {
+      "id": "egypt",
+      "nameZh": "埃及",
+      "nameEn": "Egypt",
+      "code": "eg",
+      "flag": "https://flagcdn.com/w80/eg.png"
+    },
+    "awayTeam": {
+      "id": "iran",
+      "nameZh": "伊朗",
+      "nameEn": "Iran",
+      "code": "ir",
+      "flag": "https://flagcdn.com/w80/ir.png"
+    },
+    "venue": {
+      "name": "AT&T Stadium",
+      "nameZh": "AT&T球场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿"
+    },
+    "group": "G",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537413,
+    "date": "2026-06-27",
+    "time": "21:00",
+    "homeTeam": {
+      "id": "panama",
+      "nameZh": "巴拿马",
+      "nameEn": "Panama",
+      "code": "pa",
+      "flag": "https://flagcdn.com/w80/pa.png"
+    },
+    "awayTeam": {
+      "id": "england",
+      "nameZh": "英格兰",
+      "nameEn": "England",
+      "code": "gb-eng",
+      "flag": "https://flagcdn.com/w80/gb-eng.png"
+    },
+    "venue": {
+      "name": "SoFi Stadium",
+      "nameZh": "SoFi球场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德"
+    },
+    "group": "L",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537414,
+    "date": "2026-06-27",
+    "time": "21:00",
+    "homeTeam": {
+      "id": "croatia",
+      "nameZh": "克罗地亚",
+      "nameEn": "Croatia",
+      "code": "hr",
+      "flag": "https://flagcdn.com/w80/hr.png"
+    },
+    "awayTeam": {
+      "id": "ghana",
+      "nameZh": "加纳",
+      "nameEn": "Ghana",
+      "code": "gh",
+      "flag": "https://flagcdn.com/w80/gh.png"
+    },
+    "venue": {
+      "name": "Hard Rock Stadium",
+      "nameZh": "硬石球场",
+      "city": "Miami Gardens",
+      "cityZh": "迈阿密花园"
+    },
+    "group": "L",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537407,
+    "date": "2026-06-27",
+    "time": "23:30",
+    "homeTeam": {
+      "id": "colombia",
+      "nameZh": "哥伦比亚",
+      "nameEn": "Colombia",
+      "code": "co",
+      "flag": "https://flagcdn.com/w80/co.png"
+    },
+    "awayTeam": {
+      "id": "portugal",
+      "nameZh": "葡萄牙",
+      "nameEn": "Portugal",
+      "code": "pt",
+      "flag": "https://flagcdn.com/w80/pt.png"
+    },
+    "venue": {
+      "name": "Lincoln Financial Field",
+      "nameZh": "林肯金融球场",
+      "city": "Philadelphia",
+      "cityZh": "费城"
+    },
+    "group": "K",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537408,
+    "date": "2026-06-27",
+    "time": "23:30",
+    "homeTeam": {
+      "id": "congo-dr",
+      "nameZh": "刚果(金)",
+      "nameEn": "Congo DR",
+      "code": "cd",
+      "flag": "https://flagcdn.com/w80/cd.png"
+    },
+    "awayTeam": {
+      "id": "uzbekistan",
+      "nameZh": "乌兹别克斯坦",
+      "nameEn": "Uzbekistan",
+      "code": "uz",
+      "flag": "https://flagcdn.com/w80/uz.png"
+    },
+    "venue": {
+      "name": "Mercedes-Benz Stadium",
+      "nameZh": "梅赛德斯-奔驰球场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大"
+    },
+    "group": "K",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537401,
+    "date": "2026-06-28",
+    "time": "02:00",
+    "homeTeam": {
+      "id": "jordan",
+      "nameZh": "约旦",
+      "nameEn": "Jordan",
+      "code": "jo",
+      "flag": "https://flagcdn.com/w80/jo.png"
+    },
+    "awayTeam": {
+      "id": "argentina",
+      "nameZh": "阿根廷",
+      "nameEn": "Argentina",
+      "code": "ar",
+      "flag": "https://flagcdn.com/w80/ar.png"
+    },
+    "venue": {
+      "name": "NRG Stadium",
+      "nameZh": "NRG球场",
+      "city": "Houston",
+      "cityZh": "休斯顿"
+    },
+    "group": "J",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537402,
+    "date": "2026-06-28",
+    "time": "02:00",
+    "homeTeam": {
+      "id": "algeria",
+      "nameZh": "阿尔及利亚",
+      "nameEn": "Algeria",
+      "code": "dz",
+      "flag": "https://flagcdn.com/w80/dz.png"
+    },
+    "awayTeam": {
+      "id": "austria",
+      "nameZh": "奥地利",
+      "nameEn": "Austria",
+      "code": "at",
+      "flag": "https://flagcdn.com/w80/at.png"
+    },
+    "venue": {
+      "name": "Lumen Field",
+      "nameZh": "流明球场",
+      "city": "Seattle",
+      "cityZh": "西雅图"
+    },
+    "group": "J",
+    "stage": "GROUP_STAGE",
+    "matchday": 3,
+    "score": null
+  },
+  {
+    "id": 537417,
+    "date": "2026-06-28",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "Estadio Azteca",
+      "nameZh": "阿兹特克球场",
+      "city": "Mexico City",
+      "cityZh": "墨西哥城"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537423,
+    "date": "2026-06-29",
+    "time": "17:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "MetLife Stadium",
+      "nameZh": "大都会人寿球场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537415,
+    "date": "2026-06-29",
+    "time": "20:30",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "AT&T Stadium",
+      "nameZh": "AT&T球场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537418,
+    "date": "2026-06-30",
+    "time": "01:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "GEHA Field at Arrowhead Stadium",
+      "nameZh": "箭头球场",
+      "city": "Kansas City",
+      "cityZh": "堪萨斯城"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537424,
+    "date": "2026-06-30",
+    "time": "17:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "NRG Stadium",
+      "nameZh": "NRG球场",
+      "city": "Houston",
+      "cityZh": "休斯顿"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537416,
+    "date": "2026-06-30",
+    "time": "21:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "Mercedes-Benz Stadium",
+      "nameZh": "梅赛德斯-奔驰球场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537425,
+    "date": "2026-07-01",
+    "time": "01:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "SoFi Stadium",
+      "nameZh": "SoFi球场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537426,
+    "date": "2026-07-01",
+    "time": "16:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "Lincoln Financial Field",
+      "nameZh": "林肯金融球场",
+      "city": "Philadelphia",
+      "cityZh": "费城"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537422,
+    "date": "2026-07-01",
+    "time": "20:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "Lumen Field",
+      "nameZh": "流明球场",
+      "city": "Seattle",
+      "cityZh": "西雅图"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537421,
+    "date": "2026-07-02",
+    "time": "00:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "Gillette Stadium",
+      "nameZh": "吉列球场",
+      "city": "Foxborough",
+      "cityZh": "福克斯堡"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537420,
+    "date": "2026-07-02",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "Estadio Azteca",
+      "nameZh": "阿兹特克球场",
+      "city": "Mexico City",
+      "cityZh": "墨西哥城"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537419,
+    "date": "2026-07-02",
+    "time": "23:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "MetLife Stadium",
+      "nameZh": "大都会人寿球场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537429,
+    "date": "2026-07-03",
+    "time": "03:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "AT&T Stadium",
+      "nameZh": "AT&T球场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537428,
+    "date": "2026-07-03",
+    "time": "18:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "GEHA Field at Arrowhead Stadium",
+      "nameZh": "箭头球场",
+      "city": "Kansas City",
+      "cityZh": "堪萨斯城"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537427,
+    "date": "2026-07-03",
+    "time": "22:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "NRG Stadium",
+      "nameZh": "NRG球场",
+      "city": "Houston",
+      "cityZh": "休斯顿"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537430,
+    "date": "2026-07-04",
+    "time": "01:30",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "Mercedes-Benz Stadium",
+      "nameZh": "梅赛德斯-奔驰球场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大"
+    },
+    "group": "",
+    "stage": "LAST_32",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537376,
+    "date": "2026-07-04",
+    "time": "17:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "SoFi Stadium",
+      "nameZh": "SoFi球场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德"
+    },
+    "group": "",
+    "stage": "LAST_16",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537375,
+    "date": "2026-07-04",
+    "time": "21:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "Lincoln Financial Field",
+      "nameZh": "林肯金融球场",
+      "city": "Philadelphia",
+      "cityZh": "费城"
+    },
+    "group": "",
+    "stage": "LAST_16",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537377,
+    "date": "2026-07-05",
+    "time": "20:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "Lumen Field",
+      "nameZh": "流明球场",
+      "city": "Seattle",
+      "cityZh": "西雅图"
+    },
+    "group": "",
+    "stage": "LAST_16",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537378,
+    "date": "2026-07-06",
+    "time": "00:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "Gillette Stadium",
+      "nameZh": "吉列球场",
+      "city": "Foxborough",
+      "cityZh": "福克斯堡"
+    },
+    "group": "",
+    "stage": "LAST_16",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537379,
+    "date": "2026-07-06",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "Estadio Azteca",
+      "nameZh": "阿兹特克球场",
+      "city": "Mexico City",
+      "cityZh": "墨西哥城"
+    },
+    "group": "",
+    "stage": "LAST_16",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537380,
+    "date": "2026-07-07",
+    "time": "00:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "MetLife Stadium",
+      "nameZh": "大都会人寿球场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福"
+    },
+    "group": "",
+    "stage": "LAST_16",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537381,
+    "date": "2026-07-07",
+    "time": "16:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "AT&T Stadium",
+      "nameZh": "AT&T球场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿"
+    },
+    "group": "",
+    "stage": "LAST_16",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537382,
+    "date": "2026-07-07",
+    "time": "20:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "GEHA Field at Arrowhead Stadium",
+      "nameZh": "箭头球场",
+      "city": "Kansas City",
+      "cityZh": "堪萨斯城"
+    },
+    "group": "",
+    "stage": "LAST_16",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537383,
+    "date": "2026-07-09",
+    "time": "20:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "NRG Stadium",
+      "nameZh": "NRG球场",
+      "city": "Houston",
+      "cityZh": "休斯顿"
+    },
+    "group": "",
+    "stage": "QUARTER_FINALS",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537384,
+    "date": "2026-07-10",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "Mercedes-Benz Stadium",
+      "nameZh": "梅赛德斯-奔驰球场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大"
+    },
+    "group": "",
+    "stage": "QUARTER_FINALS",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537385,
+    "date": "2026-07-11",
+    "time": "21:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "SoFi Stadium",
+      "nameZh": "SoFi球场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德"
+    },
+    "group": "",
+    "stage": "QUARTER_FINALS",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537386,
+    "date": "2026-07-12",
+    "time": "01:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "Lincoln Financial Field",
+      "nameZh": "林肯金融球场",
+      "city": "Philadelphia",
+      "cityZh": "费城"
+    },
+    "group": "",
+    "stage": "QUARTER_FINALS",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537387,
+    "date": "2026-07-14",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "Estadio Azteca",
+      "nameZh": "阿兹特克球场",
+      "city": "Mexico City",
+      "cityZh": "墨西哥城"
+    },
+    "group": "",
+    "stage": "SEMI_FINALS",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537388,
+    "date": "2026-07-15",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "MetLife Stadium",
+      "nameZh": "大都会人寿球场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福"
+    },
+    "group": "",
+    "stage": "SEMI_FINALS",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537389,
+    "date": "2026-07-18",
+    "time": "21:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "AT&T Stadium",
+      "nameZh": "AT&T球场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿"
+    },
+    "group": "",
+    "stage": "THIRD_PLACE",
+    "matchday": null,
+    "score": null
+  },
+  {
+    "id": 537390,
+    "date": "2026-07-19",
+    "time": "19:00",
+    "homeTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "awayTeam": {
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
+    },
+    "venue": {
+      "name": "MetLife Stadium",
+      "nameZh": "大都会人寿球场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福"
+    },
+    "group": "",
+    "stage": "FINAL",
+    "matchday": null,
+    "score": null
+  }
+]

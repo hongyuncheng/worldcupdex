@@ -1,0 +1,281 @@
+{
+  "id": "morocco",
+  "nameZh": "摩洛哥",
+  "nameEn": "Morocco",
+  "code": "ma",
+  "group": "F",
+  "confederation": "CAF",
+  "fifaRank": 14,
+  "flag": "https://flagcdn.com/w80/ma.png",
+  "coach": {
+    "nameEn": "Walid Regragui",
+    "nameZh": "瓦利德·雷格拉吉",
+    "nationality": ""
+  },
+  "founded": 1955,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Yassine Bounou",
+      "nameZh": "亚辛·布努",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1991-04-05",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "El Mehdi Benabid",
+      "nameZh": "El Mehdi Benabid",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1998-01-24",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "El Mehdi Al Harrar",
+      "nameZh": "El Mehdi Al Harrar",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2000-11-30",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Redouane Halhal",
+      "nameZh": "Redouane Halhal",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2003-03-05",
+      "nationality": "France",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ismaël Baouf",
+      "nameZh": "Ismaël Baouf",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2006-09-17",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Chemsdine Talbi",
+      "nameZh": "Chemsdine Talbi",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2005-05-09",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Yassir Zabiri",
+      "nameZh": "Yassir Zabiri",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2005-02-23",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Rayane Bounida",
+      "nameZh": "Rayane Bounida",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2006-03-03",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Soufiane Rahimi",
+      "nameZh": "Soufiane Rahimi",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1996-06-02",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ayoub El Kaabi",
+      "nameZh": "Ayoub El Kaabi",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1993-06-25",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Zakaria El Ouahdi",
+      "nameZh": "Zakaria El Ouahdi",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-12-31",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mohamed Rabie Hrimat",
+      "nameZh": "Mohamed Rabie Hrimat",
+      "position": "null",
+      "positionZh": "null",
+      "dateOfBirth": "1994-08-07",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Abdelhamid Ait Boudlal",
+      "nameZh": "Abdelhamid Ait Boudlal",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2006-04-16",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gessime Yassine",
+      "nameZh": "Gessime Yassine",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "",
+      "nationality": "France",
+      "shirtNumber": null
+    },
+    {
+      "name": "Samir El Mourabet",
+      "nameZh": "Samir El Mourabet",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2005-10-06",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Bilal El Khannouss",
+      "nameZh": "比拉尔·埃尔汉努斯",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "2005-05-09",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ez Abde",
+      "nameZh": "Ez Abde",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2001-12-17",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Neil El Aynaoui",
+      "nameZh": "Neil El Aynaoui",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2001-07-02",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Oussama Targhalline",
+      "nameZh": "Oussama Targhalline",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2002-05-20",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Chadi Riad",
+      "nameZh": "Chadi Riad",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2003-06-17",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Anass Salah-Eddine",
+      "nameZh": "Anass Salah-Eddine",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "2002-01-18",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Amine Adli",
+      "nameZh": "Amine Adli",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2000-05-10",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ismael Saibari",
+      "nameZh": "Ismael Saibari",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2001-01-28",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Souffian El Karouani",
+      "nameZh": "Souffian El Karouani",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "2000-10-19",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Azzedine Ounahi",
+      "nameZh": "阿泽丁·乌纳伊",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2000-04-19",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Issa Diop",
+      "nameZh": "Issa Diop",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1997-01-09",
+      "nationality": "France",
+      "shirtNumber": null
+    },
+    {
+      "name": "Brahim Diaz",
+      "nameZh": "布拉欣·迪亚斯",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "1999-08-03",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Noussair Mazraoui",
+      "nameZh": "努赛尔·马兹拉维",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1997-11-14",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    },
+    {
+      "name": "Achraf Hakimi",
+      "nameZh": "阿什拉夫·哈基米",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1998-11-04",
+      "nationality": "Morocco",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

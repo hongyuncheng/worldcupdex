@@ -1,0 +1,272 @@
+{
+  "id": "uruguay",
+  "nameZh": "乌拉圭",
+  "nameEn": "Uruguay",
+  "code": "uy",
+  "group": "J",
+  "confederation": "CONMEBOL",
+  "fifaRank": 13,
+  "flag": "https://flagcdn.com/w80/uy.png",
+  "coach": {
+    "nameEn": "Marcelo Bielsa",
+    "nameZh": "马塞洛·贝尔萨",
+    "nationality": ""
+  },
+  "founded": 1900,
+  "venue": "Estadio Centenario",
+  "squad": [
+    {
+      "name": "Fernando Muslera",
+      "nameZh": "费尔南多·穆斯莱拉",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1986-06-16",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Santiago Mele",
+      "nameZh": "Santiago Mele",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1997-09-06",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Sergio Rochet",
+      "nameZh": "Sergio Rochet",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1993-03-23",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Guillermo Varela",
+      "nameZh": "Guillermo Varela",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1993-03-24",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Matías Viña",
+      "nameZh": "Matías Viña",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-11-09",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Joaquín Piquerez",
+      "nameZh": "Joaquín Piquerez",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-08-24",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "José Luis Rodríguez",
+      "nameZh": "José Luis Rodríguez",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1987-01-11",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Giorgian De Arrascaeta",
+      "nameZh": "Giorgian De Arrascaeta",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1994-06-01",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Agustín Canobbio",
+      "nameZh": "Agustín Canobbio",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-10-01",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Maximiliano Araújo",
+      "nameZh": "Maximiliano Araújo",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-02-15",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Emiliano Martínez",
+      "nameZh": "埃米利亚诺·马丁内斯",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-08-17",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Facundo Torres Pérez",
+      "nameZh": "Facundo Torres Pérez",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-04-13",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nicolas de la Cruz",
+      "nameZh": "Nicolas de la Cruz",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-06-01",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Federico Viñas",
+      "nameZh": "Federico Viñas",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1998-06-30",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Agustín Álvarez Martínez",
+      "nameZh": "Agustín Álvarez Martínez",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-05-19",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Juan Sanabria",
+      "nameZh": "Juan Sanabria",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "2000-03-29",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Facundo Pellistri",
+      "nameZh": "法昆多·佩利斯特里",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2001-12-20",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nicolas Fonseca",
+      "nameZh": "Nicolas Fonseca",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1998-10-19",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Santiago Bueno",
+      "nameZh": "Santiago Bueno",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1998-11-09",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mathías Olivera",
+      "nameZh": "马蒂亚斯·奥利韦拉",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1997-10-31",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Brian Rodríguez",
+      "nameZh": "Brian Rodríguez",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2000-05-20",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Darwin Núñez",
+      "nameZh": "达尔文·努涅斯",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1999-06-24",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Manuel Ugarte",
+      "nameZh": "曼努埃尔·乌加特",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "2001-04-11",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Sebastían Cáceres",
+      "nameZh": "Sebastían Cáceres",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1999-08-18",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ronald Araújo",
+      "nameZh": "罗纳德·阿劳霍",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1999-03-07",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Rodrigo Aguirre",
+      "nameZh": "Rodrigo Aguirre",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1994-10-01",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "José Maria Giménez",
+      "nameZh": "何塞·马里亚·希门尼斯",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1995-01-20",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Federico Valverde",
+      "nameZh": "费德里科·巴尔韦德",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1998-07-22",
+      "nationality": "Uruguay",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

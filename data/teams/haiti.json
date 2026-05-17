@@ -1,0 +1,227 @@
+{
+  "id": "haiti",
+  "nameZh": "海地",
+  "nameEn": "Haiti",
+  "code": "ht",
+  "group": "",
+  "confederation": "",
+  "fifaRank": 52,
+  "flag": "https://flagcdn.com/w80/ht.png",
+  "coach": {
+    "nameEn": "Nicolas Pépé",
+    "nameZh": "尼古拉斯·佩佩",
+    "nationality": ""
+  },
+  "founded": 1904,
+  "venue": "Stade Sylvio Cator",
+  "squad": [
+    {
+      "name": "Alexandre Pierre",
+      "nameZh": "Alexandre Pierre",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2001-02-25",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Johny Placide",
+      "nameZh": "Johny Placide",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1988-01-29",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Martin Expérience",
+      "nameZh": "Martin Expérience",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-03-09",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ricardo Adé",
+      "nameZh": "Ricardo Adé",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1990-05-21",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Delentz Pierre",
+      "nameZh": "Delentz Pierre",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-11-16",
+      "nationality": "USA",
+      "shirtNumber": null
+    },
+    {
+      "name": "Wilguens Paugain",
+      "nameZh": "Wilguens Paugain",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-08-24",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Leverton Pierre",
+      "nameZh": "Leverton Pierre",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-03-09",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Derrick Etienne Jr.",
+      "nameZh": "Derrick Etienne Jr.",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1996-11-25",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Danley Jean Jacques",
+      "nameZh": "Danley Jean Jacques",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-05-20",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Woobens Pacius",
+      "nameZh": "Woobens Pacius",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-05-11",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Carl Sainté",
+      "nameZh": "Carl Sainté",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-08-09",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Duckens Nazon",
+      "nameZh": "Duckens Nazon",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1994-04-07",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Frantzdy Pierrot",
+      "nameZh": "Frantzdy Pierrot",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1995-03-29",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Yassin Fortune",
+      "nameZh": "Yassin Fortune",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1999-01-30",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Louicius Don Deedson",
+      "nameZh": "Louicius Don Deedson",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-02-11",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ruben Providence",
+      "nameZh": "Ruben Providence",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-07-07",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Duke LaCroix",
+      "nameZh": "Duke LaCroix",
+      "position": "",
+      "positionZh": "",
+      "dateOfBirth": "1993-10-14",
+      "nationality": "USA",
+      "shirtNumber": null
+    },
+    {
+      "name": "Josué Casimir",
+      "nameZh": "Josué Casimir",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2001-09-24",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Wilson Isidor",
+      "nameZh": "Wilson Isidor",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2000-08-27",
+      "nationality": "France",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hannes Delcroix",
+      "nameZh": "Hannes Delcroix",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1999-02-28",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jean-Ricner Bellegarde",
+      "nameZh": "Jean-Ricner Bellegarde",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1998-06-27",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jean-Kevin Duverne",
+      "nameZh": "Jean-Kevin Duverne",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1997-08-12",
+      "nationality": "France",
+      "shirtNumber": null
+    },
+    {
+      "name": "Carlens Arcus",
+      "nameZh": "Carlens Arcus",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1996-06-28",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

@@ -1,0 +1,254 @@
+{
+  "id": "congo-dr",
+  "nameZh": "刚果(金)",
+  "nameEn": "Congo DR",
+  "code": "cd",
+  "group": "",
+  "confederation": "",
+  "fifaRank": 47,
+  "flag": "https://flagcdn.com/w80/cd.png",
+  "coach": {
+    "nameEn": "Sébastien Desabre",
+    "nameZh": "塞巴斯蒂安·德萨布雷",
+    "nationality": ""
+  },
+  "founded": 1919,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Timothy Fayulu",
+      "nameZh": "Timothy Fayulu",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1999-07-24",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Lionel Mpasi",
+      "nameZh": "Lionel Mpasi",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1994-08-01",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Matthieu Epolo",
+      "nameZh": "Matthieu Epolo",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2005-01-15",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Arthur Masuaku",
+      "nameZh": "Arthur Masuaku",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1993-11-07",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Joris Kayembe",
+      "nameZh": "Joris Kayembe",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1994-08-08",
+      "nationality": "Belgium",
+      "shirtNumber": null
+    },
+    {
+      "name": "Rocky Bushiri",
+      "nameZh": "Rocky Bushiri",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-11-30",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Noah Sadiki",
+      "nameZh": "Noah Sadiki",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2004-12-17",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Steve Kapuadi",
+      "nameZh": "Steve Kapuadi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-04-30",
+      "nationality": "France",
+      "shirtNumber": null
+    },
+    {
+      "name": "Charles Pickel",
+      "nameZh": "Charles Pickel",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-05-15",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Theo Bongonda",
+      "nameZh": "Theo Bongonda",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1995-11-20",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Brian Cipenga",
+      "nameZh": "Brian Cipenga",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1998-03-11",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Fiston Mayele",
+      "nameZh": "Fiston Mayele",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1994-06-24",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ngal'ayel Mukau",
+      "nameZh": "Ngal'ayel Mukau",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "2004-11-03",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Meschack Elia",
+      "nameZh": "Meschack Elia",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1997-08-06",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jeremy Ngakia",
+      "nameZh": "Jeremy Ngakia",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "2000-09-07",
+      "nationality": "England",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nathanael Mbuku",
+      "nameZh": "Nathanael Mbuku",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2002-03-16",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Simon Banza",
+      "nameZh": "Simon Banza",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1996-08-13",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Cédric Bakambu",
+      "nameZh": "Cédric Bakambu",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1991-04-11",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Dylan Batubinsika",
+      "nameZh": "Dylan Batubinsika",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1996-02-15",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Edo Kayembe",
+      "nameZh": "Edo Kayembe",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1998-06-03",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Samuel Moutoussamy",
+      "nameZh": "Samuel Moutoussamy",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1996-08-12",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Grady Diangana",
+      "nameZh": "Grady Diangana",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "1998-04-19",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Aaron Wan-Bissaka",
+      "nameZh": "Aaron Wan-Bissaka",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1997-11-26",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Chancel Mbemba",
+      "nameZh": "Chancel Mbemba",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1994-08-08",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Axel Tuanzebe",
+      "nameZh": "Axel Tuanzebe",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1997-11-14",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    },
+    {
+      "name": "Yoane Wissa",
+      "nameZh": "Yoane Wissa",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1996-09-03",
+      "nationality": "DR Congo",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

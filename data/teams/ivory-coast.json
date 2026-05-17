@@ -1,0 +1,245 @@
+{
+  "id": "ivory-coast",
+  "nameZh": "科特迪瓦",
+  "nameEn": "Ivory Coast",
+  "code": "ci",
+  "group": "",
+  "confederation": "",
+  "fifaRank": 39,
+  "flag": "https://flagcdn.com/w80/ci.png",
+  "coach": {
+    "nameEn": "Faé Emerse",
+    "nameZh": "法埃·埃梅尔塞",
+    "nationality": ""
+  },
+  "founded": 1960,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Yahia Fofana",
+      "nameZh": "Yahia Fofana",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2000-08-21",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alban Lafont",
+      "nameZh": "Alban Lafont",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1999-01-23",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mohamed Kone",
+      "nameZh": "Mohamed Kone",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2002-03-07",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ghislain Konan",
+      "nameZh": "Ghislain Konan",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-12-27",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Franck Kessié",
+      "nameZh": "Franck Kessié",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1996-12-19",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jean Michaël Seri",
+      "nameZh": "Jean Michaël Seri",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1991-07-19",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Parfait Guiagon",
+      "nameZh": "Parfait Guiagon",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-02-22",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Bazoumana Touré",
+      "nameZh": "Bazoumana Touré",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2006-03-02",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Christ Ravynel Inao Oulaï",
+      "nameZh": "Christ Ravynel Inao Oulaï",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2006-04-06",
+      "nationality": "Cote d'Ivoire",
+      "shirtNumber": null
+    },
+    {
+      "name": "Martial Godo",
+      "nameZh": "Martial Godo",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2003-03-14",
+      "nationality": "England",
+      "shirtNumber": null
+    },
+    {
+      "name": "Guéla Doué",
+      "nameZh": "Guéla Doué",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "2025-06-30",
+      "nationality": "Cote d'Ivoire",
+      "shirtNumber": null
+    },
+    {
+      "name": "Clement Akpa",
+      "nameZh": "Clement Akpa",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "2001-11-24",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ousmane Diomande",
+      "nameZh": "Ousmane Diomande",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2004-11-16",
+      "nationality": "Cote d'Ivoire",
+      "shirtNumber": null
+    },
+    {
+      "name": "Bénie Traoré",
+      "nameZh": "Bénie Traoré",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2002-11-30",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Odilon Kossounou",
+      "nameZh": "Odilon Kossounou",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2001-01-04",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Simon Adingra",
+      "nameZh": "Simon Adingra",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2002-01-01",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Sepe Elye Wahi",
+      "nameZh": "Sepe Elye Wahi",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2003-01-02",
+      "nationality": "France",
+      "shirtNumber": null
+    },
+    {
+      "name": "Emmanuel Agbadou",
+      "nameZh": "Emmanuel Agbadou",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1997-06-17",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Amad Diallo",
+      "nameZh": "Amad Diallo",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "2002-07-11",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Evann Guessand",
+      "nameZh": "Evann Guessand",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "2001-07-01",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Wilfried Singo",
+      "nameZh": "Wilfried Singo",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2000-12-25",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nicolas Pépé",
+      "nameZh": "Nicolas Pépé",
+      "position": "Right Winger",
+      "positionZh": "Right Winger",
+      "dateOfBirth": "1995-05-29",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ibrahim Sangaré",
+      "nameZh": "Ibrahim Sangaré",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1997-12-02",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Seko Fofana",
+      "nameZh": "Seko Fofana",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1995-05-07",
+      "nationality": "France",
+      "shirtNumber": null
+    },
+    {
+      "name": "Evan N'Dicka",
+      "nameZh": "Evan N'Dicka",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1999-08-20",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}

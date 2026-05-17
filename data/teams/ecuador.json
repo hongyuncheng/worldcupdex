@@ -1,0 +1,299 @@
+{
+  "id": "ecuador",
+  "nameZh": "厄瓜多尔",
+  "nameEn": "Ecuador",
+  "code": "ec",
+  "group": "A",
+  "confederation": "CONMEBOL",
+  "fifaRank": 28,
+  "flag": "https://flagcdn.com/w80/ec.png",
+  "coach": {
+    "nameEn": "Sebastián Beccacece",
+    "nameZh": "塞巴斯蒂安·贝卡塞塞",
+    "nationality": ""
+  },
+  "founded": 1925,
+  "venue": "",
+  "squad": [
+    {
+      "name": "Hernán Galíndez",
+      "nameZh": "Hernán Galíndez",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1987-03-30",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "David Cabezas",
+      "nameZh": "David Cabezas",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1995-06-12",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Moisés Ramírez",
+      "nameZh": "Moisés Ramírez",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2000-09-09",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gonzalo Valle",
+      "nameZh": "Gonzalo Valle",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1960-04-08",
+      "nationality": "",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ángelo Preciado",
+      "nameZh": "Ángelo Preciado",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-02-18",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Félix Torres",
+      "nameZh": "Félix Torres",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-01-11",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Leonardo Realpe",
+      "nameZh": "Leonardo Realpe",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-02-26",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "José Hurtado",
+      "nameZh": "José Hurtado",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-12-23",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Joel Ordoñez",
+      "nameZh": "Joel Ordoñez",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2004-04-21",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Bryan Ramírez",
+      "nameZh": "Bryan Ramírez",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-08-11",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Janner Corozo",
+      "nameZh": "Janner Corozo",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1995-09-08",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alan Franco",
+      "nameZh": "Alan Franco",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-08-21",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jordy Alcívar",
+      "nameZh": "Jordy Alcívar",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-08-05",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Anthony Valencia",
+      "nameZh": "Anthony Valencia",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2003-07-21",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alan Minda",
+      "nameZh": "Alan Minda",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2003-05-14",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Yaimar Medina",
+      "nameZh": "Yaimar Medina",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2004-11-05",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ray Paez",
+      "nameZh": "Ray Paez",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2007-05-04",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Denil Castillo",
+      "nameZh": "Denil Castillo",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2004-03-24",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jeremy",
+      "nameZh": "Jeremy",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2005-03-19",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
+      "name": "Elias Legendre Quiñonez",
+      "nameZh": "Elias Legendre Quiñonez",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2008-04-22",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jordy Caicedo",
+      "nameZh": "Jordy Caicedo",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1997-11-18",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Enner Valencia",
+      "nameZh": "Enner Valencia",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1989-11-04",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gonzalo Plata",
+      "nameZh": "Gonzalo Plata",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-11-01",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Pedro Vite",
+      "nameZh": "Pedro Vite",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2002-03-09",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "John Mercado",
+      "nameZh": "John Mercado",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2002-06-03",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Moisés Caicedo",
+      "nameZh": "Moisés Caicedo",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "2001-11-02",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jackson Porozo",
+      "nameZh": "Jackson Porozo",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2000-08-04",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "William Pacho",
+      "nameZh": "William Pacho",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2001-10-16",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "John Yeboah",
+      "nameZh": "John Yeboah",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "2000-06-23",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Pervis Estupiñán",
+      "nameZh": "Pervis Estupiñán",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1998-01-21",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Piero Hincapié",
+      "nameZh": "Piero Hincapié",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "2002-01-09",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    }
+  ],
+  "recentMatches": []
+}
