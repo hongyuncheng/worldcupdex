@@ -1,9 +1,18 @@
-import venuesData from '~/data/venues.json'
 import type { VenueItem } from '~/types'
 
-const venues = venuesData as VenueItem[]
+let _venues: VenueItem[] | null = null
+
+async function getVenues(): Promise<VenueItem[]> {
+  if (!_venues) {
+    const mod = await import('../../../data/venues.json')
+    _venues = mod.default as VenueItem[]
+  }
+  return _venues
+}
 
 export default defineEventHandler(async () => {
+  const venues = await getVenues()
+
   if (venues.length === 0) {
     return {
       data: [],

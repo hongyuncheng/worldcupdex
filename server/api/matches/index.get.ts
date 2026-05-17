@@ -1,10 +1,18 @@
-import matchesData from '~/data/matches.json'
 import type { MatchItem } from '~/types'
 
-const matches = matchesData as MatchItem[]
+let _matches: MatchItem[] | null = null
+
+async function getMatches(): Promise<MatchItem[]> {
+  if (!_matches) {
+    const mod = await import('../../../data/matches.json')
+    _matches = mod.default as MatchItem[]
+  }
+  return _matches
+}
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event)
+  const matches = await getMatches()
 
   if (matches.length === 0) {
     return {

@@ -1,10 +1,18 @@
-import teamsData from '~/data/teams.json'
 import type { TeamListItem } from '~/types'
 
-const teams = teamsData as TeamListItem[]
+let _teams: TeamListItem[] | null = null
+
+async function getTeams(): Promise<TeamListItem[]> {
+  if (!_teams) {
+    const mod = await import('../../../data/teams.json')
+    _teams = mod.default as TeamListItem[]
+  }
+  return _teams
+}
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event)
+  const teams = await getTeams()
 
   if (teams.length === 0) {
     return {

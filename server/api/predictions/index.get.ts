@@ -1,10 +1,18 @@
-import predictionsData from '~/data/predictions.json'
 import type { AiPrediction } from '~/types'
 
-const predictions = predictionsData as AiPrediction[]
+let _predictions: AiPrediction[] | null = null
+
+async function getPredictions(): Promise<AiPrediction[]> {
+  if (!_predictions) {
+    const mod = await import('../../../data/predictions.json')
+    _predictions = mod.default as AiPrediction[]
+  }
+  return _predictions
+}
 
 export default defineEventHandler(async (event) => {
   const query = getQuery(event)
+  const predictions = await getPredictions()
 
   // 支持通过 query param 过滤单场
   if (query.matchId) {

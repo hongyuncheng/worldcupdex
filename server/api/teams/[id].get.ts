@@ -1,18 +1,20 @@
 import type { TeamDetail } from '~/types'
 
-// 构建时通过 glob 导入所有球队详情 JSON
-const teamModules = import.meta.glob<TeamDetail>('../../../data/teams/*.json', {
-  eager: true,
-  import: 'default',
-})
+let _teamsMap: Map<string, TeamDetail> | null = null
 
-// 构建 id → TeamDetail 的查找表
-const teamsMap = new Map<string, TeamDetail>()
-for (const [path, data] of Object.entries(teamModules)) {
-  const id = path.split('/').pop()?.replace('.json', '')
-  if (id && data) {
-    teamsMap.set(id, data)
+async function getTeamsMap(): Promise<Map<string, TeamDetail>> {
+  if (!_teamsMap) {
+    const teamModules = import.meta.glob<{ default: TeamDetail }>('../../../data/teams/*.json')
+    _teamsMap = new Map<string, TeamDetail>()
+    for (const [path, loader] of Object.entries(teamModules)) {
+      const id = path.split('/').pop()?.replace('.json', '')
+      if (id) {
+        const mod = await loader()
+        _teamsMap.set(id, mod.default)
+      }
+    }
   }
+  return _teamsMap
 }
 
 export default defineEventHandler(async (event) => {
@@ -25,6 +27,7 @@ export default defineEventHandler(async (event) => {
     })
   }
 
+  const teamsMap = await getTeamsMap()
   const team = teamsMap.get(id)
 
   if (!team) {

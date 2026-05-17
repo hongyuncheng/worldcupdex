@@ -1,7 +1,14 @@
-import predictionsData from '~/data/predictions.json'
 import type { AiPrediction } from '~/types'
 
-const predictions = predictionsData as AiPrediction[]
+let _predictions: AiPrediction[] | null = null
+
+async function getPredictions(): Promise<AiPrediction[]> {
+  if (!_predictions) {
+    const mod = await import('../../../data/predictions.json')
+    _predictions = mod.default as AiPrediction[]
+  }
+  return _predictions
+}
 
 export default defineEventHandler(async (event) => {
   const matchId = Number(getRouterParam(event, 'matchId'))
@@ -13,6 +20,7 @@ export default defineEventHandler(async (event) => {
     })
   }
 
+  const predictions = await getPredictions()
   const prediction = predictions.find((p) => p.matchId === matchId)
 
   if (!prediction) {
