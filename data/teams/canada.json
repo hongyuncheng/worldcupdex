@@ -191,9 +191,9 @@
       "dateOfBirth": "2002-12-25",
       "nationality": "Canada",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/yccg2y1766146971.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9eusij1752004226.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/yccg2y1766146971.png"
     },
     {
       "name": "Tani Oluwaseyi",

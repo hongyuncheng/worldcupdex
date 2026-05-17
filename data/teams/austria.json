@@ -311,9 +311,9 @@
       "dateOfBirth": "1994-01-29",
       "nationality": "Austria",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wa4bx81763554145.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/r89zw21578227346.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wa4bx81763554145.png"
     },
     {
       "name": "Florian Grillitsch",

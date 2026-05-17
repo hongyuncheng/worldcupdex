@@ -179,9 +179,9 @@
       "dateOfBirth": "2001-04-29",
       "nationality": "Brazil",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6hr4w81750454528.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9qsyun1598691910.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6hr4w81750454528.png"
     },
     {
       "name": "Luiz Henrique",

@@ -423,7 +423,10 @@
     "playAgain": "再来一次",
     "participants": "今日已有 {count} 人参与",
     "rules": "5题 · 30秒/题 · 即时出分",
-    "challengeFriends": "你能超过 90% 的球迷吗？"
+    "challengeFriends": "你能超过 90% 的球迷吗？",
+    "saveImage": "保存成绩图片",
+    "challengeMain": "你的朋友得了 {score} 分，超过了 {percentile}% 的球迷",
+    "challengeSub": "你能打败 TA 吗？"
   },
   "fanCard": {
     "title": "生成球迷身份卡",
@@ -447,6 +450,8 @@
     "shareTo": "分享到",
     "copyLink": "复制链接",
     "copied": "已复制！",
+    "shareTitle": "分享你的成绩",
+    "saveImage": "保存图片",
     "twitter": "Twitter",
     "facebook": "Facebook",
     "whatsapp": "WhatsApp",

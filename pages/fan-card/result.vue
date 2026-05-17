@@ -4,7 +4,7 @@ import type { TeamDetail, SquadPlayer } from '~/types'
 const { t, locale } = useI18n()
 const route = useRoute()
 const localePath = useLocalePath()
-const { loadFanCard, getFirstMatch, getTeamColors } = useFanCard()
+const { loadFanCard, getFirstMatch } = useFanCard()
 
 // SEO
 useHead({
@@ -140,6 +140,29 @@ const shareUrl = computed(() => {
 // ── 卡片 DOM ref ──
 const cardRef = ref<HTMLElement | null>(null)
 
+// ── 加入时间 ──
+const createdAt = computed(() => {
+  const now = new Date()
+  return `${now.getFullYear()}.${String(now.getMonth() + 1).padStart(2, '0')}`
+})
+
+// ── 助威口号 ──
+const motto = ref('')
+onMounted(() => {
+  const q = route.query.motto as string
+  if (q) {
+    motto.value = q
+  } else {
+    try {
+      const stored = sessionStorage.getItem('wcd_fan_card')
+      if (stored) {
+        const data = JSON.parse(stored)
+        motto.value = data.motto || ''
+      }
+    } catch {}
+  }
+})
+
 // ── 数据是否就绪 ──
 const isReady = computed(() => {
   return teamId.value && team.value && selectedPlayer.value && userNickname.value
@@ -181,20 +204,20 @@ const isReady = computed(() => {
               :fan-number="fanNumber"
               :first-match-opponent="firstMatchOpponent"
               :first-match-date="firstMatch?.date || null"
+              :created-at="createdAt"
+              :motto="motto"
             />
           </div>
         </div>
 
-        <!-- 分享按钮 -->
-        <div class="text-center mb-10">
-          <p class="text-white/60 text-sm mb-4" style="font-family: 'Inter', sans-serif;">
-            {{ t('share.shareTo') }}
-          </p>
-          <ShareButtons
+        <!-- 分享面板 -->
+        <div class="mb-10">
+          <SharePanel
             :share-text="shareText"
             :share-url="shareUrl"
             :card-ref="cardRef"
             :filename="`worldcupdex-fancard-${teamId}.png`"
+            :share-title="t('share.shareTo')"
           />
         </div>
 

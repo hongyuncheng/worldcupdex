@@ -26,12 +26,7 @@
             <!-- Logo -->
             <NuxtLinkLocale to="/" class="flex items-center gap-2 group" @click="mobileMenuOpen = false">
               <span class="text-2xl">🏆</span>
-              <span
-                class="text-xl font-extrabold text-white tracking-tight"
-                style="font-family: 'Montserrat', sans-serif; text-shadow: 0 2px 4px rgba(0,0,0,0.2);"
-              >
-                WorldCupDex
-              </span>
+              <span class="font-bold text-lg text-white" style="font-family: 'Montserrat', sans-serif;">WorldCupDex</span>
             </NuxtLinkLocale>
           </div>
 
@@ -137,7 +132,7 @@
       <div class="max-w-7xl mx-auto px-4 lg:px-8 h-full flex items-center justify-between">
         <div class="flex items-center gap-2">
           <span class="text-xl">🏆</span>
-          <span class="text-lg font-bold text-white" style="font-family: 'Montserrat', sans-serif;">WorldCupDex</span>
+          <span class="font-bold text-white" style="font-family: 'Montserrat', sans-serif;">WorldCupDex</span>
         </div>
         <div class="hidden md:flex items-center gap-6">
           <NuxtLinkLocale to="/" class="text-white hover:text-[#FFD700] transition-colors" style="font-family: 'Inter', sans-serif; font-size: 14px;">{{ $t('nav.home') }}</NuxtLinkLocale>

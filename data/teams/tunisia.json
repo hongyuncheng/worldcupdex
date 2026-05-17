@@ -227,9 +227,9 @@
       "dateOfBirth": "2006-07-19",
       "nationality": "Tunisia",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qohn2k1773246924.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/93561l1773246902.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qohn2k1773246924.png"
     },
     {
       "name": "Elias Saad",

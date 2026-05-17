@@ -203,9 +203,9 @@
       "dateOfBirth": "2002-11-11",
       "nationality": "South Africa",
       "shirtNumber": null,
-      "photoCutout": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7tu3n11750875566.png",
       "photoThumb": null,
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7tu3n11750875566.png"
     },
     {
       "name": "Relebohile Mofokeng",

@@ -167,9 +167,9 @@
       "dateOfBirth": "2001-07-20",
       "nationality": "Spain",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/04ntmp1762890059.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ildb381723369697.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/04ntmp1762890059.png"
     },
     {
       "name": "Pedri",
@@ -287,9 +287,9 @@
       "dateOfBirth": "1995-09-20",
       "nationality": "Spain",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ddeb6b1756316030.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/crrp8a1522246032.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ddeb6b1756316030.png"
     },
     {
       "name": "Cucurella",

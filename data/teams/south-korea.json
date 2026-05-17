@@ -143,9 +143,9 @@
       "dateOfBirth": "1997-03-17",
       "nationality": "Korea Republic",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/bsuxra1761931407.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/dyrqxb1778973604.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bsuxra1761931407.png"
     },
     {
       "name": "In-beom Hwang",
@@ -311,9 +311,9 @@
       "dateOfBirth": "1996-01-26",
       "nationality": "South Korea",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/917hke1756975302.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/cgr5971778971405.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/917hke1756975302.png"
     },
     {
       "name": "Lee Jaesung",

@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { TEAM_COLORS, DEFAULT_TEAM_COLORS } from '~/data/team-colors'
-
-const { t } = useI18n()
+import { getRandomSlogan } from '~/data/fan-card-slogans'
 
 const props = defineProps<{
   teamId: string
@@ -17,11 +15,11 @@ const props = defineProps<{
   fanNumber: number
   firstMatchOpponent: string | null
   firstMatchDate: string | null
+  createdAt?: string
+  motto?: string
 }>()
 
-const colors = computed(() => TEAM_COLORS[props.teamId] || DEFAULT_TEAM_COLORS)
-
-const fanNumberStr = computed(() => String(props.fanNumber).padStart(4, '0'))
+const fanNumberStr = computed(() => String(props.fanNumber).padStart(5, '0'))
 
 const playerInitial = computed(() => {
   if (!props.playerName) return '?'
@@ -37,39 +35,6 @@ const formattedDate = computed(() => {
   return props.firstMatchDate
 })
 
-// 球队助威口号
-const TEAM_SLOGANS: Record<string, string> = {
-  'argentina': '¡Vamos Argentina!',
-  'brazil': 'Vai Brasil!',
-  'germany': "Auf geht's Deutschland!",
-  'france': 'Allez les Bleus!',
-  'spain': '¡Vamos España!',
-  'england': 'Come on England!',
-  'portugal': 'Força Portugal!',
-  'netherlands': 'Hup Holland Hup!',
-  'mexico': '¡Vamos México!',
-  'japan': '頑張れ日本!',
-  'south-korea': '대한민국 화이팅!',
-  'united-states': 'USA! USA! USA!',
-  'italy': 'Forza Italia!',
-  'croatia': 'Hrvatska!',
-  'belgium': 'Allez Belgique!',
-  'uruguay': '¡Vamos Uruguay!',
-  'colombia': '¡Vamos Colombia!',
-  'morocco': 'Dima Maghrib!',
-  'senegal': 'Allez les Lions!',
-  'turkey': 'Türkiye!',
-  'ecuador': '¡Sí se puede!',
-  'switzerland': 'Hopp Schwiiz!',
-  'canada': 'Go Canada!',
-  'australia': 'Go Socceroos!',
-  'scotland': 'Come on Scotland!',
-}
-
-const slogan = computed(() => {
-  return TEAM_SLOGANS[props.teamId] || `Go ${props.teamName}!`
-})
-
 // 球员照片加载失败 fallback
 const photoError = ref(false)
 function onPhotoError() {
@@ -79,294 +44,535 @@ function onPhotoError() {
 const showPhoto = computed(() => {
   return props.playerPhoto && !photoError.value
 })
+
+// 随机标语 - mount 时固定，避免截图时变化
+const randomSlogan = ref('')
+onMounted(() => {
+  randomSlogan.value = getRandomSlogan()
+})
+
+const displayMotto = computed(() => {
+  return props.motto || randomSlogan.value
+})
 </script>
 
 <template>
-  <!-- 卡片容器：400x560, 用内联样式确保 html2canvas 截图一致 -->
-  <div
-    :style="{
-      width: '400px',
-      height: '560px',
-      borderRadius: '16px',
-      overflow: 'hidden',
-      position: 'relative',
-      fontFamily: 'Inter, sans-serif',
-      background: `linear-gradient(135deg, ${colors.primary} 0%, ${colors.secondary} 100%)`,
-      boxShadow: 'inset 0 0 60px rgba(0,0,0,0.3), 0 8px 32px rgba(0,0,0,0.25)',
-      color: colors.text,
-    }"
-  >
-    <!-- 内容容器 -->
+  <div class="fan-card">
+    <!-- 背景图层 -->
     <div
-      :style="{
-        padding: '28px 24px 20px',
-        height: '100%',
-        display: 'flex',
-        flexDirection: 'column',
-        boxSizing: 'border-box',
-      }"
-    >
-      <!-- 顶部: FAN CARD -->
-      <div :style="{ textAlign: 'center', marginBottom: '8px' }">
-        <div
-          :style="{
-            fontFamily: 'Montserrat, sans-serif',
-            fontSize: '13px',
-            fontWeight: '700',
-            letterSpacing: '3px',
-            color: colors.accent,
-            textShadow: '0 1px 3px rgba(0,0,0,0.4)',
-          }"
-        >
-          🏆 {{ t('fanCard.cardTitle') }}
+      class="fan-card__bg"
+      :style="{ backgroundImage: `url('/images/fancard-bg.png')` }"
+    />
+    <!-- 遮罩层 -->
+    <div class="fan-card__overlay" />
+
+    <!-- 内容区 -->
+    <div class="fan-card__content">
+      <!-- Header -->
+      <header class="fan-card__header">
+        <div class="fan-card__header-left">
+          <span class="fan-card__header-icon">🏆</span>
+          <span class="fan-card__header-title">FAN CARD</span>
         </div>
-      </div>
+      </header>
 
-      <!-- 金色分割线 -->
-      <div
-        :style="{
-          height: '2px',
-          background: `linear-gradient(90deg, transparent, ${colors.accent}, transparent)`,
-          marginBottom: '16px',
-        }"
-      />
-
-      <!-- 球员信息区 -->
-      <div
-        :style="{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '16px',
-          marginBottom: '14px',
-        }"
-      >
-        <!-- 球员照片（圆形） -->
-        <div
-          :style="{
-            width: '88px',
-            height: '88px',
-            minWidth: '88px',
-            borderRadius: '50%',
-            border: `3px solid rgba(255,255,255,0.9)`,
-            overflow: 'hidden',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            backgroundColor: 'rgba(0,0,0,0.2)',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.3)',
-          }"
-        >
-          <img
-            v-if="showPhoto"
-            :src="playerPhoto!"
-            :alt="playerName"
-            crossorigin="anonymous"
-            :style="{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-            }"
-            @error="onPhotoError"
-          >
-          <div
-            v-else
-            :style="{
-              fontSize: '36px',
-              fontWeight: '800',
-              fontFamily: 'Montserrat, sans-serif',
-              color: colors.accent,
-              textShadow: '0 2px 4px rgba(0,0,0,0.3)',
-            }"
-          >
-            {{ playerInitial }}
+      <!-- Profile 区域 -->
+      <section class="fan-card__profile">
+        <div class="fan-card__avatar-wrapper">
+          <div class="fan-card__avatar">
+            <img
+              v-if="showPhoto"
+              :src="playerPhoto!"
+              :alt="playerName"
+              class="fan-card__avatar-img"
+              @error="onPhotoError"
+            >
+            <div v-else class="fan-card__avatar-fallback">
+              {{ playerInitial }}
+            </div>
           </div>
         </div>
-
-        <!-- 右侧信息 -->
-        <div :style="{ flex: '1', minWidth: '0' }">
-          <div
-            :style="{
-              fontSize: '22px',
-              fontWeight: '800',
-              fontFamily: 'Montserrat, sans-serif',
-              lineHeight: '1.2',
-              textShadow: '0 2px 4px rgba(0,0,0,0.4)',
-              marginBottom: '4px',
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
-              whiteSpace: 'nowrap',
-            }"
-          >
+        <div class="fan-card__user-info">
+          <h2 class="fan-card__nickname">
             {{ nickname }}
-          </div>
-          <div
-            :style="{
-              fontSize: '18px',
-              fontWeight: '700',
-              color: colors.accent,
-              fontFamily: 'Montserrat, sans-serif',
-              textShadow: '0 1px 3px rgba(0,0,0,0.4)',
-              marginBottom: '6px',
-            }"
-          >
-            #{{ fanNumberStr }}
-          </div>
-          <div
-            :style="{
-              display: 'inline-block',
-              fontSize: '12px',
-              fontWeight: '600',
-              padding: '2px 10px',
-              borderRadius: '12px',
-              backgroundColor: 'rgba(255,255,255,0.2)',
-              textShadow: '0 1px 2px rgba(0,0,0,0.3)',
-            }"
-          >
-            {{ playerPosition }}
+            <span class="fan-card__verified">✓</span>
+          </h2>
+          <p class="fan-card__number">#{{ fanNumberStr }}</p>
+          <div class="fan-card__tags">
+            <span v-if="createdAt" class="fan-card__tag">
+              加入时间 {{ createdAt }}
+            </span>
           </div>
         </div>
-      </div>
+      </section>
 
-      <!-- 球员名 -->
-      <div
-        :style="{
-          fontSize: '13px',
-          fontWeight: '500',
-          textAlign: 'center',
-          marginBottom: '10px',
-          opacity: '0.85',
-          textShadow: '0 1px 2px rgba(0,0,0,0.3)',
-        }"
-      >
-        ⭐ {{ playerName }}
-      </div>
+      <!-- 标语 Quote -->
+      <section v-if="displayMotto" class="fan-card__quote">
+        <span class="fan-card__quote-mark fan-card__quote-mark--left">"</span>
+        <p class="fan-card__quote-text">{{ displayMotto }}</p>
+        <span class="fan-card__quote-mark fan-card__quote-mark--right">"</span>
+      </section>
 
-      <!-- 分割线 -->
-      <div
-        :style="{
-          height: '1px',
-          background: `linear-gradient(90deg, transparent, ${colors.accent}80, transparent)`,
-          marginBottom: '14px',
-        }"
-      />
-
-      <!-- 球队信息 -->
-      <div :style="{ marginBottom: '12px' }">
-        <!-- 球队名 + 小组 -->
-        <div
-          :style="{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-            marginBottom: '6px',
-          }"
-        >
-          <img
-            :src="teamFlag"
-            :alt="teamName"
-            crossorigin="anonymous"
-            :style="{
-              width: '28px',
-              height: '20px',
-              objectFit: 'cover',
-              borderRadius: '3px',
-              boxShadow: '0 1px 3px rgba(0,0,0,0.3)',
-            }"
-          >
-          <span
-            :style="{
-              fontSize: '16px',
-              fontWeight: '700',
-              fontFamily: 'Montserrat, sans-serif',
-              textShadow: '0 1px 3px rgba(0,0,0,0.4)',
-            }"
-          >
-            {{ teamName }}
-          </span>
-          <span
-            v-if="teamGroup"
-            :style="{
-              fontSize: '12px',
-              fontWeight: '600',
-              padding: '1px 8px',
-              borderRadius: '10px',
-              backgroundColor: 'rgba(255,255,255,0.2)',
-            }"
-          >
-            {{ teamGroup }}
-          </span>
+      <!-- 球队 & 球员信息卡片 -->
+      <section class="fan-card__info-card">
+        <div class="fan-card__team-side">
+          <img :src="teamFlag" :alt="teamName" class="fan-card__team-flag" crossorigin="anonymous">
+          <div class="fan-card__team-detail">
+            <small class="fan-card__label">最支持的球队</small>
+            <strong class="fan-card__team-name">{{ teamName }}</strong>
+            <span class="fan-card__team-meta">{{ teamGroup }} · FIFA #{{ teamRank }}</span>
+          </div>
         </div>
-
-        <!-- FIFA排名 + 教练 -->
-        <div
-          :style="{
-            fontSize: '12px',
-            opacity: '0.85',
-            marginBottom: '4px',
-            textShadow: '0 1px 2px rgba(0,0,0,0.3)',
-          }"
-        >
-          FIFA #{{ teamRank }} · {{ coachName }}
+        <div class="fan-card__divider" />
+        <div class="fan-card__player-side">
+          <div class="fan-card__player-detail">
+            <small class="fan-card__label">最喜欢的球员</small>
+            <strong class="fan-card__player-name-text">{{ playerName }}</strong>
+            <span class="fan-card__player-pos">{{ playerPosition }}</span>
+          </div>
+          <div class="fan-card__jersey">
+            <span class="fan-card__jersey-number">10</span>
+          </div>
         </div>
+      </section>
 
-        <!-- 首场比赛 -->
-        <div
-          v-if="firstMatchOpponent"
-          :style="{
-            fontSize: '12px',
-            opacity: '0.85',
-            textShadow: '0 1px 2px rgba(0,0,0,0.3)',
-          }"
-        >
-          {{ t('fanCard.firstMatch') }}: {{ t('fanCard.vs') }} {{ firstMatchOpponent }} {{ formattedDate }}
-        </div>
+      <!-- 首场比赛 -->
+      <section v-if="firstMatchOpponent" class="fan-card__match">
+        <span class="fan-card__match-label">⚽ 首场比赛</span>
+        <strong class="fan-card__match-opponent">vs {{ firstMatchOpponent }}</strong>
+        <span class="fan-card__match-date">{{ formattedDate }}</span>
+      </section>
+
+      <!-- 艺术签名 -->
+      <div class="fan-card__signature">
+        <span class="fan-card__signature-text">{{ playerName }}</span>
       </div>
 
-      <!-- 分割线 -->
-      <div
-        :style="{
-          height: '1px',
-          background: `linear-gradient(90deg, transparent, ${colors.accent}80, transparent)`,
-          marginBottom: '14px',
-        }"
-      />
-
-      <!-- 助威口号 -->
-      <div
-        :style="{
-          flex: '1',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }"
-      >
-        <div
-          :style="{
-            fontSize: '20px',
-            fontWeight: '700',
-            fontStyle: 'italic',
-            fontFamily: 'Montserrat, sans-serif',
-            textAlign: 'center',
-            textShadow: '0 2px 4px rgba(0,0,0,0.4)',
-            color: colors.accent,
-          }"
-        >
-          "{{ slogan }}"
-        </div>
-      </div>
-
-      <!-- 水印 -->
-      <div
-        :style="{
-          textAlign: 'center',
-          fontSize: '10px',
-          fontWeight: '500',
-          opacity: '0.5',
-          letterSpacing: '1px',
-        }"
-      >
-        WorldCupDex.org
-      </div>
+      <!-- Footer -->
+      <footer class="fan-card__footer">
+        <span class="fan-card__footer-left">🏆 WorldCupDex.org</span>
+        <span class="fan-card__footer-right">⚽ 全球球迷数据库</span>
+      </footer>
     </div>
+
+    <!-- 右侧竖排文字 -->
+    <div class="fan-card__sidebar">WORLD CUP DEX</div>
   </div>
 </template>
+
+<style scoped>
+.fan-card {
+  position: relative;
+  max-width: 420px;
+  min-height: 680px;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(180deg, #0a0e2a 0%, #0d1440 50%, #0a1230 100%);
+  border: 1px solid rgba(99, 102, 241, 0.5);
+  box-shadow:
+    0 0 20px rgba(99, 102, 241, 0.3),
+    0 0 60px rgba(99, 102, 241, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+}
+
+/* 背景图层 */
+.fan-card__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+/* 遮罩层 - 顶部暗读内容，底部稍透露球场 */
+.fan-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    rgba(10, 14, 42, 0.35) 0%,
+    rgba(10, 14, 42, 0.2) 40%,
+    rgba(10, 14, 42, 0.1) 100%
+  );
+  z-index: 1;
+}
+
+/* 内容层 */
+.fan-card__content {
+  position: relative;
+  z-index: 10;
+  padding: 28px 24px 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 680px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* ===== Header ===== */
+.fan-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.fan-card__header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.fan-card__header-icon {
+  font-size: 20px;
+}
+
+.fan-card__header-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #FFD700;
+  text-shadow: 0 1px 6px rgba(255, 215, 0, 0.5);
+}
+
+/* ===== Profile 区域 ===== */
+.fan-card__profile {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.fan-card__avatar-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  min-width: 120px;
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700, #FFC107);
+  box-shadow:
+    0 0 20px rgba(255, 215, 0, 0.4),
+    0 0 40px rgba(255, 215, 0, 0.1);
+}
+
+.fan-card__avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #0a0e2a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fan-card__avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.fan-card__avatar-fallback {
+  font-size: 42px;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFD700;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.fan-card__user-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.fan-card__nickname {
+  font-size: 22px;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  margin: 0 0 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.fan-card__verified {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #3b82f6;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.fan-card__number {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.65);
+  margin: 0 0 10px;
+  font-weight: 500;
+}
+
+.fan-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.fan-card__tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===== Quote 标语 ===== */
+.fan-card__quote {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin: 4px 0 22px;
+  padding: 0 4px;
+}
+
+.fan-card__quote-mark {
+  font-size: 32px;
+  font-weight: 700;
+  color: #FFD700;
+  line-height: 1;
+  font-family: Georgia, 'Times New Roman', serif;
+  flex-shrink: 0;
+}
+
+.fan-card__quote-mark--left {
+  margin-top: -4px;
+}
+
+.fan-card__quote-mark--right {
+  align-self: flex-end;
+  margin-bottom: -4px;
+}
+
+.fan-card__quote-text {
+  flex: 1;
+  font-size: 15px;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 2px;
+}
+
+/* ===== 球队 & 球员信息卡片 ===== */
+.fan-card__info-card {
+  display: flex;
+  align-items: stretch;
+  background: rgba(10, 14, 42, 0.5);
+  backdrop-filter: none;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 14px;
+  gap: 14px;
+}
+
+.fan-card__team-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fan-card__team-flag {
+  width: 40px;
+  height: 28px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+}
+
+.fan-card__team-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.fan-card__label {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+}
+
+.fan-card__team-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fan-card__team-meta {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.fan-card__divider {
+  width: 1px;
+  background: rgba(255, 255, 255, 0.1);
+  align-self: stretch;
+}
+
+.fan-card__player-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.fan-card__player-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.fan-card__player-name-text {
+  font-size: 17px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fan-card__player-pos {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.fan-card__jersey {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  border-radius: 50%;
+  background: #0a1628;
+  border: 2px solid #FFD700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 12px rgba(255, 215, 0, 0.25);
+}
+
+.fan-card__jersey-number {
+  font-size: 24px;
+  font-weight: 800;
+  color: #FFD700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ===== 首场比赛 ===== */
+.fan-card__match {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(10, 14, 42, 0.5);
+  backdrop-filter: none;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.fan-card__match-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.fan-card__match-opponent {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.fan-card__match-date {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: auto;
+}
+
+/* ===== 艺术签名 ===== */
+.fan-card__signature {
+  margin-top: 16px;
+  padding: 10px 0;
+  text-align: center;
+  position: relative;
+}
+
+.fan-card__signature-text {
+  font-family: 'Brush Script MT', 'Segoe Script', cursive;
+  font-size: 42px;
+  font-weight: 700;
+  color: #FFD700;
+  letter-spacing: 2px;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.7);
+  opacity: 1;
+  font-style: italic;
+  border-bottom: 2px solid rgba(255, 215, 0, 0.5);
+  padding-bottom: 4px;
+  transform: rotate(-4deg) skewX(-2deg);
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* ===== Footer ===== */
+.fan-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.fan-card__footer-left,
+.fan-card__footer-right {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.5px;
+}
+
+/* ===== Sidebar 竖排文字 ===== */
+.fan-card__sidebar {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: rgba(255, 255, 255, 0.2);
+  padding: 24px 8px;
+  z-index: 11;
+}
+</style>

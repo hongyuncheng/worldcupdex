@@ -71,9 +71,9 @@
       "dateOfBirth": "1992-06-04",
       "nationality": "Senegal",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6qtpgs1766088033.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1nqjvb1708945668.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6qtpgs1766088033.png"
     },
     {
       "name": "El Hadji Malick Diouf",
@@ -323,9 +323,9 @@
       "dateOfBirth": "1989-09-26",
       "nationality": "Senegal",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ag9fm11756976825.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/707lot1771944827.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ag9fm11756976825.png"
     },
     {
       "name": "Pape Gueye",

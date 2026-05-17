@@ -48,8 +48,8 @@
       "nationality": "Turkey",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/m5a6741516997224.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/m5a6741516997224.jpg"
     },
     {
       "name": "Uğurcan Çakır",
@@ -59,9 +59,9 @@
       "dateOfBirth": "1996-04-05",
       "nationality": "Turkey",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/c98xoe1769177452.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xhnw6o1672996321.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/c98xoe1769177452.png"
     },
     {
       "name": "Mert Müldür",
@@ -83,9 +83,9 @@
       "dateOfBirth": "1994-09-07",
       "nationality": "Turkey",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/uncf0f1769178149.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5g8b851701348438.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/uncf0f1769178149.png"
     },
     {
       "name": "Merih Demiral",
@@ -107,9 +107,9 @@
       "dateOfBirth": "1994-03-13",
       "nationality": "Turkey",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5dgo591724770416.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ckss5a1718735410.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5dgo591724770416.png"
     },
     {
       "name": "Evren Eren Elmalı",
@@ -119,9 +119,9 @@
       "dateOfBirth": "2000-07-07",
       "nationality": "Turkey",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/y81fb11769177306.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xaqc171769177203.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/y81fb11769177306.png"
     },
     {
       "name": "Kaan Ayhan",
@@ -191,9 +191,9 @@
       "dateOfBirth": "2000-10-27",
       "nationality": "Turkey",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/70002611.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rqoya71643145985.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/70002611.png"
     },
     {
       "name": "Baris Yilmaz",

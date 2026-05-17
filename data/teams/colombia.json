@@ -179,9 +179,9 @@
       "dateOfBirth": "2002-09-22",
       "nationality": "Colombia",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tufu0o1557410064.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/q5qd371557410140.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tufu0o1557410064.png"
     },
     {
       "name": "Gustavo Puerta",

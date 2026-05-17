@@ -83,9 +83,9 @@
       "dateOfBirth": "2001-02-09",
       "nationality": "Algeria",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/se0k4j1608669155.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nd2ydr1678305000.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/se0k4j1608669155.png"
     },
     {
       "name": "Zinédine Belaïd",
@@ -167,9 +167,9 @@
       "dateOfBirth": "2002-09-06",
       "nationality": "Algeria",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/vqboe51608731890.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/fttyp31546423503.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vqboe51608731890.png"
     },
     {
       "name": "Sohaib Nair",
@@ -239,9 +239,9 @@
       "dateOfBirth": "1999-09-23",
       "nationality": "Algeria",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pkjb4y1766319645.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/vgryvf1609022848.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pkjb4y1766319645.png"
     },
     {
       "name": "Ramy Bensebaini",

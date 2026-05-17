@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
+const route = useRoute()
 
 // SEO
 useSeoConfig({
@@ -8,10 +9,24 @@ useSeoConfig({
   description: '10道趣味题目，测试你的世界杯知识储备，挑战全球球迷排名。',
 })
 
+// 挑战横幅（来自分享链接）
+const challengeScore = ref<number | null>(null)
+const challengePercentile = ref<number | null>(null)
+const showChallengeBanner = ref(false)
+
 // 参与人数计算
 const participantCount = ref(0)
 
 onMounted(() => {
+  // 解析挑战参数
+  const s = route.query.score
+  const p = route.query.percentile
+  if (s && p) {
+    challengeScore.value = parseInt(s as string, 10)
+    challengePercentile.value = parseInt(p as string, 10)
+    showChallengeBanner.value = true
+  }
+
   // 固定随机基数（使用日期种子，每天固定）
   const today = new Date().toISOString().slice(0, 10)
   let seed = 0
@@ -25,6 +40,10 @@ onMounted(() => {
   participantCount.value = baseCount + quizCount
 })
 
+function dismissChallengeBanner() {
+  showChallengeBanner.value = false
+}
+
 function handleStart() {
   navigateTo(localePath('/quiz/play'))
 }
@@ -32,6 +51,24 @@ function handleStart() {
 
 <template>
   <div class="quiz-page">
+    <!-- 挑战横幅 -->
+    <Transition name="banner-slide">
+      <div v-if="showChallengeBanner" class="challenge-banner">
+        <div class="challenge-banner__inner">
+          <span class="challenge-banner__icon">🏆</span>
+          <div class="challenge-banner__text">
+            <p class="challenge-banner__main">
+              {{ t('quiz.challengeMain', { score: challengeScore, percentile: challengePercentile }) }}
+            </p>
+            <p class="challenge-banner__sub">{{ t('quiz.challengeSub') }}</p>
+          </div>
+          <button class="challenge-banner__close" @click="dismissChallengeBanner" aria-label="Close">
+            ✕
+          </button>
+        </div>
+      </div>
+    </Transition>
+
     <!-- Hero 区域 -->
     <section class="hero">
       <!-- 体育场灯光效果 -->
@@ -166,6 +203,119 @@ function handleStart() {
 </template>
 
 <style scoped>
+/* ========== 挑战横幅 ========== */
+.challenge-banner {
+  background: linear-gradient(135deg, #2d1b69 0%, #1a1145 50%, #0d1440 100%);
+  border-bottom: 2px solid #FFD700;
+  position: relative;
+  overflow: hidden;
+}
+
+.challenge-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 215, 0, 0.05) 50%, transparent 100%);
+  pointer-events: none;
+}
+
+.challenge-banner__inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.challenge-banner__icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  animation: trophy-pulse 2s ease-in-out infinite;
+}
+
+@keyframes trophy-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.challenge-banner__text {
+  flex: 1;
+}
+
+.challenge-banner__main {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.challenge-banner__main strong {
+  color: #FFD700;
+}
+
+.challenge-banner__sub {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  color: rgba(255, 215, 0, 0.85);
+  font-weight: 500;
+}
+
+.challenge-banner__close {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.challenge-banner__close:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Banner 入场/退场动画 */
+.banner-slide-enter-active {
+  animation: bannerIn 0.4s ease-out;
+}
+
+.banner-slide-leave-active {
+  animation: bannerOut 0.3s ease-in;
+}
+
+@keyframes bannerIn {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bannerOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
 /* ========== 全局页面 ========== */
 .quiz-page {
   background: #0a0e2a;
@@ -500,6 +650,23 @@ function handleStart() {
 
 /* ========== 响应式 ========== */
 @media (max-width: 768px) {
+  .challenge-banner__inner {
+    padding: 12px 16px;
+    gap: 12px;
+  }
+
+  .challenge-banner__icon {
+    font-size: 1.6rem;
+  }
+
+  .challenge-banner__main {
+    font-size: 0.9rem;
+  }
+
+  .challenge-banner__sub {
+    font-size: 0.8rem;
+  }
+
   .hero__container {
     flex-direction: column;
     padding: 50px 20px 40px;

@@ -136,7 +136,10 @@
     "playAgain": "Jugar de Nuevo",
     "participants": "{count} personas participaron hoy",
     "rules": "5 preguntas \u00b7 30s cada una \u00b7 Resultados instant\u00e1neos",
-    "challengeFriends": "¿Puedes superar al 90% de los fans?"
+    "challengeFriends": "¿Puedes superar al 90% de los fans?",
+    "saveImage": "Guardar imagen",
+    "challengeMain": "Tu amigo obtuvo {score} pts, superando al {percentile}% de fans",
+    "challengeSub": "¿Puedes ganarle?"
   },
   "fanCard": {
     "title": "Crea tu Tarjeta de Fan",
@@ -160,6 +163,8 @@
     "shareTo": "Compartir en",
     "copyLink": "Copiar Enlace",
     "copied": "¡Copiado!",
+    "shareTitle": "Comparte tu puntuación",
+    "saveImage": "Guardar imagen",
     "twitter": "Twitter",
     "facebook": "Facebook",
     "whatsapp": "WhatsApp",

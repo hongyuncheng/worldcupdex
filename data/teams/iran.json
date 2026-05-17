@@ -83,9 +83,9 @@
       "dateOfBirth": "1993-07-24",
       "nationality": "Iran",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5jopkx1668781427.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2pefc71668781176.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5jopkx1668781427.png"
     },
     {
       "name": "Milad Mohammadi",

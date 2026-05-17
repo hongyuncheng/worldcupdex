@@ -47,9 +47,9 @@
       "dateOfBirth": "1992-07-13",
       "nationality": "Ghana",
       "shirtNumber": null,
-      "photoCutout": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/859620.png",
       "photoThumb": null,
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/859620.png"
     },
     {
       "name": "Derrick Luckassen",
@@ -107,9 +107,9 @@
       "dateOfBirth": "2003-12-13",
       "nationality": "Ghana",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/e9hu1g1746073832.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/e0bcbl1746073793.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/e9hu1g1746073832.png"
     },
     {
       "name": "Kojo Peprah Oppong",
@@ -191,9 +191,9 @@
       "dateOfBirth": "2004-12-14",
       "nationality": "Ghana",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/z0g3m41717947515.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/wcypva1717947463.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/z0g3m41717947515.png"
     },
     {
       "name": "Prince Adu",
@@ -275,9 +275,9 @@
       "dateOfBirth": "2002-02-15",
       "nationality": "Ghana",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8761hy1764331699.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/w9stoi1630490492.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8761hy1764331699.png"
     },
     {
       "name": "Ransford Königsdörffer",

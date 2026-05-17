@@ -423,7 +423,10 @@
     "playAgain": "Play Again",
     "participants": "{count} people joined today",
     "rules": "5 Questions \u00b7 30s each \u00b7 Instant results",
-    "challengeFriends": "Can you beat 90% of fans?"
+    "challengeFriends": "Can you beat 90% of fans?",
+    "saveImage": "Save Score Image",
+    "challengeMain": "Your friend scored {score} pts, beating {percentile}% of fans",
+    "challengeSub": "Can you beat them?"
   },
   "fanCard": {
     "title": "Create Your Fan Card",
@@ -447,6 +450,8 @@
     "shareTo": "Share to",
     "copyLink": "Copy Link",
     "copied": "Copied!",
+    "shareTitle": "Share Your Score",
+    "saveImage": "Save Image",
     "twitter": "Twitter",
     "facebook": "Facebook",
     "whatsapp": "WhatsApp",

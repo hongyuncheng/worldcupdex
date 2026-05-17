@@ -299,9 +299,9 @@
       "dateOfBirth": "1999-05-12",
       "nationality": "Japan",
       "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/f5yytg1765703340.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/o2hbce1668619055.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/f5yytg1765703340.png"
     },
     {
       "name": "Keito Nakamura",

@@ -35,9 +35,9 @@
       "dateOfBirth": "2000-03-17",
       "nationality": "Egypt",
       "shirtNumber": null,
-      "photoCutout": null,
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q0pq101750398287.png",
       "photoThumb": null,
-      "photo": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q0pq101750398287.png"
     },
     {
       "name": "Mohamed Hany",
@@ -108,8 +108,8 @@
       "nationality": "Egypt",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/on2hus1592945518.jpg",
+      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/on2hus1592945518.jpg"
     },
     {
       "name": "Khaled Sobhy",

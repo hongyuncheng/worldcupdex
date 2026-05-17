@@ -263,9 +263,9 @@
       "dateOfBirth": "1998-04-27",
       "nationality": "Argentina",
       "shirtNumber": null,
-      "photo": null,
-      "photoCutout": null,
-      "photoThumb": null
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/an3fxz1750030046.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/an3fxz1750030046.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iaqwm21510319417.jpg"
     },
     {
       "name": "Alexis Mac Allister",

@@ -41,10 +41,10 @@ const shareUrl = computed(() => {
 
 const titleKey = computed(() => getTitle(score.value))
 
+
+
 // ========== 进度环动画 ==========
 const animatedScore = ref(0)
-const copied = ref(false)
-
 const RADIUS = 90
 const CIRCUMFERENCE = 2 * Math.PI * RADIUS
 const arcLength = CIRCUMFERENCE * 0.75 // 270° arc
@@ -79,48 +79,6 @@ function animateScoreRing() {
     if (progress < 1) requestAnimationFrame(step)
   }
   requestAnimationFrame(step)
-}
-
-// ========== 分享功能 ==========
-function shareTwitter() {
-  window.open(
-    `https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText.value)}&url=${encodeURIComponent(shareUrl.value)}`,
-    '_blank',
-    'width=600,height=400',
-  )
-}
-
-async function shareInstagram() {
-  try {
-    await navigator.clipboard.writeText(shareText.value + ' ' + shareUrl.value)
-    showCopiedToast()
-  } catch { /* noop */ }
-}
-
-async function shareDiscord() {
-  try {
-    await navigator.clipboard.writeText(shareText.value + ' ' + shareUrl.value)
-    showCopiedToast()
-  } catch { /* noop */ }
-}
-
-function shareWhatsApp() {
-  window.open(
-    `https://wa.me/?text=${encodeURIComponent(shareText.value + ' ' + shareUrl.value)}`,
-    '_blank',
-  )
-}
-
-async function handleCopyLink() {
-  try {
-    await navigator.clipboard.writeText(shareUrl.value)
-    showCopiedToast()
-  } catch { /* noop */ }
-}
-
-function showCopiedToast() {
-  copied.value = true
-  setTimeout(() => { copied.value = false }, 2500)
 }
 
 function playAgain() {
@@ -159,11 +117,6 @@ onMounted(() => {
 
 <template>
   <div class="qr-page">
-    <!-- Copied Toast -->
-    <Transition name="toast">
-      <div v-if="copied" class="qr-toast">✓ {{ t('share.copied') }}</div>
-    </Transition>
-
     <!-- ====== Score Card ====== -->
     <div ref="cardRef" class="qr-card">
       <div class="qr-card__bg" :style="{ backgroundImage: `url(/images/quiz-result-bg.png)` }" />
@@ -240,52 +193,15 @@ onMounted(() => {
 
     </div>
 
-    <!-- ====== Share Section ====== -->
-    <div class="qr-share">
-      <div class="qr-section-header">
-        <span class="qr-deco-line" /><span class="qr-diamond">◆</span>
-        <span class="qr-section-header__text">{{ t('quiz.shareYourScore') }}</span>
-        <span class="qr-diamond">◆</span><span class="qr-deco-line" />
-      </div>
-
-      <div class="qr-share__grid">
-        <!-- Twitter / X -->
-        <button class="qr-share__btn" @click="shareTwitter">
-          <div class="qr-share__icon" style="background:#000">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </div>
-          <span class="qr-share__label">Twitter / X</span>
-        </button>
-        <!-- Instagram -->
-        <button class="qr-share__btn" @click="shareInstagram">
-          <div class="qr-share__icon" style="background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285AEB 90%)">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-          </div>
-          <span class="qr-share__label">Instagram</span>
-        </button>
-        <!-- Discord -->
-        <button class="qr-share__btn" @click="shareDiscord">
-          <div class="qr-share__icon" style="background:#5865F2">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.618-1.25.077.077 0 00-.079-.037 19.736 19.736 0 00-4.885 1.515.07.07 0 00-.032.028C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128c.126-.094.252-.192.372-.292a.074.074 0 01.078-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.1.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.363 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.086-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.332-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.086-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.332-.946 2.418-2.157 2.418z"/></svg>
-          </div>
-          <span class="qr-share__label">Discord</span>
-        </button>
-        <!-- WhatsApp -->
-        <button class="qr-share__btn" @click="shareWhatsApp">
-          <div class="qr-share__icon" style="background:#25D366">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-          </div>
-          <span class="qr-share__label">WhatsApp</span>
-        </button>
-        <!-- Copy Link -->
-        <button class="qr-share__btn" @click="handleCopyLink">
-          <div class="qr-share__icon" style="background:rgba(255,255,255,0.12)">
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
-          </div>
-          <span class="qr-share__label">{{ t('share.copyLink') }}</span>
-        </button>
-      </div>
-    </div>
+    <!-- ====== Share Panel ====== -->
+    <SharePanel
+      :share-text="shareText"
+      :share-url="shareUrl"
+      :card-ref="cardRef"
+      filename="worldcupdex-iq-result.png"
+      :save-button-text="t('quiz.saveImage')"
+      :share-title="t('quiz.shareYourScore')"
+    />
 
     <!-- ====== Play Again ====== -->
     <button class="qr-replay" @click="playAgain">
@@ -332,26 +248,6 @@ onMounted(() => {
   position: relative;
 }
 
-/* ===== Toast ===== */
-.qr-toast {
-  position: fixed;
-  top: 80px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(34, 197, 94, 0.95);
-  color: #fff;
-  padding: 10px 28px;
-  border-radius: 8px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  z-index: 1000;
-  backdrop-filter: blur(8px);
-}
-.toast-enter-active,
-.toast-leave-active { transition: all 0.3s ease; }
-.toast-enter-from,
-.toast-leave-to { opacity: 0; transform: translateX(-50%) translateY(-12px); }
-
 /* ===== Shared decorators ===== */
 .qr-diamond {
   color: rgba(255, 215, 0, 0.55);
@@ -387,12 +283,12 @@ onMounted(() => {
 .qr-card__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    180deg,
-    rgba(10, 14, 42, 1) 0%,
-    rgba(10, 14, 42, 1) 40%,
-    rgba(10, 14, 42, 0.5) 65%,
-    rgba(10, 14, 42, 0.15) 100%
+  background: radial-gradient(
+    ellipse 70% 60% at 50% 40%,
+    rgba(10, 14, 42, 0.95) 0%,
+    rgba(10, 14, 42, 0.8) 40%,
+    rgba(10, 14, 42, 0.3) 70%,
+    rgba(10, 14, 42, 0.05) 100%
   );
 }
 .qr-card__body {
@@ -496,65 +392,7 @@ onMounted(() => {
   border-top: 1px solid rgba(255, 255, 255, 0.07);
 }
 
-/* ===== Section Header ===== */
-.qr-section-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.qr-section-header__text {
-  font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.65);
-  font-weight: 500;
-  white-space: nowrap;
-}
 
-/* ===== Share Section ===== */
-.qr-share {
-  margin-top: 36px;
-  width: 100%;
-  max-width: 500px;
-}
-.qr-share__grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-}
-.qr-share__btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 18px 10px 14px;
-  width: 100px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  cursor: pointer;
-  transition: all 0.2s ease;
-  color: #fff;
-}
-.qr-share__btn:hover {
-  background: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.18);
-  transform: translateY(-2px);
-}
-.qr-share__icon {
-  width: 46px;
-  height: 46px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.qr-share__label {
-  font-size: 0.72rem;
-  color: rgba(255, 255, 255, 0.55);
-  white-space: nowrap;
-}
 
 /* ===== Replay Button ===== */
 .qr-replay {
@@ -661,10 +499,6 @@ onMounted(() => {
   }
   .qr-recommend__grid {
     grid-template-columns: 1fr;
-  }
-  .qr-share__btn {
-    width: calc(33.33% - 10px);
-    min-width: 80px;
   }
 }
 </style>
