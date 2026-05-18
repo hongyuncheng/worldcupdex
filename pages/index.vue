@@ -24,8 +24,20 @@
           {{ $t('hero.subtitle') }}
         </p>
 
-        <!-- Countdown -->
-        <CountdownTimer class="mb-6" />
+        <!-- Countdown (ClientOnly to avoid SSR/CSR time mismatch) -->
+        <ClientOnly>
+          <CountdownTimer class="mb-6" />
+          <template #fallback>
+            <div class="flex items-center justify-center gap-4 mb-6">
+              <div v-for="key in countdownFallbackKeys" :key="key" class="flex flex-col items-center">
+                <div class="flex items-center justify-center rounded-lg border border-white/30" style="width: 70px; height: 70px; background: rgba(255,255,255,0.1);">
+                  <span class="font-bold text-[#FFD700]" style="font-family: 'Montserrat', sans-serif; font-size: 36px;">--</span>
+                </div>
+                <span class="mt-2 text-white" style="font-family: 'Inter', sans-serif; font-size: 14px;">{{ $t(key) }}</span>
+              </div>
+            </div>
+          </template>
+        </ClientOnly>
 
         <!-- CTA Buttons -->
         <div class="flex items-center justify-center gap-4 mb-6">
@@ -294,7 +306,10 @@
 <script setup lang="ts">
 import type { MatchItem } from '~/types'
 
-const { locale } = useI18n()
+const { locale, t } = useI18n()
+
+// Fallback placeholder keys for CountdownTimer (rendered during SSR)
+const countdownFallbackKeys = ['hero.days', 'hero.hours', 'hero.minutes', 'hero.seconds']
 
 // SEO
 useSeoConfig({
