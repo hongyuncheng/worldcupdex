@@ -61,7 +61,12 @@ export function useUpcomingMatches(limit: number = 5) {
         return []
       }
 
-      const today = new Date().toISOString().split('T')[0]
+      // 获取本地当前时间的年月日，避免时区带来的日期偏移
+      const now = new Date()
+      const year = now.getFullYear()
+      const month = String(now.getMonth() + 1).padStart(2, '0')
+      const day = String(now.getDate()).padStart(2, '0')
+      const today = `${year}-${month}-${day}`
 
       const upcoming = response.data
         .filter((match) => match.date >= today)
