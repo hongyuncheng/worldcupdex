@@ -66,6 +66,7 @@ export default defineNuxtConfig({
   },
 
   pwa: {
+    registerType: 'autoUpdate',
     manifest: {
       name: 'WorldCupDex - 2026 FIFA World Cup Encyclopedia',
       short_name: 'WorldCupDex',

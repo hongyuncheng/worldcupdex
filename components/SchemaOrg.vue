@@ -90,5 +90,5 @@ useHead(computed(() => ({
 </script>
 
 <template>
-  <!-- Renderless: JSON-LD injected via useHead -->
+  <div style="display: none" aria-hidden="true" data-nosnippet></div>
 </template>
