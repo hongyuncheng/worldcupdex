@@ -2,9 +2,9 @@
  * Composable for setting up SEO meta tags, hreflang links, OG tags, and Twitter Cards.
  */
 export function useSeoConfig(options: {
-  title: string
-  description: string
-  ogImage?: string
+  title: string | Ref<string> | ComputedRef<string>
+  description: string | Ref<string> | ComputedRef<string>
+  ogImage?: string | Ref<string> | ComputedRef<string>
   ogType?: string
   path?: string
 }) {
@@ -23,27 +23,33 @@ export function useSeoConfig(options: {
   const esUrl = `${baseUrl}/es${barePath === '/' ? '' : barePath}`
 
   const canonicalUrl = `${baseUrl}${currentPath}`
-  const ogImage = options.ogImage
-    ? (options.ogImage.startsWith('http') ? options.ogImage : `${baseUrl}${options.ogImage}`)
-    : `${baseUrl}/images/og-default.png`
+
+  const ogImageComputed = computed(() => {
+    const img = toValue(options.ogImage)
+    if (!img) return `${baseUrl}/images/og-default.png`
+    return img.startsWith('http') ? img : `${baseUrl}${img}`
+  })
+
+  const titleComputed = computed(() => toValue(options.title))
+  const descComputed = computed(() => toValue(options.description))
 
   useHead({
-    title: options.title,
+    title: titleComputed,
     meta: [
-      { name: 'description', content: options.description },
+      { name: 'description', content: descComputed },
       // Open Graph
-      { property: 'og:title', content: options.title },
-      { property: 'og:description', content: options.description },
-      { property: 'og:image', content: ogImage },
+      { property: 'og:title', content: titleComputed },
+      { property: 'og:description', content: descComputed },
+      { property: 'og:image', content: ogImageComputed },
       { property: 'og:type', content: options.ogType || 'website' },
       { property: 'og:url', content: canonicalUrl },
       { property: 'og:site_name', content: 'WorldCupDex' },
-      { property: 'og:locale', content: locale.value === 'en' ? 'en_US' : locale.value === 'es' ? 'es_ES' : 'zh_CN' },
+      { property: 'og:locale', content: computed(() => locale.value === 'en' ? 'en_US' : locale.value === 'es' ? 'es_ES' : 'zh_CN') },
       // Twitter Card
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: options.title },
-      { name: 'twitter:description', content: options.description },
-      { name: 'twitter:image', content: ogImage },
+      { name: 'twitter:title', content: titleComputed },
+      { name: 'twitter:description', content: descComputed },
+      { name: 'twitter:image', content: ogImageComputed },
       { name: 'twitter:site', content: '@worldcupdex' },
     ],
     link: [

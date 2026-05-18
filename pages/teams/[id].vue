@@ -491,18 +491,21 @@ const filteredSquad = computed(() => {
 })
 
 // SEO - dynamic based on team data
-watchEffect(() => {
-  if (team.value) {
-    const teamName = locale.value === 'en' ? team.value.nameEn : team.value.nameZh
-    const teamFlag = `https://flagcdn.com/w320/${team.value.code}.png`
-    useSeoConfig({
-      title: `${teamName} - World Cup 2026 | WorldCupDex`,
-      description: `${teamName}的详细资料，包括FIFA排名#${team.value.fifaRank}、${team.value.group}组小组赛、教练、阵容名单等信息。`,
-      ogImage: teamFlag,
-      ogType: 'profile',
-    })
-  }
-})
+const seoTeamName = computed(() =>
+  team.value ? (locale.value === 'en' ? team.value.nameEn : team.value.nameZh) : 'WorldCupDex',
+)
+const seoTitle = computed(() =>
+  team.value ? `${seoTeamName.value} - World Cup 2026 | WorldCupDex` : 'WorldCupDex',
+)
+const seoDescription = computed(() =>
+  team.value
+    ? `${seoTeamName.value}的详细资料，包括FIFA排名#${team.value.fifaRank}、${team.value.group}组小组赛、教练、阵容名单等信息。`
+    : '',
+)
+const seoOgImage = computed(() =>
+  team.value ? `https://flagcdn.com/w320/${team.value.code}.png` : '',
+)
+useSeoConfig({ title: seoTitle, description: seoDescription, ogImage: seoOgImage, ogType: 'profile' })
 
 // JSON-LD SportsTeam schema data
 const sportsTeamSchemaData = computed(() => {

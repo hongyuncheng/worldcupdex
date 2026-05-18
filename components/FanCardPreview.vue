@@ -218,7 +218,7 @@ const displayMotto = computed(() => {
 .fan-card__bg {
   position: absolute;
   inset: 0;
-  background-size: cover;
+  background-size: 107%;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
