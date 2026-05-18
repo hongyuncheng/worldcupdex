@@ -1,0 +1,118 @@
+name: Auto update WorldCup data
+
+on:
+  schedule:
+    # 全期使用 30 分钟一次的 cron，由下方 stage gate 在赛前阶段过滤为每日 04:00 UTC 1 次
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cron-data
+  cancel-in-progress: false
+
+jobs:
+  update-data:
+    name: Fetch & commit WorldCup data
+    if: github.repository == 'hongyuncheng/worldcupdex'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Cache node_modules
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node20-modules-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node20-modules-
+
+      - name: Stage gate (pre-tournament daily / in-tournament every 30 min)
+        id: gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            echo "Manual trigger via workflow_dispatch; skipping stage gate."
+            exit 0
+          fi
+          TODAY=$(date -u +%Y-%m-%d)
+          HOUR=$(date -u +%H)
+          MIN=$(date -u +%M)
+          IN_TOURNAMENT="false"
+          if [[ "$TODAY" > "2026-06-10" && "$TODAY" < "2026-07-21" ]]; then
+            IN_TOURNAMENT="true"
+          fi
+          echo "UTC now: ${TODAY}T${HOUR}:${MIN}Z, in_tournament=${IN_TOURNAMENT}"
+          if [[ "$IN_TOURNAMENT" == "true" ]]; then
+            echo "In-tournament stage: every 30 min, proceed."
+            exit 0
+          fi
+          # 赛前/赛后阶段：仅允许 UTC 04:00 整点执行（每日 1 次，约北京 12:00）
+          if [[ "$HOUR" == "04" && "$MIN" == "00" ]]; then
+            echo "Pre/post-tournament stage @ 04:00 UTC, proceed (daily slot)."
+            exit 0
+          fi
+          echo "Pre/post-tournament stage but not at 04:00 UTC; skipping this run."
+          echo "skip=true" >> "$GITHUB_OUTPUT"
+          # 通过设置后续步骤的 if 条件实现优雅跳过
+          exit 0
+
+      - name: Install dependencies
+        if: steps.gate.outputs.skip != 'true'
+        run: npm ci
+
+      - name: Fetch WorldCup base data
+        if: steps.gate.outputs.skip != 'true'
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+        run: npm run fetch-data
+
+      - name: Fetch recent matches
+        if: steps.gate.outputs.skip != 'true'
+        env:
+          FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+        run: node scripts/fetch-recent-matches.mjs
+
+      - name: Detect data diff
+        if: steps.gate.outputs.skip != 'true'
+        id: diff
+        shell: bash
+        run: |
+          set -euo pipefail
+          if git diff --quiet -- data/; then
+            echo "No data changes; nothing to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "Data changes detected."
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Configure git identity
+        if: steps.gate.outputs.skip != 'true' && steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.email "actions-bot@users.noreply.github.com"
+          git config user.name "worldcupdex-bot"
+
+      - name: Commit & push data updates
+        if: steps.gate.outputs.skip != 'true' && steps.diff.outputs.changed == 'true'
+        shell: bash
+        run: |
+          set -euo pipefail
+          STAMP=$(date -u +%Y-%m-%dT%H:%MZ)
+          git add data/
+          git commit -m "chore(data): auto-update WorldCup data ${STAMP}"
+          git push origin main

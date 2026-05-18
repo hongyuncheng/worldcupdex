@@ -166,7 +166,7 @@
                     <td style="padding: 12px;">{{ team.rank }}</td>
                     <td style="padding: 12px;">
                       <span style="display: flex; align-items: center; gap: 8px;">
-                        <img :src="'https://flagcdn.com/w40/' + team.code + '.png'" style="width: 24px; height: 16px; object-fit: cover; border-radius: 2px;" :alt="team.name" />
+                        <img :src="'https://flagcdn.com/w40/' + team.code + '.png'" style="width: 24px; height: 16px; object-fit: cover; border-radius: 2px;" :alt="team.name" loading="lazy" decoding="async" />
                         <span style="font-weight: 600; color: #000F49;">{{ team.name }}</span>
                       </span>
                     </td>
@@ -277,6 +277,12 @@
 
 <script setup lang="ts">
 const { t } = useI18n()
+
+// SEO
+useSeoConfig({
+  title: `${t('dataCenter.title')} - WorldCupDex`,
+  description: '世界杯历史数据中心，包含球队、球员、比赛和历史数据分析。',
+})
 
 const searchQuery = ref('')
 const activeNav = ref('team')

@@ -19,6 +19,15 @@ const props = defineProps<{
   motto?: string
 }>()
 
+const { t } = useI18n()
+const runtimeConfig = useRuntimeConfig()
+// 品牌水印：去除协议前缀显示域名
+const brandDomain = computed(() => {
+  const url = (runtimeConfig.public?.siteUrl as string) || 'https://worldcupdex.org'
+  return url.replace(/^https?:\/\//, '').replace(/\/$/, '')
+})
+const brandSlogan = computed(() => t('share.watermarkSlogan'))
+
 const fanNumberStr = computed(() => String(props.fanNumber).padStart(5, '0'))
 
 const playerInitial = computed(() => {
@@ -153,6 +162,9 @@ const displayMotto = computed(() => {
         <span class="fan-card__footer-left">🏆 WorldCupDex.org</span>
         <span class="fan-card__footer-right">⚽ 全球球迷数据库</span>
       </footer>
+
+      <!-- 品牌水印 -->
+      <div class="fan-card__brand-watermark">{{ brandDomain }} · {{ brandSlogan }}</div>
     </div>
 
     <!-- 右侧竖排文字 -->
@@ -558,6 +570,15 @@ const displayMotto = computed(() => {
   font-weight: 500;
   color: rgba(255, 255, 255, 0.5);
   letter-spacing: 0.5px;
+}
+
+.fan-card__brand-watermark {
+  margin-top: 6px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.32);
+  letter-spacing: 0.6px;
 }
 
 /* ===== Sidebar 竖排文字 ===== */

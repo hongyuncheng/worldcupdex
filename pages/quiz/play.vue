@@ -3,6 +3,12 @@ const { t, locale } = useI18n()
 const localePath = useLocalePath()
 const router = useRouter()
 
+// SEO
+useSeoConfig({
+  title: `${t('quiz.seoTitle')} - WorldCupDex`,
+  description: '进行2026世界杯IQ挑战，测试你的足球知识。',
+})
+
 const {
   questions,
   currentIndex,

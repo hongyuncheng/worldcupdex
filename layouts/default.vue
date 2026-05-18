@@ -64,13 +64,6 @@
                 </li>
               </ul>
             </div>
-            <!-- Login button -->
-            <button class="hidden md:flex items-center gap-2 btn btn-ghost btn-sm text-white/90 hover:bg-white/15">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span class="text-sm font-semibold">{{ $t('nav.login') }}</span>
-            </button>
           </div>
         </div>
       </div>
@@ -128,19 +121,30 @@
     </Transition>
 
     <!-- Footer -->
-    <footer style="background: #1A237E; height: 80px;" role="contentinfo">
-      <div class="max-w-7xl mx-auto px-4 lg:px-8 h-full flex items-center justify-between">
-        <div class="flex items-center gap-2">
-          <span class="text-xl">🏆</span>
-          <span class="font-bold text-white" style="font-family: 'Montserrat', sans-serif;">WorldCupDex</span>
+    <footer style="background: #1A237E;" role="contentinfo">
+      <div class="max-w-7xl mx-auto px-4 lg:px-8 py-4">
+        <!-- Compliance links: Privacy / Contact / About -->
+        <div class="flex flex-wrap justify-center gap-4 text-sm mb-2" style="color: rgba(255,255,255,0.85); font-family: 'Inter', sans-serif;">
+          <NuxtLinkLocale to="/privacy" class="link link-hover hover:text-[#FFD700] transition-colors">{{ $t('nav.privacy') }}</NuxtLinkLocale>
+          <NuxtLinkLocale to="/contact" class="link link-hover hover:text-[#FFD700] transition-colors">{{ $t('nav.contact') }}</NuxtLinkLocale>
+          <NuxtLinkLocale to="/about" class="link link-hover hover:text-[#FFD700] transition-colors">{{ $t('nav.about') }}</NuxtLinkLocale>
         </div>
-        <div class="hidden md:flex items-center gap-6">
-          <NuxtLinkLocale to="/" class="text-white hover:text-[#FFD700] transition-colors" style="font-family: 'Inter', sans-serif; font-size: 14px;">{{ $t('nav.home') }}</NuxtLinkLocale>
-          <NuxtLinkLocale to="/teams" class="text-white hover:text-[#FFD700] transition-colors" style="font-family: 'Inter', sans-serif; font-size: 14px;">{{ $t('nav.teams') }}</NuxtLinkLocale>
-          <NuxtLinkLocale to="/schedule" class="text-white hover:text-[#FFD700] transition-colors" style="font-family: 'Inter', sans-serif; font-size: 14px;">{{ $t('nav.matches') }}</NuxtLinkLocale>
-          <NuxtLinkLocale to="/predict" class="text-white hover:text-[#FFD700] transition-colors" style="font-family: 'Inter', sans-serif; font-size: 14px;">{{ $t('nav.predict') }}</NuxtLinkLocale>
+        <div class="flex items-center justify-between flex-wrap gap-3" style="min-height: 56px;">
+          <div class="flex items-center gap-2">
+            <span class="text-xl">🏆</span>
+            <span class="font-bold text-white" style="font-family: 'Montserrat', sans-serif;">WorldCupDex</span>
+          </div>
+          <div class="hidden md:flex items-center gap-6">
+            <NuxtLinkLocale to="/" class="text-white hover:text-[#FFD700] transition-colors" style="font-family: 'Inter', sans-serif; font-size: 14px;">{{ $t('nav.home') }}</NuxtLinkLocale>
+            <NuxtLinkLocale to="/teams" class="text-white hover:text-[#FFD700] transition-colors" style="font-family: 'Inter', sans-serif; font-size: 14px;">{{ $t('nav.teams') }}</NuxtLinkLocale>
+            <NuxtLinkLocale to="/schedule" class="text-white hover:text-[#FFD700] transition-colors" style="font-family: 'Inter', sans-serif; font-size: 14px;">{{ $t('nav.matches') }}</NuxtLinkLocale>
+            <NuxtLinkLocale to="/predict" class="text-white hover:text-[#FFD700] transition-colors" style="font-family: 'Inter', sans-serif; font-size: 14px;">{{ $t('nav.predict') }}</NuxtLinkLocale>
+          </div>
+          <span style="font-family: 'Inter', sans-serif; font-size: 12px; color: #CCCCCC;">{{ $t('footer.copyright') }}</span>
         </div>
-        <span style="font-family: 'Inter', sans-serif; font-size: 12px; color: #CCCCCC;">{{ $t('footer.copyright') }}</span>
+        <div class="text-xs mt-2 pt-2 border-t border-white/10" style="color: rgba(255,255,255,0.55); font-family: 'Inter', sans-serif; line-height: 1.5;">
+          {{ $t('affiliate.footerDisclosure') }}
+        </div>
       </div>
     </footer>
   </div>

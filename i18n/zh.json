@@ -10,7 +10,10 @@
     "venues": "场馆",
     "login": "登录 / 注册",
     "quiz": "IQ挑战",
-    "fanCard": "球迷身份卡"
+    "fanCard": "球迷身份卡",
+    "privacy": "隐私政策",
+    "contact": "联系我们",
+    "about": "关于"
   },
   "hero": {
     "title": "FIFA WORLD CUP 2026™",
@@ -162,58 +165,32 @@
     "kickoff": "开球时间"
   },
   "predict": {
-    "title": "赛事预测",
-    "subtitle": "预测比赛结果，与全球球迷一起竞猜",
-    "makeYourPick": "选择你的预测",
-    "submit": "提交预测",
-    "heroTitle": "世界杯预测游戏",
-    "heroSubtitle": "预测比赛结果，赢取积分，冲击排行榜！",
-    "teams": "48 支球队",
-    "totalMatches": "104 场比赛",
-    "earnPoints": "预测赢积分",
-    "climbLeaderboard": "冲击排行榜",
-    "groupStage": "小组赛阶段",
-    "deadline": "预测截止时间",
-    "deadlineDate": "2026年6月12日 02:59 截止",
-    "day": "天",
-    "hour": "时",
-    "minute": "分",
-    "second": "秒",
-    "tabPending": "当前待预测",
-    "tabGroupStage": "小组赛",
-    "tabKnockout": "淘汰赛",
-    "tabMyPredictions": "我的预测",
-    "tabHistory": "历史战绩",
-    "tabRules": "积分规则",
-    "pendingMatches": "当前待预测的比赛",
-    "goPredict": "去预测",
-    "deadlinePrefix": "截止:",
-    "viewAllPending": "查看全部 72 场待预测比赛 →",
-    "myOverview": "我的预测概览",
-    "viewDetail": "查看详情 >",
-    "predicted": "已预测",
-    "correct": "正确",
-    "accuracy": "准确率",
-    "currentPoints": "当前积分",
-    "matches": "场比赛",
-    "points": "积分",
-    "scoringRules": "积分规则",
-    "viewAll": "查看全部 >",
-    "ruleCorrectRegular": "预测正确（常规时间）",
-    "ruleCorrectExtra": "预测正确（含加时/点球）",
-    "ruleCorrectScore": "预测正确比分",
-    "ruleWrong": "预测错误",
-    "leaderboard": "排行榜（总榜）",
-    "loginToRank": "登录后参与排名",
-    "howToPredict": "如何参与预测？",
-    "step1Title": "选择比赛",
-    "step1Desc": "选择你想要预测的比赛",
-    "step2Title": "预测结果",
-    "step2Desc": "选择胜/平/负或预测具体比分",
-    "step3Title": "提交预测",
-    "step3Desc": "在截止时间前提交预测",
-    "step4Title": "赢取积分",
-   "step4Desc": "预测正确即可获得积分"
+    "title": "世界杯预测",
+    "subtitle": "预测比赛结果，生成你的专属预测卡片，分享给好友",
+    "champion": "冠军竞猜",
+    "championDesc": "选择你心中的冠军队",
+    "matchPredict": "单场预测",
+    "matchPredictDesc": "预测即将开始的比赛",
+    "upcoming": "即将开赛",
+    "viewAll": "查看全部比赛",
+    "myPredictions": "我的预测",
+    "predictBtn": "预测",
+    "generateCard": "生成预测卡片 ✨",
+    "rePredict": "重新预测",
+    "selectChampion": "选择你心中的冠军",
+    "generateChampionCard": "生成我的冠军预测卡 🏆",
+    "reSelect": "重新选择",
+    "homeWin": "主队胜",
+    "draw": "平局",
+    "awayWin": "客队胜",
+    "predictScore": "预测比分（可选）",
+    "myPredictionResult": "我预测：",
+    "win": "获胜",
+    "vs": "VS",
+    "daysToStart": "距开幕：{days}天",
+    "predictTime": "预测时间：",
+    "shareTextChampion": "我押 {team} 拿下2026世界杯冠军！🏆 你选谁？",
+    "shareTextMatch": "我预测 {home} {score} {away}！你觉得呢？来 WorldCupDex 生成你的预测卡"
   },
   "predictDetail": {
     "title": "去预测",
@@ -251,7 +228,9 @@
     "ruleCorrectRegular": "预测正确（常规时间）",
     "ruleCorrectExtra": "预测正确（含加时/点球）",
     "ruleCorrectScore": "预测正确比分",
-    "ruleWrong": "预测错误"
+    "ruleWrong": "预测错误",
+    "skip": "跳过",
+    "hint": "💡 预测后可生成专属卡片，分享给好友"
   },
   "schedule": {
     "title": "赛程表",
@@ -481,6 +460,231 @@
     "alsoTry": "你可能还想",
     "tryQuiz": "测试你的世界杯IQ",
     "tryFanCard": "生成球迷身份卡",
-    "viewTeam": "查看球队详情"
+    "viewTeam": "查看球队详情",
+    "watermarkSlogan": "你的世界杯第二屏",
+    "variantA": {
+      "title": "我已锁定 2026 世界杯冠军：{team}！",
+      "description": "我猜冠军是 {team}！来挑战你的世界杯 IQ",
+      "hashtag": "#WorldCupDex #2026世界杯",
+      "cta": "来 worldcupdex.org 生成你的预测卡 →"
+    },
+    "variantB": {
+      "title": "我刚通关世界杯 IQ：{score} 分，你敢挑战吗？",
+      "description": "敢不敢比一比？我刚拿了 {score} 分世界杯 IQ",
+      "hashtag": "#WorldCupIQ #你敢挑战吗",
+      "cta": "不服？来 worldcupdex.org 试试 →"
+    }
+  },
+  "crossSite": {
+    "toKickiq": {
+      "title": "玩更多足球 Quiz → KickIQ",
+      "subtitle": "AI 出题 · 朋友 PK",
+      "cta": "立即玩"
+    }
+  },
+  "affiliate": {
+    "jerseyTitle": "球队官方球衣",
+    "jerseySubtitle": "通过本站购买支持站点维护",
+    "disclosure": "WorldCupDex 是 CJ 联盟营销合作伙伴，您通过本页面链接购买商品时我们可能获得佣金。商品价格由商家最终决定。",
+    "footerDisclosure": "作为联盟合作伙伴，我们可能从合格购买中获得佣金。",
+    "viewProduct": "查看",
+    "sponsored": "广告"
+  },
+  "pages": {
+    "privacy": {
+      "title": "隐私政策",
+      "subtitle": "我们如何收集、使用和保护您的信息",
+      "lastUpdated": "最后更新：{date}",
+      "lastUpdatedDate": "2026-05-18",
+      "metaDescription": "WorldCupDex 隐私政策 — 了解我们如何收集和使用 Cookie、Google Analytics、Google AdSense 与 CJ 联盟营销数据，以及您享有的数据权利。",
+      "sections": {
+        "introduction": {
+          "title": "一、简介",
+          "body": [
+            "本隐私政策适用于 WorldCupDex（以下简称“本站”或“我们”）运营的 worldcupdex.org 及其子域名。本站是一个以 2026 国际足联 FIFA 世界杯为主题的球迷信息与互动社区，提供赛程、球队、球员资料、预测竞猜及球迷身份卡等内容。",
+            "我们重视您的隐私。本政策说明我们如何收集、使用、存储与保护您在使用本站过程中产生的信息，以及您享有的相应权利。访问或使用本站即表示您已阅读并同意本政策。若您不同意本政策中的任何条款，请停止使用本站。"
+          ]
+        },
+        "informationCollected": {
+          "title": "二、我们收集的信息",
+          "intro": "我们收集的信息主要分为以下三类：",
+          "groups": [
+            {
+              "heading": "2.1 自动收集的信息",
+              "items": [
+                "浏览器与设备信息：浏览器类型与版本、操作系统、设备型号、屏幕分辨率、语言偏好。",
+                "访问信息：IP 地址（仅用于防滥用与粗略地理位置统计）、访问时间、访问的页面、来源访问 URL。",
+                "交互行为：点击事件、预测提交、球迷卡生成、分享动作等产品级埋点。"
+              ]
+            },
+            {
+              "heading": "2.2 第三方收集的信息",
+              "items": [
+                "Google Analytics 4：用于统计访问量、用户行为与页面表现，含匿名化的设备与交互数据。",
+                "Google AdSense：用于提供个性化或非个性化广告，可能使用 Cookie、设备标识符与会话存储。",
+                "Cloudflare Pages：作为边缘部署与 CDN 平台，可能为安全与性能记录连接元数据。"
+              ]
+            },
+            {
+              "heading": "2.3 您主动提供的信息",
+              "items": [
+                "本站当前不提供账号注册、邮箱订阅或表单收集功能，因此不会主动收集您的姓名、邮箱或手机号。",
+                "球迷卡与预测竞猜生成的昵称、预测内容仅保存于您的本地浏览器（localStorage），不上传服务器。"
+              ]
+            }
+          ]
+        },
+        "howWeUse": {
+          "title": "三、我们如何使用信息",
+          "intro": "所收集的信息仅用于以下目的：",
+          "items": [
+            "提供、维护与改进本站的功能、性能与用户体验。",
+            "分析访问趋势、页面热点与用户路径，优化内容结构。",
+            "优化广告展示与联盟营销推荐的相关性。",
+            "保障站点安全，识别并防范恶意请求、爬虫滥用与点击欺诈。",
+            "遵守适用的法律、法规与监管要求。"
+          ]
+        },
+        "cookies": {
+          "title": "四、Cookie 与类似技术",
+          "intro": "本站使用 Cookie、localStorage 及类似技术以实现基础功能与代间措。主要分为以下四类：",
+          "items": [
+            {
+              "name": "必要 Cookie",
+              "desc": "用于保存语言偏好（i18n_redirected）与本地交互状态（如 A/B 分流、球迷卡草稿）。该类 Cookie 禁用后部分功能不可用。"
+            },
+            {
+              "name": "分析 Cookie——Google Analytics 4",
+              "desc": "如 _ga、_ga_* 系列，默认保留不超过 30 天，用于访问量统计与交互分析。"
+            },
+            {
+              "name": "广告 Cookie——Google AdSense / DoubleClick",
+              "desc": "用于提供个性化或非个性化广告、频次控制与转化測量。您可访问 Google 广告设置页面选择退出个性化广告。"
+            },
+            {
+              "name": "联盟营销 Cookie——Commission Junction (CJ)",
+              "desc": "当您点击本站推荐的球衣等商品链接时，为了计算佣金会记录点击来源与转化状态。"
+            }
+          ],
+          "footer": "您可随时在浏览器设置中禁用或清除 Cookie，但这可能导致部分功能（如语言记忆、本地预测草稿）不可用。"
+        },
+        "thirdParty": {
+          "title": "五、第三方服务与数据源",
+          "intro": "本站集成了以下第三方服务，其收集与处理数据的行为遵循其自身隐私政策：",
+          "items": [
+            {
+              "name": "Google Analytics 4",
+              "desc": "访问与交互数据分析。",
+              "href": "https://policies.google.com/privacy",
+              "linkLabel": "Google 隐私政策"
+            },
+            {
+              "name": "Google AdSense",
+              "desc": "广告推送与变现。",
+              "href": "https://policies.google.com/technologies/ads",
+              "linkLabel": "Google 广告技术与原则"
+            },
+            {
+              "name": "Commission Junction (CJ Affiliate)",
+              "desc": "联盟营销点击跟踪与佣金结算。",
+              "href": "https://www.cj.com/legal/privacy-policy-publishers-en",
+              "linkLabel": "CJ 隐私政策"
+            },
+            {
+              "name": "Cloudflare Pages",
+              "desc": "边缘 CDN、部署与 DDoS 防护。",
+              "href": "https://www.cloudflare.com/privacypolicy/",
+              "linkLabel": "Cloudflare 隐私政策"
+            },
+            {
+              "name": "TheSportsDB / Football-Data.org",
+              "desc": "公开赛事数据源，仅用于获取球队、球员与赛程公开信息，不会上传您的个人数据。",
+              "href": "https://www.thesportsdb.com/",
+              "linkLabel": "TheSportsDB"
+            }
+          ]
+        },
+        "gdpr": {
+          "title": "六、您的权利（GDPR 与 CCPA）",
+          "intro": "根据适用的法律法规，您可能享有以下权利：",
+          "items": [
+            "访问权：要求获取我们所持有的与您相关的个人信息。",
+            "删除权：要求删除与您相关的个人信息（受法律保留义务限制）。",
+            "限制与反对处理权：要求暂停或限制某些类型的处理。",
+            "数据可携带权：以机器可读格式获取您的个人信息。",
+            "撤回同意权：随时撤回您之前给予的授权。"
+          ],
+          "footer": "如需行使以上权利，请通过《联系我们》页面提供的渠道与我们联系。我们会在 30 个自然日内响应您的申请。"
+        },
+        "children": {
+          "title": "七、儿童隐私（COPPA）",
+          "body": [
+            "本站不面向 13 周岁以下儿童提供服务，也不会有意收集儿童的个人信息。若您是家长或监护人，发现未成年人与本站进行了信息交互，请与我们联系。",
+            "一旦我们发现误收集了 13 周岁以下儿童的个人信息，将在验证后立即删除并退出相关服务。"
+          ]
+        },
+        "changes": {
+          "title": "八、本政策的变更",
+          "body": [
+            "我们可能会不定期更新本隐私政策。任何变更都将在本页面发布，并在顶部更新“最后更新”日期。",
+            "重大变更（如收集范围变动、新增重要第三方服务）我们会在首页以明显方式公告，建议您定期查阅本页。"
+          ]
+        },
+        "contact": {
+          "title": "九、联系我们",
+          "body": [
+            "如您对本隐私政策、数据处理或行使权利有任何问题，请访问《联系我们》页面了解详细渠道。"
+          ],
+          "cta": "前往联系我们 →"
+        }
+      }
+    },
+    "contact": {
+      "title": "联系我们",
+      "subtitle": "有问题、反馈或合作需要？我们很高兴听到您的声音。",
+      "metaDescription": "联系 WorldCupDex 团队：邮箱、GitHub Issues 与社区渠道。隐私、分身权利或商务咨询均可送达。",
+      "intro": "我们是一个由独立开发者运营的球迷项目。下面是可以找到我们的渠道：",
+      "emailLabel": "电子邮件",
+      "emailNote": "隐私、权利行使与一般咨询首选渠道。我们会在 2 个工作日内响应。",
+      "githubLabel": "GitHub Issues",
+      "githubNote": "适用于 Bug 报告、功能请求与公开讨论。请遵循 Issue 模板填写。",
+      "githubCta": "提交 Issue →",
+      "discordLabel": "社区讨论",
+      "discordNote": "社区服务器正在筹备中，开通后将在本页及首页公告。",
+      "discordComingSoon": "即将上线",
+      "responseNote": "本站不提供表单提交，以减少垃圾信息与隐私风险。请使用上述渠道与我们联系。"
+    },
+    "about": {
+      "title": "关于 WorldCupDex",
+      "subtitle": "你的 2026 世界杯赛前一站式中枢",
+      "metaDescription": "关于 WorldCupDex：48 支球队、1200+ 球员、1 场不落的 104 场赛程，加上预测竞猜、球迷身份卡与 IQ 挑战。",
+      "hero": {
+        "tagline": "从分组抽签到决赛托起大力神杯，一个页面看完 2026 世界杯。"
+      },
+      "sections": {
+        "whatIs": {
+          "title": "WorldCupDex 是什么？",
+          "body": [
+            "WorldCupDex 是一个以 2026 FIFA 世界杯为主题的一站式球迷社区。我们汇集 48 支参赛球队、超过 1200 名现役国脚资料、靶维三国 16 个城市的 104 场赛程，以及股黑历史与 FIFA 最新排名。",
+            "除了查询型内容，我们还提供三类互动玩法：冠军竞猜与单场预测、IQ 挑战、可分享的球迷身份卡，让每位球迷都能在赛前提前入场。"
+          ]
+        },
+        "dataSources": {
+          "title": "数据来源与质量",
+          "body": [
+            "所有赛程、球队与球员数据均来自公开、授权的第三方数据源：TheSportsDB 提供球员资料与图片，Football-Data.org 提供赛程与排名。部分信息参考了 FIFA 及各国足协的公开媒体资料。",
+            "我们会在每周例行同步数据；赛事那里期间提高此频率。如您发现数据不准确，欢迎通过《联系我们》反馈，我们会在核实后于下一个同步周期修正。"
+          ]
+        },
+        "sisterSites": {
+          "title": "兄弟站点 KickIQ",
+          "body": [
+            "如果你想要更深入的战术分析、AI 生成的靶向性 Quiz 以及朋友对战，欢迎访问我们的兄弟站点 KickIQ，两个站点共享球迷身份体系，你可以随时在两边切换。"
+          ],
+          "cta": "访问 KickIQ →",
+          "href": "https://kickiq.app"
+        }
+      }
+    }
   }
 }

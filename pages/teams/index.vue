@@ -106,6 +106,7 @@
           class="mx-auto mb-3"
           style="width: 80px; height: 55px; object-fit: contain;"
           loading="lazy"
+          decoding="async"
         />
         <h3 class="font-bold mb-0.5" style="font-family: 'Montserrat', sans-serif; font-size: 16px; color: #000F49;">
           {{ locale === 'en' ? team.nameEn : team.nameZh }}

@@ -1,5 +1,11 @@
 <template>
   <div style="background: #FAFAFA; min-height: 100vh;">
+    <!-- JSON-LD SportsTeam Schema -->
+    <SchemaOrg
+      v-if="team"
+      type="SportsTeam"
+      :data="sportsTeamSchemaData"
+    />
     <!-- Loading -->
     <div v-if="pending" class="flex items-center justify-center" style="min-height: 60vh;">
       <div class="animate-spin w-10 h-10 border-4 border-gray-200 border-t-[#FFD700] rounded-full"></div>
@@ -40,6 +46,8 @@
               :alt="team.nameEn"
               class="hero-flag"
               style="width: 120px; height: 80px; object-fit: cover; border: 3px solid rgba(255,255,255,0.9); border-radius: 8px; flex-shrink: 0;"
+              loading="lazy"
+              decoding="async"
             />
             <div style="flex: 1;">
               <!-- Names -->
@@ -81,7 +89,7 @@
                   style="display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 8px;"
                   :style="mate.code === team.code ? 'background: rgba(255,255,255,0.12);' : ''"
                 >
-                  <img :src="`https://flagcdn.com/w40/${mate.code}.png`" :alt="mate.nameEn" style="width: 24px; height: 16px; object-fit: cover; border-radius: 2px;" />
+                  <img :src="`https://flagcdn.com/w40/${mate.code}.png`" :alt="mate.nameEn" style="width: 24px; height: 16px; object-fit: cover; border-radius: 2px;" loading="lazy" decoding="async" />
                   <span class="text-white" :class="mate.code === team.code ? 'font-bold' : ''" style="font-size: 13px;">
                     {{ locale === 'en' ? mate.nameEn : mate.nameZh }}
                   </span>
@@ -216,6 +224,7 @@
                 :alt="player.name"
                 class="w-full h-full object-cover"
                 loading="lazy"
+                decoding="async"
                 @error="() => photoErrors.add(player.name)"
               />
               <img
@@ -224,6 +233,7 @@
                 :alt="player.name"
                 class="w-full h-full object-cover"
                 loading="lazy"
+                decoding="async"
               />
             </div>
             <!-- Player Name -->
@@ -244,6 +254,9 @@
           </div>
         </div>
       </div>
+
+      <!-- Affiliate: Official Team Jerseys (CJ) -->
+      <JerseyRecommend :team-id="team.id" />
     </div>
     </template>
   </div>
@@ -364,11 +377,30 @@ const filteredSquad = computed(() => {
 watchEffect(() => {
   if (team.value) {
     const teamName = locale.value === 'en' ? team.value.nameEn : team.value.nameZh
+    const teamFlag = `https://flagcdn.com/w320/${team.value.code}.png`
     useSeoConfig({
-      title: `${teamName} - WorldCupDex`,
+      title: `${teamName} - World Cup 2026 | WorldCupDex`,
       description: `${teamName}的详细资料，包括FIFA排名#${team.value.fifaRank}、${team.value.group}组小组赛、教练、阵容名单等信息。`,
-      ogType: 'article',
+      ogImage: teamFlag,
+      ogType: 'profile',
     })
+  }
+})
+
+// JSON-LD SportsTeam schema data
+const sportsTeamSchemaData = computed(() => {
+  if (!team.value) return {}
+  return {
+    name: team.value.nameEn,
+    alternateName: team.value.nameZh,
+    sport: 'Football',
+    logo: `https://flagcdn.com/w160/${team.value.code}.png`,
+    foundingDate: team.value.founded ? String(team.value.founded) : undefined,
+    member: (team.value.squad || []).map((p: SquadPlayer) => ({
+      '@type': 'Person',
+      name: p.name,
+      nationality: p.nationality,
+    })),
   }
 })
 </script>

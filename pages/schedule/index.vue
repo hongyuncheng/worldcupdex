@@ -1,5 +1,12 @@
 <template>
   <div class="max-w-7xl mx-auto px-4 py-6" style="padding-left: 16px; padding-right: 16px;">
+    <!-- JSON-LD SportsEvent Schemas (first 5 upcoming matches) -->
+    <SchemaOrg
+      v-for="m in upcomingMatchesForSchema"
+      :key="'sch-' + m.id"
+      type="SportsEvent"
+      :data="buildSportsEventData(m)"
+    />
     <!-- Breadcrumb -->
     <nav class="mb-4" style="font-size: 13px; color: #999;">
       <NuxtLinkLocale to="/" class="hover:text-[#000F49] transition-colors">{{ $t('nav.home') }}</NuxtLinkLocale>
@@ -214,13 +221,13 @@
               <div class="col-matchup">
                 <div class="matchup-content">
                   <span class="team-info team-info--home">
-                    <span class="team-flag"><img :src="match.homeTeam.flag" :alt="match.homeTeam.nameEn" style="width: 24px; height: 16px; object-fit: contain;" /></span>
+                    <span class="team-flag"><img :src="match.homeTeam.flag" :alt="match.homeTeam.nameEn" style="width: 24px; height: 16px; object-fit: contain;" loading="lazy" decoding="async" /></span>
                     <span class="team-name">{{ locale === 'zh' ? match.homeTeam.nameZh : match.homeTeam.nameEn }}</span>
                   </span>
                   <span class="vs-badge">VS</span>
                   <span class="team-info team-info--away">
                     <span class="team-name">{{ locale === 'zh' ? match.awayTeam.nameZh : match.awayTeam.nameEn }}</span>
-                    <span class="team-flag"><img :src="match.awayTeam.flag" :alt="match.awayTeam.nameEn" style="width: 24px; height: 16px; object-fit: contain;" /></span>
+                    <span class="team-flag"><img :src="match.awayTeam.flag" :alt="match.awayTeam.nameEn" style="width: 24px; height: 16px; object-fit: contain;" loading="lazy" decoding="async" /></span>
                   </span>
                 </div>
               </div>
@@ -454,6 +461,38 @@ useSeoConfig({
   title: `${t('schedule.title')} - WorldCupDex`,
   description: '2026世界杯完整赛程时间表，小组赛到决赛的所有比赛安排。',
 })
+
+// ─── JSON-LD SportsEvent: first 5 future matches with real opponents ───
+const upcomingMatchesForSchema = computed<MatchItem[]>(() => {
+  const now = Date.now()
+  return allMatches.value
+    .filter((m) => {
+      if (m.homeTeam.id === 'tbd' || m.awayTeam.id === 'tbd') return false
+      const ts = new Date(`${m.date}T${m.time || '00:00'}:00`).getTime()
+      return Number.isFinite(ts) && ts >= now
+    })
+    .sort((a, b) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`))
+    .slice(0, 5)
+})
+
+function buildSportsEventData(m: MatchItem) {
+  return {
+    name: `${m.homeTeam.nameEn} vs ${m.awayTeam.nameEn}`,
+    startDate: `${m.date}T${m.time || '00:00'}:00`,
+    location: {
+      '@type': 'Place',
+      name: m.venue.name,
+      address: m.venue.city,
+    },
+    homeTeam: { '@type': 'SportsTeam', name: m.homeTeam.nameEn },
+    awayTeam: { '@type': 'SportsTeam', name: m.awayTeam.nameEn },
+    competitor: [
+      { '@type': 'SportsTeam', name: m.homeTeam.nameEn },
+      { '@type': 'SportsTeam', name: m.awayTeam.nameEn },
+    ],
+    eventStatus: 'https://schema.org/EventScheduled',
+  }
+}
 </script>
 
 <style scoped>

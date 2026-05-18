@@ -463,10 +463,8 @@ function onSearch() {
   currentPage.value = 1
 }
 
-useHead({
-  title: () => `${t('wiki.title')} - WorldCupDex`,
-  meta: [
-    { name: 'description', content: () => t('wiki.subtitle') },
-  ],
+useSeoConfig({
+  title: `${t('wiki.title')} - WorldCupDex`,
+  description: t('wiki.subtitle'),
 })
 </script>

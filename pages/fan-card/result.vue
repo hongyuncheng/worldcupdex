@@ -6,22 +6,12 @@ const route = useRoute()
 const localePath = useLocalePath()
 const { loadFanCard, getFirstMatch } = useFanCard()
 
-// SEO
-useHead({
-  title: () => `${t('fanCard.step3Title')} | WorldCupDex`,
-})
-
-// OG Meta tags
-useSeoMeta({
-  ogTitle: () => `I'm a proud fan! Check out my Fan Card on WorldCupDex`,
-  ogDescription: () => `Create your own World Cup 2026 Fan Card and show your colors!`,
+// SEO via useSeoConfig (handles title, description, OG, Twitter, canonical, hreflang)
+useSeoConfig({
+  title: `${t('fanCard.step3Title')} | WorldCupDex`,
+  description: 'Create your own World Cup 2026 Fan Card and show your colors!',
   ogImage: '/og/fan-card.png',
-  ogType: 'website',
-  twitterCard: 'summary_large_image',
 })
-
-// Hreflang alternate links
-useHreflang()
 
 // ── 从 query 或 localStorage 读取参数 ──
 const teamId = ref('')
@@ -219,6 +209,11 @@ const isReady = computed(() => {
             :filename="`worldcupdex-fancard-${teamId}.png`"
             :share-title="t('share.shareTo')"
           />
+        </div>
+
+        <!-- KickIQ Cross-site CTA -->
+        <div class="mb-10">
+          <KickiqCta source="fan_card_result" />
         </div>
 
         <!-- 你可能还想 -->

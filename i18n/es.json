@@ -10,7 +10,10 @@
     "venues": "Sedes",
     "login": "Iniciar / Registrar",
     "quiz": "Quiz IQ",
-    "fanCard": "Tarjeta Fan"
+    "fanCard": "Tarjeta Fan",
+    "privacy": "Política de Privacidad",
+    "contact": "Contacto",
+    "about": "Acerca de"
   },
   "hero": {
     "title": "FIFA WORLD CUP 2026™",
@@ -102,10 +105,32 @@
     "kickoff": "Hora de Inicio"
   },
   "predict": {
-    "title": "Predicciones",
-    "subtitle": "Predice los resultados y compite con aficionados de todo el mundo",
-    "makeYourPick": "Haz tu predicción",
-    "submit": "Enviar Predicción"
+    "title": "Predicciones del Mundial",
+    "subtitle": "Predice los resultados, genera tu tarjeta de predicci\u00f3n exclusiva y comp\u00e1rtela",
+    "champion": "Predicci\u00f3n del Campe\u00f3n",
+    "championDesc": "Elige a tu equipo campe\u00f3n",
+    "matchPredict": "Predicci\u00f3n de Partido",
+    "matchPredictDesc": "Predice los pr\u00f3ximos partidos",
+    "upcoming": "Pr\u00f3ximos Partidos",
+    "viewAll": "Ver Todos los Partidos",
+    "myPredictions": "Mis Predicciones",
+    "predictBtn": "Predecir",
+    "generateCard": "Generar Tarjeta \u2728",
+    "rePredict": "Predecir de Nuevo",
+    "selectChampion": "Elige a Tu Campe\u00f3n",
+    "generateChampionCard": "Generar Mi Tarjeta de Campe\u00f3n \ud83c\udfc6",
+    "reSelect": "Elegir de Nuevo",
+    "homeWin": "Victoria Local",
+    "draw": "Empate",
+    "awayWin": "Victoria Visitante",
+    "predictScore": "Predecir Marcador (Opcional)",
+    "myPredictionResult": "Mi predicci\u00f3n: ",
+    "win": "gana",
+    "vs": "VS",
+    "daysToStart": "{days} d\u00edas para el inicio",
+    "predictTime": "Predicci\u00f3n: ",
+    "shareTextChampion": "\u00a1Apuesto por {team} para ganar el Mundial 2026! \ud83c\udfc6 \u00bfQui\u00e9n es tu favorito?",
+    "shareTextMatch": "\u00a1Predigo {home} {score} {away}! \u00bfQu\u00e9 opinas? Haz tu tarjeta en WorldCupDex"
   },
   "footer": {
     "siteDesc": "WorldCupDex — Tu guía definitiva de la Copa del Mundo FIFA 2026",
@@ -179,6 +204,46 @@
     "buyJersey": "Comprar camiseta oficial de {team}",
     "supportTeam": "Apoya a tu equipo, viste la camiseta oficial"
   },
+  "predictDetail": {
+    "title": "Hacer Predicci\u00f3n",
+    "subtitle": "Predice resultados, genera tu tarjeta exclusiva",
+    "backToList": "Volver a la lista de predicciones",
+    "matchInfo": "Info del Partido",
+    "groupMatch": " Fase de Grupos",
+    "deadlineTitle": "Fecha L\u00edmite",
+    "deadlineText": "fecha l\u00edmite",
+    "myRecord": "Mi Historial de Predicciones",
+    "viewAll": "Ver Todos >",
+    "predicted": "Predicho",
+    "correct": "Correcto",
+    "accuracy": "Precisi\u00f3n",
+    "points": "Puntos",
+    "optionsTitle": "Opciones de Predicci\u00f3n",
+    "optionsSubtitle": "Elige o ingresa tu predicci\u00f3n",
+    "section1Title": "1. Predice el Resultado",
+    "section1Desc": "Predice qu\u00e9 equipo ganar\u00e1 este partido (tiempo regular)",
+    "homeWin": "Gana",
+    "draw": "Empate",
+    "awayWin": "Gana",
+    "section1Tip": "Consejo: Elegir \"Empate\" otorga 10 puntos, equipo ganador correcto otorga 20 puntos",
+    "section2Title": "2. Predice el Marcador (Opcional)",
+    "section2Desc": "Predice el marcador final (tiempo regular)",
+    "section2Tip": "Consejo: Predicci\u00f3n correcta del marcador otorga 30 puntos",
+    "section3Title": "3. Predice Total de Goles (Opcional)",
+    "section3Desc": "Predice el n\u00famero total de goles en este partido",
+    "submitDeadline": "La predicci\u00f3n cierra en {days}d {hours}h {minutes}m {seconds}s",
+    "submitHint": "Env\u00eda tu predicci\u00f3n antes de la fecha l\u00edmite",
+    "maxPoints": "M\u00e1ximo 30 puntos disponibles",
+    "submit": "Enviar Predicci\u00f3n",
+    "disclaimer": "Todas las predicciones se basan en el tiempo regular (90 minutos). Tiempo extra y penaltis no cuentan.",
+    "scoringRules": "Reglas de Puntuaci\u00f3n",
+    "ruleCorrectRegular": "Predicci\u00f3n correcta (tiempo regular)",
+    "ruleCorrectExtra": "Predicci\u00f3n correcta (tiempo extra/penaltis)",
+    "ruleCorrectScore": "Predicci\u00f3n de marcador correcta",
+    "ruleWrong": "Predicci\u00f3n incorrecta",
+    "skip": "Omitir",
+    "hint": "\ud83d\udca1 Genera tu tarjeta exclusiva despu\u00e9s de predecir, comp\u00e1rtela con amigos"
+  },
   "share": {
     "download": "Descargar Imagen",
     "shareTo": "Compartir en",
@@ -194,6 +259,231 @@
     "alsoTry": "Tambi\u00e9n te puede interesar",
     "tryQuiz": "Prueba tu IQ del Mundial",
     "tryFanCard": "Crea tu Tarjeta de Fan",
-    "viewTeam": "Ver Detalles del Equipo"
+    "viewTeam": "Ver Detalles del Equipo",
+    "watermarkSlogan": "Tu segunda pantalla del Mundial",
+    "variantA": {
+      "title": "¡Ya elegí al campeón del Mundial 2026: {team}!",
+      "description": "¡Apuesto por {team}! Pon a prueba tu IQ del Mundial",
+      "hashtag": "#WorldCupDex #Mundial2026",
+      "cta": "Haz tu predicción en worldcupdex.org \u2192"
+    },
+    "variantB": {
+      "title": "Acabo de sacar {score} pts en el IQ del Mundial \u2014 \u00bfte atreves?",
+      "description": "\u00bfCrees que sabes de f\u00fatbol? Acabo de sacar {score} pts en el IQ del Mundial",
+      "hashtag": "#WorldCupIQ #SuperaMiPuntaje",
+      "cta": "Demúéstralo en worldcupdex.org →"
+    }
+  },
+  "crossSite": {
+    "toKickiq": {
+      "title": "Más quizzes → KickIQ",
+      "subtitle": "Quizzes IA · retos con amigos",
+      "cta": "Jugar"
+    }
+  },
+  "affiliate": {
+    "jerseyTitle": "Camisetas Oficiales",
+    "jerseySubtitle": "Las compras apoyan este sitio",
+    "disclosure": "WorldCupDex es socio afiliado de Commission Junction (CJ). Podemos recibir una comisión cuando compras a través de los enlaces de esta página. El precio final lo determina el comerciante.",
+    "footerDisclosure": "Como socio afiliado, podemos ganar una comisión de las compras que califiquen.",
+    "viewProduct": "Ver",
+    "sponsored": "Patrocinado"
+  },
+  "pages": {
+    "privacy": {
+      "title": "Política de Privacidad",
+      "subtitle": "Cómo recopilamos, usamos y protegemos tu información",
+      "lastUpdated": "Última actualización: {date}",
+      "lastUpdatedDate": "2026-05-18",
+      "metaDescription": "Política de Privacidad de WorldCupDex: descubre cómo usamos cookies, Google Analytics, Google AdSense y el seguimiento de afiliados de CJ, además de los derechos que te otorgan el RGPD y la CCPA.",
+      "sections": {
+        "introduction": {
+          "title": "1. Introducción",
+          "body": [
+            "Esta Política de Privacidad se aplica a worldcupdex.org y sus subdominios (en adelante, el \"Sitio\" o \"nosotros\"), un espacio para aficionados centrado en la Copa Mundial de la FIFA 2026. El Sitio ofrece calendarios, fichas de equipos y jugadores, predicciones, quizzes y tarjetas de fan compartibles.",
+            "Tu privacidad nos importa. Esta Política explica qué información recogemos cuando usas el Sitio, cómo se utiliza y almacena, y qué derechos tienes sobre ella. Al acceder o utilizar el Sitio confirmas haber leído este documento. Si no estás de acuerdo con alguna de sus partes, te pedimos que dejes de usarlo."
+          ]
+        },
+        "informationCollected": {
+          "title": "2. Información que recopilamos",
+          "intro": "Recopilamos información en tres grandes categorías:",
+          "groups": [
+            {
+              "heading": "2.1 Información recopilada automáticamente",
+              "items": [
+                "Datos de navegador y dispositivo: tipo y versión del navegador, sistema operativo, modelo del dispositivo, resolución de pantalla e idioma.",
+                "Datos de acceso: dirección IP (utilizada solo para prevención de abuso y analítica geográfica aproximada), marcas temporales, páginas visitadas y URL de origen.",
+                "Eventos de interacción: clics, envíos de predicción, generación de tarjeta de fan y acciones de compartido, registrados como eventos de producto."
+              ]
+            },
+            {
+              "heading": "2.2 Información recopilada por terceros",
+              "items": [
+                "Google Analytics 4 mide tráfico agregado, recorridos del usuario y rendimiento de páginas mediante datos seudonimizados.",
+                "Google AdSense entrega publicidad personalizada o no personalizada y puede instalar cookies, identificadores de dispositivo y almacenamiento de sesión.",
+                "Cloudflare Pages, nuestro proveedor de hosting en el borde, puede registrar metadatos de conexión con fines de seguridad y rendimiento."
+              ]
+            },
+            {
+              "heading": "2.3 Información que tú proporcionas directamente",
+              "items": [
+                "El Sitio no ofrece registro de cuenta, suscripción por correo ni formularios de contacto, por lo que no recopilamos activamente tu nombre, correo electrónico ni número de teléfono.",
+                "Los apodos y las predicciones generadas en Tarjeta de Fan o en el módulo de Predicciones se almacenan únicamente en el almacenamiento local de tu navegador y nunca se suben a nuestros servidores."
+              ]
+            }
+          ]
+        },
+        "howWeUse": {
+          "title": "3. Cómo usamos la información",
+          "intro": "Usamos la información descrita anteriormente únicamente para los siguientes fines:",
+          "items": [
+            "Operar, mantener y mejorar las funciones, el rendimiento y la experiencia del Sitio.",
+            "Analizar tendencias de tráfico, páginas populares y recorridos del usuario para refinar la estructura del contenido.",
+            "Mejorar la relevancia de la publicidad y de las recomendaciones de afiliados que se muestran en el Sitio.",
+            "Proteger la integridad del Sitio, detectando y previniendo solicitudes abusivas, scraping y fraude de clics.",
+            "Cumplir con las leyes, reglamentos y requerimientos lícitos de las autoridades competentes."
+          ]
+        },
+        "cookies": {
+          "title": "4. Cookies y tecnologías similares",
+          "intro": "El Sitio utiliza cookies, localStorage y tecnologías similares para ofrecer las funciones esenciales y la medición. Se dividen en cuatro categorías:",
+          "items": [
+            {
+              "name": "Cookies estrictamente necesarias",
+              "desc": "Guardan tu preferencia de idioma (i18n_redirected) y el estado local de interacción (como asignación de A/B y borradores de Tarjeta de Fan). Desactivarlas degrada funciones esenciales."
+            },
+            {
+              "name": "Cookies de analítica — Google Analytics 4",
+              "desc": "Cookies _ga y _ga_* con una retención máxima de 30 días. Se usan para medir tráfico agregado, sesiones e interacciones."
+            },
+            {
+              "name": "Cookies publicitarias — Google AdSense / DoubleClick",
+              "desc": "Habilitan publicidad personalizada o no personalizada, límites de frecuencia y medición de conversión. Puedes optar por no recibir publicidad personalizada desde la página de Configuración de Anuncios de Google."
+            },
+            {
+              "name": "Cookies de afiliación — Commission Junction (CJ)",
+              "desc": "Cuando haces clic en una camiseta o producto recomendado, se registran la fuente del clic y el estado de conversión para atribuir comisiones correctamente."
+            }
+          ],
+          "footer": "Puedes desactivar o borrar las cookies en cualquier momento desde la configuración de tu navegador, pero hacerlo puede romper funciones como la persistencia del idioma o tus predicciones guardadas localmente."
+        },
+        "thirdParty": {
+          "title": "5. Servicios y fuentes de datos de terceros",
+          "intro": "El Sitio integra los siguientes servicios de terceros, cada uno regido por su propia política de privacidad:",
+          "items": [
+            {
+              "name": "Google Analytics 4",
+              "desc": "Analítica de tráfico e interacción.",
+              "href": "https://policies.google.com/privacy",
+              "linkLabel": "Política de Privacidad de Google"
+            },
+            {
+              "name": "Google AdSense",
+              "desc": "Publicidad gráfica y monetización.",
+              "href": "https://policies.google.com/technologies/ads",
+              "linkLabel": "Políticas Publicitarias de Google"
+            },
+            {
+              "name": "Commission Junction (CJ Affiliate)",
+              "desc": "Seguimiento de clics y liquidación de comisiones.",
+              "href": "https://www.cj.com/legal/privacy-policy-publishers-en",
+              "linkLabel": "Política de Privacidad de CJ"
+            },
+            {
+              "name": "Cloudflare Pages",
+              "desc": "CDN en el borde, despliegue y protección DDoS.",
+              "href": "https://www.cloudflare.com/privacypolicy/",
+              "linkLabel": "Política de Privacidad de Cloudflare"
+            },
+            {
+              "name": "TheSportsDB / Football-Data.org",
+              "desc": "Fuentes públicas de datos deportivos usadas para obtener información de equipos, jugadores y partidos; no compartimos ningún dato personal tuyo con ellas.",
+              "href": "https://www.thesportsdb.com/",
+              "linkLabel": "TheSportsDB"
+            }
+          ]
+        },
+        "gdpr": {
+          "title": "6. Tus derechos (RGPD y CCPA)",
+          "intro": "En función de la legislación aplicable, puedes ejercer los siguientes derechos:",
+          "items": [
+            "Derecho de acceso: solicitar una copia de la información personal que conservamos sobre ti.",
+            "Derecho de supresión: solicitar la eliminación de tu información personal, sujeto a obligaciones legales de retención.",
+            "Derecho de limitación y oposición: solicitar la pausa o restricción de determinados tipos de tratamiento.",
+            "Derecho a la portabilidad: recibir tu información personal en un formato legíble por máquina.",
+            "Derecho a retirar el consentimiento: revocar en cualquier momento un consentimiento otorgado previamente."
+          ],
+          "footer": "Para ejercer cualquiera de estos derechos, contáctanos a través de los canales indicados en la página de Contacto. Responderemos en un plazo de 30 días naturales."
+        },
+        "children": {
+          "title": "7. Privacidad infantil (COPPA)",
+          "body": [
+            "El Sitio no está dirigido a menores de 13 años y no recopilamos a sabiendas información personal de ellos. Si eres padre, madre o tutor y crees que un menor ha interactuado con el Sitio, por favor contáctanos.",
+            "Si detectamos que hemos recopilado de forma involuntaria datos personales de menores de 13 años, los eliminaremos y bloquearemos el acceso correspondiente tras la verificación."
+          ]
+        },
+        "changes": {
+          "title": "8. Cambios a esta Política",
+          "body": [
+            "Podemos actualizar esta Política de Privacidad periódicamente. Cualquier cambio se publicará en esta página y la fecha de \"Última actualización\" se revisará en consecuencia.",
+            "En caso de cambios sustanciales (como una ampliación significativa de la recopilación de datos o la incorporación de nuevos terceros relevantes), publicaremos un aviso destacado en la página principal. Te recomendamos revisar este documento de forma periódica."
+          ]
+        },
+        "contact": {
+          "title": "9. Cómo contactarnos",
+          "body": [
+            "Si tienes preguntas sobre esta Política, sobre nuestras prácticas de datos o deseas ejercer tus derechos, visita nuestra página de Contacto para ver los canales disponibles."
+          ],
+          "cta": "Ir a Contacto →"
+        }
+      }
+    },
+    "contact": {
+      "title": "Contacto",
+      "subtitle": "¿Tienes preguntas, comentarios o ideas de colaboración? Nos encantaría escucharte.",
+      "metaDescription": "Contacta con el equipo de WorldCupDex por correo electrónico, GitHub Issues y canales comunitarios. Consultas de privacidad, derechos de datos y negocio son bienvenidas.",
+      "intro": "WorldCupDex está mantenido por un desarrollador independiente. Elige el canal que mejor se ajuste a tu mensaje:",
+      "emailLabel": "Correo electrónico",
+      "emailNote": "Canal preferido para temas de privacidad, derechos de datos y consultas generales. Procuramos responder en un plazo de dos días hábiles.",
+      "githubLabel": "GitHub Issues",
+      "githubNote": "Ideal para reportes de errores, peticiones de funciones y debates públicos. Por favor sigue la plantilla del issue al abrirlo.",
+      "githubCta": "Abrir un Issue →",
+      "discordLabel": "Comunidad",
+      "discordNote": "El servidor de comunidad está en preparación. Lo anunciaremos en esta página y en la portada en cuanto esté disponible.",
+      "discordComingSoon": "Próximamente",
+      "responseNote": "El Sitio no ofrece formulario de envío para reducir el spam y los riesgos de privacidad. Por favor contáctanos por alguno de los canales anteriores."
+    },
+    "about": {
+      "title": "Acerca de WorldCupDex",
+      "subtitle": "Tu centro previo al torneo para el Mundial 2026",
+      "metaDescription": "Sobre WorldCupDex: 48 equipos, más de 1200 jugadores y los 104 partidos, junto con predicciones, tarjeta de fan y un desafío IQ para cada aficionado.",
+      "hero": {
+        "tagline": "Desde el sorteo de la fase de grupos hasta el levantamiento del trofeo, todo el Mundial 2026 en una sola página."
+      },
+      "sections": {
+        "whatIs": {
+          "title": "¿Qué es WorldCupDex?",
+          "body": [
+            "WorldCupDex es un hub para aficionados centrado en la Copa Mundial de la FIFA 2026. Reúne fichas de los 48 equipos participantes, más de 1200 jugadores internacionales en activo, el calendario completo de 104 partidos en 16 ciudades de tres países y el ranking FIFA actualizado.",
+            "Más allá de la enciclopedia, ofrecemos tres experiencias interactivas: predicciones por campeón y por partido, un desafío IQ y una Tarjeta de Fan compartible, para que cada aficionado pueda saltar al césped antes del pitido inicial."
+          ]
+        },
+        "dataSources": {
+          "title": "Fuentes de datos y calidad",
+          "body": [
+            "Todos los datos de calendario, equipos y jugadores provienen de fuentes públicas y debidamente licenciadas: fichas e imágenes de jugadores vía TheSportsDB, fixtures y rankings vía Football-Data.org, complementados con información pública de FIFA y de las federaciones nacionales.",
+            "Refrescamos los datos con cadencia semanal y con mayor frecuencia durante las ventanas de partidos. Si detectas una inexactitud, escríbenos desde la página de Contacto: las correcciones se aplican en el siguiente ciclo de sincronización una vez verificadas."
+          ]
+        },
+        "sisterSites": {
+          "title": "Sitio hermano — KickIQ",
+          "body": [
+            "Para análisis táctico profundo, quizzes futbolísticos generados por IA y retos entre amigos, visita nuestro sitio hermano KickIQ. Ambos sitios comparten la misma capa de identidad de fan, así que puedes alternar entre ellos sin fricción."
+          ],
+          "cta": "Visitar KickIQ →",
+          "href": "https://kickiq.app"
+        }
+      }
+    }
   }
 }

@@ -1,5 +1,5 @@
 /**
- * Composable for setting up SEO meta tags, hreflang links, and OG tags.
+ * Composable for setting up SEO meta tags, hreflang links, OG tags, and Twitter Cards.
  */
 export function useSeoConfig(options: {
   title: string
@@ -10,7 +10,8 @@ export function useSeoConfig(options: {
 }) {
   const { locale } = useI18n()
   const route = useRoute()
-  const baseUrl = 'https://worldcupdex.org'
+  const runtimeConfig = useRuntimeConfig()
+  const baseUrl = (runtimeConfig.public?.siteUrl as string) || 'https://worldcupdex.org'
 
   // Strip any existing locale prefix from the path to get the "bare" path
   const currentPath = options.path || route.path
@@ -22,7 +23,9 @@ export function useSeoConfig(options: {
   const esUrl = `${baseUrl}/es${barePath === '/' ? '' : barePath}`
 
   const canonicalUrl = `${baseUrl}${currentPath}`
-  const ogImage = options.ogImage || `${baseUrl}/images/og-default.png`
+  const ogImage = options.ogImage
+    ? (options.ogImage.startsWith('http') ? options.ogImage : `${baseUrl}${options.ogImage}`)
+    : `${baseUrl}/images/og-default.png`
 
   useHead({
     title: options.title,
@@ -41,6 +44,7 @@ export function useSeoConfig(options: {
       { name: 'twitter:title', content: options.title },
       { name: 'twitter:description', content: options.description },
       { name: 'twitter:image', content: ogImage },
+      { name: 'twitter:site', content: '@worldcupdex' },
     ],
     link: [
       { rel: 'canonical', href: canonicalUrl },
@@ -58,7 +62,8 @@ export function useSeoConfig(options: {
  */
 export function useHreflang(path?: string) {
   const route = useRoute()
-  const baseUrl = 'https://worldcupdex.org'
+  const runtimeConfig = useRuntimeConfig()
+  const baseUrl = (runtimeConfig.public?.siteUrl as string) || 'https://worldcupdex.org'
 
   const currentPath = path || route.path
   const barePath = currentPath.replace(/^\/(en|es)/, '') || '/'

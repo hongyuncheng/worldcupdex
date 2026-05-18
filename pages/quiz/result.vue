@@ -3,6 +3,14 @@ const { t } = useI18n()
 const route = useRoute()
 const localePath = useLocalePath()
 const { getTitle } = useQuiz()
+const runtimeConfig = useRuntimeConfig()
+
+// 品牌水印：去除协议前缀显示域名
+const brandDomain = computed(() => {
+  const url = (runtimeConfig.public?.siteUrl as string) || 'https://worldcupdex.org'
+  return url.replace(/^https?:\/\//, '').replace(/\/$/, '')
+})
+const brandSlogan = computed(() => t('share.watermarkSlogan'))
 
 // 从 URL query 或 sessionStorage 读取结果（必须在 useSeoMeta 之前声明，避免 TDZ 错误）
 const score = ref(0)
@@ -11,18 +19,12 @@ const totalQuestions = ref(5)
 const timeSpent = ref(0)
 const percentile = ref(0)
 
-// OG Meta tags
-useSeoMeta({
-  title: () => `My World Cup IQ: ${score.value} | WorldCupDex`,
-  ogTitle: () => `My World Cup IQ is ${score.value}! Can you beat me?`,
-  ogDescription: () => `I scored ${score.value} on the WorldCupDex World Cup IQ Challenge, beating ${percentile.value}% of fans!`,
+// OG Meta tags via useSeoConfig (handles canonical, hreflang, twitter:site, og:site_name, etc.)
+useSeoConfig({
+  title: 'World Cup IQ Result | WorldCupDex',
+  description: 'Take the WorldCupDex World Cup IQ Challenge and test your 2026 football knowledge!',
   ogImage: '/og/quiz-result.png',
-  ogType: 'website',
-  twitterCard: 'summary_large_image',
 })
-
-// Hreflang alternate links
-useHreflang()
 
 // 分享卡片 ref
 const cardRef = ref<HTMLElement | null>(null)
@@ -189,6 +191,7 @@ onMounted(() => {
 
         <!-- Watermark -->
         <div class="qr-watermark">🏆 WorldCupDex.org</div>
+        <div class="qr-brand-watermark">{{ brandDomain }} · {{ brandSlogan }}</div>
       </div>
 
     </div>
@@ -202,6 +205,9 @@ onMounted(() => {
       :save-button-text="t('quiz.saveImage')"
       :share-title="t('quiz.shareYourScore')"
     />
+
+    <!-- ====== KickIQ Cross-site CTA ====== -->
+    <KickiqCta source="quiz_result" />
 
     <!-- ====== Play Again ====== -->
     <button class="qr-replay" @click="playAgain">
@@ -390,6 +396,14 @@ onMounted(() => {
   color: rgba(255, 255, 255, 0.28);
   padding-top: 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.qr-brand-watermark {
+  margin-top: 6px;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.32);
+  letter-spacing: 0.6px;
 }
 
 

@@ -187,6 +187,7 @@ function calculatePercentile(score: number): number {
 
 export function useQuiz() {
   const { t, locale } = useI18n()
+  const { track } = useAnalytics()
 
   const questions = ref<QuizQuestion[]>([])
   const currentIndex = ref(0)
@@ -346,6 +347,15 @@ export function useQuiz() {
       percentile,
       date: new Date().toISOString(),
     }
+
+    // 成绩结算埋点
+    track(AnalyticsEvents.QUIZ_COMPLETE, {
+      score,
+      correct_count: correctCount,
+      total_questions: questions.value.length,
+      time_spent: timeSpent,
+      percentile,
+    })
 
     // 保存到 localStorage
     saveResult(result)

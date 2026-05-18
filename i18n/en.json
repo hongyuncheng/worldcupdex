@@ -10,7 +10,10 @@
     "venues": "Venues",
     "login": "Login / Register",
     "quiz": "IQ Quiz",
-    "fanCard": "Fan Card"
+    "fanCard": "Fan Card",
+    "privacy": "Privacy Policy",
+    "contact": "Contact",
+    "about": "About"
   },
   "hero": {
     "title": "FIFA WORLD CUP 2026™",
@@ -162,58 +165,32 @@
     "kickoff": "Kick-off"
   },
   "predict": {
-    "title": "Match Predictions",
-    "subtitle": "Predict match outcomes and compete with fans worldwide",
-    "makeYourPick": "Make your pick",
-    "submit": "Submit Prediction",
-    "heroTitle": "World Cup Prediction Game",
-    "heroSubtitle": "Predict match results, earn points, climb the leaderboard!",
-    "teams": "48 Teams",
-    "totalMatches": "104 Matches",
-    "earnPoints": "Earn Points",
-    "climbLeaderboard": "Climb Leaderboard",
-    "groupStage": "Group Stage",
-    "deadline": "Prediction Deadline",
-    "deadlineDate": "June 12, 2026 02:59 Deadline",
-    "day": "D",
-    "hour": "H",
-    "minute": "M",
-    "second": "S",
-    "tabPending": "Pending",
-    "tabGroupStage": "Group Stage",
-    "tabKnockout": "Knockout",
-    "tabMyPredictions": "My Predictions",
-    "tabHistory": "History",
-    "tabRules": "Scoring Rules",
-    "pendingMatches": "Pending Matches",
-    "goPredict": "Predict",
-    "deadlinePrefix": "Deadline:",
-    "viewAllPending": "View All 72 Pending Matches \u2192",
-    "myOverview": "My Prediction Overview",
-    "viewDetail": "Details >",
-    "predicted": "Predicted",
-    "correct": "Correct",
-    "accuracy": "Accuracy",
-    "currentPoints": "Points",
-    "matches": "matches",
-    "points": "pts",
-    "scoringRules": "Scoring Rules",
-    "viewAll": "View All >",
-    "ruleCorrectRegular": "Correct prediction (regular time)",
-    "ruleCorrectExtra": "Correct prediction (extra time/penalties)",
-    "ruleCorrectScore": "Correct score prediction",
-    "ruleWrong": "Wrong prediction",
-    "leaderboard": "Leaderboard (Overall)",
-    "loginToRank": "Login to join ranking",
-    "howToPredict": "How to Participate?",
-    "step1Title": "Select Match",
-    "step1Desc": "Choose the match you want to predict",
-    "step2Title": "Predict Result",
-    "step2Desc": "Choose win/draw/loss or predict exact score",
-    "step3Title": "Submit Prediction",
-    "step3Desc": "Submit before the deadline",
-    "step4Title": "Earn Points",
-    "step4Desc": "Earn points for correct predictions"
+    "title": "World Cup Predictions",
+    "subtitle": "Predict match results, generate your exclusive prediction card, share with friends",
+    "champion": "Champion Pick",
+    "championDesc": "Choose your champion team",
+    "matchPredict": "Match Prediction",
+    "matchPredictDesc": "Predict upcoming matches",
+    "upcoming": "Upcoming Matches",
+    "viewAll": "View All Matches",
+    "myPredictions": "My Predictions",
+    "predictBtn": "Predict",
+    "generateCard": "Generate Prediction Card \u2728",
+    "rePredict": "Predict Again",
+    "selectChampion": "Choose Your Champion",
+    "generateChampionCard": "Generate My Champion Card \ud83c\udfc6",
+    "reSelect": "Choose Again",
+    "homeWin": "Home Win",
+    "draw": "Draw",
+    "awayWin": "Away Win",
+    "predictScore": "Predict Score (Optional)",
+    "myPredictionResult": "My prediction: ",
+    "win": "wins",
+    "vs": "VS",
+    "daysToStart": "{days} days to kickoff",
+    "predictTime": "Predicted on: ",
+    "shareTextChampion": "I'm picking {team} to win the 2026 World Cup! \ud83c\udfc6 Who's your pick?",
+    "shareTextMatch": "I predict {home} {score} {away}! What's your call? Make your prediction card at WorldCupDex"
   },
   "predictDetail": {
     "title": "Make Prediction",
@@ -251,7 +228,9 @@
     "ruleCorrectRegular": "Correct prediction (regular time)",
     "ruleCorrectExtra": "Correct prediction (extra time/penalties)",
     "ruleCorrectScore": "Correct score prediction",
-    "ruleWrong": "Wrong prediction"
+    "ruleWrong": "Wrong prediction",
+    "skip": "Skip",
+    "hint": "💡 Generate your exclusive card after prediction, share with friends"
   },
   "schedule": {
     "title": "Schedule",
@@ -481,6 +460,231 @@
     "alsoTry": "You might also like",
     "tryQuiz": "Test your World Cup IQ",
     "tryFanCard": "Create your Fan Card",
-    "viewTeam": "View Team Details"
+    "viewTeam": "View Team Details",
+    "watermarkSlogan": "Your World Cup second screen",
+    "variantA": {
+      "title": "I've locked in my 2026 World Cup champion: {team}!",
+      "description": "I'm picking {team} to win it all! Test your World Cup IQ",
+      "hashtag": "#WorldCupDex #WorldCup2026",
+      "cta": "Make your pick at worldcupdex.org \u2192"
+    },
+    "variantB": {
+      "title": "I just scored {score} pts on the World Cup IQ \u2014 dare to challenge me?",
+      "description": "Think you know football? I just scored {score} pts on the World Cup IQ",
+      "hashtag": "#WorldCupIQ #BeatMyScore",
+      "cta": "Prove it at worldcupdex.org →"
+    }
+  },
+  "crossSite": {
+    "toKickiq": {
+      "title": "More football quizzes → KickIQ",
+      "subtitle": "AI quizzes · friend battles",
+      "cta": "Play now"
+    }
+  },
+  "affiliate": {
+    "jerseyTitle": "Official Team Jerseys",
+    "jerseySubtitle": "Purchases support this site",
+    "disclosure": "WorldCupDex is a Commission Junction (CJ) affiliate partner. We may earn a commission when you purchase through links on this page. Final pricing is determined by the merchant.",
+    "footerDisclosure": "As an affiliate partner, we may earn a commission from qualifying purchases.",
+    "viewProduct": "View",
+    "sponsored": "Sponsored"
+  },
+  "pages": {
+    "privacy": {
+      "title": "Privacy Policy",
+      "subtitle": "How we collect, use and protect your information",
+      "lastUpdated": "Last updated: {date}",
+      "lastUpdatedDate": "2026-05-18",
+      "metaDescription": "WorldCupDex Privacy Policy — learn how we use cookies, Google Analytics, Google AdSense and CJ affiliate tracking, plus the data rights you have under GDPR and CCPA.",
+      "sections": {
+        "introduction": {
+          "title": "1. Introduction",
+          "body": [
+            "This Privacy Policy applies to worldcupdex.org and its subdomains (collectively, the \"Site\" or \"we\"), a fan information and community hub dedicated to the 2026 FIFA World Cup. The Site provides schedules, team and player profiles, predictions, quizzes and shareable fan cards.",
+            "We respect your privacy. This Policy explains what information we collect when you use the Site, how it is used and stored, and the rights you have over that information. By accessing or using the Site you acknowledge that you have read this Policy. If you do not agree with any part of it, please discontinue use of the Site."
+          ]
+        },
+        "informationCollected": {
+          "title": "2. Information We Collect",
+          "intro": "We collect information in three broad categories:",
+          "groups": [
+            {
+              "heading": "2.1 Automatically collected information",
+              "items": [
+                "Browser and device data: browser type and version, operating system, device model, screen resolution and language preference.",
+                "Access data: IP address (used for abuse prevention and coarse geographic analytics only), timestamps, the pages you view and the referring URL.",
+                "Interaction events: clicks, prediction submissions, fan-card generation and share actions captured as product analytics events."
+              ]
+            },
+            {
+              "heading": "2.2 Information collected by third parties",
+              "items": [
+                "Google Analytics 4 measures aggregate traffic, user journeys and page performance using pseudonymous device and event data.",
+                "Google AdSense serves personalized or non-personalized advertising and may set cookies, device identifiers and session storage to do so.",
+                "Cloudflare Pages, our edge hosting provider, may log connection metadata for security and performance purposes."
+              ]
+            },
+            {
+              "heading": "2.3 Information you provide directly",
+              "items": [
+                "The Site does not offer account registration, newsletter sign-up or contact forms, so we do not actively collect your name, email address or phone number.",
+                "Nicknames and prediction picks generated through Fan Card or the Predictions module are stored only in your browser's local storage and are never uploaded to our servers."
+              ]
+            }
+          ]
+        },
+        "howWeUse": {
+          "title": "3. How We Use Information",
+          "intro": "We use the information described above only for the following purposes:",
+          "items": [
+            "To operate, maintain and improve the features, performance and user experience of the Site.",
+            "To analyze traffic trends, popular pages and user journeys, and to refine content structure.",
+            "To improve the relevance of advertising and affiliate recommendations shown on the Site.",
+            "To protect the integrity of the Site, including the detection and prevention of abusive requests, scraping and click fraud.",
+            "To comply with applicable laws, regulations and lawful requests from public authorities."
+          ]
+        },
+        "cookies": {
+          "title": "4. Cookies and Similar Technologies",
+          "intro": "The Site uses cookies, localStorage and similar technologies to deliver core functionality and measurement. They fall into four categories:",
+          "items": [
+            {
+              "name": "Strictly necessary cookies",
+              "desc": "Store your language preference (i18n_redirected) and local interaction state (such as A/B assignment and Fan Card drafts). Disabling them will degrade core functionality."
+            },
+            {
+              "name": "Analytics cookies — Google Analytics 4",
+              "desc": "_ga, _ga_* series cookies retained for up to 30 days. They are used to measure aggregate traffic, sessions and user interactions."
+            },
+            {
+              "name": "Advertising cookies — Google AdSense / DoubleClick",
+              "desc": "Enable personalized or non-personalized advertising, frequency capping and conversion measurement. You may opt out of personalized advertising through Google's Ads Settings page."
+            },
+            {
+              "name": "Affiliate cookies — Commission Junction (CJ)",
+              "desc": "When you click on a recommended jersey or merchandise link, the click source and conversion state are recorded so that commissions can be attributed correctly."
+            }
+          ],
+          "footer": "You may disable or clear cookies at any time through your browser settings, but doing so may break features such as language persistence and locally stored predictions."
+        },
+        "thirdParty": {
+          "title": "5. Third-Party Services and Data Sources",
+          "intro": "The Site integrates the following third-party services, each governed by its own privacy policy:",
+          "items": [
+            {
+              "name": "Google Analytics 4",
+              "desc": "Traffic and interaction analytics.",
+              "href": "https://policies.google.com/privacy",
+              "linkLabel": "Google Privacy Policy"
+            },
+            {
+              "name": "Google AdSense",
+              "desc": "Display advertising and monetization.",
+              "href": "https://policies.google.com/technologies/ads",
+              "linkLabel": "Google Advertising Policies"
+            },
+            {
+              "name": "Commission Junction (CJ Affiliate)",
+              "desc": "Affiliate click tracking and commission settlement.",
+              "href": "https://www.cj.com/legal/privacy-policy-publishers-en",
+              "linkLabel": "CJ Privacy Policy"
+            },
+            {
+              "name": "Cloudflare Pages",
+              "desc": "Edge CDN, deployment and DDoS protection.",
+              "href": "https://www.cloudflare.com/privacypolicy/",
+              "linkLabel": "Cloudflare Privacy Policy"
+            },
+            {
+              "name": "TheSportsDB / Football-Data.org",
+              "desc": "Public sports data sources used to retrieve team, player and fixture information; no personal data of yours is shared with them.",
+              "href": "https://www.thesportsdb.com/",
+              "linkLabel": "TheSportsDB"
+            }
+          ]
+        },
+        "gdpr": {
+          "title": "6. Your Rights (GDPR and CCPA)",
+          "intro": "Depending on the laws that apply to you, you may have the following rights:",
+          "items": [
+            "Right of access: request a copy of the personal information we hold about you.",
+            "Right to deletion: request that we delete personal information about you, subject to legal retention obligations.",
+            "Right to restriction and objection: request that we pause or restrict certain types of processing.",
+            "Right to data portability: receive your personal information in a machine-readable format.",
+            "Right to withdraw consent: revoke a previously granted consent at any time."
+          ],
+          "footer": "To exercise any of these rights, please reach out through the channels listed on our Contact page. We will respond to your request within 30 calendar days."
+        },
+        "children": {
+          "title": "7. Children's Privacy (COPPA)",
+          "body": [
+            "The Site is not directed to children under the age of 13 and we do not knowingly collect personal information from them. If you are a parent or guardian and believe a child has interacted with the Site, please contact us.",
+            "If we become aware that we have inadvertently collected personal information from a child under 13, we will delete it and disable any associated access promptly after verification."
+          ]
+        },
+        "changes": {
+          "title": "8. Changes to This Policy",
+          "body": [
+            "We may update this Privacy Policy from time to time. Any changes will be posted on this page and the \"Last updated\" date at the top will be revised accordingly.",
+            "For material changes (such as a meaningful expansion of data collection or the addition of important third-party services) we will provide a prominent notice on the home page. We encourage you to revisit this page periodically."
+          ]
+        },
+        "contact": {
+          "title": "9. Contact Us",
+          "body": [
+            "If you have any questions about this Privacy Policy, our data practices, or wish to exercise your rights, please visit our Contact page for the available channels."
+          ],
+          "cta": "Go to Contact →"
+        }
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "Questions, feedback or partnership ideas? We'd love to hear from you.",
+      "metaDescription": "Get in touch with the WorldCupDex team via email, GitHub Issues and community channels. Privacy, data-rights and business inquiries are all welcome.",
+      "intro": "WorldCupDex is run by an independent developer. Choose the channel that best fits your message:",
+      "emailLabel": "Email",
+      "emailNote": "Preferred channel for privacy, data-rights and general inquiries. We aim to respond within two business days.",
+      "githubLabel": "GitHub Issues",
+      "githubNote": "Best for bug reports, feature requests and public discussion. Please follow the issue template when filing.",
+      "githubCta": "Open an Issue →",
+      "discordLabel": "Community",
+      "discordNote": "A community server is in preparation. We will announce it on this page and on the home page as soon as it is open.",
+      "discordComingSoon": "Coming soon",
+      "responseNote": "The Site does not offer a submission form in order to reduce spam and privacy risk. Please reach out via one of the channels above."
+    },
+    "about": {
+      "title": "About WorldCupDex",
+      "subtitle": "Your one-stop pre-tournament hub for the 2026 World Cup",
+      "metaDescription": "About WorldCupDex: 48 teams, 1200+ players and all 104 fixtures, paired with predictions, fan cards and an IQ challenge for every World Cup fan.",
+      "hero": {
+        "tagline": "From group-stage draws to the lifting of the trophy, see the entire 2026 World Cup on a single page."
+      },
+      "sections": {
+        "whatIs": {
+          "title": "What is WorldCupDex?",
+          "body": [
+            "WorldCupDex is a one-stop fan hub built around the 2026 FIFA World Cup. We bring together profiles of all 48 participating teams, more than 1,200 active international players, the full 104-match schedule across 16 cities in three countries, and the latest FIFA rankings.",
+            "Beyond the encyclopedia, we offer three interactive experiences: champion and per-match predictions, an IQ challenge, and a shareable Fan Card — so that every fan can step onto the pitch before kickoff."
+          ]
+        },
+        "dataSources": {
+          "title": "Data Sources and Quality",
+          "body": [
+            "All fixtures, team and player data come from public, properly licensed third-party sources: player profiles and images via TheSportsDB, fixtures and rankings via Football-Data.org, supplemented by publicly available information from FIFA and national football associations.",
+            "We refresh data on a weekly cadence and more frequently during match windows. If you spot an inaccuracy, please let us know through the Contact page — corrections are applied at the next sync cycle after verification."
+          ]
+        },
+        "sisterSites": {
+          "title": "Sister Site — KickIQ",
+          "body": [
+            "For deep tactical analysis, AI-generated football quizzes and friend-versus-friend battles, visit our sister site KickIQ. The two sites share the same fan-identity layer, so you can hop between them freely."
+          ],
+          "cta": "Visit KickIQ →",
+          "href": "https://kickiq.app"
+        }
+      }
+    }
   }
 }

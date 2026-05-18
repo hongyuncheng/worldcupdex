@@ -1,8 +1,40 @@
 import tailwindcss from '@tailwindcss/vite'
 
+// 注入 GA4 gtag.js 脚本（仅当 NUXT_PUBLIC_GA_ID 存在时）
+const gaId = process.env.NUXT_PUBLIC_GA_ID || ''
+const gaScripts = gaId
+  ? [
+      { src: `https://www.googletagmanager.com/gtag/js?id=${gaId}`, async: true },
+      {
+        innerHTML: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config','${gaId}',{ send_page_view: false });`,
+      },
+    ]
+  : []
+
+// 注入 Google AdSense 脚本（仅在生产环境且 publisher ID 存在时）
+const adsenseClient = process.env.NUXT_PUBLIC_ADSENSE_CLIENT || 'ca-pub-1445960722760802'
+const adsenseScripts = adsenseClient && process.env.NODE_ENV === 'production'
+  ? [
+      {
+        async: true,
+        src: `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseClient}`,
+        crossorigin: 'anonymous',
+      },
+    ]
+  : []
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-16',
   devtools: { enabled: true },
+
+  runtimeConfig: {
+    public: {
+      gaId: '',
+      adsenseClient: process.env.NUXT_PUBLIC_ADSENSE_CLIENT || 'ca-pub-1445960722760802',
+      kickiqUrl: 'https://kickiq.app',
+      siteUrl: 'https://worldcupdex.org',
+    },
+  },
 
   modules: [
     '@nuxtjs/i18n',
@@ -93,6 +125,7 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap' },
       ],
+      script: [...gaScripts, ...adsenseScripts],
     },
   },
 

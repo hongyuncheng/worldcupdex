@@ -1,5 +1,9 @@
 <template>
   <div>
+    <!-- JSON-LD Structured Data (Organization + WebSite) -->
+    <SchemaOrg type="Organization" :data="organizationData" />
+    <SchemaOrg type="WebSite" :data="webSiteData" />
+
     <!-- Hero Section -->
     <section
       class="relative flex items-center justify-center overflow-hidden"
@@ -73,7 +77,7 @@
       <div v-else-if="matchesError" class="text-center py-12 text-red-500">
         {{ matchesError.message || '加载失败' }}
       </div>
-      <div v-else class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div v-else class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         <MatchCard
           v-for="match in upcomingMatches"
           :key="match.id"
@@ -299,26 +303,28 @@ useSeoConfig({
   description: '2026年FIFA世界杯百科全书，包含球队资料、赛程赛果、比分预测和球迷互动。',
 })
 
-// JSON-LD Structured Data
-useHead({
-  script: [
-    {
-      type: 'application/ld+json',
-      innerHTML: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'WebSite',
-        name: 'WorldCupDex',
-        url: 'https://worldcupdex.org',
-        description: '2026 FIFA World Cup Encyclopedia & Predictions',
-        potentialAction: {
-          '@type': 'SearchAction',
-          target: 'https://worldcupdex.org/teams?q={search_term_string}',
-          'query-input': 'required name=search_term_string',
-        },
-      }),
-    },
-  ],
-})
+// JSON-LD Structured Data — data objects rendered via <SchemaOrg> in template
+const runtimeConfig = useRuntimeConfig()
+const siteUrl = (runtimeConfig.public?.siteUrl as string) || 'https://worldcupdex.org'
+const kickiqUrl = (runtimeConfig.public?.kickiqUrl as string) || 'https://kickiq.app'
+
+const organizationData = {
+  name: 'WorldCupDex',
+  url: siteUrl,
+  logo: `${siteUrl}/logo.png`,
+  sameAs: [kickiqUrl],
+}
+
+const webSiteData = {
+  name: 'WorldCupDex',
+  url: siteUrl,
+  description: '2026 FIFA World Cup Encyclopedia & Predictions',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: `${siteUrl}/data?q={search_term_string}`,
+    'query-input': 'required name=search_term_string',
+  },
+}
 
 const teamsScrollRef = ref<HTMLElement | null>(null)
 // 保留 scrollTeams 以备后续使用（当前右侧箭头改为跳转球队列表页）

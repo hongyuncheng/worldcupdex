@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Jersey placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5F7FB"/>
+      <stop offset="100%" stop-color="#E6EAF2"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" fill="url(#bg)"/>
+  <g fill="#000F49" opacity="0.85">
+    <path d="M88 60 L72 78 L60 96 L72 116 L88 102 L88 188 Q88 196 96 196 L144 196 Q152 196 152 188 L152 102 L168 116 L180 96 L168 78 L152 60 L132 70 Q120 76 108 70 Z"/>
+  </g>
+  <g fill="#FFD700">
+    <circle cx="120" cy="138" r="6"/>
+  </g>
+  <text x="120" y="218" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#000F49" font-weight="700" letter-spacing="1">JERSEY</text>
+</svg>

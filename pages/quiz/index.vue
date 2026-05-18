@@ -9,6 +9,14 @@ useSeoConfig({
   description: t('quiz.seoDesc'),
 })
 
+// JSON-LD Quiz schema
+const quizSchemaData = {
+  name: 'World Cup IQ Test',
+  about: 'World Cup 2026 Knowledge',
+  educationalLevel: 'beginner',
+  description: 'Test your World Cup 2026 knowledge with our 5-question IQ challenge.',
+}
+
 // 挑战横幅（来自分享链接）
 const challengeScore = ref<number | null>(null)
 const challengePercentile = ref<number | null>(null)
@@ -51,6 +59,9 @@ function handleStart() {
 
 <template>
   <div class="quiz-page">
+    <!-- JSON-LD Quiz Schema -->
+    <SchemaOrg type="Quiz" :data="quizSchemaData" />
+
     <!-- 挑战横幅 -->
     <Transition name="banner-slide">
       <div v-if="showChallengeBanner" class="challenge-banner">
