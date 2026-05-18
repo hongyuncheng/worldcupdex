@@ -182,7 +182,7 @@
         >
           <!-- Decorative image -->
           <img
-            :src="'/images/quiz_cta_bg.png'"
+            :src="'/images/quiz-hero-bg.png'"
             alt=""
             class="absolute right-0 bottom-0 w-48 h-auto opacity-80 pointer-events-none select-none"
             style="max-height: 90%;"
@@ -232,7 +232,7 @@
         >
           <!-- Decorative image -->
           <img
-            :src="'/images/fancard_cta_bg.png'"
+            :src="'/images/fancard-bg.png'"
             alt=""
             class="absolute right-0 bottom-0 w-48 h-auto opacity-80 pointer-events-none select-none"
             style="max-height: 90%;"
@@ -350,10 +350,12 @@ function scrollTeams() {
 void scrollTeams
 
 // Date formatting helper
-function formatMatchDate(date: string, time: string): string {
-  const d = new Date(date)
-  const month = d.getMonth() + 1
-  const day = d.getDate()
+function formatMatchDate(dateStr: string, time: string): string {
+  const parts = dateStr.split('-')
+  if (parts.length !== 3) return dateStr
+
+  const month = parseInt(parts[1], 10)
+  const day = parseInt(parts[2], 10)
 
   if (locale.value === 'zh') {
     return `${month}月${day}日 ${time}`

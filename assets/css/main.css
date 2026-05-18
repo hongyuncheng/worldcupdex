@@ -72,35 +72,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===== Card Styles ===== */
-.card {
-  border-radius: 12px;
-  box-shadow: var(--shadow-card);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
+@layer components {
+  .card {
+    border-radius: 12px;
+    box-shadow: var(--shadow-card);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.card-hover:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-card-hover);
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-card-hover);
+  }
 }
 
 /* ===== Gold Shimmer Text ===== */
-.text-gold {
-  color: #FFD700;
-}
+@layer utilities {
+  .text-gold {
+    color: #FFD700;
+  }
 
-.text-gold-shimmer {
-  background: linear-gradient(135deg, #FFD700 0%, #FFA000 50%, #FFD700 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
+  .text-gold-shimmer {
+    background: linear-gradient(135deg, #FFD700 0%, #FFA000 50%, #FFD700 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 
-/* ===== Gradient Text ===== */
-.text-gradient-blue {
-  background: linear-gradient(135deg, #1A237E, #283593);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  /* ===== Gradient Text ===== */
+  .text-gradient-blue {
+    background: linear-gradient(135deg, #1A237E, #283593);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
 }
 
 /* ===== Scrollbar ===== */
@@ -119,45 +123,51 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===== Scrollbar Hide Utility ===== */
-.scrollbar-hide {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.scrollbar-hide::-webkit-scrollbar {
-  display: none;
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 /* ===== View More Button ===== */
-.btn-view-more {
-  display: inline-block;
-  font-size: 13px;
-  font-weight: 600;
-  color: #000F49;
-  background: #F0F2F5;
-  padding: 8px 20px;
-  border-radius: 999px;
-  border: none;
-  cursor: pointer;
-  transition: background 0.2s ease;
-}
-.btn-view-more:hover {
-  background: #E4E7EC;
-}
-.btn-view-more-wrapper {
-  text-align: center;
-  margin-top: 16px;
-}
-
-/* Hero Section Background - 使用全局 CSS 避免 scoped hydration mismatch */
-.hero-section {
-  height: 400px;
+@layer components {
+  .btn-view-more {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #000F49;
+    background: #F0F2F5;
+    padding: 8px 20px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  .btn-view-more:hover {
+    background: #E4E7EC;
+  }
+  .btn-view-more-wrapper {
+    text-align: center;
+    margin-top: 16px;
+  }
 }
 
-.hero-background {
-  background: url('/images/index_bg.png') center bottom / 100% 100% no-repeat;
-}
+@layer base {
+  /* Hero Section Background - 使用全局 CSS 避免 scoped hydration mismatch */
+  .hero-section {
+    height: 400px;
+  }
 
-/* CTA Banner Background - 使用全局 CSS 避免 scoped hydration mismatch */
-.cta-banner-bg {
-  background: url('/images/cta_banner.png') center / 100% 100% no-repeat;
+  .hero-background {
+    background: url('/images/index_bg.png') center bottom / 100% 100% no-repeat;
+  }
+
+  /* CTA Banner Background - 使用全局 CSS 避免 scoped hydration mismatch */
+  .cta-banner-bg {
+    background: url('/images/cta_banner.png') center / 100% 100% no-repeat;
+  }
 }
