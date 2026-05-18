@@ -24,8 +24,8 @@
       "nationality": "Curaçao",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Austria_U-18_vs._Netherlands_U-18_2017-03-23_(095)_(cropped).jpg?width=500",
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Austria_U-18_vs._Netherlands_U-18_2017-03-23_(095)_(cropped).jpg?width=500"
     },
     {
       "name": "Eloy Room",
@@ -168,8 +168,8 @@
       "nationality": "Curaçao",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Kenji_Gorré_(2015).jpg?width=500",
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kenji_Gorré_(2015).jpg?width=500"
     },
     {
       "name": "Jürgen Locadia",

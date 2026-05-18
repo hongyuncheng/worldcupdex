@@ -24,8 +24,8 @@
       "nationality": "Panama",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Concacaf_Gold_Cup_(48248588296)_(cropped).jpg?width=500",
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Concacaf_Gold_Cup_(48248588296)_(cropped).jpg?width=500"
     },
     {
       "name": "Orlando Mosquera",
@@ -60,8 +60,8 @@
       "nationality": "Panama",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Partido_Galicia_-_Panamá_en_Balaídos_59_(Roderick_Miller).jpg?width=500",
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Partido_Galicia_-_Panamá_en_Balaídos_59_(Roderick_Miller).jpg?width=500"
     },
     {
       "name": "Éric Davis",
@@ -132,8 +132,8 @@
       "nationality": "Panama",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Partido_Galicia_-_Panamá_en_Balaídos_126_(Martín_Krug).jpg?width=500",
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Partido_Galicia_-_Panamá_en_Balaídos_126_(Martín_Krug).jpg?width=500"
     },
     {
       "name": "Aníbal Godoy",
@@ -180,8 +180,8 @@
       "nationality": "Panama",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Partido_Galicia_-_Panamá_en_Balaídos_16_(cropped).jpg?width=500",
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Partido_Galicia_-_Panamá_en_Balaídos_16_(cropped).jpg?width=500"
     },
     {
       "name": "Christian Martinez",

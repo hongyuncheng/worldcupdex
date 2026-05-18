@@ -180,8 +180,8 @@
       "nationality": "Uzbekistan",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamshid_Iskanderov.jpg?width=500",
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamshid_Iskanderov.jpg?width=500"
     },
     {
       "name": "Akmal Mozgovoy",

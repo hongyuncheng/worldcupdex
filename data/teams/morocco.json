@@ -24,8 +24,8 @@
       "nationality": "Morocco",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Yassine_bounou_Interview_2023.jpg?width=500",
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Yassine_bounou_Interview_2023.jpg?width=500"
     },
     {
       "name": "El Mehdi Benabid",
@@ -48,8 +48,8 @@
       "nationality": "Morocco",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Al_Mehdi_Al_Harrar_(cropped).jpg?width=500",
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Al_Mehdi_Al_Harrar_(cropped).jpg?width=500"
     },
     {
       "name": "Redouane Halhal",
@@ -204,8 +204,8 @@
       "nationality": "Morocco",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/ElKhannouss_(cropped).jpg?width=500",
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/ElKhannouss_(cropped).jpg?width=500"
     },
     {
       "name": "Ez Abde",

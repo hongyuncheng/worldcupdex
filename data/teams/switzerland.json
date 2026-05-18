@@ -72,8 +72,8 @@
       "nationality": "Switzerland",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Alvyn_Sanches.jpg?width=500",
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alvyn_Sanches.jpg?width=500"
     },
     {
       "name": "Joel Monteiro",

@@ -132,8 +132,8 @@
       "nationality": "",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Yassine-Chikhaoui.jpg?width=500",
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Yassine-Chikhaoui.jpg?width=500"
     },
     {
       "name": "Moutaz Neffati",
@@ -156,8 +156,8 @@
       "nationality": "Tunisia",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Stade_rennais_-_Le_Havre_AC_20150708_09.jpg?width=500",
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stade_rennais_-_Le_Havre_AC_20150708_09.jpg?width=500"
     },
     {
       "name": "Sebastian Tounekti",

@@ -2,7 +2,7 @@
   <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border-t-4 border-t-[#FFD700]">
     <!-- Group label -->
     <div class="text-center py-3 border-b border-gray-100">
-      <span class="text-sm font-semibold text-gray-600">{{ $t('home.groupMatch') }} {{ group }}{{ $t('home.group') }}</span>
+      <span class="text-sm font-semibold text-gray-600">{{ $t('home.groupLabel', { group: group }) }}</span>
     </div>
     <!-- Teams VS -->
     <div class="flex items-center justify-center gap-4 px-4 py-5">

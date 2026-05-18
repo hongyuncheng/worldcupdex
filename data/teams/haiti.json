@@ -156,8 +156,8 @@
       "nationality": "Haiti",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Duckens_Nazon_in_CSKA.jpg?width=500",
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Duckens_Nazon_in_CSKA.jpg?width=500"
     },
     {
       "name": "Frantzdy Pierrot",

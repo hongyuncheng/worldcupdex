@@ -5,8 +5,8 @@ const route = useRoute()
 
 // SEO
 useSeoConfig({
-  title: '世界杯IQ挑战 - WorldCupDex',
-  description: '10道趣味题目，测试你的世界杯知识储备，挑战全球球迷排名。',
+  title: t('quiz.seoTitle'),
+  description: t('quiz.seoDesc'),
 })
 
 // 挑战横幅（来自分享链接）
@@ -77,10 +77,10 @@ function handleStart() {
         <!-- 左列：文字 -->
         <div class="hero__text">
           <h1 class="hero__title">
-            <span class="hero__title-small">测测你的</span>
-            <span class="hero__title-big">世界杯 <em class="hero__title-iq">IQ</em></span>
+            <span class="hero__title-small">{{ t('quiz.heroSmall') }}</span>
+            <span class="hero__title-big">{{ t('quiz.heroBig') }} <em class="hero__title-iq">IQ</em></span>
           </h1>
-          <p class="hero__subtitle">5 道趣味题目，挑战你的世界杯知识储备</p>
+          <p class="hero__subtitle">{{ t('quiz.heroSubtitle') }}</p>
           <div class="hero__divider"></div>
         </div>
 
@@ -100,8 +100,8 @@ function handleStart() {
             </svg>
           </div>
           <div class="features__text">
-            <h3>5 道题目</h3>
-            <p>涵盖历史、球星、战术等<br>多维度知识</p>
+            <h3>{{ t('quiz.featureQuestions') }}</h3>
+            <p>{{ t('quiz.featureQuestionsDesc') }}</p>
           </div>
         </div>
         <div class="features__item">
@@ -112,8 +112,8 @@ function handleStart() {
             </svg>
           </div>
           <div class="features__text">
-            <h3>限时 30 秒 / 题</h3>
-            <p>快速作答，冲击高分<br>挑战你的反应力</p>
+            <h3>{{ t('quiz.featureTimer') }}</h3>
+            <p>{{ t('quiz.featureTimerDesc') }}</p>
           </div>
         </div>
         <div class="features__item">
@@ -125,8 +125,8 @@ function handleStart() {
             </svg>
           </div>
           <div class="features__text">
-            <h3>即时出分</h3>
-            <p>完成挑战立即获得得分<br>与全球球迷一较高下</p>
+            <h3>{{ t('quiz.featureInstant') }}</h3>
+            <p>{{ t('quiz.featureInstantDesc') }}</p>
           </div>
         </div>
       </div>
@@ -135,11 +135,11 @@ function handleStart() {
     <!-- CTA 按钮区域 -->
     <section class="cta">
       <button class="cta__button" @click="handleStart">
-        开始挑战
+        {{ t('quiz.startChallenge') }}
         <span class="cta__arrow">→</span>
       </button>
       <div class="cta__participants">
-        <span class="cta__count">已有 <strong>{{ participantCount.toLocaleString() }}</strong> 人参与挑战</span>
+        <span class="cta__count">{{ t('quiz.participantCount', { count: participantCount.toLocaleString() }) }}</span>
         <div class="cta__avatars">
           <span class="cta__avatar" style="background:#E67E22;"></span>
           <span class="cta__avatar" style="background:#3498DB;"></span>
@@ -157,7 +157,7 @@ function handleStart() {
       <div class="flow__card">
         <h2 class="flow__title">
           <span class="flow__diamond">◇</span>
-          挑战流程
+          {{ t('quiz.howItWorks') }}
           <span class="flow__diamond">◇</span>
         </h2>
         <div class="flow__steps">
@@ -171,8 +171,8 @@ function handleStart() {
               </svg>
             </div>
             <div class="flow__connector"></div>
-            <h4>1. 开始挑战</h4>
-            <p>点击按钮进入答题</p>
+            <h4>{{ t('quiz.step1Title') }}</h4>
+            <p>{{ t('quiz.step1Desc') }}</p>
           </div>
           <div class="flow__step">
             <div class="flow__step-icon flow__step-icon--2">
@@ -182,8 +182,8 @@ function handleStart() {
               </svg>
             </div>
             <div class="flow__connector"></div>
-            <h4>2. 回答题目</h4>
-            <p>每题 30 秒，选择最佳答案</p>
+            <h4>{{ t('quiz.step2Title') }}</h4>
+            <p>{{ t('quiz.step2Desc') }}</p>
           </div>
           <div class="flow__step">
             <div class="flow__step-icon flow__step-icon--3">
@@ -193,8 +193,8 @@ function handleStart() {
                 <path d="M12 16.5V20" stroke="white" stroke-width="1.5"/>
               </svg>
             </div>
-            <h4>3. 查看成绩</h4>
-            <p>完成答题，查看你的得分与排名</p>
+            <h4>{{ t('quiz.step3Title') }}</h4>
+            <p>{{ t('quiz.step3Desc') }}</p>
           </div>
         </div>
       </div>

@@ -240,8 +240,8 @@
       "nationality": "Uruguay",
       "shirtNumber": null,
       "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Santiago_Bueno.png?width=500",
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Santiago_Bueno.png?width=500"
     },
     {
       "name": "Mathías Olivera",

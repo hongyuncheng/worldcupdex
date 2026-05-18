@@ -79,12 +79,12 @@
           :key="match.id"
           :match-id="String(match.id)"
           :group="match.group || ''"
-          :team1-name="match.homeTeam.nameZh"
+          :team1-name="locale === 'zh' ? match.homeTeam.nameZh : match.homeTeam.nameEn"
           :team1-flag="match.homeTeam.flag"
-          :team2-name="match.awayTeam.nameZh"
+          :team2-name="locale === 'zh' ? match.awayTeam.nameZh : match.awayTeam.nameEn"
           :team2-flag="match.awayTeam.flag"
           :date="formatMatchDate(match.date, match.time)"
-          :venue="match.venue.nameZh"
+          :venue="locale === 'zh' ? match.venue.nameZh : match.venue.name"
         />
       </div>
     </section>
@@ -108,7 +108,7 @@
             v-for="team in hotTeams"
             :key="team.code"
             :team-id="team.id"
-            :name="team.nameZh"
+            :name="locale === 'zh' ? team.nameZh : team.nameEn"
             :flag="team.flag"
             :rank="team.fifaRank"
           />
@@ -291,6 +291,8 @@
 <script setup lang="ts">
 import type { MatchItem } from '~/types'
 
+const { locale } = useI18n()
+
 // SEO
 useSeoConfig({
   title: 'WorldCupDex - 2026世界杯百科与预测',
@@ -332,7 +334,14 @@ function formatMatchDate(date: string, time: string): string {
   const d = new Date(date)
   const month = d.getMonth() + 1
   const day = d.getDate()
-  return `${month}月${day}日 ${time}`
+
+  if (locale.value === 'zh') {
+    return `${month}月${day}日 ${time}`
+  } else if (locale.value === 'es') {
+    return `${day}/${month} ${time}`
+  } else {
+    return `${month}/${day} ${time}`
+  }
 }
 
 // Fetch upcoming matches
