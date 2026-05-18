@@ -147,3 +147,17 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin-top: 16px;
 }
+
+/* Hero Section Background - 使用全局 CSS 避免 scoped hydration mismatch */
+.hero-section {
+  height: 400px;
+}
+
+.hero-background {
+  background: url('/images/index_bg.png') center bottom / 100% 100% no-repeat;
+}
+
+/* CTA Banner Background - 使用全局 CSS 避免 scoped hydration mismatch */
+.cta-banner-bg {
+  background: url('/images/cta_banner.png') center / 100% 100% no-repeat;
+}

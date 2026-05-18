@@ -11,6 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
+      NUXT_PUBLIC_SITE_URL: ${{ secrets.NUXT_PUBLIC_SITE_URL }}
       NUXT_PUBLIC_GA_ID: ${{ secrets.NUXT_PUBLIC_GA_ID }}
       NUXT_PUBLIC_ADSENSE_CLIENT: ${{ secrets.NUXT_PUBLIC_ADSENSE_CLIENT }}
       NUXT_PUBLIC_KICKIQ_URL: ${{ secrets.NUXT_PUBLIC_KICKIQ_URL }}
@@ -37,6 +38,8 @@ jobs:
 
       - name: Build site
         run: npm run build
+        env:
+          NITRO_PRESET: cloudflare-pages
 
       - name: Publish to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3

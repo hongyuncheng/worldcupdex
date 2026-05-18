@@ -266,7 +266,7 @@
 
     <!-- CTA Banner -->
     <section class="max-w-7xl mx-auto px-4 lg:px-8 pb-8">
-      <div class="rounded-2xl overflow-hidden relative" style="background: url('/images/cta_banner.png') center / 100% 100% no-repeat;">
+      <div class="rounded-2xl overflow-hidden relative cta-banner-bg">
         <div class="flex items-center justify-between px-6 md:px-12 py-10 relative z-10">
           <!-- Text -->
           <div class="flex-1 md:ml-32 lg:ml-40">
@@ -361,11 +361,3 @@ const hotTeams = computed(() => {
 })
 </script>
 
-<style scoped>
-.hero-section {
-  height: 400px;
-}
-.hero-background {
-  background: url('/images/index_bg.png') center bottom / 100% 100% no-repeat;
-}
-</style>
