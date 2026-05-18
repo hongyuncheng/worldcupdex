@@ -6,11 +6,10 @@
 
     <!-- Hero Section -->
     <section
-      class="relative flex items-center justify-center overflow-hidden"
-      style="height: 400px;"
+      class="relative flex items-center justify-center overflow-hidden hero-section"
     >
       <!-- Background image -->
-      <div class="absolute inset-0" style="background: url('/images/index_bg.png') center bottom / 100% 100% no-repeat;"></div>
+      <div class="absolute inset-0 hero-background"></div>
 
 
       <!-- Content - centered -->
@@ -361,3 +360,12 @@ const hotTeams = computed(() => {
   return [...teams].sort((a, b) => a.fifaRank - b.fifaRank).slice(0, 8)
 })
 </script>
+
+<style scoped>
+.hero-section {
+  height: 400px;
+}
+.hero-background {
+  background: url('/images/index_bg.png') center bottom / 100% 100% no-repeat;
+}
+</style>

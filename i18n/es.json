@@ -11,6 +11,7 @@
     "login": "Iniciar / Registrar",
     "quiz": "Quiz IQ",
     "fanCard": "Tarjeta Fan",
+    "blog": "Blog",
     "privacy": "Política de Privacidad",
     "contact": "Contacto",
     "about": "Acerca de"
@@ -90,7 +91,12 @@
     "sortByGroup": "Orden: Por Grupo",
     "sortByRank": "Orden: Por Ranking",
     "noResults": "No se encontraron equipos",
-    "becomeFan": "Hazte fan de {team}"
+    "becomeFan": "Hazte fan de {team}",
+    "narrative": {
+      "historyTitle": "Historia y legado del equipo",
+      "predictionTitle": "Predicción para el Mundial 2026",
+      "groupAnalysisTitle": "Análisis de la fase de grupos"
+    }
   },
   "matches": {
     "title": "Calendario de Partidos",
@@ -243,6 +249,19 @@
     "ruleWrong": "Predicci\u00f3n incorrecta",
     "skip": "Omitir",
     "hint": "\ud83d\udca1 Genera tu tarjeta exclusiva despu\u00e9s de predecir, comp\u00e1rtela con amigos"
+  },
+  "blog": {
+    "listTitle": "Blog de WorldCupDex",
+    "listSubtitle": "Análisis en profundidad del Mundial 2026: partidos, equipos y tácticas",
+    "readMore": "Leer más →",
+    "publishedOn": "Publicado el",
+    "by": "Por",
+    "tagsLabel": "Etiquetas",
+    "emptyState": "Aún no hay artículos — próximamente.",
+    "backToList": "← Volver al blog",
+    "exploreTeams": "Explorar las 48 selecciones →",
+    "metaDescription": "Blog de WorldCupDex — cobertura en profundidad del Mundial FIFA 2026, incluyendo ciudades sede, tácticas y guías de viaje.",
+    "relatedTitle": "Sigue explorando"
   },
   "share": {
     "download": "Descargar Imagen",

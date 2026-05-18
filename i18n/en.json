@@ -11,6 +11,7 @@
     "login": "Login / Register",
     "quiz": "IQ Quiz",
     "fanCard": "Fan Card",
+    "blog": "Blog",
     "privacy": "Privacy Policy",
     "contact": "Contact",
     "about": "About"
@@ -150,7 +151,12 @@
     "viewFullSquad": "View Full Squad →",
     "formation": "Formation",
     "times": "times",
-    "becomeFan": "Become a {team} Fan"
+    "becomeFan": "Become a {team} Fan",
+    "narrative": {
+      "historyTitle": "Team History & Legacy",
+      "predictionTitle": "2026 World Cup Prediction",
+      "groupAnalysisTitle": "Group Stage Analysis"
+    }
   },
   "matches": {
     "title": "Match Schedule",
@@ -444,6 +450,19 @@
     "cardTitle": "FAN CARD",
     "buyJersey": "Buy {team} Official Jersey",
     "supportTeam": "Support your team, wear the official jersey"
+  },
+  "blog": {
+    "listTitle": "WorldCupDex Blog",
+    "listSubtitle": "In-depth analysis of the 2026 World Cup matches, teams and tactics",
+    "readMore": "Read more →",
+    "publishedOn": "Published on",
+    "by": "By",
+    "tagsLabel": "Tags",
+    "emptyState": "No articles yet — stay tuned.",
+    "backToList": "← Back to blog",
+    "exploreTeams": "Explore all 48 teams →",
+    "metaDescription": "WorldCupDex Blog — in-depth coverage of the 2026 FIFA World Cup, including host cities, team tactics and travel guides.",
+    "relatedTitle": "Keep exploring"
   },
   "share": {
     "download": "Download Image",

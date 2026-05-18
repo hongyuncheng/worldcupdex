@@ -1,0 +1,106 @@
+{
+  "brazil": {
+    "titles": 5,
+    "titleYears": [1958, 1962, 1970, 1994, 2002],
+    "appearances": 22,
+    "bestResult": "champion",
+    "legends": {
+      "en": ["Pelé", "Ronaldo", "Ronaldinho", "Romário", "Zico"],
+      "zh": ["贝利", "罗纳尔多", "罗纳尔迪尼奥", "罗马里奥", "济科"],
+      "es": ["Pelé", "Ronaldo", "Ronaldinho", "Romário", "Zico"]
+    },
+    "nickname": { "en": "Seleção", "zh": "桑巴军团", "es": "Canarinha" },
+    "lastTitleGap": 24
+  },
+  "germany": {
+    "titles": 4,
+    "titleYears": [1954, 1974, 1990, 2014],
+    "appearances": 20,
+    "bestResult": "champion",
+    "legends": {
+      "en": ["Franz Beckenbauer", "Gerd Müller", "Lothar Matthäus", "Miroslav Klose", "Manuel Neuer"],
+      "zh": ["弗朗茨·贝肯鲍尔", "盖德·穆勒", "洛塔尔·马特乌斯", "米罗斯拉夫·克洛泽", "曼努埃尔·诺伊尔"],
+      "es": ["Franz Beckenbauer", "Gerd Müller", "Lothar Matthäus", "Miroslav Klose", "Manuel Neuer"]
+    },
+    "nickname": { "en": "Die Mannschaft", "zh": "日耳曼战车", "es": "Die Mannschaft" },
+    "lastTitleGap": 12
+  },
+  "argentina": {
+    "titles": 3,
+    "titleYears": [1978, 1986, 2022],
+    "appearances": 18,
+    "bestResult": "champion",
+    "legends": {
+      "en": ["Lionel Messi", "Diego Maradona", "Gabriel Batistuta", "Ángel Di María", "Mario Kempes"],
+      "zh": ["利昂内尔·梅西", "迭戈·马拉多纳", "加布里埃尔·巴蒂斯图塔", "安赫尔·迪马里亚", "马里奥·肯佩斯"],
+      "es": ["Lionel Messi", "Diego Maradona", "Gabriel Batistuta", "Ángel Di María", "Mario Kempes"]
+    },
+    "nickname": { "en": "La Albiceleste", "zh": "潘帕斯雄鹰", "es": "La Albiceleste" },
+    "lastTitleGap": 4
+  },
+  "italy": {
+    "titles": 4,
+    "titleYears": [1934, 1938, 1982, 2006],
+    "appearances": 18,
+    "bestResult": "champion",
+    "legends": {
+      "en": ["Paolo Maldini", "Roberto Baggio", "Andrea Pirlo", "Gianluigi Buffon", "Francesco Totti"],
+      "zh": ["保罗·马尔蒂尼", "罗伯托·巴乔", "安德烈亚·皮尔洛", "詹路易吉·布冯", "弗朗切斯科·托蒂"],
+      "es": ["Paolo Maldini", "Roberto Baggio", "Andrea Pirlo", "Gianluigi Buffon", "Francesco Totti"]
+    },
+    "nickname": { "en": "Azzurri", "zh": "蓝衣军团", "es": "Azzurri" },
+    "lastTitleGap": 20
+  },
+  "france": {
+    "titles": 2,
+    "titleYears": [1998, 2018],
+    "appearances": 16,
+    "bestResult": "champion",
+    "legends": {
+      "en": ["Zinedine Zidane", "Michel Platini", "Thierry Henry", "Kylian Mbappé", "Antoine Griezmann"],
+      "zh": ["齐内丁·齐达内", "米歇尔·普拉蒂尼", "蒂埃里·亨利", "基利安·姆巴佩", "安托万·格列兹曼"],
+      "es": ["Zinedine Zidane", "Michel Platini", "Thierry Henry", "Kylian Mbappé", "Antoine Griezmann"]
+    },
+    "nickname": { "en": "Les Bleus", "zh": "高卢雄鸡", "es": "Les Bleus" },
+    "lastTitleGap": 8
+  },
+  "uruguay": {
+    "titles": 2,
+    "titleYears": [1930, 1950],
+    "appearances": 14,
+    "bestResult": "champion",
+    "legends": {
+      "en": ["Luis Suárez", "Edinson Cavani", "Diego Forlán", "Enzo Francescoli", "Obdulio Varela"],
+      "zh": ["路易斯·苏亚雷斯", "埃丁森·卡瓦尼", "迭戈·弗兰", "恩佐·弗兰切斯科利", "奥布杜里奥·巴雷拉"],
+      "es": ["Luis Suárez", "Edinson Cavani", "Diego Forlán", "Enzo Francescoli", "Obdulio Varela"]
+    },
+    "nickname": { "en": "La Celeste", "zh": "天蓝军团", "es": "La Celeste" },
+    "lastTitleGap": 76
+  },
+  "england": {
+    "titles": 1,
+    "titleYears": [1966],
+    "appearances": 16,
+    "bestResult": "champion",
+    "legends": {
+      "en": ["Bobby Charlton", "Wayne Rooney", "David Beckham", "Harry Kane", "Gary Lineker"],
+      "zh": ["博比·查尔顿", "韦恩·鲁尼", "大卫·贝克汉姆", "哈里·凯恩", "加里·莱因克尔"],
+      "es": ["Bobby Charlton", "Wayne Rooney", "David Beckham", "Harry Kane", "Gary Lineker"]
+    },
+    "nickname": { "en": "Three Lions", "zh": "三狮军团", "es": "Three Lions" },
+    "lastTitleGap": 60
+  },
+  "spain": {
+    "titles": 1,
+    "titleYears": [2010],
+    "appearances": 16,
+    "bestResult": "champion",
+    "legends": {
+      "en": ["Xavi", "Andrés Iniesta", "Iker Casillas", "Sergio Ramos", "Fernando Torres"],
+      "zh": ["哈维", "安德烈斯·伊涅斯塔", "伊克尔·卡西利亚斯", "塞尔吉奥·拉莫斯", "费尔南多·托雷斯"],
+      "es": ["Xavi", "Andrés Iniesta", "Iker Casillas", "Sergio Ramos", "Fernando Torres"]
+    },
+    "nickname": { "en": "La Roja", "zh": "斗牛士军团", "es": "La Roja" },
+    "lastTitleGap": 16
+  }
+}

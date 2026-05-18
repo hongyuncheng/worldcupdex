@@ -38,7 +38,7 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/i18n',
-    // '@nuxt/content', // Requires better-sqlite3 native build; enable when C++ build tools are available
+    '@nuxt/content',
     '@nuxt/icon',
     '@vite-pwa/nuxt',
     '@nuxtjs/sitemap',
@@ -94,9 +94,14 @@ export default defineNuxtConfig({
     },
   },
 
-  // content: {
-  //   database: { type: 'sql.js' },
-  // },
+  content: {
+    database: {
+      type: 'sqlite',
+    },
+    experimental: {
+      sqliteConnector: 'native',
+    },
+  },
 
   site: {
     url: 'https://worldcupdex.org',
@@ -104,6 +109,20 @@ export default defineNuxtConfig({
 
   sitemap: {
     autoI18n: true,
+  },
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: [
+        '/blog',
+        '/en/blog',
+        '/es/blog',
+        '/blog/road-to-2026-world-cup-host-cities',
+        '/en/blog/road-to-2026-world-cup-host-cities',
+        '/blog/2026-shijiebei-zhubanchengshi',
+      ],
+    },
   },
 
   app: {
@@ -124,6 +143,7 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap' },
+        { rel: 'preload', as: 'image', href: '/images/index_bg.png', fetchpriority: 'high' },
       ],
       script: [...gaScripts, ...adsenseScripts],
     },

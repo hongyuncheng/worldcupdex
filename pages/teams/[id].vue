@@ -258,6 +258,22 @@
       <!-- Affiliate: Official Team Jerseys (CJ) -->
       <JerseyRecommend :team-id="team.id" />
     </div>
+
+    <!-- Narrative Sections: Team Story / Prediction / Group Analysis -->
+    <section v-if="narrative" class="max-w-7xl mx-auto px-4 lg:px-8 py-8 space-y-8">
+      <article>
+        <h2 class="text-2xl font-bold mb-4" style="color: #1a1a1a; font-family: 'Montserrat', sans-serif;">{{ $t('teams.narrative.historyTitle') }}</h2>
+        <p class="text-base leading-relaxed whitespace-pre-line" style="color: #374151;">{{ narrative.history }}</p>
+      </article>
+      <article>
+        <h2 class="text-2xl font-bold mb-4" style="color: #1a1a1a; font-family: 'Montserrat', sans-serif;">{{ $t('teams.narrative.predictionTitle') }}</h2>
+        <p class="text-base leading-relaxed whitespace-pre-line" style="color: #374151;">{{ narrative.prediction }}</p>
+      </article>
+      <article>
+        <h2 class="text-2xl font-bold mb-4" style="color: #1a1a1a; font-family: 'Montserrat', sans-serif;">{{ $t('teams.narrative.groupAnalysisTitle') }}</h2>
+        <p class="text-base leading-relaxed whitespace-pre-line" style="color: #374151;">{{ narrative.groupAnalysis }}</p>
+      </article>
+    </section>
     </template>
   </div>
 </template>
@@ -272,6 +288,9 @@ const teamId = computed(() => route.params.id as string)
 
 // Fetch team detail from API
 const { data: team, pending, error } = useTeamDetail(teamId)
+
+// Team narrative (SEO long-form content)
+const narrative = useTeamNarrative(team, locale)
 
 const selectedPosition = ref('all')
 

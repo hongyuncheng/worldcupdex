@@ -11,6 +11,7 @@
     "login": "登录 / 注册",
     "quiz": "IQ挑战",
     "fanCard": "球迷身份卡",
+    "blog": "博客",
     "privacy": "隐私政策",
     "contact": "联系我们",
     "about": "关于"
@@ -150,7 +151,12 @@
     "viewFullSquad": "查看全部名单 →",
     "formation": "常用阵型",
     "times": "次",
-    "becomeFan": "成为 {team} 球迷"
+    "becomeFan": "成为 {team} 球迷",
+    "narrative": {
+      "historyTitle": "球队历史与荣耀",
+      "predictionTitle": "2026 世界杯夺冠预测",
+      "groupAnalysisTitle": "小组赛形势分析"
+    }
   },
   "matches": {
     "title": "赛程安排",
@@ -444,6 +450,19 @@
     "cardTitle": "FAN CARD",
     "buyJersey": "购买 {team} 官方球衣",
     "supportTeam": "支持你的球队，穿上官方球衣"
+  },
+  "blog": {
+    "listTitle": "WorldCupDex 博客",
+    "listSubtitle": "深度解析 2026 世界杯赛事、球队与战术",
+    "readMore": "阅读全文 →",
+    "publishedOn": "发布于",
+    "by": "作者",
+    "tagsLabel": "标签",
+    "emptyState": "暂无文章，敬请期待...",
+    "backToList": "← 返回博客列表",
+    "exploreTeams": "探索 48 强球队 →",
+    "metaDescription": "WorldCupDex 博客 — 深度解析 2026 FIFA 世界杯赛事、球队战术与主办城市指南。",
+    "relatedTitle": "继续探索"
   },
   "share": {
     "download": "下载图片",

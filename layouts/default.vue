@@ -171,6 +171,7 @@ const navLinks = [
   { to: '/fan-card', label: 'nav.fanCard' },
   { to: '/predict', label: 'nav.predict' },
   { to: '/quiz', label: 'nav.quiz' },
+  { to: '/blog', label: 'nav.blog' },
 ]
 
 const scrollToTop = () => {
