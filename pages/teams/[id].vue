@@ -107,7 +107,7 @@
       <!-- Fan Actions -->
       <div class="flex flex-wrap items-center gap-3 mb-6">
         <NuxtLinkLocale
-          :to="`/fan-card?team=${team.code}`"
+          :to="`/fan-card?team=${team.id}`"
           class="inline-flex items-center gap-2 font-bold hover:opacity-90 transition-opacity"
           style="background: #FFD700; color: #000F49; font-family: 'Montserrat', sans-serif; font-size: 14px; border-radius: 8px; padding: 10px 20px;"
         >
@@ -117,7 +117,7 @@
         <a
           href="#"
           class="inline-flex items-center gap-2 font-semibold hover:opacity-90 transition-opacity"
-          style="border: 1px solid #FFD700; color: #FFD700; font-family: 'Inter', sans-serif; font-size: 14px; border-radius: 8px; padding: 10px 20px; background: transparent;"
+          style="background: rgb(226 204 239); color: #000F49; font-family: 'Inter', sans-serif; font-size: 14px; border-radius: 8px; padding: 10px 20px;"
         >
           👕 {{ $t('fanCard.buyJersey', { team: locale === 'en' ? team.nameEn : team.nameZh }) }}
         </a>
@@ -213,8 +213,9 @@
           <div
             v-for="player in filteredSquad"
             :key="player.name"
-            class="bg-base-100 rounded-xl p-4 flex flex-col items-center text-center transition-shadow hover:shadow-md"
+            class="bg-base-100 rounded-xl p-4 flex flex-col items-center text-center transition-shadow hover:shadow-md cursor-pointer"
             style="border: 1px solid #f0f0f0;"
+            @click="openPlayerModal(player)"
           >
             <!-- Player Photo -->
             <div class="w-16 h-16 rounded-full overflow-hidden flex items-center justify-center mb-3 flex-shrink-0" style="background: rgba(0,15,73,0.08);">
@@ -257,6 +258,90 @@
 
       <!-- Affiliate: Official Team Jerseys (CJ) -->
       <JerseyRecommend :team-id="team.id" />
+
+      <!-- Player Detail Modal -->
+      <Teleport to="body">
+        <Transition name="modal">
+          <div
+            v-if="selectedPlayer"
+            class="player-modal-overlay"
+            @click.self="closePlayerModal"
+          >
+            <div class="player-modal">
+              <!-- Close Button -->
+              <button class="player-modal__close" @click="closePlayerModal">✕</button>
+
+              <!-- Player Photo -->
+              <div class="player-modal__photo-wrap">
+                <img
+                  v-if="selectedPlayer.photo && !photoErrors.has(selectedPlayer.name)"
+                  :src="selectedPlayer.photo"
+                  :alt="selectedPlayer.name"
+                  class="player-modal__photo"
+                  @error="() => photoErrors.add(selectedPlayer!.name)"
+                />
+                <img
+                  v-else
+                  :src="`https://ui-avatars.com/api/?name=${encodeURIComponent(selectedPlayer.name)}&background=000F49&color=fff&size=256`"
+                  :alt="selectedPlayer.name"
+                  class="player-modal__photo"
+                />
+              </div>
+
+              <!-- Name -->
+              <div class="player-modal__name">
+                {{ getPlayerDisplayName(selectedPlayer).primary }}
+              </div>
+              <div v-if="getPlayerDisplayName(selectedPlayer).secondary" class="player-modal__name-sub">
+                {{ getPlayerDisplayName(selectedPlayer).secondary }}
+              </div>
+
+              <!-- Position Badge -->
+              <span
+                class="player-modal__position"
+                :style="{ background: getPositionColor(selectedPlayer.position) }"
+              >
+                {{ locale === 'en' ? selectedPlayer.position : selectedPlayer.positionZh }}
+              </span>
+
+              <!-- Info Row -->
+              <div class="player-modal__info-row">
+                <div class="player-modal__info-item">
+                  <span class="player-modal__info-label">{{ locale === 'zh' ? '年龄' : 'Age' }}</span>
+                  <span class="player-modal__info-value">{{ getPlayerAge(selectedPlayer.dateOfBirth) }}{{ locale === 'zh' ? '岁' : '' }}</span>
+                </div>
+                <div class="player-modal__info-item">
+                  <span class="player-modal__info-label">{{ locale === 'zh' ? '国籍' : 'Nationality' }}</span>
+                  <span class="player-modal__info-value">{{ selectedPlayer.nationality }}</span>
+                </div>
+                <div v-if="selectedPlayer.shirtNumber" class="player-modal__info-item">
+                  <span class="player-modal__info-label">{{ locale === 'zh' ? '号码' : 'No.' }}</span>
+                  <span class="player-modal__info-value">#{{ selectedPlayer.shirtNumber }}</span>
+                </div>
+              </div>
+
+              <!-- Action Buttons -->
+              <div class="player-modal__actions">
+                <NuxtLinkLocale
+                  :to="`/fan-card?team=${team?.id}&playerName=${encodeURIComponent(selectedPlayer.name)}`"
+                  class="player-modal__btn player-modal__btn--fancard"
+                  @click="closePlayerModal"
+                >
+                  ⚽ {{ locale === 'zh' ? '生成球迷身份卡' : 'Generate Fan Card' }}
+                </NuxtLinkLocale>
+                <a
+                  :href="`/api/track-affiliate?teamId=${team?.id}&partner=generic&productName=${encodeURIComponent((locale === 'zh' ? team?.nameZh : team?.nameEn) + ' Jersey')}`"
+                  target="_blank"
+                  rel="nofollow sponsored noopener"
+                  class="player-modal__btn player-modal__btn--jersey"
+                >
+                  👕 {{ locale === 'zh' ? '购买球衣' : 'Buy Jersey' }}
+                </a>
+              </div>
+            </div>
+          </div>
+        </Transition>
+      </Teleport>
     </div>
 
     <!-- Narrative Sections: Team Story / Prediction / Group Analysis -->
@@ -293,6 +378,19 @@ const { data: team, pending, error } = useTeamDetail(teamId)
 const narrative = useTeamNarrative(team, locale)
 
 const selectedPosition = ref('all')
+
+// Player modal
+const selectedPlayer = ref<SquadPlayer | null>(null)
+
+function openPlayerModal(player: SquadPlayer) {
+  selectedPlayer.value = player
+  if (import.meta.client) document.body.style.overflow = 'hidden'
+}
+
+function closePlayerModal() {
+  selectedPlayer.value = null
+  if (import.meta.client) document.body.style.overflow = ''
+}
 
 // Track photo load errors for fallback
 const photoErrors = reactive(new Set<string>())
@@ -499,4 +597,135 @@ const sportsTeamSchemaData = computed(() => {
     grid-template-columns: repeat(4, 1fr);
   }
 }
+</style>
+
+<style>
+/* Player Modal - 非 scoped，Teleport 挂载到 body 外部需要全局样式 */
+.player-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.player-modal {
+  position: relative;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 32px 28px 28px;
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+.player-modal__close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #6b7280;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.player-modal__close:hover { background: #e5e7eb; }
+.player-modal__photo-wrap {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #f0f0f0;
+  background: rgba(0, 15, 73, 0.08);
+  flex-shrink: 0;
+  margin-bottom: 14px;
+}
+.player-modal__photo { width: 100%; height: 100%; object-fit: cover; }
+.player-modal__name {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a1a2e;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.player-modal__name-sub {
+  font-size: 13px;
+  color: #9ca3af;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.player-modal__position {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 18px;
+}
+.player-modal__info-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.player-modal__info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+.player-modal__info-label {
+  font-size: 11px;
+  color: #9ca3af;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.player-modal__info-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+}
+.player-modal__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.player-modal__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  padding: 11px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  border: none;
+}
+.player-modal__btn:hover { opacity: 0.88; }
+.player-modal__btn--fancard { background: #FFD700; color: #000F49; }
+.player-modal__btn--jersey { background: #000F49; color: #ffffff; }
+/* Transition */
+.modal-enter-active, .modal-leave-active { transition: opacity 0.2s ease; }
+.modal-enter-from, .modal-leave-to { opacity: 0; }
+.modal-enter-active .player-modal,
+.modal-leave-active .player-modal { transition: transform 0.2s ease; }
+.modal-enter-from .player-modal,
+.modal-leave-to .player-modal { transform: scale(0.94) translateY(8px); }
 </style>

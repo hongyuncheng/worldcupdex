@@ -8,10 +8,14 @@ const props = withDefaults(defineProps<{
   filename?: string
   saveButtonText?: string
   shareTitle?: string
+  onBeforeSave?: () => Promise<void>
+  onAfterSave?: () => void
 }>(), {
   filename: 'worldcupdex-share.png',
   saveButtonText: '',
   shareTitle: '',
+  onBeforeSave: undefined,
+  onAfterSave: undefined,
 })
 
 // ========== 状态 ==========
@@ -22,12 +26,34 @@ const copied = ref(false)
 const titleText = computed(() => props.shareTitle || t('share.shareTitle'))
 const saveBtnText = computed(() => props.saveButtonText || t('share.saveImage'))
 
+// ========== 等待卡片内所有图片加载完毕 ==========
+function waitForImages(el: HTMLElement): Promise<void> {
+  const imgs = Array.from(el.querySelectorAll<HTMLImageElement>('img'))
+  const pending = imgs.filter(img => !img.complete)
+  if (pending.length === 0) return Promise.resolve()
+  return Promise.all(
+    pending.map(
+      img =>
+        new Promise<void>((resolve) => {
+          img.onload = () => resolve()
+          img.onerror = () => resolve()
+        }),
+    ),
+  ).then(() => {})
+}
+
 // ========== 保存图片 ==========
 async function saveCardAsImage() {
   if (!props.cardRef || saving.value) return
   saving.value = true
 
   try {
+    // 截图前回调：切换为代理图片
+    if (props.onBeforeSave) await props.onBeforeSave()
+
+    // 等待代理图片加载完成
+    await waitForImages(props.cardRef)
+
     const html2canvas = (await import('html2canvas-pro')).default
     const canvas = await html2canvas(props.cardRef, {
       scale: 2,
@@ -60,6 +86,8 @@ async function saveCardAsImage() {
   } catch (e) {
     console.error('Save image failed:', e)
   } finally {
+    // 截图后回调：恢复原始图片
+    props.onAfterSave?.()
     saving.value = false
   }
 }

@@ -177,101 +177,87 @@
         <!-- Quiz CTA Card -->
         <NuxtLinkLocale
           to="/quiz"
-          class="relative overflow-hidden rounded-2xl p-8 flex flex-col justify-center cursor-pointer no-underline hover:shadow-lg transition-shadow"
-          style="background: linear-gradient(135deg, #0a1628 0%, #0d1b3e 60%, #162d5a 100%); min-height: 280px;"
+          class="relative overflow-hidden rounded-2xl px-8 py-6 flex flex-row items-center justify-between cursor-pointer no-underline hover:shadow-lg transition-shadow gap-6"
+          style="background: linear-gradient(135deg, #0a1628 0%, #0d1b3e 60%, #162d5a 100%);"
         >
-          <!-- Decorative image -->
-          <img
-            :src="'/images/quiz-hero-bg.png'"
-            alt=""
-            class="absolute right-0 bottom-0 w-48 h-auto opacity-80 pointer-events-none select-none"
-            style="max-height: 90%;"
-          />
           <!-- Content -->
-          <div class="relative z-10 flex flex-col items-start gap-3">
-            <h3 class="font-bold text-white" style="font-family: 'Montserrat', sans-serif; font-size: 22px;">
+          <div class="relative z-10 flex flex-col items-start gap-2">
+            <h3 class="font-bold text-white" style="font-family: 'Montserrat', sans-serif; font-size: 20px;">
               {{ $t('home.quizCta') }}
             </h3>
-            <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(255,255,255,0.7);">
+            <p style="font-family: 'Inter', sans-serif; font-size: 13px; color: rgba(255,255,255,0.7);">
               {{ $t('home.quizCtaSub') }}
             </p>
             <!-- Feature list -->
-            <div class="flex flex-col gap-2 mt-2">
+            <div class="flex flex-col gap-1.5 mt-1">
               <div class="flex items-center gap-2">
-                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full" style="background: #22c55e;">
-                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span class="inline-flex items-center justify-center w-4 h-4 rounded-full flex-shrink-0" style="background: #22c55e;">
+                  <svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 </span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 13px; color: rgba(255,255,255,0.85);">
+                <span style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(255,255,255,0.85);">
                   {{ $t('home.quizFeature1') }}
                 </span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full" style="background: #22c55e;">
-                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span class="inline-flex items-center justify-center w-4 h-4 rounded-full flex-shrink-0" style="background: #22c55e;">
+                  <svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 </span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 13px; color: rgba(255,255,255,0.85);">
+                <span style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(255,255,255,0.85);">
                   {{ $t('home.quizFeature2') }}
                 </span>
               </div>
             </div>
-            <!-- Button (不再使用嵌套链接，整卡可点击) -->
-            <span
-              class="inline-flex items-center justify-center font-bold mt-4"
-              style="background: #E67E22; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 14px; border-radius: 8px; padding: 12px 24px;"
-            >
-              {{ $t('home.startChallenge') }}
-            </span>
           </div>
+          <!-- Button on the right -->
+          <span
+            class="relative z-10 inline-flex items-center justify-center font-bold flex-shrink-0"
+            style="background: #E67E22; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 14px; border-radius: 8px; padding: 12px 24px; white-space: nowrap;"
+          >
+            {{ $t('home.startChallenge') }}
+          </span>
         </NuxtLinkLocale>
 
         <!-- Fan Card CTA Card -->
         <NuxtLinkLocale
           to="/fan-card"
-          class="relative overflow-hidden rounded-2xl p-8 flex flex-col justify-center cursor-pointer no-underline hover:shadow-lg transition-shadow"
-          style="background: linear-gradient(135deg, #1a0533 0%, #2d1b69 60%, #3b2080 100%); min-height: 280px;"
+          class="relative overflow-hidden rounded-2xl px-8 py-6 flex flex-row items-center justify-between cursor-pointer no-underline hover:shadow-lg transition-shadow gap-6"
+          style="background: linear-gradient(135deg, #1a0533 0%, #2d1b69 60%, #3b2080 100%);"
         >
-          <!-- Decorative image -->
-          <img
-            :src="'/images/fancard-bg.png'"
-            alt=""
-            class="absolute right-0 bottom-0 w-48 h-auto opacity-80 pointer-events-none select-none"
-            style="max-height: 90%;"
-          />
           <!-- Content -->
-          <div class="relative z-10 flex flex-col items-start gap-3">
-            <h3 class="font-bold text-white" style="font-family: 'Montserrat', sans-serif; font-size: 22px;">
+          <div class="relative z-10 flex flex-col items-start gap-2">
+            <h3 class="font-bold text-white" style="font-family: 'Montserrat', sans-serif; font-size: 20px;">
               {{ $t('home.fanCardCta') }}
             </h3>
-            <p style="font-family: 'Inter', sans-serif; font-size: 14px; color: rgba(255,255,255,0.7);">
+            <p style="font-family: 'Inter', sans-serif; font-size: 13px; color: rgba(255,255,255,0.7);">
               {{ $t('home.fanCardCtaSub') }}
             </p>
             <!-- Feature list -->
-            <div class="flex flex-col gap-2 mt-2">
+            <div class="flex flex-col gap-1.5 mt-1">
               <div class="flex items-center gap-2">
-                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full" style="background: #22c55e;">
-                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span class="inline-flex items-center justify-center w-4 h-4 rounded-full flex-shrink-0" style="background: #22c55e;">
+                  <svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 </span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 13px; color: rgba(255,255,255,0.85);">
+                <span style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(255,255,255,0.85);">
                   {{ $t('home.fanCardFeature1') }}
                 </span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="inline-flex items-center justify-center w-5 h-5 rounded-full" style="background: #22c55e;">
-                  <svg class="w-3 h-3 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+                <span class="inline-flex items-center justify-center w-4 h-4 rounded-full flex-shrink-0" style="background: #22c55e;">
+                  <svg class="w-2.5 h-2.5 text-white" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
                 </span>
-                <span style="font-family: 'Inter', sans-serif; font-size: 13px; color: rgba(255,255,255,0.85);">
+                <span style="font-family: 'Inter', sans-serif; font-size: 12px; color: rgba(255,255,255,0.85);">
                   {{ $t('home.fanCardFeature2') }}
                 </span>
               </div>
             </div>
-            <!-- Button (整卡可点击) -->
-            <span
-              class="inline-flex items-center justify-center font-bold mt-4"
-              style="background: #7C3AED; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 14px; border-radius: 8px; padding: 12px 24px;"
-            >
-              {{ $t('home.generateCard') }}
-            </span>
           </div>
+          <!-- Button on the right -->
+          <span
+            class="relative z-10 inline-flex items-center justify-center font-bold flex-shrink-0"
+            style="background: #7C3AED; color: #ffffff; font-family: 'Montserrat', sans-serif; font-size: 14px; border-radius: 8px; padding: 12px 24px; white-space: nowrap;"
+          >
+            {{ $t('home.generateCard') }}
+          </span>
         </NuxtLinkLocale>
       </div>
     </section>

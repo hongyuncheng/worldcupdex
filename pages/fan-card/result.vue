@@ -130,6 +130,25 @@ const shareUrl = computed(() => {
 // ── 卡片 DOM ref ──
 const cardRef = ref<HTMLElement | null>(null)
 
+// ── FanCardPreview 组件 ref，用于切换截图模式 ──
+const fanCardRef = ref<{ setScreenshotMode: (val: boolean) => void } | null>(null)
+
+// 截图前：切换为代理图片
+async function onBeforeSave(): Promise<void> {
+  if (fanCardRef.value) {
+    fanCardRef.value.setScreenshotMode(true)
+    // 等一帧让 Vue 更新 DOM
+    await nextTick()
+  }
+}
+
+// 截图后：恢复原始图片
+function onAfterSave(): void {
+  if (fanCardRef.value) {
+    fanCardRef.value.setScreenshotMode(false)
+  }
+}
+
 // ── 加入时间 ──
 const createdAt = computed(() => {
   const now = new Date()
@@ -181,6 +200,7 @@ const isReady = computed(() => {
         <div class="flex justify-center mb-8">
           <div ref="cardRef">
             <FanCardPreview
+              ref="fanCardRef"
               :team-id="teamId"
               :team-name="teamName"
               :team-flag="team!.flag"
@@ -208,6 +228,8 @@ const isReady = computed(() => {
             :card-ref="cardRef"
             :filename="`worldcupdex-fancard-${teamId}.png`"
             :share-title="t('share.shareTo')"
+            :on-before-save="onBeforeSave"
+            :on-after-save="onAfterSave"
           />
         </div>
 

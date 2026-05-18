@@ -239,7 +239,10 @@
                 <div class="venue-city">{{ locale === 'zh' ? match.venue.cityZh : match.venue.city }}</div>
               </div>
               <div class="col-actions">
-                <button class="predict-btn">{{ $t('schedule.predictMatch') }}</button>
+                <div class="predict-btns">
+                  <NuxtLinkLocale :to="`/predict/${match.id}`" class="predict-btn predict-btn--human">{{ $t('home.predictHuman') }}</NuxtLinkLocale>
+                  <button type="button" class="predict-btn predict-btn--ai" @click.prevent>{{ $t('home.predictAi') }}</button>
+                </div>
               </div>
             </div>
           </template>
@@ -884,23 +887,42 @@ function buildSportsEventData(m: MatchItem) {
   align-items: center;
   justify-content: center;
 }
+.predict-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
 .predict-btn {
   display: inline-flex;
   align-items: center;
-  padding: 6px 18px;
-  border: 1.5px solid #FFD700;
+  justify-content: center;
+  padding: 5px 14px;
   border-radius: 999px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  color: #000F49;
-  background: transparent;
   cursor: pointer;
   transition: all 0.2s;
   white-space: nowrap;
+  text-decoration: none;
 }
-.predict-btn:hover {
+.predict-btn--human {
+  border: 1.5px solid #FFD700;
+  color: #000F49;
+  background: transparent;
+}
+.predict-btn--human:hover {
   background: #FFD700;
   color: #000F49;
+}
+.predict-btn--ai {
+  border: 1.5px solid #7C3AED;
+  color: #7C3AED;
+  background: transparent;
+}
+.predict-btn--ai:hover {
+  background: #7C3AED;
+  color: #fff;
 }
 
 /* Responsive table: stack on mobile */

@@ -3,6 +3,7 @@ import type { TeamListItem, PaginatedResponse, TeamDetail, SquadPlayer } from '~
 
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
+const route = useRoute()
 const { generateFanNumber, saveFanCard } = useFanCard()
 
 // SEO
@@ -150,6 +151,29 @@ async function handleGenerate() {
 // ── 选中球队信息 ──
 const selectedTeam = computed(() => {
   return allTeams.value.find(t => t.id === selectedTeamId.value) || null
+})
+
+// ── URL 参数预填：从球队详情页球员弹窗跳转过来时，自动选中球队和球员 ──
+// 支持 ?team=teamId&playerName=xxx，跳过选球队/选球员步骤，直接弹出昵称输入框
+const prefilledPlayerName = route.query.playerName as string | undefined
+
+watch(sortedSquad, (squad) => {
+  if (!prefilledPlayerName || squad.length === 0 || selectedPlayerIdx.value >= 0) return
+  const idx = squad.findIndex(
+    p => p.name === prefilledPlayerName || p.nameZh === prefilledPlayerName,
+  )
+  if (idx >= 0) {
+    selectedPlayerIdx.value = idx
+    showNicknameModal.value = true
+  }
+}, { immediate: true })
+
+onMounted(() => {
+  const teamParam = route.query.team as string | undefined
+  if (teamParam) {
+    selectedTeamId.value = teamParam
+    currentStep.value = 2
+  }
 })
 </script>
 

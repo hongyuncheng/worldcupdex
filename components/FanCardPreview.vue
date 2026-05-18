@@ -50,8 +50,32 @@ function onPhotoError() {
   photoError.value = true
 }
 
+// 截图模式：由父组件在保存前切换为 true，让图片走代理解决跨域
+const screenshotMode = ref(false)
+
+// 正常渲染用原始 URL（快），截图时走代理 URL（解决 html2canvas 跨域）
+const photoSrc = computed(() => {
+  if (!props.playerPhoto) return null
+  if (screenshotMode.value) {
+    return `/api/image-proxy?url=${encodeURIComponent(props.playerPhoto)}`
+  }
+  return props.playerPhoto
+})
+
 const showPhoto = computed(() => {
   return props.playerPhoto && !photoError.value
+})
+
+// screenshotMode 切换时重置错误状态，让代理 URL 重新尝试加载
+watch(screenshotMode, () => {
+  photoError.value = false
+})
+
+// 暴露截图模式切换方法给父组件调用
+defineExpose({
+  setScreenshotMode(val: boolean) {
+    screenshotMode.value = val
+  },
 })
 
 // 随机标语 - mount 时固定，避免截图时变化
@@ -91,7 +115,7 @@ const displayMotto = computed(() => {
           <div class="fan-card__avatar">
             <img
               v-if="showPhoto"
-              :src="playerPhoto!"
+              :src="photoSrc!"
               :alt="playerName"
               class="fan-card__avatar-img"
               @error="onPhotoError"
@@ -125,7 +149,7 @@ const displayMotto = computed(() => {
       <!-- 球队 & 球员信息卡片 -->
       <section class="fan-card__info-card">
         <div class="fan-card__team-side">
-          <img :src="teamFlag" :alt="teamName" class="fan-card__team-flag" crossorigin="anonymous">
+          <img :src="teamFlag" :alt="teamName" class="fan-card__team-flag">
           <div class="fan-card__team-detail">
             <small class="fan-card__label">最支持的球队</small>
             <strong class="fan-card__team-name">{{ teamName }}</strong>

@@ -75,9 +75,10 @@
 
             <!-- 右侧操作 -->
             <div class="match-item__action">
-              <NuxtLinkLocale :to="`/predict/${match.id}`" class="btn-predict">
-                预测
-              </NuxtLinkLocale>
+              <div class="predict-btns">
+                <NuxtLinkLocale :to="`/predict/${match.id}`" class="btn-predict btn-predict--human">{{ $t('home.predictHuman') }}</NuxtLinkLocale>
+                <button type="button" class="btn-predict btn-predict--ai" @click.prevent>{{ $t('home.predictAi') }}</button>
+              </div>
               <span class="match-item__deadline">截止: {{ formatDeadline(match.date, match.time) }}</span>
             </div>
           </div>
@@ -453,22 +454,41 @@ function formatPredictionTime(timestamp: number): string {
   align-items: flex-end;
   gap: 6px;
 }
+.predict-btns {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
 .btn-predict {
-  display: inline-block;
-  padding: 7px 24px;
-  border: 1.5px solid #2563EB;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
   border-radius: 999px;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
-  color: #2563EB;
   text-decoration: none;
-  background: transparent;
   cursor: pointer;
   transition: all 0.2s;
+  white-space: nowrap;
 }
-.btn-predict:hover {
-  background: #2563EB;
-  color: #FFFFFF;
+.btn-predict--human {
+  border: 1.5px solid #FFD700;
+  color: #000F49;
+  background: transparent;
+}
+.btn-predict--human:hover {
+  background: #FFD700;
+  color: #000F49;
+}
+.btn-predict--ai {
+  border: 1.5px solid #7C3AED;
+  color: #7C3AED;
+  background: transparent;
+}
+.btn-predict--ai:hover {
+  background: #7C3AED;
+  color: #fff;
 }
 .match-item__deadline {
   font-size: 11px;
