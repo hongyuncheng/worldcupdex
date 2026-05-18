@@ -66,7 +66,7 @@ export default defineNuxtConfig({
   },
 
   pwa: {
-    registerType: 'autoUpdate',
+    selfDestroying: true, // 注销旧SW并清除所有缓存，解决缓存导致的更新问题
     manifest: {
       name: 'WorldCupDex - 2026 FIFA World Cup Encyclopedia',
       short_name: 'WorldCupDex',
@@ -85,10 +85,6 @@ export default defineNuxtConfig({
           type: 'image/png',
         },
       ],
-    },
-    workbox: {
-      navigateFallback: null,
-      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
     },
   },
 
