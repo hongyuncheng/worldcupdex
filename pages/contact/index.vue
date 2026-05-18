@@ -134,6 +134,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
+
 useSeoConfig({
   title: `${t('pages.contact.title')} - WorldCupDex`,
   description: t('pages.contact.metaDescription'),
