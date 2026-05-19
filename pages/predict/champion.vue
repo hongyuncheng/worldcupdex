@@ -162,7 +162,11 @@ onMounted(() => {
       <!-- 结果区域 -->
       <template v-else>
         <section class="champion-page__result">
-          <h2 class="champion-page__result-title">你的冠军预测卡</h2>
+          <!-- 结果页顶部标题 -->
+          <div class="champion-page__result-hero">
+            <p class="champion-page__result-desc">成功！你的冠军预测卡已生成，生成专属预测卡片！</p>
+            <h2 class="champion-page__result-title">你的冠军预测卡</h2>
+          </div>
 
           <!-- 卡片预览 -->
           <div class="champion-page__card-wrapper">
@@ -397,12 +401,24 @@ onMounted(() => {
   align-items: center;
 }
 
+.champion-page__result-hero {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.champion-page__result-desc {
+  font-size: 14px;
+  color: #6B7280;
+  margin: 0 0 8px;
+  font-family: 'Inter', sans-serif;
+}
+
 .champion-page__result-title {
   font-family: 'Montserrat', sans-serif;
   font-size: 26px;
   font-weight: 800;
   color: #000F49;
-  margin: 0 0 32px;
+  margin: 0;
 }
 
 .champion-page__card-wrapper {

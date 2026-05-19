@@ -131,6 +131,7 @@ export default defineNuxtConfig({
         { name: 'apple-mobile-web-app-capable', content: 'yes' },
         { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
         { name: 'apple-mobile-web-app-title', content: 'WorldCupDex' },
+        { name: 'impact-site-verification', value: 'ebbe8dc5-81b0-4a99-a38d-5eb86aa891d0' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
