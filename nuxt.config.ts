@@ -127,6 +127,7 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: '2026 FIFA World Cup encyclopedia, match schedules, team info, and predictions. Your ultimate guide to the 2026 World Cup.' },
+        { name: 'google-site-verification', content: process.env.NUXT_PUBLIC_GSC_VERIFICATION || '' },
         { name: 'theme-color', content: '#1A237E' },
         { name: 'apple-mobile-web-app-capable', content: 'yes' },
         { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },

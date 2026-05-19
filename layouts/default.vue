@@ -77,7 +77,7 @@
         leave-from-class="opacity-100 translate-y-0"
         leave-to-class="opacity-0 -translate-y-2"
       >
-        <div v-if="mobileMenuOpen" class="lg:hidden border-t border-white/15 bg-white/10 backdrop-blur-sm">
+        <div v-if="mobileMenuOpen" class="lg:hidden absolute left-0 right-0 top-[90px] border-t border-white/15 bg-[#000F49] shadow-xl">
           <nav class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-1">
             <NuxtLinkLocale
               v-for="link in navLinks"

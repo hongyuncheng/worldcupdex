@@ -7,3 +7,5 @@ dist
 .vercel
 .netlify
 # data/
+scripts/.env
+reports/*.md
