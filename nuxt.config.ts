@@ -117,6 +117,11 @@ export default defineNuxtConfig({
         '/blog/2026-shijiebei-zhubanchengshi',
       ],
     },
+    hooks: {
+      'render:html': (html) => {
+        html.head.push(`<meta name="impact-site-verification" value="ea35b5b0-59ab-4f17-9d42-d7c5d2f6c20f">`)
+      },
+    },
   },
 
   app: {
