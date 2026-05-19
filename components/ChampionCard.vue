@@ -170,6 +170,7 @@ const flagUrl = computed(() => {
   gap: 22px;
   flex: 1;
   justify-content: center;
+  margin-right: 60px;
 }
 
 /* 国旗 */
