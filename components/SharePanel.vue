@@ -324,6 +324,7 @@ function showCopiedToast() {
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  white-space: nowrap;
   transition: transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
 }
@@ -335,6 +336,13 @@ function showCopiedToast() {
   opacity: 0.6;
   cursor: wait;
   transform: none;
+}
+
+.share-panel__save-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
 }
 
 /* ===== Share Grid ===== */

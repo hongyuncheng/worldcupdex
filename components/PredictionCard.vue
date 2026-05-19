@@ -67,8 +67,8 @@ function getFlagUrl(code: string) {
 
 <template>
   <div class="prediction-card">
-    <!-- 装饰网格线 -->
-    <div class="prediction-card__grid-lines" />
+    <!-- 背景图 -->
+    <div class="prediction-card__bg" aria-hidden="true" />
 
     <!-- 内容 -->
     <div class="prediction-card__content">
@@ -142,14 +142,14 @@ function getFlagUrl(code: string) {
   box-shadow: 0 8px 32px rgba(0, 15, 73, 0.4);
 }
 
-/* 装饰网格线 */
-.prediction-card__grid-lines {
+/* 背景图层 */
+.prediction-card__bg {
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 40px 40px;
+  background-image: url('/images/prediction-card-bg.png');
+  background-size: cover;
+  background-position: center top;
+  pointer-events: none;
   z-index: 0;
 }
 

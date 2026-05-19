@@ -225,17 +225,23 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
         </div>
 
         <!-- 分享面板 -->
-        <SharePanel
-          :share-text="shareText"
-          :share-url="shareUrl"
-          :card-ref="cardRef"
-          :filename="filename"
-        />
+        <div class="predict-page__share">
+          <SharePanel
+            :share-text="shareText"
+            :share-url="shareUrl"
+            :card-ref="cardRef"
+            :filename="filename"
+            save-button-text="保存预测卡片"
+            share-title="分享给好友"
+          />
+        </div>
 
         <!-- 重新预测 -->
-        <button class="predict-page__reset-btn" @click="handleReset">
-          🔄 {{ t('predict.rePredict') }}
-        </button>
+        <div class="predict-page__reset">
+          <button class="predict-page__reset-btn" @click="handleReset">
+            ← {{ t('predict.rePredict') }}
+          </button>
+        </div>
       </template>
     </div>
   </div>
@@ -556,27 +562,63 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
   margin-bottom: 32px;
 }
 
-/* 重新预测按钮 */
-.predict-page__reset-btn {
-  display: block;
+/* 分享面板容器 */
+.predict-page__share {
   width: 100%;
-  max-width: 300px;
-  margin: 24px auto 0;
-  padding: 14px;
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
-  color: #374151;
-  font-size: 15px;
-  font-weight: 600;
+  max-width: 500px;
+  margin: 0 auto 32px;
+}
+
+/* SharePanel 浅色主题覆盖（与冠军预测页一致） */
+.predict-page__share :deep(.share-panel__header-text) {
+  color: #4B5563;
+}
+.predict-page__share :deep(.share-panel__diamond) {
+  color: rgba(255, 165, 0, 0.7);
+}
+.predict-page__share :deep(.share-panel__deco-line) {
+  background: linear-gradient(90deg, transparent, rgba(0, 15, 73, 0.2), transparent);
+}
+.predict-page__share :deep(.share-panel__label) {
+  color: #4B5563;
+}
+.predict-page__share :deep(.share-panel__btn) {
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  color: #1A1A1A;
+  box-shadow: 0 2px 8px rgba(15, 32, 80, 0.05);
+}
+.predict-page__share :deep(.share-panel__btn:hover) {
+  background: #F8FAFF;
+  border-color: #2D7AF6;
+  box-shadow: 0 4px 12px rgba(45, 122, 246, 0.18);
+}
+.predict-page__share :deep(.share-panel__btn:last-child .share-panel__icon) {
+  background: #1A237E !important;
+}
+
+/* 重新预测按钮 */
+.predict-page__reset {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.predict-page__reset-btn {
+  padding: 10px 24px;
+  background: #FFFFFF;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  color: #6B7280;
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.2s ease;
 }
 
 .predict-page__reset-btn:hover {
-  background: #f9fafb;
-  border-color: #4A90D9;
-  color: #4A90D9;
+  background: #F3F4F6;
+  color: #000F49;
+  border-color: #2D7AF6;
 }
 
 /* ===== 响应式 ===== */
