@@ -44,8 +44,8 @@ const flagUrl = computed(() => {
 
 <template>
   <div class="champion-card">
-    <!-- 右侧装饰背景 — 占位，后续可替换为 background-image -->
-    <div class="champion-card__deco" aria-hidden="true" />
+    <!-- 背景图 -->
+    <div class="champion-card__bg" aria-hidden="true" />
 
     <div class="champion-card__content">
       <!-- Header -->
@@ -122,15 +122,13 @@ const flagUrl = computed(() => {
   color: #1F2937;
 }
 
-/* 右侧装饰背景 — 占位效果，后续可替换为 background-image */
-.champion-card__deco {
+/* 背景图层 */
+.champion-card__bg {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 40%;
-  height: 100%;
-  background: linear-gradient(180deg, #2563EB 0%, #1D4ED8 60%, #1E3A8A 100%);
-  clip-path: polygon(40% 0, 100% 0, 100% 100%, 0% 100%);
+  inset: 0;
+  background-image: url('/images/champion-card-bg.png');
+  background-size: cover;
+  background-position: center top;
   pointer-events: none;
 }
 
