@@ -10,9 +10,15 @@ const { t } = useI18n()
 const runtimeConfig = useRuntimeConfig()
 
 const kickiqUrl = computed<string>(() => {
-  // 优先读取环境变量配置，如果没配置则使用默认的 https://kickiq.org/quiz
-  const raw = (runtimeConfig.public?.kickiqUrl as string) || 'https://kickiq.org/quiz'
-  return raw.replace(/\/+$/, '')
+  // 优先读取环境变量配置
+  let raw = (runtimeConfig.public?.kickiqUrl as string) || 'https://kickiq.org'
+  raw = raw.replace(/\/+$/, '') // 去除末尾的斜杠
+  
+  // 确保它指向 /quiz 页面
+  if (!raw.endsWith('/quiz')) {
+    raw += '/quiz'
+  }
+  return raw
 })
 </script>
 

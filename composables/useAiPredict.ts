@@ -5,11 +5,18 @@ export function useAiPredict() {
   const { track } = useAnalytics()
 
   function handleAiPredict(team1NameEn: string, team2NameEn: string, source: string) {
-    // 统一获取跳转的基础地址
-    const baseUrl = (runtimeConfig.public?.kickiqUrl as string) || 'https://kickiq.org/quiz'
+    // 统一获取跳转的基础地址（CF 环境变量可能配置的是 https://kickiq.org）
+    let baseUrl = (runtimeConfig.public?.kickiqUrl as string) || 'https://kickiq.org'
+    baseUrl = baseUrl.replace(/\/+$/, '') // 移除末尾多余斜杠
     
-    // 将 /quiz 替换为 /predict
-    const targetUrl = new URL(baseUrl.replace('/quiz', '/predict'))
+    // 强制追加 /predict 路径
+    if (baseUrl.endsWith('/quiz')) {
+      baseUrl = baseUrl.replace('/quiz', '/predict')
+    } else if (!baseUrl.endsWith('/predict')) {
+      baseUrl += '/predict'
+    }
+    
+    const targetUrl = new URL(baseUrl)
     
     // 统一拼接球队参数 A vs B
     targetUrl.searchParams.set('team1', team1NameEn)
