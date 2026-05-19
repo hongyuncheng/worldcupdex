@@ -117,11 +117,6 @@ export default defineNuxtConfig({
         '/blog/2026-shijiebei-zhubanchengshi',
       ],
     },
-    hooks: {
-      'render:html': (html) => {
-        html.head.push(`<meta name="impact-site-verification" value="ea35b5b0-59ab-4f17-9d42-d7c5d2f6c20f">`)
-      },
-    },
   },
 
   app: {
@@ -136,7 +131,6 @@ export default defineNuxtConfig({
         { name: 'apple-mobile-web-app-capable', content: 'yes' },
         { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
         { name: 'apple-mobile-web-app-title', content: 'WorldCupDex' },
-        { name: 'impact-site-verification', value: 'ea35b5b0-59ab-4f17-9d42-d7c5d2f6c20f' },
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

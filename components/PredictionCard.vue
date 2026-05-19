@@ -74,7 +74,9 @@ function getFlagUrl(code: string) {
     <div class="prediction-card__content">
       <!-- Header -->
       <header class="prediction-card__header">
+        <span class="prediction-card__header-deco">◆</span>
         <span class="prediction-card__header-title">⚽ MY PREDICTION</span>
+        <span class="prediction-card__header-deco">◆</span>
       </header>
 
       <!-- 双方球队 -->
@@ -110,20 +112,32 @@ function getFlagUrl(code: string) {
 
       <!-- 预测结果区域 -->
       <section class="prediction-card__result">
-        <p class="prediction-card__result-text">{{ predictionText }}</p>
+        <span class="prediction-card__result-label">我的预测</span>
+        <p class="prediction-card__result-text">{{ predictionText.replace(/^我预测：/, '') }}</p>
       </section>
 
       <!-- 赛事信息 -->
       <section class="prediction-card__info">
-        <p class="prediction-card__info-line">{{ matchInfoLine }}</p>
-        <p class="prediction-card__info-venue">📍 {{ venue }} · {{ city }}</p>
+        <div class="prediction-card__info-item">
+          <svg class="prediction-card__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          <div>
+            <p class="prediction-card__info-label">比赛时间</p>
+            <p class="prediction-card__info-value">{{ matchInfoLine }}</p>
+          </div>
+        </div>
+        <div class="prediction-card__info-item">
+          <svg class="prediction-card__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <p class="prediction-card__info-label">比赛场馆</p>
+            <p class="prediction-card__info-value">{{ venue }} · {{ city }}</p>
+          </div>
+        </div>
       </section>
 
       <!-- Footer -->
       <footer class="prediction-card__footer">
-        <span class="prediction-card__footer-deco">─── WorldCupDex ───</span>
+        <span class="prediction-card__footer-deco">◆ WorldCupDex ◆</span>
         <span class="prediction-card__footer-cta">你也来预测 → worldcupdex.org</span>
-        <span class="prediction-card__brand-watermark">{{ brandDomain }} · {{ brandSlogan }}</span>
       </footer>
     </div>
   </div>
@@ -134,12 +148,14 @@ function getFlagUrl(code: string) {
   position: relative;
   width: 400px;
   height: 520px;
-  border-radius: 16px;
+  border-radius: 20px;
   overflow: hidden;
-  background: linear-gradient(180deg, #000F49 0%, #1A237E 100%);
-  font-family: 'Inter', 'Montserrat', sans-serif;
-  color: #ffffff;
-  box-shadow: 0 8px 32px rgba(0, 15, 73, 0.4);
+  background: #FFFFFF;
+  font-family: 'Inter', 'PingFang SC', sans-serif;
+  color: #1F2937;
+  box-shadow:
+    0 12px 48px rgba(0, 15, 73, 0.10),
+    0 4px 12px rgba(0, 15, 73, 0.06);
 }
 
 /* 背景图层 */
@@ -157,7 +173,7 @@ function getFlagUrl(code: string) {
 .prediction-card__content {
   position: relative;
   z-index: 1;
-  padding: 28px 24px 24px;
+  padding: 28px 24px 0;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -165,17 +181,24 @@ function getFlagUrl(code: string) {
 
 /* Header */
 .prediction-card__header {
-  text-align: center;
-  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.prediction-card__header-deco {
+  font-size: 8px;
+  color: #93C5FD;
 }
 
 .prediction-card__header-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 800;
   letter-spacing: 2px;
-  color: #FFD700;
-  text-shadow: 0 1px 6px rgba(255, 215, 0, 0.5);
+  color: #1E3A8A;
 }
 
 /* 球队区域 */
@@ -184,7 +207,7 @@ function getFlagUrl(code: string) {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 
 .prediction-card__team {
@@ -196,16 +219,16 @@ function getFlagUrl(code: string) {
 }
 
 .prediction-card__flag-wrapper {
-  width: 64px;
-  height: 64px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid rgba(255, 215, 0, 0.4);
-  box-shadow: 0 0 12px rgba(255, 215, 0, 0.15);
+  border: 2px solid #E2E8F0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.05);
+  background: #F8FAFC;
 }
 
 .prediction-card__flag {
@@ -215,90 +238,121 @@ function getFlagUrl(code: string) {
 }
 
 .prediction-card__team-name {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
-  color: #ffffff;
+  color: #111827;
   text-align: center;
 }
 
 .prediction-card__team-name-en {
   font-size: 11px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #9CA3AF;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .prediction-card__vs {
   font-family: 'Montserrat', sans-serif;
   font-size: 22px;
   font-weight: 800;
-  color: rgba(255, 255, 255, 0.4);
+  color: #3B82F6;
   flex-shrink: 0;
 }
 
 /* 预测结果区域 */
 .prediction-card__result {
-  background: rgba(255, 215, 0, 0.15);
-  border: 1px solid rgba(255, 215, 0, 0.4);
+  background: #2563EB;
   border-radius: 12px;
-  padding: 16px 20px;
-  margin-bottom: 24px;
-  text-align: center;
+  padding: 12px 16px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.prediction-card__result-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.75);
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 3px 8px;
+  border-radius: 6px;
+  flex-shrink: 0;
 }
 
 .prediction-card__result-text {
   font-size: 16px;
   font-weight: 700;
-  color: #FFD700;
+  color: #FFFFFF;
   margin: 0;
-  text-shadow: 0 1px 4px rgba(255, 215, 0, 0.3);
+  text-align: center;
+  flex: 1;
 }
 
 /* 赛事信息 */
 .prediction-card__info {
-  text-align: center;
+  display: flex;
+  gap: 12px;
   margin-bottom: auto;
+  padding: 14px 16px;
+  background: rgba(248, 250, 252, 0.85);
+  border-radius: 12px;
+  border: 1px solid #E2E8F0;
 }
 
-.prediction-card__info-line {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.7);
-  margin: 0 0 6px;
+.prediction-card__info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  flex: 1;
 }
 
-.prediction-card__info-venue {
+.prediction-card__info-icon {
+  width: 16px;
+  height: 16px;
+  color: #3B82F6;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.prediction-card__info-label {
+  font-size: 10px;
+  color: #9CA3AF;
+  margin: 0 0 2px;
+  font-weight: 500;
+}
+
+.prediction-card__info-value {
   font-size: 12px;
-  color: rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  color: #374151;
   margin: 0;
+  line-height: 1.4;
 }
 
 /* Footer */
 .prediction-card__footer {
-  text-align: center;
-  padding-top: 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  align-items: center;
+  gap: 3px;
+  margin: 0 -24px;
+  padding: 12px 24px;
+  background: #1E3A8A;
 }
 
 .prediction-card__footer-deco {
-  font-size: 13px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.4);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.80);
   letter-spacing: 1px;
 }
 
 .prediction-card__footer-cta {
-  font-size: 12px;
-  color: rgba(255, 215, 0, 0.7);
-  font-weight: 500;
-}
-
-.prediction-card__brand-watermark {
-  font-size: 10px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.35);
-  letter-spacing: 0.6px;
-  margin-top: 2px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 400;
 }
 </style>
