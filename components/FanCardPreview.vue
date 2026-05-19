@@ -94,7 +94,7 @@ const displayMotto = computed(() => {
     <!-- 背景图层 -->
     <div
       class="fan-card__bg"
-      :style="{ backgroundImage: `url('/images/fancard-bg-v2.png')` }"
+      :style="{ backgroundImage: `url('/images/fancard-bg-v3.png')` }"
     />
     <!-- 遮罩层 -->
     <div class="fan-card__overlay" />
@@ -218,7 +218,7 @@ const displayMotto = computed(() => {
 .fan-card__bg {
   position: absolute;
   inset: 0;
-  background-size: 107%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
