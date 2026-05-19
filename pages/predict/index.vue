@@ -3,24 +3,24 @@
     <!-- Hero 区域 -->
     <section class="predict-hero">
       <div class="hero__inner">
-          <h1 class="hero__title">世界杯<span class="hero__title--highlight">预测</span></h1>
-          <p class="hero__subtitle">预测比赛结果，生成你的专属预测卡片，分享给好友</p>
+          <h1 class="hero__title">{{ $t('predict.titlePrefix') }}<span class="hero__title--highlight">{{ $t('predict.titleHighlight') }}</span></h1>
+          <p class="hero__subtitle">{{ $t('predict.subtitle') }}</p>
 
           <!-- 双入口卡片 -->
           <div class="hero__actions">
             <NuxtLinkLocale to="/predict/champion" class="action-card">
               <div class="action-card__icon action-card__icon--champion">🏆</div>
               <div class="action-card__info">
-                <span class="action-card__title">冠军竞猜</span>
-                <span class="action-card__desc">选择你心中的冠军球队</span>
+                <span class="action-card__title">{{ $t('predict.champion') }}</span>
+                <span class="action-card__desc">{{ $t('predict.championDesc') }}</span>
               </div>
               <span class="action-card__arrow">→</span>
             </NuxtLinkLocale>
             <NuxtLinkLocale to="/schedule" class="action-card">
               <div class="action-card__icon action-card__icon--match">⚽</div>
               <div class="action-card__info">
-                <span class="action-card__title">单场预测</span>
-                <span class="action-card__desc">预测即将开始的比赛</span>
+                <span class="action-card__title">{{ $t('predict.matchPredict') }}</span>
+                <span class="action-card__desc">{{ $t('predict.matchPredictDesc') }}</span>
               </div>
               <span class="action-card__arrow">→</span>
             </NuxtLinkLocale>
@@ -31,7 +31,7 @@
     <!-- 比赛列表区域 -->
     <section class="matches">
       <div class="matches__inner">
-        <h2 class="section-title">📅 即将开赛</h2>
+        <h2 class="section-title">📅 {{ $t('predict.upcoming') }}</h2>
 
         <!-- Loading -->
         <div v-if="pending" class="matches__loading">
@@ -60,7 +60,7 @@
                 <img :src="match.homeTeam.flag" :alt="getTeamName(match.homeTeam)" class="match-item__flag" />
                 <div class="match-item__team-info">
                   <span class="match-item__team-name">{{ getTeamName(match.homeTeam) }}</span>
-                  <span v-if="match.group" class="match-item__group">{{ match.group }}组</span>
+                  <span v-if="match.group" class="match-item__group">{{ match.group }}{{ $t('predict.groupSuffix') }}</span>
                 </div>
               </div>
               <span class="match-item__vs">vs</span>
@@ -68,7 +68,7 @@
                 <img :src="match.awayTeam.flag" :alt="getTeamName(match.awayTeam)" class="match-item__flag" />
                 <div class="match-item__team-info">
                   <span class="match-item__team-name">{{ getTeamName(match.awayTeam) }}</span>
-                  <span v-if="match.group" class="match-item__group">{{ match.group }}组</span>
+                  <span v-if="match.group" class="match-item__group">{{ match.group }}{{ $t('predict.groupSuffix') }}</span>
                 </div>
               </div>
             </div>
@@ -79,20 +79,20 @@
                 <NuxtLinkLocale :to="`/predict/${match.id}`" class="btn-predict btn-predict--human">{{ $t('home.predictHuman') }}</NuxtLinkLocale>
                 <button type="button" class="btn-predict btn-predict--ai" @click.prevent="handleAiPredict(match.homeTeam.nameEn, match.awayTeam.nameEn, 'predict_list_ai_btn')">{{ $t('home.predictAi') }}</button>
               </div>
-              <span class="match-item__deadline">截止: {{ formatDeadline(match.date, match.time) }}</span>
+              <span class="match-item__deadline">{{ $t('predict.deadline') }}: {{ formatDeadline(match.date, match.time) }}</span>
             </div>
           </div>
 
           <!-- Empty state -->
           <div v-if="filteredMatches.length === 0 && !pending" class="matches__empty">
-            暂无即将开赛的比赛
+            {{ $t('predict.noUpcoming') }}
           </div>
         </div>
 
         <!-- 查看全部按钮 -->
         <div class="btn-view-more-wrapper">
           <NuxtLinkLocale to="/schedule" class="btn-view-more">
-            查看全部 {{ totalUpcoming }} 场待预测比赛 →
+            {{ $t('predict.viewAllCount', { count: totalUpcoming }) }}
           </NuxtLinkLocale>
         </div>
       </div>
@@ -101,14 +101,14 @@
     <!-- 我的预测卡集 -->
     <section v-if="myPredictions.length > 0" class="my-cards">
       <div class="my-cards__inner">
-        <h2 class="section-title">🎯 我的预测</h2>
+        <h2 class="section-title">🎯 {{ $t('predict.myPredictions') }}</h2>
         <div class="cards-scroll">
           <div
             v-for="pred in myPredictions"
             :key="pred.matchId"
             class="pred-card"
           >
-            <div class="pred-card__match">第 {{ pred.matchId }} 场</div>
+            <div class="pred-card__match">{{ $t('predict.matchNo', { id: pred.matchId }) }}</div>
             <div class="pred-card__result">{{ getPredictionText(pred) }}</div>
             <div v-if="pred.score" class="pred-card__score">
               {{ pred.score.home }} : {{ pred.score.away }}
@@ -124,16 +124,14 @@
 <script setup lang="ts">
 import type { MatchItem, ListResponse } from '~/types'
 
-const { locale } = useI18n()
+const { t, locale } = useI18n()
 const { handleAiPredict } = useAiPredict()
 
 // ─── SEO ───
 useSeoConfig({
-  title: '世界杯预测 - WorldCupDex',
-  description: '预测2026世界杯比赛结果，生成专属预测卡片分享给好友。',
+  title: t('predict.seoTitle'),
+  description: t('predict.seoDesc'),
 })
-
-
 
 // ─── 获取即将开赛的比赛 ───
 const { data: upcomingMatches, pending } = useUpcomingMatches(6)
@@ -167,15 +165,18 @@ const myPredictions = computed(() => {
   return preds.sort((a, b) => b.timestamp - a.timestamp).slice(0, 6)
 })
 
-
-
-// ─── 日期行格式化 (例: "6月11日 周四") ───
+// ─── 日期行格式化，根据语言切换格式 ───
 function formatDateLine(date: string): string {
   const d = new Date(date + 'T00:00:00')
-  const month = d.getMonth() + 1
-  const day = d.getDate()
-  const weekdays = ['日', '一', '二', '三', '四', '五', '六']
-  return `${month}月${day}日 周${weekdays[d.getDay()]}`
+  if (locale.value === 'zh') {
+    const month = d.getMonth() + 1
+    const day = d.getDate()
+    const weekdays = ['日', '一', '二', '三', '四', '五', '六']
+    return `${month}月${day}日 周${weekdays[d.getDay()]}`
+  }
+  return d.toLocaleDateString(locale.value === 'es' ? 'es-ES' : 'en-US', {
+    month: 'short', day: 'numeric', weekday: 'short',
+  })
 }
 
 // ─── 截止时间 (比赛前1分钟) ───
@@ -184,8 +185,7 @@ function formatDeadline(date: string, time: string): string {
   d.setMinutes(d.getMinutes() - 1)
   const hh = String(d.getHours()).padStart(2, '0')
   const mm = String(d.getMinutes()).padStart(2, '0')
-  const ss = '00'
-  return `${hh}:${mm}:${ss}`
+  return `${hh}:${mm}:00`
 }
 
 // ─── 获取队名 ───
@@ -195,17 +195,22 @@ function getTeamName(team: any): string {
 
 // ─── 获取预测结果文案 ───
 function getPredictionText(pred: any): string {
-  if (pred.result === 'HOME_WIN') return '主胜'
-  if (pred.result === 'AWAY_WIN') return '客胜'
-  return '平局'
+  if (pred.result === 'HOME_WIN') return t('predict.homeWin')
+  if (pred.result === 'AWAY_WIN') return t('predict.awayWin')
+  return t('predict.draw')
 }
 
-// ─── 预测时间格式化 ───
+// ─── 预测时间格式化，根据语言切换格式 ───
 function formatPredictionTime(timestamp: number): string {
   const d = new Date(timestamp)
-  const month = d.getMonth() + 1
-  const day = d.getDate()
-  return `${month}月${day}日`
+  if (locale.value === 'zh') {
+    const month = d.getMonth() + 1
+    const day = d.getDate()
+    return `${month}月${day}日`
+  }
+  return d.toLocaleDateString(locale.value === 'es' ? 'es-ES' : 'en-US', {
+    month: 'short', day: 'numeric',
+  })
 }
 </script>
 

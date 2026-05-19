@@ -57,16 +57,29 @@
 
 ## 4. 数据查看与对账建议
 
-### 如何在 GA4 中查看对方带来的流量？
-无论是在 WorldCupDex 还是 KickIQ 的 GA4 后台，查看方式完全一致：
-1. 登录 GA4 后台。
-2. 导航至：**报告 (Reports) -> 生命周期 (Life cycle) -> 流量获取 (Acquisition) -> 流量获取 (Traffic acquisition)**。
-3. 将数据表格左上角的主要维度（通常默认为“默认渠道组 Session default channel group”）点击切换为 **“会话来源/媒介” (Session source/medium)**。
-4. 搜索框中输入 `worldcupdex` (KickIQ 侧操作) 或 `kickiq` (WorldCupDex 侧操作)，即可清晰看到由对方带来的独立会话数、参与度、停留时间等指标。
+### 如何在 GA4 中查看对方带来的流量（UTM 参数）？
+由于 GA4 后台存在两种不同的导航布局（旧版“生命周期”与新版“业务目标”），请根据您的后台界面选择对应的查看路径。
+
+**如果您的后台左侧菜单是“生命周期 (Life cycle)”：**
+1. 导航至：**报告 (Reports) -> 生命周期 (Life cycle) -> 流量获取 (Acquisition) -> 流量获取 (Traffic acquisition)**。
+2. 将数据表格左上角的主要维度（通常默认为“默认渠道组 Session default channel group”）点击切换为 **“会话来源/媒介” (Session source/medium)**。
+3. 搜索框中输入 `worldcupdex` (KickIQ 侧操作) 或 `kickiq` (WorldCupDex 侧操作)。
+
+**如果您的后台左侧菜单是“业务目标 (Business Objectives)”：**
+1. 导航至：**报告 (Reports) -> 业务目标 (Business Objectives) 展开 -> 发掘潜在客户 (Generate leads) 展开 -> 流量获取 (Traffic acquisition)**。
+2. 同样，将表格上方的主要维度切换为 **“会话来源/媒介” (Session source/medium)**。
+3. 搜索对应的来源标识。
+
+### 如何查看本站发出的点击数（出站自定义事件）？
+这是发起端核对自身发出了多少流量的路径（查看 `cross_site_click` 事件）：
+* **旧版生命周期导航**：**报告 -> 生命周期 -> 参与度 (Engagement) -> 事件 (Events)**。
+* **新版业务目标导航**：**报告 -> 业务目标 -> 查看用户互动度和留存率 (Examine user behavior) -> 事件 (Events)**。
+
+> **⚠️ 重要提醒**：GA4 的数据不是实时的（除了“实时概览”页面外）。标准的事件和流量获取报表通常需要 **24 到 48 小时** 的处理时间才会显示出来。请耐心等待数据出库后再进行核对。
 
 ### 定期对账机制
 建议在每月底或重要节点，双方导出各自后台的统计数据进行对比：
-* **WorldCupDex 提供**：点击前往 KickIQ 的总出站点击数。
+* **WorldCupDex 提供**：点击前往 KickIQ 的总出站点击数 (`cross_site_click` 事件数)。
 * **KickIQ 提供**：GA4 记录到的 `utm_source=worldcupdex` 的实际会话到达数。
 
 > **注**：通常由于页面加载耗时、用户提前关闭网页、或部分用户开启了 AdBlocker 广告拦截插件（导致 GA4 无法上报），到达数会比点击数低 15%~30%，属于业界正常的数据损耗范围。

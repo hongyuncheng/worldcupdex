@@ -9,7 +9,7 @@ const { generateFanNumber, saveFanCard } = useFanCard()
 // SEO
 useSeoConfig({
   title: `${t('fanCard.title')} - WorldCupDex`,
-  description: '创建你的专属球迷身份卡，展示你支持的球队和座右铭。',
+  description: t('fanCard.seoDesc'),
 })
 
 // ── Step state ──
@@ -263,7 +263,7 @@ onMounted(() => {
               class="text-sm font-semibold hidden sm:inline"
               :style="{ color: currentStep >= 1 ? '#FFD700' : 'rgba(255,255,255,0.5)' }"
             >
-              选择你支持的球队
+              {{ t('fanCard.step1Title') }}
             </span>
           </div>
           <!-- Line -->
@@ -283,7 +283,7 @@ onMounted(() => {
               class="text-sm font-semibold hidden sm:inline"
               :style="{ color: currentStep >= 2 ? '#FFD700' : 'rgba(255,255,255,0.5)' }"
             >
-              选择你想展示的球迷卡
+              {{ t('fanCard.step2Title') }}
             </span>
           </div>
         </div>
@@ -307,7 +307,7 @@ onMounted(() => {
               <h2 class="text-lg md:text-xl font-bold text-gray-900">
                 {{ t('fanCard.step1Title') }}
               </h2>
-              <p class="text-sm text-gray-500 mt-1">从48支球队中选择你支持的球队，生成专属你的球迷身份证卡</p>
+              <p class="text-sm text-gray-500 mt-1">{{ t('fanCard.step1Desc') }}</p>
             </div>
           </div>
 
@@ -320,7 +320,7 @@ onMounted(() => {
               <input
                 v-model="searchQuery"
                 type="text"
-                placeholder="搜索国家或地区..."
+                :placeholder="t('fanCard.searchPlaceholder')"
                 class="w-full pl-11 pr-4 py-3 rounded-full bg-gray-50/80 text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-blue-500 focus:bg-white focus:outline-none transition-all"
               >
             </div>
@@ -336,7 +336,7 @@ onMounted(() => {
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
                 </svg>
-                {{ selectedConfederation || '按地区筛选' }}
+                {{ selectedConfederation || t('fanCard.filterByRegion') }}
                 <svg
                   class="w-4 h-4 transition-transform"
                   :class="showConfederationDropdown ? 'rotate-180' : ''"
@@ -363,7 +363,7 @@ onMounted(() => {
                     :class="selectedConfederation === null ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:bg-gray-50'"
                     @click.stop="toggleConfederation(null)"
                   >
-                    全部地区
+                    {{ t('fanCard.allRegions') }}
                   </button>
                   <div class="my-1 border-t border-gray-100" />
                   <button
@@ -428,8 +428,8 @@ onMounted(() => {
           <!-- 底部区域 -->
           <div class="mt-10 flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-gray-100">
             <div class="text-left">
-              <p class="text-gray-900 font-bold text-sm">还没有找到你的主队？</p>
-              <p class="text-gray-400 text-xs mt-1">我们支持所有国际足联认可的国家/地区</p>
+              <p class="text-gray-900 font-bold text-sm">{{ t('fanCard.cantFindTeam') }}</p>
+              <p class="text-gray-400 text-xs mt-1">{{ t('fanCard.cantFindDesc') }}</p>
             </div>
             <Transition
               enter-active-class="transition duration-300 ease-out"
@@ -442,7 +442,7 @@ onMounted(() => {
                 style="background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%); box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);"
                 @click="goToStep2"
               >
-                下一步：选择球迷卡模板 →
+                {{ t('fanCard.nextStepBtn') }}
               </button>
             </Transition>
           </div>
