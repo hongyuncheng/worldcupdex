@@ -180,8 +180,11 @@
         <NuxtLinkLocale
           to="/quiz"
           class="relative overflow-hidden rounded-2xl px-8 py-6 flex flex-row items-center justify-between cursor-pointer no-underline hover:shadow-lg transition-shadow gap-6"
-          style="background: linear-gradient(135deg, #0a1628 0%, #0d1b3e 60%, #162d5a 100%);"
+          style="background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);"
         >
+          <!-- Background Pattern -->
+          <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('/images/quiz-hero-bg.png'); mix-blend-mode: overlay;"></div>
+          
           <!-- Content -->
           <div class="relative z-10 flex flex-col items-start gap-2">
             <h3 class="font-bold text-white" style="font-family: 'Montserrat', sans-serif; font-size: 20px;">
@@ -225,6 +228,9 @@
           class="relative overflow-hidden rounded-2xl px-8 py-6 flex flex-row items-center justify-between cursor-pointer no-underline hover:shadow-lg transition-shadow gap-6"
           style="background: linear-gradient(135deg, #1a0533 0%, #2d1b69 60%, #3b2080 100%);"
         >
+          <!-- Background Pattern -->
+          <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('/images/fancard-bg-v4.png'); mix-blend-mode: overlay;"></div>
+
           <!-- Content -->
           <div class="relative z-10 flex flex-col items-start gap-2">
             <h3 class="font-bold text-white" style="font-family: 'Montserrat', sans-serif; font-size: 20px;">
@@ -288,6 +294,11 @@
         </div>
       </div>
     </section>
+
+    <!-- Floating Draggable Discord Button (Home Page Only) -->
+    <ClientOnly>
+      <DraggableDiscord :discord-url="discordUrl" />
+    </ClientOnly>
   </div>
 </template>
 
@@ -309,6 +320,7 @@ useSeoConfig({
 const runtimeConfig = useRuntimeConfig()
 const siteUrl = (runtimeConfig.public?.siteUrl as string) || 'https://worldcupdex.org'
 const kickiqUrl = (runtimeConfig.public?.kickiqUrl as string) || 'https://kickiq.app'
+const discordUrl = (runtimeConfig.public?.discordUrl as string) || 'https://discord.gg/zpCBfUZbUn'
 
 const organizationData = {
   name: 'WorldCupDex',

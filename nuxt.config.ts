@@ -33,6 +33,7 @@ export default defineNuxtConfig({
       adsenseClient: process.env.NUXT_PUBLIC_ADSENSE_CLIENT || 'ca-pub-1445960722760802',
       kickiqUrl: 'https://kickiq.app',
       siteUrl: 'https://worldcupdex.org',
+      discordUrl: process.env.NUXT_PUBLIC_DISCORD_URL || 'https://discord.gg/zpCBfUZbUn',
     },
   },
 
@@ -112,9 +113,6 @@ export default defineNuxtConfig({
         '/blog',
         '/en/blog',
         '/es/blog',
-        '/blog/road-to-2026-world-cup-host-cities',
-        '/en/blog/road-to-2026-world-cup-host-cities',
-        '/blog/2026-shijiebei-zhubanchengshi',
       ],
     },
   },

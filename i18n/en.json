@@ -64,8 +64,8 @@
     "fanCardCtaSub": "Create your unique fan identity, show your passion",
     "fanCardFeature1": "Customize avatar, team and motto",
     "fanCardFeature2": "Share your card, connect with fans",
-    "startChallenge": "Start Challenge \u2192",
-    "generateCard": "Generate Card \u2192"
+    "startChallenge": "Start Challenge →",
+    "generateCard": "Generate Card →"
   },
   "common": {
     "viewAll": "View All",
@@ -190,10 +190,10 @@
     "seoDesc": "Predict 2026 World Cup match results and generate your exclusive prediction card to share.",
     "myPredictions": "My Predictions",
     "predictBtn": "Predict",
-    "generateCard": "Generate Prediction Card \u2728",
+    "generateCard": "Generate Prediction Card ✨",
     "rePredict": "Predict Again",
     "selectChampion": "Choose Your Champion",
-    "generateChampionCard": "Generate My Champion Card \ud83c\udfc6",
+    "generateChampionCard": "Generate My Champion Card 🏆",
     "reSelect": "Choose Again",
     "homeWin": "Home Win",
     "draw": "Draw",
@@ -204,8 +204,23 @@
     "vs": "VS",
     "daysToStart": "{days} days to kickoff",
     "predictTime": "Predicted on: ",
-    "shareTextChampion": "I'm picking {team} to win the 2026 World Cup! \ud83c\udfc6 Who's your pick?",
+    "shareTextChampion": "I'm picking {team} to win the 2026 World Cup! 🏆 Who's your pick?",
     "shareTextMatch": "I predict {home} {score} {away}! What's your call? Make your prediction card at WorldCupDex"
+  },
+  "h2h": {
+    "title": "World Cup History Comparison",
+    "appearances": "Appearances",
+    "titles": "Titles",
+    "bestResult": "Best Result",
+    "noAppearances": "First debut",
+    "bestResult_champion": "Champion",
+    "bestResult_runner_up": "Runner-up",
+    "bestResult_third_place": "3rd Place",
+    "bestResult_fourth_place": "4th Place",
+    "bestResult_quarter_final": "Quarter-final",
+    "bestResult_round_of_16": "Round of 16",
+    "bestResult_group_stage": "Group Stage",
+    "bestResult_debut": "First time"
   },
   "predictDetail": {
     "title": "Make Prediction",
@@ -417,7 +432,7 @@
     "shareYourScore": "Share Your Score",
     "playAgain": "Play Again",
     "participants": "{count} people joined today",
-    "rules": "5 Questions \u00b7 30s each \u00b7 Instant results",
+    "rules": "5 Questions · 30s each · Instant results",
     "challengeFriends": "Can you beat 90% of fans?",
     "saveImage": "Save Score Image",
     "challengeMain": "Your friend scored {score} pts, beating {percentile}% of fans",
@@ -504,10 +519,10 @@
       "title": "I've locked in my 2026 World Cup champion: {team}!",
       "description": "I'm picking {team} to win it all! Test your World Cup IQ",
       "hashtag": "#WorldCupDex #WorldCup2026",
-      "cta": "Make your pick at worldcupdex.org \u2192"
+      "cta": "Make your pick at worldcupdex.org →"
     },
     "variantB": {
-      "title": "I just scored {score} pts on the World Cup IQ \u2014 dare to challenge me?",
+      "title": "I just scored {score} pts on the World Cup IQ — dare to challenge me?",
       "description": "Think you know football? I just scored {score} pts on the World Cup IQ",
       "hashtag": "#WorldCupIQ #BeatMyScore",
       "cta": "Prove it at worldcupdex.org →"

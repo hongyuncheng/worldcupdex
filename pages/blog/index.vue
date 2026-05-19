@@ -30,7 +30,7 @@
       <NuxtLinkLocale
         v-for="post in filteredPosts"
         :key="post.path"
-        :to="post.path"
+        :to="post.path.replace(/^\/(zh|en|es)/, '')"
         class="bg-white overflow-hidden card-hover cursor-pointer"
         style="box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-radius: 12px; text-decoration: none; display: block;"
       >

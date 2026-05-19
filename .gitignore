@@ -8,4 +8,6 @@ dist
 .netlify
 # data/
 scripts/.env
+.env
 reports/*.md
+scripts/generate-analytics-report.mjs

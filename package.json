@@ -14,7 +14,8 @@
     "fetch-photos": "node scripts/fetch-player-photos.mjs",
     "generate-predictions": "node scripts/generate-ai-predictions.mjs",
     "gsc-auth": "node scripts/gsc-auth.mjs",
-    "gsc-report": "node scripts/generate-gsc-report.mjs"
+    "gsc-report": "node scripts/generate-gsc-report.mjs",
+    "cf-report": "node scripts/generate-analytics-report.mjs"
   },
   "dependencies": {
     "@nuxt/content": "^3.5.1",

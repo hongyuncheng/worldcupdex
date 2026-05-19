@@ -72,6 +72,29 @@ const shareUrl = computed(() => {
 
 const filename = computed(() => `worldcupdex-prediction-${matchId}.png`)
 
+// ─── 世界杯历史战绩对比 ───
+interface WcStat { appearances: number; titles: number; bestResult: string }
+const wcStats = ref<Record<string, WcStat>>({})
+
+onMounted(async () => {
+  try {
+    const res = await $fetch<Record<string, WcStat>>('/api/wc-stats')
+    wcStats.value = res
+  }
+  catch { /* 静默失败 */ }
+})
+
+const homeWcStat = computed<WcStat | null>(() =>
+  match.value ? (wcStats.value[match.value.homeTeam.id] ?? null) : null,
+)
+const awayWcStat = computed<WcStat | null>(() =>
+  match.value ? (wcStats.value[match.value.awayTeam.id] ?? null) : null,
+)
+
+function bestResultKey(result: string) {
+  return `h2h.bestResult_${result}`
+}
+
 // ─── 辅助 ───
 function getTeamName(team: { nameZh: string; nameEn: string }) {
   return locale.value === 'zh' ? team.nameZh : team.nameEn
@@ -120,6 +143,69 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
           <div class="predict-page__match-meta">
             <span>📅 {{ match.date }} {{ match.time }}</span>
             <span>📍 {{ locale === 'zh' ? match.venue.nameZh : match.venue.name }} · {{ locale === 'zh' ? match.venue.cityZh : match.venue.city }}</span>
+          </div>
+        </div>
+
+        <!-- 世界杯历史战绩对比 -->
+        <div class="predict-page__h2h">
+          <div class="predict-page__h2h-title">📊 {{ t('h2h.title') }}</div>
+          <div class="predict-page__h2h-cols">
+            <!-- 主队 -->
+            <div class="predict-page__h2h-col">
+              <img
+                :src="`https://flagcdn.com/w80/${match!.homeTeam.code.toLowerCase()}.png`"
+                :alt="match!.homeTeam.nameEn"
+                class="predict-page__h2h-flag"
+              >
+              <span class="predict-page__h2h-col-name">{{ getTeamName(match!.homeTeam) }}</span>
+              <template v-if="homeWcStat">
+                <div class="predict-page__h2h-stat-row">
+                  <span class="predict-page__h2h-stat-label">{{ t('h2h.appearances') }}</span>
+                  <span class="predict-page__h2h-stat-val">{{ homeWcStat.appearances || '—' }}</span>
+                </div>
+                <div class="predict-page__h2h-stat-row">
+                  <span class="predict-page__h2h-stat-label">{{ t('h2h.titles') }}</span>
+                  <span class="predict-page__h2h-stat-val" :class="{ 'predict-page__h2h-gold': homeWcStat.titles > 0 }">
+                    {{ homeWcStat.titles || '—' }}
+                  </span>
+                </div>
+                <div class="predict-page__h2h-stat-row">
+                  <span class="predict-page__h2h-stat-label">{{ t('h2h.bestResult') }}</span>
+                  <span class="predict-page__h2h-stat-val predict-page__h2h-best">{{ t(bestResultKey(homeWcStat.bestResult)) }}</span>
+                </div>
+              </template>
+              <div v-else class="predict-page__h2h-no-data">—</div>
+            </div>
+
+            <!-- 分隔线 -->
+            <div class="predict-page__h2h-divider" />
+
+            <!-- 客队 -->
+            <div class="predict-page__h2h-col">
+              <img
+                :src="`https://flagcdn.com/w80/${match!.awayTeam.code.toLowerCase()}.png`"
+                :alt="match!.awayTeam.nameEn"
+                class="predict-page__h2h-flag"
+              >
+              <span class="predict-page__h2h-col-name">{{ getTeamName(match!.awayTeam) }}</span>
+              <template v-if="awayWcStat">
+                <div class="predict-page__h2h-stat-row">
+                  <span class="predict-page__h2h-stat-label">{{ t('h2h.appearances') }}</span>
+                  <span class="predict-page__h2h-stat-val">{{ awayWcStat.appearances || '—' }}</span>
+                </div>
+                <div class="predict-page__h2h-stat-row">
+                  <span class="predict-page__h2h-stat-label">{{ t('h2h.titles') }}</span>
+                  <span class="predict-page__h2h-stat-val" :class="{ 'predict-page__h2h-gold': awayWcStat.titles > 0 }">
+                    {{ awayWcStat.titles || '—' }}
+                  </span>
+                </div>
+                <div class="predict-page__h2h-stat-row">
+                  <span class="predict-page__h2h-stat-label">{{ t('h2h.bestResult') }}</span>
+                  <span class="predict-page__h2h-stat-val predict-page__h2h-best">{{ t(bestResultKey(awayWcStat.bestResult)) }}</span>
+                </div>
+              </template>
+              <div v-else class="predict-page__h2h-no-data">—</div>
+            </div>
           </div>
         </div>
 
@@ -341,6 +427,102 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
   gap: 6px;
   font-size: 14px;
   color: #6b7280;
+}
+
+/* ===== 世界杯历史战绩对比 ===== */
+.predict-page__h2h {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+
+.predict-page__h2h-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 16px;
+  letter-spacing: 0.3px;
+}
+
+.predict-page__h2h-cols {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.predict-page__h2h-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.predict-page__h2h-flag {
+  width: 44px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+
+.predict-page__h2h-col-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a1a2e;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.predict-page__h2h-stat-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  background: #f9fafb;
+}
+
+.predict-page__h2h-stat-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  color: #9ca3af;
+}
+
+.predict-page__h2h-stat-val {
+  font-size: 16px;
+  font-weight: 800;
+  color: #1a1a2e;
+}
+
+.predict-page__h2h-gold {
+  color: #d97706;
+}
+
+.predict-page__h2h-best {
+  font-size: 13px;
+  font-weight: 700;
+  color: #4A90D9;
+}
+
+.predict-page__h2h-divider {
+  width: 1px;
+  background: #e5e7eb;
+  align-self: stretch;
+  margin: 0 12px;
+  flex-shrink: 0;
+}
+
+.predict-page__h2h-no-data {
+  font-size: 20px;
+  color: #d1d5db;
+  padding: 16px 0;
 }
 
 /* ===== 预测表单 ===== */

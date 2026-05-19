@@ -43,8 +43,20 @@
             </NuxtLinkLocale>
           </nav>
 
-          <!-- Right: Language switcher + Login -->
+          <!-- Right: Language switcher + Discord -->
           <div class="flex items-center gap-2">
+            <a
+              :href="discordUrl"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-ghost btn-sm text-white/90 hover:bg-[#5865F2] hover:border-[#5865F2] hover:text-white border border-white/30 rounded-full px-2 lg:px-4 flex items-center transition-all"
+              aria-label="Join Discord"
+              style="height: 36px;"
+            >
+              <svg viewBox="0 0 24 24" class="w-[20px] h-[20px]" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.618-1.25.077.077 0 00-.079-.037 19.736 19.736 0 00-4.885 1.515.07.07 0 00-.032.028C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128c.126-.094.252-.192.372-.292a.074.074 0 01.078-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.1.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.363 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.086-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.332-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.086-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.332-.946 2.418-2.157 2.418z"/></svg>
+              <span class="hidden lg:inline-block ml-1.5 text-[15px] font-bold">Discord</span>
+            </a>
+
             <div class="dropdown dropdown-end">
               <label tabindex="0" class="btn btn-ghost btn-sm text-white/90 hover:bg-white/15 border border-white/30 rounded-full px-3">
                 <span class="text-sm font-semibold">{{ currentLocaleName }}</span>
@@ -128,6 +140,10 @@
           <NuxtLinkLocale to="/privacy" class="link link-hover hover:text-[#FFD700] transition-colors">{{ $t('nav.privacy') }}</NuxtLinkLocale>
           <NuxtLinkLocale to="/contact" class="link link-hover hover:text-[#FFD700] transition-colors">{{ $t('nav.contact') }}</NuxtLinkLocale>
           <NuxtLinkLocale to="/about" class="link link-hover hover:text-[#FFD700] transition-colors">{{ $t('nav.about') }}</NuxtLinkLocale>
+          <a :href="discordUrl" target="_blank" rel="noopener noreferrer" class="link link-hover hover:text-[#5865F2] transition-colors flex items-center gap-1.5 font-semibold">
+            <svg viewBox="0 0 24 24" class="w-[18px] h-[18px]" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.618-1.25.077.077 0 00-.079-.037 19.736 19.736 0 00-4.885 1.515.07.07 0 00-.032.028C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128c.126-.094.252-.192.372-.292a.074.074 0 01.078-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.1.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.363 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.086-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.332-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.086-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.095 2.157 2.42 0 1.332-.946 2.418-2.157 2.418z"/></svg>
+            Join Discord
+          </a>
         </div>
         <div class="flex items-center justify-between flex-wrap gap-3" style="min-height: 56px;">
           <div class="flex items-center gap-2">
@@ -152,6 +168,9 @@
 
 <script setup lang="ts">
 const { locale, setLocale, locales } = useI18n()
+const runtimeConfig = useRuntimeConfig()
+
+const discordUrl = computed(() => runtimeConfig.public.discordUrl as string)
 
 const mobileMenuOpen = ref(false)
 const showBackToTop = ref(false)

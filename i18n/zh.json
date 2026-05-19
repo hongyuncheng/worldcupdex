@@ -207,6 +207,21 @@
     "shareTextChampion": "我押 {team} 拿下2026世界杯冠军！🏆 你选谁？",
     "shareTextMatch": "我预测 {home} {score} {away}！你觉得呢？来 WorldCupDex 生成你的预测卡"
   },
+  "h2h": {
+    "title": "世界杯历史战绩对比",
+    "appearances": "参赛届数",
+    "titles": "夺冠次数",
+    "bestResult": "最好成绩",
+    "noAppearances": "首次亮相",
+    "bestResult_champion": "冠军",
+    "bestResult_runner_up": "亚军",
+    "bestResult_third_place": "季军",
+    "bestResult_fourth_place": "第四名",
+    "bestResult_quarter_final": "八强",
+    "bestResult_round_of_16": "十六强",
+    "bestResult_group_stage": "小组赛",
+    "bestResult_debut": "首次参赛"
+  },
   "predictDetail": {
     "title": "去预测",
     "subtitle": "预测比赛结果，赚取积分，冲击排行榜！",
@@ -228,7 +243,7 @@
     "homeWin": "胜",
     "draw": "平局",
     "awayWin": "胜",
-    "section1Tip": "提示：选择\u201c平局\u201d可获得10积分，选择正确胜队可获得20积分",
+    "section1Tip": "提示：选择“平局”可获得10积分，选择正确胜队可获得20积分",
     "section2Title": "2. 预测比分 (可选)",
     "section2Desc": "预测比赛的最终比分（常规时间）",
     "section2Tip": "提示：准确预测比分可获得30积分",

@@ -3,6 +3,7 @@ name: Auto update WorldCup data
 on:
   schedule:
     # 全期使用 30 分钟一次的 cron，由下方 stage gate 在赛前阶段过滤为每日 04:00 UTC 1 次
+    # 注意：由于缓存命中率问题，在世界杯开赛前 (2026-06-11前) 必须严格控制部署频率
     - cron: '*/30 * * * *'
   workflow_dispatch:
 

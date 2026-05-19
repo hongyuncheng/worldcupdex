@@ -104,11 +104,10 @@ const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
 const siteUrl = (runtimeConfig.public?.siteUrl as string) || 'https://worldcupdex.org'
 
-// Build the content path from the route. In prefix_except_default i18n strategy,
-// the route.path may have /en/ or /es/ prefix — strip it to get the content path.
+// Build the content path from the route.
+// Since files are placed in `content/{locale}/blog/...`, the DB path is `/{locale}/blog/{slug}`
 const contentPath = computed(() => {
-  const p = route.path.replace(/^\/(en|es)/, '')
-  return p
+  return `/${locale.value}/blog/${route.params.slug}`
 })
 
 const { data: page } = await useAsyncData(
