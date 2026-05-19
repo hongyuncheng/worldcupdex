@@ -193,6 +193,9 @@ onMounted(() => {
             />
           </div>
 
+          <!-- External Cta 广告组件 -->
+          <KickiqCta source="champion_result" class="my-6" />
+
           <!-- 重新选择 -->
           <div class="champion-page__reset">
             <button class="champion-page__reset-btn" @click="resetSelection">
@@ -428,7 +431,7 @@ onMounted(() => {
 .champion-page__share {
   width: 100%;
   max-width: 500px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 /* ===== SharePanel 浅色主题覆盖（本页专用） =====
@@ -464,6 +467,7 @@ onMounted(() => {
 
 .champion-page__reset {
   text-align: center;
+  margin-top: 20px;
 }
 
 .champion-page__reset-btn {

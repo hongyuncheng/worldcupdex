@@ -241,7 +241,7 @@
               <div class="col-actions">
                 <div class="predict-btns">
                   <NuxtLinkLocale :to="`/predict/${match.id}`" class="predict-btn predict-btn--human">{{ $t('home.predictHuman') }}</NuxtLinkLocale>
-                  <button type="button" class="predict-btn predict-btn--ai" @click.prevent>{{ $t('home.predictAi') }}</button>
+                  <button type="button" class="predict-btn predict-btn--ai" @click.prevent="handleAiPredict(match.homeTeam.nameEn, match.awayTeam.nameEn, 'schedule_list_ai_btn')">{{ $t('home.predictAi') }}</button>
                 </div>
               </div>
             </div>
@@ -264,6 +264,7 @@
 import type { MatchItem } from '~/types'
 
 const { t, locale } = useI18n()
+const { handleAiPredict } = useAiPredict()
 
 // ─── Types ───
 

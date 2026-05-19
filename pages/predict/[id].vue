@@ -236,6 +236,9 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
           />
         </div>
 
+        <!-- External Cta 广告组件 -->
+        <KickiqCta source="quiz_result" class="my-6" />
+
         <!-- 重新预测 -->
         <div class="predict-page__reset">
           <button class="predict-page__reset-btn" @click="handleReset">
@@ -566,7 +569,7 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
 .predict-page__share {
   width: 100%;
   max-width: 500px;
-  margin: 0 auto 32px;
+  margin: 0 auto 20px;
 }
 
 /* SharePanel 浅色主题覆盖（与冠军预测页一致） */
@@ -601,6 +604,7 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
 .predict-page__reset {
   text-align: center;
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .predict-page__reset-btn {

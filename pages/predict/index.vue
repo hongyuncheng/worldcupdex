@@ -77,7 +77,7 @@
             <div class="match-item__action">
               <div class="predict-btns">
                 <NuxtLinkLocale :to="`/predict/${match.id}`" class="btn-predict btn-predict--human">{{ $t('home.predictHuman') }}</NuxtLinkLocale>
-                <button type="button" class="btn-predict btn-predict--ai" @click.prevent>{{ $t('home.predictAi') }}</button>
+                <button type="button" class="btn-predict btn-predict--ai" @click.prevent="handleAiPredict(match.homeTeam.nameEn, match.awayTeam.nameEn, 'predict_list_ai_btn')">{{ $t('home.predictAi') }}</button>
               </div>
               <span class="match-item__deadline">截止: {{ formatDeadline(match.date, match.time) }}</span>
             </div>
@@ -125,6 +125,7 @@
 import type { MatchItem, ListResponse } from '~/types'
 
 const { locale } = useI18n()
+const { handleAiPredict } = useAiPredict()
 
 // ─── SEO ───
 useSeoConfig({

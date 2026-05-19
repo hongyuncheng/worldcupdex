@@ -46,18 +46,22 @@
 </template>
 
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   matchId: string
   group: string
   team1Name: string
+  team1NameEn: string
   team1Flag: string
   team2Name: string
+  team2NameEn: string
   team2Flag: string
   date: string
   venue: string
 }>()
 
-// AI 预测逻辑后续接入，这里先留空
+const { handleAiPredict } = useAiPredict()
+
 function onAiPredict() {
+  handleAiPredict(props.team1NameEn, props.team2NameEn, 'match_card_ai_btn')
 }
 </script>

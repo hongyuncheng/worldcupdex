@@ -23,23 +23,58 @@ const showNicknameModal = ref(false)
 
 // ── Step 1: 加载球队列表 ──
 const { data: teamsResponse } = useFetch<PaginatedResponse<TeamListItem>>('/api/teams', {
-  query: { pageSize: 100 },
+  query: { pageSize: 200 },
 })
 
 const allTeams = computed(() => {
   if (!teamsResponse.value?.data) return []
-  // 只显示有小组的球队（参赛球队）
-  return teamsResponse.value.data.filter(t => t.group)
+  return teamsResponse.value.data
+})
+
+// 地区筛选
+const selectedConfederation = ref<string | null>(null)
+const showConfederationDropdown = ref(false)
+const confederations = ['UEFA', 'CONMEBOL', 'CAF', 'AFC', 'CONCACAF', 'OFC']
+
+function toggleConfederation(conf: string | null) {
+  selectedConfederation.value = conf
+  showConfederationDropdown.value = false
+}
+
+function toggleDropdown() {
+  showConfederationDropdown.value = !showConfederationDropdown.value
+}
+
+// 点击页面其他地方关闭下拉
+function handleClickOutside(e: MouseEvent) {
+  const target = e.target as HTMLElement
+  if (!target.closest('.confederation-dropdown')) {
+    showConfederationDropdown.value = false
+  }
+}
+
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside)
+})
+
+onUnmounted(() => {
+  document.removeEventListener('click', handleClickOutside)
 })
 
 const filteredTeams = computed(() => {
+  let result = allTeams.value
   const q = searchQuery.value.toLowerCase().trim()
-  if (!q) return allTeams.value
-  return allTeams.value.filter(t =>
-    t.nameZh.includes(q) ||
-    t.nameEn.toLowerCase().includes(q) ||
-    t.id.includes(q),
-  )
+  if (q) {
+    result = result.filter(t =>
+      t.nameZh.includes(q) ||
+      t.nameEn.toLowerCase().includes(q) ||
+      t.id.includes(q),
+    )
+  }
+  if (selectedConfederation.value) {
+    result = result.filter(t => t.confederation === selectedConfederation.value)
+  }
+  return result
 })
 
 function selectTeam(teamId: string) {
@@ -289,15 +324,60 @@ onMounted(() => {
                 class="w-full pl-11 pr-4 py-3 rounded-full bg-gray-50/80 text-gray-900 placeholder-gray-400 border border-gray-200 focus:border-blue-500 focus:bg-white focus:outline-none transition-all"
               >
             </div>
-            <button class="flex items-center gap-2 px-5 py-3 rounded-full bg-blue-50 text-blue-600 text-sm font-bold hover:bg-blue-100 transition-colors whitespace-nowrap">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-              </svg>
-              按地区筛选
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
+            <!-- 按地区筛选下拉 -->
+            <div class="relative confederation-dropdown flex-shrink-0">
+              <button
+                class="flex items-center gap-2 px-5 py-3 rounded-full text-sm font-bold transition-colors whitespace-nowrap"
+                :class="selectedConfederation
+                  ? 'bg-blue-600 text-white hover:bg-blue-700'
+                  : 'bg-blue-50 text-blue-600 hover:bg-blue-100'"
+                @click.stop="toggleDropdown"
+              >
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                </svg>
+                {{ selectedConfederation || '按地区筛选' }}
+                <svg
+                  class="w-4 h-4 transition-transform"
+                  :class="showConfederationDropdown ? 'rotate-180' : ''"
+                  fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              <!-- 下拉面板 -->
+              <Transition
+                enter-active-class="transition duration-150 ease-out"
+                enter-from-class="opacity-0 scale-95 -translate-y-1"
+                enter-to-class="opacity-100 scale-100 translate-y-0"
+                leave-active-class="transition duration-100 ease-in"
+                leave-from-class="opacity-100 scale-100 translate-y-0"
+                leave-to-class="opacity-0 scale-95 -translate-y-1"
+              >
+                <div
+                  v-if="showConfederationDropdown"
+                  class="absolute right-0 mt-2 w-44 bg-white rounded-xl shadow-xl border border-gray-100 py-1.5 z-30"
+                >
+                  <button
+                    class="w-full text-left px-4 py-2.5 text-sm font-semibold transition-colors"
+                    :class="selectedConfederation === null ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:bg-gray-50'"
+                    @click.stop="toggleConfederation(null)"
+                  >
+                    全部地区
+                  </button>
+                  <div class="my-1 border-t border-gray-100" />
+                  <button
+                    v-for="conf in confederations"
+                    :key="conf"
+                    class="w-full text-left px-4 py-2.5 text-sm font-semibold transition-colors"
+                    :class="selectedConfederation === conf ? 'text-blue-600 bg-blue-50' : 'text-gray-700 hover:bg-gray-50'"
+                    @click.stop="toggleConfederation(conf)"
+                  >
+                    {{ conf }}
+                  </button>
+                </div>
+              </Transition>
+            </div>
           </div>
 
           <!-- 球队网格 -->
