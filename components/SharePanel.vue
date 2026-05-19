@@ -327,6 +327,7 @@ function showCopiedToast() {
   white-space: nowrap;
   transition: transform 0.2s, box-shadow 0.2s;
   box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+  margin-top: 20px;
 }
 .share-panel__save-btn:hover {
   transform: scale(1.03);
