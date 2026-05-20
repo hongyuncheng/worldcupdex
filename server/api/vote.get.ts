@@ -28,6 +28,9 @@ export default defineEventHandler(async (event) => {
       return { HOME_WIN: 0, AWAY_WIN: 0, DRAW: 0, total: 0 }
     }
 
+    // 设置缓存控制头：让浏览器和 CDN 缓存 5 分钟 (300秒)
+    setHeader(event, 'Cache-Control', 'public, max-age=300, s-maxage=300')
+
     return data
   } catch (error) {
     console.error('KV GET Error:', error)

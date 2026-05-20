@@ -876,7 +876,7 @@ function buildSportsEventData(m: MatchItem) {
   background: #FFFFFF;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  overflow: hidden;
+  /* Removed overflow: hidden to allow dropdowns to overflow */
 }
 .match-table-header {
   display: grid;

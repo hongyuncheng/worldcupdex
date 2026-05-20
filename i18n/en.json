@@ -280,7 +280,7 @@
     "ruleWrong": "Wrong prediction",
     "skip": "Skip",
     "hint": "💡 Generate your exclusive card after prediction, share with friends",
-    "voteStats": "🔥 {percent}% of fans also predicted {result} like you!"
+    "voteStats": "Based on anonymous fan votes (updated every 5 mins): {percent}% for {result}"
   },
   "schedule": {
     "title": "Schedule",
@@ -509,6 +509,10 @@
     "generate": "Generate Card",
     "fanNumber": "Fan No.",
     "firstMatch": "First Match",
+    "joinDate": "Joined {date}",
+    "favoriteTeam": "Favorite Team",
+    "favoritePlayer": "Favorite Player",
+    "globalDatabase": "Global Fan Database",
     "vs": "vs",
     "cardTitle": "FAN PASS",
     "buyJersey": "Buy {team} Official Jersey",

@@ -18,6 +18,7 @@
         dropdownPosition === 'right' ? 'right-0' : 'left-0',
         dropdownDirection === 'up' ? 'bottom-full mb-2' : 'top-full mt-2'
       ]"
+      style="z-index: 50;"
     >
       <div class="p-1.5 flex flex-col gap-1">
         <!-- Google Calendar -->

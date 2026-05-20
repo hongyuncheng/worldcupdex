@@ -465,9 +465,9 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
 
           <!-- 显示匿名投票进度 -->
           <div v-if="voteStats && voteStats.total > 0 && selectedResult" class="mt-4 text-center text-sm text-gray-500 font-medium animate-fade-in">
-            {{ $t('predictDetail.voteStats', { 
+            {{ t('predictDetail.voteStats', { 
                 percent: Math.round((voteStats[selectedResult] || 0) / voteStats.total * 100),
-                result: selectedResult === 'HOME_WIN' ? $t('predictDetail.homeWin') : (selectedResult === 'AWAY_WIN' ? $t('predictDetail.awayWin') : $t('predictDetail.draw'))
+                result: selectedResult === 'HOME_WIN' ? t('predictDetail.homeWin') : (selectedResult === 'AWAY_WIN' ? t('predictDetail.awayWin') : t('predictDetail.draw'))
             }) }}
           </div>
 

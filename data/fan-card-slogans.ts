@@ -107,6 +107,55 @@ export const fanCardSlogans: string[] = [
   '为所爱之事倾尽全力，这就是球迷精神。',
 ]
 
-export function getRandomSlogan(): string {
-  return fanCardSlogans[Math.floor(Math.random() * fanCardSlogans.length)]
+export const slogansEn: string[] = [
+  'Football makes the world beat as one.',
+  'Every pass is a step closer to the dream.',
+  'On the pitch, we are all dreamers.',
+  'One ball, one dream, one never-give-up heart.',
+  'Greatness is not given, it is earned.',
+  'Nothing can stop the heart of a champion.',
+  'United we stand, football is our faith.',
+  'Blood, sweat, and love for the beautiful game.',
+  'Football is more than a game; it\'s a way of life.',
+  'For the love of the game, we give it our all.',
+  'A fan\'s love crosses borders and time.',
+  'Every match is a journey of the heart.',
+  'The stadium is where we feel most alive.',
+  'Witnessing history with millions of fans.',
+  'A dream in the heart, a path beneath the feet.',
+  'Today\'s sweat is tomorrow\'s glory.',
+  'The road to the championship starts here.',
+  'Four years of waiting, a lifetime of memories.',
+  'Let every heartbeat surge for football.',
+  'Life is a pitch, give it your all.'
+]
+
+export const slogansEs: string[] = [
+  'El fútbol hace que el mundo lata al unísono.',
+  'Cada pase es un paso más hacia el sueño.',
+  'En la cancha, todos somos soñadores.',
+  'Un balón, un sueño, un corazón que nunca se rinde.',
+  'La grandeza no se regala, se gana.',
+  'Nada puede detener el corazón de un campeón.',
+  'Unidos somos más fuertes, el fútbol es nuestra fe.',
+  'Sangre, sudor y amor por el juego hermoso.',
+  'El fútbol es más que un juego; es un estilo de vida.',
+  'Por amor al juego, lo damos todo.',
+  'El amor de un fanático cruza fronteras y tiempo.',
+  'Cada partido es un viaje del corazón.',
+  'El estadio es donde nos sentimos más vivos.',
+  'Presenciando la historia con millones de fanáticos.',
+  'Un sueño en el corazón, un camino bajo los pies.',
+  'El sudor de hoy es la gloria de mañana.',
+  'El camino hacia el campeonato comienza aquí.',
+  'Cuatro años de espera, toda una vida de recuerdos.',
+  'Que cada latido resuene por el fútbol.',
+  'La vida es una cancha, dalo todo.'
+]
+
+export function getRandomSlogan(locale: string = 'zh'): string {
+  let list = fanCardSlogans
+  if (locale === 'en') list = slogansEn
+  if (locale === 'es') list = slogansEs
+  return list[Math.floor(Math.random() * list.length)]
 }

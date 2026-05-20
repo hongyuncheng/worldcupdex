@@ -379,7 +379,7 @@ function formatPredictionTime(timestamp: number): string {
   background: #FFFFFF;
   border-radius: 16px;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
+  /* Removed overflow: hidden to allow dropdowns to overflow */
 }
 .match-item {
   display: flex;

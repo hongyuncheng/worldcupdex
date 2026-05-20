@@ -281,7 +281,7 @@
     "ruleWrong": "预测错误",
     "skip": "跳过",
     "hint": "💡 预测后可生成专属卡片，分享给好友",
-    "voteStats": "🔥 {percent}% 的球迷和你一样看好{result}！"
+    "voteStats": "基于球迷匿名投票 (每 5 分钟更新): {percent}% 选择 {result}"
   },
   "schedule": {
     "title": "赛程表",
@@ -511,6 +511,10 @@
     "generate": "生成身份卡",
     "fanNumber": "球迷编号",
     "firstMatch": "首场比赛",
+    "joinDate": "加入时间 {date}",
+    "favoriteTeam": "最支持的球队",
+    "favoritePlayer": "最喜欢的球员",
+    "globalDatabase": "全球球迷数据库",
     "vs": "vs",
     "cardTitle": "FAN CARD",
     "buyJersey": "购买 {team} 官方球衣",

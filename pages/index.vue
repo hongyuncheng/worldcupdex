@@ -76,7 +76,7 @@
         <!-- Right: Custom Schedule (Absolute positioned on desktop, regular flow on mobile) -->
         <ClientOnly>
           <div v-if="upcomingFavoriteMatches.length > 0" class="lg:absolute lg:right-4 xl:right-8 lg:top-[60%] lg:-translate-y-1/2 w-full max-w-[340px] lg:w-[320px] xl:w-[340px] animate-fade-in z-20 mt-4 lg:mt-0">
-            <div class="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl p-3 shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
+            <div class="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl p-1 shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
               <h3 class="text-white font-bold text-[15px] mb-2 flex items-center gap-1.5">
                 <span class="text-yellow-400 drop-shadow-md text-sm">⭐</span> {{ $t('home.customSchedule') }}
               </h3>

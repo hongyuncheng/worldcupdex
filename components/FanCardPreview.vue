@@ -19,7 +19,7 @@ const props = defineProps<{
   motto?: string
 }>()
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const runtimeConfig = useRuntimeConfig()
 // 品牌水印：去除协议前缀显示域名
 const brandDomain = computed(() => {
@@ -81,7 +81,7 @@ defineExpose({
 // 随机标语 - mount 时固定，避免截图时变化
 const randomSlogan = ref('')
 onMounted(() => {
-  randomSlogan.value = getRandomSlogan()
+  randomSlogan.value = getRandomSlogan(locale.value)
 })
 
 const displayMotto = computed(() => {
@@ -133,7 +133,7 @@ const displayMotto = computed(() => {
           <p class="fan-card__number">#{{ fanNumberStr }}</p>
           <div class="fan-card__tags">
             <span v-if="createdAt" class="fan-card__tag">
-              加入时间 {{ createdAt }}
+              {{ $t('fanCard.joinDate', { date: createdAt }) }}
             </span>
           </div>
         </div>
@@ -151,7 +151,7 @@ const displayMotto = computed(() => {
         <div class="fan-card__team-side">
           <img :src="teamFlag" :alt="teamName" class="fan-card__team-flag">
           <div class="fan-card__team-detail">
-            <small class="fan-card__label">最支持的球队</small>
+            <small class="fan-card__label">{{ $t('fanCard.favoriteTeam') }}</small>
             <strong class="fan-card__team-name">{{ teamName }}</strong>
             <span class="fan-card__team-meta">{{ teamGroup }} · FIFA #{{ teamRank }}</span>
           </div>
@@ -159,7 +159,7 @@ const displayMotto = computed(() => {
         <div class="fan-card__divider" />
         <div class="fan-card__player-side">
           <div class="fan-card__player-detail">
-            <small class="fan-card__label">最喜欢的球员</small>
+            <small class="fan-card__label">{{ $t('fanCard.favoritePlayer') }}</small>
             <strong class="fan-card__player-name-text">{{ playerName }}</strong>
             <span class="fan-card__player-pos">{{ playerPosition }}</span>
           </div>
@@ -171,7 +171,7 @@ const displayMotto = computed(() => {
 
       <!-- 首场比赛 -->
       <section v-if="firstMatchOpponent" class="fan-card__match">
-        <span class="fan-card__match-label">⚽ 首场比赛</span>
+        <span class="fan-card__match-label">⚽ {{ $t('fanCard.firstMatch') }}</span>
         <strong class="fan-card__match-opponent">vs {{ firstMatchOpponent }}</strong>
         <span class="fan-card__match-date">{{ formattedDate }}</span>
       </section>
@@ -184,7 +184,7 @@ const displayMotto = computed(() => {
       <!-- Footer -->
       <footer class="fan-card__footer">
         <span class="fan-card__footer-left">🏆 WorldCupDex.org</span>
-        <span class="fan-card__footer-right">⚽ 全球球迷数据库</span>
+        <span class="fan-card__footer-right">⚽ {{ $t('fanCard.globalDatabase') }}</span>
       </footer>
 
       <!-- 品牌水印 -->

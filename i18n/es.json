@@ -254,7 +254,11 @@
     "nicknamePlaceholder": "Ingresa tu apodo",
     "generate": "Generar Tarjeta",
     "fanNumber": "No. de Fan",
-    "firstMatch": "Primer Partido",
+    "firstMatch": "Primer partido",
+    "joinDate": "Se unió {date}",
+    "favoriteTeam": "Equipo Favorito",
+    "favoritePlayer": "Jugador Favorito",
+    "globalDatabase": "Base de datos global de fans",
     "vs": "vs",
     "cardTitle": "PASE DE FAN",
     "buyJersey": "Comprar camiseta oficial de {team}",
@@ -316,7 +320,7 @@
     "ruleWrong": "Predicción incorrecta",
     "skip": "Omitir",
     "hint": "💡 Genera tu tarjeta exclusiva después de predecir, compártela con amigos",
-    "voteStats": "🔥 ¡El {percent}% de los fans también predijo {result} como tú!"
+    "voteStats": "Basado en votos anónimos de fans (actualizado cada 5 min): {percent}% para {result}"
   },
   "blog": {
     "listTitle": "Blog de WorldCupDex",
@@ -362,7 +366,7 @@
     },
     "predictionTexts": {
       "normal": [
-        "¡Créeme, soy un profeta! 🔮 ¡Apuesto por la victoria de {team}!",
+        "¡Créeme, soy un adivino! 🔮 ¡Apuesto por la victoria de {team}!",
         "¡He visto el futuro! ¡{team} definitivamente ganará este partido! 🔥",
         "¡Voy con {team}! ¿Quién me apoya? 👇"
       ],
@@ -374,7 +378,7 @@
         "¡Alerta de goleada! 🚨 ¡Predigo una victoria masiva para {team}!",
         "¡Dominio total! ¡{team} aplastará a su oponente! 😎"
       ],
-      "verified": "¡El profeta está aquí! ¡Predije con éxito {home} {score} {away}! 🎯 ¿Te atreves a probar tu precisión de predicción?"
+      "verified": "¡El adivino está aquí! ¡Predije con éxito {home} {score} {away}! 🎯 ¿Te atreves a probar tu precisión de predicción?"
     },
     "hashtags": "#WorldCup2026 #FIFA26"
   },
