@@ -34,6 +34,10 @@
     "statsCountries": "3 Countries"
   },
   "home": {
+    "title": "2026 World Cup Database",
+    "description": "Latest schedules, scores, team data and predictions for the 2026 World Cup",
+    "customSchedule": "My Schedule",
+    "nextMatch": "Next Match",
     "upcomingMatches": "Upcoming Matches",
     "viewAllMatches": "View All Matches →",
     "hotTeams": "Popular Teams",
@@ -167,6 +171,19 @@
     "quarterFinal": "Quarter-Final",
     "semiFinal": "Semi-Final",
     "final": "Final",
+    "group_stage": "Group Stage",
+    "round_of_32": "Round of 32",
+    "round_of_16": "Round of 16",
+    "quarter_final": "Quarter-finals",
+    "semi_final": "Semi-finals",
+    "third_place": "Third place",
+    "GROUP_STAGE": "Group Stage",
+    "ROUND_OF_32": "Round of 32",
+    "ROUND_OF_16": "Round of 16",
+    "QUARTER_FINAL": "Quarter-finals",
+    "SEMI_FINAL": "Semi-finals",
+    "THIRD_PLACE": "Third place",
+    "FINAL": "Final",
     "vs": "vs",
     "kickoff": "Kick-off"
   },
@@ -307,7 +324,13 @@
     "weekdays": "SMTWTFS",
     "year": "",
     "month": "",
-    "groupSuffix": ""
+    "groupSuffix": "",
+    "mySchedule": "⭐ My Schedule",
+    "venueTime": "Venue Time",
+    "myTime": "My Time",
+    "tba": "TBA",
+    "emptyFavorites": "No favorite teams or matches yet. Click ⭐ to build your schedule!",
+    "maxTeamsLimit": "You can only favorite up to 5 teams!"
   },
   "dataCenter": {
     "title": "Data Center",

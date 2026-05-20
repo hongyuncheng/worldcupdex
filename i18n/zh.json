@@ -34,6 +34,10 @@
     "statsCountries": "3个国家"
   },
   "home": {
+    "title": "2026 世界杯资料库",
+    "description": "提供最新的美加墨世界杯赛程、比分、球队数据与预测",
+    "customSchedule": "定制日程",
+    "nextMatch": "下一场",
     "upcomingMatches": "即将开始的比赛",
     "viewAllMatches": "查看全部赛程 →",
     "hotTeams": "热门球队",
@@ -76,7 +80,21 @@
     "back": "返回",
     "share": "分享",
     "language": "语言",
-    "vs": "VS"
+    "vs": "VS",
+    "group_stage": "小组赛",
+    "round_of_32": "1/16决赛",
+    "round_of_16": "1/8决赛",
+    "quarter_final": "1/4决赛",
+    "semi_final": "半决赛",
+    "third_place": "三四名决赛",
+    "final": "决赛",
+    "GROUP_STAGE": "小组赛",
+    "ROUND_OF_32": "1/16决赛",
+    "ROUND_OF_16": "1/8决赛",
+    "QUARTER_FINAL": "1/4决赛",
+    "SEMI_FINAL": "半决赛",
+    "THIRD_PLACE": "三四名决赛",
+    "FINAL": "决赛"
   },
   "teams": {
     "title": "球队图鉴",
@@ -307,7 +325,14 @@
     "weekdays": "日一二三四五六",
     "year": "年",
     "month": "月",
-    "groupSuffix": "组"
+    "groupSuffix": "组",
+    "all": "全部",
+    "mySchedule": "⭐ 我的关注",
+    "venueTime": "举办地时间",
+    "myTime": "本地时间",
+    "tba": "待定",
+    "emptyFavorites": "暂无关注的球队或比赛。点击右上角 ⭐ 即可加入专属日程！",
+    "maxTeamsLimit": "最多只能关注 5 支球队哦！"
   },
   "dataCenter": {
     "title": "数据中心",

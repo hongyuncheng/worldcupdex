@@ -51,9 +51,18 @@
             />
             <div style="flex: 1;">
               <!-- Names -->
-              <h1 class="font-bold text-white" style="font-family: 'Montserrat', sans-serif; font-size: 36px; line-height: 1.2; margin-bottom: 4px;">
-                {{ locale === 'en' ? team.nameEn : team.nameZh }}
-              </h1>
+              <div class="flex items-center gap-3 mb-1">
+                <h1 class="font-bold text-white" style="font-family: 'Montserrat', sans-serif; font-size: 36px; line-height: 1.2;">
+                  {{ locale === 'en' ? team.nameEn : team.nameZh }}
+                </h1>
+                <button 
+                  v-if="isLoaded"
+                  class="p-2 text-2xl hover:scale-110 transition-transform focus:outline-none"
+                  :class="isTeamFavorited(team.nameEn) ? 'text-yellow-500 drop-shadow-md' : 'text-gray-200 grayscale opacity-40 hover:opacity-80 hover:grayscale-0'"
+                  @click.prevent="toggleTeam(team.nameEn)"
+                  title="Favorite Team"
+                >⭐</button>
+              </div>
               <p style="font-size: 18px; color: rgba(255,255,255,0.75); margin-bottom: 20px; display: flex; align-items: center; gap: 8px;">
                 {{ locale === 'en' ? team.nameZh : team.nameEn }}
                 <svg class="w-5 h-5 text-blue-400" style="flex-shrink: 0;" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
@@ -376,6 +385,7 @@ const { data: team, pending, error } = useTeamDetail(teamId)
 
 // Team narrative (SEO long-form content)
 const narrative = useTeamNarrative(team, locale)
+const { isLoaded, toggleTeam, isTeamFavorited } = useFavorites()
 
 const selectedPosition = ref('all')
 

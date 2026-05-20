@@ -215,7 +215,10 @@
         </div>
 
         <!-- Match Table -->
-        <div class="match-table-wrapper">
+        <div v-if="filteredMatches.length === 0 && selectedStageTab === 'favorites'" class="py-12 text-center text-gray-500">
+          {{ $t('schedule.emptyFavorites') }}
+        </div>
+        <div v-else class="match-table-wrapper">
           <!-- Table Header -->
           <div class="match-table-header">
             <div class="col-time">{{ $t('schedule.dateTime') }}</div>
@@ -231,23 +234,50 @@
               📅 {{ dateKey }}
             </div>
             <div v-for="match in group" :key="match.id" class="match-row">
-              <div class="col-time">
+              <div class="col-time flex items-center gap-2">
                 <ClientOnly>
                   <span class="match-time">{{ formatMatchTime(match, timezoneMode) }}</span>
                   <template #fallback>
                     <span class="match-time">{{ match.time }}</span>
                   </template>
                 </ClientOnly>
+                <button 
+                   v-if="isLoaded"
+                   class="text-xl hover:scale-110 transition-transform focus:outline-none"
+                   :class="isMatchFavorited(match.id) ? 'text-yellow-500 drop-shadow-sm' : 'text-gray-200 grayscale opacity-40 hover:opacity-80 hover:grayscale-0'"
+                   @click.prevent.stop="toggleMatch(match.id)"
+                   title="Add to My Schedule"
+                 >
+                   {{ isMatchFavorited(match.id) ? '🔔' : '🔕' }}
+                 </button>
               </div>
               <div class="col-matchup">
                 <div class="matchup-content">
                   <span class="team-info team-info--home">
                     <span class="team-flag"><img :src="match.homeTeam.flag" :alt="match.homeTeam.nameEn" style="width: 24px; height: 16px; object-fit: contain;" loading="lazy" decoding="async" /></span>
-                    <span class="team-name">{{ locale === 'zh' ? match.homeTeam.nameZh : match.homeTeam.nameEn }}</span>
+                    <span class="team-name">
+                      {{ locale === 'zh' ? match.homeTeam.nameZh : match.homeTeam.nameEn }}
+                      <button 
+                        v-if="isLoaded && match.homeTeam.nameEn !== 'TBA'"
+                        class="ml-1 focus:outline-none hover:scale-110 transition-transform"
+                      :class="isTeamFavorited(match.homeTeam.nameEn) ? 'text-yellow-500 drop-shadow-sm' : 'text-gray-200 grayscale opacity-40 hover:opacity-80 hover:grayscale-0'"
+                      @click.prevent="toggleTeam(match.homeTeam.nameEn)"
+                        title="Favorite Team"
+                      >⭐</button>
+                    </span>
                   </span>
                   <span class="vs-badge">VS</span>
                   <span class="team-info team-info--away">
-                    <span class="team-name">{{ locale === 'zh' ? match.awayTeam.nameZh : match.awayTeam.nameEn }}</span>
+                    <span class="team-name">
+                      <button 
+                        v-if="isLoaded && match.awayTeam.nameEn !== 'TBA'"
+                        class="mr-1 focus:outline-none hover:scale-110 transition-transform"
+                      :class="isTeamFavorited(match.awayTeam.nameEn) ? 'text-yellow-500 drop-shadow-sm' : 'text-gray-200 grayscale opacity-40 hover:opacity-80 hover:grayscale-0'"
+                      @click.prevent="toggleTeam(match.awayTeam.nameEn)"
+                        title="Favorite Team"
+                      >⭐</button>
+                      {{ locale === 'zh' ? match.awayTeam.nameZh : match.awayTeam.nameEn }}
+                    </span>
                     <span class="team-flag"><img :src="match.awayTeam.flag" :alt="match.awayTeam.nameEn" style="width: 24px; height: 16px; object-fit: contain;" loading="lazy" decoding="async" /></span>
                   </span>
                 </div>
@@ -285,6 +315,7 @@
 import type { MatchItem } from '~/types'
 
 const { t, locale } = useI18n()
+const { favoriteTeams, favoriteMatches, isLoaded, toggleTeam, isTeamFavorited, toggleMatch, isMatchFavorited } = useFavorites()
 const { handleAiPredict } = useAiPredict()
 
 // ─── Types ───
@@ -344,7 +375,8 @@ function formatMatchTime(m: MatchItem, mode: 'venue' | 'local'): string {
 }
 
 const showAll = ref(false)
-const selectedStageTab = ref('all')
+type FilterType = 'all' | 'group' | 'knockout' | 'favorites'
+const selectedStageTab = ref<FilterType>('all')
 const selectedDate = ref('')
 const selectedVenue = ref('')
 const selectedGroup = ref('')
@@ -354,10 +386,11 @@ const calendarMonth = ref(6)
 const selectedCalendarDay = ref(12)
 
 // ─── Stage Tabs ───
-const stageTabs = computed(() => [
+const stageTabs = computed<{ value: FilterType; label: string }[]>(() => [
   { value: 'all', label: t('schedule.allMatches') },
   { value: 'group', label: t('schedule.groupStage') },
   { value: 'knockout', label: t('schedule.knockoutStage') },
+  { value: 'favorites', label: t('schedule.mySchedule') },
 ])
 
 // ─── Sidebar Stages ───
@@ -420,7 +453,13 @@ const matchDaysByMonth = computed(() => {
 // ─── Filtered Matches ───
 const filteredMatches = computed(() => {
   let result = [...allMatches.value]
-  if (selectedStageTab.value === 'group') {
+  if (selectedStageTab.value === 'favorites') {
+    result = result.filter(m => {
+      const isFavTeam = favoriteTeams.value.includes(m.homeTeam.nameEn) || favoriteTeams.value.includes(m.awayTeam.nameEn)
+      const isFavMatch = favoriteMatches.value.includes(m.id)
+      return isFavTeam || isFavMatch
+    })
+  } else if (selectedStageTab.value === 'group') {
     result = result.filter(m => m.stage === 'GROUP_STAGE')
   } else if (selectedStageTab.value === 'knockout') {
     result = result.filter(m => m.stage !== 'GROUP_STAGE')

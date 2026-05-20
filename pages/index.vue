@@ -6,69 +6,117 @@
 
     <!-- Hero Section -->
     <section
-      class="relative flex items-center justify-center overflow-hidden hero-section"
+      class="relative flex flex-col items-center justify-center overflow-hidden hero-section lg:h-[400px]"
     >
       <!-- Background image -->
       <div class="absolute inset-0 hero-background"></div>
 
 
-      <!-- Content - centered -->
-      <div class="relative z-10 text-center">
-        <h1
-          class="font-bold text-white mb-2"
-          style="font-family: 'Montserrat', sans-serif; font-size: 48px; text-shadow: 0 4px 12px rgba(0,0,0,0.3);"
-        >
-          {{ $t('hero.title') }}
-        </h1>
-        <p class="text-white mb-6" style="font-family: 'Inter', sans-serif; font-size: 18px;">
-          {{ $t('hero.subtitle') }}
-        </p>
+      <!-- Content Wrapper -->
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-center h-full pt-8 lg:pt-0 pb-8 lg:pb-0 overflow-y-auto lg:overflow-visible scrollbar-hide">
+        <!-- Main Content (Absolute Centered on desktop, regular flow on mobile) -->
+        <div class="flex flex-col items-center text-center w-full max-w-3xl my-auto">
+          <h1
+            class="font-bold text-white mb-2 tracking-tight drop-shadow-lg"
+            style="font-family: 'Montserrat', sans-serif; font-size: clamp(28px, 4vw, 48px); text-shadow: 0 4px 12px rgba(0,0,0,0.3);"
+          >
+            {{ $t('hero.title') }}
+          </h1>
+          <p class="text-white/90 mb-6" style="font-family: 'Inter', sans-serif; font-size: clamp(14px, 1.5vw, 16px);">
+            {{ $t('hero.subtitle') }}
+          </p>
 
-        <!-- Countdown (ClientOnly to avoid SSR/CSR time mismatch) -->
-        <ClientOnly>
-          <CountdownTimer class="mb-6" />
-          <template #fallback>
-            <div class="flex items-center justify-center gap-4 mb-6">
-              <div v-for="key in countdownFallbackKeys" :key="key" class="flex flex-col items-center">
-                <div class="flex items-center justify-center rounded-lg border border-white/30" style="width: 70px; height: 70px; background: rgba(255,255,255,0.1);">
-                  <span class="font-bold text-[#FFD700]" style="font-family: 'Montserrat', sans-serif; font-size: 36px;">--</span>
+          <ClientOnly>
+            <CountdownTimer class="mb-6" :target-date="countdownTarget" />
+            <template #fallback>
+              <!-- SSR Placeholder -->
+              <div class="flex items-center justify-center gap-3 mb-6">
+                <div v-for="key in countdownFallbackKeys" :key="key" class="flex flex-col items-center">
+                  <div class="flex items-center justify-center rounded-lg border border-white/30 bg-white/10 backdrop-blur-md" style="width: 60px; height: 60px;">
+                    <span class="font-bold text-[#FFD700]" style="font-family: 'Montserrat', sans-serif; font-size: 28px;">--</span>
+                  </div>
+                  <span class="mt-2 text-white/80" style="font-family: 'Inter', sans-serif; font-size: 13px;">{{ $t(key) }}</span>
                 </div>
-                <span class="mt-2 text-white" style="font-family: 'Inter', sans-serif; font-size: 14px;">{{ $t(key) }}</span>
+              </div>
+            </template>
+          </ClientOnly>
+
+          <!-- CTA Buttons -->
+          <div class="flex items-center justify-center gap-4 mb-6 w-full">
+            <NuxtLinkLocale
+              to="/predict"
+              class="inline-flex items-center justify-center border-none font-bold cursor-pointer hover:scale-105 transition-transform shadow-lg"
+              style="background: #FFD700; color: #1A237E; font-family: 'Montserrat', sans-serif; font-size: 15px; border-radius: 8px; padding: 10px 24px;"
+            >
+              {{ $t('hero.startPredict') }}
+            </NuxtLinkLocale>
+            <NuxtLinkLocale
+              to="/schedule"
+              class="inline-flex items-center justify-center font-bold cursor-pointer transition-colors"
+              style="border: 2px solid rgba(255,255,255,0.3); color: #FFF; font-family: 'Montserrat', sans-serif; font-size: 15px; border-radius: 8px; padding: 10px 24px; background: rgba(255,255,255,0.05);"
+              @mouseenter="($event.target as HTMLElement).style.background = 'rgba(255,255,255,0.15)'"
+              @mouseleave="($event.target as HTMLElement).style.background = 'rgba(255,255,255,0.05)'"
+            >
+              {{ $t('hero.viewSchedule') }}
+            </NuxtLinkLocale>
+          </div>
+
+          <!-- Stats row -->
+          <div class="flex flex-wrap items-center justify-center gap-3 text-white/80 text-sm shadow-sm" style="font-family: 'Inter', sans-serif;">
+            <span>{{ $t('hero.statsTeams') }}</span>
+            <span style="opacity:0.5;">·</span>
+            <span>{{ $t('hero.statsMatches') }}</span>
+            <span style="opacity:0.5;">·</span>
+            <span>{{ $t('hero.statsCities') }}</span>
+            <span style="opacity:0.5;">·</span>
+            <span>{{ $t('hero.statsCountries') }}</span>
+          </div>
+        </div>
+
+        <!-- Right: Custom Schedule (Absolute positioned on desktop, regular flow on mobile) -->
+        <ClientOnly>
+          <div v-if="upcomingFavoriteMatches.length > 0" class="lg:absolute lg:right-4 xl:right-8 lg:top-[60%] lg:-translate-y-1/2 w-full max-w-[340px] lg:w-[320px] xl:w-[340px] animate-fade-in z-20 mt-4 lg:mt-0">
+            <div class="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl p-3 shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
+              <h3 class="text-white font-bold text-[15px] mb-2 flex items-center gap-1.5">
+                <span class="text-yellow-400 drop-shadow-md text-sm">⭐</span> {{ $t('home.customSchedule') }}
+              </h3>
+              
+              <div class="flex flex-col gap-2">
+                <NuxtLinkLocale 
+                  v-for="match in upcomingFavoriteMatches" 
+                  :key="match.id" 
+                  :to="`/predict/${match.id}`"
+                  class="bg-black/30 hover:bg-black/50 border border-white/10 rounded-lg p-2.5 transition-colors block group"
+                >
+                  <div class="text-[11px] text-white/90 mb-2 flex justify-between items-center font-medium">
+                    <span class="bg-white/20 px-2 py-0.5 rounded">{{ $t(`common.${match.stage}`) }}</span>
+                    <span class="text-white">{{ formatLocalTime(match.timestamp) }}</span>
+                  </div>
+                  
+                  <div class="flex items-center justify-between mt-1">
+                    <div class="flex flex-col items-center gap-1 w-[40%]">
+                      <img v-if="match.homeTeam.flag" :src="match.homeTeam.flag" class="w-8 h-5 object-contain drop-shadow-md group-hover:scale-110 transition-transform" />
+                      <span class="text-white font-bold text-[12px] text-center leading-tight">{{ locale === 'zh' ? match.homeTeam.nameZh : match.homeTeam.nameEn }}</span>
+                    </div>
+                    
+                    <span class="text-yellow-400 text-[11px] font-black w-[20%] text-center italic drop-shadow-sm">VS</span>
+                    
+                    <div class="flex flex-col items-center gap-1 w-[40%]">
+                      <img v-if="match.awayTeam.flag" :src="match.awayTeam.flag" class="w-8 h-5 object-contain drop-shadow-md group-hover:scale-110 transition-transform" />
+                      <span class="text-white font-bold text-[12px] text-center leading-tight">{{ locale === 'zh' ? match.awayTeam.nameZh : match.awayTeam.nameEn }}</span>
+                    </div>
+                  </div>
+                </NuxtLinkLocale>
+              </div>
+              
+              <div class="mt-3 text-center">
+                <NuxtLinkLocale to="/schedule" class="inline-block text-[12px] font-bold text-white/80 hover:text-yellow-400 transition-colors">
+                  {{ $t('home.viewAllMatches') }} →
+                </NuxtLinkLocale>
               </div>
             </div>
-          </template>
+          </div>
         </ClientOnly>
-
-        <!-- CTA Buttons -->
-        <div class="flex items-center justify-center gap-4 mb-6">
-          <NuxtLinkLocale
-            to="/predict"
-            class="inline-flex items-center justify-center border-none font-bold cursor-pointer hover:opacity-90 transition-opacity"
-            style="background: #FFD700; color: #1A237E; font-family: 'Montserrat', sans-serif; font-size: 16px; border-radius: 8px; padding: 12px 24px;"
-          >
-            {{ $t('hero.startPredict') }}
-          </NuxtLinkLocale>
-          <NuxtLinkLocale
-            to="/matches"
-            class="inline-flex items-center justify-center font-bold cursor-pointer transition-all"
-            style="border: 2px solid #FFD700; color: #FFD700; font-family: 'Montserrat', sans-serif; font-size: 16px; border-radius: 8px; padding: 12px 24px; background: transparent;"
-            @mouseenter="($event.target as HTMLElement).style.background = '#FFD700'; ($event.target as HTMLElement).style.color = '#1A237E'"
-            @mouseleave="($event.target as HTMLElement).style.background = 'transparent'; ($event.target as HTMLElement).style.color = '#FFD700'"
-          >
-            {{ $t('hero.viewSchedule') }}
-          </NuxtLinkLocale>
-        </div>
-
-        <!-- Stats row -->
-        <div class="flex items-center justify-center gap-3" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #FFFFFF; text-shadow: 0 1px 4px rgba(0,0,0,0.5);">
-          <span>{{ $t('hero.statsTeams') }}</span>
-          <span style="opacity:0.5;">·</span>
-          <span>{{ $t('hero.statsMatches') }}</span>
-          <span style="opacity:0.5;">·</span>
-          <span>{{ $t('hero.statsCities') }}</span>
-          <span style="opacity:0.5;">·</span>
-          <span>{{ $t('hero.statsCountries') }}</span>
-        </div>
       </div>
     </section>
 
@@ -303,9 +351,34 @@
 </template>
 
 <script setup lang="ts">
+import { ref, computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import type { MatchItem } from '~/types'
 
+import matchesData from '~/data/matches.json'
 const { locale, t } = useI18n()
+const { favoriteTeams, favoriteMatches, isLoaded } = useFavorites()
+
+const countdownTarget = '2026-06-12T01:00:00Z'
+
+const upcomingFavoriteMatches = computed(() => {
+  if (!isLoaded.value) return []
+  if (favoriteTeams.value.length === 0 && favoriteMatches.value.length === 0) return []
+
+  const favMatches = (matchesData as MatchItem[]).filter(m => {
+    const isFavTeam = favoriteTeams.value.includes(m.homeTeam.nameEn) || favoriteTeams.value.includes(m.awayTeam.nameEn)
+    const isFavMatch = favoriteMatches.value.includes(m.id)
+    return isFavTeam || isFavMatch
+  })
+
+  // 仅显示还未结束的比赛（score为空），并按时间排序，取前两场
+  const upcoming = favMatches.filter(m => !m.score).sort((a, b) => a.timestamp - b.timestamp)
+  return upcoming.slice(0, 2)
+})
+
+function formatLocalTime(timestamp: number) {
+  return new Intl.DateTimeFormat(locale.value, { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }).format(new Date(timestamp))
+}
 
 // Fallback placeholder keys for CountdownTimer (rendered during SSR)
 const countdownFallbackKeys = ['hero.days', 'hero.hours', 'hero.minutes', 'hero.seconds']
@@ -377,4 +450,22 @@ const hotTeams = computed(() => {
   return [...teams].sort((a, b) => a.fifaRank - b.fifaRank).slice(0, 8)
 })
 </script>
+
+<style scoped>
+.hero-section {
+  min-height: 400px;
+  background-color: #000F49;
+}
+@media (max-width: 1024px) {
+  .hero-section {
+    height: auto;
+    min-height: 450px;
+  }
+}
+@media (max-width: 640px) {
+  .hero-section {
+    min-height: 400px;
+  }
+}
+</style>
 

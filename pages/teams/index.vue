@@ -97,9 +97,16 @@
         v-for="team in paginatedTeams"
         :key="team.id"
         :to="`/teams/${team.id}`"
-        class="bg-white py-6 px-4 text-center card-hover cursor-pointer"
+        class="bg-white py-6 px-4 text-center card-hover cursor-pointer relative"
         style="box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-radius: 12px; text-decoration: none; display: block;"
       >
+        <button 
+            v-if="isLoaded"
+            class="absolute top-2 right-2 p-2 text-2xl hover:scale-110 transition-transform focus:outline-none"
+            :class="isTeamFavorited(team.nameEn) ? 'text-yellow-500 drop-shadow-md' : 'text-gray-200 grayscale opacity-40 hover:opacity-80 hover:grayscale-0'"
+            @click.prevent="toggleTeam(team.nameEn)"
+            title="Favorite Team"
+          >⭐</button>
         <img
           :src="team.flag"
           :alt="team.nameEn"
@@ -157,6 +164,7 @@
 import type { TeamListItem } from '~/types'
 
 const { t, locale } = useI18n()
+const { isLoaded, toggleTeam, isTeamFavorited } = useFavorites()
 
 // 从 API 获取全部球队数据
 const { data: teamsResponse, pending, error } = useTeamList({ pageSize: 100 })

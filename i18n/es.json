@@ -34,6 +34,8 @@
     "statsCountries": "3 Países"
   },
   "home": {
+    "customSchedule": "Mi Calendario",
+    "nextMatch": "Próximo Partido",
     "upcomingMatches": "Próximos Partidos",
     "viewAllMatches": "Ver Todos los Partidos →",
     "hotTeams": "Equipos Populares",
@@ -107,8 +109,34 @@
     "quarterFinal": "Cuartos de Final",
     "semiFinal": "Semifinal",
     "final": "Final",
+    "group_stage": "Fase de Grupos",
+    "round_of_32": "Dieciseisavos",
+    "round_of_16": "Octavos",
+    "quarter_final": "Cuartos",
+    "semi_final": "Semifinales",
+    "third_place": "Tercer puesto",
+    "GROUP_STAGE": "Fase de Grupos",
+    "ROUND_OF_32": "Dieciseisavos",
+    "ROUND_OF_16": "Octavos",
+    "QUARTER_FINAL": "Cuartos",
+    "SEMI_FINAL": "Semifinales",
+    "THIRD_PLACE": "Tercer puesto",
+    "FINAL": "Final",
     "vs": "vs",
     "kickoff": "Hora de Inicio"
+  },
+  "schedule": {
+    "title": "Calendario",
+    "description": "Calendario completo de la Copa Mundial 2026",
+    "all": "Todos",
+    "groupStage": "Fase de Grupos",
+    "knockoutStage": "Fase Final",
+    "mySchedule": "⭐ Mi Calendario",
+    "venueTime": "Hora Local",
+    "myTime": "Mi Hora",
+    "tba": "Por definir",
+    "emptyFavorites": "Aún no hay equipos o partidos favoritos. ¡Haz clic en ⭐ para crear tu calendario!",
+    "maxTeamsLimit": "¡Solo puedes tener hasta 5 equipos favoritos!"
   },
   "predict": {
     "title": "Predicciones del Mundial",
