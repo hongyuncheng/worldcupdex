@@ -109,7 +109,12 @@
             class="pred-card"
           >
             <div class="pred-card__match">{{ $t('predict.matchNo', { id: pred.matchId }) }}</div>
-            <div class="pred-card__result">{{ getPredictionText(pred) }}</div>
+            <div class="pred-card__result">
+              {{ getPredictionText(pred) }}
+              <span v-if="pred.isCorrect === true" class="pred-card__badge pred-card__badge--correct">✅ {{ $t('predictDetail.correct') }}</span>
+              <span v-else-if="pred.isCorrect === false" class="pred-card__badge pred-card__badge--wrong">❌ {{ $t('predictDetail.ruleWrong') }}</span>
+              <span v-else class="pred-card__badge pred-card__badge--pending">⏳ {{ $t('predictDetail.predicted') }}</span>
+            </div>
             <div v-if="pred.score" class="pred-card__score">
               {{ pred.score.home }} : {{ pred.score.away }}
             </div>
@@ -160,9 +165,20 @@ const totalUpcoming = computed(() => allMatchesData.value || 0)
 
 // ─── 获取本地预测记录 ───
 const { getAllPredictions } = usePredictions()
+const { data: allMatchesResponse } = useFetch<ListResponse<MatchItem>>('/api/matches')
 const myPredictions = computed(() => {
   const preds = getAllPredictions()
-  return preds.sort((a, b) => b.timestamp - a.timestamp).slice(0, 6)
+  return preds.sort((a, b) => b.timestamp - a.timestamp).slice(0, 6).map(pred => {
+    // 查找比赛真实结果
+    const match = allMatchesResponse.value?.data?.find(m => m.id === pred.matchId)
+    let isCorrect: boolean | null = null
+    if (match && match.score) {
+      // 计算真实胜负
+      const realResult = match.score.home > match.score.away ? 'HOME_WIN' : (match.score.home < match.score.away ? 'AWAY_WIN' : 'DRAW')
+      isCorrect = realResult === pred.result
+    }
+    return { ...pred, match, isCorrect }
+  })
 })
 
 // ─── 日期行格式化，根据语言切换格式 ───
@@ -567,6 +583,27 @@ function formatPredictionTime(timestamp: number): string {
   font-size: 12px;
   color: #9CA3AF;
   margin-top: 4px;
+}
+
+.pred-card__badge {
+  font-size: 11px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 6px;
+  font-weight: 600;
+  vertical-align: middle;
+}
+.pred-card__badge--correct {
+  background: #dcfce7;
+  color: #166534;
+}
+.pred-card__badge--wrong {
+  background: #fee2e2;
+  color: #991b1b;
+}
+.pred-card__badge--pending {
+  background: #f3f4f6;
+  color: #4b5563;
 }
 
 /* ===== Responsive ===== */

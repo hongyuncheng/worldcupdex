@@ -234,6 +234,8 @@
     "viewAll": "View All >",
     "predicted": "Predicted",
     "correct": "Correct",
+    "ruleWrong": "Wrong",
+    "actual": "Actual",
     "accuracy": "Accuracy",
     "points": "Points",
     "optionsTitle": "Prediction Options",
@@ -260,7 +262,8 @@
     "ruleCorrectScore": "Correct score prediction",
     "ruleWrong": "Wrong prediction",
     "skip": "Skip",
-    "hint": "💡 Generate your exclusive card after prediction, share with friends"
+    "hint": "💡 Generate your exclusive card after prediction, share with friends",
+    "voteStats": "🔥 {percent}% of fans also predicted {result} like you!"
   },
   "schedule": {
     "title": "Schedule",
@@ -526,7 +529,24 @@
       "description": "Think you know football? I just scored {score} pts on the World Cup IQ",
       "hashtag": "#WorldCupIQ #BeatMyScore",
       "cta": "Prove it at worldcupdex.org →"
-    }
+    },
+    "predictionTexts": {
+      "normal": [
+        "Trust me, I'm a prophet! 🔮 I'm backing {team} to win!",
+        "I've seen the future! {team} will definitely take this one! 🔥",
+        "I'm riding with {team}! Who's with me? 👇"
+      ],
+      "draw": [
+        "This is going to be a tough battle, I'm betting on a draw! 🤝",
+        "Evenly matched! I predict they will share the points! ⚖️"
+      ],
+      "crush": [
+        "Blowout alert! 🚨 I predict a massive win for {team}!",
+        "Total domination! {team} will crush their opponent! 😎"
+      ],
+      "verified": "The prophet is here! I successfully predicted {home} {score} {away}! 🎯 Dare to test your prediction accuracy?"
+    },
+    "hashtags": "#WorldCup2026 #FIFA26"
   },
   "crossSite": {
     "toKickiq": {

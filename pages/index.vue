@@ -229,7 +229,7 @@
           style="background: linear-gradient(135deg, #1a0533 0%, #2d1b69 60%, #3b2080 100%);"
         >
           <!-- Background Pattern -->
-          <div class="absolute inset-0 opacity-20 bg-cover bg-center" style="background-image: url('/images/fancard-bg-v4.png'); mix-blend-mode: overlay;"></div>
+          <div class="absolute inset-0 opacity-20 bg-cover bg-center" style=" mix-blend-mode: overlay;"></div>
 
           <!-- Content -->
           <div class="relative z-10 flex flex-col items-start gap-2">

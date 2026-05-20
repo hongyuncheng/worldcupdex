@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { MatchItem } from '~/types'
 
-const { t, locale } = useI18n()
+const { t, tm, locale } = useI18n()
 const route = useRoute()
 const matchId = Number(route.params.id)
 
@@ -21,9 +21,24 @@ const homeScore = ref<number>(0)
 const awayScore = ref<number>(0)
 const skipScore = ref(false)
 
+// ─── 获取本地预测记录 ───
+const { getPrediction } = usePredictions()
+const myPrediction = computed(() => getPrediction(matchId))
+
+// ─── 验证预测结果 ───
+const isCorrect = computed(() => {
+  if (!myPrediction.value || !match.value || !match.value.score) return null
+  const { home, away } = match.value.score
+  const realResult = home > away ? 'HOME_WIN' : (home < away ? 'AWAY_WIN' : 'DRAW')
+  return realResult === myPrediction.value.result
+})
+
 // ─── 卡片状态 ───
 const showCard = ref(false)
+const showValidation = ref(true) // 控制是否显示验证卡片
 const cardRef = ref<HTMLElement | null>(null)
+const isGenerating = ref(false)
+const voteStats = ref<Record<string, number> | null>(null)
 
 // ─── 比分加减 ───
 function increment(target: 'home' | 'away') {
@@ -38,6 +53,7 @@ function decrement(target: 'home' | 'away') {
 // ─── 提交生成卡片 ───
 function handleGenerate() {
   if (!selectedResult.value) return
+  isGenerating.value = true
 
   const { submitPrediction } = usePredictions()
   submitPrediction(matchId, {
@@ -45,16 +61,50 @@ function handleGenerate() {
     score: !skipScore.value ? { home: homeScore.value, away: awayScore.value } : undefined,
   })
 
+  // 异步向后端发送投票数据
+  $fetch('/api/vote', {
+    method: 'POST',
+    body: { matchId, result: selectedResult.value }
+  }).then((res: any) => {
+    if (res && res.stats) {
+      voteStats.value = res.stats
+    }
+  }).catch(err => console.error('Vote failed', err))
+
+  setTimeout(() => {
+    showCard.value = true
+    isGenerating.value = false
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }, 800)
+}
+
+// ─── 从赛后验证进入卡片 ───
+function handleShowHistoryCard() {
+  if (myPrediction.value) {
+    selectedResult.value = myPrediction.value.result as 'HOME_WIN' | 'AWAY_WIN' | 'DRAW'
+    if (myPrediction.value.score) {
+      homeScore.value = myPrediction.value.score.home
+      awayScore.value = myPrediction.value.score.away
+      skipScore.value = false
+    } else {
+      skipScore.value = true
+    }
+  }
   showCard.value = true
 }
 
 // ─── 重新预测 ───
 function handleReset() {
   showCard.value = false
-  selectedResult.value = null
-  homeScore.value = 0
-  awayScore.value = 0
-  skipScore.value = false
+  if (isMatchFinished.value) {
+    showValidation.value = true // 如果已完赛，点击返回则回到验证结果页
+  } else {
+    showValidation.value = false 
+    selectedResult.value = null
+    homeScore.value = 0
+    awayScore.value = 0
+    skipScore.value = false
+  }
 }
 
 // ─── 分享参数 ───
@@ -62,8 +112,47 @@ const shareText = computed(() => {
   if (!match.value) return ''
   const homeName = locale.value === 'zh' ? match.value.homeTeam.nameZh : match.value.homeTeam.nameEn
   const awayName = locale.value === 'zh' ? match.value.awayTeam.nameZh : match.value.awayTeam.nameEn
-  const scoreStr = !skipScore.value ? `${homeScore.value}:${awayScore.value}` : 'vs'
-  return `我预测 ${homeName} ${scoreStr} ${awayName}！你觉得呢？来 WorldCupDex 生成你的预测卡`
+  
+  // 1. 如果是从验证结果过来的（且验证正确）
+  if (isMatchFinished.value && myPrediction.value && isCorrect.value) {
+    const scoreStr = `${match.value.score!.home}:${match.value.score!.away}`
+    const text = t('share.predictionTexts.verified', { home: homeName, score: scoreStr, away: awayName })
+    return `${text} ${t('share.hashtags')} #${match.value.homeTeam.nameEn}vs${match.value.awayTeam.nameEn}`.replace(/\s+/g, ' ')
+  }
+
+  // 2. 正常赛前预测
+  let textPool: string[] = []
+  let teamName = ''
+
+  if (selectedResult.value === 'DRAW') {
+    textPool = tm('share.predictionTexts.draw') as string[]
+  } else {
+    teamName = selectedResult.value === 'HOME_WIN' ? homeName : awayName
+    
+    // 判断是否是大比分屠杀局 (分差 >= 3)
+    let isCrush = false
+    if (!skipScore.value) {
+      const diff = Math.abs(homeScore.value - awayScore.value)
+      if (diff >= 3) isCrush = true
+    }
+
+    if (isCrush) {
+      textPool = tm('share.predictionTexts.crush') as string[]
+    } else {
+      textPool = tm('share.predictionTexts.normal') as string[]
+    }
+  }
+
+  // 随机抽取一条文案 (为了避免服务端与客户端 Hydration 不一致，这里采用简单的基于 matchId 伪随机)
+  const randomIndex = matchId % (textPool.length || 1)
+  let text = textPool[randomIndex] || ''
+  
+  if (teamName && typeof text === 'string') {
+    text = text.replace('{team}', teamName)
+  }
+
+  // 拼接标签
+  return `${text} ${t('share.hashtags')} #${match.value.homeTeam.nameEn}vs${match.value.awayTeam.nameEn}`.replace(/\s+/g, ' ')
 })
 
 const shareUrl = computed(() => {
@@ -77,6 +166,29 @@ interface WcStat { appearances: number; titles: number; bestResult: string }
 const wcStats = ref<Record<string, WcStat>>({})
 
 onMounted(async () => {
+  if (myPrediction.value) {
+    if (match.value?.score) {
+      showValidation.value = true
+    } else {
+      selectedResult.value = myPrediction.value.result as 'HOME_WIN' | 'AWAY_WIN' | 'DRAW'
+      if (myPrediction.value.score) {
+        homeScore.value = myPrediction.value.score.home
+        awayScore.value = myPrediction.value.score.away
+        skipScore.value = false
+      } else {
+        skipScore.value = true
+      }
+      showCard.value = true
+    }
+  }
+
+  // 获取比赛投票数据
+  $fetch(`/api/vote?matchId=${matchId}`).then(res => {
+    if (res && typeof (res as any).total !== 'undefined') {
+      voteStats.value = res as Record<string, number>
+    }
+  }).catch(err => console.error('Failed to load vote stats', err))
+
   try {
     const res = await $fetch<Record<string, WcStat>>('/api/wc-stats')
     wcStats.value = res
@@ -95,7 +207,23 @@ function bestResultKey(result: string) {
   return `h2h.bestResult_${result}`
 }
 
+// ─── 比赛是否已过期/完赛 ───
+const isMatchFinished = computed(() => {
+  return !!match.value?.score
+})
+const isMatchLocked = computed(() => {
+  if (!match.value) return false
+  const matchTime = new Date(match.value.date + 'T' + match.value.time).getTime()
+  return Date.now() >= matchTime
+})
+
 // ─── 辅助 ───
+function getPredictionText(pred: any): string {
+  if (pred.result === 'HOME_WIN') return t('predictDetail.homeWin')
+  if (pred.result === 'AWAY_WIN') return t('predictDetail.awayWin')
+  return t('predictDetail.draw')
+}
+
 function getTeamName(team: { nameZh: string; nameEn: string }) {
   return locale.value === 'zh' ? team.nameZh : team.nameEn
 }
@@ -109,8 +237,45 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
         <span>{{ t('common.loading') }}...</span>
       </div>
 
+      <!-- 状态0：已预测且已完赛 (显示赛后验证) -->
+      <ClientOnly>
+        <template #fallback>
+          <div class="predict-page__loading">
+            <span>{{ t('common.loading') }}...</span>
+          </div>
+        </template>
+        <template v-if="myPrediction && match && match.score && !showCard && showValidation">
+          <div class="predict-page__validation">
+            <div class="validation-card" :class="isCorrect ? 'validation-card--correct' : 'validation-card--wrong'">
+              <div class="validation-icon">{{ isCorrect ? '🎉' : '💔' }}</div>
+              <h3 class="validation-title">
+                {{ isCorrect ? $t('predictDetail.correct') : $t('predictDetail.ruleWrong') }}
+              </h3>
+              
+              <div class="validation-compare">
+                <div class="compare-row">
+                  <span class="compare-label">{{ $t('predictDetail.predicted') }}:</span>
+                  <span class="compare-value">{{ getPredictionText(myPrediction) }}</span>
+                </div>
+                <div class="compare-row">
+                  <span class="compare-label">{{ $t('predictDetail.actual') || 'Actual' }}:</span>
+                  <span class="compare-value">
+                    {{ match.score.home }} : {{ match.score.away }} 
+                    ({{ match.score.home > match.score.away ? $t('predictDetail.homeWin') : (match.score.home < match.score.away ? $t('predictDetail.awayWin') : $t('predictDetail.draw')) }})
+                  </span>
+                </div>
+              </div>
+              
+              <button class="predict-page__submit-btn mt-6" @click="handleShowHistoryCard">
+                {{ $t('predict.generateCard') }}
+              </button>
+            </div>
+          </div>
+        </template>
+      </ClientOnly>
+
       <!-- 状态1：选择预测 -->
-      <template v-else-if="!showCard">
+      <template v-if="!showCard && match && (!myPrediction || !match.score || !showValidation)">
         <!-- 比赛信息卡片 -->
         <div class="predict-page__match-card">
           <div class="predict-page__match-teams">
@@ -279,12 +444,25 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
 
           <!-- 提交按钮 -->
           <button
-            class="predict-page__submit-btn"
-            :disabled="!selectedResult"
+            v-if="!isMatchLocked && !isMatchFinished"
+            class="predict-page__submit-btn flex items-center justify-center space-x-2"
+            :disabled="!selectedResult || isGenerating"
             @click="handleGenerate"
           >
-            {{ t('predict.generateCard') }}
+            <span v-if="isGenerating" class="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></span>
+            <span>{{ isGenerating ? $t('predictDetail.predicting') : t('predict.generateCard') }}</span>
           </button>
+          <div v-else class="predict-page__locked-msg">
+            ⚠️ 比赛已开始或已结束，停止预测
+          </div>
+
+          <!-- 显示匿名投票进度 -->
+          <div v-if="voteStats && voteStats.total > 0 && selectedResult" class="mt-4 text-center text-sm text-gray-500 font-medium animate-fade-in">
+            {{ $t('predictDetail.voteStats', { 
+                percent: Math.round((voteStats[selectedResult] || 0) / voteStats.total * 100),
+                result: selectedResult === 'HOME_WIN' ? $t('predictDetail.homeWin') : (selectedResult === 'AWAY_WIN' ? $t('predictDetail.awayWin') : $t('predictDetail.draw'))
+            }) }}
+          </div>
 
           <!-- 底部提示 -->
           <p class="predict-page__hint">{{ t('predictDetail.hint') }}</p>
@@ -292,7 +470,7 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
       </template>
 
       <!-- 状态2：展示卡片 -->
-      <template v-else>
+      <template v-if="showCard && match">
         <div class="predict-page__card-wrapper">
           <div ref="cardRef">
             <PredictionCard
@@ -327,8 +505,11 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
 
         <!-- 重新预测 -->
         <div class="predict-page__reset">
-          <button class="predict-page__reset-btn" @click="handleReset">
+          <button v-if="!isMatchFinished" class="predict-page__reset-btn" @click="handleReset">
             ← {{ t('predict.rePredict') }}
+          </button>
+          <button v-else class="predict-page__reset-btn" @click="handleReset">
+            ← 返回验证结果
           </button>
         </div>
       </template>
@@ -353,6 +534,60 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
   color: #6b7280;
   padding: 80px 0;
   font-size: 16px;
+}
+
+/* ===== 验证结果 ===== */
+.predict-page__validation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.validation-card {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  border-top: 6px solid #ccc;
+}
+.validation-card--correct {
+  border-top-color: #10b981;
+}
+.validation-card--wrong {
+  border-top-color: #ef4444;
+}
+.validation-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+}
+.validation-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0 0 24px;
+}
+.validation-compare {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.compare-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+.compare-label {
+  color: #6b7280;
+  font-weight: 500;
+}
+.compare-value {
+  color: #1a1a2e;
+  font-weight: 700;
 }
 
 /* ===== 比赛信息卡片 ===== */
@@ -738,6 +973,17 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
   color: #9ca3af;
   font-size: 13px;
   margin: 14px 0 0;
+}
+
+.predict-page__locked-msg {
+  text-align: center;
+  color: #ef4444;
+  font-weight: 600;
+  padding: 16px;
+  background: #fee2e2;
+  border-radius: 12px;
+  margin: 0 auto;
+  width: 88%;
 }
 
 /* ===== 卡片展示 ===== */

@@ -234,6 +234,8 @@
     "viewAll": "查看全部 >",
     "predicted": "已预测",
     "correct": "正确",
+    "ruleWrong": "预测错误",
+    "actual": "实际赛果",
     "accuracy": "准确率",
     "points": "当前积分",
     "optionsTitle": "预测选项",
@@ -260,7 +262,8 @@
     "ruleCorrectScore": "预测正确比分",
     "ruleWrong": "预测错误",
     "skip": "跳过",
-    "hint": "💡 预测后可生成专属卡片，分享给好友"
+    "hint": "💡 预测后可生成专属卡片，分享给好友",
+    "voteStats": "🔥 {percent}% 的球迷和你一样看好{result}！"
   },
   "schedule": {
     "title": "赛程表",
@@ -526,7 +529,24 @@
       "description": "敢不敢比一比？我刚拿了 {score} 分世界杯 IQ",
       "hashtag": "#WorldCupIQ #你敢挑战吗",
       "cta": "不服？来 worldcupdex.org 试试 →"
-    }
+    },
+    "predictionTexts": {
+      "normal": [
+        "信我，我是预言家！🔮 我押 {team} 胜！",
+        "我已经看到了结局！{team} 必拿下这场！🔥",
+        "这波我站 {team}！谁赞成，谁反对？👇"
+      ],
+      "draw": [
+        "这场绝对是神仙打架，我赌平局！🤝",
+        "势均力敌！我看好双方握手言和！⚖️"
+      ],
+      "crush": [
+        "屠杀局预警！🚨 我预测 {team} 将大胜！",
+        "绝对碾压！{team} 将轻松拿下对手！😎"
+      ],
+      "verified": "预言家在此！我成功命中了 {home} {score} {away} 的比分！🎯 你敢来测测你的预测准度吗？"
+    },
+    "hashtags": "#WorldCup2026 #FIFA26"
   },
   "crossSite": {
     "toKickiq": {

@@ -256,6 +256,8 @@
     "viewAll": "Ver Todos >",
     "predicted": "Predicho",
     "correct": "Correcto",
+    "ruleWrong": "Incorrecto",
+    "actual": "Actual",
     "accuracy": "Precisión",
     "points": "Puntos",
     "optionsTitle": "Opciones de Predicción",
@@ -282,7 +284,8 @@
     "ruleCorrectScore": "Predicción de marcador correcta",
     "ruleWrong": "Predicción incorrecta",
     "skip": "Omitir",
-    "hint": "💡 Genera tu tarjeta exclusiva después de predecir, compártela con amigos"
+    "hint": "💡 Genera tu tarjeta exclusiva después de predecir, compártela con amigos",
+    "voteStats": "🔥 ¡El {percent}% de los fans también predijo {result} como tú!"
   },
   "blog": {
     "listTitle": "Blog de WorldCupDex",
@@ -325,7 +328,24 @@
       "description": "¿Crees que sabes de fútbol? Acabo de sacar {score} pts en el IQ del Mundial",
       "hashtag": "#WorldCupIQ #SuperaMiPuntaje",
       "cta": "Demúéstralo en worldcupdex.org →"
-    }
+    },
+    "predictionTexts": {
+      "normal": [
+        "¡Créeme, soy un profeta! 🔮 ¡Apuesto por la victoria de {team}!",
+        "¡He visto el futuro! ¡{team} definitivamente ganará este partido! 🔥",
+        "¡Voy con {team}! ¿Quién me apoya? 👇"
+      ],
+      "draw": [
+        "¡Esta será una batalla dura, apuesto por un empate! 🤝",
+        "¡Muy igualados! ¡Predigo que compartirán los puntos! ⚖️"
+      ],
+      "crush": [
+        "¡Alerta de goleada! 🚨 ¡Predigo una victoria masiva para {team}!",
+        "¡Dominio total! ¡{team} aplastará a su oponente! 😎"
+      ],
+      "verified": "¡El profeta está aquí! ¡Predije con éxito {home} {score} {away}! 🎯 ¿Te atreves a probar tu precisión de predicción?"
+    },
+    "hashtags": "#WorldCup2026 #FIFA26"
   },
   "crossSite": {
     "toKickiq": {
