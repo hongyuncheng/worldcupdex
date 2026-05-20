@@ -90,7 +90,16 @@
                 >
                   <div class="text-[11px] text-white/90 mb-2 flex justify-between items-center font-medium">
                     <span class="bg-white/20 px-2 py-0.5 rounded">{{ $t(`common.${match.stage}`) }}</span>
-                    <span class="text-white">{{ formatLocalTime(match.timestamp) }}</span>
+                    <div class="flex items-center gap-1.5">
+                      <span class="text-white">{{ formatLocalTime(match.timestamp) }}</span>
+                      <AddToCalendarButton 
+                        :matches="match" 
+                        dropdownPosition="right"
+                        dropdownDirection="down"
+                        customClass="!p-1 !bg-transparent hover:!bg-white/20 !border-transparent"
+                        buttonText=""
+                      />
+                    </div>
                   </div>
                   
                   <div class="flex items-center justify-between mt-1">
@@ -109,8 +118,16 @@
                 </NuxtLinkLocale>
               </div>
               
-              <div class="mt-3 text-center">
-                <NuxtLinkLocale to="/schedule" class="inline-block text-[12px] font-bold text-white/80 hover:text-yellow-400 transition-colors">
+              <div class="mt-3 flex items-center justify-between">
+                <AddToCalendarButton 
+                  :matches="upcomingFavoriteMatches"
+                  :buttonText="$t('schedule.exportAll')"
+                  dropdownPosition="left"
+                  dropdownDirection="up"
+                  customClass="!py-1 !px-2 !text-[10px] !bg-transparent hover:!bg-white/10 !border-white/10"
+                />
+                
+                <NuxtLinkLocale to="/schedule" class="inline-block text-[12px] font-bold text-white/80 hover:text-yellow-400 transition-colors pr-1">
                   {{ $t('home.viewAllMatches') }} →
                 </NuxtLinkLocale>
               </div>
@@ -140,6 +157,7 @@
         <MatchCard
           v-for="match in upcomingMatches"
           :key="match.id"
+          :match="match"
           :match-id="String(match.id)"
           :group="match.group || ''"
           :team1-name="locale === 'zh' ? match.homeTeam.nameZh : match.homeTeam.nameEn"

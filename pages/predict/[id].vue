@@ -306,7 +306,14 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
           </div>
 
           <div class="predict-page__match-meta">
-            <span>📅 {{ match.date }} {{ match.time }}</span>
+            <div class="flex items-center gap-2 justify-center">
+              <span>📅 {{ match.date }} {{ match.time }}</span>
+              <AddToCalendarButton 
+                :matches="match" 
+                dropdownPosition="right"
+                customClass="!text-gray-600 !bg-white !border-gray-200 hover:!bg-gray-50 hover:!border-gray-300 !shadow-sm"
+              />
+            </div>
             <span>📍 {{ locale === 'zh' ? match.venue.nameZh : match.venue.name }} · {{ locale === 'zh' ? match.venue.cityZh : match.venue.city }}</span>
           </div>
         </div>

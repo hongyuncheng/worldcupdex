@@ -136,7 +136,10 @@
     "myTime": "Mi Hora",
     "tba": "Por definir",
     "emptyFavorites": "Aún no hay equipos o partidos favoritos. ¡Haz clic en ⭐ para crear tu calendario!",
-    "maxTeamsLimit": "¡Solo puedes tener hasta 5 equipos favoritos!"
+    "maxTeamsLimit": "¡Solo puedes tener hasta 5 equipos favoritos!",
+    "downloadAllIcs": "Descargar .ICS",
+    "addToCalendar": "Añadir a Calendario",
+    "exportAll": "Exportar todo"
   },
   "predict": {
     "title": "Predicciones del Mundial",

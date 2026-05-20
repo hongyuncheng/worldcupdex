@@ -233,23 +233,31 @@
             <div class="date-separator">
               📅 {{ dateKey }}
             </div>
-            <div v-for="match in group" :key="match.id" class="match-row">
-              <div class="col-time flex items-center gap-2">
-                <ClientOnly>
-                  <span class="match-time">{{ formatMatchTime(match, timezoneMode) }}</span>
-                  <template #fallback>
-                    <span class="match-time">{{ match.time }}</span>
-                  </template>
-                </ClientOnly>
-                <button 
-                   v-if="isLoaded"
-                   class="text-xl hover:scale-110 transition-transform focus:outline-none"
-                   :class="isMatchFavorited(match.id) ? 'text-yellow-500 drop-shadow-sm' : 'text-gray-200 grayscale opacity-40 hover:opacity-80 hover:grayscale-0'"
-                   @click.prevent.stop="toggleMatch(match.id)"
-                   title="Add to My Schedule"
-                 >
-                   {{ isMatchFavorited(match.id) ? '🔔' : '🔕' }}
-                 </button>
+            <div v-for="match in group" :key="match.id" class="match-row relative">
+              <div class="col-time flex items-center justify-between w-full md:w-auto pr-2 md:pr-0">
+                <div class="flex items-center gap-2">
+                  <ClientOnly>
+                    <span class="match-time">{{ formatMatchTime(match, timezoneMode) }}</span>
+                    <template #fallback>
+                      <span class="match-time">{{ match.time }}</span>
+                    </template>
+                  </ClientOnly>
+                  <button 
+                     v-if="isLoaded"
+                     class="text-xl hover:scale-110 transition-transform focus:outline-none"
+                     :class="isMatchFavorited(match.id) ? 'text-yellow-500 drop-shadow-sm' : 'text-gray-200 grayscale opacity-40 hover:opacity-80 hover:grayscale-0'"
+                     @click.prevent.stop="toggleMatch(match.id)"
+                     title="Add to My Schedule"
+                   >
+                     {{ isMatchFavorited(match.id) ? '🔔' : '🔕' }}
+                   </button>
+                   <div class="hidden md:block">
+                     <AddToCalendarButton :matches="match" dropdownPosition="left" customClass="!p-1 !text-gray-400 hover:!bg-gray-100 !border-transparent" buttonText="" />
+                   </div>
+                </div>
+                <div class="md:hidden block absolute right-4 top-4">
+                  <AddToCalendarButton :matches="match" dropdownPosition="right" customClass="!p-1 !text-gray-400 hover:!bg-gray-100 !border-transparent" buttonText="" />
+                </div>
               </div>
               <div class="col-matchup">
                 <div class="matchup-content">

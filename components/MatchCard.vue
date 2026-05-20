@@ -1,8 +1,15 @@
 <template>
   <div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow border-t-4 border-t-[#FFD700]">
     <!-- Group label -->
-    <div class="text-center py-2 border-b border-gray-100">
+    <div class="flex justify-between items-center py-2 px-3 border-b border-gray-100">
       <span class="text-xs font-semibold text-gray-600">{{ $t('home.groupLabel', { group: group }) }}</span>
+      <AddToCalendarButton 
+        v-if="match"
+        :matches="match" 
+        dropdownPosition="right"
+        customClass="!text-gray-500 !bg-transparent hover:!bg-gray-200 !border-transparent !p-1"
+        buttonText=""
+      />
     </div>
     <!-- Teams VS -->
     <div class="flex items-center justify-center gap-2 px-3 py-4">
@@ -46,7 +53,10 @@
 </template>
 
 <script setup lang="ts">
+import type { MatchItem } from '~/types'
+
 const props = defineProps<{
+  match?: MatchItem
   matchId: string
   group: string
   team1Name: string

@@ -78,6 +78,7 @@
               <div class="predict-btns">
                 <NuxtLinkLocale :to="`/predict/${match.id}`" class="btn-predict btn-predict--human">{{ $t('home.predictHuman') }}</NuxtLinkLocale>
                 <button type="button" class="btn-predict btn-predict--ai" @click.prevent="handleAiPredict(match.homeTeam.nameEn, match.awayTeam.nameEn, 'predict_list_ai_btn')">{{ $t('home.predictAi') }}</button>
+                <AddToCalendarButton :matches="match" dropdownPosition="right" customClass="!p-1 !text-gray-400 hover:!bg-gray-100 !border-transparent" buttonText="" />
               </div>
               <span class="match-item__deadline">{{ $t('predict.deadline') }}: {{ formatDeadline(match.date, match.time) }}</span>
             </div>
