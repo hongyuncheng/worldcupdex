@@ -135,7 +135,7 @@ export default defineNuxtConfig({
         { name: 'apple-mobile-web-app-title', content: 'WorldCupDex' },
       ],
       link: [
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap' },
@@ -164,7 +164,7 @@ export default defineNuxtConfig({
       },
     },
     '/images/**': { headers: { 'Cache-Control': 'public, max-age=2592000' } },
-    '/favicon.ico': { headers: { 'Cache-Control': 'public, max-age=2592000' } },
+    '/favicon.svg': { headers: { 'Cache-Control': 'public, max-age=2592000' } },
     '/robots.txt': { headers: { 'Cache-Control': 'public, max-age=86400' } },
   },
 })
