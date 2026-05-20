@@ -51,6 +51,7 @@ export interface MatchItem {
   id: number
   date: string
   time: string
+  timestamp: number
   homeTeam: {
     id: string
     nameZh: string

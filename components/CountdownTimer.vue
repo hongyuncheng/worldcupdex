@@ -14,7 +14,9 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
-const targetDate = new Date('2026-06-11T00:00:00Z').getTime()
+// The opening match is June 11, 2026, 19:00 (Mexico City Time, UTC-6)
+// This is equivalent to June 12, 2026, 01:00 UTC
+const targetDate = new Date('2026-06-12T01:00:00Z').getTime()
 
 const days = ref(0)
 const hours = ref(0)

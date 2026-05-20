@@ -94,6 +94,22 @@
           </svg>
         </div>
 
+        <!-- Timezone Toggle -->
+        <div class="relative flex items-center bg-white border border-gray-200 rounded-lg p-1">
+          <button 
+            @click="timezoneMode = 'venue'"
+            :class="['px-3 py-1 text-xs font-semibold rounded-md transition-colors', timezoneMode === 'venue' ? 'bg-[#000F49] text-white' : 'text-gray-500 hover:bg-gray-100']"
+          >
+            {{ locale === 'zh' ? '举办地时间' : 'Venue Time' }}
+          </button>
+          <button 
+            @click="timezoneMode = 'local'"
+            :class="['px-3 py-1 text-xs font-semibold rounded-md transition-colors', timezoneMode === 'local' ? 'bg-[#000F49] text-white' : 'text-gray-500 hover:bg-gray-100']"
+          >
+            {{ locale === 'zh' ? '本地时间' : 'My Time' }}
+          </button>
+        </div>
+
         <!-- Group Select -->
         <div class="relative">
           <span class="dropdown-icon">
@@ -216,7 +232,12 @@
             </div>
             <div v-for="match in group" :key="match.id" class="match-row">
               <div class="col-time">
-                <span class="match-time">{{ match.time }}</span>
+                <ClientOnly>
+                  <span class="match-time">{{ formatMatchTime(match, timezoneMode) }}</span>
+                  <template #fallback>
+                    <span class="match-time">{{ match.time }}</span>
+                  </template>
+                </ClientOnly>
               </div>
               <div class="col-matchup">
                 <div class="matchup-content">
@@ -298,6 +319,30 @@ function formatDateLabel(dateStr: string, loc: string): string {
 }
 
 // ─── State ───
+const timezoneMode = ref<'venue' | 'local'>('venue')
+
+function formatMatchDate(m: MatchItem, loc: string, mode: 'venue' | 'local'): string {
+  if (mode === 'venue') {
+    return formatDateLabel(m.date, loc)
+  } else {
+    const d = new Date(m.timestamp)
+    const year = d.getFullYear()
+    const month = d.getMonth() + 1
+    const day = d.getDate()
+    const weekday = d.getDay()
+    if (loc === 'zh') {
+      return `${year}年${month}月${day}日 ${weekdayNamesZh[weekday]}`
+    }
+    return `${weekdayNamesEn[weekday]}, ${monthNames[d.getMonth()]} ${day}, ${year}`
+  }
+}
+
+function formatMatchTime(m: MatchItem, mode: 'venue' | 'local'): string {
+  if (mode === 'venue') return m.time || '00:00'
+  const d = new Date(m.timestamp)
+  return `${d.getHours().toString().padStart(2, '0')}:${d.getMinutes().toString().padStart(2, '0')}`
+}
+
 const showAll = ref(false)
 const selectedStageTab = ref('all')
 const selectedDate = ref('')
@@ -401,7 +446,7 @@ const displayedMatches = computed(() => {
 const groupedMatches = computed(() => {
   const map: Record<string, MatchItem[]> = {}
   displayedMatches.value.forEach(m => {
-    const key = formatDateLabel(m.date, locale.value)
+    const key = formatMatchDate(m, locale.value, timezoneMode.value)
     if (!map[key]) map[key] = []
     map[key].push(m)
   })

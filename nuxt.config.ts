@@ -56,11 +56,11 @@ export default defineNuxtConfig({
   i18n: {
     lazy: true,
     locales: [
-      { code: 'zh', language: 'zh-CN', name: '中文', file: 'zh.json' },
       { code: 'en', language: 'en-US', name: 'English', file: 'en.json' },
       { code: 'es', language: 'es-ES', name: 'Español', file: 'es.json' },
+      { code: 'zh', language: 'zh-CN', name: '中文', file: 'zh.json' },
     ],
-    defaultLocale: 'zh',
+    defaultLocale: 'en',
     strategy: 'prefix_except_default',
     langDir: '.',
     detectBrowserLanguage: false,
@@ -111,8 +111,8 @@ export default defineNuxtConfig({
       crawlLinks: true,
       routes: [
         '/blog',
-        '/en/blog',
         '/es/blog',
+        '/zh/blog',
       ],
     },
   },
