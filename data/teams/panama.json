@@ -5,11 +5,11 @@
   "code": "pa",
   "group": "B",
   "confederation": "CONCACAF",
-  "fifaRank": 35,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/pa.png",
   "coach": {
-    "nameEn": "Thomas Christiansen",
-    "nameZh": "托马斯·克里斯蒂安森",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1937,
@@ -22,10 +22,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1991-03-16",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Concacaf_Gold_Cup_(48248588296)_(cropped).jpg?width=500",
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Concacaf_Gold_Cup_(48248588296)_(cropped).jpg?width=500"
+      "shirtNumber": null
     },
     {
       "name": "Orlando Mosquera",
@@ -34,10 +31,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1994-12-25",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zkbjvd1717088213.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/s1hpbf1719945429.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zkbjvd1717088213.png"
+      "shirtNumber": null
     },
     {
       "name": "Cesar Samudio",
@@ -46,10 +40,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1994-03-23",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Roderick Miller",
@@ -58,10 +49,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1992-04-03",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Partido_Galicia_-_Panamá_en_Balaídos_59_(Roderick_Miller).jpg?width=500",
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Partido_Galicia_-_Panamá_en_Balaídos_59_(Roderick_Miller).jpg?width=500"
+      "shirtNumber": null
     },
     {
       "name": "Éric Davis",
@@ -70,10 +58,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1991-03-31",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/z6qwhm1695729236.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yxfk291691153567.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/z6qwhm1695729236.png"
+      "shirtNumber": null
     },
     {
       "name": "Andrés Andrade",
@@ -82,10 +67,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1998-10-16",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0xq6t21769635655.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pgbqmf1769545609.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0xq6t21769635655.png"
+      "shirtNumber": null
     },
     {
       "name": "César Blackman",
@@ -94,10 +76,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1998-04-02",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/baa05l1716211763.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/x40xsw1716211711.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/baa05l1716211763.png"
+      "shirtNumber": null
     },
     {
       "name": "Jorge Gutiérrez",
@@ -106,10 +85,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1998-09-01",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Jiovany Ramos",
@@ -118,10 +94,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1997-01-26",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Martín Krug",
@@ -130,10 +103,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "2006-07-09",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Partido_Galicia_-_Panamá_en_Balaídos_126_(Martín_Krug).jpg?width=500",
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Partido_Galicia_-_Panamá_en_Balaídos_126_(Martín_Krug).jpg?width=500"
+      "shirtNumber": null
     },
     {
       "name": "Aníbal Godoy",
@@ -142,10 +112,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1990-02-10",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xq1uij1762901226.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1x1mcn1547981706.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xq1uij1762901226.png"
+      "shirtNumber": null
     },
     {
       "name": "Ismael Díaz",
@@ -154,10 +121,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1997-05-12",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/lubrmd1719946201.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/lubrmd1719946201.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Carlos Harvey",
@@ -166,10 +130,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-02-03",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lq0v2t1741873531.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bkdwyt1652354862.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lq0v2t1741873531.png"
+      "shirtNumber": null
     },
     {
       "name": "César Yanis",
@@ -178,10 +139,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1996-01-28",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Partido_Galicia_-_Panamá_en_Balaídos_16_(cropped).jpg?width=500",
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Partido_Galicia_-_Panamá_en_Balaídos_16_(cropped).jpg?width=500"
+      "shirtNumber": null
     },
     {
       "name": "Christian Martinez",
@@ -190,10 +148,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1997-02-06",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "José Fajardo",
@@ -202,10 +157,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "1993-08-18",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/oahrkt1695729282.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/h1f27n1691153916.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/oahrkt1695729282.png"
+      "shirtNumber": null
     },
     {
       "name": "Cecilio Waterman",
@@ -214,10 +166,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "1991-04-13",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/u4oud21714772852.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/u4oud21714772852.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Kadir Barría",
@@ -226,10 +175,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "2007-07-18",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Michael Murillo",
@@ -238,10 +184,7 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "1996-02-11",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/693hds1766153380.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/zcfxlr1687618394.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/693hds1766153380.png"
+      "shirtNumber": null
     },
     {
       "name": "José Cordoba",
@@ -250,10 +193,7 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2001-06-03",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/4h6gwd1761684091.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/uk6yfg1726080105.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4h6gwd1761684091.png"
+      "shirtNumber": null
     },
     {
       "name": "Édgar Bárcenas",
@@ -262,10 +202,7 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "1993-10-23",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "José Luis Rodríguez",
@@ -274,10 +211,7 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "1998-06-19",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Adalberto Carrasquilla",
@@ -286,10 +220,7 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1998-11-28",
       "nationality": "Panama",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/btl6qo1662210393.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/b0fjrf1719945711.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/btl6qo1662210393.png"
+      "shirtNumber": null
     }
   ],
   "recentMatches": []

@@ -5,39 +5,24 @@
   "code": "be",
   "group": "J",
   "confederation": "UEFA",
-  "fifaRank": 8,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/be.png",
   "coach": {
-    "nameEn": "Domenico Tedesco",
-    "nameZh": "多梅尼科·特德斯科",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1895,
   "venue": "King Power at Den Dreef Stadion",
   "squad": [
     {
-      "name": "Matz Sels",
-      "nameZh": "Matz Sels",
+      "name": "Thibaut Courtois",
+      "nameZh": "Thibaut Courtois",
       "position": "Goalkeeper",
       "positionZh": "门将",
-      "dateOfBirth": "1992-02-26",
+      "dateOfBirth": "1992-05-11",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wnmkve1757163210.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2ovzty1772393650.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wnmkve1757163210.png"
-    },
-    {
-      "name": "Maarten Vandevoordt",
-      "nameZh": "Maarten Vandevoordt",
-      "position": "Goalkeeper",
-      "positionZh": "门将",
-      "dateOfBirth": "2002-02-26",
-      "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tgffgm1763561395.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/thl0xh1623855917.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tgffgm1763561395.png"
+      "shirtNumber": null
     },
     {
       "name": "Senne Lammens",
@@ -46,10 +31,16 @@
       "positionZh": "门将",
       "dateOfBirth": "2002-07-07",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8xh9d61766826762.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/40kl8b1623838557.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8xh9d61766826762.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Mike Penders",
+      "nameZh": "Mike Penders",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2005-07-31",
+      "nationality": "Belgium",
+      "shirtNumber": null
     },
     {
       "name": "Brandon Mechele",
@@ -58,10 +49,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1993-01-28",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/vicmek1767634348.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/8a5ec01534358441.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vicmek1767634348.png"
+      "shirtNumber": null
     },
     {
       "name": "Maxim De Cuyper",
@@ -70,10 +58,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "2000-12-22",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/yo44zc1756993970.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/fwja1t1772016662.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/yo44zc1756993970.png"
+      "shirtNumber": null
     },
     {
       "name": "Zeno Debast",
@@ -82,10 +67,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "2003-10-24",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xlp81e1716408284.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/6g7cwi1620773010.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xlp81e1716408284.png"
+      "shirtNumber": null
     },
     {
       "name": "Nathan Ngoy",
@@ -94,10 +76,16 @@
       "positionZh": "后卫",
       "dateOfBirth": "2003-06-10",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/dj91a01766077637.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/6i0gri1766058722.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/dj91a01766077637.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Hans Vanaken",
+      "nameZh": "Hans Vanaken",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1992-08-24",
+      "nationality": "Belgium",
+      "shirtNumber": null
     },
     {
       "name": "Nicolas Raskin",
@@ -106,10 +94,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2001-02-23",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zdlxoe1701946661.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/lh0au21636768721.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zdlxoe1701946661.png"
+      "shirtNumber": null
     },
     {
       "name": "Joaquin Seys",
@@ -118,46 +103,25 @@
       "positionZh": "中场",
       "dateOfBirth": "2005-03-28",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/34zoma1767634511.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yvkfdj1767633269.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/34zoma1767634511.png"
+      "shirtNumber": null
     },
     {
-      "name": "Nathan De Cat",
-      "nameZh": "Nathan De Cat",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "2008-07-19",
-      "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
-    },
-    {
-      "name": "Mika Godts",
-      "nameZh": "Mika Godts",
-      "position": "Left Winger",
-      "positionZh": "Left Winger",
-      "dateOfBirth": "2005-06-07",
-      "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/e9ulvq1723380456.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7zxwbr1723380513.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/e9ulvq1723380456.png"
-    },
-    {
-      "name": "Lucas Stassin",
-      "nameZh": "Lucas Stassin",
+      "name": "Matias Fernandez-Pardo",
+      "nameZh": "Matias Fernandez-Pardo",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
-      "dateOfBirth": "2004-11-29",
+      "dateOfBirth": "2005-02-03",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Stassin_asse_om_2425_cdf.png?width=500",
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stassin_asse_om_2425_cdf.png?width=500"
+      "shirtNumber": null
+    },
+    {
+      "name": "Diego Moreira",
+      "nameZh": "Diego Moreira",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "2004-08-06",
+      "nationality": "Belgium",
+      "shirtNumber": null
     },
     {
       "name": "Koni De Winter",
@@ -166,10 +130,7 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2002-06-12",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zl0vt51758893255.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5h062e1667323389.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zl0vt51758893255.png"
+      "shirtNumber": null
     },
     {
       "name": "Arthur Theate",
@@ -178,58 +139,43 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2000-05-25",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tr7ftn1762287457.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i3ftd91630160061.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tr7ftn1762287457.png"
+      "shirtNumber": null
     },
     {
       "name": "Charles De Ketelaere",
-      "nameZh": "夏尔·德凯特拉尔",
+      "nameZh": "Charles De Ketelaere",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2001-03-10",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wqo9ia1695157273.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qvfd2g1623840931.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wqo9ia1695157273.png"
+      "shirtNumber": null
     },
     {
       "name": "Amadou Onana",
-      "nameZh": "阿马杜·奥纳纳",
+      "nameZh": "Amadou Onana",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2001-08-16",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q2bvps1725359471.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bijuo91634817657.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q2bvps1725359471.png"
+      "shirtNumber": null
     },
     {
       "name": "Jeremy Doku",
-      "nameZh": "杰雷米·多库",
+      "nameZh": "Jeremy Doku",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "2002-05-27",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tehbsx1769183074.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/w37jy41703326117.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tehbsx1769183074.png"
+      "shirtNumber": null
     },
     {
-      "name": "Loïs Openda",
-      "nameZh": "洛伊斯·奥彭达",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "2000-02-16",
+      "name": "Leandro Trossard",
+      "nameZh": "Leandro Trossard",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "1994-12-04",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1chuok1759225712.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jthzmk1623844882.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1chuok1759225712.png"
+      "shirtNumber": null
     },
     {
       "name": "Alexis Saelemaekers",
@@ -238,46 +184,43 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "1999-06-27",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/li7qc71758893296.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/zvqwjg1598645973.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/li7qc71758893296.png"
+      "shirtNumber": null
     },
     {
       "name": "Dodi Lukebakio",
-      "nameZh": "多迪·卢克巴基奥",
+      "nameZh": "Dodi Lukebakio",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "1997-09-24",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/335dwm1724784475.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nc5tw21724784416.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/335dwm1724784475.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Romelu Lukaku",
+      "nameZh": "罗梅卢·卢卡库",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1993-05-13",
+      "nationality": "Belgium",
+      "shirtNumber": null
     },
     {
       "name": "Youri Tielemans",
-      "nameZh": "尤里·蒂勒曼斯",
+      "nameZh": "Youri Tielemans",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1997-05-07",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/dvyawe1756987280.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/zymhtt1770201587.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/dvyawe1756987280.png"
+      "shirtNumber": null
     },
     {
       "name": "Axel Witsel",
-      "nameZh": "阿克塞尔·维特塞尔",
+      "nameZh": "Axel Witsel",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1989-01-12",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/13uvke1762457461.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gex6yt1706956962.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/13uvke1762457461.png"
+      "shirtNumber": null
     },
     {
       "name": "Kevin De Bruyne",
@@ -286,10 +229,7 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "1991-06-28",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/o4flia1764089447.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yibqv71676043512.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/o4flia1764089447.png"
+      "shirtNumber": null
     },
     {
       "name": "Thomas Meunier",
@@ -298,10 +238,7 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "1991-09-12",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/r7zcgl1766077606.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ikifa01515933211.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/r7zcgl1766077606.png"
+      "shirtNumber": null
     },
     {
       "name": "Timothy Castagne",
@@ -310,10 +247,7 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "1995-12-05",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/uc84ft1757070324.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/stsexd1772024932.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/uc84ft1757070324.png"
+      "shirtNumber": null
     }
   ],
   "recentMatches": []

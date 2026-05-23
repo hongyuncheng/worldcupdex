@@ -5,11 +5,11 @@
   "code": "ba",
   "group": "",
   "confederation": "",
-  "fifaRank": 53,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/ba.png",
   "coach": {
-    "nameEn": "Sergej Barbarez",
-    "nameZh": "塞尔盖·巴巴雷茨",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1992,
@@ -22,10 +22,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1996-03-12",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/ta5w7v1779017397.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/kf2v3m1778540315.jpg",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/ta5w7v1779017397.png"
+      "shirtNumber": null
     },
     {
       "name": "Martin Zlomislić",
@@ -34,10 +31,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1998-08-16",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/nabcnf1779016971.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/uhsd4r1778541627.jpg",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/nabcnf1779016971.png"
+      "shirtNumber": null
     },
     {
       "name": "Nikola Vasilj",
@@ -46,10 +40,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1995-12-02",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/85qp2e1763567779.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/cu1aj51778541706.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/85qp2e1763567779.png"
+      "shirtNumber": null
     },
     {
       "name": "Nihad Mujakić",
@@ -58,10 +49,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1998-04-15",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/b961ge1779017042.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/khqfz21778541096.jpg",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/b961ge1779017042.png"
+      "shirtNumber": null
     },
     {
       "name": "Nikola Katić",
@@ -70,10 +58,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1996-10-10",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tnvi3o1773611092.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/1b7s0n1778542342.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tnvi3o1773611092.png"
+      "shirtNumber": null
     },
     {
       "name": "Stjepan Radeljić",
@@ -82,22 +67,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1997-09-05",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/umezbz1779017106.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/rydyw41778541203.jpg",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/umezbz1779017106.png"
-    },
-    {
-      "name": "Ivan Šunjić",
-      "nameZh": "Ivan Šunjić",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1996-10-09",
-      "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/13uqrz1694550036.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/wj54cp1778542121.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/13uqrz1694550036.png"
+      "shirtNumber": null
     },
     {
       "name": "Amir Hadžiahmetović",
@@ -106,10 +76,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1997-03-08",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/d701ms1761922073.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/q1cm1n1756817163.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/d701ms1761922073.png"
+      "shirtNumber": null
     },
     {
       "name": "Armin Gigovic",
@@ -118,10 +85,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2002-04-06",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/esyc771742067604.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/1azb771778543473.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/esyc771742067604.png"
+      "shirtNumber": null
     },
     {
       "name": "Ivan Bašić",
@@ -130,10 +94,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2002-04-30",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/247gi31726000720.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/6bxzh41778544071.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/247gi31726000720.png"
+      "shirtNumber": null
     },
     {
       "name": "Esmir Bajraktarevic",
@@ -142,10 +103,16 @@
       "positionZh": "中场",
       "dateOfBirth": "2005-03-10",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/896xbs1764594499.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/tt22l31778539825.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/896xbs1764594499.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Ermin Mahmic",
+      "nameZh": "Ermin Mahmic",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2005-03-14",
+      "nationality": "Austria",
+      "shirtNumber": null
     },
     {
       "name": "Kerim Alajbegović",
@@ -154,10 +121,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2007-09-21",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/sfkv2p1769721901.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/2dtxv61778542471.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/sfkv2p1769721901.png"
+      "shirtNumber": null
     },
     {
       "name": "Edin Džeko",
@@ -166,10 +130,16 @@
       "positionZh": "前锋",
       "dateOfBirth": "1986-03-17",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0jo14d1773611434.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/sml4xg1710662840.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0jo14d1773611434.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Jovo Lukić",
+      "nameZh": "Jovo Lukić",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1998-11-28",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
     },
     {
       "name": "Haris Tabaković",
@@ -178,10 +148,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "1994-06-20",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rjvats1756313128.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/2shpb51778541916.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rjvats1756313128.png"
+      "shirtNumber": null
     },
     {
       "name": "Samed Bazdar",
@@ -190,10 +157,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "2004-01-31",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/o3tqwz1779017584.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/mh04pv1778539701.jpg",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/o3tqwz1779017584.png"
+      "shirtNumber": null
     },
     {
       "name": "Amar Memić",
@@ -202,10 +166,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "2001-01-20",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/bcyk9s1779017172.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/3emqu01778540725.jpg",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/bcyk9s1779017172.png"
+      "shirtNumber": null
     },
     {
       "name": "Nidal Čelik",
@@ -214,10 +175,7 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2006-07-17",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/6gk0ur1779017519.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/locvu41778539938.jpg",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/6gk0ur1779017519.png"
+      "shirtNumber": null
     },
     {
       "name": "Benjamin Tahirovic",
@@ -226,10 +184,7 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2003-03-03",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wrr6m21765376681.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pny4wf1679566380.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wrr6m21765376681.png"
+      "shirtNumber": null
     },
     {
       "name": "Tarik Muharemović",
@@ -238,10 +193,7 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2003-02-28",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zrpkc31764106120.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2s76nh1764103543.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zrpkc31764106120.png"
+      "shirtNumber": null
     },
     {
       "name": "Amar Dedić",
@@ -250,10 +202,7 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "2002-08-18",
       "nationality": "Austria",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3qhv951758216357.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/y4f55i1778543039.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3qhv951758216357.png"
+      "shirtNumber": null
     },
     {
       "name": "Ermedin Demirovic",
@@ -262,10 +211,16 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1998-03-25",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hvuj8v1763586169.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/ahykd01778543129.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hvuj8v1763586169.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Dennis Hadžikadunić",
+      "nameZh": "Dennis Hadžikadunić",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1998-07-09",
+      "nationality": "Bosnia-Herzegovina",
+      "shirtNumber": null
     },
     {
       "name": "Dženis Burnić",
@@ -274,10 +229,7 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1998-05-22",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/mohhc51773244613.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/ertan61778542638.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/mohhc51773244613.png"
+      "shirtNumber": null
     },
     {
       "name": "Sead Kolašinac",
@@ -286,10 +238,7 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1993-06-20",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ae2jmk1695157289.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/kzf4g21510852753.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ae2jmk1695157289.png"
+      "shirtNumber": null
     }
   ],
   "recentMatches": []

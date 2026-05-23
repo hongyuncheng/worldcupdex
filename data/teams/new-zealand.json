@@ -5,11 +5,11 @@
   "code": "nz",
   "group": "C",
   "confederation": "OFC",
-  "fifaRank": 42,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/nz.png",
   "coach": {
-    "nameEn": "Darren Bazeley",
-    "nameZh": "达伦·巴兹利",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1891,
@@ -22,10 +22,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1993-08-12",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/a7h8e21761768992.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/fhenxj1778730751.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/a7h8e21761768992.png"
+      "shirtNumber": null
     },
     {
       "name": "Michael Woud",
@@ -34,10 +31,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1999-01-16",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ff78ig1765702427.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/iugmn31778735592.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ff78ig1765702427.png"
+      "shirtNumber": null
     },
     {
       "name": "Alex Paulsen",
@@ -46,34 +40,16 @@
       "positionZh": "门将",
       "dateOfBirth": "2002-07-04",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/n3p2581716230939.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/9l26de1778732191.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/n3p2581716230939.png"
+      "shirtNumber": null
     },
     {
-      "name": "James McGarry",
-      "nameZh": "James McGarry",
+      "name": "Michael Boxall",
+      "nameZh": "Michael Boxall",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "1998-04-09",
+      "dateOfBirth": "1988-08-18",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ay9urn1765802550.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/hb1tzd1653667255.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ay9urn1765802550.png"
-    },
-    {
-      "name": "Bill Tuiloma",
-      "nameZh": "Bill Tuiloma",
-      "position": "Defence",
-      "positionZh": "后卫",
-      "dateOfBirth": "1995-03-27",
-      "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/jl6sfi1771582590.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i4ex751517076582.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jl6sfi1771582590.png"
+      "shirtNumber": null
     },
     {
       "name": "Callan Elliot",
@@ -82,10 +58,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1999-07-07",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1bainl1765702703.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/400kj61778731124.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1bainl1765702703.png"
+      "shirtNumber": null
     },
     {
       "name": "Tim Payne",
@@ -94,10 +67,16 @@
       "positionZh": "后卫",
       "dateOfBirth": "1994-01-10",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6hft7i1765895128.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/03ge3a1778733387.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6hft7i1765895128.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Nando Pijnaker",
+      "nameZh": "Nando Pijnaker",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-02-25",
+      "nationality": "New Zealand",
+      "shirtNumber": null
     },
     {
       "name": "Finn Surman",
@@ -106,10 +85,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "2003-09-23",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qmadd81766760097.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/5wyywz1778734769.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qmadd81766760097.png"
+      "shirtNumber": null
     },
     {
       "name": "Tyler Bindon",
@@ -118,10 +94,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "2005-01-27",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/yk1l1c1761393067.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/thaqsi1778730349.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/yk1l1c1761393067.png"
+      "shirtNumber": null
     },
     {
       "name": "Alex Rufer",
@@ -130,10 +103,16 @@
       "positionZh": "中场",
       "dateOfBirth": "1996-06-12",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/l56pnt1765895154.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/rpbtce1778733816.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/l56pnt1765895154.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Sarpreet Singh",
+      "nameZh": "Sarpreet Singh",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-02-20",
+      "nationality": "New Zealand",
+      "shirtNumber": null
     },
     {
       "name": "Francis De Vries",
@@ -142,10 +121,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1994-11-28",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/95i9uf1765702871.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/x9owpm1730090361.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/95i9uf1765702871.png"
+      "shirtNumber": null
     },
     {
       "name": "Joe Bell",
@@ -154,10 +130,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1999-04-27",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0jpz121654114672.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i95q3d1654114663.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0jpz121654114672.png"
+      "shirtNumber": null
     },
     {
       "name": "Marko Stamenic",
@@ -166,10 +139,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2002-02-19",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/il25p91761235114.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/m2mhtx1778734686.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/il25p91761235114.png"
+      "shirtNumber": null
     },
     {
       "name": "Kosta Barbarouses",
@@ -178,34 +148,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "1990-02-19",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7rkwj31765802941.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/kuflmc1778729940.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7rkwj31765802941.png"
-    },
-    {
-      "name": "Logan Rogerson",
-      "nameZh": "Logan Rogerson",
-      "position": "Offence",
-      "positionZh": "前锋",
-      "dateOfBirth": "1998-05-28",
-      "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/u4iknf1765702945.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/r7ja9p1765702908.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/u4iknf1765702945.png"
-    },
-    {
-      "name": "Andre de Jong",
-      "nameZh": "Andre de Jong",
-      "position": "Offence",
-      "positionZh": "前锋",
-      "dateOfBirth": "1996-11-02",
-      "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Ben Waine",
@@ -214,10 +157,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "2001-06-11",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/vwy9bu1766331018.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/uhiydo1778735455.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vwy9bu1766331018.png"
+      "shirtNumber": null
     },
     {
       "name": "Elijah Just",
@@ -226,10 +166,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "2000-05-01",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/ppikbx1778731424.jpg",
-      "photo": "https://www.thesportsdb.com/images/media/player/thumb/ppikbx1778731424.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Callum McCowatt",
@@ -238,10 +175,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "1999-04-30",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wy8ibg1765647125.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nwqmt51702554287.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wy8ibg1765647125.png"
+      "shirtNumber": null
     },
     {
       "name": "Lachlan Bayliss",
@@ -250,10 +184,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "2002-07-24",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wgxieo1765814017.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/go5u0p1778730188.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wgxieo1765814017.png"
+      "shirtNumber": null
     },
     {
       "name": "Jesse Randall",
@@ -262,10 +193,16 @@
       "positionZh": "前锋",
       "dateOfBirth": "2002-08-19",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/clfg801765704716.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/tkqmms1778733518.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/clfg801765704716.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Matthew Garbett",
+      "nameZh": "Matthew Garbett",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "2002-04-13",
+      "nationality": "New Zealand",
+      "shirtNumber": null
     },
     {
       "name": "Ben Old",
@@ -274,10 +211,16 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "2002-08-13",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/u99llb1727952719.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/5hsb761778732035.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/u99llb1727952719.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Chris Wood",
+      "nameZh": "Chris Wood",
+      "position": "Centre-Forward",
+      "positionZh": "Centre-Forward",
+      "dateOfBirth": "1991-12-07",
+      "nationality": "New Zealand",
+      "shirtNumber": null
     },
     {
       "name": "Ryan Thomas",
@@ -286,10 +229,16 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1994-12-20",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wqc6xf1764540033.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/0omjbr1778734869.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wqc6xf1764540033.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Liberato Cacace",
+      "nameZh": "Liberato Cacace",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "2000-09-27",
+      "nationality": "New Zealand",
+      "shirtNumber": null
     }
   ],
   "recentMatches": []

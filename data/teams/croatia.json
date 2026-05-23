@@ -5,11 +5,11 @@
   "code": "hr",
   "group": "K",
   "confederation": "UEFA",
-  "fifaRank": 11,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/hr.png",
   "coach": {
-    "nameEn": "Zlatko Dalić",
-    "nameZh": "兹拉特科·达利奇",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1912,
@@ -17,27 +17,12 @@
   "squad": [
     {
       "name": "Dominik Livaković",
-      "nameZh": "多米尼克·利瓦科维奇",
+      "nameZh": "Dominik Livaković",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1995-01-09",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pp3yab1762457197.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/c7otgv1622023476.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pp3yab1762457197.png"
-    },
-    {
-      "name": "Karlo Letica",
-      "nameZh": "Karlo Letica",
-      "position": "Goalkeeper",
-      "positionZh": "门将",
-      "dateOfBirth": "1997-02-11",
-      "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/jf96jk1610546405.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/idcj751535740298.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jf96jk1610546405.png"
+      "shirtNumber": null
     },
     {
       "name": "Ivor Pandur",
@@ -46,10 +31,16 @@
       "positionZh": "门将",
       "dateOfBirth": "2000-03-25",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ofz5zx1761922463.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3ks0h91611325329.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ofz5zx1761922463.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Dominik Kotarski",
+      "nameZh": "Dominik Kotarski",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2000-02-10",
+      "nationality": "Croatia",
+      "shirtNumber": null
     },
     {
       "name": "Luka Vušković",
@@ -58,10 +49,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "2007-02-24",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/bw06uk1765729531.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/wnhcj51765729451.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bw06uk1765729531.png"
+      "shirtNumber": null
     },
     {
       "name": "Marco Pašalić",
@@ -70,10 +58,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-09-14",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/p3ix6j1746347736.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/eg07131720451596.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/p3ix6j1746347736.png"
+      "shirtNumber": null
     },
     {
       "name": "Petar Sucic",
@@ -82,10 +67,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2003-10-25",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/b4nmhd1759408181.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jdqudm1759409435.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b4nmhd1759408181.png"
+      "shirtNumber": null
     },
     {
       "name": "Martin Baturina",
@@ -94,10 +76,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2003-02-16",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/bb3ntq1764278109.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/vvqs031720451391.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bb3ntq1764278109.png"
+      "shirtNumber": null
     },
     {
       "name": "Toni Fruk",
@@ -106,10 +85,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2001-03-09",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Petar Musa",
@@ -118,10 +94,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "1998-03-04",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/x4vrsj1716621267.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/142gyh1615923405.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/x4vrsj1716621267.png"
+      "shirtNumber": null
     },
     {
       "name": "Igor Matanovic",
@@ -130,10 +103,7 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2003-03-31",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lm6j0a1763329018.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/t5lmgj1741808280.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lm6j0a1763329018.png"
+      "shirtNumber": null
     },
     {
       "name": "Josip Šutalo",
@@ -142,10 +112,16 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2000-02-28",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/4bdrsm1722880866.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/522xy61668436172.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4bdrsm1722880866.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Joško Gvardiol",
+      "nameZh": "Joško Gvardiol",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "2002-01-23",
+      "nationality": "Croatia",
+      "shirtNumber": null
     },
     {
       "name": "Josip Stanišić",
@@ -154,22 +130,7 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "2000-04-02",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/m1kqf11756416127.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/57o1n61770541852.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/m1kqf11756416127.png"
-    },
-    {
-      "name": "Ivan Smolčić",
-      "nameZh": "Ivan Smolčić",
-      "position": "Right-Back",
-      "positionZh": "Right-Back",
-      "dateOfBirth": "2000-08-17",
-      "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/t70jei1764278503.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/85xdls1758878056.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/t70jei1764278503.png"
+      "shirtNumber": null
     },
     {
       "name": "Luka Sučić",
@@ -178,10 +139,7 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "2002-09-08",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pmp5rt1762709318.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/kdhx3f1634810422.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pmp5rt1762709318.png"
+      "shirtNumber": null
     },
     {
       "name": "Martin Erlic",
@@ -190,10 +148,7 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1998-01-24",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/x8wkr01765385467.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i37jie1611002111.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/x8wkr01765385467.png"
+      "shirtNumber": null
     },
     {
       "name": "Kristijan Jakić",
@@ -202,22 +157,7 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1997-05-14",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tj2frb1763034190.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4sw1011632680903.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tj2frb1763034190.png"
-    },
-    {
-      "name": "Lovro Majer",
-      "nameZh": "洛夫罗·马耶尔",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
-      "dateOfBirth": "1998-01-17",
-      "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/2gos1c1763669442.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3mzm3p1653388985.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2gos1c1763669442.png"
+      "shirtNumber": null
     },
     {
       "name": "Nikola Moro",
@@ -226,10 +166,7 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1998-03-12",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5el95a1678801446.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/hix4s91628259557.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5el95a1678801446.png"
+      "shirtNumber": null
     },
     {
       "name": "Marin Pongračić",
@@ -238,10 +175,7 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1997-09-11",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/siq0vs1758892100.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3tfxp51585496031.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/siq0vs1758892100.png"
+      "shirtNumber": null
     },
     {
       "name": "Duje Ćaleta-Car",
@@ -250,34 +184,25 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1996-09-17",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/625eso1762709855.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2sa26d1603836531.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/625eso1762709855.png"
+      "shirtNumber": null
     },
     {
       "name": "Nikola Vlašić",
-      "nameZh": "尼科拉·弗拉希奇",
+      "nameZh": "Nikola Vlašić",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "1997-10-04",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tmii4q1758814229.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/on2oja1622020774.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tmii4q1758814229.png"
+      "shirtNumber": null
     },
     {
       "name": "Mario Pašalić",
-      "nameZh": "马里奥·帕沙利奇",
+      "nameZh": "Mario Pašalić",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1995-02-09",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/akmxr91695157400.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/u3di9z1546032437.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/akmxr91695157400.png"
+      "shirtNumber": null
     },
     {
       "name": "Ante Budimir",
@@ -286,34 +211,34 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1991-07-22",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8v3s2w1762531932.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jln8lh1562704806.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8v3s2w1762531932.png"
+      "shirtNumber": null
     },
     {
       "name": "Ivan Perišić",
-      "nameZh": "伊万·佩里西奇",
+      "nameZh": "Ivan Perišić",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "1989-02-02",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ywkvv41764595295.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/04qmar1660764876.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ywkvv41764595295.png"
+      "shirtNumber": null
     },
     {
       "name": "Andrej Kramarić",
-      "nameZh": "安德烈·克拉马里奇",
+      "nameZh": "Andrej Kramarić",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1991-06-19",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9szvnr1763494431.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bdonoc1718995936.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9szvnr1763494431.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Mateo Kovačić",
+      "nameZh": "Mateo Kovačić",
+      "position": "Central Midfield",
+      "positionZh": "Central Midfield",
+      "dateOfBirth": "1994-05-06",
+      "nationality": "Croatia",
+      "shirtNumber": null
     },
     {
       "name": "Luka Modrić",
@@ -322,10 +247,7 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1985-09-09",
       "nationality": "Croatia",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/msewdx1758892756.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/6j40781707595475.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/msewdx1758892756.png"
+      "shirtNumber": null
     }
   ],
   "recentMatches": []

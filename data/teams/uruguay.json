@@ -5,11 +5,11 @@
   "code": "uy",
   "group": "J",
   "confederation": "CONMEBOL",
-  "fifaRank": 13,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/uy.png",
   "coach": {
-    "nameEn": "Marcelo Bielsa",
-    "nameZh": "马塞洛·贝尔萨",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1900,
@@ -17,15 +17,12 @@
   "squad": [
     {
       "name": "Fernando Muslera",
-      "nameZh": "费尔南多·穆斯莱拉",
+      "nameZh": "Fernando Muslera",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1986-06-16",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/orawu51724929691.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ymi2401611385822.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/orawu51724929691.png"
+      "shirtNumber": null
     },
     {
       "name": "Santiago Mele",
@@ -34,10 +31,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1997-09-06",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/dgr33p1718081529.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/dgr33p1718081529.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Sergio Rochet",
@@ -46,10 +40,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1993-03-23",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/02lxaa1767604928.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1k7zvv1718081124.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/02lxaa1767604928.png"
+      "shirtNumber": null
     },
     {
       "name": "Guillermo Varela",
@@ -58,10 +49,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1993-03-24",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qpcwtj1750919188.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/64tm5q1718084552.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qpcwtj1750919188.png"
+      "shirtNumber": null
     },
     {
       "name": "Matías Viña",
@@ -70,10 +58,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1997-11-09",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/b9t1k51750920495.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/zamed01718082967.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b9t1k51750920495.png"
+      "shirtNumber": null
     },
     {
       "name": "Joaquín Piquerez",
@@ -82,10 +67,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1998-08-24",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ly80qj1750412020.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/j26ysq1749722117.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ly80qj1750412020.png"
+      "shirtNumber": null
     },
     {
       "name": "José Luis Rodríguez",
@@ -94,10 +76,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1987-01-11",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Giorgian De Arrascaeta",
@@ -106,10 +85,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1994-06-01",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/2p9j0d1750919894.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/cn205s1718089023.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2p9j0d1750919894.png"
+      "shirtNumber": null
     },
     {
       "name": "Agustín Canobbio",
@@ -118,10 +94,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1998-10-01",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qgh8yj1767539679.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rz2mg31767539718.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qgh8yj1767539679.png"
+      "shirtNumber": null
     },
     {
       "name": "Maximiliano Araújo",
@@ -130,10 +103,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-02-15",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3u12tv1762290711.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/u9riu01718235633.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3u12tv1762290711.png"
+      "shirtNumber": null
     },
     {
       "name": "Emiliano Martínez",
@@ -142,10 +112,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1999-08-17",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ffr5xx1756984715.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7drp311770201331.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ffr5xx1756984715.png"
+      "shirtNumber": null
     },
     {
       "name": "Facundo Torres Pérez",
@@ -154,10 +121,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-04-13",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Nicolas de la Cruz",
@@ -166,10 +130,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1997-06-01",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/s4d9o91750920555.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1q3scm1718089192.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/s4d9o91750920555.png"
+      "shirtNumber": null
     },
     {
       "name": "Federico Viñas",
@@ -178,10 +139,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "1998-06-30",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/j83sru1762199495.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/q4sqjo1762199487.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/j83sru1762199495.png"
+      "shirtNumber": null
     },
     {
       "name": "Agustín Álvarez Martínez",
@@ -190,10 +148,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "2001-05-19",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Juan Sanabria",
@@ -202,22 +157,16 @@
       "positionZh": "Left-Back",
       "dateOfBirth": "2000-03-29",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Facundo Pellistri",
-      "nameZh": "法昆多·佩利斯特里",
+      "nameZh": "Facundo Pellistri",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "2001-12-20",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/33n2n91693853217.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/396tgj1718234828.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/33n2n91693853217.png"
+      "shirtNumber": null
     },
     {
       "name": "Nicolas Fonseca",
@@ -226,10 +175,7 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1998-10-19",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qw05pf1721222106.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4u1km61716542188.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qw05pf1721222106.png"
+      "shirtNumber": null
     },
     {
       "name": "Santiago Bueno",
@@ -238,22 +184,16 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1998-11-09",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Santiago_Bueno.png?width=500",
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Santiago_Bueno.png?width=500"
+      "shirtNumber": null
     },
     {
       "name": "Mathías Olivera",
-      "nameZh": "马蒂亚斯·奥利韦拉",
+      "nameZh": "Mathías Olivera",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "1997-10-31",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/b0ju3e1764089662.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/od71fp1771248714.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b0ju3e1764089662.png"
+      "shirtNumber": null
     },
     {
       "name": "Brian Rodríguez",
@@ -262,10 +202,7 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "2000-05-20",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/g1am161750329406.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9e5qgk1718234380.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/g1am161750329406.png"
+      "shirtNumber": null
     },
     {
       "name": "Darwin Núñez",
@@ -274,22 +211,16 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1999-06-24",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/i78juc1693941560.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/6b6yhd1718090345.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/i78juc1693941560.png"
+      "shirtNumber": null
     },
     {
       "name": "Manuel Ugarte",
-      "nameZh": "曼努埃尔·乌加特",
+      "nameZh": "Manuel Ugarte",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2001-04-11",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/35xg041766826974.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pehyss1770994303.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/35xg041766826974.png"
+      "shirtNumber": null
     },
     {
       "name": "Sebastían Cáceres",
@@ -298,22 +229,16 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1999-08-18",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q6rtb21750326812.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i0d9zo1718085441.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q6rtb21750326812.png"
+      "shirtNumber": null
     },
     {
       "name": "Ronald Araújo",
-      "nameZh": "罗纳德·阿劳霍",
+      "nameZh": "Ronald Araújo",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1999-03-07",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ggpnkx1762289497.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/z4bmo21771260643.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ggpnkx1762289497.png"
+      "shirtNumber": null
     },
     {
       "name": "Rodrigo Aguirre",
@@ -322,22 +247,16 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1994-10-01",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6q78em1750327738.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/97tq1b1716821908.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6q78em1750327738.png"
+      "shirtNumber": null
     },
     {
       "name": "José Maria Giménez",
-      "nameZh": "何塞·马里亚·希门尼斯",
+      "nameZh": "José Maria Giménez",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1995-01-20",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/j2c2gn1762287634.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/fphr8u1718082723.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/j2c2gn1762287634.png"
+      "shirtNumber": null
     },
     {
       "name": "Federico Valverde",
@@ -346,10 +265,7 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1998-07-22",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5249151768499204.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/38ndp21771266409.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5249151768499204.png"
+      "shirtNumber": null
     }
   ],
   "recentMatches": []

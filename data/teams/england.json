@@ -5,11 +5,11 @@
   "code": "gb-eng",
   "group": "C",
   "confederation": "UEFA",
-  "fifaRank": 4,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/gb-eng.png",
   "coach": {
-    "nameEn": "Thomas Tuchel",
-    "nameZh": "托马斯·图赫尔",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1863,
@@ -17,99 +17,75 @@
   "squad": [
     {
       "name": "Jordan Pickford",
-      "nameZh": "乔丹·皮克福德",
+      "nameZh": "Jordan Pickford",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1994-03-07",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wt1c4n1756976358.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/m66e5n1771945410.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wt1c4n1756976358.png"
+      "shirtNumber": null
     },
     {
       "name": "Jason Steele",
-      "nameZh": "贾森·斯蒂尔",
+      "nameZh": "Jason Steele",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1990-08-18",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/su0v781756998692.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/06fwnr1772017425.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/su0v781756998692.png"
+      "shirtNumber": null
     },
     {
       "name": "Dean Henderson",
-      "nameZh": "迪恩·亨德森",
+      "nameZh": "Dean Henderson",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1997-03-12",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/fexcpe1761492531.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0bcnqd1772140599.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fexcpe1761492531.png"
+      "shirtNumber": null
     },
     {
       "name": "Aaron Ramsdale",
-      "nameZh": "阿隆·拉姆斯代尔",
+      "nameZh": "Aaron Ramsdale",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1998-05-14",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/vzpaeh1770797070.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/z0dple1678273036.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vzpaeh1770797070.png"
+      "shirtNumber": null
     },
     {
       "name": "James Trafford",
-      "nameZh": "詹姆斯·特拉福德",
+      "nameZh": "James Trafford",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "2002-10-10",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/bzm62v1769183340.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4a78dn1626203719.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bzm62v1769183340.png"
+      "shirtNumber": null
     },
     {
       "name": "Nico O'Reilly",
-      "nameZh": "尼科·奥赖利",
+      "nameZh": "Nico O'Reilly",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "2005-03-21",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hoxsam1769182257.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/q6n9cm1722762128.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hoxsam1769182257.png"
+      "shirtNumber": null
     },
     {
       "name": "Declan Rice",
-      "nameZh": "德克兰·赖斯",
+      "nameZh": "Declan Rice",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1999-01-14",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/do2pew1694204464.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ty3z7g1705918131.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/do2pew1694204464.png"
+      "shirtNumber": null
     },
     {
       "name": "Harvey Barnes",
-      "nameZh": "哈维·巴恩斯",
+      "nameZh": "Harvey Barnes",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "1997-12-09",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/h4ujtn1766824904.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xjidxn1770796294.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/h4ujtn1766824904.png"
+      "shirtNumber": null
     },
     {
       "name": "Harry Kane",
@@ -118,10 +94,7 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1993-07-28",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/j4ouvd1756408895.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0w9up71770542636.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/j4ouvd1756408895.png"
+      "shirtNumber": null
     },
     {
       "name": "Phil Foden",
@@ -130,202 +103,151 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2000-05-28",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lbn4sx1769182620.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/19o7yc1749157221.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lbn4sx1769182620.png"
+      "shirtNumber": null
     },
     {
       "name": "Dominic Solanke",
-      "nameZh": "多米尼克·索兰克",
+      "nameZh": "Dominic Solanke",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1997-09-14",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/e4lpxy1757016341.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1mlqqg1724177239.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/e4lpxy1757016341.png"
+      "shirtNumber": null
     },
     {
       "name": "Anthony Gordon",
-      "nameZh": "安东尼·戈登",
+      "nameZh": "Anthony Gordon",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "2001-02-24",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8ztck61766824986.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yleib91770796577.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8ztck61766824986.png"
+      "shirtNumber": null
     },
     {
       "name": "Dominic Calvert-Lewin",
-      "nameZh": "多米尼克·卡尔弗特-勒温",
+      "nameZh": "Dominic Calvert-Lewin",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1997-03-16",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8gyavf1757076856.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rap4sz1772199651.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8gyavf1757076856.png"
+      "shirtNumber": null
     },
     {
       "name": "Ezri Konsa",
-      "nameZh": "埃兹里·孔萨",
+      "nameZh": "Ezri Konsa",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1998-04-06",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rnu4al1756984921.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/uc1jmw1770201046.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rnu4al1756984921.png"
+      "shirtNumber": null
     },
     {
       "name": "Ben White",
-      "nameZh": "本·怀特",
+      "nameZh": "Ben White",
       "position": "Right-Back",
       "positionZh": "Right-Back",
       "dateOfBirth": "1997-10-08",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/o0wya01761495814.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/t1k9bt1508404550.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/o0wya01761495814.png"
+      "shirtNumber": null
     },
     {
       "name": "Dan Burn",
-      "nameZh": "丹·伯恩",
+      "nameZh": "Dan Burn",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1992-05-09",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/m4ze3r1766824954.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/cklwjy1770796429.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/m4ze3r1766824954.png"
+      "shirtNumber": null
     },
     {
       "name": "Marcus Rashford",
-      "nameZh": "马库斯·拉什福德",
+      "nameZh": "Marcus Rashford",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "1997-10-31",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/soi5zw1761512565.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rb4hx61669799682.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/soi5zw1761512565.png"
+      "shirtNumber": null
     },
     {
       "name": "Harry Maguire",
-      "nameZh": "哈里·马奎尔",
+      "nameZh": "Harry Maguire",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1993-03-05",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q8u0ez1766826809.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/8gov1b1770993938.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q8u0ez1766826809.png"
+      "shirtNumber": null
     },
     {
       "name": "Jordan Henderson",
-      "nameZh": "乔丹·亨德森",
+      "nameZh": "Jordan Henderson",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1990-06-17",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/by7qs71756903473.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4betej1705696564.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/by7qs71756903473.png"
+      "shirtNumber": null
     },
     {
       "name": "John Stones",
-      "nameZh": "约翰·斯通斯",
+      "nameZh": "John Stones",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1994-05-28",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/dkq8d41763068509.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iub2p21763068622.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/dkq8d41763068509.png"
+      "shirtNumber": null
     },
     {
       "name": "Adam Wharton",
-      "nameZh": "亚当·沃顿",
+      "nameZh": "Adam Wharton",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2004-06-02",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/dierqf1761492318.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/z2cksj1724687465.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/dierqf1761492318.png"
+      "shirtNumber": null
     },
     {
       "name": "Lewis Hall",
-      "nameZh": "刘易斯·霍尔",
+      "nameZh": "Lewis Hall",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "2025-06-30",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lrlipr1766825780.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/477cot1641668875.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lrlipr1766825780.png"
+      "shirtNumber": null
     },
     {
       "name": "Kobbie Mainoo",
-      "nameZh": "科比·梅努",
+      "nameZh": "Kobbie Mainoo",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "2005-04-19",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8qrveo1766826836.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/h66a4l1696149845.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8qrveo1766826836.png"
+      "shirtNumber": null
     },
     {
       "name": "Valentino Livramento",
-      "nameZh": "瓦伦蒂诺·利夫拉门托",
+      "nameZh": "Valentino Livramento",
       "position": "Right-Back",
       "positionZh": "Right-Back",
       "dateOfBirth": "2002-11-12",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/74gkwv1766824667.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gs2z9r1629228185.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/74gkwv1766824667.png"
+      "shirtNumber": null
     },
     {
       "name": "Noni Madueke",
-      "nameZh": "诺尼·马杜埃克",
+      "nameZh": "Noni Madueke",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "2002-03-10",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0x05ou1769330933.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ndpkvb1769331026.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0x05ou1769330933.png"
+      "shirtNumber": null
     },
     {
       "name": "Cole Palmer",
-      "nameZh": "科尔·帕尔默",
+      "nameZh": "Cole Palmer",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2002-05-06",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/fn0pzc1757010119.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/r7yrsa1770541322.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fn0pzc1757010119.png"
+      "shirtNumber": null
     },
     {
       "name": "Jude Bellingham",
@@ -334,46 +256,34 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2003-06-29",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/trk5271750271712.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rfg8xd1771263826.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/trk5271750271712.png"
+      "shirtNumber": null
     },
     {
       "name": "Marc Guéhi",
-      "nameZh": "马克·盖伊",
+      "nameZh": "Marc Guéhi",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "2000-07-13",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/842bfy1771748128.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/wqgmpl1609183670.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/842bfy1771748128.png"
+      "shirtNumber": null
     },
     {
       "name": "Elliot Anderson",
-      "nameZh": "埃利奥特·安德森",
+      "nameZh": "Elliot Anderson",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "2002-11-06",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rhm8q21757162869.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1d1pes1772392535.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rhm8q21757162869.png"
+      "shirtNumber": null
     },
     {
       "name": "James Garner",
-      "nameZh": "詹姆斯·加纳",
+      "nameZh": "James Garner",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2001-03-13",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zb9ap61771944918.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xoaj4d1585668725.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zb9ap61771944918.png"
+      "shirtNumber": null
     },
     {
       "name": "Bukayo Saka",
@@ -382,58 +292,43 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2001-09-05",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xfwok41769331816.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/axl31b1769332282.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xfwok41769331816.png"
+      "shirtNumber": null
     },
     {
       "name": "Morgan Rogers",
-      "nameZh": "摩根·罗杰斯",
+      "nameZh": "Morgan Rogers",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2002-07-26",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hcpqx81756987242.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/cvq4kw1770201491.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hcpqx81756987242.png"
+      "shirtNumber": null
     },
     {
       "name": "Djed Spence",
-      "nameZh": "杰德·斯彭斯",
+      "nameZh": "Djed Spence",
       "position": "Right-Back",
       "positionZh": "Right-Back",
       "dateOfBirth": "2000-08-09",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/erd1vi1757875565.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/l08fu91609615013.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/erd1vi1757875565.png"
+      "shirtNumber": null
     },
     {
       "name": "Fikayo Tomori",
-      "nameZh": "菲卡约·托莫里",
+      "nameZh": "Fikayo Tomori",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1997-12-19",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7a8yy11758893186.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yxwruu1469436878.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7a8yy11758893186.png"
+      "shirtNumber": null
     },
     {
       "name": "Jarrod Bowen",
-      "nameZh": "贾罗德·鲍恩",
+      "nameZh": "Jarrod Bowen",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "1996-01-01",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/z968j71756984854.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/urha211772132839.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/z968j71756984854.png"
+      "shirtNumber": null
     }
   ],
   "recentMatches": []

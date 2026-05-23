@@ -5,303 +5,240 @@
   "code": "br",
   "group": "B",
   "confederation": "CONMEBOL",
-  "fifaRank": 5,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/br.png",
   "coach": {
-    "nameEn": "Dorival Júnior",
-    "nameZh": "多里瓦尔·儒尼奥尔",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1914,
   "venue": "",
   "squad": [
     {
+      "name": "Weverton",
+      "nameZh": "Weverton",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1987-12-13",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alisson Becker",
+      "nameZh": "Alisson Becker",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1992-10-02",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
       "name": "Ederson",
-      "nameZh": "埃德森",
+      "nameZh": "Ederson",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1993-08-17",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xhlait1769179027.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/lqvotq1741317988.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xhlait1769179027.png"
-    },
-    {
-      "name": "Hugo Souza",
-      "nameZh": "乌戈·索萨",
-      "position": "Goalkeeper",
-      "positionZh": "门将",
-      "dateOfBirth": "1999-01-31",
-      "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9nmkwr1767272955.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/75mbv51767272982.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9nmkwr1767272955.png"
-    },
-    {
-      "name": "Bento",
-      "nameZh": "本托",
-      "position": "Goalkeeper",
-      "positionZh": "门将",
-      "dateOfBirth": "1999-06-10",
-      "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/21wjvm1683660594.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/k3ocfk1661963383.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/21wjvm1683660594.png"
+      "shirtNumber": null
     },
     {
       "name": "Roger Ibañez",
-      "nameZh": "罗杰·伊巴涅斯",
+      "nameZh": "Roger Ibañez",
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "1998-11-23",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/v5oj711771663666.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/94n8i41580203524.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/v5oj711771663666.png"
+      "shirtNumber": null
     },
     {
       "name": "Douglas Santos",
-      "nameZh": "道格拉斯·桑托斯",
+      "nameZh": "Douglas Santos",
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "1994-03-22",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/w5w8j71692197353.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/30q7he1560026789.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/w5w8j71692197353.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Danilo Luiz da Silva",
+      "nameZh": "Danilo Luiz da Silva",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1991-07-15",
+      "nationality": "Brazil",
+      "shirtNumber": null
     },
     {
       "name": "Léo Pereira",
-      "nameZh": "莱奥·佩雷拉",
+      "nameZh": "Léo Pereira",
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "1996-01-31",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/cuvmse1750919246.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/j55j1v1750454550.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/cuvmse1750919246.png"
+      "shirtNumber": null
     },
     {
-      "name": "Kaiki",
-      "nameZh": "卡伊基",
+      "name": "Gabriel Magalhães",
+      "nameZh": "Gabriel Magalhães",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "2002-03-08",
+      "dateOfBirth": "1997-12-19",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/glj9od1767454348.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bxu8tj1767454380.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/glj9od1767454348.png"
+      "shirtNumber": null
     },
     {
       "name": "Fabinho",
-      "nameZh": "法比尼奥",
+      "nameZh": "Fabinho",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "1993-10-23",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0llctp1632777025.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/fx3s561534001514.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0llctp1632777025.png"
+      "shirtNumber": null
     },
     {
-      "name": "Gabriel Sara",
-      "nameZh": "加布里埃尔·萨拉",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1999-06-26",
+      "name": "Neymar",
+      "nameZh": "内马尔",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1992-02-05",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rwwlzp1769177840.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/zhqvkp1674658193.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rwwlzp1769177840.png"
+      "shirtNumber": null
     },
     {
       "name": "Rayan",
-      "nameZh": "拉扬",
+      "nameZh": "Rayan",
       "position": "Offence",
       "positionZh": "前锋",
       "dateOfBirth": "2006-08-03",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pxl8n91769182693.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9yw7w11570031997.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pxl8n91769182693.png"
-    },
-    {
-      "name": "Vitor Reis",
-      "nameZh": "维托尔·雷斯",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "2006-01-12",
-      "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3j0alo1762457301.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/w2jzbx1739302921.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3j0alo1762457301.png"
+      "shirtNumber": null
     },
     {
       "name": "Endrick",
-      "nameZh": "恩德里克",
+      "nameZh": "Endrick",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2006-07-21",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5yb3rv1733653315.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7tn5xc1724608312.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5yb3rv1733653315.png"
-    },
-    {
-      "name": "Andrey Santos",
-      "nameZh": "安德雷·桑托斯",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "2004-05-03",
-      "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/jt1o7i1757010267.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/kdun6w1771428273.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jt1o7i1757010267.png"
+      "shirtNumber": null
     },
     {
       "name": "Danilo dos Santos de Oliveira",
-      "nameZh": "达尼洛·多斯桑托斯·德奥利韦拉",
+      "nameZh": "Danilo dos Santos de Oliveira",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2001-04-29",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6hr4w81750454528.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9qsyun1598691910.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6hr4w81750454528.png"
+      "shirtNumber": null
     },
     {
       "name": "Luiz Henrique",
-      "nameZh": "路易斯·恩里克",
+      "nameZh": "Luiz Henrique",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "2001-01-02",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9ymdxw1673688657.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/kqp6jb1673688710.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9ymdxw1673688657.png"
+      "shirtNumber": null
     },
     {
       "name": "Thiago",
-      "nameZh": "蒂亚戈",
+      "nameZh": "Thiago",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2001-06-26",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1l4cb21693941100.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/sbdpwv1601657415.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1l4cb21693941100.png"
-    },
-    {
-      "name": "João Pedro",
-      "nameZh": "若昂·佩德罗",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "2001-09-26",
-      "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Martinelli",
-      "nameZh": "马丁内利",
+      "nameZh": "Martinelli",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "2001-06-18",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/43006782.png",
-      "photoThumb": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/43006782.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Raphinha",
+      "nameZh": "Raphinha",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "1996-12-14",
+      "nationality": "Brazil",
+      "shirtNumber": null
     },
     {
       "name": "Matheus Cunha",
-      "nameZh": "马特乌斯·库尼亚",
+      "nameZh": "Matheus Cunha",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1999-05-27",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/29x61e1762020281.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1nt1i61770993321.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/29x61e1762020281.png"
-    },
-    {
-      "name": "Danilo",
-      "nameZh": "达尼洛",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1991-07-15",
-      "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6hr4w81750454528.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9qsyun1598691910.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6hr4w81750454528.png"
+      "shirtNumber": null
     },
     {
       "name": "Casemiro",
-      "nameZh": "卡塞米罗",
+      "nameZh": "Casemiro",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1992-02-23",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ydr3j41766826524.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0g0bxh1706525357.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ydr3j41766826524.png"
+      "shirtNumber": null
     },
     {
       "name": "Marquinhos",
-      "nameZh": "马尔基尼奥斯",
+      "nameZh": "Marquinhos",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1994-05-14",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7x9gtl1766335348.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/sejelk1770217582.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7x9gtl1766335348.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Alex Sandro",
+      "nameZh": "Alex Sandro",
+      "position": "Left-Back",
+      "positionZh": "Left-Back",
+      "dateOfBirth": "1991-01-26",
+      "nationality": "Brazil",
+      "shirtNumber": null
+    },
+    {
+      "name": "Bruno Guimarães",
+      "nameZh": "Bruno Guimarães",
+      "position": "Defensive Midfield",
+      "positionZh": "Defensive Midfield",
+      "dateOfBirth": "1997-11-16",
+      "nationality": "Brazil",
+      "shirtNumber": null
     },
     {
       "name": "Vinicius Junior",
-      "nameZh": "维尼修斯·儒尼奥尔",
+      "nameZh": "Vinicius Junior",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "2000-07-12",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ejuxsh1750271859.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/lxf1he1771264845.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ejuxsh1750271859.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Lucas Paquetá",
+      "nameZh": "Lucas Paquetá",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "1997-08-27",
+      "nationality": "Brazil",
+      "shirtNumber": null
     },
     {
       "name": "Bremer",
-      "nameZh": "布雷默",
+      "nameZh": "Bremer",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1997-03-18",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3qx4p71759224866.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/icn9je1716707438.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3qx4p71759224866.png"
+      "shirtNumber": null
     }
   ],
   "recentMatches": []

@@ -5,11 +5,11 @@
   "code": "ar",
   "group": "A",
   "confederation": "CONMEBOL",
-  "fifaRank": 1,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/ar.png",
   "coach": {
-    "nameEn": "Lionel Scaloni",
-    "nameZh": "利奥内尔·斯卡洛尼",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1893,
@@ -17,15 +17,12 @@
   "squad": [
     {
       "name": "Géronimo Rulli",
-      "nameZh": "赫罗尼莫·鲁利",
+      "nameZh": "Géronimo Rulli",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1992-05-20",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/cpkkmg1766153528.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/cpkkmg1766153528.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jnahab1723461796.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Emiliano Martínez",
@@ -34,46 +31,34 @@
       "positionZh": "门将",
       "dateOfBirth": "1992-09-02",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ffr5xx1756984715.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ffr5xx1756984715.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7drp311770201331.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Juan Musso",
-      "nameZh": "胡安·穆索",
+      "nameZh": "Juan Musso",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1994-05-06",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/401mle1762287491.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/401mle1762287491.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3c9w9x1623582500.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Gabriel Rojas",
-      "nameZh": "加布里埃尔·罗哈斯",
+      "nameZh": "Gabriel Rojas",
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "1997-06-22",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/eexben1716469472.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/eexben1716469472.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pv60o21716469445.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Agustin Giay",
-      "nameZh": "阿古斯丁·吉亚伊",
+      "nameZh": "Agustin Giay",
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "2004-01-16",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bci0rf1750411804.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/bci0rf1750411804.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/u9vuz31750411773.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Lionel Messi",
@@ -82,130 +67,97 @@
       "positionZh": "中场",
       "dateOfBirth": "1987-06-24",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/e0i2051750317027.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/e0i2051750317027.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/kpfsvp1725295651.jpg"
+      "shirtNumber": null
     },
     {
       "name": "José Manuel López",
-      "nameZh": "何塞·曼努埃尔·洛佩斯",
+      "nameZh": "José Manuel López",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "2000-12-06",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pj879t1755631423.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pj879t1755631423.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rsk7i61755631391.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Franco Mastantuono",
-      "nameZh": "弗兰科·马斯坦图奥诺",
+      "nameZh": "Franco Mastantuono",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "2007-08-14",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pgq83k1762604333.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pgq83k1762604333.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i1b8sm1771265267.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Nico Paz",
-      "nameZh": "尼科·帕斯",
+      "nameZh": "Nico Paz",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2004-09-08",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hfv6uz1764278372.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hfv6uz1764278372.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5l7qwh1699557920.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Gianluca Prestianni",
-      "nameZh": "詹卢卡·普雷斯蒂安尼",
+      "nameZh": "Gianluca Prestianni",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "2006-01-31",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q6htd61758216503.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q6htd61758216503.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3c8z8n1750454207.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Maximo Perrone",
-      "nameZh": "马克西莫·佩罗内",
+      "nameZh": "Maximo Perrone",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2003-01-07",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gqcg4e1764278402.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/gqcg4e1764278402.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9jiyou1674508618.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Giuliano Simeone",
-      "nameZh": "朱利亚诺·西蒙尼",
+      "nameZh": "Giuliano Simeone",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "2002-12-18",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/j97npy1762288635.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/j97npy1762288635.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4lnyqr1723487273.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Valentin Barco",
-      "nameZh": "瓦伦汀·巴尔科",
+      "nameZh": "Valentin Barco",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "2004-07-23",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9yluhs1766053865.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9yluhs1766053865.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/p682r81716265879.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Lucas Martínez Quarta",
-      "nameZh": "卢卡斯·马丁内斯·夸尔塔",
+      "nameZh": "Lucas Martínez Quarta",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1996-05-10",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0r0dqb1750268785.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0r0dqb1750268785.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/z96vn01608633677.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Tiago Palacios",
-      "nameZh": "蒂亚戈·帕拉西奥斯",
+      "nameZh": "Tiago Palacios",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "2003-04-28",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ghrlsp1716554696.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ghrlsp1716554696.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/moqf6j1716554890.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Enzo Fernández",
-      "nameZh": "恩佐·费尔南德斯",
+      "nameZh": "Enzo Fernández",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "2001-01-17",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b71vun1757003115.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/b71vun1757003115.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/59cm7k1771427301.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Julián Álvarez",
@@ -214,154 +166,115 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2000-01-31",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/91pla41762288186.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/91pla41762288186.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rm3tj11741979331.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Thiago Almada",
-      "nameZh": "蒂亚戈·阿尔马达",
+      "nameZh": "Thiago Almada",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2001-04-26",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ffqi3i1762288171.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ffqi3i1762288171.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/kolwpn1652439777.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Nahuel Molina",
-      "nameZh": "纳韦尔·莫利纳",
+      "nameZh": "Nahuel Molina",
       "position": "Right-Back",
       "positionZh": "Right-Back",
       "dateOfBirth": "1998-04-06",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/36bdni1762288498.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/36bdni1762288498.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/uhc6mv1719036284.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Marcos Senesi",
-      "nameZh": "马科斯·塞内西",
+      "nameZh": "Marcos Senesi",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1997-05-10",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ve65ug1757018745.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ve65ug1757018745.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3hid8v1771752083.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Christian Romero",
-      "nameZh": "克里斯蒂安·罗梅罗",
+      "nameZh": "Christian Romero",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1998-04-27",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/an3fxz1750030046.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/an3fxz1750030046.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iaqwm21510319417.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Alexis Mac Allister",
-      "nameZh": "阿莱克西斯·麦卡利斯特",
+      "nameZh": "Alexis Mac Allister",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1998-12-24",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/96dmuf1757087513.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/96dmuf1757087513.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9n5dnd1751999911.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Nicolás González",
-      "nameZh": "尼古拉斯·冈萨雷斯",
+      "nameZh": "Nicolás González",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "1998-04-06",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/e6mhnz1762288376.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/e6mhnz1762288376.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/w7p49i1719033947.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Exequiel Palacios",
-      "nameZh": "埃塞基耶尔·帕拉西奥斯",
+      "nameZh": "Exequiel Palacios",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1998-10-05",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/oby41y1756316369.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/oby41y1756316369.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7950t21585495385.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Leandro Paredes",
-      "nameZh": "莱安德罗·帕雷德斯",
+      "nameZh": "Leandro Paredes",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1994-06-29",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/chsspk1763384490.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/chsspk1763384490.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/vt5b0f1555959873.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Marcos Acuña",
-      "nameZh": "马科斯·阿库尼亚",
+      "nameZh": "Marcos Acuña",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "1991-10-28",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pfw9qa1750270796.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pfw9qa1750270796.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/z07it21719030763.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Nicolás Tagliafico",
-      "nameZh": "尼古拉斯·塔利亚菲科",
+      "nameZh": "Nicolás Tagliafico",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "1992-08-31",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4z43fy1766146600.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/4z43fy1766146600.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/vfodsw1558203361.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Nicolás Otamendi",
-      "nameZh": "尼古拉斯·奥塔门迪",
+      "nameZh": "Nicolás Otamendi",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1988-02-12",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ifxn6x1632995975.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ifxn6x1632995975.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/si0k951623584039.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Rodrigo de Paul",
-      "nameZh": "罗德里戈·德保罗",
+      "nameZh": "Rodrigo de Paul",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1994-05-24",
       "nationality": "Argentina",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/n7z5lr1773999437.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/n7z5lr1773999437.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1dd1xh1770024012.jpg"
+      "shirtNumber": null
     }
   ],
   "recentMatches": []

@@ -5,11 +5,11 @@
   "code": "gh",
   "group": "L",
   "confederation": "CAF",
-  "fifaRank": 36,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/gh.png",
   "coach": {
-    "nameEn": "Otto Addo",
-    "nameZh": "奥托·阿多",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1957,
@@ -22,10 +22,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1996-11-29",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lyg3961630005372.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/77eobd1630005309.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lyg3961630005372.png"
+      "shirtNumber": null
     },
     {
       "name": "Joseph Anang",
@@ -34,10 +31,7 @@
       "positionZh": "门将",
       "dateOfBirth": "2000-06-08",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/gy44d91697730581.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rcnx421633027119.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gy44d91697730581.png"
+      "shirtNumber": null
     },
     {
       "name": "Benjamin Asare",
@@ -46,10 +40,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1992-07-13",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/859620.png",
-      "photoThumb": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/859620.png"
+      "shirtNumber": null
     },
     {
       "name": "Derrick Luckassen",
@@ -58,10 +49,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1995-07-03",
       "nationality": "Netherlands",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/f5n32i1734099796.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mmxlf31734099764.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/f5n32i1734099796.png"
+      "shirtNumber": null
     },
     {
       "name": "Alexander Djiku",
@@ -70,10 +58,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1994-08-09",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/t0bh2q1721243943.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/g5u7dx1549735241.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/t0bh2q1721243943.png"
+      "shirtNumber": null
     },
     {
       "name": "Derrick Köhn",
@@ -82,10 +67,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1999-02-04",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/gk4i0d1763641171.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/y7wa661717600730.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gk4i0d1763641171.png"
+      "shirtNumber": null
     },
     {
       "name": "Jerome Opoku",
@@ -94,10 +76,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1998-10-14",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rf1ms41631978685.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/rf1ms41631978685.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Jonas Adjei Adjetey",
@@ -106,10 +85,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "2003-12-13",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/e9hu1g1746073832.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/e0bcbl1746073793.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/e9hu1g1746073832.png"
+      "shirtNumber": null
     },
     {
       "name": "Kojo Peprah Oppong",
@@ -118,10 +94,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "2004-06-04",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lym9oq1766319891.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/d5xcxz1765836176.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lym9oq1766319891.png"
+      "shirtNumber": null
     },
     {
       "name": "Francis Amuzu",
@@ -130,10 +103,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1999-08-23",
       "nationality": "Belgium",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lnoeeb1767545419.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3c841t1687614769.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lnoeeb1767545419.png"
+      "shirtNumber": null
     },
     {
       "name": "Kwasi Sibo",
@@ -142,10 +112,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1998-06-24",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/l6qiwd1762620509.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ka8o9v1762611977.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/l6qiwd1762620509.png"
+      "shirtNumber": null
     },
     {
       "name": "Caleb Yirenkyi",
@@ -154,10 +121,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2006-01-15",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/dqki3p1765402684.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/dzkf7l1743774047.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/dqki3p1765402684.png"
+      "shirtNumber": null
     },
     {
       "name": "Manu Duah",
@@ -166,10 +130,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2005-06-05",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9m2f0t1762901391.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jle2dl1756580219.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9m2f0t1762901391.png"
+      "shirtNumber": null
     },
     {
       "name": "Daniel Agyei",
@@ -177,11 +138,8 @@
       "position": "Offence",
       "positionZh": "前锋",
       "dateOfBirth": "1997-06-01",
-      "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lflmie1724240405.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/t1hu191688069183.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lflmie1724240405.png"
+      "nationality": "Ghana",
+      "shirtNumber": null
     },
     {
       "name": "Christopher Bonsu Baah",
@@ -190,10 +148,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "2004-12-14",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/z0g3m41717947515.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/wcypva1717947463.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/z0g3m41717947515.png"
+      "shirtNumber": null
     },
     {
       "name": "Prince Adu",
@@ -202,10 +157,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "2003-09-23",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Ibrahim Sulemana",
@@ -214,10 +166,7 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2003-05-22",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/e4sjm51758897476.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/dralsv1679667689.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/e4sjm51758897476.png"
+      "shirtNumber": null
     },
     {
       "name": "Abdul Issahaku",
@@ -226,10 +175,7 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2004-03-08",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ecql4i1761861535.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/8yoz1a1668454156.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ecql4i1761861535.png"
+      "shirtNumber": null
     },
     {
       "name": "Jesurun Rak-Sakyi",
@@ -238,10 +184,7 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2002-10-05",
       "nationality": "England",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/io3c3z1766828439.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/vd426e1661084621.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/io3c3z1766828439.png"
+      "shirtNumber": null
     },
     {
       "name": "Augustine Boakye",
@@ -250,10 +193,7 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2000-11-03",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Boakye_ASSE_MHSC_2425.png?width=500",
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Boakye_ASSE_MHSC_2425.png?width=500"
+      "shirtNumber": null
     },
     {
       "name": "Marvin Senaya",
@@ -262,10 +202,7 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "2001-01-28",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/scdnlk1765920733.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/a9wwjo1660839704.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/scdnlk1765920733.png"
+      "shirtNumber": null
     },
     {
       "name": "Kamal Deen Sulemana",
@@ -274,10 +211,7 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "2002-02-15",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8761hy1764331699.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/w9stoi1630490492.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8761hy1764331699.png"
+      "shirtNumber": null
     },
     {
       "name": "Ransford Königsdörffer",
@@ -286,10 +220,7 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2001-09-13",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/teu04x1763416900.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jo7e7l1694786219.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/teu04x1763416900.png"
+      "shirtNumber": null
     },
     {
       "name": "Patric Pfeiffer",
@@ -298,10 +229,7 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1999-08-20",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7745cb1772289566.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yuf63j1709934672.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7745cb1772289566.png"
+      "shirtNumber": null
     },
     {
       "name": "Gideon Mensah",
@@ -310,10 +238,7 @@
       "positionZh": "Left-Back",
       "dateOfBirth": "1998-07-18",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/gvciqz1765920565.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bglc5l1668454974.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gvciqz1765920565.png"
+      "shirtNumber": null
     },
     {
       "name": "Elisha Owusu",
@@ -322,10 +247,7 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1997-11-07",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/2ypxwb1765920691.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/j7heas1668455801.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2ypxwb1765920691.png"
+      "shirtNumber": null
     },
     {
       "name": "Jordan Ayew",
@@ -334,10 +256,7 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "1991-09-11",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/kiav0x1761861279.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bx0rp01509542430.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kiav0x1761861279.png"
+      "shirtNumber": null
     },
     {
       "name": "Antoine Semenyo",
@@ -346,10 +265,7 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2000-01-07",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9y2ge41768393433.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mbv2q31767953143.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9y2ge41768393433.png"
+      "shirtNumber": null
     },
     {
       "name": "Thomas Partey",
@@ -358,10 +274,7 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1993-06-13",
       "nationality": "Ghana",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/oys62i1762889055.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/lnsxw11705917605.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/oys62i1762889055.png"
+      "shirtNumber": null
     }
   ],
   "recentMatches": []

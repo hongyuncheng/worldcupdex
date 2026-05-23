@@ -5,11 +5,11 @@
   "code": "py",
   "group": "D",
   "confederation": "CONMEBOL",
-  "fifaRank": 39,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/py.png",
   "coach": {
-    "nameEn": "Alfaro Moreno",
-    "nameZh": "阿尔法罗·莫雷诺",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1906,
@@ -22,10 +22,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1993-04-21",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/uavpyg1716988998.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0n3sni1546256750.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/uavpyg1716988998.png"
+      "shirtNumber": null
     },
     {
       "name": "Roberto Fernández",
@@ -34,10 +31,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1988-03-29",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/as69at1754465614.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nn0p641719613832.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/as69at1754465614.png"
+      "shirtNumber": null
     },
     {
       "name": "Orlando Gill",
@@ -46,10 +40,7 @@
       "positionZh": "门将",
       "dateOfBirth": "2000-06-11",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ngvdt71765311798.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/48pr1v1765311760.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ngvdt71765311798.png"
+      "shirtNumber": null
     },
     {
       "name": "Fabián Balbuena",
@@ -58,10 +49,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1991-08-23",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8fk4qp1691152569.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/88hadi1557408983.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8fk4qp1691152569.png"
+      "shirtNumber": null
     },
     {
       "name": "Gustavo Gómez",
@@ -70,10 +58,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1993-05-06",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ytrnlp1750412203.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/x37vm21725068007.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ytrnlp1750412203.png"
+      "shirtNumber": null
     },
     {
       "name": "Júnior Alonso",
@@ -82,10 +67,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1993-02-09",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qf74pc1763755103.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/j86qux1629469673.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qf74pc1763755103.png"
+      "shirtNumber": null
     },
     {
       "name": "Nicolás Fernández",
@@ -94,10 +76,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1998-03-02",
       "nationality": "Uruguay",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9kgtx91715625750.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/9kgtx91715625750.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Juan Cáceres",
@@ -106,10 +85,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "2000-06-01",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/mgo6b01754402056.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i75q401754402141.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/mgo6b01754402056.png"
+      "shirtNumber": null
     },
     {
       "name": "Alan Benitez",
@@ -118,10 +94,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1994-01-25",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ku5led1767558490.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3utpgw1662391562.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ku5led1767558490.png"
+      "shirtNumber": null
     },
     {
       "name": "Gustavo Velázquez",
@@ -130,10 +103,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1991-04-17",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/i9pi1z1716825450.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7hkw3p1716825424.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/i9pi1z1716825450.png"
+      "shirtNumber": null
     },
     {
       "name": "Alexandro Maidana",
@@ -142,10 +112,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "2005-07-26",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Mauricio",
@@ -154,10 +121,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2001-06-22",
       "nationality": "Brazil",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tpsysv1424977861.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qvvqvu1421337895.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tpsysv1424977861.png"
+      "shirtNumber": null
     },
     {
       "name": "Braian Ojeda",
@@ -166,10 +130,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-06-27",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/2mrheq1778592772.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/t3gn661661633873.jpg",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/2mrheq1778592772.png"
+      "shirtNumber": null
     },
     {
       "name": "Matías Galarza",
@@ -178,10 +139,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2002-02-11",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/mnnh0g1777643155.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xp2rov1717947604.jpg",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/mnnh0g1777643155.png"
+      "shirtNumber": null
     },
     {
       "name": "Damian Bobadilla",
@@ -190,10 +148,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2001-07-11",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/617tsc1716917227.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/fhquot1767799708.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/617tsc1716917227.png"
+      "shirtNumber": null
     },
     {
       "name": "Gustavo Caballero",
@@ -202,10 +157,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2001-09-21",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6cohox1767781247.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/dmymf31767781182.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6cohox1767781247.png"
+      "shirtNumber": null
     },
     {
       "name": "Lucas Romero",
@@ -214,10 +166,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2002-08-29",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/efz9tw1767454513.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/k7cidp1767454547.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/efz9tw1767454513.png"
+      "shirtNumber": null
     },
     {
       "name": "Gabriel Ávalos",
@@ -226,10 +175,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "1990-10-12",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/nhc7ai1762852153.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/c6olwm1715699177.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/nhc7ai1762852153.png"
+      "shirtNumber": null
     },
     {
       "name": "Alex Arce",
@@ -238,10 +184,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "1995-06-16",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7r2uma1764333620.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jzznyw1723918235.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7r2uma1764333620.png"
+      "shirtNumber": null
     },
     {
       "name": "Diego Gómez",
@@ -250,10 +193,7 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "2003-03-27",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/alorj01756993808.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mpmz961772016796.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/alorj01756993808.png"
+      "shirtNumber": null
     },
     {
       "name": "José Canale",
@@ -262,10 +202,7 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1996-07-20",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/j79gba1764933319.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/872ips1764933239.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/j79gba1764933319.png"
+      "shirtNumber": null
     },
     {
       "name": "Julio Enciso",
@@ -274,10 +211,7 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2004-01-23",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/mvazxz1766053932.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ftjgw81661021582.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/mvazxz1766053932.png"
+      "shirtNumber": null
     },
     {
       "name": "Ramón Sosa",
@@ -286,10 +220,7 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "1999-08-31",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8x4cso1767691390.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i47sag1767691355.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8x4cso1767691390.png"
+      "shirtNumber": null
     },
     {
       "name": "Miguel Almirón",
@@ -298,10 +229,7 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "1994-02-10",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/35lxqh1757447624.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pfmcgv1665915778.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/35lxqh1757447624.png"
+      "shirtNumber": null
     },
     {
       "name": "Omar Alderete",
@@ -310,10 +238,7 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1996-12-26",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/jny02g1756903939.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ieybgs1606749169.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jny02g1756903939.png"
+      "shirtNumber": null
     },
     {
       "name": "Antonio Sanabria",
@@ -322,10 +247,7 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1996-03-04",
       "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3vkhoo1758886470.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gtfkf11503229618.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3vkhoo1758886470.png"
+      "shirtNumber": null
     }
   ],
   "recentMatches": []
