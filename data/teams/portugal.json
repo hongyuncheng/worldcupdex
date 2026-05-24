@@ -5,11 +5,11 @@
   "code": "pt",
   "group": "H",
   "confederation": "UEFA",
-  "fifaRank": 6,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/pt.png",
   "coach": {
-    "nameEn": "Roberto Martínez",
-    "nameZh": "罗伯托·马丁内斯",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1914,
@@ -17,279 +17,201 @@
   "squad": [
     {
       "name": "José Sá",
-      "nameZh": "若泽·萨",
+      "nameZh": "José Sá",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1993-01-17",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xpyvxy1469528923.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/xpyvxy1469528923.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Rui Silva",
-      "nameZh": "鲁伊·席尔瓦",
+      "nameZh": "Rui Silva",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1994-02-07",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/30bu6h1762291097.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2elqkh1723792779.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/30bu6h1762291097.png"
+      "shirtNumber": null
     },
     {
-      "name": "Ricardo Velho",
-      "nameZh": "里卡多·维略",
+      "name": "Diogo Costa",
+      "nameZh": "Diogo Costa",
       "position": "Goalkeeper",
       "positionZh": "门将",
-      "dateOfBirth": "1998-08-20",
-      "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wrupsy1432743178.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xvuwqy1432743242.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wrupsy1432743178.png"
+      "dateOfBirth": "1999-09-19",
+      "nationality": "Switzerland",
+      "shirtNumber": null
     },
     {
       "name": "Rúben Neves",
-      "nameZh": "鲁本·内维斯",
+      "nameZh": "Rúben Neves",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "1997-03-13",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/86rcde1750272409.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ac8teq1750760630.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/86rcde1750272409.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Cristiano Ronaldo",
+      "nameZh": "克里斯蒂亚诺·罗纳尔多",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1985-02-05",
+      "nationality": "Portugal",
+      "shirtNumber": null
     },
     {
       "name": "João Félix",
-      "nameZh": "若昂·费利克斯",
+      "nameZh": "João Félix",
       "position": "Offence",
       "positionZh": "前锋",
       "dateOfBirth": "1999-11-10",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/m8aqft1725214728.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/b253cy1724311014.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/m8aqft1725214728.png"
+      "shirtNumber": null
     },
     {
       "name": "Joao Neves",
-      "nameZh": "若昂·内维斯",
+      "nameZh": "Joao Neves",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2004-09-27",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/2q9ahn1766335473.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/463f8a1770217760.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2q9ahn1766335473.png"
-    },
-    {
-      "name": "Mateus Fernandes",
-      "nameZh": "马特乌斯·费尔南德斯",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "2004-07-10",
-      "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/gd8frh1772133322.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/oej5bs1725546442.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gd8frh1772133322.png"
-    },
-    {
-      "name": "Antonio Silva",
-      "nameZh": "安东尼奥·席尔瓦",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "2003-10-31",
-      "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Renato Veiga",
-      "nameZh": "雷纳托·韦加",
+      "nameZh": "Renato Veiga",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "2003-07-29",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rxefp81762889381.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1u0amz1678362097.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rxefp81762889381.png"
+      "shirtNumber": null
     },
     {
       "name": "Vitinha",
-      "nameZh": "维蒂尼亚",
+      "nameZh": "Vitinha",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "2000-02-13",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q6mw6n1766335544.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/a0b12b1770218109.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q6mw6n1766335544.png"
+      "shirtNumber": null
     },
     {
       "name": "Tomas Araujo",
-      "nameZh": "托马斯·阿劳若",
+      "nameZh": "Tomas Araujo",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "2002-05-16",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0l8tzn1741768720.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/er26ze1741768576.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0l8tzn1741768720.png"
+      "shirtNumber": null
     },
     {
       "name": "Francisco Conceição",
-      "nameZh": "弗朗西斯科·孔塞桑",
+      "nameZh": "Francisco Conceição",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "2002-12-14",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ekqivz1759225498.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4z17u11617881496.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ekqivz1759225498.png"
+      "shirtNumber": null
     },
     {
       "name": "Gonçalo Inácio",
-      "nameZh": "贡萨洛·伊纳西奥",
+      "nameZh": "Gonçalo Inácio",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "2001-08-25",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/m00erp1762291029.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/htv6wy1636109063.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/m00erp1762291029.png"
+      "shirtNumber": null
     },
     {
       "name": "Nuno Mendes",
-      "nameZh": "努诺·门德斯",
+      "nameZh": "Nuno Mendes",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "2002-06-19",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zhdk3h1766335452.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ocycug1770217690.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zhdk3h1766335452.png"
+      "shirtNumber": null
     },
     {
       "name": "Samuel Almeida Costa",
-      "nameZh": "塞缪尔·阿尔梅达·科斯塔",
+      "nameZh": "Samuel Almeida Costa",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2000-11-27",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Gonçalo Ramos",
-      "nameZh": "贡萨洛·拉莫斯",
+      "nameZh": "Gonçalo Ramos",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2001-06-20",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/47dx051766335509.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ki0ein1770217883.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/47dx051766335509.png"
-    },
-    {
-      "name": "Pedro Gonçalves",
-      "nameZh": "佩德罗·贡萨尔维斯",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
-      "dateOfBirth": "1998-06-28",
-      "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/uik0vy1762290994.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tc86pt1617010078.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/uik0vy1762290994.png"
+      "shirtNumber": null
     },
     {
       "name": "Matheus Nunes",
-      "nameZh": "马特乌斯·努内斯",
+      "nameZh": "Matheus Nunes",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1998-08-27",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qsv6us1757098631.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/fm3isa1703327534.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qsv6us1757098631.png"
-    },
-    {
-      "name": "Ricardo Horta",
-      "nameZh": "里卡多·奥尔塔",
-      "position": "Left Winger",
-      "positionZh": "Left Winger",
-      "dateOfBirth": "1994-09-15",
-      "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tp8yt21668118493.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0cx24h1702564255.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tp8yt21668118493.png"
-    },
-    {
-      "name": "Paulinho",
-      "nameZh": "保利尼奥",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "1992-11-09",
-      "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lpga0c1684943642.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xwjybz1514552169.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lpga0c1684943642.png"
+      "shirtNumber": null
     },
     {
       "name": "Trincão",
-      "nameZh": "特林康",
+      "nameZh": "Trincão",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "1999-12-29",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7xcl5d1762290739.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4icmr01597831379.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7xcl5d1762290739.png"
+      "shirtNumber": null
     },
     {
       "name": "Diogo Dalot",
-      "nameZh": "迪奥戈·达洛特",
+      "nameZh": "Diogo Dalot",
       "position": "Right-Back",
       "positionZh": "Right-Back",
       "dateOfBirth": "1999-03-18",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ow1nh31766826552.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0rv14y1706525697.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ow1nh31766826552.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Rafael Leão",
+      "nameZh": "Rafael Leão",
+      "position": "Left Winger",
+      "positionZh": "Left Winger",
+      "dateOfBirth": "1999-06-10",
+      "nationality": "Portugal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nélson Semedo",
+      "nameZh": "Nélson Semedo",
+      "position": "Right-Back",
+      "positionZh": "Right-Back",
+      "dateOfBirth": "1993-11-16",
+      "nationality": "Portugal",
+      "shirtNumber": null
+    },
+    {
+      "name": "Rúben Dias",
+      "nameZh": "Rúben Dias",
+      "position": "Centre-Back",
+      "positionZh": "Centre-Back",
+      "dateOfBirth": "1997-05-14",
+      "nationality": "Portugal",
+      "shirtNumber": null
     },
     {
       "name": "Gonçalo Guedes",
-      "nameZh": "贡萨洛·格德斯",
+      "nameZh": "Gonçalo Guedes",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "1996-11-29",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/75dldp1762709030.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/492i5g1535493262.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/75dldp1762709030.png"
+      "shirtNumber": null
     },
     {
       "name": "Bruno Fernandes",
@@ -298,34 +220,34 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "1994-09-08",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/jhasls1766826690.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1kfayc1700821747.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jhasls1766826690.png"
+      "shirtNumber": null
+    },
+    {
+      "name": "Bernardo Silva",
+      "nameZh": "贝尔纳多·席尔瓦",
+      "position": "Attacking Midfield",
+      "positionZh": "Attacking Midfield",
+      "dateOfBirth": "1994-08-10",
+      "nationality": "Portugal",
+      "shirtNumber": null
     },
     {
       "name": "Pedro Neto",
-      "nameZh": "佩德罗·内托",
+      "nameZh": "Pedro Neto",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "2000-03-09",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/g63rmf1757003837.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/g1325q1771427940.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/g63rmf1757003837.png"
+      "shirtNumber": null
     },
     {
       "name": "João Cancelo",
-      "nameZh": "若昂·坎塞洛",
+      "nameZh": "João Cancelo",
       "position": "Right-Back",
       "positionZh": "Right-Back",
       "dateOfBirth": "1994-05-27",
       "nationality": "Portugal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zqjhte1771260324.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/8vj8tm1771260403.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zqjhte1771260324.png"
+      "shirtNumber": null
     }
   ],
   "recentMatches": []

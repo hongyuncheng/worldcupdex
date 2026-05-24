@@ -5,11 +5,11 @@
   "code": "uz",
   "group": "",
   "confederation": "",
-  "fifaRank": 49,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/uz.png",
   "coach": {
-    "nameEn": "Srecko Katanec",
-    "nameZh": "斯雷奇科·卡塔内茨",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1946,
@@ -22,10 +22,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1995-06-23",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/gu1y9n1778633321.jpg",
-      "photo": "https://www.thesportsdb.com/images/media/player/thumb/gu1y9n1778633321.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Abduvakhid Nematov",
@@ -34,10 +31,7 @@
       "positionZh": "门将",
       "dateOfBirth": "2001-03-20",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/e1v8xf1778633021.jpg",
-      "photo": "https://www.thesportsdb.com/images/media/player/thumb/e1v8xf1778633021.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Utkir Yusupov",
@@ -46,10 +40,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1991-01-04",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/wq57ft1712353726.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/wq57ft1712353726.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Rustam Ashurmatov",
@@ -58,10 +49,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1996-07-07",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tc1s7a1712554231.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/tc1s7a1712554231.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Umar Eshmurodov",
@@ -70,10 +58,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1992-11-30",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/fq3ery1712553481.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/fq3ery1712553481.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Jakhongir O'rozov",
@@ -82,10 +67,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "2004-01-18",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Farrukh Sayfiyev",
@@ -94,10 +76,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1991-01-17",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/w613551712354074.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/w613551712354074.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Khodjiakbar Alijonov",
@@ -106,10 +85,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1997-04-19",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yv52pv1712555322.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/yv52pv1712555322.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Sherzod Nasrullayev",
@@ -118,10 +94,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1998-07-23",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/h9md341712557018.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/h9md341712557018.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Mukhammadkodir Khamraliev",
@@ -130,10 +103,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "2001-07-06",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Dostonbek Xamdamov",
@@ -142,10 +112,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1996-07-24",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Otabek Shukurov",
@@ -154,10 +121,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1996-06-22",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/6eajoq1712353720.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/6eajoq1712353720.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Oston Urunov",
@@ -166,10 +130,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-12-19",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/cztim31712354680.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/cztim31712354680.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Jamshid Iskanderov",
@@ -178,10 +139,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1993-10-16",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamshid_Iskanderov.jpg?width=500",
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamshid_Iskanderov.jpg?width=500"
+      "shirtNumber": null
     },
     {
       "name": "Akmal Mozgovoy",
@@ -190,10 +148,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-04-02",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Umarali Rahmonaliyev",
@@ -202,10 +157,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2003-08-18",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/mhb1111691312216.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/efuvwr1691312081.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/mhb1111691312216.png"
+      "shirtNumber": null
     },
     {
       "name": "Azizjon Ganiev",
@@ -214,10 +166,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1998-02-22",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Odiljon Hamrobekov",
@@ -226,10 +175,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1996-02-13",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/707nxb1712353710.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/707nxb1712353710.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Ibrokhim Ibrokhimov",
@@ -238,10 +184,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2001-01-12",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Igor Sergeev",
@@ -250,10 +193,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "1993-04-30",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nauv5z1712557510.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/nauv5z1712557510.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Alisher Odilov",
@@ -262,10 +202,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "2001-07-15",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Abdukodir Khusanov",
@@ -274,10 +211,7 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2004-02-29",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/da8tg41769182137.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ov4b1d1712297858.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/da8tg41769182137.png"
+      "shirtNumber": null
     },
     {
       "name": "Eldor Shomurodov",
@@ -286,10 +220,7 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1995-06-29",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pzj8ab1697923953.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iv5mef1608646798.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pzj8ab1697923953.png"
+      "shirtNumber": null
     }
   ],
   "recentMatches": []

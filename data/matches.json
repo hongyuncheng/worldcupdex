@@ -18,16 +18,15 @@
       "flag": "https://flagcdn.com/w80/za.png"
     },
     "venue": {
-      "name": "Estadio Azteca",
-      "nameZh": "阿兹特克体育场",
-      "city": "Mexico City",
-      "cityZh": "墨西哥城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "A",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781226000000
+    "score": null
   },
   {
     "id": 537328,
@@ -48,16 +47,15 @@
       "flag": "https://flagcdn.com/w80/cz.png"
     },
     "venue": {
-      "name": "AT&T Stadium",
-      "nameZh": "AT&T球场",
-      "city": "Arlington",
-      "cityZh": "阿灵顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "A",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781247600000
+    "score": null
   },
   {
     "id": 537333,
@@ -78,16 +76,15 @@
       "flag": "https://flagcdn.com/w80/ba.png"
     },
     "venue": {
-      "name": "SoFi Stadium",
-      "nameZh": "SoFi球场",
-      "city": "Inglewood",
-      "cityZh": "英格尔伍德"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "B",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781316000000
+    "score": null
   },
   {
     "id": 537345,
@@ -108,16 +105,15 @@
       "flag": "https://flagcdn.com/w80/py.png"
     },
     "venue": {
-      "name": "Hard Rock Stadium",
-      "nameZh": "硬石球场",
-      "city": "Miami Gardens",
-      "cityZh": "迈阿密花园"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "D",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781326800000
+    "score": null
   },
   {
     "id": 537334,
@@ -138,16 +134,15 @@
       "flag": "https://flagcdn.com/w80/ch.png"
     },
     "venue": {
-      "name": "Lincoln Financial Field",
-      "nameZh": "林肯金融球场",
-      "city": "Philadelphia",
-      "cityZh": "费城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "B",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781391600000
+    "score": null
   },
   {
     "id": 537339,
@@ -168,16 +163,15 @@
       "flag": "https://flagcdn.com/w80/ma.png"
     },
     "venue": {
-      "name": "Mercedes-Benz Stadium",
-      "nameZh": "梅赛德斯-奔驰球场",
-      "city": "Atlanta",
-      "cityZh": "亚特兰大"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "C",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781402400000
+    "score": null
   },
   {
     "id": 537340,
@@ -198,16 +192,15 @@
       "flag": "https://flagcdn.com/w80/gb-sct.png"
     },
     "venue": {
-      "name": "NRG Stadium",
-      "nameZh": "NRG球场",
-      "city": "Houston",
-      "cityZh": "休斯顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "C",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781416800000
+    "score": null
   },
   {
     "id": 537346,
@@ -228,16 +221,15 @@
       "flag": "https://flagcdn.com/w80/tr.png"
     },
     "venue": {
-      "name": "Lumen Field",
-      "nameZh": "流明球场",
-      "city": "Seattle",
-      "cityZh": "西雅图"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "D",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781434800000
+    "score": null
   },
   {
     "id": 537351,
@@ -258,16 +250,15 @@
       "flag": "https://flagcdn.com/w80/cw.png"
     },
     "venue": {
-      "name": "Gillette Stadium",
-      "nameZh": "吉列球场",
-      "city": "Foxborough",
-      "cityZh": "福克斯堡"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "E",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781470800000
+    "score": null
   },
   {
     "id": 537357,
@@ -288,16 +279,15 @@
       "flag": "https://flagcdn.com/w80/jp.png"
     },
     "venue": {
-      "name": "GEHA Field at Arrowhead Stadium",
-      "nameZh": "箭头球场",
-      "city": "Kansas City",
-      "cityZh": "堪萨斯城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "F",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781485200000
+    "score": null
   },
   {
     "id": 537352,
@@ -318,16 +308,15 @@
       "flag": "https://flagcdn.com/w80/ec.png"
     },
     "venue": {
-      "name": "GEODIS Park",
-      "nameZh": "GEODIS公园球场",
-      "city": "Nashville",
-      "cityZh": "纳什维尔"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "E",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781496000000
+    "score": null
   },
   {
     "id": 537358,
@@ -348,16 +337,15 @@
       "flag": "https://flagcdn.com/w80/tn.png"
     },
     "venue": {
-      "name": "Estadio Azteca",
-      "nameZh": "阿兹特克球场",
-      "city": "Mexico City",
-      "cityZh": "墨西哥城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "F",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781510400000
+    "score": null
   },
   {
     "id": 537369,
@@ -378,16 +366,15 @@
       "flag": "https://flagcdn.com/w80/cv.png"
     },
     "venue": {
-      "name": "Estadio Akron",
-      "nameZh": "阿克隆球场",
-      "city": "Guadalajara",
-      "cityZh": "瓜达拉哈拉"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "H",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781560800000
+    "score": null
   },
   {
     "id": 537363,
@@ -408,16 +395,15 @@
       "flag": "https://flagcdn.com/w80/eg.png"
     },
     "venue": {
-      "name": "Estadio BBVA",
-      "nameZh": "BBVA球场",
-      "city": "Monterrey",
-      "cityZh": "蒙特雷"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "G",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781571600000
+    "score": null
   },
   {
     "id": 537370,
@@ -438,16 +424,15 @@
       "flag": "https://flagcdn.com/w80/uy.png"
     },
     "venue": {
-      "name": "BMO Field",
-      "nameZh": "BMO球场",
-      "city": "Toronto",
-      "cityZh": "多伦多"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "H",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781575200000
+    "score": null
   },
   {
     "id": 537364,
@@ -468,16 +453,15 @@
       "flag": "https://flagcdn.com/w80/nz.png"
     },
     "venue": {
-      "name": "BC Place",
-      "nameZh": "BC体育馆",
-      "city": "Vancouver",
-      "cityZh": "温哥华"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "G",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781596800000
+    "score": null
   },
   {
     "id": 537391,
@@ -498,16 +482,15 @@
       "flag": "https://flagcdn.com/w80/sn.png"
     },
     "venue": {
-      "name": "MetLife Stadium",
-      "nameZh": "大都会人寿球场",
-      "city": "East Rutherford",
-      "cityZh": "东卢瑟福"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "I",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781650800000
+    "score": null
   },
   {
     "id": 537392,
@@ -528,16 +511,15 @@
       "flag": "https://flagcdn.com/w80/no.png"
     },
     "venue": {
-      "name": "AT&T Stadium",
-      "nameZh": "AT&T球场",
-      "city": "Arlington",
-      "cityZh": "阿灵顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "I",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781665200000
+    "score": null
   },
   {
     "id": 537397,
@@ -558,16 +540,15 @@
       "flag": "https://flagcdn.com/w80/dz.png"
     },
     "venue": {
-      "name": "SoFi Stadium",
-      "nameZh": "SoFi球场",
-      "city": "Inglewood",
-      "cityZh": "英格尔伍德"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "J",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781683200000
+    "score": null
   },
   {
     "id": 537398,
@@ -588,16 +569,15 @@
       "flag": "https://flagcdn.com/w80/jo.png"
     },
     "venue": {
-      "name": "Hard Rock Stadium",
-      "nameZh": "硬石球场",
-      "city": "Miami Gardens",
-      "cityZh": "迈阿密花园"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "J",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781683200000
+    "score": null
   },
   {
     "id": 537403,
@@ -618,16 +598,15 @@
       "flag": "https://flagcdn.com/w80/cd.png"
     },
     "venue": {
-      "name": "Lincoln Financial Field",
-      "nameZh": "林肯金融球场",
-      "city": "Philadelphia",
-      "cityZh": "费城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "K",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781730000000
+    "score": null
   },
   {
     "id": 537409,
@@ -648,16 +627,15 @@
       "flag": "https://flagcdn.com/w80/hr.png"
     },
     "venue": {
-      "name": "Mercedes-Benz Stadium",
-      "nameZh": "梅赛德斯-奔驰球场",
-      "city": "Atlanta",
-      "cityZh": "亚特兰大"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "L",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781740800000
+    "score": null
   },
   {
     "id": 537410,
@@ -678,16 +656,15 @@
       "flag": "https://flagcdn.com/w80/pa.png"
     },
     "venue": {
-      "name": "NRG Stadium",
-      "nameZh": "NRG球场",
-      "city": "Houston",
-      "cityZh": "休斯顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "L",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781755200000
+    "score": null
   },
   {
     "id": 537404,
@@ -708,16 +685,15 @@
       "flag": "https://flagcdn.com/w80/co.png"
     },
     "venue": {
-      "name": "Lumen Field",
-      "nameZh": "流明球场",
-      "city": "Seattle",
-      "cityZh": "西雅图"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "K",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null,
-    "timestamp": 1781773200000
+    "score": null
   },
   {
     "id": 537329,
@@ -738,16 +714,15 @@
       "flag": "https://flagcdn.com/w80/za.png"
     },
     "venue": {
-      "name": "Gillette Stadium",
-      "nameZh": "吉列球场",
-      "city": "Foxborough",
-      "cityZh": "福克斯堡"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "A",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1781812800000
+    "score": null
   },
   {
     "id": 537335,
@@ -768,16 +743,15 @@
       "flag": "https://flagcdn.com/w80/ba.png"
     },
     "venue": {
-      "name": "GEHA Field at Arrowhead Stadium",
-      "nameZh": "箭头球场",
-      "city": "Kansas City",
-      "cityZh": "堪萨斯城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "B",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1781827200000
+    "score": null
   },
   {
     "id": 537336,
@@ -798,16 +772,15 @@
       "flag": "https://flagcdn.com/w80/qa.png"
     },
     "venue": {
-      "name": "GEODIS Park",
-      "nameZh": "GEODIS公园球场",
-      "city": "Nashville",
-      "cityZh": "纳什维尔"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "B",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1781838000000
+    "score": null
   },
   {
     "id": 537330,
@@ -828,16 +801,15 @@
       "flag": "https://flagcdn.com/w80/kr.png"
     },
     "venue": {
-      "name": "Estadio Azteca",
-      "nameZh": "阿兹特克球场",
-      "city": "Mexico City",
-      "cityZh": "墨西哥城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "A",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1781852400000
+    "score": null
   },
   {
     "id": 537348,
@@ -858,16 +830,15 @@
       "flag": "https://flagcdn.com/w80/au.png"
     },
     "venue": {
-      "name": "Estadio Akron",
-      "nameZh": "阿克隆球场",
-      "city": "Guadalajara",
-      "cityZh": "瓜达拉哈拉"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "D",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1781917200000
+    "score": null
   },
   {
     "id": 537342,
@@ -888,16 +859,15 @@
       "flag": "https://flagcdn.com/w80/ma.png"
     },
     "venue": {
-      "name": "Estadio BBVA",
-      "nameZh": "BBVA球场",
-      "city": "Monterrey",
-      "cityZh": "蒙特雷"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "C",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1781928000000
+    "score": null
   },
   {
     "id": 537341,
@@ -918,16 +888,15 @@
       "flag": "https://flagcdn.com/w80/ht.png"
     },
     "venue": {
-      "name": "BMO Field",
-      "nameZh": "BMO球场",
-      "city": "Toronto",
-      "cityZh": "多伦多"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "C",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1781929800000
+    "score": null
   },
   {
     "id": 537347,
@@ -948,16 +917,15 @@
       "flag": "https://flagcdn.com/w80/py.png"
     },
     "venue": {
-      "name": "BC Place",
-      "nameZh": "BC体育馆",
-      "city": "Vancouver",
-      "cityZh": "温哥华"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "D",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1781949600000
+    "score": null
   },
   {
     "id": 537359,
@@ -978,16 +946,15 @@
       "flag": "https://flagcdn.com/w80/se.png"
     },
     "venue": {
-      "name": "MetLife Stadium",
-      "nameZh": "大都会人寿球场",
-      "city": "East Rutherford",
-      "cityZh": "东卢瑟福"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "F",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1781989200000
+    "score": null
   },
   {
     "id": 537353,
@@ -1008,16 +975,15 @@
       "flag": "https://flagcdn.com/w80/ci.png"
     },
     "venue": {
-      "name": "AT&T Stadium",
-      "nameZh": "AT&T球场",
-      "city": "Arlington",
-      "cityZh": "阿灵顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "E",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1782003600000
+    "score": null
   },
   {
     "id": 537354,
@@ -1038,16 +1004,15 @@
       "flag": "https://flagcdn.com/w80/cw.png"
     },
     "venue": {
-      "name": "SoFi Stadium",
-      "nameZh": "SoFi球场",
-      "city": "Inglewood",
-      "cityZh": "英格尔伍德"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "E",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1782025200000
+    "score": null
   },
   {
     "id": 537360,
@@ -1068,16 +1033,15 @@
       "flag": "https://flagcdn.com/w80/jp.png"
     },
     "venue": {
-      "name": "Hard Rock Stadium",
-      "nameZh": "硬石球场",
-      "city": "Miami Gardens",
-      "cityZh": "迈阿密花园"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "F",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1782028800000
+    "score": null
   },
   {
     "id": 537371,
@@ -1098,16 +1062,15 @@
       "flag": "https://flagcdn.com/w80/sa.png"
     },
     "venue": {
-      "name": "Lincoln Financial Field",
-      "nameZh": "林肯金融球场",
-      "city": "Philadelphia",
-      "cityZh": "费城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "H",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1782072000000
+    "score": null
   },
   {
     "id": 537365,
@@ -1128,16 +1091,15 @@
       "flag": "https://flagcdn.com/w80/ir.png"
     },
     "venue": {
-      "name": "Mercedes-Benz Stadium",
-      "nameZh": "梅赛德斯-奔驰球场",
-      "city": "Atlanta",
-      "cityZh": "亚特兰大"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "G",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1782082800000
+    "score": null
   },
   {
     "id": 537372,
@@ -1158,16 +1120,15 @@
       "flag": "https://flagcdn.com/w80/cv.png"
     },
     "venue": {
-      "name": "NRG Stadium",
-      "nameZh": "NRG球场",
-      "city": "Houston",
-      "cityZh": "休斯顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "H",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1782097200000
+    "score": null
   },
   {
     "id": 537366,
@@ -1188,16 +1149,15 @@
       "flag": "https://flagcdn.com/w80/eg.png"
     },
     "venue": {
-      "name": "Lumen Field",
-      "nameZh": "流明球场",
-      "city": "Seattle",
-      "cityZh": "西雅图"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "G",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1782115200000
+    "score": null
   },
   {
     "id": 537399,
@@ -1218,16 +1178,15 @@
       "flag": "https://flagcdn.com/w80/at.png"
     },
     "venue": {
-      "name": "Gillette Stadium",
-      "nameZh": "吉列球场",
-      "city": "Foxborough",
-      "cityZh": "福克斯堡"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "J",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1782162000000
+    "score": null
   },
   {
     "id": 537393,
@@ -1248,16 +1207,15 @@
       "flag": "https://flagcdn.com/w80/iq.png"
     },
     "venue": {
-      "name": "GEHA Field at Arrowhead Stadium",
-      "nameZh": "箭头球场",
-      "city": "Kansas City",
-      "cityZh": "堪萨斯城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "I",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1782180000000
+    "score": null
   },
   {
     "id": 537394,
@@ -1278,16 +1236,15 @@
       "flag": "https://flagcdn.com/w80/sn.png"
     },
     "venue": {
-      "name": "GEODIS Park",
-      "nameZh": "GEODIS公园球场",
-      "city": "Nashville",
-      "cityZh": "纳什维尔"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "I",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1782190800000
+    "score": null
   },
   {
     "id": 537400,
@@ -1308,16 +1265,15 @@
       "flag": "https://flagcdn.com/w80/dz.png"
     },
     "venue": {
-      "name": "Estadio Azteca",
-      "nameZh": "阿兹特克球场",
-      "city": "Mexico City",
-      "cityZh": "墨西哥城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "J",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1782205200000
+    "score": null
   },
   {
     "id": 537405,
@@ -1338,16 +1294,15 @@
       "flag": "https://flagcdn.com/w80/uz.png"
     },
     "venue": {
-      "name": "Estadio Akron",
-      "nameZh": "阿克隆球场",
-      "city": "Guadalajara",
-      "cityZh": "瓜达拉哈拉"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "K",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1782255600000
+    "score": null
   },
   {
     "id": 537411,
@@ -1368,16 +1323,15 @@
       "flag": "https://flagcdn.com/w80/gh.png"
     },
     "venue": {
-      "name": "Estadio BBVA",
-      "nameZh": "BBVA球场",
-      "city": "Monterrey",
-      "cityZh": "蒙特雷"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "L",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1782266400000
+    "score": null
   },
   {
     "id": 537412,
@@ -1398,16 +1352,15 @@
       "flag": "https://flagcdn.com/w80/hr.png"
     },
     "venue": {
-      "name": "BMO Field",
-      "nameZh": "BMO球场",
-      "city": "Toronto",
-      "cityZh": "多伦多"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "L",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1782270000000
+    "score": null
   },
   {
     "id": 537406,
@@ -1428,16 +1381,15 @@
       "flag": "https://flagcdn.com/w80/cd.png"
     },
     "venue": {
-      "name": "BC Place",
-      "nameZh": "BC体育馆",
-      "city": "Vancouver",
-      "cityZh": "温哥华"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "K",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null,
-    "timestamp": 1782291600000
+    "score": null
   },
   {
     "id": 537337,
@@ -1458,16 +1410,15 @@
       "flag": "https://flagcdn.com/w80/ca.png"
     },
     "venue": {
-      "name": "MetLife Stadium",
-      "nameZh": "大都会人寿球场",
-      "city": "East Rutherford",
-      "cityZh": "东卢瑟福"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "B",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782342000000
+    "score": null
   },
   {
     "id": 537338,
@@ -1488,16 +1439,15 @@
       "flag": "https://flagcdn.com/w80/qa.png"
     },
     "venue": {
-      "name": "AT&T Stadium",
-      "nameZh": "AT&T球场",
-      "city": "Arlington",
-      "cityZh": "阿灵顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "B",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782345600000
+    "score": null
   },
   {
     "id": 537344,
@@ -1518,16 +1468,15 @@
       "flag": "https://flagcdn.com/w80/ht.png"
     },
     "venue": {
-      "name": "SoFi Stadium",
-      "nameZh": "SoFi球场",
-      "city": "Inglewood",
-      "cityZh": "英格尔伍德"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "C",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782363600000
+    "score": null
   },
   {
     "id": 537343,
@@ -1548,16 +1497,15 @@
       "flag": "https://flagcdn.com/w80/br.png"
     },
     "venue": {
-      "name": "Hard Rock Stadium",
-      "nameZh": "硬石球场",
-      "city": "Miami Gardens",
-      "cityZh": "迈阿密花园"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "C",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782352800000
+    "score": null
   },
   {
     "id": 537331,
@@ -1578,16 +1526,15 @@
       "flag": "https://flagcdn.com/w80/mx.png"
     },
     "venue": {
-      "name": "Lincoln Financial Field",
-      "nameZh": "林肯金融球场",
-      "city": "Philadelphia",
-      "cityZh": "费城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "A",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782363600000
+    "score": null
   },
   {
     "id": 537332,
@@ -1608,16 +1555,15 @@
       "flag": "https://flagcdn.com/w80/kr.png"
     },
     "venue": {
-      "name": "Mercedes-Benz Stadium",
-      "nameZh": "梅赛德斯-奔驰球场",
-      "city": "Atlanta",
-      "cityZh": "亚特兰大"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "A",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782363600000
+    "score": null
   },
   {
     "id": 537355,
@@ -1638,16 +1584,15 @@
       "flag": "https://flagcdn.com/w80/de.png"
     },
     "venue": {
-      "name": "NRG Stadium",
-      "nameZh": "NRG球场",
-      "city": "Houston",
-      "cityZh": "休斯顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "E",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782435600000
+    "score": null
   },
   {
     "id": 537356,
@@ -1668,16 +1613,15 @@
       "flag": "https://flagcdn.com/w80/ci.png"
     },
     "venue": {
-      "name": "Lumen Field",
-      "nameZh": "流明球场",
-      "city": "Seattle",
-      "cityZh": "西雅图"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "E",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782442800000
+    "score": null
   },
   {
     "id": 537361,
@@ -1698,16 +1642,15 @@
       "flag": "https://flagcdn.com/w80/nl.png"
     },
     "venue": {
-      "name": "Gillette Stadium",
-      "nameZh": "吉列球场",
-      "city": "Foxborough",
-      "cityZh": "福克斯堡"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "F",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782442800000
+    "score": null
   },
   {
     "id": 537362,
@@ -1728,16 +1671,15 @@
       "flag": "https://flagcdn.com/w80/se.png"
     },
     "venue": {
-      "name": "GEHA Field at Arrowhead Stadium",
-      "nameZh": "箭头球场",
-      "city": "Kansas City",
-      "cityZh": "堪萨斯城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "F",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782446400000
+    "score": null
   },
   {
     "id": 537349,
@@ -1758,16 +1700,15 @@
       "flag": "https://flagcdn.com/w80/us.png"
     },
     "venue": {
-      "name": "GEODIS Park",
-      "nameZh": "GEODIS公园球场",
-      "city": "Nashville",
-      "cityZh": "纳什维尔"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "D",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782457200000
+    "score": null
   },
   {
     "id": 537350,
@@ -1788,16 +1729,15 @@
       "flag": "https://flagcdn.com/w80/au.png"
     },
     "venue": {
-      "name": "Estadio Azteca",
-      "nameZh": "阿兹特克球场",
-      "city": "Mexico City",
-      "cityZh": "墨西哥城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "D",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782460800000
+    "score": null
   },
   {
     "id": 537395,
@@ -1818,16 +1758,15 @@
       "flag": "https://flagcdn.com/w80/fr.png"
     },
     "venue": {
-      "name": "Estadio Akron",
-      "nameZh": "阿克隆球场",
-      "city": "Guadalajara",
-      "cityZh": "瓜达拉哈拉"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "I",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782522000000
+    "score": null
   },
   {
     "id": 537396,
@@ -1848,16 +1787,15 @@
       "flag": "https://flagcdn.com/w80/iq.png"
     },
     "venue": {
-      "name": "Estadio BBVA",
-      "nameZh": "BBVA球场",
-      "city": "Monterrey",
-      "cityZh": "蒙特雷"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "I",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782522000000
+    "score": null
   },
   {
     "id": 537373,
@@ -1878,16 +1816,15 @@
       "flag": "https://flagcdn.com/w80/es.png"
     },
     "venue": {
-      "name": "BMO Field",
-      "nameZh": "BMO球场",
-      "city": "Toronto",
-      "cityZh": "多伦多"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "H",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782532800000
+    "score": null
   },
   {
     "id": 537374,
@@ -1908,16 +1845,15 @@
       "flag": "https://flagcdn.com/w80/sa.png"
     },
     "venue": {
-      "name": "BC Place",
-      "nameZh": "BC体育馆",
-      "city": "Vancouver",
-      "cityZh": "温哥华"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "H",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782543600000
+    "score": null
   },
   {
     "id": 537367,
@@ -1938,16 +1874,15 @@
       "flag": "https://flagcdn.com/w80/be.png"
     },
     "venue": {
-      "name": "MetLife Stadium",
-      "nameZh": "大都会人寿球场",
-      "city": "East Rutherford",
-      "cityZh": "东卢瑟福"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "G",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782543600000
+    "score": null
   },
   {
     "id": 537368,
@@ -1968,16 +1903,15 @@
       "flag": "https://flagcdn.com/w80/ir.png"
     },
     "venue": {
-      "name": "AT&T Stadium",
-      "nameZh": "AT&T球场",
-      "city": "Arlington",
-      "cityZh": "阿灵顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "G",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782547200000
+    "score": null
   },
   {
     "id": 537413,
@@ -1998,16 +1932,15 @@
       "flag": "https://flagcdn.com/w80/gb-eng.png"
     },
     "venue": {
-      "name": "SoFi Stadium",
-      "nameZh": "SoFi球场",
-      "city": "Inglewood",
-      "cityZh": "英格尔伍德"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "L",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782619200000
+    "score": null
   },
   {
     "id": 537414,
@@ -2028,16 +1961,15 @@
       "flag": "https://flagcdn.com/w80/gh.png"
     },
     "venue": {
-      "name": "Hard Rock Stadium",
-      "nameZh": "硬石球场",
-      "city": "Miami Gardens",
-      "cityZh": "迈阿密花园"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "L",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782608400000
+    "score": null
   },
   {
     "id": 537407,
@@ -2058,16 +1990,15 @@
       "flag": "https://flagcdn.com/w80/pt.png"
     },
     "venue": {
-      "name": "Lincoln Financial Field",
-      "nameZh": "林肯金融球场",
-      "city": "Philadelphia",
-      "cityZh": "费城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "K",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782617400000
+    "score": null
   },
   {
     "id": 537408,
@@ -2088,16 +2019,15 @@
       "flag": "https://flagcdn.com/w80/uz.png"
     },
     "venue": {
-      "name": "Mercedes-Benz Stadium",
-      "nameZh": "梅赛德斯-奔驰球场",
-      "city": "Atlanta",
-      "cityZh": "亚特兰大"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "K",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782617400000
+    "score": null
   },
   {
     "id": 537401,
@@ -2118,16 +2048,15 @@
       "flag": "https://flagcdn.com/w80/ar.png"
     },
     "venue": {
-      "name": "NRG Stadium",
-      "nameZh": "NRG球场",
-      "city": "Houston",
-      "cityZh": "休斯顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "J",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782630000000
+    "score": null
   },
   {
     "id": 537402,
@@ -2148,16 +2077,15 @@
       "flag": "https://flagcdn.com/w80/at.png"
     },
     "venue": {
-      "name": "Lumen Field",
-      "nameZh": "流明球场",
-      "city": "Seattle",
-      "cityZh": "西雅图"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "J",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null,
-    "timestamp": 1782637200000
+    "score": null
   },
   {
     "id": 537417,
@@ -2178,16 +2106,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "Estadio Azteca",
-      "nameZh": "阿兹特克球场",
-      "city": "Mexico City",
-      "cityZh": "墨西哥城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1782694800000
+    "score": null
   },
   {
     "id": 537423,
@@ -2208,16 +2135,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "MetLife Stadium",
-      "nameZh": "大都会人寿球场",
-      "city": "East Rutherford",
-      "cityZh": "东卢瑟福"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1782766800000
+    "score": null
   },
   {
     "id": 537415,
@@ -2238,16 +2164,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "AT&T Stadium",
-      "nameZh": "AT&T球场",
-      "city": "Arlington",
-      "cityZh": "阿灵顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1782783000000
+    "score": null
   },
   {
     "id": 537418,
@@ -2268,16 +2193,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "GEHA Field at Arrowhead Stadium",
-      "nameZh": "箭头球场",
-      "city": "Kansas City",
-      "cityZh": "堪萨斯城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1782799200000
+    "score": null
   },
   {
     "id": 537424,
@@ -2298,16 +2222,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "NRG Stadium",
-      "nameZh": "NRG球场",
-      "city": "Houston",
-      "cityZh": "休斯顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1782856800000
+    "score": null
   },
   {
     "id": 537416,
@@ -2328,16 +2251,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "Mercedes-Benz Stadium",
-      "nameZh": "梅赛德斯-奔驰球场",
-      "city": "Atlanta",
-      "cityZh": "亚特兰大"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1782867600000
+    "score": null
   },
   {
     "id": 537425,
@@ -2358,16 +2280,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "SoFi Stadium",
-      "nameZh": "SoFi球场",
-      "city": "Inglewood",
-      "cityZh": "英格尔伍德"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1782892800000
+    "score": null
   },
   {
     "id": 537426,
@@ -2388,16 +2309,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "Lincoln Financial Field",
-      "nameZh": "林肯金融球场",
-      "city": "Philadelphia",
-      "cityZh": "费城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1782936000000
+    "score": null
   },
   {
     "id": 537422,
@@ -2418,16 +2338,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "Lumen Field",
-      "nameZh": "流明球场",
-      "city": "Seattle",
-      "cityZh": "西雅图"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1782961200000
+    "score": null
   },
   {
     "id": 537421,
@@ -2448,16 +2367,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "Gillette Stadium",
-      "nameZh": "吉列球场",
-      "city": "Foxborough",
-      "cityZh": "福克斯堡"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1782964800000
+    "score": null
   },
   {
     "id": 537420,
@@ -2478,16 +2396,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "Estadio Azteca",
-      "nameZh": "阿兹特克球场",
-      "city": "Mexico City",
-      "cityZh": "墨西哥城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783040400000
+    "score": null
   },
   {
     "id": 537419,
@@ -2508,16 +2425,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "MetLife Stadium",
-      "nameZh": "大都会人寿球场",
-      "city": "East Rutherford",
-      "cityZh": "东卢瑟福"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783047600000
+    "score": null
   },
   {
     "id": 537429,
@@ -2538,16 +2454,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "AT&T Stadium",
-      "nameZh": "AT&T球场",
-      "city": "Arlington",
-      "cityZh": "阿灵顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783065600000
+    "score": null
   },
   {
     "id": 537428,
@@ -2568,16 +2483,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "GEHA Field at Arrowhead Stadium",
-      "nameZh": "箭头球场",
-      "city": "Kansas City",
-      "cityZh": "堪萨斯城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783119600000
+    "score": null
   },
   {
     "id": 537427,
@@ -2598,16 +2512,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "NRG Stadium",
-      "nameZh": "NRG球场",
-      "city": "Houston",
-      "cityZh": "休斯顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783134000000
+    "score": null
   },
   {
     "id": 537430,
@@ -2628,16 +2541,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "Mercedes-Benz Stadium",
-      "nameZh": "梅赛德斯-奔驰球场",
-      "city": "Atlanta",
-      "cityZh": "亚特兰大"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783143000000
+    "score": null
   },
   {
     "id": 537376,
@@ -2658,16 +2570,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "SoFi Stadium",
-      "nameZh": "SoFi球场",
-      "city": "Inglewood",
-      "cityZh": "英格尔伍德"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_16",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783209600000
+    "score": null
   },
   {
     "id": 537375,
@@ -2688,16 +2599,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "Lincoln Financial Field",
-      "nameZh": "林肯金融球场",
-      "city": "Philadelphia",
-      "cityZh": "费城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_16",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783213200000
+    "score": null
   },
   {
     "id": 537377,
@@ -2718,16 +2628,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "Lumen Field",
-      "nameZh": "流明球场",
-      "city": "Seattle",
-      "cityZh": "西雅图"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_16",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783306800000
+    "score": null
   },
   {
     "id": 537378,
@@ -2748,16 +2657,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "Gillette Stadium",
-      "nameZh": "吉列球场",
-      "city": "Foxborough",
-      "cityZh": "福克斯堡"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_16",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783310400000
+    "score": null
   },
   {
     "id": 537379,
@@ -2778,16 +2686,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "Estadio Azteca",
-      "nameZh": "阿兹特克球场",
-      "city": "Mexico City",
-      "cityZh": "墨西哥城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_16",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783386000000
+    "score": null
   },
   {
     "id": 537380,
@@ -2808,16 +2715,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "MetLife Stadium",
-      "nameZh": "大都会人寿球场",
-      "city": "East Rutherford",
-      "cityZh": "东卢瑟福"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_16",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783396800000
+    "score": null
   },
   {
     "id": 537381,
@@ -2838,16 +2744,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "AT&T Stadium",
-      "nameZh": "AT&T球场",
-      "city": "Arlington",
-      "cityZh": "阿灵顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_16",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783458000000
+    "score": null
   },
   {
     "id": 537382,
@@ -2868,16 +2773,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "GEHA Field at Arrowhead Stadium",
-      "nameZh": "箭头球场",
-      "city": "Kansas City",
-      "cityZh": "堪萨斯城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "LAST_16",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783472400000
+    "score": null
   },
   {
     "id": 537383,
@@ -2898,16 +2802,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "NRG Stadium",
-      "nameZh": "NRG球场",
-      "city": "Houston",
-      "cityZh": "休斯顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "QUARTER_FINALS",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783645200000
+    "score": null
   },
   {
     "id": 537384,
@@ -2928,16 +2831,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "Mercedes-Benz Stadium",
-      "nameZh": "梅赛德斯-奔驰球场",
-      "city": "Atlanta",
-      "cityZh": "亚特兰大"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "QUARTER_FINALS",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783724400000
+    "score": null
   },
   {
     "id": 537385,
@@ -2958,16 +2860,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "SoFi Stadium",
-      "nameZh": "SoFi球场",
-      "city": "Inglewood",
-      "cityZh": "英格尔伍德"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "QUARTER_FINALS",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783828800000
+    "score": null
   },
   {
     "id": 537386,
@@ -2988,16 +2889,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "Lincoln Financial Field",
-      "nameZh": "林肯金融球场",
-      "city": "Philadelphia",
-      "cityZh": "费城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "QUARTER_FINALS",
     "matchday": null,
-    "score": null,
-    "timestamp": 1783832400000
+    "score": null
   },
   {
     "id": 537387,
@@ -3018,16 +2918,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "Estadio Azteca",
-      "nameZh": "阿兹特克球场",
-      "city": "Mexico City",
-      "cityZh": "墨西哥城"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "SEMI_FINALS",
     "matchday": null,
-    "score": null,
-    "timestamp": 1784077200000
+    "score": null
   },
   {
     "id": 537388,
@@ -3048,16 +2947,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "MetLife Stadium",
-      "nameZh": "大都会人寿球场",
-      "city": "East Rutherford",
-      "cityZh": "东卢瑟福"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "SEMI_FINALS",
     "matchday": null,
-    "score": null,
-    "timestamp": 1784156400000
+    "score": null
   },
   {
     "id": 537389,
@@ -3078,16 +2976,15 @@
       "flag": ""
     },
     "venue": {
-      "name": "AT&T Stadium",
-      "nameZh": "AT&T球场",
-      "city": "Arlington",
-      "cityZh": "阿灵顿"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "THIRD_PLACE",
     "matchday": null,
-    "score": null,
-    "timestamp": 1784426400000
+    "score": null
   },
   {
     "id": 537390,
@@ -3108,15 +3005,14 @@
       "flag": ""
     },
     "venue": {
-      "name": "MetLife Stadium",
-      "nameZh": "大都会人寿球场",
-      "city": "East Rutherford",
-      "cityZh": "东卢瑟福"
+      "name": "",
+      "nameZh": "",
+      "city": "",
+      "cityZh": ""
     },
     "group": "",
     "stage": "FINAL",
     "matchday": null,
-    "score": null,
-    "timestamp": 1784502000000
+    "score": null
   }
 ]

@@ -5,11 +5,11 @@
   "code": "tr",
   "group": "L",
   "confederation": "UEFA",
-  "fifaRank": 19,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/tr.png",
   "coach": {
-    "nameEn": "Vincenzo Montella",
-    "nameZh": "文森佐·蒙特拉",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1923,
@@ -22,10 +22,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1989-03-01",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/nmg1ye1725038024.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jo77k51622650655.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/nmg1ye1725038024.png"
+      "shirtNumber": null
     },
     {
       "name": "Altay Bayındır",
@@ -34,10 +31,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1998-04-14",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1celih1766826628.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/8meai71770993191.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1celih1766826628.png"
+      "shirtNumber": null
     },
     {
       "name": "Muhammed Şengezer",
@@ -46,10 +40,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1997-01-05",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/m5a6741516997224.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/m5a6741516997224.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Uğurcan Çakır",
@@ -58,10 +49,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1996-04-05",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/c98xoe1769177452.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xhnw6o1672996321.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/c98xoe1769177452.png"
+      "shirtNumber": null
     },
     {
       "name": "Mert Müldür",
@@ -70,10 +58,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1999-04-03",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/l5nngn1724845876.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5o5qpu1610882908.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/l5nngn1724845876.png"
+      "shirtNumber": null
     },
     {
       "name": "Abdülkerim Bardakcı",
@@ -82,10 +67,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1994-09-07",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/uncf0f1769178149.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5g8b851701348438.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/uncf0f1769178149.png"
+      "shirtNumber": null
     },
     {
       "name": "Merih Demiral",
@@ -94,10 +76,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1998-03-05",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/mqjb7n1777237989.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/sbg4yx1586359593.jpg",
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/mqjb7n1777237989.png"
+      "shirtNumber": null
     },
     {
       "name": "Samet Akaydın",
@@ -106,10 +85,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1994-03-13",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5dgo591724770416.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ckss5a1718735410.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5dgo591724770416.png"
+      "shirtNumber": null
     },
     {
       "name": "Evren Eren Elmalı",
@@ -118,10 +94,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "2000-07-07",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/y81fb11769177306.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xaqc171769177203.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/y81fb11769177306.png"
+      "shirtNumber": null
     },
     {
       "name": "Kaan Ayhan",
@@ -130,10 +103,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1994-11-10",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/nlihpf1717533911.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/hr7gab1578086111.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/nlihpf1717533911.png"
+      "shirtNumber": null
     },
     {
       "name": "İrfan Can Kahveci",
@@ -142,10 +112,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1995-07-15",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/812fda1724854456.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/idqm1b1724854433.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/812fda1724854456.png"
+      "shirtNumber": null
     },
     {
       "name": "Mustafa Eskihellaç",
@@ -154,10 +121,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1997-05-05",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "İsmail Yüksek",
@@ -166,10 +130,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1999-01-26",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/yl8ono1724846159.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4evqg11724846137.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/yl8ono1724846159.png"
+      "shirtNumber": null
     },
     {
       "name": "Muhammed Kerem Aktürkoğlu",
@@ -178,10 +139,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1998-10-21",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ix8aeh1769179066.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3xbd8h1717532026.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ix8aeh1769179066.png"
+      "shirtNumber": null
     },
     {
       "name": "Oguz Aydin",
@@ -190,10 +148,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-10-27",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/70002611.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rqoya71643145985.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/70002611.png"
+      "shirtNumber": null
     },
     {
       "name": "Baris Yilmaz",
@@ -202,10 +157,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-05-23",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/b2hypd1608242513.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ld37a31608242488.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b2hypd1608242513.png"
+      "shirtNumber": null
     },
     {
       "name": "Deniz Gul",
@@ -214,10 +166,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "2004-07-02",
       "nationality": "Sweden",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hs9gkb1718133677.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/31c9dg1718138743.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hs9gkb1718133677.png"
+      "shirtNumber": null
     },
     {
       "name": "Kenan Yıldız",
@@ -226,10 +175,7 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "2005-05-04",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zgep4d1759225554.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xnp5uz1698226958.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zgep4d1759225554.png"
+      "shirtNumber": null
     },
     {
       "name": "Arda Guler",
@@ -238,10 +184,7 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2005-02-25",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lwnog21768499165.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0saeov1771265107.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lwnog21768499165.png"
+      "shirtNumber": null
     },
     {
       "name": "Yunus Akgün",
@@ -250,10 +193,7 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2000-07-07",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/b701we1724945952.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bp6lxi1693170072.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b701we1724945952.png"
+      "shirtNumber": null
     },
     {
       "name": "Ozan Kabak",
@@ -262,10 +202,7 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2000-03-25",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/gtnzmr1763494412.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1tla181578151924.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gtnzmr1763494412.png"
+      "shirtNumber": null
     },
     {
       "name": "Zeki Çelik",
@@ -274,10 +211,7 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "1997-02-17",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/b8hg8o1758816005.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mqqhyw1737351973.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b8hg8o1758816005.png"
+      "shirtNumber": null
     },
     {
       "name": "Ferdi Kadıoğlu",
@@ -286,10 +220,7 @@
       "positionZh": "Left-Back",
       "dateOfBirth": "1999-10-07",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/enrtu21756994489.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qn0nr21772017123.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/enrtu21756994489.png"
+      "shirtNumber": null
     },
     {
       "name": "Orkun Kökçü",
@@ -298,10 +229,7 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "2000-12-29",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zrp45u1769170024.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2eet401737352595.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zrp45u1769170024.png"
+      "shirtNumber": null
     },
     {
       "name": "Atakan Karazor",
@@ -310,10 +238,7 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1996-10-13",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ph1o781763586281.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qwr2v61605732848.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ph1o781763586281.png"
+      "shirtNumber": null
     },
     {
       "name": "Hakan Çalhanoğlu",
@@ -322,10 +247,7 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1994-02-08",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hw8uxm1759408821.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ays7ot1737352882.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hw8uxm1759408821.png"
+      "shirtNumber": null
     },
     {
       "name": "Salih Özcan",
@@ -334,10 +256,7 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1998-01-11",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8dw4231756326486.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/c7h0uk1609169225.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8dw4231756326486.png"
+      "shirtNumber": null
     }
   ],
   "recentMatches": []

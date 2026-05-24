@@ -5,11 +5,11 @@
   "code": "jo",
   "group": "",
   "confederation": "",
-  "fifaRank": 51,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/jo.png",
   "coach": {
-    "nameEn": "Hussein Ammouta",
-    "nameZh": "侯赛因·阿穆塔",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1949,
@@ -22,10 +22,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1993-01-06",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Asian_Nations_Cup_-_Jordan_and_South_Korea_(53)_(cropped).jpg?width=500",
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Asian_Nations_Cup_-_Jordan_and_South_Korea_(53)_(cropped).jpg?width=500"
+      "shirtNumber": null
     },
     {
       "name": "Abdallah Al Fakhouri",
@@ -34,10 +31,7 @@
       "positionZh": "门将",
       "dateOfBirth": "2000-01-22",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Ahmad Assaf",
@@ -46,10 +40,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1999-07-21",
       "nationality": "Germany",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Saleem Obaid",
@@ -58,10 +49,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1992-01-17",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Yazan Al Arab",
@@ -70,10 +58,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1996-01-31",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Mohammad Abualnadi",
@@ -82,10 +67,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "2001-02-08",
       "nationality": "USA",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Abdallah Naseeb",
@@ -94,10 +76,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1994-02-25",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Mohammad Abu Hasheesh",
@@ -106,10 +85,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1995-05-09",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Yousef Abu Al Jazar",
@@ -118,10 +94,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1999-10-25",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Mahmoud Al Mardi",
@@ -130,10 +103,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1993-10-06",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Yousef Qashi",
@@ -142,10 +112,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2005-04-15",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Nizar Al Rashdan",
@@ -154,10 +121,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1999-03-23",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Noor Al Rawabdeh",
@@ -166,10 +130,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1997-02-24",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Ibrahim Saadeh",
@@ -178,10 +139,7 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-04-27",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Baha' Faisal",
@@ -190,10 +148,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "1995-05-30",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Mohannad Abu Taha",
@@ -202,10 +157,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "2003-02-02",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": null,
-      "photo": null
+      "shirtNumber": null
     },
     {
       "name": "Ibrahim Sabra",
@@ -214,10 +166,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "2006-02-01",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Player_Ibraheem_Sabra.jpg?width=500",
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Player_Ibraheem_Sabra.jpg?width=500"
+      "shirtNumber": null
     },
     {
       "name": "Musa Al Taamari",
@@ -226,10 +175,7 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "1997-06-10",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/r8omzu1766136576.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bvis231700559097.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/r8omzu1766136576.png"
+      "shirtNumber": null
     }
   ],
   "recentMatches": []

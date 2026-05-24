@@ -5,11 +5,11 @@
   "code": "sn",
   "group": "K",
   "confederation": "CAF",
-  "fifaRank": 18,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/sn.png",
   "coach": {
-    "nameEn": "Pape Thiaw",
-    "nameZh": "帕普·蒂亚乌",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1960,
@@ -17,15 +17,12 @@
   "squad": [
     {
       "name": "Edouard Mendy",
-      "nameZh": "爱德华·门迪",
+      "nameZh": "Edouard Mendy",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1992-03-01",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/eoy47r1771663768.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tzf98k1771663803.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/eoy47r1771663768.png"
+      "shirtNumber": null
     },
     {
       "name": "Yehvann Diouf",
@@ -34,10 +31,7 @@
       "positionZh": "门将",
       "dateOfBirth": "1999-11-16",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3iat8f1766319747.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pl2wxd1608640902.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3iat8f1766319747.png"
+      "shirtNumber": null
     },
     {
       "name": "Mory Diaw",
@@ -46,22 +40,16 @@
       "positionZh": "门将",
       "dateOfBirth": "1993-06-22",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3ckyd51765990168.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/fzowpd1629969971.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3ckyd51765990168.png"
+      "shirtNumber": null
     },
     {
       "name": "Kalidou Koulibaly",
-      "nameZh": "卡利杜·库利巴利",
+      "nameZh": "Kalidou Koulibaly",
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "1991-06-20",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/nirqe51750672288.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/fplctn1669799779.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/nirqe51750672288.png"
+      "shirtNumber": null
     },
     {
       "name": "Abdoulaye Seck",
@@ -70,10 +58,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "1992-06-04",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6qtpgs1766088033.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1nqjvb1708945668.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6qtpgs1766088033.png"
+      "shirtNumber": null
     },
     {
       "name": "El Hadji Malick Diouf",
@@ -82,10 +67,7 @@
       "positionZh": "后卫",
       "dateOfBirth": "2023-02-21",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q8vo5k1755779041.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nuctm81755776005.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q8vo5k1755779041.png"
+      "shirtNumber": null
     },
     {
       "name": "Habib Diallo",
@@ -94,10 +76,7 @@
       "positionZh": "中场",
       "dateOfBirth": "1995-06-18",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lzty151766163989.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5dca721607872102.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lzty151766163989.png"
+      "shirtNumber": null
     },
     {
       "name": "Cherif Ndiaye",
@@ -106,10 +85,7 @@
       "positionZh": "前锋",
       "dateOfBirth": "1996-01-23",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": null,
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Red_Star_Belgrade_vs._FC_Zenit_Saint_Petersburg,_23_March_2024_(1)_20_(Cherif_Ndiaye).jpg?width=500",
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Red_Star_Belgrade_vs._FC_Zenit_Saint_Petersburg,_23_March_2024_(1)_20_(Cherif_Ndiaye).jpg?width=500"
+      "shirtNumber": null
     },
     {
       "name": "Ibrahim M'Baye",
@@ -118,10 +94,7 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2008-01-24",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xvqf2w1678801899.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/w44zws1546348814.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xvqf2w1678801899.png"
+      "shirtNumber": null
     },
     {
       "name": "Assane Diao",
@@ -130,10 +103,7 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2005-09-07",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/bt2ue81764278241.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/vhi0m61701176025.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bt2ue81764278241.png"
+      "shirtNumber": null
     },
     {
       "name": "Mamadou Diakhon",
@@ -142,10 +112,7 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "2005-09-22",
       "nationality": "France",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/an9rvr1767634306.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gvpgxs1767630885.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/an9rvr1767634306.png"
+      "shirtNumber": null
     },
     {
       "name": "Lamine Camara",
@@ -154,10 +121,7 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "2004-01-01",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1fl2tg1766237973.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/vlxxzg1705489304.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1fl2tg1766237973.png"
+      "shirtNumber": null
     },
     {
       "name": "Mamadou Sarr",
@@ -166,10 +130,7 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2005-08-29",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/a1ha5q1766053704.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5cqufd1770721142.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/a1ha5q1766053704.png"
+      "shirtNumber": null
     },
     {
       "name": "Nobel Mendy",
@@ -178,10 +139,7 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2004-08-16",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9yy4fl1762549841.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/kfq9zs1762546313.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9yy4fl1762549841.png"
+      "shirtNumber": null
     },
     {
       "name": "Habib Diarra",
@@ -190,10 +148,7 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "2004-01-03",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/fbklgi1756903777.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bh5fr01772029318.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fbklgi1756903777.png"
+      "shirtNumber": null
     },
     {
       "name": "Pape Sarr",
@@ -202,10 +157,7 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "2002-09-14",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ll7kkd1757016806.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ovc2pm1770894572.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ll7kkd1757016806.png"
+      "shirtNumber": null
     },
     {
       "name": "Antoine Mendy",
@@ -214,10 +166,7 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "2004-05-27",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/2otk4v1766319808.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yq49qq1681393139.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2otk4v1766319808.png"
+      "shirtNumber": null
     },
     {
       "name": "Cheikh Ahmadou Dieng",
@@ -226,34 +175,25 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2000-09-01",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/gom3v11765969346.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/01uwh61631624839.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gom3v11765969346.png"
+      "shirtNumber": null
     },
     {
       "name": "Nicolas Jackson",
-      "nameZh": "尼古拉斯·杰克逊",
+      "nameZh": "Nicolas Jackson",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2001-06-20",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/uteluc1762963819.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5bv5ob1770543405.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/uteluc1762963819.png"
+      "shirtNumber": null
     },
     {
       "name": "Boulaye Dia",
-      "nameZh": "布拉耶·迪亚",
+      "nameZh": "Boulaye Dia",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1996-11-16",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/h2sjet1759646431.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/txq4201608640795.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/h2sjet1759646431.png"
+      "shirtNumber": null
     },
     {
       "name": "Iliman Ndiaye",
@@ -262,10 +202,7 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "1999-07-22",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rten2t1756977078.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mewy8h1628334209.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rten2t1756977078.png"
+      "shirtNumber": null
     },
     {
       "name": "Pathé Ciss",
@@ -274,10 +211,7 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1994-03-16",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/64dzq41762549645.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/kc2uoj1631540627.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/64dzq41762549645.png"
+      "shirtNumber": null
     },
     {
       "name": "Krépin Diatta",
@@ -286,10 +220,7 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "1999-02-25",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5uag2g1766238000.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/eh4g3m1612019966.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5uag2g1766238000.png"
+      "shirtNumber": null
     },
     {
       "name": "Moussa Niakhaté",
@@ -298,34 +229,25 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1996-03-08",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ua1b511766146528.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/myny341578227368.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ua1b511766146528.png"
+      "shirtNumber": null
     },
     {
       "name": "Ismaïla Sarr",
-      "nameZh": "伊斯马伊拉·萨尔",
+      "nameZh": "Ismaïla Sarr",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "1998-02-25",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1abo611761492444.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/d6a8by1772141525.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1abo611761492444.png"
+      "shirtNumber": null
     },
     {
       "name": "Idrissa Gana Guèye",
-      "nameZh": "伊德里萨·盖耶",
+      "nameZh": "Idrissa Gana Guèye",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1989-09-26",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ag9fm11756976825.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/707lot1771944827.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ag9fm11756976825.png"
+      "shirtNumber": null
     },
     {
       "name": "Pape Gueye",
@@ -334,10 +256,7 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1999-01-24",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9e7ql31762888843.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ncg6ba1609250975.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9e7ql31762888843.png"
+      "shirtNumber": null
     },
     {
       "name": "Ismail Jakobs",
@@ -346,10 +265,7 @@
       "positionZh": "Left-Back",
       "dateOfBirth": "1999-08-17",
       "nationality": "Senegal",
-      "shirtNumber": null,
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/iq9jcp1769177723.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/hdt64h1609169603.jpg",
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/iq9jcp1769177723.png"
+      "shirtNumber": null
     }
   ],
   "recentMatches": []
