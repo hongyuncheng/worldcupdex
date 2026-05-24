@@ -2,9 +2,11 @@ import { ref, computed } from 'vue'
 import type { UserPrediction } from '~/types'
 
 const STORAGE_KEY = 'wcd_predictions'
+const PREMIUM_UNLOCK_KEY = 'has_unlocked_premium'
 
 export function usePredictions() {
   const predictions = ref<Record<number, UserPrediction>>({})
+  const hasUnlockedPremium = ref<boolean>(false)
 
   // 从 localStorage 加载
   function loadPredictions() {
@@ -14,9 +16,22 @@ export function usePredictions() {
       if (raw) {
         predictions.value = JSON.parse(raw) as Record<number, UserPrediction>
       }
+      
+      const premiumStatus = localStorage.getItem(PREMIUM_UNLOCK_KEY)
+      if (premiumStatus === 'true') {
+        hasUnlockedPremium.value = true
+      }
     } catch {
       predictions.value = {}
+      hasUnlockedPremium.value = false
     }
+  }
+
+  // 解锁高级版
+  function unlockPremium() {
+    if (!import.meta.client) return
+    hasUnlockedPremium.value = true
+    localStorage.setItem(PREMIUM_UNLOCK_KEY, 'true')
   }
 
   // 保存到 localStorage
@@ -66,5 +81,7 @@ export function usePredictions() {
     getAllPredictions,
     hasPredicted,
     totalPredictions,
+    hasUnlockedPremium,
+    unlockPremium,
   }
 }

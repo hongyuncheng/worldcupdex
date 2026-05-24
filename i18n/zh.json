@@ -276,12 +276,29 @@
     "disclaimer": "所有预测结果以比赛常规时间（90分钟）为准，加时赛和点球大战不计入比分。",
     "scoringRules": "积分规则",
     "ruleCorrectRegular": "预测正确（常规时间）",
-    "ruleCorrectExtra": "预测正确（含加时/点球）",
-    "ruleCorrectScore": "预测正确比分",
-    "ruleWrong": "预测错误",
+    "ruleCorrectExtra": "猜对胜负 (加时/点球)",
+    "ruleCorrectScore": "猜对比分",
     "skip": "跳过",
     "hint": "💡 预测后可生成专属卡片，分享给好友",
-    "voteStats": "基于球迷匿名投票 (每 5 分钟更新): {percent}% 选择 {result}"
+    "voteStats": "基于球迷匿名投票 (每 5 分钟更新): {percent}% 选择 {result}",
+    "premiumUnlock": {
+      "lockedBannerText": "想让你的预测卡片与众不同吗？免费解锁高级 AI 背景图！",
+      "unlockBtn": "解锁高级版",
+      "unlockedBannerText": "欢迎回来，高级预测家！",
+      "modalTitle": "解锁高级设计",
+      "modalDesc": "与好友分享这场比赛，即可立即永久解锁所有高级 AI 背景和专属样式！",
+      "shareTwitter": "分享到 X / Twitter",
+      "shareFacebook": "分享到 Facebook",
+      "copyLink": "复制链接",
+      "modalHint": "无需注册，当前浏览器永久解锁。",
+      "themeSwitcherTitle": "🎨 个性化定制",
+      "themeGraffiti": "街头涂鸦",
+      "themeMinimalist": "清新扁平",
+      "themeGlasswind": "磨砂玻璃",
+      "switchBg": "切换背景图 ({current}/5)",
+      "verifying": "正在验证分享...",
+      "verifyingDesc": "请稍候，即将为您永久解锁高级特权"
+    }
   },
   "schedule": {
     "title": "赛程表",
@@ -791,5 +808,40 @@
         }
       }
     }
+  },
+  "prediction": {
+    "myPrediction": "我的预测",
+    "exclusivePrediction": "独家预测",
+    "predicting": "预测中..."
+  },
+  "match": {
+    "time": "比赛时间",
+    "venue": "比赛场馆"
+  },
+  "champion": {
+    "title": "选择你心中的冠军",
+    "titleHighlight": "冠军",
+    "subtitle": "48支球队，逐鹿绿茵大力神杯！选出你的冠军预测，生成专属卡片！",
+    "tip": "提交后可生成你的专属冠军预测卡片",
+    "confirmBtn": "生成我的冠军预测卡 🏆",
+    "resultDesc": "成功！你的冠军预测卡已生成，分享给好友吧！",
+    "resultTitle": "你的冠军预测卡",
+    "resetBtn": "← 重新选择",
+    "shareTextPrefix": "我押 ",
+    "shareTextSuffix": " 拿下2026世界杯冠军！🏆 你选谁？",
+    "countdown": "距开幕",
+    "days": "天",
+    "date": "预测时间",
+    "countdownLabel": "距开幕",
+    "daysAbbr": "天",
+    "footerCta": "你选谁？— worldcupdex.org",
+    "personalization": "个性化设置",
+    "themeGraffiti": "涂鸦",
+    "themeMinimalist": "清新",
+    "themeGlasswind": "极光",
+    "themeClassic": "经典",
+    "switchBackground": "切换背景图",
+    "classicBgUnique": "经典版背景唯一",
+    "saveCard": "保存预测卡片"
   }
 }

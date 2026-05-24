@@ -23,6 +23,18 @@ const adsenseScripts = adsenseClient && process.env.NODE_ENV === 'production'
     ]
   : []
 
+// 注入 Skimlinks 脚本
+const skimlinksId = process.env.NUXT_PUBLIC_SKIMLINKS_ID || '303414X1791459'
+const skimlinksScripts = skimlinksId && process.env.NODE_ENV === 'production'
+  ? [
+      {
+        type: 'text/javascript',
+        src: `https://s.skimresources.com/js/${skimlinksId}.skimlinks.js`,
+        async: true,
+      },
+    ]
+  : []
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-16',
   devtools: { enabled: true },
@@ -141,7 +153,7 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap' },
         { rel: 'preload', as: 'image', href: '/images/index_bg.png', fetchpriority: 'high' },
       ],
-      script: [...gaScripts, ...adsenseScripts],
+      script: [...gaScripts, ...adsenseScripts, ...skimlinksScripts],
     },
   },
 

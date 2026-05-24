@@ -277,10 +277,27 @@
     "ruleCorrectRegular": "Correct prediction (regular time)",
     "ruleCorrectExtra": "Correct prediction (extra time/penalties)",
     "ruleCorrectScore": "Correct score prediction",
-    "ruleWrong": "Wrong prediction",
     "skip": "Skip",
     "hint": "💡 Generate your exclusive card after prediction, share with friends",
-    "voteStats": "Based on anonymous fan votes (updated every 5 mins): {percent}% for {result}"
+    "voteStats": "Based on anonymous fan votes (updated every 5 mins): {percent}% for {result}",
+    "premiumUnlock": {
+      "lockedBannerText": "Want to show off in style? Unlock the Premium AI Background for FREE!",
+      "unlockBtn": "Unlock",
+      "unlockedBannerText": "Welcome back, Premium Predictor!",
+      "modalTitle": "Unlock Premium Design",
+      "modalDesc": "Share this match with your friends to instantly unlock all premium AI backgrounds and styles!",
+      "shareTwitter": "Share to X / Twitter",
+      "shareFacebook": "Share to Facebook",
+      "copyLink": "Copy Link",
+      "modalHint": "No sign-up required. Unlocks permanently for this browser.",
+      "themeSwitcherTitle": "🎨 Personalization",
+      "themeGraffiti": "Street Graffiti",
+      "themeMinimalist": "Clean Flat",
+      "themeGlasswind": "Glassmorphism",
+      "switchBg": "Switch Background ({current}/5)",
+      "verifying": "Verifying your share...",
+      "verifyingDesc": "Please wait a moment, unlocking your premium features"
+    }
   },
   "schedule": {
     "title": "Schedule",
@@ -789,5 +806,40 @@
         }
       }
     }
+  },
+  "prediction": {
+    "myPrediction": "My Prediction",
+    "exclusivePrediction": "Exclusive Prediction",
+    "predicting": "Predicting..."
+  },
+  "match": {
+    "time": "Match Time",
+    "venue": "Match Venue"
+  },
+  "champion": {
+    "title": "Pick Your ",
+    "titleHighlight": "Champion",
+    "subtitle": "48 teams, one ultimate prize! Make your prediction and get a personalized card!",
+    "tip": "Submit to generate your exclusive champion prediction card",
+    "confirmBtn": "Generate My Champion Card 🏆",
+    "resultDesc": "Success! Your prediction card is ready to be shared!",
+    "resultTitle": "Your Champion Card",
+    "resetBtn": "← Reselect",
+    "shareTextPrefix": "I pick ",
+    "shareTextSuffix": " to win the 2026 World Cup! 🏆 Who is your pick?",
+    "countdown": "Countdown",
+    "days": "Days",
+    "date": "Date",
+    "countdownLabel": "Countdown",
+    "daysAbbr": "D",
+    "footerCta": "Who is your pick? — worldcupdex.org",
+    "personalization": "Personalization",
+    "themeGraffiti": "Graffiti",
+    "themeMinimalist": "Minimalist",
+    "themeGlasswind": "Glasswind",
+    "themeClassic": "Classic",
+    "switchBackground": "Switch Background",
+    "classicBgUnique": "Classic BG is Unique",
+    "saveCard": "Save Prediction Card"
   }
 }

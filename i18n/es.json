@@ -317,10 +317,27 @@
     "ruleCorrectRegular": "Predicción correcta (tiempo regular)",
     "ruleCorrectExtra": "Predicción correcta (tiempo extra/penaltis)",
     "ruleCorrectScore": "Predicción de marcador correcta",
-    "ruleWrong": "Predicción incorrecta",
     "skip": "Omitir",
     "hint": "💡 Genera tu tarjeta exclusiva después de predecir, compártela con amigos",
-    "voteStats": "Basado en votos anónimos de fans (actualizado cada 5 min): {percent}% para {result}"
+    "voteStats": "Basado en votos anónimos de fans (actualizado cada 5 min): {percent}% para {result}",
+    "premiumUnlock": {
+      "lockedBannerText": "¿Quieres presumir con estilo? ¡Desbloquea el Fondo de IA Premium GRATIS!",
+      "unlockBtn": "Desbloquear",
+      "unlockedBannerText": "¡Bienvenido de nuevo, Predictor Premium!",
+      "modalTitle": "Desbloquear Diseño Premium",
+      "modalDesc": "¡Comparte este partido con tus amigos para desbloquear instantáneamente todos los fondos de IA y estilos premium!",
+      "shareTwitter": "Compartir en X / Twitter",
+      "shareFacebook": "Compartir en Facebook",
+      "copyLink": "Copiar enlace",
+      "modalHint": "No es necesario registrarse. Se desbloquea permanentemente para este navegador.",
+      "themeSwitcherTitle": "🎨 Personalización",
+      "themeGraffiti": "Graffiti Callejero",
+      "themeMinimalist": "Plano Limpio",
+      "themeGlasswind": "Efecto Vidrio",
+      "switchBg": "Cambiar Fondo ({current}/5)",
+      "verifying": "Verificando tu acción...",
+      "verifyingDesc": "Por favor espera, desbloqueando tus funciones premium"
+    }
   },
   "blog": {
     "listTitle": "Blog de WorldCupDex",
@@ -593,5 +610,40 @@
         }
       }
     }
+  },
+  "prediction": {
+    "myPrediction": "Mi Predicción",
+    "exclusivePrediction": "Predicción Exclusiva",
+    "predicting": "Prediciendo..."
+  },
+  "champion": {
+    "title": "Elige a tu ",
+    "titleHighlight": "Campeón",
+    "subtitle": "¡48 equipos, un premio final! ¡Haz tu predicción y obtén una tarjeta personalizada!",
+    "tip": "Envía para generar tu tarjeta de predicción de campeón exclusiva",
+    "confirmBtn": "Generar mi tarjeta de campeón 🏆",
+    "resultDesc": "¡Éxito! ¡Tu tarjeta de predicción está lista para ser compartida!",
+    "resultTitle": "Tu tarjeta de campeón",
+    "resetBtn": "← Volver a seleccionar",
+    "shareTextPrefix": "¡Apuesto por ",
+    "shareTextSuffix": " para ganar la Copa Mundial 2026! 🏆 ¿A quién eliges?",
+    "countdown": "Faltan",
+    "days": "Días",
+    "date": "Fecha",
+    "countdownLabel": "Faltan",
+    "daysAbbr": "D",
+    "footerCta": "¿A quién eliges? — worldcupdex.org",
+    "personalization": "Personalización",
+    "themeGraffiti": "Graffiti",
+    "themeMinimalist": "Minimalista",
+    "themeGlasswind": "Glasswind",
+    "themeClassic": "Clásico",
+    "switchBackground": "Cambiar fondo",
+    "classicBgUnique": "Fondo clásico es único",
+    "saveCard": "Guardar tarjeta"
+  },
+  "match": {
+    "time": "Hora del Partido",
+    "venue": "Sede del Partido"
   }
 }

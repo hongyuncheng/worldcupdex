@@ -21,9 +21,47 @@ const homeScore = ref<number>(0)
 const awayScore = ref<number>(0)
 const skipScore = ref(false)
 
-// ─── 获取本地预测记录 ───
-const { getPrediction } = usePredictions()
+// ─── 获取本地预测记录与 Premium 状态 ───
+const { getPrediction, hasUnlockedPremium, unlockPremium } = usePredictions()
 const myPrediction = computed(() => getPrediction(matchId))
+
+// ─── Premium 样式控制 ───
+const isPremiumUnlocked = computed(() => hasUnlockedPremium.value)
+const currentTheme = ref<'graffiti' | 'minimalist' | 'glasswind' | 'classic'>('graffiti')
+const currentPremiumBg = ref(1)
+
+function setPremiumTheme(theme: 'graffiti' | 'minimalist' | 'glasswind' | 'classic') {
+  currentTheme.value = theme
+  currentPremiumBg.value = 1 // 切换主题时重置背景图
+}
+
+function cyclePremiumBg() {
+  currentPremiumBg.value = currentPremiumBg.value >= 5 ? 1 : currentPremiumBg.value + 1
+}
+
+const previewBgPath = computed(() => {
+  if (!isPremiumUnlocked.value) return ''
+  
+  if (currentTheme.value === 'classic') {
+    return `/images/predict/classic/b4d21c7a-d0e2-48b8-8af0-c3be1967de7b.webp`
+  }
+
+  let actualDir = 'premium-bgs'
+  if (currentTheme.value === 'minimalist') {
+    actualDir = 'minimalist'
+  } else if (currentTheme.value === 'glasswind') {
+    actualDir = 'glasswind'
+  }
+  
+  return `/images/predict/${actualDir}/${currentPremiumBg.value}.webp`
+})
+
+const appliedTheme = computed(() => {
+  if (isPremiumUnlocked.value && match.value) {
+    return currentTheme.value
+  }
+  return 'basic'
+})
 
 // ─── 验证预测结果 ───
 const isCorrect = computed(() => {
@@ -121,11 +159,13 @@ const shareText = computed(() => {
   }
 
   // 2. 正常赛前预测
-  let textPool: string[] = []
+  let category = 'normal'
+  let maxCount = 3
   let teamName = ''
 
   if (selectedResult.value === 'DRAW') {
-    textPool = tm('share.predictionTexts.draw') as string[]
+    category = 'draw'
+    maxCount = 2
   } else {
     teamName = selectedResult.value === 'HOME_WIN' ? homeName : awayName
     
@@ -137,15 +177,14 @@ const shareText = computed(() => {
     }
 
     if (isCrush) {
-      textPool = tm('share.predictionTexts.crush') as string[]
-    } else {
-      textPool = tm('share.predictionTexts.normal') as string[]
+      category = 'crush'
+      maxCount = 2
     }
   }
 
-  // 随机抽取一条文案 (为了避免服务端与客户端 Hydration 不一致，这里采用简单的基于 matchId 伪随机)
-  const randomIndex = matchId % (textPool.length || 1)
-  let text = textPool[randomIndex] || ''
+  // 随机抽取一条文案
+  const randomIndex = matchId % maxCount
+  let text = t(`share.predictionTexts.${category}.${randomIndex}`)
   
   if (teamName && typeof text === 'string') {
     text = text.replace('{team}', teamName)
@@ -217,7 +256,68 @@ const isMatchLocked = computed(() => {
   return Date.now() >= matchTime
 })
 
-// ─── 辅助 ───
+// ─── 解锁处理 ───
+const showUnlockModal = ref(false)
+const unlockStatus = ref<'idle' | 'unlocking'>('idle')
+
+function closeUnlockModal() {
+  showUnlockModal.value = false
+  unlockStatus.value = 'idle'
+}
+
+function handleRealShare(platform: 'twitter' | 'facebook' | 'copy') {
+  if (!import.meta.client) return
+  
+  const text = shareText.value
+  const url = shareUrl.value
+
+  // 1. 执行真实的分享操作
+  if (platform === 'twitter') {
+    // 宽容策略：无论是否登录、是否真正发推，只要点击了就认为尝试分享
+    // 为了防止部分浏览器弹窗被拦截或丢失焦点导致剪贴板写入失败，必须先写入剪贴板
+    navigator.clipboard.writeText(`${text} ${url}`).catch(() => {})
+    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank')
+  } else if (platform === 'facebook') {
+    navigator.clipboard.writeText(`${text} ${url}`).catch(() => {})
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank')
+  } else if (platform === 'copy') {
+    navigator.clipboard.writeText(`${text} ${url}`).then(() => {
+      // 可以在此处加一个 toast，为了简单暂时依赖模态框的反馈
+    }).catch(err => console.error('Copy failed', err))
+  }
+
+  // 2. 状态变更为“验证中”，给用户留出在新标签页发推的时间，并增加仪式感
+  unlockStatus.value = 'unlocking'
+  
+  // 3. 延迟解锁
+  setTimeout(() => {
+    unlockPremium()
+    closeUnlockModal()
+    
+    // 播放庆祝动画
+    import('canvas-confetti').then((confetti) => {
+      const duration = 3 * 1000;
+      const animationEnd = Date.now() + duration;
+      const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 100 }; // 提高 zIndex
+      
+      function randomInRange(min: number, max: number) {
+        return Math.random() * (max - min) + min;
+      }
+      
+      const interval: any = setInterval(function() {
+        const timeLeft = animationEnd - Date.now();
+    
+        if (timeLeft <= 0) {
+          return clearInterval(interval);
+        }
+    
+        const particleCount = 50 * (timeLeft / duration);
+        confetti.default(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } }));
+        confetti.default(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
+      }, 250);
+    }).catch(e => console.warn('confetti not loaded', e))
+  }, 1800)
+}
 function getPredictionText(pred: any): string {
   if (pred.result === 'HOME_WIN') return t('predictDetail.homeWin')
   if (pred.result === 'AWAY_WIN') return t('predictDetail.awayWin')
@@ -479,7 +579,22 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
       <!-- 状态2：展示卡片 -->
       <template v-if="showCard && match">
         <div class="predict-page__card-wrapper">
-          <div ref="cardRef">
+          <!-- 解锁提示栏 -->
+          <div v-if="!hasUnlockedPremium" class="predict-page__unlock-banner">
+            <div class="unlock-banner-content">
+              <span class="unlock-icon">✨</span>
+              <span class="unlock-text">{{ $t('predictDetail.premiumUnlock.lockedBannerText') }}</span>
+            </div>
+            <button class="unlock-btn" @click="showUnlockModal = true">{{ $t('predictDetail.premiumUnlock.unlockBtn') }}</button>
+          </div>
+          <div v-else-if="hasUnlockedPremium" class="predict-page__unlock-banner predict-page__unlock-banner--success">
+            <div class="unlock-banner-content">
+              <span class="unlock-icon">👑</span>
+              <span class="unlock-text">{{ $t('predictDetail.premiumUnlock.unlockedBannerText') }}</span>
+            </div>
+          </div>
+
+          <div ref="cardRef" class="prediction-card-container">
             <PredictionCard
               :home-team="match.homeTeam"
               :away-team="match.awayTeam"
@@ -491,7 +606,51 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
               :predicted-result="selectedResult!"
               :predicted-score="!skipScore ? { home: homeScore, away: awayScore } : undefined"
               :locale="locale"
+              :theme="appliedTheme"
+              :premiumBgImage="previewBgPath"
             />
+          </div>
+
+          <!-- 高级版主题切换控件 -->
+          <div v-if="hasUnlockedPremium" class="predict-page__theme-switcher animate-fade-in">
+            <div class="theme-switcher-title">{{ $t('predictDetail.premiumUnlock.themeSwitcherTitle') }}</div>
+            
+            <div class="theme-buttons">
+              <button 
+                class="theme-btn" 
+                :class="{ 'theme-btn--active': currentTheme === 'graffiti' }"
+                @click="setPremiumTheme('graffiti')"
+              >
+                {{ $t('predictDetail.premiumUnlock.themeGraffiti') }}
+              </button>
+              <button 
+                class="theme-btn" 
+                :class="{ 'theme-btn--active': currentTheme === 'minimalist' }"
+                @click="setPremiumTheme('minimalist')"
+              >
+                {{ $t('predictDetail.premiumUnlock.themeMinimalist') }}
+              </button>
+              <button 
+                class="theme-btn" 
+                :class="{ 'theme-btn--active': currentTheme === 'glasswind' }"
+                @click="setPremiumTheme('glasswind')"
+              >
+                {{ $t('predictDetail.premiumUnlock.themeGlasswind') }}
+              </button>
+              <button 
+                class="theme-btn" 
+                :class="{ 'theme-btn--active': currentTheme === 'classic' }"
+                @click="setPremiumTheme('classic')"
+              >
+                {{ $t('champion.themeClassic') || 'Classic' }}
+              </button>
+            </div>
+            
+            <button class="bg-switch-btn" @click="cyclePremiumBg" :disabled="currentTheme === 'classic'" :class="{ 'opacity-50 cursor-not-allowed': currentTheme === 'classic' }">
+              <Icon name="uil:image-v" class="w-4 h-4" />
+              <span v-if="currentTheme === 'classic'">{{ $t('champion.classicBgUnique') || 'Classic BG is Unique' }}</span>
+              <span v-else>{{ $t('predictDetail.premiumUnlock.switchBg', { current: currentPremiumBg }) }} / 5</span>
+            </button>
           </div>
         </div>
 
@@ -520,6 +679,46 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
           </button>
         </div>
       </template>
+
+      <!-- Share to Unlock Modal -->
+      <div v-if="showUnlockModal" class="predict-page__modal-overlay" @click="closeUnlockModal">
+        <div class="predict-page__modal" @click.stop>
+          <button v-if="unlockStatus === 'idle'" class="predict-page__modal-close" @click="closeUnlockModal">×</button>
+          
+          <template v-if="unlockStatus === 'idle'">
+            <div class="modal-header">
+              <span class="modal-icon">✨</span>
+              <h3 class="modal-title">{{ $t('predictDetail.premiumUnlock.modalTitle') }}</h3>
+              <p class="modal-desc">{{ $t('predictDetail.premiumUnlock.modalDesc') }}</p>
+            </div>
+
+            <div class="modal-actions">
+              <button class="share-btn share-btn--twitter" @click="handleRealShare('twitter')">
+                <Icon name="uil:twitter" class="w-5 h-5" />
+                <span>{{ $t('predictDetail.premiumUnlock.shareTwitter') }}</span>
+              </button>
+              <button class="share-btn share-btn--facebook" @click="handleRealShare('facebook')">
+                <Icon name="uil:facebook" class="w-5 h-5" />
+                <span>{{ $t('predictDetail.premiumUnlock.shareFacebook') }}</span>
+              </button>
+              <button class="share-btn share-btn--copy" @click="handleRealShare('copy')">
+                <Icon name="uil:link" class="w-5 h-5" />
+                <span>{{ $t('predictDetail.premiumUnlock.copyLink') }}</span>
+              </button>
+            </div>
+            
+            <p class="modal-hint">{{ $t('predictDetail.premiumUnlock.modalHint') }}</p>
+          </template>
+
+          <template v-else>
+            <div class="modal-unlocking">
+              <Icon name="uil:spinner-alt" class="unlocking-spinner" />
+              <h3 class="unlocking-title">{{ $t('predictDetail.premiumUnlock.verifying') }}</h3>
+              <p class="unlocking-desc">{{ $t('predictDetail.premiumUnlock.verifyingDesc') }}</p>
+            </div>
+          </template>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -955,7 +1154,7 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
   background: linear-gradient(135deg, #F5A623, #F7C948);
   color: #ffffff;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 800;
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -996,8 +1195,89 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
 /* ===== 卡片展示 ===== */
 .predict-page__card-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 32px;
+}
+
+.prediction-card-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* ===== 高级版主题切换控件 ===== */
+.predict-page__theme-switcher {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.theme-switcher-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #374151;
+  letter-spacing: 0.5px;
+}
+
+.theme-buttons {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.theme-btn {
+  flex: 1;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: 2px solid #e5e7eb;
+  background: #f9fafb;
+  color: #4b5563;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.theme-btn:hover {
+  background: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+.theme-btn--active {
+  background: #f0fdf4;
+  border-color: #22c55e;
+  color: #166534;
+}
+
+.bg-switch-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px;
+  background: #f3e8ff;
+  color: #7e22ce;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.bg-switch-btn:hover {
+  background: #e9d5ff;
+  color: #6b21a8;
 }
 
 /* 分享面板容器 */
@@ -1058,6 +1338,230 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
   background: #F3F4F6;
   color: #000F49;
   border-color: #2D7AF6;
+}
+
+/* ===== 解锁提示栏 ===== */
+.predict-page__unlock-banner {
+  background: linear-gradient(135deg, #fdf4ff 0%, #f3e8ff 100%);
+  border: 1px solid #e879f9;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: 0 4px 12px rgba(232, 121, 249, 0.15);
+}
+
+.predict-page__unlock-banner--success {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border-color: #4ade80;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(74, 222, 128, 0.15);
+}
+
+.unlock-banner-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.unlock-icon {
+  font-size: 20px;
+}
+
+.unlock-text {
+  font-size: 13px;
+  font-weight: 700;
+  color: #86198f;
+  line-height: 1.4;
+}
+
+.predict-page__unlock-banner--success .unlock-text {
+  color: #166534;
+}
+
+.unlock-btn {
+  background: #c026d3;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(192, 38, 211, 0.3);
+}
+
+.unlock-btn:hover {
+  background: #a21caf;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(192, 38, 211, 0.4);
+}
+
+/* ===== 模态框 ===== */
+.predict-page__modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 20px;
+}
+
+.predict-page__modal {
+  background: #ffffff;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 400px;
+  padding: 32px 24px;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: modal-pop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes modal-pop {
+  from { opacity: 0; transform: scale(0.9) translateY(20px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.predict-page__modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: #f3f4f6;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #6b7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.predict-page__modal-close:hover {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.modal-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.modal-icon {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 800;
+  color: #1f2937;
+  margin: 0 0 8px;
+}
+
+.modal-desc {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.modal-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.share-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #ffffff;
+}
+
+.share-btn:hover {
+  transform: translateY(-2px);
+}
+
+.share-btn--twitter {
+  background: #000000;
+}
+.share-btn--twitter:hover { background: #333333; box-shadow: 0 4px 12px rgba(0,0,0,0.2); }
+
+.share-btn--facebook {
+  background: #1877F2;
+}
+.share-btn--facebook:hover { background: #166fe5; box-shadow: 0 4px 12px rgba(24,119,242,0.3); }
+
+.share-btn--copy {
+  background: #f3f4f6;
+  color: #374151;
+}
+.share-btn--copy:hover { background: #e5e7eb; color: #111827; }
+
+.modal-hint {
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.modal-unlocking {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.unlocking-spinner {
+  width: 48px;
+  height: 48px;
+  color: #a855f7;
+  animation: spin 1s linear infinite;
+  margin-bottom: 20px;
+}
+
+.unlocking-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #1f2937;
+  margin: 0 0 8px;
+}
+
+.unlocking-desc {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 /* ===== 响应式 ===== */

@@ -32,7 +32,7 @@
       <p class="truncate">{{ venue }}</p>
     </div>
     <!-- Predict buttons -->
-    <div class="px-3 pb-3 grid grid-cols-2 gap-1.5">
+    <div class="px-3 pb-2 grid grid-cols-2 gap-1.5">
       <NuxtLinkLocale
         :to="`/predict/${matchId}`"
         class="btn btn-xs h-8 min-h-0 border-none bg-[#FFD700] text-[#000F49] hover:bg-[#E6C200] font-bold no-underline shadow-sm text-xs px-2"
@@ -48,6 +48,18 @@
       >
         {{ $t('home.predictAi') }}
       </button>
+    </div>
+    <!-- Find Tickets button (Skimlinks will monetize this automatically) -->
+    <div class="px-3 pb-3">
+      <a
+        :href="`https://www.stubhub.com/search?q=World+Cup+2026+${team1NameEn}+${team2NameEn}`"
+        target="_blank"
+        rel="nofollow noopener"
+        class="btn btn-xs w-full h-8 min-h-0 border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 hover:border-gray-300 font-bold no-underline shadow-sm text-xs px-2 flex items-center justify-center gap-1.5 transition-colors"
+        style="border-radius: 8px;"
+      >
+        🎟️ Find Tickets
+      </a>
     </div>
   </div>
 </template>
