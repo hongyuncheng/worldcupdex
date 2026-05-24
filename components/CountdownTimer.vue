@@ -31,6 +31,12 @@ const timeBlocks = computed(() => [
 ])
 
 function updateCountdown() {
+  // 处理可能传入的无效日期或不支持的日期格式
+  if (isNaN(targetDate)) {
+    console.warn('Invalid targetDate provided to CountdownTimer:', targetDate)
+    return
+  }
+
   const now = Date.now()
   const diff = targetDate - now
 

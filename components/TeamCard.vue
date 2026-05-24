@@ -14,6 +14,6 @@ defineProps<{
   teamId: string
   name: string
   flag: string
-  rank: number
+  rank?: number
 }>()
 </script>

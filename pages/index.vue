@@ -395,6 +395,7 @@ const upcomingFavoriteMatches = computed(() => {
 })
 
 function formatLocalTime(timestamp: number) {
+  if (!timestamp) return ''
   return new Intl.DateTimeFormat(locale.value, { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }).format(new Date(timestamp))
 }
 

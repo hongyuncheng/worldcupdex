@@ -70,6 +70,9 @@
     "generateCard": "Generar Tarjeta →"
   },
   "common": {
+    "groupStage": "Fase de Grupos",
+    "GROUP_STAGE": "Fase de Grupos",
+    "ROUND_OF_32": "Dieciseisavos",
     "viewAll": "Ver todo",
     "predict": "Predecir",
     "search": "Buscar",

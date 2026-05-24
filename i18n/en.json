@@ -72,6 +72,9 @@
     "generateCard": "Generate Card →"
   },
   "common": {
+    "groupStage": "Group Stage",
+    "GROUP_STAGE": "Group Stage",
+    "ROUND_OF_32": "Round of 32",
     "viewAll": "View All",
     "predict": "Predict",
     "search": "Search",
@@ -80,7 +83,14 @@
     "back": "Back",
     "share": "Share",
     "language": "Language",
-    "vs": "VS"
+    "vs": "VS",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "error": "An error occurred",
+    "success": "Success",
+    "noData": "No data available",
+    "all": "All"
   },
   "teams": {
     "title": "Team Encyclopedia",
