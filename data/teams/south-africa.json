@@ -22,7 +22,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1992-01-21",
       "nationality": "South Africa",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kd7edx1750875629.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/kd7edx1750875629.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5i9esk1751086301.jpg"
     },
     {
       "name": "Ricardo Goss",
@@ -40,7 +43,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1995-07-22",
       "nationality": "South Africa",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/nh3ddz1750874984.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/nh3ddz1750874984.png",
+      "photoThumb": null
     },
     {
       "name": "Nkosinathi Sibisi",
@@ -49,7 +55,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1995-09-22",
       "nationality": "South Africa",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/m45e0b1777992147.png",
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/m45e0b1777992147.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/rvftvr1777992083.jpg"
     },
     {
       "name": "Samukelo Kabini",
@@ -67,7 +76,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "2004-02-20",
       "nationality": "South Africa",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4p86da1773070885.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/4p86da1773070885.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/aknyvy1773072609.jpg"
     },
     {
       "name": "Mbekezeli Mbokazi",
@@ -103,7 +115,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1989-08-03",
       "nationality": "South Africa",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/76q7yr1750875450.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/76q7yr1750875450.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/j9i4hk1706095566.jpg"
     },
     {
       "name": "Teboho Mokoena",
@@ -112,7 +127,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1997-01-24",
       "nationality": "South Africa",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3dq0ds1750874921.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3dq0ds1750874921.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4124n61751085355.jpg"
     },
     {
       "name": "Khuliso Mudau",
@@ -121,7 +139,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1995-04-26",
       "nationality": "South Africa",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ods0zi1750875546.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ods0zi1750875546.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i0cq7o1706105807.jpg"
     },
     {
       "name": "Oswin Appollis",
@@ -148,7 +169,10 @@
       "positionZh": "中场",
       "dateOfBirth": "2001-05-05",
       "nationality": "South Africa",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q8api81750874993.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q8api81750874993.png",
+      "photoThumb": null
     },
     {
       "name": "Thapelo Maseko",
@@ -193,7 +217,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "2000-06-20",
       "nationality": "South Africa",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/n6r7bg1766426097.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/n6r7bg1766426097.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/48crnx1652881700.jpg"
     },
     {
       "name": "Evidence Makgopa",
@@ -202,7 +229,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "2000-06-05",
       "nationality": "South Africa",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/lmp3081705589519.jpg",
+      "photoCutout": null,
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/lmp3081705589519.jpg"
     },
     {
       "name": "Lyle Foster",
@@ -211,7 +241,10 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2000-09-04",
       "nationality": "South Africa",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0fo5fd1757174497.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0fo5fd1757174497.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/svdhbu1772369157.jpg"
     }
   ],
   "recentMatches": []

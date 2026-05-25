@@ -5,7 +5,7 @@
  * Usage: FOOTBALL_DATA_API_KEY=your_key node scripts/fetch-worldcup-data.mjs
  */
 
-import { writeFile, mkdir } from 'fs/promises';
+import { writeFile, readFile, mkdir } from 'fs/promises';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -641,6 +641,33 @@ async function main() {
   let totalPlayers = 0;
   for (const team of teamsDetailed) {
     const filePath = join(TEAMS_DIR, `${team.id}.json`);
+
+    // ---- Merge existing player photos to avoid overwriting them ----
+    let existingSquadMap = new Map();
+    try {
+      const existingRaw = await readFile(filePath, 'utf-8');
+      const existing = JSON.parse(existingRaw);
+      if (existing.squad && Array.isArray(existing.squad)) {
+        for (const p of existing.squad) {
+          existingSquadMap.set(p.name, p);
+        }
+      }
+    } catch (e) {
+      // File doesn't exist yet — ignore
+    }
+
+    if (team.squad && existingSquadMap.size > 0) {
+      for (const player of team.squad) {
+        const existing = existingSquadMap.get(player.name);
+        if (existing) {
+          if (existing.photo !== undefined) player.photo = existing.photo;
+          if (existing.photoCutout !== undefined) player.photoCutout = existing.photoCutout;
+          if (existing.photoThumb !== undefined) player.photoThumb = existing.photoThumb;
+        }
+      }
+    }
+    // ---- End photo merge ----
+
     await writeFile(filePath, JSON.stringify(team, null, 2), 'utf-8');
     totalPlayers += team.squad?.length || 0;
   }

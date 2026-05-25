@@ -121,7 +121,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1997-07-27",
       "nationality": "Iraq",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/z2j9fm1718053097.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/z2j9fm1718053097.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/l4yhxn1718051391.jpg"
     },
     {
       "name": "Peter Gwargis",
@@ -139,7 +142,10 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-10-10",
       "nationality": "Iraq",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fpov9x1765314414.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/fpov9x1765314414.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/utmajp1701812435.jpg"
     },
     {
       "name": "Karar Nabeel",
@@ -157,7 +163,10 @@
       "positionZh": "中场",
       "dateOfBirth": "2002-12-20",
       "nationality": "Iraq",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0c5pol1631797572.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0c5pol1631797572.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tuyc4f1631797563.jpg"
     },
     {
       "name": "Ibrahim Bayesh",
@@ -238,7 +247,10 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2002-03-01",
       "nationality": "Iraq",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/c2vni01766070789.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/c2vni01766070789.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/kwj85e1667753198.jpg"
     },
     {
       "name": "Zidane Iqbal",
@@ -247,7 +259,10 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "2003-04-27",
       "nationality": "Iraq",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/m60b8d1723059508.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/m60b8d1723059508.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/zbtnwy1697485915.jpg"
     },
     {
       "name": "Hussein Ali",
@@ -256,7 +271,10 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "2002-03-01",
       "nationality": "Iraq",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/35b2qb1728931694.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/35b2qb1728931694.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7takw11701263808.jpg"
     }
   ],
   "recentMatches": []

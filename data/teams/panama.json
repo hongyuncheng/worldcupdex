@@ -31,7 +31,10 @@
       "positionZh": "门将",
       "dateOfBirth": "1994-12-25",
       "nationality": "Panama",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zkbjvd1717088213.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zkbjvd1717088213.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/s1hpbf1719945429.jpg"
     },
     {
       "name": "Cesar Samudio",
@@ -58,7 +61,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1991-03-31",
       "nationality": "Panama",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/z6qwhm1695729236.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/z6qwhm1695729236.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yxfk291691153567.jpg"
     },
     {
       "name": "Andrés Andrade",
@@ -67,7 +73,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1998-10-16",
       "nationality": "Panama",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0xq6t21769635655.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0xq6t21769635655.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pgbqmf1769545609.jpg"
     },
     {
       "name": "César Blackman",
@@ -76,7 +85,10 @@
       "positionZh": "后卫",
       "dateOfBirth": "1998-04-02",
       "nationality": "Panama",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/baa05l1716211763.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/baa05l1716211763.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/x40xsw1716211711.jpg"
     },
     {
       "name": "Jorge Gutiérrez",
@@ -112,7 +124,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1990-02-10",
       "nationality": "Panama",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xq1uij1762901226.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xq1uij1762901226.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1x1mcn1547981706.jpg"
     },
     {
       "name": "Ismael Díaz",
@@ -121,7 +136,10 @@
       "positionZh": "中场",
       "dateOfBirth": "1997-05-12",
       "nationality": "Panama",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/lubrmd1719946201.jpg",
+      "photoCutout": null,
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/lubrmd1719946201.jpg"
     },
     {
       "name": "Carlos Harvey",
@@ -130,7 +148,10 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-02-03",
       "nationality": "Panama",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lq0v2t1741873531.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lq0v2t1741873531.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bkdwyt1652354862.jpg"
     },
     {
       "name": "César Yanis",
@@ -157,7 +178,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "1993-08-18",
       "nationality": "Panama",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/oahrkt1695729282.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/oahrkt1695729282.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/h1f27n1691153916.jpg"
     },
     {
       "name": "Cecilio Waterman",
@@ -166,7 +190,10 @@
       "positionZh": "前锋",
       "dateOfBirth": "1991-04-13",
       "nationality": "Panama",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/u4oud21714772852.jpg",
+      "photoCutout": null,
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/u4oud21714772852.jpg"
     },
     {
       "name": "Kadir Barría",
@@ -184,7 +211,10 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "1996-02-11",
       "nationality": "Panama",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/693hds1766153380.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/693hds1766153380.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/zcfxlr1687618394.jpg"
     },
     {
       "name": "José Cordoba",
@@ -193,7 +223,10 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2001-06-03",
       "nationality": "Panama",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4h6gwd1761684091.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/4h6gwd1761684091.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/uk6yfg1726080105.jpg"
     },
     {
       "name": "Édgar Bárcenas",
@@ -220,7 +253,10 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1998-11-28",
       "nationality": "Panama",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/btl6qo1662210393.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/btl6qo1662210393.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/b0fjrf1719945711.jpg"
     }
   ],
   "recentMatches": []

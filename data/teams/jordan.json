@@ -175,7 +175,10 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "1997-06-10",
       "nationality": "Jordan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/r8omzu1766136576.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/r8omzu1766136576.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bvis231700559097.jpg"
     }
   ],
   "recentMatches": []
