@@ -103,7 +103,9 @@
       "positionZh": "后卫",
       "dateOfBirth": "1997-04-09",
       "nationality": "Iran",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Omid_noorafkan_Sepahan_2023.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Omid_noorafkan_Sepahan_2023.jpg?width=500"
     },
     {
       "name": "Hossein Kanaani",
@@ -133,7 +135,9 @@
       "positionZh": "后卫",
       "dateOfBirth": "1998-09-14",
       "nationality": "",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Esteghlal_Celebrate_IPL_Title_Win_at_Azadi_Stadium_-_020.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Esteghlal_Celebrate_IPL_Title_Win_at_Azadi_Stadium_-_020.jpg?width=500"
     },
     {
       "name": "Ariya Yousefi",
@@ -151,7 +155,9 @@
       "positionZh": "后卫",
       "dateOfBirth": "1997-01-02",
       "nationality": "Iran",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Esteghlal_FC_in_training,_29_September_2021_-_08.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Esteghlal_FC_in_training,_29_September_2021_-_08.jpg?width=500"
     },
     {
       "name": "Amirhossein Hosseinzadeh",
@@ -160,7 +166,9 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-10-30",
       "nationality": "Iran",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Esteghlal_FC_in_training,_29_September_2021_-_09.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Esteghlal_FC_in_training,_29_September_2021_-_09.jpg?width=500"
     },
     {
       "name": "Mehdi Torabi",
@@ -181,7 +189,9 @@
       "positionZh": "中场",
       "dateOfBirth": "2001-10-27",
       "nationality": "",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/مقدماتی_جام_جهانی_۲۰۲۶؛_تیم‌های_ملی_ایران_و_کره_شمالی_(15)_(cropped)_Mehdi_Hashemnejad.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/مقدماتی_جام_جهانی_۲۰۲۶؛_تیم‌های_ملی_ایران_و_کره_شمالی_(15)_(cropped)_Mehdi_Hashemnejad.jpg?width=500"
     },
     {
       "name": "Kasra Taheri",
@@ -190,7 +200,9 @@
       "positionZh": "前锋",
       "dateOfBirth": "2006-08-06",
       "nationality": "Iran",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kasra_Taheri.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Kasra_Taheri.jpg?width=500"
     },
     {
       "name": "Ali Alipour",
@@ -199,7 +211,9 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1995-11-11",
       "nationality": "Iran",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Persepolis_F.C._v_Shahr_Khodro_F.C.,_27_February_2020_(13)_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Persepolis_F.C._v_Shahr_Khodro_F.C.,_27_February_2020_(13)_(cropped).jpg?width=500"
     }
   ],
   "recentMatches": []

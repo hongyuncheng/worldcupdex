@@ -181,7 +181,9 @@
       "positionZh": "中场",
       "dateOfBirth": "2002-11-11",
       "nationality": "South Africa",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Go_Ahead_Eagles_-_Mamelodi_Sundowns_FC_-_53066145739.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Go_Ahead_Eagles_-_Mamelodi_Sundowns_FC_-_53066145739.jpg?width=500"
     },
     {
       "name": "Relebohile Mofokeng",

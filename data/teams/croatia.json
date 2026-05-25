@@ -148,7 +148,9 @@
       "positionZh": "Left-Back",
       "dateOfBirth": "2002-01-23",
       "nationality": "Croatia",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2023-10-04_Fußball,_Männer,_UEFA_Champions_League,_RB_Leipzig_-_Manchester_City_FC_1DX_2611_(Joško_Gvardiol).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/2023-10-04_Fußball,_Männer,_UEFA_Champions_League,_RB_Leipzig_-_Manchester_City_FC_1DX_2611_(Joško_Gvardiol).jpg?width=500"
     },
     {
       "name": "Josip Stanišić",
@@ -301,7 +303,9 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1994-05-06",
       "nationality": "Croatia",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Chelsea_vs._Arsenal,_29_May_2019_18_Kovacic.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Chelsea_vs._Arsenal,_29_May_2019_18_Kovacic.jpg?width=500"
     },
     {
       "name": "Luka Modrić",

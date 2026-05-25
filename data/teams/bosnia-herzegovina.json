@@ -280,7 +280,9 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1998-07-09",
       "nationality": "Bosnia-Herzegovina",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dennis_Hadžikadunić_2021.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Dennis_Hadžikadunić_2021.jpg?width=500"
     },
     {
       "name": "Dženis Burnić",

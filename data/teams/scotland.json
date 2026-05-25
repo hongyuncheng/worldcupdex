@@ -103,7 +103,9 @@
       "positionZh": "前锋",
       "dateOfBirth": "1995-08-10",
       "nationality": "Scotland",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lawrence_Shankland_2019.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Lawrence_Shankland_2019.jpg?width=500"
     },
     {
       "name": "Findlay Curtis",
@@ -124,7 +126,9 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2005-11-11",
       "nationality": "Scotland",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ben_Doak_2025.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Ben_Doak_2025.jpg?width=500"
     },
     {
       "name": "Nathan Patterson",
@@ -157,7 +161,9 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "2002-01-01",
       "nationality": "Scotland",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Hickey_02082025_(1).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Hickey_02082025_(1).jpg?width=500"
     },
     {
       "name": "Ross Stewart",

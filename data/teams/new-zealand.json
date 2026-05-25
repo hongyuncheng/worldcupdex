@@ -58,7 +58,9 @@
       "positionZh": "后卫",
       "dateOfBirth": "1988-08-18",
       "nationality": "New Zealand",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Boxall_(36975336216)_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Boxall_(36975336216)_(cropped).jpg?width=500"
     },
     {
       "name": "Callan Elliot",
@@ -136,7 +138,9 @@
       "positionZh": "中场",
       "dateOfBirth": "1999-02-20",
       "nationality": "New Zealand",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarpreet_Singh_Training_2019-07-28_FC_Bayern_Munich.png?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarpreet_Singh_Training_2019-07-28_FC_Bayern_Munich.png?width=500"
     },
     {
       "name": "Francis De Vries",
@@ -295,7 +299,9 @@
       "positionZh": "Left-Back",
       "dateOfBirth": "2000-09-27",
       "nationality": "New Zealand",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Liberato_Cacace_30082025_(1).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Liberato_Cacace_30082025_(1).jpg?width=500"
     }
   ],
   "recentMatches": []

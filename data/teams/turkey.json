@@ -55,7 +55,9 @@
       "positionZh": "门将",
       "dateOfBirth": "1996-04-05",
       "nationality": "Turkey",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Uğurcan_Çakır_-_beIN-Sports-Reklam_(2021)_(cropped).png?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Uğurcan_Çakır_-_beIN-Sports-Reklam_(2021)_(cropped).png?width=500"
     },
     {
       "name": "Mert Müldür",
@@ -76,7 +78,9 @@
       "positionZh": "后卫",
       "dateOfBirth": "1994-09-07",
       "nationality": "Turkey",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Abdülkerim_Bardakçı_-_beIN-Sports-Reklam_(2021)_(cropped).png?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Abdülkerim_Bardakçı_-_beIN-Sports-Reklam_(2021)_(cropped).png?width=500"
     },
     {
       "name": "Merih Demiral",

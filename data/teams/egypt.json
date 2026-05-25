@@ -97,7 +97,9 @@
       "positionZh": "后卫",
       "dateOfBirth": "2001-04-30",
       "nationality": "Egypt",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hossam_Abdel_Maguid.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Hossam_Abdel_Maguid.jpg?width=500"
     },
     {
       "name": "Khaled Sobhy",
@@ -208,7 +210,9 @@
       "positionZh": "前锋",
       "dateOfBirth": "2001-04-24",
       "nationality": "Egypt",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ibrahim_Adel_2025.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Ibrahim_Adel_2025.jpg?width=500"
     },
     {
       "name": "Mahmoud Saber",
@@ -217,7 +221,9 @@
       "positionZh": "前锋",
       "dateOfBirth": "2001-07-30",
       "nationality": "Egypt",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Egypt_vs._Morocco_2024_Summer_Olympics_men's_association_football_02_(cropped4).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Egypt_vs._Morocco_2024_Summer_Olympics_men's_association_football_02_(cropped4).jpg?width=500"
     },
     {
       "name": "Mohamed Abdelmonem",

@@ -103,7 +103,9 @@
       "positionZh": "中场",
       "dateOfBirth": "1991-06-21",
       "nationality": "DR Congo",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Entraînement_du_RC_Lens_-_15_juillet_2020_24.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Entraînement_du_RC_Lens_-_15_juillet_2020_24.jpg?width=500"
     },
     {
       "name": "Aaron Tshibola",
@@ -112,7 +114,9 @@
       "positionZh": "中场",
       "dateOfBirth": "1995-01-02",
       "nationality": "DR Congo",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Tshibola_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Aaron_Tshibola_(cropped).jpg?width=500"
     },
     {
       "name": "Charles Pickel",
@@ -199,7 +203,9 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "1997-08-29",
       "nationality": "DR Congo",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gédéon_Kalulu).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Gédéon_Kalulu).jpg?width=500"
     },
     {
       "name": "Simon Banza",

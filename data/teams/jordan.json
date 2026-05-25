@@ -22,7 +22,9 @@
       "positionZh": "门将",
       "dateOfBirth": "1993-01-06",
       "nationality": "Jordan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Asian_Nations_Cup_-_Jordan_and_South_Korea_(53)_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Asian_Nations_Cup_-_Jordan_and_South_Korea_(53)_(cropped).jpg?width=500"
     },
     {
       "name": "Abdallah Al Fakhouri",
@@ -166,7 +168,9 @@
       "positionZh": "前锋",
       "dateOfBirth": "2006-02-01",
       "nationality": "Jordan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Player_Ibraheem_Sabra.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Player_Ibraheem_Sabra.jpg?width=500"
     },
     {
       "name": "Musa Al Taamari",

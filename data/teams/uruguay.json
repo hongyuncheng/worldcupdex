@@ -226,7 +226,9 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1998-11-09",
       "nationality": "Uruguay",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Santiago_Bueno.png?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Santiago_Bueno.png?width=500"
     },
     {
       "name": "Mathías Olivera",

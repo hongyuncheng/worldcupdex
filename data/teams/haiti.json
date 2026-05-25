@@ -133,7 +133,9 @@
       "positionZh": "前锋",
       "dateOfBirth": "1994-04-07",
       "nationality": "Haiti",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Duckens_Nazon_in_CSKA.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Duckens_Nazon_in_CSKA.jpg?width=500"
     },
     {
       "name": "Frantzdy Pierrot",

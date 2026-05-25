@@ -58,7 +58,9 @@
       "positionZh": "后卫",
       "dateOfBirth": "1986-09-12",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Yuto_Nagatomo_in_2018.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Yuto_Nagatomo_in_2018.jpg?width=500"
     },
     {
       "name": "Ayumu Seko",
@@ -211,7 +213,9 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1997-01-27",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kō_Itakura_-_板倉堰.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Kō_Itakura_-_板倉堰.jpg?width=500"
     },
     {
       "name": "Yukinari Sugawara",
@@ -265,7 +269,9 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2001-06-04",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Takefusa_Kubo_2019.png?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Takefusa_Kubo_2019.png?width=500"
     },
     {
       "name": "Takehiro Tomiyasu",
@@ -274,7 +280,9 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "1998-11-05",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Takehiro_Tomiyasu,_2019_AFC_Asian_Cup_1.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Takehiro_Tomiyasu,_2019_AFC_Asian_Cup_1.jpg?width=500"
     },
     {
       "name": "Ritsu Doan",
@@ -307,7 +315,9 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1993-02-09",
       "nationality": "Japan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Wataru_endo.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Wataru_endo.jpg?width=500"
     }
   ],
   "recentMatches": []

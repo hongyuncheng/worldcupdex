@@ -345,8 +345,8 @@ onMounted(() => {
               :share-url="shareUrl"
               :card-ref="cardRef"
               :filename="shareFilename"
-              :save-button-text="$t('champion.saveCard') || 'Save Prediction Card'"
-              :share-title="$t('champion.shareTitle') || 'Share with friends'"
+              :save-button-text="$t('champion.saveCard')"
+              :share-title="$t('champion.shareTitle')"
             />
           </div>
 

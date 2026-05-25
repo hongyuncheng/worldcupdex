@@ -34,7 +34,9 @@
       "positionZh": "门将",
       "dateOfBirth": "1986-03-27",
       "nationality": "Germany",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Manuel_Neuer_850_0723.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/20180602_FIFA_Friendly_Match_Austria_vs._Germany_Manuel_Neuer_850_0723.jpg?width=500"
     },
     {
       "name": "Alexander Nübel",
@@ -100,7 +102,9 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2003-02-26",
       "nationality": "Germany",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamal_Musiala_2022_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamal_Musiala_2022_(cropped).jpg?width=500"
     },
     {
       "name": "Malick Thiaw",
@@ -142,7 +146,9 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "2001-02-26",
       "nationality": "Germany",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamie_leweling.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamie_leweling.jpg?width=500"
     },
     {
       "name": "Felix Kalu Nmecha",
@@ -280,7 +286,9 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1996-10-27",
       "nationality": "Germany",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/20161011_U21_AUT_GER_9328_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/20161011_U21_AUT_GER_9328_(cropped).jpg?width=500"
     },
     {
       "name": "Kai Havertz",

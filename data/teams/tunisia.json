@@ -34,7 +34,9 @@
       "positionZh": "后卫",
       "dateOfBirth": "1995-06-19",
       "nationality": "Tunisia",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dylan_Bronn_2.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Dylan_Bronn_2.jpg?width=500"
     },
     {
       "name": "Mortadha Ben Ouanes",
@@ -91,7 +93,9 @@
       "positionZh": "中场",
       "dateOfBirth": "1999-02-10",
       "nationality": "Tunisia",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Elias_Achouri,_Vejle_Boldklub_-_FC_København,_29._July_2023_-_opvarmning_FCK's_1._hold_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Elias_Achouri,_Vejle_Boldklub_-_FC_København,_29._July_2023_-_opvarmning_FCK's_1._hold_(cropped).jpg?width=500"
     },
     {
       "name": "Hadj Mahmoud",
@@ -112,7 +116,9 @@
       "positionZh": "中场",
       "dateOfBirth": "2004-06-09",
       "nationality": "",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Yassine-Chikhaoui.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Yassine-Chikhaoui.jpg?width=500"
     },
     {
       "name": "Moutaz Neffati",
@@ -181,7 +187,9 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1998-05-26",
       "nationality": "Tunisia",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Montassar_Talbi_2021.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Montassar_Talbi_2021.jpg?width=500"
     },
     {
       "name": "Elias Saad",
@@ -202,7 +210,9 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2003-01-21",
       "nationality": "Tunisia",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hannibal_Mejbri_26042025_(1).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Hannibal_Mejbri_26042025_(1).jpg?width=500"
     },
     {
       "name": "Ismaël Gharbi",

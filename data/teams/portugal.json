@@ -67,7 +67,9 @@
       "positionZh": "前锋",
       "dateOfBirth": "1985-02-05",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis,_September_2023_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Cristiano_Ronaldo_playing_for_Al_Nassr_FC_against_Persepolis,_September_2023_(cropped).jpg?width=500"
     },
     {
       "name": "João Félix",
@@ -229,7 +231,9 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "1999-06-10",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/RafaelLeãoPortugal23.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/RafaelLeãoPortugal23.jpg?width=500"
     },
     {
       "name": "Nélson Semedo",
@@ -238,7 +242,9 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "1993-11-16",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mex-por-14_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Mex-por-14_(cropped).jpg?width=500"
     },
     {
       "name": "Rúben Dias",
@@ -247,7 +253,9 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1997-05-14",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruben_Dias,_14_November_2024_(2).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruben_Dias,_14_November_2024_(2).jpg?width=500"
     },
     {
       "name": "Gonçalo Guedes",
@@ -280,7 +288,9 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "1994-08-10",
       "nationality": "Portugal",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bernardo_Silva_(Isto_É_Gozar_Com_Quem_Trabalha,_2024).png?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Bernardo_Silva_(Isto_É_Gozar_Com_Quem_Trabalha,_2024).png?width=500"
     },
     {
       "name": "Pedro Neto",

@@ -31,7 +31,9 @@
       "positionZh": "门将",
       "dateOfBirth": "1992-10-02",
       "nationality": "Brazil",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alisson_in_2018.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Alisson_in_2018.jpg?width=500"
     },
     {
       "name": "Ederson",
@@ -97,7 +99,9 @@
       "positionZh": "后卫",
       "dateOfBirth": "1997-12-19",
       "nationality": "Brazil",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/GabrielLille2019.png?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/GabrielLille2019.png?width=500"
     },
     {
       "name": "Fabinho",
@@ -118,7 +122,9 @@
       "positionZh": "前锋",
       "dateOfBirth": "1992-02-05",
       "nationality": "Brazil",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Neymar_Jr._with_Al_Hilal,_3_October_2023_-_01_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Neymar_Jr._with_Al_Hilal,_3_October_2023_-_01_(cropped).jpg?width=500"
     },
     {
       "name": "Rayan",
@@ -196,7 +202,9 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "1996-12-14",
       "nationality": "Brazil",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Raphael_Dias_Belloli_2023.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Raphael_Dias_Belloli_2023.jpg?width=500"
     },
     {
       "name": "Matheus Cunha",
@@ -241,7 +249,9 @@
       "positionZh": "Left-Back",
       "dateOfBirth": "1991-01-26",
       "nationality": "Brazil",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/FC_Zenit_Saint_Petersburg_vs._Juventus,_20_October_2021_28_-_Alex_Sandro_(cropped2).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/FC_Zenit_Saint_Petersburg_vs._Juventus,_20_October_2021_28_-_Alex_Sandro_(cropped2).jpg?width=500"
     },
     {
       "name": "Bruno Guimarães",
@@ -250,7 +260,9 @@
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1997-11-16",
       "nationality": "Brazil",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bruno_Guimarães.png?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Bruno_Guimarães.png?width=500"
     },
     {
       "name": "Vinicius Junior",
@@ -271,7 +283,9 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "1997-08-27",
       "nationality": "Brazil",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lucas_Paquetá_of_West_Ham.jpeg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Lucas_Paquetá_of_West_Ham.jpeg?width=500"
     },
     {
       "name": "Bremer",

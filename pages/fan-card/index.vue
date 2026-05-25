@@ -79,8 +79,7 @@ const filteredTeams = computed(() => {
 
 function selectTeam(teamId: string) {
   selectedTeamId.value = teamId
-  // 滚动到顶部
-  window.scrollTo({ top: 0, behavior: 'smooth' })
+  goToStep2()
 }
 
 function getTeamName(team: TeamListItem) {
@@ -414,8 +413,8 @@ onMounted(() => {
               >
                 {{ getTeamName(team) }}
               </span>
-              <span class="text-gray-400 text-[11px] leading-tight font-medium">
-                FIFA #{{ team.fifaRank || 'N/A' }}
+              <span v-if="team.fifaRank" class="text-gray-400 text-[11px] leading-tight font-medium mt-1">
+                FIFA #{{ team.fifaRank }}
               </span>
             </button>
           </div>
@@ -431,20 +430,6 @@ onMounted(() => {
               <p class="text-gray-900 font-bold text-sm">{{ t('fanCard.cantFindTeam') }}</p>
               <p class="text-gray-400 text-xs mt-1">{{ t('fanCard.cantFindDesc') }}</p>
             </div>
-            <Transition
-              enter-active-class="transition duration-300 ease-out"
-              enter-from-class="opacity-0 translate-y-4"
-              enter-to-class="opacity-100 translate-y-0"
-            >
-              <button
-                v-if="selectedTeamId"
-                class="w-full sm:w-auto px-8 py-3.5 rounded-full text-white font-bold text-sm transition-all hover:scale-[1.02] active:scale-95"
-                style="background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%); box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);"
-                @click="goToStep2"
-              >
-                {{ t('fanCard.nextStepBtn') }}
-              </button>
-            </Transition>
           </div>
         </div>
 

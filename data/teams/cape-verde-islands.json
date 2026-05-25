@@ -22,7 +22,9 @@
       "positionZh": "门将",
       "dateOfBirth": "1997-02-23",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Phase_de_match_Ethiopie_-_Cape_verde_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Phase_de_match_Ethiopie_-_Cape_verde_(cropped).jpg?width=500"
     },
     {
       "name": "Vózinha",
@@ -79,7 +81,9 @@
       "positionZh": "后卫",
       "dateOfBirth": "1988-05-20",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Zenit-Videoton_(3).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Zenit-Videoton_(3).jpg?width=500"
     },
     {
       "name": "Sidny Lopes Cabral",
@@ -175,7 +179,9 @@
       "positionZh": "前锋",
       "dateOfBirth": "1994-04-27",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/RC_Lens_-_Grenoble_Foot_38_(10-02-2020)_70.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/RC_Lens_-_Grenoble_Foot_38_(10-02-2020)_70.jpg?width=500"
     },
     {
       "name": "Ryan Mendes",
@@ -184,7 +190,9 @@
       "positionZh": "前锋",
       "dateOfBirth": "1990-01-08",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Mendes_(LOSC_Lille).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Ryan_Mendes_(LOSC_Lille).jpg?width=500"
     },
     {
       "name": "Jovane Cabral",
@@ -259,7 +267,9 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2001-04-01",
       "nationality": "Cape Verde Islands",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Logan_Costa_-_2023-02-01_(cropped_medium_shot).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Logan_Costa_-_2023-02-01_(cropped_medium_shot).jpg?width=500"
     }
   ],
   "recentMatches": []

@@ -217,7 +217,9 @@
       "positionZh": "Central Midfield",
       "dateOfBirth": "1999-09-23",
       "nationality": "Algeria",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Boudaoui_asse_ogcn_2425.png?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Boudaoui_asse_ogcn_2425.png?width=500"
     },
     {
       "name": "Ramy Bensebaini",

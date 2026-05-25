@@ -6,7 +6,7 @@ const props = defineProps<{
   teamName: string
   teamFlag: string
   teamGroup: string
-  teamRank: number
+  teamRank: number | null
   coachName: string
   playerName: string
   playerPhoto: string | null
@@ -17,6 +17,8 @@ const props = defineProps<{
   firstMatchDate: string | null
   createdAt?: string
   motto?: string
+  theme?: string
+  premiumBgImage?: string
 }>()
 
 const { t, locale } = useI18n()
@@ -90,105 +92,106 @@ const displayMotto = computed(() => {
 </script>
 
 <template>
-  <div class="fan-card">
-    <!-- 背景图层 -->
+  <div class="fan-card" :class="[`theme-${theme || 'stadium'}`]">
+    <!-- 背景图层：仅高级版显示图片 -->
     <div
+      v-if="theme !== 'basic'"
       class="fan-card__bg"
-      :style="{ backgroundImage: `url('/images/fancard-bg-v3.png')` }"
+      :style="{ backgroundImage: `url(${premiumBgImage || '/images/fancard-bg-v3.png'})` }"
     />
-    <!-- 遮罩层 -->
+    <!-- 基础版背景图层：纯 CSS -->
+    <div v-else class="fan-card__bg fan-card__bg--basic" />
+
+    <!-- 遮罩层 - 轻微的暗角效果，让背景更通透 -->
     <div class="fan-card__overlay" />
 
     <!-- 内容区 -->
     <div class="fan-card__content">
-      <!-- Header -->
-      <header class="fan-card__header">
-        <div class="fan-card__header-left">
-          <span class="fan-card__header-icon">🏆</span>
-          <span class="fan-card__header-title">FAN CARD</span>
+      <!-- 顶部 Header -->
+      <header class="fc-header">
+        <div class="fc-tag">
+          <Icon name="mdi:trophy-outline" class="w-4 h-4 text-[#FFD700]" />
+          <span>FAN PASS</span>
         </div>
+        <div class="fc-no">NO.{{ fanNumberStr }}</div>
       </header>
 
-      <!-- Profile 区域 -->
-      <section class="fan-card__profile">
-        <div class="fan-card__avatar-wrapper">
-          <div class="fan-card__avatar">
-            <img
-              v-if="showPhoto"
-              :src="photoSrc!"
-              :alt="playerName"
-              class="fan-card__avatar-img"
-              @error="onPhotoError"
-            >
-            <div v-else class="fan-card__avatar-fallback">
-              {{ playerInitial }}
+      <!-- 核心信息区 (居中) -->
+      <section class="fc-hero">
+        <div class="fc-avatar-box">
+          <img
+            v-if="showPhoto"
+            :src="photoSrc!"
+            :alt="playerName"
+            class="fc-avatar"
+            @error="onPhotoError"
+          >
+          <div v-else class="fc-avatar-fallback">{{ playerInitial }}</div>
+        </div>
+        
+        <h2 class="fc-name">
+          {{ nickname }}
+          <Icon name="mdi:check-decagram" class="fc-verified" />
+        </h2>
+        
+        <div class="fc-joined">{{ $t('fanCard.joinDate', { date: createdAt }) }}</div>
+      </section>
+
+      <!-- 标语 -->
+      <div v-if="displayMotto" class="fc-quote">
+        “{{ displayMotto }}”
+      </div>
+
+      <!-- 玻璃态数据卡 -->
+      <section class="fc-glass-panel">
+        <div class="fc-glass-row">
+          <div class="fc-glass-item">
+            <label>{{ $t('fanCard.favoritePlayer') }}</label>
+            <div class="fc-player-name">{{ playerName }}</div>
+          </div>
+          <div class="fc-glass-item right">
+            <label>LVL</label>
+            <div class="fc-level-badge">
+              <Icon name="mdi:crown" class="fc-crown" />
+              <span>10</span>
             </div>
           </div>
         </div>
-        <div class="fan-card__user-info">
-          <h2 class="fan-card__nickname">
-            {{ nickname }}
-            <span class="fan-card__verified">✓</span>
-          </h2>
-          <p class="fan-card__number">#{{ fanNumberStr }}</p>
-          <div class="fan-card__tags">
-            <span v-if="createdAt" class="fan-card__tag">
-              {{ $t('fanCard.joinDate', { date: createdAt }) }}
-            </span>
+        
+        <div class="fc-glass-divider" />
+        
+        <div class="fc-glass-row">
+          <div class="fc-glass-item">
+            <label>{{ $t('fanCard.favoriteTeam') }}</label>
+            <div class="fc-team-info">
+              <img :src="teamFlag" :alt="teamName" class="fc-flag" />
+              <span>{{ teamName }}</span>
+            </div>
+          </div>
+          <div class="fc-glass-item right">
+            <label>{{ $t('fanCard.firstMatch') }}</label>
+            <div class="fc-match-info">
+              <span>vs {{ firstMatchOpponent }}</span>
+              <small>{{ formattedDate }}</small>
+            </div>
           </div>
         </div>
-      </section>
-
-      <!-- 标语 Quote -->
-      <section v-if="displayMotto" class="fan-card__quote">
-        <span class="fan-card__quote-mark fan-card__quote-mark--left">"</span>
-        <p class="fan-card__quote-text">{{ displayMotto }}</p>
-        <span class="fan-card__quote-mark fan-card__quote-mark--right">"</span>
-      </section>
-
-      <!-- 球队 & 球员信息卡片 -->
-      <section class="fan-card__info-card">
-        <div class="fan-card__team-side">
-          <img :src="teamFlag" :alt="teamName" class="fan-card__team-flag">
-          <div class="fan-card__team-detail">
-            <small class="fan-card__label">{{ $t('fanCard.favoriteTeam') }}</small>
-            <strong class="fan-card__team-name">{{ teamName }}</strong>
-            <span class="fan-card__team-meta">{{ teamGroup }} · FIFA #{{ teamRank }}</span>
-          </div>
-        </div>
-        <div class="fan-card__divider" />
-        <div class="fan-card__player-side">
-          <div class="fan-card__player-detail">
-            <small class="fan-card__label">{{ $t('fanCard.favoritePlayer') }}</small>
-            <strong class="fan-card__player-name-text">{{ playerName }}</strong>
-            <span class="fan-card__player-pos">{{ playerPosition }}</span>
-          </div>
-          <div class="fan-card__jersey">
-            <span class="fan-card__jersey-number">10</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- 首场比赛 -->
-      <section v-if="firstMatchOpponent" class="fan-card__match">
-        <span class="fan-card__match-label">⚽ {{ $t('fanCard.firstMatch') }}</span>
-        <strong class="fan-card__match-opponent">vs {{ firstMatchOpponent }}</strong>
-        <span class="fan-card__match-date">{{ formattedDate }}</span>
       </section>
 
       <!-- 艺术签名 -->
-      <div class="fan-card__signature">
-        <span class="fan-card__signature-text">{{ playerName }}</span>
-      </div>
+      <div class="fc-signature">{{ playerName }}</div>
 
-      <!-- Footer -->
-      <footer class="fan-card__footer">
-        <span class="fan-card__footer-left">🏆 WorldCupDex.org</span>
-        <span class="fan-card__footer-right">⚽ {{ $t('fanCard.globalDatabase') }}</span>
+      <!-- 底部极简 Footer -->
+      <footer class="fc-footer">
+        <div class="fc-footer-logo">
+          <Icon name="mdi:trophy-outline" class="w-3 h-3" />
+          <span>WorldCupDex.org</span>
+        </div>
+        <div class="fc-footer-divider"></div>
+        <div class="fc-footer-desc">
+          全球球迷数据库
+        </div>
       </footer>
-
-      <!-- 品牌水印 -->
-      <div class="fan-card__brand-watermark">{{ brandDomain }} · {{ brandSlogan }}</div>
     </div>
 
     <!-- 右侧竖排文字 -->
@@ -199,19 +202,19 @@ const displayMotto = computed(() => {
 <style scoped>
 .fan-card {
   position: relative;
-  max-width: 420px;
-  min-height: 680px;
-  width: 100%;
-  border-radius: 16px;
+  width: 360px;
+  height: 640px;
+  border-radius: 20px;
   overflow: hidden;
   background: linear-gradient(180deg, #0a0e2a 0%, #0d1440 50%, #0a1230 100%);
-  border: 1px solid rgba(99, 102, 241, 0.5);
+  border: 1px solid rgba(255, 215, 0, 0.4);
   box-shadow:
-    0 0 20px rgba(99, 102, 241, 0.3),
-    0 0 60px rgba(99, 102, 241, 0.1),
+    0 12px 48px rgba(0, 15, 73, 0.10),
+    0 4px 12px rgba(0, 15, 73, 0.06),
     inset 0 1px 0 rgba(255, 255, 255, 0.05);
   font-family: 'Inter', sans-serif;
   color: #ffffff;
+  max-width: 100%;
 }
 
 /* 背景图层 */
@@ -222,6 +225,18 @@ const displayMotto = computed(() => {
   background-position: center;
   background-repeat: no-repeat;
   z-index: 0;
+}
+
+/* 基础版纯 CSS 背景 */
+.fan-card__bg--basic {
+  background: linear-gradient(135deg, #000F49 0%, #0A1628 50%, #061033 100%);
+}
+.fan-card__bg--basic::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at 50% 0%, rgba(255, 215, 0, 0.15) 0%, transparent 60%),
+                    radial-gradient(circle at 100% 100%, rgba(99, 102, 241, 0.2) 0%, transparent 50%);
 }
 
 /* 遮罩层 - 顶部暗读内容，底部稍透露球场 */
@@ -240,369 +255,277 @@ const displayMotto = computed(() => {
 .fan-card__content {
   position: relative;
   z-index: 10;
-  padding: 28px 24px 24px;
+  padding: 24px;
   display: flex;
   flex-direction: column;
-  min-height: 680px;
+  height: 100%;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 /* ===== Header ===== */
-.fan-card__header {
+.fc-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 24px;
-}
-
-.fan-card__header-left {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.fan-card__header-icon {
-  font-size: 20px;
-}
-
-.fan-card__header-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  color: #FFD700;
-  text-shadow: 0 1px 6px rgba(255, 215, 0, 0.5);
-}
-
-/* ===== Profile 区域 ===== */
-.fan-card__profile {
-  display: flex;
-  align-items: center;
-  gap: 18px;
   margin-bottom: 20px;
 }
 
-.fan-card__avatar-wrapper {
+.fc-tag {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #FFD700;
+}
+
+.fc-no {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1px;
+}
+
+/* ===== 核心信息区 ===== */
+.fc-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fc-avatar-box {
   position: relative;
-  width: 120px;
-  height: 120px;
-  min-width: 120px;
-  border-radius: 50%;
-  padding: 4px;
-  background: linear-gradient(135deg, #FFD700, #FFA500, #FFD700, #FFC107);
-  box-shadow:
-    0 0 20px rgba(255, 215, 0, 0.4),
-    0 0 40px rgba(255, 215, 0, 0.1);
-}
-
-.fan-card__avatar {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  overflow: hidden;
-  background: #0a0e2a;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.fan-card__avatar-img {
+.fc-avatar {
   width: 100%;
   height: 100%;
+  border-radius: 50%;
   object-fit: cover;
-  border-radius: 50%;
-}
-
-.fan-card__avatar-fallback {
-  font-size: 42px;
-  font-weight: 800;
-  font-family: 'Montserrat', sans-serif;
-  color: #FFD700;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
-.fan-card__user-info {
-  flex: 1;
-  min-width: 0;
-}
-
-.fan-card__nickname {
-  font-size: 22px;
-  font-weight: 800;
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  margin: 0 0 6px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.fan-card__verified {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: #3b82f6;
-  color: white;
-  font-size: 12px;
-  font-weight: 700;
-  flex-shrink: 0;
-}
-
-.fan-card__number {
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.65);
-  margin: 0 0 10px;
-  font-weight: 500;
-}
-
-.fan-card__tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.fan-card__tag {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 500;
-  padding: 4px 12px;
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/* ===== Quote 标语 ===== */
-.fan-card__quote {
-  display: flex;
-  align-items: flex-start;
-  gap: 6px;
-  margin: 4px 0 22px;
-  padding: 0 4px;
-}
-
-.fan-card__quote-mark {
-  font-size: 32px;
-  font-weight: 700;
-  color: #FFD700;
-  line-height: 1;
-  font-family: Georgia, 'Times New Roman', serif;
-  flex-shrink: 0;
-}
-
-.fan-card__quote-mark--left {
-  margin-top: -4px;
-}
-
-.fan-card__quote-mark--right {
-  align-self: flex-end;
-  margin-bottom: -4px;
-}
-
-.fan-card__quote-text {
-  flex: 1;
-  font-size: 15px;
-  font-style: italic;
-  color: rgba(255, 255, 255, 0.85);
-  line-height: 1.6;
-  margin: 0;
-  padding: 0 2px;
-}
-
-/* ===== 球队 & 球员信息卡片 ===== */
-.fan-card__info-card {
-  display: flex;
-  align-items: stretch;
-  background: rgba(10, 14, 42, 0.5);
-  backdrop-filter: none;
-  border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 14px;
-  margin-bottom: 14px;
-  gap: 14px;
-}
-
-.fan-card__team-side {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.fan-card__team-flag {
-  width: 40px;
-  height: 28px;
-  object-fit: cover;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  flex-shrink: 0;
-}
-
-.fan-card__team-detail {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.fan-card__label {
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: 500;
-}
-
-.fan-card__team-name {
-  font-size: 17px;
-  font-weight: 700;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.fan-card__team-meta {
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.fan-card__divider {
-  width: 1px;
-  background: rgba(255, 255, 255, 0.1);
-  align-self: stretch;
-}
-
-.fan-card__player-side {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-}
-
-.fan-card__player-detail {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.fan-card__player-name-text {
-  font-size: 17px;
-  font-weight: 700;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.fan-card__player-pos {
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.fan-card__jersey {
-  width: 56px;
-  height: 56px;
-  min-width: 56px;
-  border-radius: 50%;
-  background: #0a1628;
   border: 2px solid #FFD700;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.fc-avatar-fallback {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #0a0e2a;
+  border: 2px solid #FFD700;
+  z-index: 2;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 12px rgba(255, 215, 0, 0.25);
+  font-size: 36px;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFD700;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.3), 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-.fan-card__jersey-number {
+.fc-name {
   font-size: 24px;
   font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  margin: 0 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.fc-verified {
+  color: #3b82f6;
+  background: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.fc-joined {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* ===== 标语 Quote ===== */
+.fc-quote {
+  text-align: center;
+  font-style: italic;
+  font-size: 14px;
+  color: rgba(255, 215, 0, 0.9);
+  margin: 0 20px 16px;
+  line-height: 1.5;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* ===== 玻璃态数据卡 ===== */
+.fc-glass-panel {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.01));
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.02);
+}
+
+.fc-glass-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fc-glass-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fc-glass-item.right {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.fc-glass-item label {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.fc-player-name {
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.fc-level-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255, 215, 0, 0.15);
+  border: 1px solid rgba(255, 215, 0, 0.4);
+  padding: 4px 10px;
+  border-radius: 20px;
   color: #FFD700;
+  font-weight: 800;
+  font-size: 14px;
   font-family: 'Montserrat', sans-serif;
 }
 
-/* ===== 首场比赛 ===== */
-.fan-card__match {
+.fc-crown {
+  width: 16px;
+  height: 16px;
+}
+
+.fc-glass-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  margin: 16px 0;
+}
+
+.fc-team-info {
   display: flex;
   align-items: center;
-  gap: 12px;
-  background: rgba(10, 14, 42, 0.5);
-  backdrop-filter: none;
-  border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 14px;
-  margin-bottom: 14px;
-}
-
-.fan-card__match-label {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.fan-card__match-opponent {
+  gap: 8px;
   font-size: 15px;
   font-weight: 700;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.9);
 }
 
-.fan-card__match-date {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.5);
-  margin-left: auto;
+.fc-flag {
+  width: 24px;
+  height: 16px;
+  border-radius: 2px;
+  object-fit: cover;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.fc-match-info {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.fc-match-info small {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* ===== 艺术签名 ===== */
-.fan-card__signature {
-  margin-top: 16px;
-  padding: 10px 0;
+.fc-signature {
+  margin-top: 24px;
   text-align: center;
-  position: relative;
-}
-
-.fan-card__signature-text {
   font-family: 'Brush Script MT', 'Segoe Script', cursive;
-  font-size: 42px;
+  font-size: 46px;
   font-weight: 700;
   color: #FFD700;
-  letter-spacing: 2px;
-  text-shadow: 0 0 15px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.7);
-  opacity: 1;
-  font-style: italic;
-  border-bottom: 2px solid rgba(255, 215, 0, 0.5);
-  padding-bottom: 4px;
-  transform: rotate(-4deg) skewX(-2deg);
-  display: inline-block;
-  white-space: nowrap;
+  transform: rotate(-5deg);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6), 0 0 20px rgba(255, 215, 0, 0.3);
 }
 
-/* ===== Footer ===== */
-.fan-card__footer {
+/* ===== 底部极简 Footer ===== */
+.fc-footer {
+  margin-top: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: auto;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 16px;
 }
 
-.fan-card__footer-left,
-.fan-card__footer-right {
-  font-size: 12px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.5);
-  letter-spacing: 0.5px;
+.fc-footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-.fan-card__brand-watermark {
-  margin-top: 6px;
-  text-align: center;
-  font-size: 10px;
+.fc-footer-divider {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.fc-footer-desc {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 1px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.32);
-  letter-spacing: 0.6px;
 }
 
 /* ===== Sidebar 竖排文字 ===== */

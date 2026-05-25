@@ -22,7 +22,9 @@
       "positionZh": "门将",
       "dateOfBirth": "1994-10-21",
       "nationality": "Iraq",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fahad_Talib.png?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Fahad_Talib.png?width=500"
     },
     {
       "name": "Ahmed Basil",
@@ -67,7 +69,9 @@
       "positionZh": "后卫",
       "dateOfBirth": "1999-12-07",
       "nationality": "Iraq",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Merchas_doski.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Merchas_doski.jpg?width=500"
     },
     {
       "name": "Rebin Sulaka",
@@ -76,7 +80,9 @@
       "positionZh": "后卫",
       "dateOfBirth": "1992-04-12",
       "nationality": "Iraq",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/240519_FC_서울_포토타임_(Rebin_Sulaka).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/240519_FC_서울_포토타임_(Rebin_Sulaka).jpg?width=500"
     },
     {
       "name": "Zaid Tahseen",
@@ -175,7 +181,9 @@
       "positionZh": "中场",
       "dateOfBirth": "2000-05-01",
       "nationality": "Iraq",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/ابراهيم_بايش.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/ابراهيم_بايش.jpg?width=500"
     },
     {
       "name": "Youssef Amyn",
@@ -184,7 +192,9 @@
       "positionZh": "中场",
       "dateOfBirth": "2003-08-21",
       "nationality": "Iraq",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/4822944_AE7I9304_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/4822944_AE7I9304_(cropped).jpg?width=500"
     },
     {
       "name": "Marko Farji",
@@ -220,7 +230,9 @@
       "positionZh": "前锋",
       "dateOfBirth": "1996-03-22",
       "nationality": "Iraq",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/AH_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/AH_(cropped).jpg?width=500"
     },
     {
       "name": "Mohanad Ali",
@@ -229,7 +241,9 @@
       "positionZh": "前锋",
       "dateOfBirth": "2000-06-20",
       "nationality": "Iraq",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mohanad_Ali.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Mohanad_Ali.jpg?width=500"
     },
     {
       "name": "Ali Jassim El-Aibi",

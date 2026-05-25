@@ -34,7 +34,9 @@
       "positionZh": "门将",
       "dateOfBirth": "1998-09-14",
       "nationality": "Sweden",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Viktorjohansson_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Viktorjohansson_(cropped).jpg?width=500"
     },
     {
       "name": "Jacob Widell Zetterström",
@@ -43,7 +45,9 @@
       "positionZh": "门将",
       "dateOfBirth": "1998-07-11",
       "nationality": "Sweden",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/FC_RB_Salzburg_gegen_Derby_County_(2025-07-18_Testspiel)_24.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/FC_RB_Salzburg_gegen_Derby_County_(2025-07-18_Testspiel)_24.jpg?width=500"
     },
     {
       "name": "Daniel Svensson",
@@ -184,7 +188,9 @@
       "positionZh": "Right-Back",
       "dateOfBirth": "2000-05-13",
       "nationality": "Sweden",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Emil_Holm_(Sweden_vs_Moldova,_12_October_2023).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Emil_Holm_(Sweden_vs_Moldova,_12_October_2023).jpg?width=500"
     },
     {
       "name": "Alexander Bernhardsson",
@@ -193,7 +199,9 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "1998-09-08",
       "nationality": "Sweden",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2025-02-19_Alexander_Bernhardsson_1.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/2025-02-19_Alexander_Bernhardsson_1.jpg?width=500"
     },
     {
       "name": "Eric Smith",
@@ -214,7 +222,9 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "1998-10-21",
       "nationality": "Sweden",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hjalmar_Ekdal_(Sirius,_2020,_cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Hjalmar_Ekdal_(Sirius,_2020,_cropped).jpg?width=500"
     },
     {
       "name": "Gabriel Gudmundsson",
@@ -283,7 +293,9 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1999-09-21",
       "nationality": "Sweden",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/UEFA_EURO_qualifiers_Sweden_vs_Spain_20191015_Alexander_Isak_56_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/UEFA_EURO_qualifiers_Sweden_vs_Spain_20191015_Alexander_Isak_56_(cropped).jpg?width=500"
     },
     {
       "name": "Ken Sema",

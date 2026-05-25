@@ -22,7 +22,9 @@
       "positionZh": "门将",
       "dateOfBirth": "1992-05-11",
       "nationality": "Belgium",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Thibaut_Courtois_WC2022.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Thibaut_Courtois_WC2022.jpg?width=500"
     },
     {
       "name": "Senne Lammens",
@@ -100,7 +102,9 @@
       "positionZh": "中场",
       "dateOfBirth": "1992-08-24",
       "nationality": "Belgium",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hans_Vanaken_Lommel_United.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Hans_Vanaken_Lommel_United.jpg?width=500"
     },
     {
       "name": "Nicolas Raskin",
@@ -133,7 +137,9 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2005-02-03",
       "nationality": "Belgium",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Pardo_asselosc_2425_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Pardo_asselosc_2425_(cropped).jpg?width=500"
     },
     {
       "name": "Diego Moreira",
@@ -211,7 +217,9 @@
       "positionZh": "Left Winger",
       "dateOfBirth": "1994-12-04",
       "nationality": "Belgium",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/RC_Lens_-_Arsenal_FC_(03-10-2023)_26_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/RC_Lens_-_Arsenal_FC_(03-10-2023)_26_(cropped).jpg?width=500"
     },
     {
       "name": "Alexis Saelemaekers",
@@ -244,7 +252,9 @@
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1993-05-13",
       "nationality": "Belgium",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Romelu_Lukaku_2021.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Romelu_Lukaku_2021.jpg?width=500"
     },
     {
       "name": "Youri Tielemans",

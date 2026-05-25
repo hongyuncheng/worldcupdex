@@ -572,13 +572,19 @@ const upcomingMatchesForSchema = computed<MatchItem[]>(() => {
 })
 
 function buildSportsEventData(m: MatchItem) {
+  const venueName = m.venue.name || 'TBA Stadium'
+  const venueCity = m.venue.city || 'TBA City'
+
   return {
     name: `${m.homeTeam.nameEn} vs ${m.awayTeam.nameEn}`,
     startDate: `${m.date}T${m.time || '00:00'}:00`,
     location: {
       '@type': 'Place',
-      name: m.venue.name,
-      address: m.venue.city,
+      name: venueName,
+      address: {
+        '@type': 'PostalAddress',
+        addressLocality: venueCity
+      }
     },
     homeTeam: { '@type': 'SportsTeam', name: m.homeTeam.nameEn },
     awayTeam: { '@type': 'SportsTeam', name: m.awayTeam.nameEn },

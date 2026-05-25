@@ -163,7 +163,9 @@
       "positionZh": "中场",
       "dateOfBirth": "1993-10-16",
       "nationality": "Uzbekistan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamshid_Iskanderov.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamshid_Iskanderov.jpg?width=500"
     },
     {
       "name": "Akmal Mozgovoy",
@@ -202,7 +204,9 @@
       "positionZh": "中场",
       "dateOfBirth": "1996-02-13",
       "nationality": "Uzbekistan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Odiljon_Hamrobekov_2020.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Odiljon_Hamrobekov_2020.jpg?width=500"
     },
     {
       "name": "Ibrokhim Ibrokhimov",
@@ -241,7 +245,9 @@
       "positionZh": "Centre-Back",
       "dateOfBirth": "2004-02-29",
       "nationality": "Uzbekistan",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Khusanov_ASSE_RCL_2425.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Khusanov_ASSE_RCL_2425.jpg?width=500"
     },
     {
       "name": "Eldor Shomurodov",

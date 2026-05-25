@@ -181,7 +181,9 @@
       "positionZh": "Right Winger",
       "dateOfBirth": "1993-11-11",
       "nationality": "Switzerland",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Christian_Fassnacht_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Christian_Fassnacht_(cropped).jpg?width=500"
     },
     {
       "name": "Djibril Sow",

@@ -181,7 +181,9 @@
       "positionZh": "前锋",
       "dateOfBirth": "2002-12-25",
       "nationality": "Canada",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Aribim_Pepple.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Aribim_Pepple.jpg?width=500"
     },
     {
       "name": "Tani Oluwaseyi",

@@ -543,7 +543,9 @@
     "vs": "vs",
     "cardTitle": "FAN PASS",
     "buyJersey": "Buy {team} Official Jersey",
-    "supportTeam": "Support your team, wear the official jersey"
+    "supportTeam": "Support your team, wear the official jersey",
+    "themeSwitcherTitle": "🎨 Personalization",
+    "switchBg": "Switch Background ({current}/3)"
   },
   "blog": {
     "listTitle": "WorldCupDex Blog",

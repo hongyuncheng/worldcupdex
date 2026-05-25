@@ -22,7 +22,9 @@
       "positionZh": "门将",
       "dateOfBirth": "1991-04-05",
       "nationality": "Morocco",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Yassine_bounou_Interview_2023.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Yassine_bounou_Interview_2023.jpg?width=500"
     },
     {
       "name": "El Mehdi Benabid",
@@ -40,7 +42,9 @@
       "positionZh": "门将",
       "dateOfBirth": "2000-11-30",
       "nationality": "Morocco",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Al_Mehdi_Al_Harrar_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Al_Mehdi_Al_Harrar_(cropped).jpg?width=500"
     },
     {
       "name": "Redouane Halhal",
@@ -181,7 +185,9 @@
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2005-05-09",
       "nationality": "Morocco",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/ElKhannouss_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/ElKhannouss_(cropped).jpg?width=500"
     },
     {
       "name": "Ez Abde",
