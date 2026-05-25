@@ -5,11 +5,11 @@
   "code": "fr",
   "group": "F",
   "confederation": "UEFA",
-  "fifaRank": null,
+  "fifaRank": 2,
   "flag": "https://flagcdn.com/w80/fr.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Didier Deschamps",
+    "nameZh": "迪迪埃·德尚",
     "nationality": ""
   },
   "founded": 1919,
@@ -17,7 +17,7 @@
   "squad": [
     {
       "name": "Brice Samba",
-      "nameZh": "Brice Samba",
+      "nameZh": "布里斯·桑巴",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1994-04-25",
@@ -29,7 +29,7 @@
     },
     {
       "name": "Mike Maignan",
-      "nameZh": "Mike Maignan",
+      "nameZh": "迈克·梅尼昂",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1995-07-03",
@@ -41,7 +41,7 @@
     },
     {
       "name": "Lucas Chevalier",
-      "nameZh": "Lucas Chevalier",
+      "nameZh": "卢卡斯·舍瓦利耶",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "2001-11-06",
@@ -53,7 +53,7 @@
     },
     {
       "name": "N'Golo Kanté",
-      "nameZh": "N'Golo Kanté",
+      "nameZh": "恩戈洛·坎特",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "1991-03-29",
@@ -65,7 +65,7 @@
     },
     {
       "name": "Warren Zaïre-Emery",
-      "nameZh": "Warren Zaïre-Emery",
+      "nameZh": "瓦伦·扎伊尔-埃默里",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "2006-03-08",
@@ -77,7 +77,7 @@
     },
     {
       "name": "Desire Doue",
-      "nameZh": "Desire Doue",
+      "nameZh": "德西雷·杜埃",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "2005-06-03",
@@ -89,7 +89,7 @@
     },
     {
       "name": "Maghnes Akliouche",
-      "nameZh": "Maghnes Akliouche",
+      "nameZh": "马涅斯·阿克利乌什",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "2002-02-25",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Malo Gusto",
-      "nameZh": "Malo Gusto",
+      "nameZh": "马洛·古斯托",
       "position": "Right-Back",
       "positionZh": "Right-Back",
       "dateOfBirth": "2003-05-19",
@@ -113,7 +113,7 @@
     },
     {
       "name": "Hugo Ekitike",
-      "nameZh": "Hugo Ekitike",
+      "nameZh": "于戈·埃基蒂克",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2002-06-20",
@@ -125,7 +125,7 @@
     },
     {
       "name": "Pierre Kalulu",
-      "nameZh": "Pierre Kalulu",
+      "nameZh": "皮埃尔·卡卢卢",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "2000-06-05",
@@ -137,7 +137,7 @@
     },
     {
       "name": "Rayan Cherki",
-      "nameZh": "Rayan Cherki",
+      "nameZh": "拉扬·谢尔基",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2003-08-17",
@@ -149,7 +149,7 @@
     },
     {
       "name": "Michael Olise",
-      "nameZh": "Michael Olise",
+      "nameZh": "迈克尔·奥利塞",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "2001-12-12",
@@ -161,7 +161,7 @@
     },
     {
       "name": "Eduardo Camavinga",
-      "nameZh": "Eduardo Camavinga",
+      "nameZh": "爱德华多·卡马文加",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "2002-11-10",
@@ -173,7 +173,7 @@
     },
     {
       "name": "Maxence Lacroix",
-      "nameZh": "Maxence Lacroix",
+      "nameZh": "马克桑斯·拉克鲁瓦",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "2000-04-06",
@@ -185,7 +185,7 @@
     },
     {
       "name": "Ibrahima Konaté",
-      "nameZh": "Ibrahima Konaté",
+      "nameZh": "伊布拉希马·科纳特",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1999-05-25",
@@ -197,7 +197,7 @@
     },
     {
       "name": "Dayot Upamecano",
-      "nameZh": "Dayot Upamecano",
+      "nameZh": "达约·乌帕梅卡诺",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1998-10-27",
@@ -209,7 +209,7 @@
     },
     {
       "name": "Randal Kolo Muani",
-      "nameZh": "Randal Kolo Muani",
+      "nameZh": "朗达尔·科洛·穆阿尼",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1998-12-05",
@@ -221,7 +221,7 @@
     },
     {
       "name": "Marcus Thuram-Ulien",
-      "nameZh": "Marcus Thuram-Ulien",
+      "nameZh": "马库斯·图拉姆",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1997-08-06",
@@ -233,7 +233,7 @@
     },
     {
       "name": "Aurélien Tchouameni",
-      "nameZh": "Aurélien Tchouameni",
+      "nameZh": "奥雷利安·楚阿梅尼",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2000-01-27",
@@ -257,7 +257,7 @@
     },
     {
       "name": "Ousmane Dembélé",
-      "nameZh": "Ousmane Dembélé",
+      "nameZh": "奥斯曼·登贝莱",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "1997-05-15",
@@ -269,7 +269,7 @@
     },
     {
       "name": "Adrien Rabiot",
-      "nameZh": "Adrien Rabiot",
+      "nameZh": "阿德里安·拉比奥",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1995-04-03",
@@ -281,7 +281,7 @@
     },
     {
       "name": "Lucas Hernández",
-      "nameZh": "Lucas Hernández",
+      "nameZh": "卢卡斯·埃尔南德斯",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "1996-02-14",
@@ -293,7 +293,7 @@
     },
     {
       "name": "Lucas Digne",
-      "nameZh": "Lucas Digne",
+      "nameZh": "卢卡斯·迪涅",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "1993-07-20",
@@ -305,7 +305,7 @@
     },
     {
       "name": "Theo Hernández",
-      "nameZh": "Theo Hernández",
+      "nameZh": "特奥·埃尔南德斯",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "1997-10-06",

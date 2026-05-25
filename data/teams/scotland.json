@@ -5,11 +5,11 @@
   "code": "gb-sct",
   "group": "",
   "confederation": "",
-  "fifaRank": null,
+  "fifaRank": 37,
   "flag": "https://flagcdn.com/w80/gb-sct.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Steve Clarke",
+    "nameZh": "史蒂夫·克拉克",
     "nationality": ""
   },
   "founded": 1873,

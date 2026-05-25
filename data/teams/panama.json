@@ -5,11 +5,11 @@
   "code": "pa",
   "group": "B",
   "confederation": "CONCACAF",
-  "fifaRank": null,
+  "fifaRank": 35,
   "flag": "https://flagcdn.com/w80/pa.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Thomas Christiansen",
+    "nameZh": "托马斯·克里斯蒂安森",
     "nationality": ""
   },
   "founded": 1937,

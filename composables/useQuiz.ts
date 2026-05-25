@@ -43,12 +43,50 @@ function getRandomItems<T>(arr: T[], count: number): T[] {
   return shuffleArray(arr).slice(0, count)
 }
 
-function generateTeamGroupQuestion(teams: TeamListItem[], locale: string): QuizQuestion {
-  const validTeams = teams.filter(t => t.group)
+function hasGroup(team: TeamListItem): boolean {
+  return typeof team.group === 'string' && team.group.trim().length > 0
+}
+
+function hasCoachName(team: TeamListItem): boolean {
+  return typeof team.coach?.nameEn === 'string' && team.coach.nameEn.trim().length > 0
+}
+
+function hasValidFifaRank(team: TeamListItem): boolean {
+  return typeof team.fifaRank === 'number' && Number.isFinite(team.fifaRank) && team.fifaRank > 0
+}
+
+function canGenerateTeamGroupQuestion(teams: TeamListItem[]): boolean {
+  const validTeams = teams.filter(hasGroup)
+  const groups = new Set(validTeams.map(team => team.group))
+  return validTeams.length >= 4 && groups.size >= 4
+}
+
+function canGenerateTeamRankQuestion(teams: TeamListItem[]): boolean {
+  return teams.filter(team => hasGroup(team) && hasValidFifaRank(team)).length >= 4
+}
+
+function canGenerateTeamCoachQuestion(teams: TeamListItem[]): boolean {
+  const coachNames = new Set(
+    teams
+      .filter(team => hasGroup(team) && hasCoachName(team))
+      .map(team => team.coach.nameEn.trim()),
+  )
+  return coachNames.size >= 4
+}
+
+function createQuestionId(prefix: string): string {
+  return `${prefix}_${Date.now()}_${Math.random().toString(36).slice(2, 8)}`
+}
+
+function generateTeamGroupQuestion(teams: TeamListItem[], locale: string): QuizQuestion | null {
+  const validTeams = teams.filter(hasGroup)
+  if (!canGenerateTeamGroupQuestion(validTeams)) return null
+
   const target = validTeams[Math.floor(Math.random() * validTeams.length)]
   const allGroups = [...new Set(validTeams.map(t => t.group))]
   const wrongGroups = allGroups.filter(g => g !== target.group)
   const options3 = getRandomItems(wrongGroups, 3)
+  if (options3.length < 3) return null
 
   const correctOption = { zh: `${target.group}组`, en: `Group ${target.group}`, es: `Grupo ${target.group}` }
   const wrongOptions = options3.map(g => ({ zh: `${g}组`, en: `Group ${g}`, es: `Grupo ${g}` }))
@@ -56,7 +94,6 @@ function generateTeamGroupQuestion(teams: TeamListItem[], locale: string): QuizQ
   const allOptions = shuffleArray([correctOption, ...wrongOptions])
   const correctIndex = allOptions.findIndex(o => o.en === correctOption.en)
 
-  const teamName = locale === 'zh' ? target.nameZh : target.nameEn
   return {
     id: `tg_${target.id}`,
     type: 'team_group',
@@ -71,17 +108,22 @@ function generateTeamGroupQuestion(teams: TeamListItem[], locale: string): QuizQ
   }
 }
 
-function generateTeamRankQuestion(teams: TeamListItem[]): QuizQuestion {
-  const validTeams = teams.filter(t => t.group && t.fifaRank > 0)
+function generateTeamRankQuestion(teams: TeamListItem[]): QuizQuestion | null {
+  const validTeams = teams.filter(team => hasGroup(team) && hasValidFifaRank(team))
+  if (validTeams.length < 4) return null
+
   const selected = getRandomItems(validTeams, 4)
+  if (selected.length < 4) return null
+
   const sorted = [...selected].sort((a, b) => a.fifaRank - b.fifaRank)
   const highest = sorted[0]
+  if (!highest) return null
 
   const options = selected.map(t => ({ zh: t.nameZh, en: t.nameEn, es: t.nameEn }))
   const correctIndex = options.findIndex(o => o.en === highest.nameEn)
 
   return {
-    id: `tr_${Date.now()}`,
+    id: createQuestionId('tr'),
     type: 'team_rank',
     question: {
       zh: '以下哪支球队FIFA排名最高？',
@@ -94,11 +136,16 @@ function generateTeamRankQuestion(teams: TeamListItem[]): QuizQuestion {
   }
 }
 
-function generateTeamCoachQuestion(teams: TeamListItem[]): QuizQuestion {
-  const validTeams = teams.filter(t => t.group && t.coach && t.coach.nameEn)
+function generateTeamCoachQuestion(teams: TeamListItem[]): QuizQuestion | null {
+  const validTeams = teams.filter(team => hasGroup(team) && hasCoachName(team))
+  if (!canGenerateTeamCoachQuestion(validTeams)) return null
+
   const target = validTeams[Math.floor(Math.random() * validTeams.length)]
+  if (!target) return null
+
   const otherTeams = validTeams.filter(t => t.id !== target.id && t.coach.nameEn !== target.coach.nameEn)
   const wrongCoaches = getRandomItems(otherTeams, 3)
+  if (wrongCoaches.length < 3) return null
 
   const correctOption = { zh: target.coach.nameZh || target.coach.nameEn, en: target.coach.nameEn, es: target.coach.nameEn }
   const wrongOptions = wrongCoaches.map(t => ({
@@ -158,7 +205,7 @@ function generatePlayerTeamQuestion(): QuizQuestion {
   const correctIndex = allOptions.findIndex(o => o.en === correctOption.en)
 
   return {
-    id: `pt_${player.teamId}_${Date.now()}`,
+    id: createQuestionId(`pt_${player.teamId}`),
     type: 'player_team',
     question: {
       zh: `${player.nameZh}属于哪支国家队？`,
@@ -213,30 +260,44 @@ export function useQuiz() {
     isFinished.value = false
     currentIndex.value = 0
     answers.value = []
+    questions.value = []
     timeLeft.value = 30
 
     try {
-      // 获取球队数据
-      const response = await $fetch<{ data: TeamListItem[] }>('/api/teams', {
-        params: { pageSize: 100 },
-      })
+      let teams: TeamListItem[] = []
+      try {
+        const response = await $fetch<{ data: TeamListItem[] }>('/api/teams', {
+          params: { pageSize: 100 },
+        })
+        teams = response?.data || []
+      } catch (error) {
+        console.error('Failed to load quiz teams, using local fallback questions.', error)
+      }
 
-      const teams: TeamListItem[] = response?.data || []
-      const validTeams = teams.filter(t => t.group)
+      const teamQuestionFactories: Array<() => QuizQuestion | null> = []
+      if (canGenerateTeamGroupQuestion(teams)) {
+        teamQuestionFactories.push(() => generateTeamGroupQuestion(teams, locale.value))
+      }
+      if (canGenerateTeamRankQuestion(teams)) {
+        teamQuestionFactories.push(() => generateTeamRankQuestion(teams))
+      }
+      if (canGenerateTeamCoachQuestion(teams)) {
+        teamQuestionFactories.push(() => generateTeamCoachQuestion(teams))
+      }
+
+      const generalQuestionFactories: Array<() => QuizQuestion | null> = [
+        ...teamQuestionFactories,
+        () => generatePlayerTeamQuestion(),
+        () => getHistoryQuestion(),
+      ]
 
       const generatedQuestions: QuizQuestion[] = []
 
       // 至少1道球队题
-      if (validTeams.length >= 4) {
-        const teamQuestionTypes = ['team_group', 'team_rank', 'team_coach']
-        const randomType = teamQuestionTypes[Math.floor(Math.random() * teamQuestionTypes.length)]
-        if (randomType === 'team_group') {
-          generatedQuestions.push(generateTeamGroupQuestion(validTeams, locale.value))
-        } else if (randomType === 'team_rank') {
-          generatedQuestions.push(generateTeamRankQuestion(validTeams))
-        } else {
-          generatedQuestions.push(generateTeamCoachQuestion(validTeams))
-        }
+      if (teamQuestionFactories.length > 0) {
+        const factory = teamQuestionFactories[Math.floor(Math.random() * teamQuestionFactories.length)]
+        const question = factory()
+        if (question) generatedQuestions.push(question)
       }
 
       // 至少1道球员题
@@ -246,20 +307,10 @@ export function useQuiz() {
       generatedQuestions.push(getHistoryQuestion())
 
       // 剩余2题随机
-      const allTypes = ['team_group', 'team_rank', 'team_coach', 'player_team', 'history']
       for (let i = 0; i < 2; i++) {
-        const type = allTypes[Math.floor(Math.random() * allTypes.length)]
-        if (type === 'team_group' && validTeams.length >= 4) {
-          generatedQuestions.push(generateTeamGroupQuestion(validTeams, locale.value))
-        } else if (type === 'team_rank' && validTeams.length >= 4) {
-          generatedQuestions.push(generateTeamRankQuestion(validTeams))
-        } else if (type === 'team_coach' && validTeams.length >= 4) {
-          generatedQuestions.push(generateTeamCoachQuestion(validTeams))
-        } else if (type === 'player_team') {
-          generatedQuestions.push(generatePlayerTeamQuestion())
-        } else {
-          generatedQuestions.push(getHistoryQuestion())
-        }
+        const factory = generalQuestionFactories[Math.floor(Math.random() * generalQuestionFactories.length)]
+        const question = factory()
+        if (question) generatedQuestions.push(question)
       }
 
       // 打乱顺序并确保不重复
@@ -273,12 +324,20 @@ export function useQuiz() {
       }
 
       // 如果由于重复不够5题，补充
-      while (uniqueQuestions.length < 5) {
-        const extra = getHistoryQuestion()
+      let attempts = 0
+      while (uniqueQuestions.length < 5 && attempts < 30) {
+        const factory = generalQuestionFactories[Math.floor(Math.random() * generalQuestionFactories.length)]
+        const extra = factory()
+        attempts++
+        if (!extra) continue
         if (!usedIds.has(extra.id)) {
           uniqueQuestions.push(extra)
           usedIds.add(extra.id)
         }
+      }
+
+      if (uniqueQuestions.length === 0) {
+        throw new Error('Quiz question generation returned no usable questions.')
       }
 
       questions.value = uniqueQuestions.slice(0, 5)

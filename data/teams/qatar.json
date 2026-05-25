@@ -5,11 +5,11 @@
   "code": "qa",
   "group": "",
   "confederation": "",
-  "fifaRank": null,
+  "fifaRank": 48,
   "flag": "https://flagcdn.com/w80/qa.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Luis García",
+    "nameZh": "路易斯·加西亚",
     "nationality": ""
   },
   "founded": 1960,

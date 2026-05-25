@@ -5,11 +5,11 @@
   "code": "cz",
   "group": "",
   "confederation": "",
-  "fifaRank": null,
+  "fifaRank": 36,
   "flag": "https://flagcdn.com/w80/cz.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Ivan Hašek",
+    "nameZh": "伊万·哈谢克",
     "nationality": ""
   },
   "founded": 1901,

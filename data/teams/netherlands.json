@@ -5,11 +5,11 @@
   "code": "nl",
   "group": "G",
   "confederation": "UEFA",
-  "fifaRank": null,
+  "fifaRank": 7,
   "flag": "https://flagcdn.com/w80/nl.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Ronald Koeman",
+    "nameZh": "罗纳德·科曼",
     "nationality": ""
   },
   "founded": 1889,
@@ -89,7 +89,7 @@
     },
     {
       "name": "Xavi Simons",
-      "nameZh": "Xavi Simons",
+      "nameZh": "哈维·西蒙斯",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2003-04-21",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Mickey van de Ven",
-      "nameZh": "Mickey van de Ven",
+      "nameZh": "米奇·范德芬",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "2001-04-19",
@@ -110,7 +110,7 @@
     },
     {
       "name": "Jeremie Frimpong",
-      "nameZh": "Jeremie Frimpong",
+      "nameZh": "杰雷米·弗林蓬",
       "position": "Right Midfield",
       "positionZh": "Right Midfield",
       "dateOfBirth": "2000-12-10",
@@ -146,7 +146,7 @@
     },
     {
       "name": "Brian Brobbey",
-      "nameZh": "Brian Brobbey",
+      "nameZh": "布莱恩·布罗比",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2002-02-01",
@@ -158,7 +158,7 @@
     },
     {
       "name": "Ryan Gravenberch",
-      "nameZh": "Ryan Gravenberch",
+      "nameZh": "瑞恩·赫拉芬贝赫",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2002-05-16",
@@ -182,7 +182,7 @@
     },
     {
       "name": "Nathan Aké",
-      "nameZh": "Nathan Aké",
+      "nameZh": "内森·阿克",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1995-02-18",
@@ -194,7 +194,7 @@
     },
     {
       "name": "Virgil van Dijk",
-      "nameZh": "维吉尔·范迪克",
+      "nameZh": "维吉尔·范戴克",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1991-07-08",
@@ -206,7 +206,7 @@
     },
     {
       "name": "Wout Weghorst",
-      "nameZh": "Wout Weghorst",
+      "nameZh": "沃特·韦霍斯特",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1992-08-07",
@@ -218,7 +218,7 @@
     },
     {
       "name": "Tijjani Reijnders",
-      "nameZh": "Tijjani Reijnders",
+      "nameZh": "蒂贾尼·雷恩德斯",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1998-07-29",
@@ -230,7 +230,7 @@
     },
     {
       "name": "Teun Koopmeiners",
-      "nameZh": "Teun Koopmeiners",
+      "nameZh": "特恩·科普迈纳斯",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "1998-02-28",
@@ -266,7 +266,7 @@
     },
     {
       "name": "Cody Gakpo",
-      "nameZh": "Cody Gakpo",
+      "nameZh": "科迪·加克波",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "1999-05-07",
@@ -278,7 +278,7 @@
     },
     {
       "name": "Donyell Malen",
-      "nameZh": "Donyell Malen",
+      "nameZh": "多尼尔·马伦",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "1999-01-19",
@@ -290,7 +290,7 @@
     },
     {
       "name": "Denzel Dumfries",
-      "nameZh": "Denzel Dumfries",
+      "nameZh": "邓泽尔·邓弗里斯",
       "position": "Right-Back",
       "positionZh": "Right-Back",
       "dateOfBirth": "1996-04-18",
@@ -302,7 +302,7 @@
     },
     {
       "name": "Stefan de Vrij",
-      "nameZh": "Stefan de Vrij",
+      "nameZh": "斯特凡·德弗赖",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1992-02-05",

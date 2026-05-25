@@ -5,11 +5,11 @@
   "code": "ec",
   "group": "A",
   "confederation": "CONMEBOL",
-  "fifaRank": null,
+  "fifaRank": 28,
   "flag": "https://flagcdn.com/w80/ec.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Sebastián Beccacece",
+    "nameZh": "塞巴斯蒂安·贝卡塞塞",
     "nationality": ""
   },
   "founded": 1925,

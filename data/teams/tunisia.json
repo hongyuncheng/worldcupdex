@@ -5,11 +5,11 @@
   "code": "tn",
   "group": "K",
   "confederation": "CAF",
-  "fifaRank": null,
+  "fifaRank": 29,
   "flag": "https://flagcdn.com/w80/tn.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Faouzi Benzarti",
+    "nameZh": "法乌齐·本扎蒂",
     "nationality": ""
   },
   "founded": 1957,

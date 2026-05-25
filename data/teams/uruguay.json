@@ -5,11 +5,11 @@
   "code": "uy",
   "group": "J",
   "confederation": "CONMEBOL",
-  "fifaRank": null,
+  "fifaRank": 13,
   "flag": "https://flagcdn.com/w80/uy.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Marcelo Bielsa",
+    "nameZh": "马塞洛·贝尔萨",
     "nationality": ""
   },
   "founded": 1900,
@@ -17,7 +17,7 @@
   "squad": [
     {
       "name": "Fernando Muslera",
-      "nameZh": "Fernando Muslera",
+      "nameZh": "费尔南多·穆斯莱拉",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1986-06-16",
@@ -197,7 +197,7 @@
     },
     {
       "name": "Facundo Pellistri",
-      "nameZh": "Facundo Pellistri",
+      "nameZh": "法昆多·佩利斯特里",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "2001-12-20",
@@ -232,7 +232,7 @@
     },
     {
       "name": "Mathías Olivera",
-      "nameZh": "Mathías Olivera",
+      "nameZh": "马蒂亚斯·奥利韦拉",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "1997-10-31",
@@ -268,7 +268,7 @@
     },
     {
       "name": "Manuel Ugarte",
-      "nameZh": "Manuel Ugarte",
+      "nameZh": "曼努埃尔·乌加特",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2001-04-11",
@@ -292,7 +292,7 @@
     },
     {
       "name": "Ronald Araújo",
-      "nameZh": "Ronald Araújo",
+      "nameZh": "罗纳德·阿劳霍",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1999-03-07",
@@ -316,7 +316,7 @@
     },
     {
       "name": "José Maria Giménez",
-      "nameZh": "José Maria Giménez",
+      "nameZh": "何塞·马里亚·希门尼斯",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1995-01-20",

@@ -5,11 +5,11 @@
   "code": "jo",
   "group": "",
   "confederation": "",
-  "fifaRank": null,
+  "fifaRank": 51,
   "flag": "https://flagcdn.com/w80/jo.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Hussein Ammouta",
+    "nameZh": "侯赛因·阿穆塔",
     "nationality": ""
   },
   "founded": 1949,

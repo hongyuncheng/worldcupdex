@@ -5,11 +5,11 @@
   "code": "ch",
   "group": "",
   "confederation": "",
-  "fifaRank": null,
+  "fifaRank": 15,
   "flag": "https://flagcdn.com/w80/ch.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Murat Yakın",
+    "nameZh": "穆拉特·亚金",
     "nationality": ""
   },
   "founded": 1895,

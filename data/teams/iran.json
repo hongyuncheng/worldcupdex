@@ -5,11 +5,11 @@
   "code": "ir",
   "group": "F",
   "confederation": "AFC",
-  "fifaRank": null,
+  "fifaRank": 20,
   "flag": "https://flagcdn.com/w80/ir.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Amir Ghalenoei",
+    "nameZh": "阿米尔·加莱诺伊",
     "nationality": ""
   },
   "founded": 1920,

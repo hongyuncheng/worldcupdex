@@ -5,11 +5,11 @@
   "code": "sa",
   "group": "I",
   "confederation": "AFC",
-  "fifaRank": null,
+  "fifaRank": 32,
   "flag": "https://flagcdn.com/w80/sa.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Roberto Mancini",
+    "nameZh": "罗伯托·曼奇尼",
     "nationality": ""
   },
   "founded": 1956,

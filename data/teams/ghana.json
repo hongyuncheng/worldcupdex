@@ -5,11 +5,11 @@
   "code": "gh",
   "group": "L",
   "confederation": "CAF",
-  "fifaRank": null,
+  "fifaRank": 36,
   "flag": "https://flagcdn.com/w80/gh.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Otto Addo",
+    "nameZh": "奥托·阿多",
     "nationality": ""
   },
   "founded": 1957,

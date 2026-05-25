@@ -5,11 +5,11 @@
   "code": "au",
   "group": "G",
   "confederation": "AFC",
-  "fifaRank": null,
+  "fifaRank": 23,
   "flag": "https://flagcdn.com/w80/au.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Tony Popovic",
+    "nameZh": "托尼·波波维奇",
     "nationality": ""
   },
   "founded": 1961,

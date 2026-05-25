@@ -5,11 +5,11 @@
   "code": "cw",
   "group": "",
   "confederation": "",
-  "fifaRank": null,
+  "fifaRank": 55,
   "flag": "https://flagcdn.com/w80/cw.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Dick Advocaat",
+    "nameZh": "迪克·阿德沃卡特",
     "nationality": ""
   },
   "founded": null,

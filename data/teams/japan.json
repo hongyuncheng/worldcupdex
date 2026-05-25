@@ -5,11 +5,11 @@
   "code": "jp",
   "group": "E",
   "confederation": "AFC",
-  "fifaRank": null,
+  "fifaRank": 15,
   "flag": "https://flagcdn.com/w80/jp.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Hajime Moriyasu",
+    "nameZh": "森保一",
     "nationality": ""
   },
   "founded": 1921,
@@ -124,7 +124,7 @@
     },
     {
       "name": "Daizen Maeda",
-      "nameZh": "Daizen Maeda",
+      "nameZh": "前田大然",
       "position": "Offence",
       "positionZh": "前锋",
       "dateOfBirth": "1997-10-20",
@@ -172,7 +172,7 @@
     },
     {
       "name": "Ayase Ueda",
-      "nameZh": "Ayase Ueda",
+      "nameZh": "上田绮世",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1998-09-10",
@@ -184,7 +184,7 @@
     },
     {
       "name": "Ao Tanaka",
-      "nameZh": "Ao Tanaka",
+      "nameZh": "田中碧",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1998-09-10",
@@ -196,7 +196,7 @@
     },
     {
       "name": "Junya Ito",
-      "nameZh": "Junya Ito",
+      "nameZh": "伊东纯也",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "1993-03-09",
@@ -219,7 +219,7 @@
     },
     {
       "name": "Yukinari Sugawara",
-      "nameZh": "Yukinari Sugawara",
+      "nameZh": "菅原由势",
       "position": "Right-Back",
       "positionZh": "Right-Back",
       "dateOfBirth": "2000-06-28",
@@ -243,7 +243,7 @@
     },
     {
       "name": "Hiroki Ito",
-      "nameZh": "Hiroki Ito",
+      "nameZh": "伊藤洋辉",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1999-05-12",
@@ -252,7 +252,7 @@
     },
     {
       "name": "Keito Nakamura",
-      "nameZh": "Keito Nakamura",
+      "nameZh": "中村敬斗",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "2000-07-28",
@@ -286,7 +286,7 @@
     },
     {
       "name": "Ritsu Doan",
-      "nameZh": "Ritsu Doan",
+      "nameZh": "堂安律",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "1998-06-16",
@@ -298,7 +298,7 @@
     },
     {
       "name": "Daichi Kamada",
-      "nameZh": "Daichi Kamada",
+      "nameZh": "镰田大地",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "1996-08-05",

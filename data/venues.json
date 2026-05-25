@@ -1,1 +1,162 @@
-[]
+[
+  {
+    "id": "metlife-stadium",
+    "name": "MetLife Stadium",
+    "nameZh": "大都会人寿球场",
+    "city": "East Rutherford",
+    "cityZh": "东卢瑟福",
+    "country": "USA",
+    "countryZh": "美国",
+    "capacity": 82500
+  },
+  {
+    "id": "at-t-stadium",
+    "name": "AT&T Stadium",
+    "nameZh": "AT&T球场",
+    "city": "Arlington",
+    "cityZh": "阿灵顿",
+    "country": "USA",
+    "countryZh": "美国",
+    "capacity": 80000
+  },
+  {
+    "id": "sofi-stadium",
+    "name": "SoFi Stadium",
+    "nameZh": "SoFi球场",
+    "city": "Inglewood",
+    "cityZh": "英格尔伍德",
+    "country": "USA",
+    "countryZh": "美国",
+    "capacity": 70240
+  },
+  {
+    "id": "hard-rock-stadium",
+    "name": "Hard Rock Stadium",
+    "nameZh": "硬石球场",
+    "city": "Miami Gardens",
+    "cityZh": "迈阿密花园",
+    "country": "USA",
+    "countryZh": "美国",
+    "capacity": 64767
+  },
+  {
+    "id": "lincoln-financial-field",
+    "name": "Lincoln Financial Field",
+    "nameZh": "林肯金融球场",
+    "city": "Philadelphia",
+    "cityZh": "费城",
+    "country": "USA",
+    "countryZh": "美国",
+    "capacity": 69176
+  },
+  {
+    "id": "mercedes-benz-stadium",
+    "name": "Mercedes-Benz Stadium",
+    "nameZh": "梅赛德斯-奔驰球场",
+    "city": "Atlanta",
+    "cityZh": "亚特兰大",
+    "country": "USA",
+    "countryZh": "美国",
+    "capacity": 71000
+  },
+  {
+    "id": "nrg-stadium",
+    "name": "NRG Stadium",
+    "nameZh": "NRG球场",
+    "city": "Houston",
+    "cityZh": "休斯顿",
+    "country": "USA",
+    "countryZh": "美国",
+    "capacity": 72220
+  },
+  {
+    "id": "lumen-field",
+    "name": "Lumen Field",
+    "nameZh": "流明球场",
+    "city": "Seattle",
+    "cityZh": "西雅图",
+    "country": "USA",
+    "countryZh": "美国",
+    "capacity": 68740
+  },
+  {
+    "id": "gillette-stadium",
+    "name": "Gillette Stadium",
+    "nameZh": "吉列球场",
+    "city": "Foxborough",
+    "cityZh": "福克斯堡",
+    "country": "USA",
+    "countryZh": "美国",
+    "capacity": 65878
+  },
+  {
+    "id": "arrowhead-stadium",
+    "name": "GEHA Field at Arrowhead Stadium",
+    "nameZh": "箭头球场",
+    "city": "Kansas City",
+    "cityZh": "堪萨斯城",
+    "country": "USA",
+    "countryZh": "美国",
+    "capacity": 76416
+  },
+  {
+    "id": "geodis-park",
+    "name": "GEODIS Park",
+    "nameZh": "GEODIS公园球场",
+    "city": "Nashville",
+    "cityZh": "纳什维尔",
+    "country": "USA",
+    "countryZh": "美国",
+    "capacity": 30000
+  },
+  {
+    "id": "estadio-azteca",
+    "name": "Estadio Azteca",
+    "nameZh": "阿兹特克球场",
+    "city": "Mexico City",
+    "cityZh": "墨西哥城",
+    "country": "Mexico",
+    "countryZh": "墨西哥",
+    "capacity": 87523
+  },
+  {
+    "id": "estadio-akron",
+    "name": "Estadio Akron",
+    "nameZh": "阿克隆球场",
+    "city": "Guadalajara",
+    "cityZh": "瓜达拉哈拉",
+    "country": "Mexico",
+    "countryZh": "墨西哥",
+    "capacity": 49850
+  },
+  {
+    "id": "estadio-bbva",
+    "name": "Estadio BBVA",
+    "nameZh": "BBVA球场",
+    "city": "Monterrey",
+    "cityZh": "蒙特雷",
+    "country": "Mexico",
+    "countryZh": "墨西哥",
+    "capacity": 53500
+  },
+  {
+    "id": "bmo-field",
+    "name": "BMO Field",
+    "nameZh": "BMO球场",
+    "city": "Toronto",
+    "cityZh": "多伦多",
+    "country": "Canada",
+    "countryZh": "加拿大",
+    "capacity": 30000
+  },
+  {
+    "id": "bc-place",
+    "name": "BC Place",
+    "nameZh": "BC体育馆",
+    "city": "Vancouver",
+    "cityZh": "温哥华",
+    "country": "Canada",
+    "countryZh": "加拿大",
+    "capacity": 54500
+  }
+]

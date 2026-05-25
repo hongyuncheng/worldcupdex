@@ -5,11 +5,11 @@
   "code": "at",
   "group": "",
   "confederation": "",
-  "fifaRank": null,
+  "fifaRank": 22,
   "flag": "https://flagcdn.com/w80/at.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Ralf Rangnick",
+    "nameZh": "拉尔夫·朗尼克",
     "nationality": ""
   },
   "founded": 1904,

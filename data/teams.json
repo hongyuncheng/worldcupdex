@@ -6,11 +6,11 @@
     "code": "uy",
     "group": "J",
     "confederation": "CONMEBOL",
-    "fifaRank": null,
+    "fifaRank": 13,
     "flag": "https://flagcdn.com/w80/uy.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Marcelo Bielsa",
+      "nameZh": "马塞洛·贝尔萨",
       "nationality": ""
     }
   },
@@ -21,11 +21,11 @@
     "code": "de",
     "group": "E",
     "confederation": "UEFA",
-    "fifaRank": null,
+    "fifaRank": 10,
     "flag": "https://flagcdn.com/w80/de.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Julian Nagelsmann",
+      "nameZh": "尤利安·纳格尔斯曼",
       "nationality": ""
     }
   },
@@ -36,11 +36,11 @@
     "code": "es",
     "group": "D",
     "confederation": "UEFA",
-    "fifaRank": null,
+    "fifaRank": 3,
     "flag": "https://flagcdn.com/w80/es.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Luis de la Fuente",
+      "nameZh": "路易斯·德拉富恩特",
       "nationality": ""
     }
   },
@@ -51,11 +51,11 @@
     "code": "py",
     "group": "D",
     "confederation": "CONMEBOL",
-    "fifaRank": null,
+    "fifaRank": 39,
     "flag": "https://flagcdn.com/w80/py.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Alfaro Moreno",
+      "nameZh": "阿尔法罗·莫雷诺",
       "nationality": ""
     }
   },
@@ -66,11 +66,11 @@
     "code": "ar",
     "group": "A",
     "confederation": "CONMEBOL",
-    "fifaRank": null,
+    "fifaRank": 1,
     "flag": "https://flagcdn.com/w80/ar.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Lionel Scaloni",
+      "nameZh": "利奥内尔·斯卡洛尼",
       "nationality": ""
     }
   },
@@ -81,11 +81,11 @@
     "code": "gh",
     "group": "L",
     "confederation": "CAF",
-    "fifaRank": null,
+    "fifaRank": 36,
     "flag": "https://flagcdn.com/w80/gh.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Otto Addo",
+      "nameZh": "奥托·阿多",
       "nationality": ""
     }
   },
@@ -96,11 +96,11 @@
     "code": "br",
     "group": "B",
     "confederation": "CONMEBOL",
-    "fifaRank": null,
+    "fifaRank": 5,
     "flag": "https://flagcdn.com/w80/br.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Dorival Júnior",
+      "nameZh": "多里瓦尔·儒尼奥尔",
       "nationality": ""
     }
   },
@@ -111,11 +111,11 @@
     "code": "pt",
     "group": "H",
     "confederation": "UEFA",
-    "fifaRank": null,
+    "fifaRank": 6,
     "flag": "https://flagcdn.com/w80/pt.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Roberto Martínez",
+      "nameZh": "罗伯托·马丁内斯",
       "nationality": ""
     }
   },
@@ -126,11 +126,11 @@
     "code": "jp",
     "group": "E",
     "confederation": "AFC",
-    "fifaRank": null,
+    "fifaRank": 15,
     "flag": "https://flagcdn.com/w80/jp.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Hajime Moriyasu",
+      "nameZh": "森保一",
       "nationality": ""
     }
   },
@@ -141,11 +141,11 @@
     "code": "mx",
     "group": "A",
     "confederation": "CONCACAF",
-    "fifaRank": null,
+    "fifaRank": 16,
     "flag": "https://flagcdn.com/w80/mx.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Javier Aguirre",
+      "nameZh": "哈维尔·阿吉雷",
       "nationality": ""
     }
   },
@@ -156,11 +156,11 @@
     "code": "gb-eng",
     "group": "C",
     "confederation": "UEFA",
-    "fifaRank": null,
+    "fifaRank": 4,
     "flag": "https://flagcdn.com/w80/gb-eng.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Thomas Tuchel",
+      "nameZh": "托马斯·图赫尔",
       "nationality": ""
     }
   },
@@ -171,11 +171,11 @@
     "code": "us",
     "group": "B",
     "confederation": "CONCACAF",
-    "fifaRank": null,
+    "fifaRank": 17,
     "flag": "https://flagcdn.com/w80/us.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Mauricio Pochettino",
+      "nameZh": "毛里西奥·波切蒂诺",
       "nationality": ""
     }
   },
@@ -186,11 +186,11 @@
     "code": "kr",
     "group": "J",
     "confederation": "AFC",
-    "fifaRank": null,
+    "fifaRank": 21,
     "flag": "https://flagcdn.com/w80/kr.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Hong Myung-bo",
+      "nameZh": "洪明甫",
       "nationality": ""
     }
   },
@@ -201,11 +201,11 @@
     "code": "fr",
     "group": "F",
     "confederation": "UEFA",
-    "fifaRank": null,
+    "fifaRank": 2,
     "flag": "https://flagcdn.com/w80/fr.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Didier Deschamps",
+      "nameZh": "迪迪埃·德尚",
       "nationality": ""
     }
   },
@@ -216,11 +216,11 @@
     "code": "za",
     "group": "I",
     "confederation": "CAF",
-    "fifaRank": null,
+    "fifaRank": 34,
     "flag": "https://flagcdn.com/w80/za.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Hugo Broos",
+      "nameZh": "雨果·布鲁斯",
       "nationality": ""
     }
   },
@@ -231,11 +231,11 @@
     "code": "dz",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 33,
     "flag": "https://flagcdn.com/w80/dz.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Vladimir Petković",
+      "nameZh": "弗拉迪米尔·佩特科维奇",
       "nationality": ""
     }
   },
@@ -246,11 +246,11 @@
     "code": "au",
     "group": "G",
     "confederation": "AFC",
-    "fifaRank": null,
+    "fifaRank": 23,
     "flag": "https://flagcdn.com/w80/au.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Tony Popovic",
+      "nameZh": "托尼·波波维奇",
       "nationality": ""
     }
   },
@@ -261,11 +261,11 @@
     "code": "nz",
     "group": "C",
     "confederation": "OFC",
-    "fifaRank": null,
+    "fifaRank": 42,
     "flag": "https://flagcdn.com/w80/nz.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Darren Bazeley",
+      "nameZh": "达伦·巴兹利",
       "nationality": ""
     }
   },
@@ -276,11 +276,11 @@
     "code": "ch",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 15,
     "flag": "https://flagcdn.com/w80/ch.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Murat Yakın",
+      "nameZh": "穆拉特·亚金",
       "nationality": ""
     }
   },
@@ -291,11 +291,11 @@
     "code": "ec",
     "group": "A",
     "confederation": "CONMEBOL",
-    "fifaRank": null,
+    "fifaRank": 28,
     "flag": "https://flagcdn.com/w80/ec.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Sebastián Beccacece",
+      "nameZh": "塞巴斯蒂安·贝卡塞塞",
       "nationality": ""
     }
   },
@@ -306,11 +306,11 @@
     "code": "se",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 23,
     "flag": "https://flagcdn.com/w80/se.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Jon Dahl Tomasson",
+      "nameZh": "约翰·达尔·托马森",
       "nationality": ""
     }
   },
@@ -321,11 +321,11 @@
     "code": "cz",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 36,
     "flag": "https://flagcdn.com/w80/cz.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Ivan Hašek",
+      "nameZh": "伊万·哈谢克",
       "nationality": ""
     }
   },
@@ -336,11 +336,11 @@
     "code": "hr",
     "group": "K",
     "confederation": "UEFA",
-    "fifaRank": null,
+    "fifaRank": 11,
     "flag": "https://flagcdn.com/w80/hr.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Zlatko Dalić",
+      "nameZh": "兹拉特科·达利奇",
       "nationality": ""
     }
   },
@@ -351,11 +351,11 @@
     "code": "sa",
     "group": "I",
     "confederation": "AFC",
-    "fifaRank": null,
+    "fifaRank": 32,
     "flag": "https://flagcdn.com/w80/sa.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Roberto Mancini",
+      "nameZh": "罗伯托·曼奇尼",
       "nationality": ""
     }
   },
@@ -366,11 +366,11 @@
     "code": "tn",
     "group": "K",
     "confederation": "CAF",
-    "fifaRank": null,
+    "fifaRank": 29,
     "flag": "https://flagcdn.com/w80/tn.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Faouzi Benzarti",
+      "nameZh": "法乌齐·本扎蒂",
       "nationality": ""
     }
   },
@@ -381,11 +381,11 @@
     "code": "tr",
     "group": "L",
     "confederation": "UEFA",
-    "fifaRank": null,
+    "fifaRank": 19,
     "flag": "https://flagcdn.com/w80/tr.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Vincenzo Montella",
+      "nameZh": "文森佐·蒙特拉",
       "nationality": ""
     }
   },
@@ -396,11 +396,11 @@
     "code": "sn",
     "group": "K",
     "confederation": "CAF",
-    "fifaRank": null,
+    "fifaRank": 18,
     "flag": "https://flagcdn.com/w80/sn.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Pape Thiaw",
+      "nameZh": "帕普·蒂亚乌",
       "nationality": ""
     }
   },
@@ -411,11 +411,11 @@
     "code": "be",
     "group": "J",
     "confederation": "UEFA",
-    "fifaRank": null,
+    "fifaRank": 8,
     "flag": "https://flagcdn.com/w80/be.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Domenico Tedesco",
+      "nameZh": "多梅尼科·特德斯科",
       "nationality": ""
     }
   },
@@ -426,11 +426,11 @@
     "code": "ma",
     "group": "F",
     "confederation": "CAF",
-    "fifaRank": null,
+    "fifaRank": 14,
     "flag": "https://flagcdn.com/w80/ma.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Walid Regragui",
+      "nameZh": "瓦利德·雷格拉吉",
       "nationality": ""
     }
   },
@@ -441,11 +441,11 @@
     "code": "at",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 22,
     "flag": "https://flagcdn.com/w80/at.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Ralf Rangnick",
+      "nameZh": "拉尔夫·朗尼克",
       "nationality": ""
     }
   },
@@ -456,11 +456,11 @@
     "code": "co",
     "group": "A",
     "confederation": "CONMEBOL",
-    "fifaRank": null,
+    "fifaRank": 12,
     "flag": "https://flagcdn.com/w80/co.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Néstor Lorenzo",
+      "nameZh": "内斯托尔·洛伦佐",
       "nationality": ""
     }
   },
@@ -471,11 +471,11 @@
     "code": "eg",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 35,
     "flag": "https://flagcdn.com/w80/eg.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Hossam Hassan",
+      "nameZh": "侯赛姆·哈桑",
       "nationality": ""
     }
   },
@@ -486,11 +486,11 @@
     "code": "ca",
     "group": "D",
     "confederation": "CONCACAF",
-    "fifaRank": null,
+    "fifaRank": 30,
     "flag": "https://flagcdn.com/w80/ca.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Jesse Marsch",
+      "nameZh": "杰西·马尔施",
       "nationality": ""
     }
   },
@@ -501,11 +501,11 @@
     "code": "ht",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 52,
     "flag": "https://flagcdn.com/w80/ht.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Nicolas Pépé",
+      "nameZh": "尼古拉斯·佩佩",
       "nationality": ""
     }
   },
@@ -516,11 +516,11 @@
     "code": "ir",
     "group": "F",
     "confederation": "AFC",
-    "fifaRank": null,
+    "fifaRank": 20,
     "flag": "https://flagcdn.com/w80/ir.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Amir Ghalenoei",
+      "nameZh": "阿米尔·加莱诺伊",
       "nationality": ""
     }
   },
@@ -531,11 +531,11 @@
     "code": "ba",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 53,
     "flag": "https://flagcdn.com/w80/ba.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Sergej Barbarez",
+      "nameZh": "塞尔盖·巴巴雷茨",
       "nationality": ""
     }
   },
@@ -546,11 +546,11 @@
     "code": "pa",
     "group": "B",
     "confederation": "CONCACAF",
-    "fifaRank": null,
+    "fifaRank": 35,
     "flag": "https://flagcdn.com/w80/pa.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Thomas Christiansen",
+      "nameZh": "托马斯·克里斯蒂安森",
       "nationality": ""
     }
   },
@@ -561,11 +561,11 @@
     "code": "cv",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 54,
     "flag": "https://flagcdn.com/w80/cv.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Bubista",
+      "nameZh": "布比斯塔",
       "nationality": ""
     }
   },
@@ -576,11 +576,11 @@
     "code": "cd",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 47,
     "flag": "https://flagcdn.com/w80/cd.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Sébastien Desabre",
+      "nameZh": "塞巴斯蒂安·德萨布雷",
       "nationality": ""
     }
   },
@@ -591,11 +591,11 @@
     "code": "ci",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 39,
     "flag": "https://flagcdn.com/w80/ci.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Faé Emerse",
+      "nameZh": "法埃·埃梅尔塞",
       "nationality": ""
     }
   },
@@ -606,11 +606,11 @@
     "code": "qa",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 48,
     "flag": "https://flagcdn.com/w80/qa.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Luis García",
+      "nameZh": "路易斯·加西亚",
       "nationality": ""
     }
   },
@@ -621,11 +621,11 @@
     "code": "jo",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 51,
     "flag": "https://flagcdn.com/w80/jo.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Hussein Ammouta",
+      "nameZh": "侯赛因·阿穆塔",
       "nationality": ""
     }
   },
@@ -636,11 +636,11 @@
     "code": "iq",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 50,
     "flag": "https://flagcdn.com/w80/iq.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Jesús Casas",
+      "nameZh": "赫苏斯·卡萨斯",
       "nationality": ""
     }
   },
@@ -651,11 +651,11 @@
     "code": "uz",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 49,
     "flag": "https://flagcdn.com/w80/uz.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Srecko Katanec",
+      "nameZh": "斯雷奇科·卡塔内茨",
       "nationality": ""
     }
   },
@@ -666,11 +666,11 @@
     "code": "nl",
     "group": "G",
     "confederation": "UEFA",
-    "fifaRank": null,
+    "fifaRank": 7,
     "flag": "https://flagcdn.com/w80/nl.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Ronald Koeman",
+      "nameZh": "罗纳德·科曼",
       "nationality": ""
     }
   },
@@ -681,11 +681,11 @@
     "code": "no",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 38,
     "flag": "https://flagcdn.com/w80/no.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Ståle Solbakken",
+      "nameZh": "斯塔勒·索尔巴肯",
       "nationality": ""
     }
   },
@@ -696,11 +696,11 @@
     "code": "gb-sct",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 37,
     "flag": "https://flagcdn.com/w80/gb-sct.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Steve Clarke",
+      "nameZh": "史蒂夫·克拉克",
       "nationality": ""
     }
   },
@@ -711,11 +711,11 @@
     "code": "cw",
     "group": "",
     "confederation": "",
-    "fifaRank": null,
+    "fifaRank": 55,
     "flag": "https://flagcdn.com/w80/cw.png",
     "coach": {
-      "nameEn": "",
-      "nameZh": null,
+      "nameEn": "Dick Advocaat",
+      "nameZh": "迪克·阿德沃卡特",
       "nationality": ""
     }
   }

@@ -5,11 +5,11 @@
   "code": "us",
   "group": "B",
   "confederation": "CONCACAF",
-  "fifaRank": null,
+  "fifaRank": 17,
   "flag": "https://flagcdn.com/w80/us.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Mauricio Pochettino",
+    "nameZh": "毛里西奥·波切蒂诺",
     "nationality": ""
   },
   "founded": 1913,
@@ -185,7 +185,7 @@
     },
     {
       "name": "Gio Reyna",
-      "nameZh": "Gio Reyna",
+      "nameZh": "吉奥·雷纳",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2002-11-13",
@@ -197,7 +197,7 @@
     },
     {
       "name": "Folarin Balogun",
-      "nameZh": "Folarin Balogun",
+      "nameZh": "福拉林·巴洛贡",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2001-07-03",
@@ -230,7 +230,7 @@
     },
     {
       "name": "Brenden Aaronson",
-      "nameZh": "Brenden Aaronson",
+      "nameZh": "布伦登·阿伦森",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2000-10-22",
@@ -278,7 +278,7 @@
     },
     {
       "name": "Tim Weah",
-      "nameZh": "Tim Weah",
+      "nameZh": "蒂莫西·韦阿",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "2000-02-22",
@@ -326,7 +326,7 @@
     },
     {
       "name": "Christian Pulisic",
-      "nameZh": "克里斯蒂安·普利希奇",
+      "nameZh": "克里斯蒂安·普利西奇",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "1998-09-18",

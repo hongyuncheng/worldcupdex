@@ -5,11 +5,11 @@
   "code": "hr",
   "group": "K",
   "confederation": "UEFA",
-  "fifaRank": null,
+  "fifaRank": 11,
   "flag": "https://flagcdn.com/w80/hr.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Zlatko Dalić",
+    "nameZh": "兹拉特科·达利奇",
     "nationality": ""
   },
   "founded": 1912,
@@ -17,7 +17,7 @@
   "squad": [
     {
       "name": "Dominik Livaković",
-      "nameZh": "Dominik Livaković",
+      "nameZh": "多米尼克·利瓦科维奇",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1995-01-09",
@@ -238,7 +238,7 @@
     },
     {
       "name": "Nikola Vlašić",
-      "nameZh": "Nikola Vlašić",
+      "nameZh": "尼科拉·弗拉希奇",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "1997-10-04",
@@ -250,7 +250,7 @@
     },
     {
       "name": "Mario Pašalić",
-      "nameZh": "Mario Pašalić",
+      "nameZh": "马里奥·帕沙利奇",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1995-02-09",
@@ -274,7 +274,7 @@
     },
     {
       "name": "Ivan Perišić",
-      "nameZh": "Ivan Perišić",
+      "nameZh": "伊万·佩里西奇",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "1989-02-02",
@@ -286,7 +286,7 @@
     },
     {
       "name": "Andrej Kramarić",
-      "nameZh": "Andrej Kramarić",
+      "nameZh": "安德烈·克拉马里奇",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1991-06-19",
@@ -298,7 +298,7 @@
     },
     {
       "name": "Mateo Kovačić",
-      "nameZh": "Mateo Kovačić",
+      "nameZh": "马特奥·科瓦契奇",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1994-05-06",

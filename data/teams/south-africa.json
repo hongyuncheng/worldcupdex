@@ -5,11 +5,11 @@
   "code": "za",
   "group": "I",
   "confederation": "CAF",
-  "fifaRank": null,
+  "fifaRank": 34,
   "flag": "https://flagcdn.com/w80/za.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Hugo Broos",
+    "nameZh": "雨果·布鲁斯",
     "nationality": ""
   },
   "founded": 1991,

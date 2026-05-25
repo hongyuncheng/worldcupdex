@@ -5,11 +5,11 @@
   "code": "gb-eng",
   "group": "C",
   "confederation": "UEFA",
-  "fifaRank": null,
+  "fifaRank": 4,
   "flag": "https://flagcdn.com/w80/gb-eng.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Thomas Tuchel",
+    "nameZh": "托马斯·图赫尔",
     "nationality": ""
   },
   "founded": 1863,
@@ -17,7 +17,7 @@
   "squad": [
     {
       "name": "Jordan Pickford",
-      "nameZh": "Jordan Pickford",
+      "nameZh": "乔丹·皮克福德",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1994-03-07",
@@ -29,7 +29,7 @@
     },
     {
       "name": "Jason Steele",
-      "nameZh": "Jason Steele",
+      "nameZh": "贾森·斯蒂尔",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1990-08-18",
@@ -41,7 +41,7 @@
     },
     {
       "name": "Dean Henderson",
-      "nameZh": "Dean Henderson",
+      "nameZh": "迪恩·亨德森",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1997-03-12",
@@ -53,7 +53,7 @@
     },
     {
       "name": "Aaron Ramsdale",
-      "nameZh": "Aaron Ramsdale",
+      "nameZh": "阿隆·拉姆斯代尔",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1998-05-14",
@@ -65,7 +65,7 @@
     },
     {
       "name": "James Trafford",
-      "nameZh": "James Trafford",
+      "nameZh": "詹姆斯·特拉福德",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "2002-10-10",
@@ -77,7 +77,7 @@
     },
     {
       "name": "Nico O'Reilly",
-      "nameZh": "Nico O'Reilly",
+      "nameZh": "尼科·奥赖利",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "2005-03-21",
@@ -89,7 +89,7 @@
     },
     {
       "name": "Declan Rice",
-      "nameZh": "Declan Rice",
+      "nameZh": "德克兰·赖斯",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1999-01-14",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Harvey Barnes",
-      "nameZh": "Harvey Barnes",
+      "nameZh": "哈维·巴恩斯",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "1997-12-09",
@@ -137,7 +137,7 @@
     },
     {
       "name": "Dominic Solanke",
-      "nameZh": "Dominic Solanke",
+      "nameZh": "多米尼克·索兰克",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1997-09-14",
@@ -149,7 +149,7 @@
     },
     {
       "name": "Anthony Gordon",
-      "nameZh": "Anthony Gordon",
+      "nameZh": "安东尼·戈登",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "2001-02-24",
@@ -161,7 +161,7 @@
     },
     {
       "name": "Dominic Calvert-Lewin",
-      "nameZh": "Dominic Calvert-Lewin",
+      "nameZh": "多米尼克·卡尔弗特-勒温",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1997-03-16",
@@ -173,7 +173,7 @@
     },
     {
       "name": "Ezri Konsa",
-      "nameZh": "Ezri Konsa",
+      "nameZh": "埃兹里·孔萨",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1998-04-06",
@@ -185,7 +185,7 @@
     },
     {
       "name": "Ben White",
-      "nameZh": "Ben White",
+      "nameZh": "本·怀特",
       "position": "Right-Back",
       "positionZh": "Right-Back",
       "dateOfBirth": "1997-10-08",
@@ -197,7 +197,7 @@
     },
     {
       "name": "Dan Burn",
-      "nameZh": "Dan Burn",
+      "nameZh": "丹·伯恩",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1992-05-09",
@@ -209,7 +209,7 @@
     },
     {
       "name": "Marcus Rashford",
-      "nameZh": "Marcus Rashford",
+      "nameZh": "马库斯·拉什福德",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "1997-10-31",
@@ -221,7 +221,7 @@
     },
     {
       "name": "Harry Maguire",
-      "nameZh": "Harry Maguire",
+      "nameZh": "哈里·马奎尔",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1993-03-05",
@@ -233,7 +233,7 @@
     },
     {
       "name": "Jordan Henderson",
-      "nameZh": "Jordan Henderson",
+      "nameZh": "乔丹·亨德森",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1990-06-17",
@@ -245,7 +245,7 @@
     },
     {
       "name": "John Stones",
-      "nameZh": "John Stones",
+      "nameZh": "约翰·斯通斯",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1994-05-28",
@@ -257,7 +257,7 @@
     },
     {
       "name": "Adam Wharton",
-      "nameZh": "Adam Wharton",
+      "nameZh": "亚当·沃顿",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2004-06-02",
@@ -269,7 +269,7 @@
     },
     {
       "name": "Lewis Hall",
-      "nameZh": "Lewis Hall",
+      "nameZh": "刘易斯·霍尔",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "2025-06-30",
@@ -281,7 +281,7 @@
     },
     {
       "name": "Kobbie Mainoo",
-      "nameZh": "Kobbie Mainoo",
+      "nameZh": "科比·梅努",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "2005-04-19",
@@ -293,7 +293,7 @@
     },
     {
       "name": "Valentino Livramento",
-      "nameZh": "Valentino Livramento",
+      "nameZh": "瓦伦蒂诺·利夫拉门托",
       "position": "Right-Back",
       "positionZh": "Right-Back",
       "dateOfBirth": "2002-11-12",
@@ -305,7 +305,7 @@
     },
     {
       "name": "Noni Madueke",
-      "nameZh": "Noni Madueke",
+      "nameZh": "诺尼·马杜埃克",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "2002-03-10",
@@ -317,7 +317,7 @@
     },
     {
       "name": "Cole Palmer",
-      "nameZh": "Cole Palmer",
+      "nameZh": "科尔·帕尔默",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2002-05-06",
@@ -341,7 +341,7 @@
     },
     {
       "name": "Marc Guéhi",
-      "nameZh": "Marc Guéhi",
+      "nameZh": "马克·盖伊",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "2000-07-13",
@@ -353,7 +353,7 @@
     },
     {
       "name": "Elliot Anderson",
-      "nameZh": "Elliot Anderson",
+      "nameZh": "埃利奥特·安德森",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "2002-11-06",
@@ -365,7 +365,7 @@
     },
     {
       "name": "James Garner",
-      "nameZh": "James Garner",
+      "nameZh": "詹姆斯·加纳",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2001-03-13",
@@ -389,7 +389,7 @@
     },
     {
       "name": "Morgan Rogers",
-      "nameZh": "Morgan Rogers",
+      "nameZh": "摩根·罗杰斯",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2002-07-26",
@@ -401,7 +401,7 @@
     },
     {
       "name": "Djed Spence",
-      "nameZh": "Djed Spence",
+      "nameZh": "杰德·斯彭斯",
       "position": "Right-Back",
       "positionZh": "Right-Back",
       "dateOfBirth": "2000-08-09",
@@ -413,7 +413,7 @@
     },
     {
       "name": "Fikayo Tomori",
-      "nameZh": "Fikayo Tomori",
+      "nameZh": "菲卡约·托莫里",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1997-12-19",
@@ -425,7 +425,7 @@
     },
     {
       "name": "Jarrod Bowen",
-      "nameZh": "Jarrod Bowen",
+      "nameZh": "贾罗德·鲍恩",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "1996-01-01",

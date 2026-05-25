@@ -5,11 +5,11 @@
   "code": "ca",
   "group": "D",
   "confederation": "CONCACAF",
-  "fifaRank": null,
+  "fifaRank": 30,
   "flag": "https://flagcdn.com/w80/ca.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Jesse Marsch",
+    "nameZh": "杰西·马尔施",
     "nationality": ""
   },
   "founded": null,

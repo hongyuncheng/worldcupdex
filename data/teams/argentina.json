@@ -5,11 +5,11 @@
   "code": "ar",
   "group": "A",
   "confederation": "CONMEBOL",
-  "fifaRank": null,
+  "fifaRank": 1,
   "flag": "https://flagcdn.com/w80/ar.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Lionel Scaloni",
+    "nameZh": "利奥内尔·斯卡洛尼",
     "nationality": ""
   },
   "founded": 1893,
@@ -17,7 +17,7 @@
   "squad": [
     {
       "name": "Géronimo Rulli",
-      "nameZh": "Géronimo Rulli",
+      "nameZh": "赫罗尼莫·鲁利",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1992-05-20",
@@ -41,7 +41,7 @@
     },
     {
       "name": "Juan Musso",
-      "nameZh": "Juan Musso",
+      "nameZh": "胡安·穆索",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1994-05-06",
@@ -53,7 +53,7 @@
     },
     {
       "name": "Gabriel Rojas",
-      "nameZh": "Gabriel Rojas",
+      "nameZh": "加布里埃尔·罗哈斯",
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "1997-06-22",
@@ -65,7 +65,7 @@
     },
     {
       "name": "Agustin Giay",
-      "nameZh": "Agustin Giay",
+      "nameZh": "阿古斯丁·吉亚伊",
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "2004-01-16",
@@ -89,7 +89,7 @@
     },
     {
       "name": "José Manuel López",
-      "nameZh": "José Manuel López",
+      "nameZh": "何塞·曼努埃尔·洛佩斯",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "2000-12-06",
@@ -101,7 +101,7 @@
     },
     {
       "name": "Franco Mastantuono",
-      "nameZh": "Franco Mastantuono",
+      "nameZh": "弗兰科·马斯坦图奥诺",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "2007-08-14",
@@ -113,7 +113,7 @@
     },
     {
       "name": "Nico Paz",
-      "nameZh": "Nico Paz",
+      "nameZh": "尼科·帕斯",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2004-09-08",
@@ -125,7 +125,7 @@
     },
     {
       "name": "Gianluca Prestianni",
-      "nameZh": "Gianluca Prestianni",
+      "nameZh": "詹卢卡·普雷斯蒂安尼",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "2006-01-31",
@@ -137,7 +137,7 @@
     },
     {
       "name": "Maximo Perrone",
-      "nameZh": "Maximo Perrone",
+      "nameZh": "马克西莫·佩罗内",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2003-01-07",
@@ -149,7 +149,7 @@
     },
     {
       "name": "Giuliano Simeone",
-      "nameZh": "Giuliano Simeone",
+      "nameZh": "朱利亚诺·西蒙尼",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "2002-12-18",
@@ -161,7 +161,7 @@
     },
     {
       "name": "Valentin Barco",
-      "nameZh": "Valentin Barco",
+      "nameZh": "瓦伦汀·巴尔科",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "2004-07-23",
@@ -173,7 +173,7 @@
     },
     {
       "name": "Lucas Martínez Quarta",
-      "nameZh": "Lucas Martínez Quarta",
+      "nameZh": "卢卡斯·马丁内斯·夸尔塔",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1996-05-10",
@@ -185,7 +185,7 @@
     },
     {
       "name": "Tiago Palacios",
-      "nameZh": "Tiago Palacios",
+      "nameZh": "蒂亚戈·帕拉西奥斯",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "2003-04-28",
@@ -197,7 +197,7 @@
     },
     {
       "name": "Enzo Fernández",
-      "nameZh": "Enzo Fernández",
+      "nameZh": "恩佐·费尔南德斯",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "2001-01-17",
@@ -221,7 +221,7 @@
     },
     {
       "name": "Thiago Almada",
-      "nameZh": "Thiago Almada",
+      "nameZh": "蒂亚戈·阿尔马达",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2001-04-26",
@@ -233,7 +233,7 @@
     },
     {
       "name": "Nahuel Molina",
-      "nameZh": "Nahuel Molina",
+      "nameZh": "纳韦尔·莫利纳",
       "position": "Right-Back",
       "positionZh": "Right-Back",
       "dateOfBirth": "1998-04-06",
@@ -245,7 +245,7 @@
     },
     {
       "name": "Marcos Senesi",
-      "nameZh": "Marcos Senesi",
+      "nameZh": "马科斯·塞内西",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1997-05-10",
@@ -257,7 +257,7 @@
     },
     {
       "name": "Christian Romero",
-      "nameZh": "Christian Romero",
+      "nameZh": "克里斯蒂安·罗梅罗",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1998-04-27",
@@ -266,7 +266,7 @@
     },
     {
       "name": "Alexis Mac Allister",
-      "nameZh": "Alexis Mac Allister",
+      "nameZh": "阿莱克西斯·麦卡利斯特",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1998-12-24",
@@ -278,7 +278,7 @@
     },
     {
       "name": "Nicolás González",
-      "nameZh": "Nicolás González",
+      "nameZh": "尼古拉斯·冈萨雷斯",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "1998-04-06",
@@ -290,7 +290,7 @@
     },
     {
       "name": "Exequiel Palacios",
-      "nameZh": "Exequiel Palacios",
+      "nameZh": "埃塞基耶尔·帕拉西奥斯",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1998-10-05",
@@ -302,7 +302,7 @@
     },
     {
       "name": "Leandro Paredes",
-      "nameZh": "Leandro Paredes",
+      "nameZh": "莱安德罗·帕雷德斯",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1994-06-29",
@@ -314,7 +314,7 @@
     },
     {
       "name": "Marcos Acuña",
-      "nameZh": "Marcos Acuña",
+      "nameZh": "马科斯·阿库尼亚",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "1991-10-28",
@@ -326,7 +326,7 @@
     },
     {
       "name": "Nicolás Tagliafico",
-      "nameZh": "Nicolás Tagliafico",
+      "nameZh": "尼古拉斯·塔利亚菲科",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "1992-08-31",
@@ -338,7 +338,7 @@
     },
     {
       "name": "Nicolás Otamendi",
-      "nameZh": "Nicolás Otamendi",
+      "nameZh": "尼古拉斯·奥塔门迪",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1988-02-12",
@@ -350,7 +350,7 @@
     },
     {
       "name": "Rodrigo de Paul",
-      "nameZh": "Rodrigo de Paul",
+      "nameZh": "罗德里戈·德保罗",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1994-05-24",

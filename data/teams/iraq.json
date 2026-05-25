@@ -5,11 +5,11 @@
   "code": "iq",
   "group": "",
   "confederation": "",
-  "fifaRank": null,
+  "fifaRank": 50,
   "flag": "https://flagcdn.com/w80/iq.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Jesús Casas",
+    "nameZh": "赫苏斯·卡萨斯",
     "nationality": ""
   },
   "founded": 1948,

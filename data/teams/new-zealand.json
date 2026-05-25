@@ -5,11 +5,11 @@
   "code": "nz",
   "group": "C",
   "confederation": "OFC",
-  "fifaRank": null,
+  "fifaRank": 42,
   "flag": "https://flagcdn.com/w80/nz.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Darren Bazeley",
+    "nameZh": "达伦·巴兹利",
     "nationality": ""
   },
   "founded": 1891,

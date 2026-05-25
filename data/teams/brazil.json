@@ -5,11 +5,11 @@
   "code": "br",
   "group": "B",
   "confederation": "CONMEBOL",
-  "fifaRank": null,
+  "fifaRank": 5,
   "flag": "https://flagcdn.com/w80/br.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Dorival Júnior",
+    "nameZh": "多里瓦尔·儒尼奥尔",
     "nationality": ""
   },
   "founded": 1914,
@@ -37,7 +37,7 @@
     },
     {
       "name": "Ederson",
-      "nameZh": "Ederson",
+      "nameZh": "埃德森",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1993-08-17",
@@ -49,7 +49,7 @@
     },
     {
       "name": "Roger Ibañez",
-      "nameZh": "Roger Ibañez",
+      "nameZh": "罗杰·伊巴涅斯",
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "1998-11-23",
@@ -61,7 +61,7 @@
     },
     {
       "name": "Douglas Santos",
-      "nameZh": "Douglas Santos",
+      "nameZh": "道格拉斯·桑托斯",
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "1994-03-22",
@@ -82,7 +82,7 @@
     },
     {
       "name": "Léo Pereira",
-      "nameZh": "Léo Pereira",
+      "nameZh": "莱奥·佩雷拉",
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "1996-01-31",
@@ -105,7 +105,7 @@
     },
     {
       "name": "Fabinho",
-      "nameZh": "Fabinho",
+      "nameZh": "法比尼奥",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "1993-10-23",
@@ -128,7 +128,7 @@
     },
     {
       "name": "Rayan",
-      "nameZh": "Rayan",
+      "nameZh": "拉扬",
       "position": "Offence",
       "positionZh": "前锋",
       "dateOfBirth": "2006-08-03",
@@ -140,7 +140,7 @@
     },
     {
       "name": "Endrick",
-      "nameZh": "Endrick",
+      "nameZh": "恩德里克",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2006-07-21",
@@ -152,7 +152,7 @@
     },
     {
       "name": "Danilo dos Santos de Oliveira",
-      "nameZh": "Danilo dos Santos de Oliveira",
+      "nameZh": "达尼洛·多斯桑托斯·德奥利韦拉",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2001-04-29",
@@ -161,7 +161,7 @@
     },
     {
       "name": "Luiz Henrique",
-      "nameZh": "Luiz Henrique",
+      "nameZh": "路易斯·恩里克",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "2001-01-02",
@@ -173,7 +173,7 @@
     },
     {
       "name": "Thiago",
-      "nameZh": "Thiago",
+      "nameZh": "蒂亚戈",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "2001-06-26",
@@ -185,7 +185,7 @@
     },
     {
       "name": "Martinelli",
-      "nameZh": "Martinelli",
+      "nameZh": "马丁内利",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "2001-06-18",
@@ -208,7 +208,7 @@
     },
     {
       "name": "Matheus Cunha",
-      "nameZh": "Matheus Cunha",
+      "nameZh": "马特乌斯·库尼亚",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1999-05-27",
@@ -220,7 +220,7 @@
     },
     {
       "name": "Casemiro",
-      "nameZh": "Casemiro",
+      "nameZh": "卡塞米罗",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1992-02-23",
@@ -232,7 +232,7 @@
     },
     {
       "name": "Marquinhos",
-      "nameZh": "Marquinhos",
+      "nameZh": "马尔基尼奥斯",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1994-05-14",
@@ -266,7 +266,7 @@
     },
     {
       "name": "Vinicius Junior",
-      "nameZh": "Vinicius Junior",
+      "nameZh": "维尼修斯·儒尼奥尔",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "2000-07-12",
@@ -289,7 +289,7 @@
     },
     {
       "name": "Bremer",
-      "nameZh": "Bremer",
+      "nameZh": "布雷默",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1997-03-18",

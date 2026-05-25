@@ -5,11 +5,11 @@
   "code": "tr",
   "group": "L",
   "confederation": "UEFA",
-  "fifaRank": null,
+  "fifaRank": 19,
   "flag": "https://flagcdn.com/w80/tr.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Vincenzo Montella",
+    "nameZh": "文森佐·蒙特拉",
     "nationality": ""
   },
   "founded": 1923,

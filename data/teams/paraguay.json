@@ -5,11 +5,11 @@
   "code": "py",
   "group": "D",
   "confederation": "CONMEBOL",
-  "fifaRank": null,
+  "fifaRank": 39,
   "flag": "https://flagcdn.com/w80/py.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Alfaro Moreno",
+    "nameZh": "阿尔法罗·莫雷诺",
     "nationality": ""
   },
   "founded": 1906,

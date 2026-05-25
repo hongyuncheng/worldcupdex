@@ -5,11 +5,11 @@
   "code": "eg",
   "group": "",
   "confederation": "",
-  "fifaRank": null,
+  "fifaRank": 35,
   "flag": "https://flagcdn.com/w80/eg.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Hossam Hassan",
+    "nameZh": "侯赛姆·哈桑",
     "nationality": ""
   },
   "founded": 1921,

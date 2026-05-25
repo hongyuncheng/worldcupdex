@@ -5,11 +5,11 @@
   "code": "kr",
   "group": "J",
   "confederation": "AFC",
-  "fifaRank": null,
+  "fifaRank": 21,
   "flag": "https://flagcdn.com/w80/kr.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Hong Myung-bo",
+    "nameZh": "洪明甫",
     "nationality": ""
   },
   "founded": 1928,
@@ -122,7 +122,7 @@
     },
     {
       "name": "In-beom Hwang",
-      "nameZh": "In-beom Hwang",
+      "nameZh": "黄仁范",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "1996-09-20",
@@ -215,7 +215,7 @@
     },
     {
       "name": "Gue-Sung Cho",
-      "nameZh": "Gue-Sung Cho",
+      "nameZh": "赵圭成",
       "position": "Offence",
       "positionZh": "前锋",
       "dateOfBirth": "1998-01-25",
@@ -257,7 +257,7 @@
     },
     {
       "name": "Heung-min Son",
-      "nameZh": "Heung-min Son",
+      "nameZh": "孙兴慜",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "1992-07-08",
@@ -269,7 +269,7 @@
     },
     {
       "name": "Min-Jae Kim",
-      "nameZh": "Min-Jae Kim",
+      "nameZh": "金玟哉",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1996-11-15",
@@ -290,7 +290,7 @@
     },
     {
       "name": "Hwang Heechan",
-      "nameZh": "Hwang Heechan",
+      "nameZh": "黄喜灿",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1996-01-26",

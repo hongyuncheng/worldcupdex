@@ -5,11 +5,11 @@
   "code": "dz",
   "group": "",
   "confederation": "",
-  "fifaRank": null,
+  "fifaRank": 33,
   "flag": "https://flagcdn.com/w80/dz.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Vladimir Petković",
+    "nameZh": "弗拉迪米尔·佩特科维奇",
     "nationality": ""
   },
   "founded": 1962,

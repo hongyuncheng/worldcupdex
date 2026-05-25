@@ -5,11 +5,11 @@
   "code": "de",
   "group": "E",
   "confederation": "UEFA",
-  "fifaRank": null,
+  "fifaRank": 10,
   "flag": "https://flagcdn.com/w80/de.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Julian Nagelsmann",
+    "nameZh": "尤利安·纳格尔斯曼",
     "nationality": ""
   },
   "founded": 1900,
@@ -17,7 +17,7 @@
   "squad": [
     {
       "name": "Oliver Baumann",
-      "nameZh": "Oliver Baumann",
+      "nameZh": "奥利弗·鲍曼",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1990-06-02",
@@ -40,7 +40,7 @@
     },
     {
       "name": "Alexander Nübel",
-      "nameZh": "Alexander Nübel",
+      "nameZh": "亚历山大·尼贝尔",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1996-09-30",
@@ -52,7 +52,7 @@
     },
     {
       "name": "Lennart Karl",
-      "nameZh": "Lennart Karl",
+      "nameZh": "伦纳特·卡尔",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "2008-02-22",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Nick Woltemade",
-      "nameZh": "Nick Woltemade",
+      "nameZh": "尼克·沃尔特马德",
       "position": "Offence",
       "positionZh": "前锋",
       "dateOfBirth": "2002-02-14",
@@ -85,7 +85,7 @@
     },
     {
       "name": "Nathaniel Brown",
-      "nameZh": "Nathaniel Brown",
+      "nameZh": "纳撒尼尔·布朗",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "2003-06-16",
@@ -108,7 +108,7 @@
     },
     {
       "name": "Malick Thiaw",
-      "nameZh": "Malick Thiaw",
+      "nameZh": "马利克·蒂亚乌",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "2001-08-08",
@@ -129,7 +129,7 @@
     },
     {
       "name": "Angelo Stiller",
-      "nameZh": "Angelo Stiller",
+      "nameZh": "安格洛·施蒂勒",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2001-04-04",
@@ -161,7 +161,7 @@
     },
     {
       "name": "Nico Schlotterbeck",
-      "nameZh": "Nico Schlotterbeck",
+      "nameZh": "尼科·施洛特贝克",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1999-12-01",
@@ -185,7 +185,7 @@
     },
     {
       "name": "David Raum",
-      "nameZh": "David Raum",
+      "nameZh": "达维德·劳姆",
       "position": "Left-Back",
       "positionZh": "Left-Back",
       "dateOfBirth": "1998-04-22",
@@ -197,7 +197,7 @@
     },
     {
       "name": "Pascal Groß",
-      "nameZh": "Pascal Groß",
+      "nameZh": "帕斯卡尔·格罗斯",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1991-06-15",
@@ -209,7 +209,7 @@
     },
     {
       "name": "Deniz Undav",
-      "nameZh": "Deniz Undav",
+      "nameZh": "德尼斯·温达夫",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1996-07-19",
@@ -221,7 +221,7 @@
     },
     {
       "name": "Leroy Sané",
-      "nameZh": "Leroy Sané",
+      "nameZh": "勒罗伊·萨内",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "1996-01-11",
@@ -233,7 +233,7 @@
     },
     {
       "name": "Leon Goretzka",
-      "nameZh": "Leon Goretzka",
+      "nameZh": "莱昂·格雷茨卡",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1995-02-06",
@@ -245,7 +245,7 @@
     },
     {
       "name": "Antonio Rüdiger",
-      "nameZh": "Antonio Rüdiger",
+      "nameZh": "安东尼奥·吕迪格",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1993-03-03",
@@ -257,7 +257,7 @@
     },
     {
       "name": "Waldemar Anton",
-      "nameZh": "Waldemar Anton",
+      "nameZh": "瓦尔德马尔·安东",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1996-07-20",
@@ -269,7 +269,7 @@
     },
     {
       "name": "Joshua Kimmich",
-      "nameZh": "Joshua Kimmich",
+      "nameZh": "约书亚·基米希",
       "position": "Right-Back",
       "positionZh": "Right-Back",
       "dateOfBirth": "1995-02-08",
@@ -292,7 +292,7 @@
     },
     {
       "name": "Kai Havertz",
-      "nameZh": "Kai Havertz",
+      "nameZh": "凯·哈弗茨",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1999-06-11",
@@ -304,7 +304,7 @@
     },
     {
       "name": "Jonathan Tah",
-      "nameZh": "Jonathan Tah",
+      "nameZh": "约纳坦·塔",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1996-02-11",

@@ -5,11 +5,11 @@
   "code": "be",
   "group": "J",
   "confederation": "UEFA",
-  "fifaRank": null,
+  "fifaRank": 8,
   "flag": "https://flagcdn.com/w80/be.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Domenico Tedesco",
+    "nameZh": "多梅尼科·特德斯科",
     "nationality": ""
   },
   "founded": 1895,
@@ -176,7 +176,7 @@
     },
     {
       "name": "Charles De Ketelaere",
-      "nameZh": "Charles De Ketelaere",
+      "nameZh": "夏尔·德凯特拉尔",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2001-03-10",
@@ -188,7 +188,7 @@
     },
     {
       "name": "Amadou Onana",
-      "nameZh": "Amadou Onana",
+      "nameZh": "阿马杜·奥纳纳",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "2001-08-16",
@@ -200,7 +200,7 @@
     },
     {
       "name": "Jeremy Doku",
-      "nameZh": "Jeremy Doku",
+      "nameZh": "杰雷米·多库",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "2002-05-27",
@@ -235,7 +235,7 @@
     },
     {
       "name": "Dodi Lukebakio",
-      "nameZh": "Dodi Lukebakio",
+      "nameZh": "多迪·卢克巴基奥",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "1997-09-24",
@@ -258,7 +258,7 @@
     },
     {
       "name": "Youri Tielemans",
-      "nameZh": "Youri Tielemans",
+      "nameZh": "尤里·蒂勒曼斯",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "1997-05-07",
@@ -270,7 +270,7 @@
     },
     {
       "name": "Axel Witsel",
-      "nameZh": "Axel Witsel",
+      "nameZh": "阿克塞尔·维特塞尔",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1989-01-12",

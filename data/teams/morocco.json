@@ -5,11 +5,11 @@
   "code": "ma",
   "group": "F",
   "confederation": "CAF",
-  "fifaRank": null,
+  "fifaRank": 14,
   "flag": "https://flagcdn.com/w80/ma.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Walid Regragui",
+    "nameZh": "瓦利德·雷格拉吉",
     "nationality": ""
   },
   "founded": 1955,
@@ -17,7 +17,7 @@
   "squad": [
     {
       "name": "Yassine Bounou",
-      "nameZh": "Yassine Bounou",
+      "nameZh": "亚辛·布努",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1991-04-05",
@@ -180,7 +180,7 @@
     },
     {
       "name": "Bilal El Khannouss",
-      "nameZh": "Bilal El Khannouss",
+      "nameZh": "比拉尔·埃尔汉努斯",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "2005-05-09",
@@ -284,7 +284,7 @@
     },
     {
       "name": "Azzedine Ounahi",
-      "nameZh": "Azzedine Ounahi",
+      "nameZh": "阿泽丁·乌纳伊",
       "position": "Central Midfield",
       "positionZh": "Central Midfield",
       "dateOfBirth": "2000-04-19",
@@ -308,7 +308,7 @@
     },
     {
       "name": "Brahim Diaz",
-      "nameZh": "Brahim Diaz",
+      "nameZh": "布拉欣·迪亚斯",
       "position": "Right Winger",
       "positionZh": "Right Winger",
       "dateOfBirth": "1999-08-03",
@@ -317,7 +317,7 @@
     },
     {
       "name": "Noussair Mazraoui",
-      "nameZh": "Noussair Mazraoui",
+      "nameZh": "努赛尔·马兹拉维",
       "position": "Right-Back",
       "positionZh": "Right-Back",
       "dateOfBirth": "1997-11-14",

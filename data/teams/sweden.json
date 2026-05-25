@@ -5,11 +5,11 @@
   "code": "se",
   "group": "",
   "confederation": "",
-  "fifaRank": null,
+  "fifaRank": 23,
   "flag": "https://flagcdn.com/w80/se.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Jon Dahl Tomasson",
+    "nameZh": "约翰·达尔·托马森",
     "nationality": ""
   },
   "founded": 1904,

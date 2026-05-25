@@ -5,11 +5,11 @@
   "code": "co",
   "group": "A",
   "confederation": "CONMEBOL",
-  "fifaRank": null,
+  "fifaRank": 12,
   "flag": "https://flagcdn.com/w80/co.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Néstor Lorenzo",
+    "nameZh": "内斯托尔·洛伦佐",
     "nationality": ""
   },
   "founded": 1924,
@@ -29,7 +29,7 @@
     },
     {
       "name": "David Ospina",
-      "nameZh": "David Ospina",
+      "nameZh": "大卫·奥斯皮纳",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1988-08-31",
@@ -65,7 +65,7 @@
     },
     {
       "name": "Juan Fernando Quintero",
-      "nameZh": "Juan Fernando Quintero",
+      "nameZh": "胡安·费尔南多·金特罗",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "1993-01-18",
@@ -218,7 +218,7 @@
     },
     {
       "name": "Luis Díaz",
-      "nameZh": "Luis Díaz",
+      "nameZh": "路易斯·迪亚斯",
       "position": "Left Winger",
       "positionZh": "Left Winger",
       "dateOfBirth": "1997-01-13",
@@ -254,7 +254,7 @@
     },
     {
       "name": "Rafael Borré",
-      "nameZh": "Rafael Borré",
+      "nameZh": "拉斐尔·博雷",
       "position": "Centre-Forward",
       "positionZh": "Centre-Forward",
       "dateOfBirth": "1995-09-15",
@@ -278,7 +278,7 @@
     },
     {
       "name": "Jefferson Lerma",
-      "nameZh": "Jefferson Lerma",
+      "nameZh": "杰弗森·莱尔马",
       "position": "Defensive Midfield",
       "positionZh": "Defensive Midfield",
       "dateOfBirth": "1994-10-25",
@@ -290,7 +290,7 @@
     },
     {
       "name": "Davinson Sánchez",
-      "nameZh": "Davinson Sánchez",
+      "nameZh": "达文森·桑切斯",
       "position": "Centre-Back",
       "positionZh": "Centre-Back",
       "dateOfBirth": "1996-06-12",
@@ -314,7 +314,7 @@
     },
     {
       "name": "James Rodríguez",
-      "nameZh": "James Rodríguez",
+      "nameZh": "哈梅斯·罗德里格斯",
       "position": "Attacking Midfield",
       "positionZh": "Attacking Midfield",
       "dateOfBirth": "1991-07-12",

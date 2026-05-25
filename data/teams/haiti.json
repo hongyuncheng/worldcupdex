@@ -5,11 +5,11 @@
   "code": "ht",
   "group": "",
   "confederation": "",
-  "fifaRank": null,
+  "fifaRank": 52,
   "flag": "https://flagcdn.com/w80/ht.png",
   "coach": {
-    "nameEn": "",
-    "nameZh": null,
+    "nameEn": "Nicolas Pépé",
+    "nameZh": "尼古拉斯·佩佩",
     "nationality": ""
   },
   "founded": 1904,
