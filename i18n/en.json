@@ -545,7 +545,7 @@
     "buyJersey": "Buy {team} Official Jersey",
     "supportTeam": "Support your team, wear the official jersey",
     "themeSwitcherTitle": "🎨 Personalization",
-    "switchBg": "Switch Background ({current}/3)"
+    "switchBg": "Switch Background ({current}/{max})"
   },
   "blog": {
     "listTitle": "WorldCupDex Blog",

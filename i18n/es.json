@@ -337,7 +337,7 @@
       "themeGraffiti": "Graffiti Callejero",
       "themeMinimalist": "Plano Limpio",
       "themeGlasswind": "Efecto Vidrio",
-      "switchBg": "Cambiar Fondo ({current}/5)",
+      "switchBg": "Cambiar Fondo ({current}/{max})",
       "verifying": "Verificando tu acción...",
       "verifyingDesc": "Por favor espera, desbloqueando tus funciones premium"
     }

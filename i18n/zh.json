@@ -538,7 +538,7 @@
     "buyJersey": "购买 {team} 官方球衣",
     "supportTeam": "支持你的球队，穿上官方球衣",
     "themeSwitcherTitle": "🎨 个性化定制",
-    "switchBg": "切换背景图 ({current}/3)"
+    "switchBg": "切换背景图 ({current}/{max})"
   },
   "blog": {
     "listTitle": "WorldCupDex 博客",

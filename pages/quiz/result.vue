@@ -49,13 +49,45 @@ const isPremiumUnlocked = computed(() => hasUnlockedPremium.value)
 const currentTheme = ref<'stadium' | 'cyberpunk' | 'glory-gold'>('stadium')
 const currentPremiumBg = ref(1)
 
+// 动态获取各主题拥有的图片数量 (通过 Vite 的 import.meta.glob 在构建时/开发时扫描 public 目录)
+const themeBgCounts = ref<Record<string, number>>({
+  'stadium': 2,
+  'cyberpunk': 2,
+  'glory-gold': 2
+})
+
+// 使用 import.meta.glob 扫描 public/images/quiz 下的所有 .webp 文件
+const webpFiles = import.meta.glob('/public/images/quiz/**/*.webp', { eager: true, query: '?url' })
+
+// 统计各主题文件夹下的文件数量
+const counts: Record<string, number> = {
+  'stadium': 0,
+  'cyberpunk': 0,
+  'glory-gold': 0
+}
+
+Object.keys(webpFiles).forEach(path => {
+  if (path.includes('/Stadium/')) counts['stadium']++
+  if (path.includes('/Cyberpunk/')) counts['cyberpunk']++
+  if (path.includes('/GloryGold/')) counts['glory-gold']++
+})
+
+// 使用实际统计到的数量，如果为 0，则保底显示 1
+themeBgCounts.value = {
+  'stadium': Math.max(1, counts['stadium']),
+  'cyberpunk': Math.max(1, counts['cyberpunk']),
+  'glory-gold': Math.max(1, counts['glory-gold'])
+}
+
+const currentThemeMaxBg = computed(() => themeBgCounts.value[currentTheme.value] || 2)
+
 function setPremiumTheme(theme: 'stadium' | 'cyberpunk' | 'glory-gold') {
   currentTheme.value = theme
   currentPremiumBg.value = 1
 }
 
 function cyclePremiumBg() {
-  currentPremiumBg.value = currentPremiumBg.value >= 2 ? 1 : currentPremiumBg.value + 1
+  currentPremiumBg.value = currentPremiumBg.value >= currentThemeMaxBg.value ? 1 : currentPremiumBg.value + 1
 }
 
 const previewBgPath = computed(() => {
@@ -343,7 +375,7 @@ onMounted(() => {
           
           <button class="w-full py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl flex items-center justify-center gap-2 text-sm font-bold text-[#FFD700] transition-colors" @click="cyclePremiumBg">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2 2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-            <span>{{ t('fanCard.switchBg', { current: currentPremiumBg }) || `Switch Background (${currentPremiumBg} / 2)` }}</span>
+            <span>{{ t('fanCard.switchBg', { current: currentPremiumBg, max: currentThemeMaxBg }) || `Switch Background (${currentPremiumBg} / ${currentThemeMaxBg})` }}</span>
           </button>
         </div>
       </div>
@@ -508,9 +540,9 @@ onMounted(() => {
   inset: 0;
   background: linear-gradient(
     to bottom,
-    rgba(10, 14, 42, 0.1) 0%,
-    rgba(10, 14, 42, 0.3) 40%,
-    rgba(10, 14, 42, 0.95) 100%
+    rgba(10, 14, 42, 0.0) 0%,
+    rgba(10, 14, 42, 0.15) 40%,
+    rgba(10, 14, 42, 0.8) 100%
   );
 }
 .qr-card__body {
@@ -578,11 +610,11 @@ onMounted(() => {
 /* ===== Glass Data Panel ===== */
 .qr-data-panel {
   width: 100%;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.08) 100%);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.02) 100%);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 24px;
   padding: 28px 20px;
   display: flex;
@@ -590,7 +622,7 @@ onMounted(() => {
   align-items: center;
   margin-top: auto;
   margin-bottom: 24px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255,255,255,0.1);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255,255,255,0.15);
 }
 
 /* ===== Badge ===== */

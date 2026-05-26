@@ -357,7 +357,7 @@ function handleRealShare(platform: 'twitter' | 'facebook' | 'copy') {
             
             <button class="w-full py-3 bg-white/10 hover:bg-white/20 border border-white/20 rounded-xl flex items-center justify-center gap-2 text-sm font-bold text-[#FFD700] transition-colors" @click="cyclePremiumBg">
               <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-              <span>{{ t('fanCard.switchBg', { current: currentPremiumBg }) || `Switch Background (${currentPremiumBg} / 3)` }}</span>
+              <span>{{ t('fanCard.switchBg', { current: currentPremiumBg, max: 3 }) || `Switch Background (${currentPremiumBg} / 3)` }}</span>
             </button>
           </div>
         </div>
