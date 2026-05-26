@@ -1,7 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /api/
-Disallow: /_nuxt/
 
 # 禁止爬取原始数据
 Disallow: /data/
