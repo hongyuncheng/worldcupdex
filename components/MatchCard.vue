@@ -49,16 +49,16 @@
         {{ $t('home.predictAi') }}
       </button>
     </div>
-    <!-- Find Tickets button (Skimlinks will monetize this automatically) -->
+    <!-- General Affiliate Placeholder -->
     <div class="px-3 pb-3">
       <a
-        :href="`https://www.stubhub.com/search?q=World+Cup+2026+${team1NameEn}+${team2NameEn}`"
+        href="/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
         target="_blank"
-        rel="nofollow noopener"
+        rel="nofollow sponsored noopener"
         class="btn btn-xs w-full h-8 min-h-0 border border-gray-200 bg-white text-gray-700 hover:bg-gray-50 hover:border-gray-300 font-bold no-underline shadow-sm text-xs px-2 flex items-center justify-center gap-1.5 transition-colors"
         style="border-radius: 8px;"
       >
-        🎟️ Find Tickets
+        📺 Watch Party Gear
       </a>
     </div>
   </div>

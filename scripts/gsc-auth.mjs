@@ -59,6 +59,9 @@ function buildAuthUrl() {
 }
 
 // ============ 交换 Token ============
+import { HttpProxyAgent } from 'http-proxy-agent';
+import { HttpsProxyAgent } from 'https-proxy-agent';
+import fetch from 'node-fetch';
 
 async function exchangeCodeForTokens(code) {
   const body = new URLSearchParams({
@@ -69,10 +72,14 @@ async function exchangeCodeForTokens(code) {
     grant_type: 'authorization_code',
   });
 
+  const proxyUrl = process.env.HTTPS_PROXY || process.env.HTTP_PROXY || process.env.https_proxy || process.env.http_proxy || 'http://127.0.0.1:10809';
+  const agent = proxyUrl ? new HttpsProxyAgent(proxyUrl) : undefined;
+
   const resp = await fetch(TOKEN_URL, {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: body.toString(),
+    agent,
   });
 
   if (!resp.ok) {

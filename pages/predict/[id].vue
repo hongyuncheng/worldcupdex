@@ -697,6 +697,25 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
           />
         </div>
 
+        <!-- Fanatics Affiliate Placeholder -->
+        <div
+          class="max-w-md mx-auto text-center p-6 rounded-2xl mb-8"
+          style="background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.08);"
+        >
+          <p class="text-gray-600 text-sm mb-3" style="font-family: 'Inter', sans-serif;">
+            {{ t('fanCard.supportTeam') }}
+          </p>
+          <a
+            :href="`/api/track-affiliate?teamId=${match.homeTeam.id}&partner=Amazon&productName=Buy+Jersey`"
+            target="_blank"
+            rel="nofollow sponsored noopener"
+            class="inline-block px-6 py-2.5 rounded-xl text-[#000F49] font-bold text-sm transition-all hover:scale-105"
+            style="background: #FFD700; font-family: 'Montserrat', sans-serif; box-shadow: 0 4px 15px rgba(255,215,0,0.3);"
+          >
+            {{ t('fanCard.buyJersey', { team: getTeamName(match.homeTeam) }) }}
+          </a>
+        </div>
+
         <!-- External Cta 广告组件 -->
         <KickiqCta source="quiz_result" class="my-6" />
 

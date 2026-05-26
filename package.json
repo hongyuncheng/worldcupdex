@@ -38,7 +38,11 @@
     "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^25.8.0",
     "@vite-pwa/nuxt": "^1.1.1",
-    "dotenv": "^16.4.0",
-    "googleapis": "^144.0.0"
+    "dotenv": "^16.6.1",
+    "googleapis": "^144.0.0",
+    "http-proxy-agent": "^9.0.0",
+    "https-proxy-agent": "^9.0.0",
+    "node-fetch": "^3.3.2",
+    "undici": "^8.3.0"
   }
 }

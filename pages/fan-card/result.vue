@@ -421,7 +421,9 @@ function handleRealShare(platform: 'twitter' | 'facebook' | 'copy') {
             {{ t('fanCard.supportTeam') }}
           </p>
           <a
-            href="#"
+            :href="`/api/track-affiliate?teamId=${teamId}&partner=Amazon&productName=Buy+Jersey`"
+            target="_blank"
+            rel="nofollow sponsored noopener"
             class="inline-block px-6 py-2.5 rounded-xl text-[#000F49] font-bold text-sm transition-all hover:scale-105"
             style="background: #FFD700; font-family: 'Montserrat', sans-serif; box-shadow: 0 4px 15px rgba(255,215,0,0.3);"
           >

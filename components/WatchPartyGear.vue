@@ -12,33 +12,13 @@ interface AffiliateProduct {
   currency: string
 }
 
-interface Props {
-  teamId: string
-}
-
-const props = defineProps<Props>()
-
 const { locale, t } = useI18n()
 const { track } = useAnalytics()
 
 const products = computed<AffiliateProduct[]>(() => {
   const list = (affiliateProducts as unknown as Array<Partial<AffiliateProduct> & Record<string, unknown>>) || []
-  const teamProducts = list
-    .filter((p): p is AffiliateProduct => {
-      return typeof p?.teamId === 'string'
-        && p.teamId.length > 0
-        && p.teamId === props.teamId
-        && typeof p.productUrl === 'string'
-        && p.productUrl.length > 0
-    })
-
-  if (teamProducts.length > 0) {
-    return teamProducts
-  }
-
-  // Fallback to generic gear if the specific team doesn't have products configured
   return list.filter((p): p is AffiliateProduct => {
-    return p?.teamId === 'generic'
+    return p?.teamId === 'global'
       && typeof p.productUrl === 'string'
       && p.productUrl.length > 0
   })
@@ -69,60 +49,56 @@ function handleClick(p: AffiliateProduct): void {
     currency: p.currency,
     price: p.price,
   })
-  // 不阻止默认跳转，让 a 标签继续 302 中转
 }
 </script>
 
 <template>
-  <section v-if="products.length > 0" class="jersey-recommend">
-    <div class="bg-white rounded-xl p-6 mt-6" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+  <section v-if="products.length > 0" class="watch-party-gear">
+    <div class="bg-white rounded-xl p-6" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
       <!-- Header -->
       <div class="flex items-start justify-between gap-4 mb-5 flex-wrap">
         <div>
           <h3 class="font-bold flex items-center gap-2" style="font-family: 'Montserrat', sans-serif; font-size: 18px; color: #000F49;">
-            <span style="font-size: 22px;">👕</span>
-            {{ t('affiliate.jerseyTitle') }}
+            <span style="font-size: 22px;">📺</span>
+            Watch Party Essentials
           </h3>
-          <p class="text-sm mt-1" style="color: #666;">{{ t('affiliate.jerseySubtitle') }}</p>
+          <p class="text-sm mt-1" style="color: #666;">Level up your game day experience</p>
         </div>
         <span class="badge badge-warning badge-sm font-semibold uppercase tracking-wider">
-          {{ t('affiliate.sponsored') }}
+          Sponsored
         </span>
       </div>
 
       <!-- Products grid -->
-      <div class="jersey-grid">
+      <div class="gear-grid">
         <a
           v-for="(p, idx) in products"
-          :key="`${p.teamId}-${idx}-${p.productName}`"
+          :key="`global-${idx}-${p.productName}`"
           :href="buildTrackUrl(p)"
           target="_blank"
           rel="nofollow sponsored noopener"
-          class="jersey-card group block"
+          class="gear-card group block"
           @click="handleClick(p)"
         >
-          <div class="jersey-card__inner">
+          <div class="gear-card__inner">
             <!-- Image -->
-            <div class="jersey-card__img-wrap">
+            <div class="gear-card__img-wrap">
               <img
                 :src="p.imgUrl"
                 :alt="p.productName"
-                class="jersey-card__img"
+                class="gear-card__img"
                 loading="lazy"
                 decoding="async"
               />
-              <span class="jersey-card__badge badge badge-warning badge-sm">
-                {{ t('affiliate.sponsored') }}
-              </span>
             </div>
             <!-- Body -->
-            <div class="jersey-card__body">
-              <div class="jersey-card__partner">{{ p.partner }}</div>
-              <div class="jersey-card__name" :title="p.productName">{{ p.productName }}</div>
-              <div class="jersey-card__footer">
-                <span class="jersey-card__price">{{ formatPrice(p.price, p.currency) }}</span>
-                <span class="btn btn-primary btn-sm jersey-card__btn">
-                  {{ t('affiliate.viewProduct') }} →
+            <div class="gear-card__body">
+              <div class="gear-card__partner">{{ p.partner }}</div>
+              <div class="gear-card__name" :title="p.productName">{{ p.productName }}</div>
+              <div class="gear-card__footer">
+                <span class="gear-card__price">{{ formatPrice(p.price, p.currency) }}</span>
+                <span class="btn btn-primary btn-sm gear-card__btn">
+                  View →
                 </span>
               </div>
             </div>
@@ -131,7 +107,7 @@ function handleClick(p: AffiliateProduct): void {
       </div>
 
       <!-- Disclosure (Amazon Mandatory) -->
-      <p class="jersey-disclosure">
+      <p class="gear-disclosure">
         {{ t('affiliate.disclosure') }} <br />
         As an Amazon Associate I earn from qualifying purchases.
       </p>
@@ -140,29 +116,29 @@ function handleClick(p: AffiliateProduct): void {
 </template>
 
 <style scoped>
-.jersey-recommend {
+.watch-party-gear {
   width: 100%;
 }
 
-.jersey-grid {
+.gear-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
 }
 
 @media (min-width: 640px) {
-  .jersey-grid {
+  .gear-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
-  .jersey-grid {
+  .gear-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-.jersey-card {
+.gear-card {
   text-decoration: none;
   color: inherit;
   border-radius: 14px;
@@ -173,19 +149,19 @@ function handleClick(p: AffiliateProduct): void {
   display: block;
 }
 
-.jersey-card:hover {
+.gear-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(0, 15, 73, 0.10);
   border-color: #e0e6f2;
 }
 
-.jersey-card__inner {
+.gear-card__inner {
   display: flex;
   flex-direction: column;
   height: 100%;
 }
 
-.jersey-card__img-wrap {
+.gear-card__img-wrap {
   position: relative;
   aspect-ratio: 1 / 1;
   background: #ffffff;
@@ -196,23 +172,13 @@ function handleClick(p: AffiliateProduct): void {
   padding: 12px;
 }
 
-.jersey-card__img {
+.gear-card__img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.jersey-card__badge {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-
-.jersey-card__body {
+.gear-card__body {
   padding: 12px 14px 14px;
   display: flex;
   flex-direction: column;
@@ -220,7 +186,7 @@ function handleClick(p: AffiliateProduct): void {
   flex: 1;
 }
 
-.jersey-card__partner {
+.gear-card__partner {
   font-size: 11px;
   font-weight: 700;
   color: #888;
@@ -228,7 +194,7 @@ function handleClick(p: AffiliateProduct): void {
   text-transform: uppercase;
 }
 
-.jersey-card__name {
+.gear-card__name {
   font-size: 14px;
   color: #1f2937;
   font-weight: 600;
@@ -240,7 +206,7 @@ function handleClick(p: AffiliateProduct): void {
   min-height: 38px;
 }
 
-.jersey-card__footer {
+.gear-card__footer {
   margin-top: auto;
   display: flex;
   align-items: center;
@@ -249,14 +215,14 @@ function handleClick(p: AffiliateProduct): void {
   padding-top: 8px;
 }
 
-.jersey-card__price {
+.gear-card__price {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 16px;
   color: #000F49;
 }
 
-.jersey-card__btn {
+.gear-card__btn {
   border-radius: 999px;
   background: #000F49;
   border-color: #000F49;
@@ -268,12 +234,12 @@ function handleClick(p: AffiliateProduct): void {
   padding: 0 12px;
 }
 
-.jersey-card__btn:hover {
+.gear-card__btn:hover {
   background: #1A237E;
   border-color: #1A237E;
 }
 
-.jersey-disclosure {
+.gear-disclosure {
   margin-top: 18px;
   font-size: 11px;
   line-height: 1.55;

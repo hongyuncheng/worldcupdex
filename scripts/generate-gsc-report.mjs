@@ -17,24 +17,34 @@ import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { mkdirSync, writeFileSync } from 'fs';
 import { google } from 'googleapis';
+import { HttpsProxyAgent } from 'https-proxy-agent';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 config({ path: resolve(__dirname, '.env') });
+
+const proxyUrl = process.env.HTTPS_PROXY || process.env.HTTP_PROXY || process.env.https_proxy || process.env.http_proxy || 'http://127.0.0.1:10809';
+const agent = proxyUrl ? new HttpsProxyAgent(proxyUrl) : undefined;
+if (agent) {
+  google.options({
+    agent: agent
+  });
+}
 
 const {
   GSC_CLIENT_ID,
   GSC_CLIENT_SECRET,
   GSC_REFRESH_TOKEN,
+  GSC_ACCESS_TOKEN,
   GSC_SITE_URL = 'sc-domain:worldcupdex.org',
 } = process.env;
 
 // ============ 环境变量校验 ============
 
-if (!GSC_CLIENT_ID || !GSC_CLIENT_SECRET || !GSC_REFRESH_TOKEN) {
+if (!GSC_CLIENT_ID || !GSC_CLIENT_SECRET || (!GSC_REFRESH_TOKEN && !GSC_ACCESS_TOKEN)) {
   console.error('❌ 缺少必要的环境变量：');
   if (!GSC_CLIENT_ID) console.error('   - GSC_CLIENT_ID');
   if (!GSC_CLIENT_SECRET) console.error('   - GSC_CLIENT_SECRET');
-  if (!GSC_REFRESH_TOKEN) console.error('   - GSC_REFRESH_TOKEN（请先运行 gsc-auth.mjs 获取）');
+  if (!GSC_REFRESH_TOKEN && !GSC_ACCESS_TOKEN) console.error('   - GSC_REFRESH_TOKEN 或 GSC_ACCESS_TOKEN（请先运行 gsc-auth.mjs 获取）');
   console.error('\n   请检查 scripts/.env 文件');
   process.exit(1);
 }
@@ -104,7 +114,11 @@ function createAuthClient() {
     GSC_CLIENT_ID,
     GSC_CLIENT_SECRET,
   );
-  oauth2Client.setCredentials({ refresh_token: GSC_REFRESH_TOKEN });
+  if (GSC_REFRESH_TOKEN) {
+    oauth2Client.setCredentials({ refresh_token: GSC_REFRESH_TOKEN });
+  } else if (GSC_ACCESS_TOKEN) {
+    oauth2Client.setCredentials({ access_token: GSC_ACCESS_TOKEN });
+  }
   return oauth2Client;
 }
 

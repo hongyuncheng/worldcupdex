@@ -122,9 +122,11 @@
         >
           ⚽ {{ $t('teams.becomeFan', { team: locale === 'en' ? team.nameEn : team.nameZh }) }}
         </NuxtLinkLocale>
-        <!-- Fanatics Affiliate Placeholder -->
+        <!-- Amazon Affiliate Placeholder -->
         <a
-          href="#"
+          :href="`/api/track-affiliate?teamId=${team.id}&partner=Amazon&productName=Jersey`"
+          target="_blank"
+          rel="nofollow sponsored noopener"
           class="inline-flex items-center gap-2 font-semibold hover:opacity-90 transition-opacity"
           style="background: rgb(226 204 239); color: #000F49; font-family: 'Inter', sans-serif; font-size: 14px; border-radius: 8px; padding: 10px 20px;"
         >
