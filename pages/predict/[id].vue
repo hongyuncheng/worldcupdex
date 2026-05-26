@@ -9,6 +9,7 @@ const matchId = Number(route.params.id)
 useSeoConfig({
   title: `${t('predictDetail.title')} - WorldCupDex`,
   description: '预测世界杯单场比赛结果，生成专属预测卡片并分享。',
+  noindex: true,
 })
 
 // ─── 获取比赛数据 ───

@@ -15,6 +15,7 @@ useSeoConfig({
   title: `${t('fanCard.step3Title')} | WorldCupDex`,
   description: 'Create your own World Cup 2026 Fan Card and show your colors!',
   ogImage: '/og/fan-card.png',
+  noindex: true,
 })
 
 // ── 从 query 或 localStorage 读取参数 ──

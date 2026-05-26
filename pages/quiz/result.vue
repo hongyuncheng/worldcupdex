@@ -25,6 +25,7 @@ useSeoConfig({
   title: 'World Cup IQ Result | WorldCupDex',
   description: 'Take the WorldCupDex World Cup IQ Challenge and test your 2026 football knowledge!',
   ogImage: '/og/quiz-result.png',
+  noindex: true,
 })
 
 // 分享卡片 ref

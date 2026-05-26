@@ -7,6 +7,7 @@ export function useSeoConfig(options: {
   ogImage?: string | Ref<string> | ComputedRef<string>
   ogType?: string
   path?: string
+  noindex?: boolean
 }) {
   const { locale } = useI18n()
   const route = useRoute()
@@ -15,7 +16,7 @@ export function useSeoConfig(options: {
 
   // Strip any existing locale prefix from the path to get the "bare" path
   const currentPath = options.path || route.path
-  const barePath = currentPath.replace(/^\/(en|es)/, '') || '/'
+  const barePath = currentPath.replace(/^\/(zh|en|es)\b/, '') || '/'
 
   // Generate URLs for each locale
   const zhUrl = `${baseUrl}${barePath}`
@@ -33,25 +34,31 @@ export function useSeoConfig(options: {
   const titleComputed = computed(() => toValue(options.title))
   const descComputed = computed(() => toValue(options.description))
 
+  const metaTags: any[] = [
+    { name: 'description', content: descComputed },
+    // Open Graph
+    { property: 'og:title', content: titleComputed },
+    { property: 'og:description', content: descComputed },
+    { property: 'og:image', content: ogImageComputed },
+    { property: 'og:type', content: options.ogType || 'website' },
+    { property: 'og:url', content: canonicalUrl },
+    { property: 'og:site_name', content: 'WorldCupDex' },
+    { property: 'og:locale', content: computed(() => locale.value === 'en' ? 'en_US' : locale.value === 'es' ? 'es_ES' : 'zh_CN') },
+    // Twitter Card
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: titleComputed },
+    { name: 'twitter:description', content: descComputed },
+    { name: 'twitter:image', content: ogImageComputed },
+    { name: 'twitter:site', content: '@worldcupdex' },
+  ]
+
+  if (options.noindex) {
+    metaTags.push({ name: 'robots', content: 'noindex, nofollow' })
+  }
+
   useHead({
     title: titleComputed,
-    meta: [
-      { name: 'description', content: descComputed },
-      // Open Graph
-      { property: 'og:title', content: titleComputed },
-      { property: 'og:description', content: descComputed },
-      { property: 'og:image', content: ogImageComputed },
-      { property: 'og:type', content: options.ogType || 'website' },
-      { property: 'og:url', content: canonicalUrl },
-      { property: 'og:site_name', content: 'WorldCupDex' },
-      { property: 'og:locale', content: computed(() => locale.value === 'en' ? 'en_US' : locale.value === 'es' ? 'es_ES' : 'zh_CN') },
-      // Twitter Card
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: titleComputed },
-      { name: 'twitter:description', content: descComputed },
-      { name: 'twitter:image', content: ogImageComputed },
-      { name: 'twitter:site', content: '@worldcupdex' },
-    ],
+    meta: metaTags,
     link: [
       { rel: 'canonical', href: canonicalUrl },
       { rel: 'alternate', hreflang: 'zh', href: zhUrl },
@@ -72,7 +79,7 @@ export function useHreflang(path?: string) {
   const baseUrl = (runtimeConfig.public?.siteUrl as string) || 'https://worldcupdex.org'
 
   const currentPath = path || route.path
-  const barePath = currentPath.replace(/^\/(en|es)/, '') || '/'
+  const barePath = currentPath.replace(/^\/(zh|en|es)\b/, '') || '/'
 
   const zhUrl = `${baseUrl}${barePath}`
   const enUrl = `${baseUrl}/en${barePath === '/' ? '' : barePath}`
