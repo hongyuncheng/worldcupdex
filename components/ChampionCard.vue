@@ -12,13 +12,15 @@ const props = defineProps<{
   // Premium properties
   premiumBgImage?: string
   theme?: string
+  // 毒奶模式
+  isJinxMode?: boolean
 }>()
 
-const { t, locale } = useI18n()
+const { t, locale, tm, rt } = useI18n()
 
 // 提取 isPremium 供内部快捷使用
 const isPremium = computed(() => !!props.premiumBgImage)
-const currentTheme = computed(() => props.theme || 'graffiti')
+const currentTheme = computed(() => props.isJinxMode ? 'jinx' : (props.theme || 'graffiti'))
 
 // 获取球队配色
 const teamColors = computed(() => {
@@ -36,12 +38,25 @@ const displayTeamName = computed(() => {
 
 // 根据语言返回预测文案
 const predictionText = computed(() => {
+  if (props.isJinxMode) {
+    try {
+      const texts = tm('share.predictionTexts.jinxChampion') as string[]
+      if (Array.isArray(texts) && texts.length > 0) {
+        const idx = props.teamCode.charCodeAt(0)
+        const text = typeof texts[0] === 'string' ? texts[idx % texts.length] : rt(texts[idx % texts.length])
+        return { prefix: '', suffix: '', full: text.replace('{team}', displayTeamName.value) }
+      }
+    } catch (e) {
+      // fallback
+    }
+  }
+
   if (locale.value === 'zh') {
-    return { prefix: '我押 ', suffix: ' 夺冠！' }
+    return { prefix: '我押 ', suffix: ' 夺冠！', full: '' }
   } else if (locale.value === 'es') {
-    return { prefix: '¡Apuesto por ', suffix: ' para ser Campeón!' }
+    return { prefix: '¡Apuesto por ', suffix: ' para ser Campeón!', full: '' }
   } else {
-    return { prefix: 'I pick ', suffix: ' to be the Champion!' }
+    return { prefix: 'I pick ', suffix: ' to be the Champion!', full: '' }
   }
 })
 
@@ -437,6 +452,76 @@ const flagUrl = computed(() => {
         </footer>
       </div>
     </template>
+
+    <!-- ==================== 6. 毒奶版 (Jinx) ==================== -->
+    <template v-else-if="currentTheme === 'jinx'">
+      <div class="champion-card__premium-bg jinx-bg" aria-hidden="true" />
+      <div class="jinx-overlay"></div>
+
+      <!-- CSS 毒奶认证印章 -->
+      <div class="jinx-stamp">
+        <div class="stamp-inner">
+          <span class="stamp-text" v-if="locale === 'zh'">毒奶<br/>认证</span>
+          <span class="stamp-text" v-else-if="locale === 'es'">JINX<br/>CERT</span>
+          <span class="stamp-text" v-else>JINX<br/>CERT</span>
+        </div>
+      </div>
+
+      <div class="champion-card__content">
+        <!-- Header -->
+        <header class="jinx-header">
+          <span class="jinx-title">🔮 JINX PREDICTION</span>
+        </header>
+
+        <!-- 主体内容 -->
+        <div class="jinx-body">
+          <!-- 国旗 -->
+          <div class="jinx-flag-wrapper">
+            <img
+              :src="flagUrl"
+              :alt="teamNameEn"
+              class="jinx-flag-img"
+              crossorigin="anonymous"
+            >
+          </div>
+          <span class="jinx-team-name-badge">{{ teamNameEn }}</span>
+
+          <!-- 预测文案 -->
+          <div class="jinx-prediction">
+            <p class="jinx-prediction-main">
+              {{ predictionText.full || (predictionText.prefix + displayTeamName + predictionText.suffix) }}
+            </p>
+          </div>
+
+          <!-- 时间信息 -->
+          <div class="jinx-info">
+            <div class="jinx-info-item">
+              <svg class="jinx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" /></svg>
+              <div>
+                <p class="jinx-label">{{ $t('match.time') || '预测时间' }}</p>
+                <p class="jinx-value">{{ formattedDate }}</p>
+              </div>
+            </div>
+            <div class="jinx-info-item">
+              <svg class="jinx-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" /></svg>
+              <div>
+                <p class="jinx-label">{{ $t('champion.countdown') || '距开幕' }}</p>
+                <p class="jinx-value">{{ daysToGo }} {{ $t('champion.days') || '天' }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="jinx-footer">
+          <div class="premium-badge">
+            <span class="badge-icon">🔮</span>
+            <span class="badge-text">WorldCupDex Jinx Predictor</span>
+          </div>
+          <div class="domain-watermark">worldcupdex.org</div>
+        </footer>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -629,4 +714,39 @@ const flagUrl = computed(() => {
   .champion-card__meta { padding: 10px 14px; gap: 12px; }
   .champion-card__footer { margin: 0 -20px; }
 }
+
+/* ==================== 6. 毒奶版样式 (Jinx) - 强视觉冲击/梗图风格 ==================== */
+.layout-jinx { position: relative; height: 100%; display: flex; flex-direction: column; background-color: #090212; overflow: hidden; font-family: 'Montserrat', sans-serif; }
+.layout-jinx .jinx-bg { position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, #2a0845 0%, #090212 80%), repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(57, 255, 20, 0.05) 10px, rgba(57, 255, 20, 0.05) 20px); z-index: 0; }
+.layout-jinx .jinx-overlay { position: absolute; inset: 0; background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)"/></svg>'); opacity: 0.15; mix-blend-mode: overlay; pointer-events: none; z-index: 1; }
+
+/* 狂暴印章效果 */
+.layout-jinx .jinx-stamp { position: absolute; right: 0px; top: 140px; z-index: 10; transform: rotate(-25deg) scale(1.1); opacity: 0.95; pointer-events: none; }
+.layout-jinx .stamp-inner { width: 130px; height: 130px; border: 6px double #ff007c; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; box-shadow: 0 0 30px rgba(255, 0, 124, 0.6), inset 0 0 20px rgba(255, 0, 124, 0.5); background: rgba(255, 0, 124, 0.1); backdrop-filter: blur(2px); }
+.layout-jinx .stamp-inner::after { content: ''; position: absolute; inset: 6px; border: 3px dashed #ff007c; border-radius: 50%; }
+.layout-jinx .stamp-text { color: #ff007c; font-weight: 900; font-size: 28px; line-height: 1.1; text-align: center; font-family: 'Montserrat', 'PingFang SC', sans-serif; text-shadow: 2px 2px 0px #000, 0 0 10px rgba(255, 0, 124, 0.8); letter-spacing: 2px; }
+
+.jinx-header { display: flex; align-items: center; justify-content: center; margin-bottom: 24px; position: relative; z-index: 2; margin-top: 10px; }
+.jinx-title { color: #000; background: #39ff14; padding: 4px 16px; font-size: 18px; font-weight: 900; letter-spacing: 4px; box-shadow: 4px 4px 0 #ff007c; transform: skewX(-10deg); }
+
+.jinx-body { display: flex; flex-direction: column; align-items: center; gap: 16px; flex: 1; justify-content: center; position: relative; z-index: 2; }
+.jinx-flag-wrapper { width: 120px; height: 120px; border-radius: 12px; overflow: hidden; border: 4px solid #39ff14; box-shadow: -6px 6px 0 #ff007c; display: flex; align-items: center; justify-content: center; background: #000; filter: contrast(1.5) saturate(1.5) hue-rotate(-20deg); transform: rotate(3deg); }
+.jinx-flag-img { width: 100%; height: 100%; object-fit: cover; }
+.jinx-team-name-badge { color: #fff; font-size: 18px; font-weight: 900; text-align: center; margin-top: 4px; text-shadow: 2px 2px 0 #ff007c; background: #000; padding: 4px 12px; border-radius: 4px; border: 1px solid #39ff14; margin-bottom: 8px; transform: rotate(-2deg); }
+
+/* 垃圾话/预测文案：究极 Meme 字体（大白字 + 黑粗描边） */
+.jinx-prediction { background: transparent; border: none; border-radius: 0; margin: 0 0 16px; box-shadow: none; width: 100%; transform: none; }
+.jinx-prediction-main { font-family: 'Impact', 'Arial Black', 'PingFang SC', sans-serif; font-weight: 900; font-size: 24px; text-align: center; color: #fff; margin: 0 16px 12px; line-height: 1.2; position: relative; z-index: 2; -webkit-text-stroke: 1.5px #000; text-shadow: 3px 3px 0px #000, 0 0 15px #ff003c; transform: rotate(-2deg); text-transform: uppercase; display: flex; align-items: center; justify-content: center; min-height: 80px; }
+
+.jinx-info { background: #000; border: 2px dashed #ff007c; color: #fff; width: 100%; padding: 12px 16px; border-radius: 0; display: flex; gap: 12px; position: relative; z-index: 2; transform: rotate(-1deg); margin-bottom: 24px; }
+.jinx-info-item { display: flex; align-items: flex-start; gap: 8px; flex: 1; }
+.jinx-icon { width: 16px; height: 16px; color: #39ff14; flex-shrink: 0; margin-top: 2px; }
+.jinx-label { color: #ff007c; font-weight: 800; font-size: 10px; margin: 0 0 4px; text-transform: uppercase; letter-spacing: 1px; }
+.jinx-value { color: #fff; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; margin: 0; line-height: 1.4; }
+
+.jinx-footer { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; margin: auto -24px 0; padding: 16px 24px; background: #000; width: calc(100% + 48px); border-top: 4px solid #39ff14; position: relative; z-index: 2; }
+.layout-jinx .premium-badge { display: flex; align-items: center; gap: 8px; }
+.layout-jinx .badge-icon { font-size: 18px; filter: drop-shadow(0 0 5px #ff007c); }
+.layout-jinx .badge-text { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 900; color: #39ff14; letter-spacing: 2px; text-transform: uppercase; }
+.layout-jinx .domain-watermark { font-family: 'Montserrat', sans-serif; font-size: 10px; color: #ff007c; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; }
 </style>

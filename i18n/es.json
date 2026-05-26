@@ -398,7 +398,17 @@
         "¡Alerta de goleada! 🚨 ¡Predigo una victoria masiva para {team}!",
         "¡Dominio total! ¡{team} aplastará a su oponente! 😎"
       ],
-      "verified": "¡El adivino está aquí! ¡Predije con éxito {home} {score} {away}! 🎯 ¿Te atreves a probar tu precisión de predicción?"
+      "verified": "¡El profeta está aquí! ¡Logré acertar el marcador {home} {score} {away}! 🎯 ¿Te atreves a poner a prueba tu precisión?",
+      "jinxMatch": [
+        "¡Declaro unilateralmente que {team} ya aseguró la victoria! (Lanzando maldición 🪄)",
+        "¡Asegurado! ¡{team} absolutamente no puede perder esto, recuerden mis palabras! 🥛",
+        "¡Si {team} no gana esto, me comeré mi teclado ahora mismo! 🚩"
+      ],
+      "jinxChampion": [
+        "¡Felicidades a {team} por levantar el trofeo de la Copa del Mundo 2026 anticipadamente! (Poder Místico Oriental 🪄)",
+        "El campeonato ya le pertenece a {team}, ¡los demás equipos ya se pueden ir a casa! 🥛",
+        "He lanzado el hechizo, {team} definitivamente ganará este torneo, ¡nadie puede detenerlos! 🚩"
+      ]
     },
     "hashtags": "#WorldCup2026 #FIFA26"
   },

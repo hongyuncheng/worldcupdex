@@ -16,13 +16,15 @@ const props = defineProps<{
   // Premium 模式属性
   premiumBgImage?: string
   theme?: 'graffiti' | 'minimalist' | 'glasswind' | 'classic'
+  // 毒奶模式
+  isJinxMode?: boolean
 }>()
 
-const { t } = useI18n()
+const { t, tm, rt } = useI18n()
 
 // 提取 isPremium 供内部快捷使用
 const isPremium = computed(() => !!props.premiumBgImage)
-const currentTheme = computed(() => props.theme || 'graffiti')
+const currentTheme = computed(() => props.isJinxMode ? 'jinx' : (props.theme || 'graffiti'))
 
 // 根据 locale 获取队名
 function getTeamName(team: { nameZh: string; nameEn: string }) {
@@ -107,6 +109,22 @@ const trashTalks = {
 
 // 动态 Trash Talk 标语
 const trashTalk = computed(() => {
+  if (props.isJinxMode) {
+    // 强制使用 i18n 里的毒奶文案
+    try {
+      const texts = tm('share.predictionTexts.jinxMatch') as string[]
+      if (Array.isArray(texts) && texts.length > 0) {
+        const winnerName = props.predictedResult === 'AWAY_WIN' ? getTeamName(props.awayTeam) : getTeamName(props.homeTeam)
+        const idx = props.homeTeam.nameEn.length + props.awayTeam.nameEn.length
+        // rt() 用于解析 tm() 返回的数组元素
+        const text = typeof texts[0] === 'string' ? texts[idx % texts.length] : rt(texts[idx % texts.length])
+        return text.replace('{team}', winnerName)
+      }
+    } catch (e) {
+      // fallback
+    }
+  }
+
   if (!isPremium.value) return ''
   
   const currentLang = props.locale as keyof typeof trashTalks
@@ -473,6 +491,74 @@ function getFlagUrl(code: string) {
         </div>
       </div>
     </template>
+
+    <!-- ==================== 6. 毒奶模式版 (Jinx) ==================== -->
+    <template v-else-if="currentTheme === 'jinx'">
+      <div class="layout-jinx">
+        <div class="jinx-bg" aria-hidden="true"></div>
+        <div class="jinx-overlay"></div>
+        
+        <!-- CSS 毒奶认证印章 -->
+        <div class="jinx-stamp">
+          <div class="stamp-inner">
+            <span class="stamp-text" v-if="locale === 'zh'">毒奶<br/>认证</span>
+            <span class="stamp-text" v-else-if="locale === 'es'">JINX<br/>CERT</span>
+            <span class="stamp-text" v-else>JINX<br/>CERT</span>
+          </div>
+        </div>
+
+        <div class="content-wrapper">
+          <header class="header">
+            <span class="title">🔮 JINX PREDICTION</span>
+          </header>
+
+          <section class="teams">
+            <div class="team">
+              <div class="flag-wrapper"><img :src="getFlagUrl(homeTeam.code)" class="flag" crossorigin="anonymous"></div>
+              <span class="team-name">{{ getTeamName(homeTeam) }}</span>
+            </div>
+            <div class="vs">VS</div>
+            <div class="team">
+              <div class="flag-wrapper"><img :src="getFlagUrl(awayTeam.code)" class="flag" crossorigin="anonymous"></div>
+              <span class="team-name">{{ getTeamName(awayTeam) }}</span>
+            </div>
+          </section>
+
+          <section class="result">
+            <p class="result-text">{{ predictionText.replace(/^我预测：/, '') }}</p>
+          </section>
+
+          <section class="trash-talk">
+            {{ trashTalk }}
+          </section>
+
+          <section class="info">
+            <div class="info-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <div>
+                <p class="label">{{ $t('match.time') }}</p>
+                <p class="value">{{ matchInfoLine }}</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <p class="label">{{ $t('match.venue') }}</p>
+                <p class="value">{{ venue }} · {{ city }}</p>
+              </div>
+            </div>
+          </section>
+
+          <footer class="footer">
+            <div class="premium-badge">
+              <span class="badge-icon">🔮</span>
+              <span class="badge-text">WorldCupDex Jinx Predictor</span>
+            </div>
+            <div class="domain-watermark">worldcupdex.org</div>
+          </footer>
+        </div>
+      </div>
+    </template>
   </div>
 </template>
 
@@ -673,4 +759,43 @@ function getFlagUrl(code: string) {
 .layout-classic .classic-footer-content { display: flex; justify-content: space-between; align-items: center; }
 .layout-classic .classic-badge-text { font-family: 'Montserrat', sans-serif; font-size: 10px; font-weight: 600; color: rgba(255,255,255,0.9); letter-spacing: 1px; }
 .layout-classic .classic-domain { font-family: 'Montserrat', sans-serif; font-size: 10px; color: rgba(255,255,255,0.6); font-weight: 500; letter-spacing: 1px; }
+
+/* ==================== 6. 毒奶版样式 (Jinx) - 强视觉冲击/梗图风格 ==================== */
+.layout-jinx { position: relative; height: 100%; display: flex; flex-direction: column; background-color: #090212; overflow: hidden; font-family: 'Montserrat', sans-serif; }
+.layout-jinx .jinx-bg { position: absolute; inset: 0; background: radial-gradient(circle at 50% 50%, #2a0845 0%, #090212 80%), repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(57, 255, 20, 0.05) 10px, rgba(57, 255, 20, 0.05) 20px); z-index: 0; }
+.layout-jinx .jinx-overlay { position: absolute; inset: 0; background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"><filter id="noiseFilter"><feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noiseFilter)"/></svg>'); opacity: 0.15; mix-blend-mode: overlay; pointer-events: none; z-index: 1; }
+
+/* 狂暴印章效果 */
+.layout-jinx .jinx-stamp { position: absolute; right: 0px; top: 140px; z-index: 10; transform: rotate(-25deg) scale(1.1); opacity: 0.95; pointer-events: none; }
+.layout-jinx .stamp-inner { width: 130px; height: 130px; border: 6px double #ff007c; border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; box-shadow: 0 0 30px rgba(255, 0, 124, 0.6), inset 0 0 20px rgba(255, 0, 124, 0.5); background: rgba(255, 0, 124, 0.1); backdrop-filter: blur(2px); }
+.layout-jinx .stamp-inner::after { content: ''; position: absolute; inset: 6px; border: 3px dashed #ff007c; border-radius: 50%; }
+.layout-jinx .stamp-text { color: #ff007c; font-weight: 900; font-size: 28px; line-height: 1.1; text-align: center; font-family: 'Montserrat', 'PingFang SC', sans-serif; text-shadow: 2px 2px 0px #000, 0 0 10px rgba(255, 0, 124, 0.8); letter-spacing: 2px; }
+
+.layout-jinx .header { display: flex; align-items: center; justify-content: center; margin-bottom: 30px; position: relative; z-index: 2; margin-top: 10px; }
+.layout-jinx .title { color: #000; background: #39ff14; padding: 4px 16px; font-size: 18px; font-weight: 900; letter-spacing: 4px; box-shadow: 4px 4px 0 #ff007c; transform: skewX(-10deg); }
+
+.layout-jinx .teams { display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 30px; position: relative; z-index: 2; }
+.layout-jinx .team { display: flex; flex-direction: column; align-items: center; flex: 1; }
+.layout-jinx .flag-wrapper { width: 85px; height: 85px; border-radius: 12px; overflow: hidden; border: 4px solid #39ff14; box-shadow: -4px 4px 0 #ff007c; display: flex; align-items: center; justify-content: center; background: #000; filter: contrast(1.5) saturate(1.5) hue-rotate(-20deg); transform: rotate(3deg); }
+.layout-jinx .team:nth-child(3) .flag-wrapper { transform: rotate(-3deg); border-color: #ff007c; box-shadow: 4px 4px 0 #39ff14; filter: contrast(1.5) saturate(1.5) hue-rotate(20deg); }
+.layout-jinx .team-name { color: #fff; font-size: 16px; font-weight: 900; text-align: center; margin-top: 16px; text-shadow: 2px 2px 0 #ff007c; background: #000; padding: 2px 8px; border-radius: 4px; border: 1px solid #39ff14; }
+.layout-jinx .vs { color: #ff007c; font-size: 36px; font-family: 'Montserrat', sans-serif; font-weight: 900; flex-shrink: 0; margin-top: -30px; text-shadow: 4px 4px 0 #000, 0 0 20px #ff007c; transform: scale(1.2) rotate(-10deg); }
+
+.layout-jinx .result { background: #000; border: 3px solid #39ff14; margin: 0 24px 20px; box-shadow: -6px 6px 0 #ff007c; position: relative; z-index: 2; transform: rotate(-2deg); border-radius: 0; }
+.layout-jinx .result-text { color: #39ff14; font-size: 22px; font-weight: 900; padding: 16px; text-align: center; line-height: 1.4; margin: 0; text-transform: uppercase; text-shadow: 2px 2px 0 #000; }
+
+/* 保留巨型 Meme 字体 */
+.layout-jinx .trash-talk { font-family: 'Impact', 'Arial Black', 'PingFang SC', sans-serif; font-weight: 900; font-size: 20px; text-align: center; color: #fff; margin: 0 16px 20px; line-height: 1.2; position: relative; z-index: 2; -webkit-text-stroke: 1px #000; text-shadow: 2px 2px 0px #000, 0 0 10px #ff007c; transform: rotate(-2deg); text-transform: uppercase; display: flex; align-items: center; justify-content: center; min-height: 80px; }
+
+.layout-jinx .info { background: #000; border: 2px dashed #ff007c; color: #fff; margin: 0 24px 20px; padding: 12px 16px; border-radius: 0; display: flex; gap: 12px; position: relative; z-index: 2; transform: rotate(1deg); }
+.layout-jinx .info-item { display: flex; align-items: flex-start; gap: 8px; flex: 1; }
+.layout-jinx .icon { width: 16px; height: 16px; color: #39ff14; flex-shrink: 0; margin-top: 2px; }
+.layout-jinx .label { color: #ff007c; font-weight: 800; font-size: 10px; margin: 0 0 4px; text-transform: uppercase; letter-spacing: 1px; }
+.layout-jinx .value { color: #fff; font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 12px; margin: 0; line-height: 1.4; }
+
+.layout-jinx .footer { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; margin: auto -24px 0; padding: 16px 24px; background: #000; width: calc(100% + 48px); border-top: 4px solid #39ff14; position: relative; z-index: 2; }
+.layout-jinx .premium-badge { display: flex; align-items: center; gap: 8px; }
+.layout-jinx .badge-icon { font-size: 18px; filter: drop-shadow(0 0 5px #ff007c); }
+.layout-jinx .badge-text { font-family: 'Montserrat', sans-serif; font-size: 14px; font-weight: 900; color: #39ff14; letter-spacing: 2px; text-transform: uppercase; }
+.layout-jinx .domain-watermark { font-family: 'Montserrat', sans-serif; font-size: 10px; color: #ff007c; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; }
 </style>

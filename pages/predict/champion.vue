@@ -24,6 +24,7 @@ const selectedTeam = ref<{
 
 const showResult = ref(false)
 const cardRef = ref<HTMLElement | null>(null)
+const isJinxMode = ref(false)
 
 // ── 获取球队数据 ──
 const { data: teamsResponse } = useFetch<{
@@ -87,9 +88,19 @@ function resetSelection() {
 const shareText = computed(() => {
   if (!selectedTeam.value) return ''
   const name = locale.value === 'zh' ? selectedTeam.value.nameZh : selectedTeam.value.nameEn
+
+  if (isJinxMode.value) {
+    const texts = t('share.predictionTexts.jinxChampion', { returnObjects: true }) as string[]
+    if (Array.isArray(texts)) {
+      const idx = selectedTeam.value.code.charCodeAt(0)
+      const baseText = texts[idx % texts.length].replace('{team}', name)
+      return `${baseText} ${t('share.hashtags')}`.replace(/\s+/g, ' ')
+    }
+  }
+
   const tPrefix = t('champion.shareTextPrefix') || 'I pick '
   const tSuffix = t('champion.shareTextSuffix') || ' to win the 2026 World Cup! 🏆 Who is your pick?'
-  return `${tPrefix}${name}${tSuffix}`
+  return `${tPrefix}${name}${tSuffix} ${t('share.hashtags')}`.replace(/\s+/g, ' ')
 })
 
 const shareUrl = 'https://worldcupdex.org/predict/champion?utm_source=share&utm_medium=card&utm_campaign=champion'
@@ -257,7 +268,7 @@ onMounted(() => {
         </Transition>
       </template>
 
-      <!-- 结果区域 -->
+        <!-- 结果区域 -->
       <template v-else>
         <section class="champion-page__result">
           <!-- 结果页顶部标题 -->
@@ -292,6 +303,7 @@ onMounted(() => {
                 :team-code="selectedTeam!.code"
                 :theme="appliedTheme"
                 :premiumBgImage="previewBgPath"
+                :isJinxMode="isJinxMode"
               />
             </div>
             
@@ -299,42 +311,58 @@ onMounted(() => {
             <div v-if="hasUnlockedPremium" class="predict-page__theme-switcher animate-fade-in">
               <div class="theme-switcher-title">{{ $t('predictDetail.premiumUnlock.themeSwitcherTitle') }}</div>
               
-              <div class="theme-buttons">
-                <button 
-                  class="theme-btn" 
-                  :class="{ 'theme-btn--active': currentTheme === 'graffiti' }"
-                  @click="setPremiumTheme('graffiti')"
-                >
-                  {{ $t('champion.themeGraffiti') || 'Graffiti' }}
-                </button>
-                <button 
-                  class="theme-btn" 
-                  :class="{ 'theme-btn--active': currentTheme === 'minimalist' }"
-                  @click="setPremiumTheme('minimalist')"
-                >
-                  {{ $t('champion.themeMinimalist') || 'Minimalist' }}
-                </button>
-                <button 
-                  class="theme-btn" 
-                  :class="{ 'theme-btn--active': currentTheme === 'glasswind' }"
-                  @click="setPremiumTheme('glasswind')"
-                >
-                  {{ $t('champion.themeGlasswind') || 'Glasswind' }}
-                </button>
-                <button 
-                  class="theme-btn" 
-                  :class="{ 'theme-btn--active': currentTheme === 'classic' }"
-                  @click="setPremiumTheme('classic')"
-                >
-                  {{ $t('champion.themeClassic') || 'Classic' }}
+              <!-- 毒奶模式开关 -->
+              <div class="flex justify-center mb-4 pb-4 border-b border-gray-100 w-full">
+                <label class="jinx-mode-toggle flex items-center cursor-pointer gap-3 select-none group bg-purple-50 hover:bg-purple-100 transition-colors px-6 py-3 rounded-full border border-purple-100">
+                  <div class="relative">
+                    <input type="checkbox" class="sr-only" v-model="isJinxMode">
+                    <div class="block w-12 h-7 rounded-full transition-colors duration-300" :class="isJinxMode ? 'bg-purple-600' : 'bg-gray-300'"></div>
+                    <div class="dot absolute left-1 top-1 bg-white w-5 h-5 rounded-full transition-transform duration-300 flex items-center justify-center shadow-sm" :class="isJinxMode ? 'transform translate-x-5' : ''">
+                      <span v-if="isJinxMode" class="text-[12px]">🪄</span>
+                    </div>
+                  </div>
+                  <span class="text-base font-bold transition-colors" :class="isJinxMode ? 'text-purple-700' : 'text-gray-600'">🔮 开启毒奶模式</span>
+                </label>
+              </div>
+
+              <div :class="{'opacity-50 pointer-events-none transition-opacity': isJinxMode}" class="w-full flex flex-col items-center gap-4">
+                <div class="theme-buttons">
+                  <button 
+                    class="theme-btn" 
+                    :class="{ 'theme-btn--active': currentTheme === 'graffiti' }"
+                    @click="setPremiumTheme('graffiti')"
+                  >
+                    {{ $t('champion.themeGraffiti') || 'Graffiti' }}
+                  </button>
+                  <button 
+                    class="theme-btn" 
+                    :class="{ 'theme-btn--active': currentTheme === 'minimalist' }"
+                    @click="setPremiumTheme('minimalist')"
+                  >
+                    {{ $t('champion.themeMinimalist') || 'Minimalist' }}
+                  </button>
+                  <button 
+                    class="theme-btn" 
+                    :class="{ 'theme-btn--active': currentTheme === 'glasswind' }"
+                    @click="setPremiumTheme('glasswind')"
+                  >
+                    {{ $t('champion.themeGlasswind') || 'Glasswind' }}
+                  </button>
+                  <button 
+                    class="theme-btn" 
+                    :class="{ 'theme-btn--active': currentTheme === 'classic' }"
+                    @click="setPremiumTheme('classic')"
+                  >
+                    {{ $t('champion.themeClassic') || 'Classic' }}
+                  </button>
+                </div>
+                
+                <button class="bg-switch-btn" @click="cyclePremiumBg" :disabled="currentTheme === 'classic'" :class="{ 'opacity-50 cursor-not-allowed': currentTheme === 'classic' }">
+                  <Icon name="uil:image-v" class="w-4 h-4" />
+                  <span v-if="currentTheme === 'classic'">{{ $t('champion.classicBgUnique') || 'Classic BG is Unique' }}</span>
+                  <span v-else>{{ $t('predictDetail.premiumUnlock.switchBg', { current: currentPremiumBg }) }} / 5</span>
                 </button>
               </div>
-              
-              <button class="bg-switch-btn" @click="cyclePremiumBg" :disabled="currentTheme === 'classic'" :class="{ 'opacity-50 cursor-not-allowed': currentTheme === 'classic' }">
-                <Icon name="uil:image-v" class="w-4 h-4" />
-                <span v-if="currentTheme === 'classic'">{{ $t('champion.classicBgUnique') || 'Classic BG is Unique' }}</span>
-                <span v-else>{{ $t('predictDetail.premiumUnlock.switchBg', { current: currentPremiumBg }) }} / 5</span>
-              </button>
             </div>
           </div>
 

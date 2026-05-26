@@ -603,7 +603,17 @@
         "Blowout alert! 🚨 I predict a massive win for {team}!",
         "Total domination! {team} will crush their opponent! 😎"
       ],
-      "verified": "The prophet is here! I successfully predicted {home} {score} {away}! 🎯 Dare to test your prediction accuracy?"
+      "verified": "Oracle here! I successfully hit the {home} {score} {away} score! 🎯 Dare to test your prediction accuracy?",
+      "jinxMatch": [
+        "I declare that {team} has already locked the victory! (Jinxing 🪄)",
+        "It's a lock! {team} absolutely cannot lose this, mark my words! 🥛",
+        "If {team} doesn't win this, I'll eat my keyboard right now! 🚩"
+      ],
+      "jinxChampion": [
+        "Congratulations to {team} for lifting the 2026 World Cup trophy early! (Mystic Eastern Power 🪄)",
+        "The championship already belongs to {team}, other teams can just go home! 🥛",
+        "I've cast the spell, {team} will definitely win this tournament, no one can stop them! 🚩"
+      ]
     },
     "hashtags": "#WorldCup2026 #FIFA26"
   },
