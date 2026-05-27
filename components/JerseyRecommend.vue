@@ -22,9 +22,9 @@ const { locale, t } = useI18n()
 const { track } = useAnalytics()
 
 const products = computed<AffiliateProduct[]>(() => {
-  const list = (affiliateProducts as unknown as Array<Partial<AffiliateProduct> & Record<string, unknown>>) || []
+  const list = (affiliateProducts as unknown as any[]) || []
   const teamProducts = list
-    .filter((p): p is AffiliateProduct => {
+    .filter((p) => {
       return typeof p?.teamId === 'string'
         && p.teamId.length > 0
         && p.teamId === props.teamId
@@ -33,24 +33,21 @@ const products = computed<AffiliateProduct[]>(() => {
     })
 
   if (teamProducts.length > 0) {
-    return teamProducts
+    return teamProducts as AffiliateProduct[]
   }
 
   // Fallback to generic gear if the specific team doesn't have products configured
-  return list.filter((p): p is AffiliateProduct => {
+  // Select multiple generic products to fill the grid
+  const genericProducts = list.filter((p) => {
     return p?.teamId === 'generic'
       && typeof p.productUrl === 'string'
       && p.productUrl.length > 0
-  })
+  }) as AffiliateProduct[]
+  
+  // Return up to 5 generic products
+  return genericProducts.slice(0, 5)
 })
 
-function formatPrice(price: number, currency: string): string {
-  try {
-    return new Intl.NumberFormat(locale.value, { style: 'currency', currency }).format(price)
-  } catch {
-    return `${currency} ${price.toFixed(2)}`
-  }
-}
 
 function buildTrackUrl(p: AffiliateProduct): string {
   const params = new URLSearchParams({
@@ -85,7 +82,7 @@ function handleClick(p: AffiliateProduct): void {
           </h3>
           <p class="text-sm mt-1" style="color: #666;">{{ t('affiliate.jerseySubtitle') }}</p>
         </div>
-        <span class="badge badge-warning badge-sm font-semibold uppercase tracking-wider">
+        <span class="badge badge-warning badge-sm font-semibold uppercase tracking-wider px-2 py-3">
           {{ t('affiliate.sponsored') }}
         </span>
       </div>
@@ -120,8 +117,7 @@ function handleClick(p: AffiliateProduct): void {
               <div class="jersey-card__partner">{{ p.partner }}</div>
               <div class="jersey-card__name" :title="p.productName">{{ p.productName }}</div>
               <div class="jersey-card__footer">
-                <span class="jersey-card__price">{{ formatPrice(p.price, p.currency) }}</span>
-                <span class="btn btn-primary btn-sm jersey-card__btn">
+                <span class="btn btn-primary btn-sm jersey-card__btn w-full">
                   {{ t('affiliate.viewProduct') }} →
                 </span>
               </div>
@@ -146,19 +142,21 @@ function handleClick(p: AffiliateProduct): void {
 
 .jersey-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 16px;
 }
 
 @media (min-width: 640px) {
   .jersey-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 }
 
 @media (min-width: 1024px) {
   .jersey-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
   }
 }
 
@@ -210,18 +208,19 @@ function handleClick(p: AffiliateProduct): void {
   font-weight: 700;
   letter-spacing: 0.5px;
   text-transform: uppercase;
+  padding: 4px 8px;
 }
 
 .jersey-card__body {
-  padding: 12px 14px 14px;
+  padding: 10px 12px 12px;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
   flex: 1;
 }
 
 .jersey-card__partner {
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
   color: #888;
   letter-spacing: 0.6px;
@@ -229,15 +228,15 @@ function handleClick(p: AffiliateProduct): void {
 }
 
 .jersey-card__name {
-  font-size: 14px;
+  font-size: 13px;
   color: #1f2937;
   font-weight: 600;
-  line-height: 1.35;
+  line-height: 1.3;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  min-height: 38px;
+  min-height: 34px;
 }
 
 .jersey-card__footer {
@@ -249,12 +248,6 @@ function handleClick(p: AffiliateProduct): void {
   padding-top: 8px;
 }
 
-.jersey-card__price {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 16px;
-  color: #000F49;
-}
 
 .jersey-card__btn {
   border-radius: 999px;
@@ -262,10 +255,10 @@ function handleClick(p: AffiliateProduct): void {
   border-color: #000F49;
   color: #FFD700;
   font-weight: 700;
-  font-size: 12px;
-  min-height: 30px;
-  height: 30px;
-  padding: 0 12px;
+  font-size: 11px;
+  min-height: 28px;
+  height: 28px;
+  padding: 0 10px;
 }
 
 .jersey-card__btn:hover {

@@ -1,5 +1,5 @@
 import type { Ref } from 'vue'
-import type { MatchItem, ListResponse } from '~/types'
+import type { ListResponse, MatchItem } from '~/types'
 
 interface UseMatchListParams {
   stage?: Ref<string> | string
@@ -40,11 +40,11 @@ export function useMatchList(params?: UseMatchListParams) {
     return p
   })
 
-  return useFetch<ListResponse<MatchItem>>('/api/matches', {
-    query: queryParams,
-    key: computed(() => `matches-${JSON.stringify(queryParams.value)}`).value,
-    watch: [queryParams],
-  })
+  return {
+    data: computed(() => getStaticMatchList(queryParams.value)),
+    pending: ref(false),
+    error: ref(null),
+  }
 }
 
 /**
@@ -52,32 +52,9 @@ export function useMatchList(params?: UseMatchListParams) {
  * 过滤出日期 >= 今天的比赛，按日期+时间排序取前 N 条
  */
 export function useUpcomingMatches(limit: number = 5) {
-  return useAsyncData<MatchItem[]>(
-    `upcoming-matches-${limit}`,
-    async () => {
-      const response = await $fetch<ListResponse<MatchItem>>('/api/matches')
-
-      if (!response.data || response.data.length === 0) {
-        return []
-      }
-
-      // 获取本地当前时间的年月日，避免时区带来的日期偏移
-      const now = new Date()
-      const year = now.getFullYear()
-      const month = String(now.getMonth() + 1).padStart(2, '0')
-      const day = String(now.getDate()).padStart(2, '0')
-      const today = `${year}-${month}-${day}`
-
-      const upcoming = response.data
-        .filter((match) => match.date >= today)
-        .sort((a, b) => {
-          const dateCompare = a.date.localeCompare(b.date)
-          if (dateCompare !== 0) return dateCompare
-          return a.time.localeCompare(b.time)
-        })
-        .slice(0, limit)
-
-      return upcoming
-    },
-  )
+  return {
+    data: computed(() => getStaticUpcomingMatches(limit)),
+    pending: ref(false),
+    error: ref(null),
+  }
 }

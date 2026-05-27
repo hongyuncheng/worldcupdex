@@ -78,9 +78,45 @@
     "teamId": "generic",
     "partner": "Amazon",
     "productName": "World Cup 2026 Fan Gear",
-    "productUrl": "https://amzn.to/4tQz3zD",
+    "productUrl": "https://amzn.to/4uJSNGv",
     "imgUrl": "/images/jersey-placeholder.svg",
     "price": 19.99,
+    "currency": "USD"
+  },
+  {
+    "teamId": "generic",
+    "partner": "Amazon",
+    "productName": "National Team Flags",
+    "productUrl": "https://amzn.to/4dyCExt",
+    "imgUrl": "/images/flag-placeholder.svg",
+    "price": 12.99,
+    "currency": "USD"
+  },
+  {
+    "teamId": "generic",
+    "partner": "Amazon",
+    "productName": "Soccer Ball Size 5",
+    "productUrl": "https://amzn.to/4dKXZ5P",
+    "imgUrl": "/images/ball-placeholder.svg",
+    "price": 24.99,
+    "currency": "USD"
+  },
+  {
+    "teamId": "generic",
+    "partner": "Amazon",
+    "productName": "Face Paint Set",
+    "productUrl": "https://amzn.to/3PLArFJ",
+    "imgUrl": "/images/paint-placeholder.svg",
+    "price": 9.99,
+    "currency": "USD"
+  },
+  {
+    "teamId": "generic",
+    "partner": "Amazon",
+    "productName": "Fan Scarf",
+    "productUrl": "https://amzn.to/4dD3BPe",
+    "imgUrl": "/images/scarf-placeholder.svg",
+    "price": 14.99,
     "currency": "USD"
   },
   {

@@ -1,4 +1,4 @@
-import { ref, watch } from 'vue'
+import { onMounted, ref, watch } from 'vue'
 
 const FAVORITES_STORAGE_KEY = 'wcd_favorites'
 
@@ -83,9 +83,13 @@ export function useFavorites() {
     return favoriteTeams.value.includes(homeTeamNameEn) || favoriteTeams.value.includes(awayTeamNameEn)
   }
 
-  // 初始化加载
-  if (typeof window !== 'undefined' && !isLoaded.value) {
-    loadFavorites()
+  // 等待客户端挂载后再读 localStorage，避免 SSR 与首轮客户端渲染不一致。
+  if (import.meta.client) {
+    onMounted(() => {
+      if (!isLoaded.value) {
+        loadFavorites()
+      }
+    })
   }
 
   return {

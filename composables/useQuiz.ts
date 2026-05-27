@@ -266,10 +266,7 @@ export function useQuiz() {
     try {
       let teams: TeamListItem[] = []
       try {
-        const response = await $fetch<{ data: TeamListItem[] }>('/api/teams', {
-          params: { pageSize: 100 },
-        })
-        teams = response?.data || []
+        teams = getStaticTeamList({ pageSize: 100 }).data
       } catch (error) {
         console.error('Failed to load quiz teams, using local fallback questions.', error)
       }

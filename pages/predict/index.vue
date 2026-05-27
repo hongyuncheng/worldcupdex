@@ -128,7 +128,7 @@
 </template>
 
 <script setup lang="ts">
-import type { MatchItem, ListResponse } from '~/types'
+import type { MatchItem } from '~/types'
 
 const { t, locale } = useI18n()
 const { handleAiPredict } = useAiPredict()
@@ -151,27 +151,21 @@ const filteredMatches = computed(() => {
 })
 
 // ─── 全部待预测比赛数 ───
-const { data: allMatchesData } = useAsyncData<number>(
-  'total-upcoming-matches',
-  async () => {
-    const response = await $fetch<ListResponse<MatchItem>>('/api/matches')
-    if (!response.data) return 0
-    const today = new Date().toISOString().split('T')[0]
-    return response.data.filter(
-      (m) => m.date >= today && m.homeTeam.id !== 'TBD' && m.awayTeam.id !== 'TBD',
-    ).length
-  },
-)
-const totalUpcoming = computed(() => allMatchesData.value || 0)
+const allMatchesResponse = computed(() => getStaticMatchList())
+const totalUpcoming = computed(() => {
+  const today = new Date().toISOString().split('T')[0]
+  return allMatchesResponse.value.data.filter(
+    match => match.date >= today && match.homeTeam.id !== 'TBD' && match.awayTeam.id !== 'TBD',
+  ).length
+})
 
 // ─── 获取本地预测记录 ───
 const { getAllPredictions } = usePredictions()
-const { data: allMatchesResponse } = useFetch<ListResponse<MatchItem>>('/api/matches')
 const myPredictions = computed(() => {
   const preds = getAllPredictions()
   return preds.sort((a, b) => b.timestamp - a.timestamp).slice(0, 6).map(pred => {
     // 查找比赛真实结果
-    const match = allMatchesResponse.value?.data?.find(m => m.id === pred.matchId)
+    const match = allMatchesResponse.value.data.find(m => m.id === pred.matchId)
     let isCorrect: boolean | null = null
     if (match && match.score) {
       // 计算真实胜负

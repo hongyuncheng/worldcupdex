@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TeamListItem, PaginatedResponse, TeamDetail, SquadPlayer } from '~/types'
+import type { TeamListItem, SquadPlayer } from '~/types'
 
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
@@ -22,9 +22,7 @@ const nickname = ref('')
 const showNicknameModal = ref(false)
 
 // ── Step 1: 加载球队列表 ──
-const { data: teamsResponse } = useFetch<PaginatedResponse<TeamListItem>>('/api/teams', {
-  query: { pageSize: 200 },
-})
+const { data: teamsResponse } = useTeamList({ pageSize: 200 })
 
 const allTeams = computed(() => {
   if (!teamsResponse.value?.data) return []
@@ -87,13 +85,7 @@ function getTeamName(team: TeamListItem) {
 }
 
 // ── Step 2: 加载球员列表 ──
-const { data: teamDetail } = useFetch<TeamDetail>(
-  () => `/api/teams/${selectedTeamId.value}`,
-  {
-    watch: [selectedTeamId],
-    immediate: false,
-  },
-)
+const { data: teamDetail } = useTeamDetail(selectedTeamId)
 
 const sortedSquad = computed(() => {
   if (!teamDetail.value?.squad) return []

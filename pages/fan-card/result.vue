@@ -44,13 +44,7 @@ onMounted(() => {
 })
 
 // ── 获取球队详情 ──
-const { data: teamDetail } = useFetch<TeamDetail>(
-  () => `/api/teams/${teamId.value}`,
-  {
-    watch: [teamId],
-    immediate: false,
-  },
-)
+const { data: teamDetail } = useTeamDetail(teamId)
 
 // ── 获取首场比赛 ──
 const firstMatch = ref<{ opponent: string; opponentEn: string; opponentFlag: string; date: string } | null>(null)

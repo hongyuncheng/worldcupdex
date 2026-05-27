@@ -13,8 +13,8 @@ useSeoConfig({
 })
 
 // ─── 获取比赛数据 ───
-const { data } = useFetch<{ data: MatchItem[] }>('/api/matches')
-const match = computed(() => data.value?.data?.find(m => m.id === matchId) || null)
+const matchesResponse = computed(() => getStaticMatchList())
+const match = computed(() => matchesResponse.value.data.find(m => m.id === matchId) || null)
 
 // ─── 表单状态 ───
 const selectedResult = ref<'HOME_WIN' | 'AWAY_WIN' | 'DRAW' | null>(null)

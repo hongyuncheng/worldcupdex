@@ -1,0 +1,2513 @@
+{
+  "generatedAt": "2026-05-27T02:13:40.853Z",
+  "base": "https://worldcupdex.org",
+  "results": [
+    {
+      "name": "home",
+      "route": "/",
+      "profileName": "desktop",
+      "url": "https://worldcupdex.org/",
+      "ok": true,
+      "error": "",
+      "elapsedMs": 11988,
+      "screenshot": "E:\\pc_workspace\\tool\\worldcupdex\\reports\\live-audit-2026-05-27\\desktop-home.png",
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "Third-party cookie will be blocked. Learn more in the Issues tab."
+        },
+        {
+          "type": "warning",
+          "text": "[nuxt] Cannot load payload  /matches/_payload.json?1c9f97cd-5dba-40cd-839b-495cb38e38e9 SyntaxError: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at Cy (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:80560)\n    at xd (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:101736)\n    at Id (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100929)\n    at async lc (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100446)\n    at async https://worldcupdex.org/_nuxt/Da_y-dxd.js"
+        }
+      ],
+      "requestFailures": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65q0h2v9252792379za200zd9252792379&_p=1779847879093&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=343707245.1779847882&frm=0&pscdl=noapi&rcb=12&sr=1440x1000&uaa=x86&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=1&tag_exp=0~115616985~115938466~115938468~118694324~119034492&dp=%2F&dl=https%3A%2F%2Fworldcupdex.org%2F&dt=WorldCupDex%20-%202026%E4%B8%96%E7%95%8C%E6%9D%AF%E7%99%BE%E7%A7%91%E4%B8%8E%E9%A2%84%E6%B5%8B&sid=1779847882&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=4176",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65q0h2v9252792379za200zd9252792379&_p=1779847879093&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=343707245.1779847882&frm=0&pscdl=noapi&rcb=12&sr=1440x1000&uaa=x86&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=2&tag_exp=0~115616985~115938466~115938468~118694324~119034492&dp=%2F&dl=https%3A%2F%2Fworldcupdex.org%2F&dt=WorldCupDex%20-%202026%E4%B8%96%E7%95%8C%E6%9D%AF%E7%99%BE%E7%A7%91%E4%B8%8E%E9%A2%84%E6%B5%8B&sid=1779847882&sct=1&seg=1&en=page_view&_ee=1&_et=8&tfd=9188",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "badResponses": [],
+      "info": {
+        "title": "WorldCupDex - 2026世界杯百科与预测",
+        "h1": [
+          "FIFA WORLD CUP 2026™"
+        ],
+        "metaDescription": "2026年FIFA世界杯百科全书，包含球队资料、赛程赛果、比分预测和球迷互动。",
+        "canonical": "https://worldcupdex.org/",
+        "ogTitle": "WorldCupDex - 2026世界杯百科与预测",
+        "ogImage": "https://worldcupdex.org/images/og-default.png",
+        "jsonLdCount": 2,
+        "textSample": "🏆\nWorldCupDex\nHome\nTeams\nMatches\nFan Pass\nPredictions\nTrivia\nBlog\nDiscord\nEnglish\nFIFA WORLD CUP 2026™\n\nCountdown to Kickoff\n\n15\nDays\n22\nHours\n48\nMin\n30\nSec\nStart Predicting →\nView Schedule\n48 Teams\n·\n104 Matches\n·\n16 Cities\n·\n3 Countries\n🏆 Upcoming Matches\nView All Matches →\nGroup Stage A\n📅\nAdd to Calendar\nMexico\nVS\nSouth Africa\n\n6/11 19:00\n\nMetLife Stadium\n\nMake Pick\nAI Pick\n📺 Watch Party Gear\nGroup Stage A\n📅\nAdd to Calendar\nSouth Korea\nVS\nCzechia\n\n6/12 02:00\n\nAT&T Stadium\n\nMake Pick\nAI Pick\n📺 Watch Party Gear\nGroup Stage B\n📅\nAdd to Calendar\nCanada\nVS\nBosnia-Herzegovina\n\n6/12 19:00\n\nSoFi Stadium\n\nMake Pick\nAI Pick\n📺 Watch Party Gear\nGroup Stage D\n📅\nAdd to Calendar\nUnited States\nVS\nParaguay\n\n6/13 01:00\n\nHard Rock Stadium\n\nMake Pick\nAI Pick\n📺 Watch Party Gear\nGroup Stage B\n📅\nAdd to Calendar\nQatar\nVS\nSwitzerland\n\n6/13 19:00\n\nLincoln Financial Field\n\nMake Pick\nAI Pick\n📺 Watch Party Gear\nGroup Stage C\n📅\nAdd to Calendar\nBrazil\nVS\nMorocco\n\n6/13 22:00\n\nMercedes-Benz Stadium\n\nMake Pick\nAI Pick\n📺 Watch Party Gear\nGroup Stage C\n📅\nAdd to Calendar\nHaiti\nVS\nScotland\n\n6/14 01:00\n\nNRG Stadium\n\nMake Pick\nAI Pick\n📺 Watch Party Gear\nGroup Stage D\n📅\nAdd to Calendar\nAustralia\nVS\nTurk",
+        "hasMojibake": false,
+        "links": [
+          {
+            "text": "🏆WorldCupDex",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Fan Pass",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "Trivia",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Blog",
+            "href": "https://worldcupdex.org/blog"
+          },
+          {
+            "text": "Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Start Predicting →",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "View Schedule",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "View All Matches →",
+            "href": "https://worldcupdex.org/matches"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537327"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537328"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537333"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537345"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537334"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537339"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537340"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537346"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "View All Teams →",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Argentina#1",
+            "href": "https://worldcupdex.org/teams/argentina"
+          },
+          {
+            "text": "France#2",
+            "href": "https://worldcupdex.org/teams/france"
+          },
+          {
+            "text": "Spain#3",
+            "href": "https://worldcupdex.org/teams/spain"
+          },
+          {
+            "text": "England#4",
+            "href": "https://worldcupdex.org/teams/england"
+          },
+          {
+            "text": "Brazil#5",
+            "href": "https://worldcupdex.org/teams/brazil"
+          },
+          {
+            "text": "Portugal#6",
+            "href": "https://worldcupdex.org/teams/portugal"
+          },
+          {
+            "text": "Netherlands#7",
+            "href": "https://worldcupdex.org/teams/netherlands"
+          },
+          {
+            "text": "Belgium#8",
+            "href": "https://worldcupdex.org/teams/belgium"
+          },
+          {
+            "text": "",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Test Your Knowledge10 fun questions to challenge your World Cup knowledgeCovers history, stars, tactics and moreEarn exc",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Create Your Fan PassCreate your unique fan identity, show your passionCustomize avatar, team and mottoShare your card, c",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Join Now →",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "遇到问题？来这里反馈",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://worldcupdex.org/privacy"
+          },
+          {
+            "text": "Contact",
+            "href": "https://worldcupdex.org/contact"
+          },
+          {
+            "text": "About",
+            "href": "https://worldcupdex.org/about"
+          },
+          {
+            "text": "Join Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          }
+        ],
+        "bodyLength": 2180
+      }
+    },
+    {
+      "name": "schedule",
+      "route": "/schedule",
+      "profileName": "desktop",
+      "url": "https://worldcupdex.org/schedule",
+      "ok": true,
+      "error": "",
+      "elapsedMs": 10446,
+      "screenshot": "E:\\pc_workspace\\tool\\worldcupdex\\reports\\live-audit-2026-05-27\\desktop-schedule.png",
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Hydration completed but contains mismatches."
+        },
+        {
+          "type": "warning",
+          "text": "Third-party cookie will be blocked. Learn more in the Issues tab."
+        }
+      ],
+      "requestFailures": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847891250&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1454131160.1779847893&frm=0&pscdl=noapi&rcb=7&sr=1440x1000&uaa=x86&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=1&tag_exp=0~115938465~115938468~118228215~118689381&dp=%2Fschedule&dl=https%3A%2F%2Fworldcupdex.org%2Fschedule&dt=Schedule%20-%20WorldCupDex&sid=1779847893&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2925",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847891250&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=1454131160.1779847893&frm=0&pscdl=noapi&rcb=7&sr=1440x1000&uaa=x86&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&tag_exp=0~115938465~115938468~118228215~118689381&dp=%2Fschedule&dl=https%3A%2F%2Fworldcupdex.org%2Fschedule&dt=Schedule%20-%20WorldCupDex&sid=1779847893&sct=1&seg=1&_s=2&tfd=7949",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "badResponses": [],
+      "info": {
+        "title": "Schedule - WorldCupDex",
+        "h1": [
+          "Schedule"
+        ],
+        "metaDescription": "2026世界杯完整赛程时间表，小组赛到决赛的所有比赛安排。",
+        "canonical": "https://worldcupdex.org/schedule",
+        "ogTitle": "Schedule - WorldCupDex",
+        "ogImage": "https://worldcupdex.org/images/og-default.png",
+        "jsonLdCount": 5,
+        "textSample": "🏆\nWorldCupDex\nHome\nTeams\nMatches\nFan Pass\nPredictions\nTrivia\nBlog\nDiscord\nEnglish\nHome>Matches & Results>Schedule\nSchedule\n\n2026 FIFA World Cup Full Schedule\n\nAll Matches\nGroup Stage\nKnockout\n⭐ My Schedule\nSelect Date\nThursday, June 11, 2026\nFriday, June 12, 2026\nSaturday, June 13, 2026\nSunday, June 14, 2026\nMonday, June 15, 2026\nTuesday, June 16, 2026\nWednesday, June 17, 2026\nThursday, June 18, 2026\nFriday, June 19, 2026\nSaturday, June 20, 2026\nSunday, June 21, 2026\nMonday, June 22, 2026\nTuesday, June 23, 2026\nWednesday, June 24, 2026\nThursday, June 25, 2026\nFriday, June 26, 2026\nSaturday, June 27, 2026\nSunday, June 28, 2026\nMonday, June 29, 2026\nTuesday, June 30, 2026\nWednesday, July 1, 2026\nThursday, July 2, 2026\nFriday, July 3, 2026\nSaturday, July 4, 2026\nSunday, July 5, 2026\nMonday, July 6, 2026\nTuesday, July 7, 2026\nThursday, July 9, 2026\nFriday, July 10, 2026\nSaturday, July 11, 2026\nSunday, July 12, 2026\nTuesday, July 14, 2026\nWednesday, July 15, 2026\nSaturday, July 18, 2026\nSunday, July 19, 2026\nAll Venues\nMetLife Stadium\nAT&T Stadium\nSoFi Stadium\nHard Rock Stadium\nLincoln Financial Field\nMercedes-Benz Stadium\nNRG Stadium\nLumen Field\nGillette Stadium\nGEHA Field at Arrowhea",
+        "hasMojibake": false,
+        "links": [
+          {
+            "text": "🏆WorldCupDex",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Fan Pass",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "Trivia",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Blog",
+            "href": "https://worldcupdex.org/blog"
+          },
+          {
+            "text": "Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537327"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537328"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537333"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537345"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537334"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537339"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537340"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537346"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537351"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537357"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://worldcupdex.org/privacy"
+          },
+          {
+            "text": "Contact",
+            "href": "https://worldcupdex.org/contact"
+          },
+          {
+            "text": "About",
+            "href": "https://worldcupdex.org/about"
+          },
+          {
+            "text": "Join Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          }
+        ],
+        "bodyLength": 3082
+      }
+    },
+    {
+      "name": "predict",
+      "route": "/predict",
+      "profileName": "desktop",
+      "url": "https://worldcupdex.org/predict",
+      "ok": true,
+      "error": "",
+      "elapsedMs": 8395,
+      "screenshot": "E:\\pc_workspace\\tool\\worldcupdex\\reports\\live-audit-2026-05-27\\desktop-predict.png",
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "Third-party cookie will be blocked. Learn more in the Issues tab."
+        }
+      ],
+      "requestFailures": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847901867&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=229749338.1779847904&frm=0&pscdl=noapi&rcb=11&sr=1440x1000&uaa=x86&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=1&tag_exp=0~115616986~115938466~115938468~118128922~119169249&dp=%2Fpredict&dl=https%3A%2F%2Fworldcupdex.org%2Fpredict&dt=World%20Cup%20Predictions%20-%20WorldCupDex&sid=1779847904&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=3015",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847901867&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=229749338.1779847904&frm=0&pscdl=noapi&rcb=11&sr=1440x1000&uaa=x86&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&tag_exp=0~115616986~115938466~115938468~118128922~119169249&dp=%2Fpredict&dl=https%3A%2F%2Fworldcupdex.org%2Fpredict&dt=World%20Cup%20Predictions%20-%20WorldCupDex&sid=1779847904&sct=1&seg=1&_s=2&tfd=8038",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "badResponses": [],
+      "info": {
+        "title": "World Cup Predictions - WorldCupDex",
+        "h1": [
+          "World Cup Predictions"
+        ],
+        "metaDescription": "Predict 2026 World Cup match results and generate your exclusive prediction card to share.",
+        "canonical": "https://worldcupdex.org/predict",
+        "ogTitle": "World Cup Predictions - WorldCupDex",
+        "ogImage": "https://worldcupdex.org/images/og-default.png",
+        "jsonLdCount": 0,
+        "textSample": "🏆\nWorldCupDex\nHome\nTeams\nMatches\nFan Pass\nPredictions\nTrivia\nBlog\nDiscord\nEnglish\nWorld Cup Predictions\n\nPredict match results, generate your exclusive prediction card, share with friends\n\n🏆\nTournament Winner\nChoose your champion team\n→\n⚽\nMatch Prediction\nPredict upcoming matches\n→\n📅 Upcoming Matches\nThu, Jun 11\n19:00\nMexico\nA Group\nvs\nSouth Africa\nA Group\nMake Pick\nAI Pick\n📅\nAdd to Calendar\nDeadline: 18:59:00\nFri, Jun 12\n02:00\nSouth Korea\nA Group\nvs\nCzechia\nA Group\nMake Pick\nAI Pick\n📅\nAdd to Calendar\nDeadline: 01:59:00\nFri, Jun 12\n19:00\nCanada\nB Group\nvs\nBosnia-Herzegovina\nB Group\nMake Pick\nAI Pick\n📅\nAdd to Calendar\nDeadline: 18:59:00\nSat, Jun 13\n01:00\nUnited States\nD Group\nvs\nParaguay\nD Group\nMake Pick\nAI Pick\n📅\nAdd to Calendar\nDeadline: 00:59:00\nSat, Jun 13\n19:00\nQatar\nB Group\nvs\nSwitzerland\nB Group\nMake Pick\nAI Pick\n📅\nAdd to Calendar\nDeadline: 18:59:00\nSat, Jun 13\n22:00\nBrazil\nC Group\nvs\nMorocco\nC Group\nMake Pick\nAI Pick\n📅\nAdd to Calendar\nDeadline: 21:59:00\nView all 104 matches to predict →\nPrivacy Policy\nContact\nAbout\nJoin Discord\n🏆\nWorldCupDex\nHome\nTeams\nMatches\nPredictions\n© 2026 WorldCupDex\nAs an affiliate partner, we may earn a commission from qualifying purchase",
+        "hasMojibake": false,
+        "links": [
+          {
+            "text": "🏆WorldCupDex",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Fan Pass",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "Trivia",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Blog",
+            "href": "https://worldcupdex.org/blog"
+          },
+          {
+            "text": "Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "🏆Tournament WinnerChoose your champion team→",
+            "href": "https://worldcupdex.org/predict/champion"
+          },
+          {
+            "text": "⚽Match PredictionPredict upcoming matches→",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537327"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537328"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537333"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537345"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537334"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537339"
+          },
+          {
+            "text": "View all 104 matches to predict →",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://worldcupdex.org/privacy"
+          },
+          {
+            "text": "Contact",
+            "href": "https://worldcupdex.org/contact"
+          },
+          {
+            "text": "About",
+            "href": "https://worldcupdex.org/about"
+          },
+          {
+            "text": "Join Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          }
+        ],
+        "bodyLength": 1202
+      }
+    },
+    {
+      "name": "champion",
+      "route": "/predict/champion",
+      "profileName": "desktop",
+      "url": "https://worldcupdex.org/predict/champion",
+      "ok": true,
+      "error": "",
+      "elapsedMs": 7837,
+      "screenshot": "E:\\pc_workspace\\tool\\worldcupdex\\reports\\live-audit-2026-05-27\\desktop-champion.png",
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "Third-party cookie will be blocked. Learn more in the Issues tab."
+        }
+      ],
+      "requestFailures": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847910623&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1574331433.1779847913&frm=0&pscdl=noapi&rcb=9&sr=1440x1000&uaa=x86&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=1&tag_exp=0~115938466~115938468~118128923&dp=%2Fpredict%2Fchampion&dl=https%3A%2F%2Fworldcupdex.org%2Fpredict%2Fchampion&dt=%E5%86%A0%E5%86%9B%E7%AB%9E%E7%8C%9C%20%7C%20WorldCupDex&sid=1779847912&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=3055",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "badResponses": [],
+      "info": {
+        "title": "冠军竞猜 | WorldCupDex",
+        "h1": [
+          "Pick Your Champion"
+        ],
+        "metaDescription": "选择你支持的球队，生成冠军预测卡片分享给朋友！2026世界杯冠军竞猜。",
+        "canonical": "https://worldcupdex.org/predict/champion",
+        "ogTitle": "冠军竞猜 | WorldCupDex",
+        "ogImage": "https://worldcupdex.org/og/champion-predict.png",
+        "jsonLdCount": 0,
+        "textSample": "🏆\nWorldCupDex\nHome\nTeams\nMatches\nFan Pass\nPredictions\nTrivia\nBlog\nDiscord\nEnglish\n🏆\nPick Your Champion\n\n48 teams, one ultimate prize! Make your prediction and get a personalized card!\n\nArgentina\nMexico\nEcuador\nColombia\nBrazil\nUnited States\nPanama\nEngland\nNew Zealand\nSpain\nParaguay\nCanada\nGermany\nJapan\nFrance\nMorocco\nIran\nAustralia\nNetherlands\nPortugal\nSouth Africa\nSaudi Arabia\nUruguay\nSouth Korea\nBelgium\nCroatia\nTunisia\nSenegal\nGhana\nTurkey\nⓘ Submit to generate your exclusive champion prediction card ✨\nPrivacy Policy\nContact\nAbout\nJoin Discord\n🏆\nWorldCupDex\nHome\nTeams\nMatches\nPredictions\n© 2026 WorldCupDex\nAs an affiliate partner, we may earn a commission from qualifying purchases.",
+        "hasMojibake": false,
+        "links": [
+          {
+            "text": "🏆WorldCupDex",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Fan Pass",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "Trivia",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Blog",
+            "href": "https://worldcupdex.org/blog"
+          },
+          {
+            "text": "Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://worldcupdex.org/privacy"
+          },
+          {
+            "text": "Contact",
+            "href": "https://worldcupdex.org/contact"
+          },
+          {
+            "text": "About",
+            "href": "https://worldcupdex.org/about"
+          },
+          {
+            "text": "Join Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          }
+        ],
+        "bodyLength": 693
+      }
+    },
+    {
+      "name": "fan-card",
+      "route": "/fan-card",
+      "profileName": "desktop",
+      "url": "https://worldcupdex.org/fan-card",
+      "ok": true,
+      "error": "",
+      "elapsedMs": 8099,
+      "screenshot": "E:\\pc_workspace\\tool\\worldcupdex\\reports\\live-audit-2026-05-27\\desktop-fan-card.png",
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "Third-party cookie will be blocked. Learn more in the Issues tab."
+        }
+      ],
+      "requestFailures": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847918867&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=480767921.1779847920&frm=0&pscdl=noapi&rcb=17&sr=1440x1000&uaa=x86&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=1&tag_exp=0~115616986~115938466~115938468~119169247&dp=%2Ffan-card&dl=https%3A%2F%2Fworldcupdex.org%2Ffan-card&dt=Create%20Your%20Fan%20Pass%20-%20WorldCupDex&sid=1779847920&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2581",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847918867&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=480767921.1779847920&frm=0&pscdl=noapi&rcb=17&sr=1440x1000&uaa=x86&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&tag_exp=0~115616986~115938466~115938468~119169247&dp=%2Ffan-card&dl=https%3A%2F%2Fworldcupdex.org%2Ffan-card&dt=Create%20Your%20Fan%20Pass%20-%20WorldCupDex&sid=1779847920&sct=1&seg=1&_s=2&tfd=7602",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "badResponses": [],
+      "info": {
+        "title": "Create Your Fan Pass - WorldCupDex",
+        "h1": [
+          "Create Your Fan Pass"
+        ],
+        "metaDescription": "Create your exclusive fan card, show your supported team and motto.",
+        "canonical": "https://worldcupdex.org/fan-card",
+        "ogTitle": "Create Your Fan Pass - WorldCupDex",
+        "ogImage": "https://worldcupdex.org/images/og-default.png",
+        "jsonLdCount": 0,
+        "textSample": "🏆\nWorldCupDex\nHome\nTeams\nMatches\nFan Pass\nPredictions\nTrivia\nBlog\nDiscord\nEnglish\nCreate Your Fan Pass\n\nShow your colors before the World Cup begins\n\n1\nChoose your team\n2\nPick your favorite player\nChoose your team\n\nSelect your supported team from all teams to generate your exclusive fan card\n\nFilter by region\nAlgeria\nFIFA #33\nSwitzerland\nFIFA #15\nSweden\nFIFA #23\nCzechia\nFIFA #36\nAustria\nFIFA #22\nEgypt\nFIFA #35\nHaiti\nFIFA #52\nBosnia-Herzegovina\nFIFA #53\nCape Verde Islands\nFIFA #54\nCongo DR\nFIFA #47\nIvory Coast\nFIFA #39\nQatar\nFIFA #48\nJordan\nFIFA #51\nIraq\nFIFA #50\nUzbekistan\nFIFA #49\nNorway\nFIFA #38\nScotland\nFIFA #37\nCuraçao\nFIFA #55\nArgentina\nFIFA #1\nMexico\nFIFA #16\nEcuador\nFIFA #28\nColombia\nFIFA #12\nBrazil\nFIFA #5\nUnited States\nFIFA #17\nPanama\nFIFA #35\nEngland\nFIFA #4\nNew Zealand\nFIFA #42\nSpain\nFIFA #3\nParaguay\nFIFA #39\nCanada\nFIFA #30\nGermany\nFIFA #10\nJapan\nFIFA #15\nFrance\nFIFA #2\nMorocco\nFIFA #14\nIran\nFIFA #20\nAustralia\nFIFA #23\nNetherlands\nFIFA #7\nPortugal\nFIFA #6\nSouth Africa\nFIFA #34\nSaudi Arabia\nFIFA #32\nUruguay\nFIFA #13\nSouth Korea\nFIFA #21\nBelgium\nFIFA #8\nCroatia\nFIFA #11\nTunisia\nFIFA #29\nSenegal\nFIFA #18\nGhana\nFIFA #36\nTurkey\nFIFA #19\n\nCan't find your team?\n\nWe support al",
+        "hasMojibake": false,
+        "links": [
+          {
+            "text": "🏆WorldCupDex",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Fan Pass",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "Trivia",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Blog",
+            "href": "https://worldcupdex.org/blog"
+          },
+          {
+            "text": "Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://worldcupdex.org/privacy"
+          },
+          {
+            "text": "Contact",
+            "href": "https://worldcupdex.org/contact"
+          },
+          {
+            "text": "About",
+            "href": "https://worldcupdex.org/about"
+          },
+          {
+            "text": "Join Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          }
+        ],
+        "bodyLength": 1422
+      }
+    },
+    {
+      "name": "quiz",
+      "route": "/quiz",
+      "profileName": "desktop",
+      "url": "https://worldcupdex.org/quiz",
+      "ok": true,
+      "error": "",
+      "elapsedMs": 8254,
+      "screenshot": "E:\\pc_workspace\\tool\\worldcupdex\\reports\\live-audit-2026-05-27\\desktop-quiz.png",
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "Third-party cookie will be blocked. Learn more in the Issues tab."
+        }
+      ],
+      "requestFailures": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847927167&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=738634435.1779847929&frm=0&pscdl=noapi&rcb=17&sr=1440x1000&uaa=x86&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=1&tag_exp=0~115938466~115938469~118694324~119034492&dp=%2Fquiz&dl=https%3A%2F%2Fworldcupdex.org%2Fquiz&dt=World%20Cup%20IQ%20Challenge%20-%20WorldCupDex&sid=1779847928&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2649",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847927167&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=738634435.1779847929&frm=0&pscdl=noapi&rcb=17&sr=1440x1000&uaa=x86&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&tag_exp=0~115938466~115938469~118694324~119034492&dp=%2Fquiz&dl=https%3A%2F%2Fworldcupdex.org%2Fquiz&dt=World%20Cup%20IQ%20Challenge%20-%20WorldCupDex&sid=1779847928&sct=1&seg=1&_s=2&tfd=7666",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "badResponses": [],
+      "info": {
+        "title": "World Cup IQ Challenge - WorldCupDex",
+        "h1": [
+          "Test YourWorld Cup IQ"
+        ],
+        "metaDescription": "5 fun questions to test your World Cup knowledge, compete with fans worldwide.",
+        "canonical": "https://worldcupdex.org/quiz",
+        "ogTitle": "World Cup IQ Challenge - WorldCupDex",
+        "ogImage": "https://worldcupdex.org/images/og-default.png",
+        "jsonLdCount": 1,
+        "textSample": "🏆\nWorldCupDex\nHome\nTeams\nMatches\nFan Pass\nPredictions\nTrivia\nBlog\nDiscord\nEnglish\nTest Your\nWorld Cup IQ\n\n5 fun questions to test your World Cup knowledge\n\n5 Questions\n\nCovering history, players, tactics and more\n\n30 Seconds Per Question\n\nAnswer quickly, aim high, test your reflexes\n\nInstant Results\n\nGet your score instantly, compete with fans worldwide\n\nStart Challenge\n→\n13,426 fans have taken the challenge\n…\n◇ How It Works ◇\n1. Start\n\nClick button to begin\n\n2. Answer\n\n30 seconds per question, pick the best answer\n\n3. Results\n\nSee your score and ranking\n\nPrivacy Policy\nContact\nAbout\nJoin Discord\n🏆\nWorldCupDex\nHome\nTeams\nMatches\nPredictions\n© 2026 WorldCupDex\nAs an affiliate partner, we may earn a commission from qualifying purchases.",
+        "hasMojibake": false,
+        "links": [
+          {
+            "text": "🏆WorldCupDex",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Fan Pass",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "Trivia",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Blog",
+            "href": "https://worldcupdex.org/blog"
+          },
+          {
+            "text": "Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://worldcupdex.org/privacy"
+          },
+          {
+            "text": "Contact",
+            "href": "https://worldcupdex.org/contact"
+          },
+          {
+            "text": "About",
+            "href": "https://worldcupdex.org/about"
+          },
+          {
+            "text": "Join Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          }
+        ],
+        "bodyLength": 746
+      }
+    },
+    {
+      "name": "teams",
+      "route": "/teams",
+      "profileName": "desktop",
+      "url": "https://worldcupdex.org/teams",
+      "ok": true,
+      "error": "",
+      "elapsedMs": 8359,
+      "screenshot": "E:\\pc_workspace\\tool\\worldcupdex\\reports\\live-audit-2026-05-27\\desktop-teams.png",
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Hydration completed but contains mismatches."
+        },
+        {
+          "type": "warning",
+          "text": "Third-party cookie will be blocked. Learn more in the Issues tab."
+        }
+      ],
+      "requestFailures": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847935788&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1174621942.1779847937&frm=0&pscdl=noapi&rcb=3&sr=1440x1000&uaa=x86&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=1&tag_exp=0~115938465~115938468&dp=%2Fteams&dl=https%3A%2F%2Fworldcupdex.org%2Fteams&dt=Team%20Encyclopedia%20-%20WorldCupDex&sid=1779847937&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2584",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847935788&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=1174621942.1779847937&frm=0&pscdl=noapi&rcb=3&sr=1440x1000&uaa=x86&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&tag_exp=0~115938465~115938468&dp=%2Fteams&dl=https%3A%2F%2Fworldcupdex.org%2Fteams&dt=Team%20Encyclopedia%20-%20WorldCupDex&sid=1779847937&sct=1&seg=1&_s=2&tfd=7610",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "badResponses": [],
+      "info": {
+        "title": "Team Encyclopedia - WorldCupDex",
+        "h1": [
+          "Team Encyclopedia"
+        ],
+        "metaDescription": "浏览2026世界杯所有参赛球队，了解阵容、历史战绩和小组赛分组。",
+        "canonical": "https://worldcupdex.org/teams",
+        "ogTitle": "Team Encyclopedia - WorldCupDex",
+        "ogImage": "https://worldcupdex.org/images/og-default.png",
+        "jsonLdCount": 0,
+        "textSample": "🏆\nWorldCupDex\nHome\nTeams\nMatches\nFan Pass\nPredictions\nTrivia\nBlog\nDiscord\nEnglish\nHome>Team Encyclopedia\nTeam Encyclopedia\n\nComplete profiles of all 48 participating teams\n\nAll (48)\nGroup A\nGroup B\nGroup C\nGroup D\nGroup E\nGroup F\nGroup G\nGroup H\nGroup I\nGroup J\nGroup K\nGroup L\nUEFA(9)\nCONMEBOL(6)\nCAF(5)\nAFC(5)\nCONCACAF(4)\nOFC(1)\nSort: By Group\nSort: By Ranking\n⭐\nSwitzerland\n\n瑞士\n\n#15\nGroup\n\n⭐\nAustria\n\n奥地利\n\n#22\nGroup\n\n⭐\nSweden\n\n瑞典\n\n#23\nGroup\n\n⭐\nAlgeria\n\n阿尔及利亚\n\n#33\nGroup\n\n⭐\nEgypt\n\n埃及\n\n#35\nGroup\n\n⭐\nCzechia\n\n捷克\n\n#36\nGroup\n\n⭐\nScotland\n\n苏格兰\n\n#37\nGroup\n\n⭐\nNorway\n\n挪威\n\n#38\nGroup\n\n⭐\nIvory Coast\n\n科特迪瓦\n\n#39\nGroup\n\n⭐\nCongo DR\n\n刚果(金)\n\n#47\nGroup\n\n⭐\nQatar\n\n卡塔尔\n\n#48\nGroup\n\n⭐\nUzbekistan\n\n乌兹别克斯坦\n\n#49\nGroup\n\n1\n2\n3\n4\n>\nPrivacy Policy\nContact\nAbout\nJoin Discord\n🏆\nWorldCupDex\nHome\nTeams\nMatches\nPredictions\n© 2026 WorldCupDex\nAs an affiliate partner, we may earn a commission from qualifying purchases.",
+        "hasMojibake": false,
+        "links": [
+          {
+            "text": "🏆WorldCupDex",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Fan Pass",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "Trivia",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Blog",
+            "href": "https://worldcupdex.org/blog"
+          },
+          {
+            "text": "Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "⭐Switzerland瑞士 #15Group",
+            "href": "https://worldcupdex.org/teams/switzerland"
+          },
+          {
+            "text": "⭐Austria奥地利 #22Group",
+            "href": "https://worldcupdex.org/teams/austria"
+          },
+          {
+            "text": "⭐Sweden瑞典 #23Group",
+            "href": "https://worldcupdex.org/teams/sweden"
+          },
+          {
+            "text": "⭐Algeria阿尔及利亚 #33Group",
+            "href": "https://worldcupdex.org/teams/algeria"
+          },
+          {
+            "text": "⭐Egypt埃及 #35Group",
+            "href": "https://worldcupdex.org/teams/egypt"
+          },
+          {
+            "text": "⭐Czechia捷克 #36Group",
+            "href": "https://worldcupdex.org/teams/czechia"
+          },
+          {
+            "text": "⭐Scotland苏格兰 #37Group",
+            "href": "https://worldcupdex.org/teams/scotland"
+          },
+          {
+            "text": "⭐Norway挪威 #38Group",
+            "href": "https://worldcupdex.org/teams/norway"
+          },
+          {
+            "text": "⭐Ivory Coast科特迪瓦 #39Group",
+            "href": "https://worldcupdex.org/teams/ivory-coast"
+          },
+          {
+            "text": "⭐Congo DR刚果(金) #47Group",
+            "href": "https://worldcupdex.org/teams/congo-dr"
+          },
+          {
+            "text": "⭐Qatar卡塔尔 #48Group",
+            "href": "https://worldcupdex.org/teams/qatar"
+          },
+          {
+            "text": "⭐Uzbekistan乌兹别克斯坦 #49Group",
+            "href": "https://worldcupdex.org/teams/uzbekistan"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://worldcupdex.org/privacy"
+          },
+          {
+            "text": "Contact",
+            "href": "https://worldcupdex.org/contact"
+          },
+          {
+            "text": "About",
+            "href": "https://worldcupdex.org/about"
+          },
+          {
+            "text": "Join Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          }
+        ],
+        "bodyLength": 891
+      }
+    },
+    {
+      "name": "blog",
+      "route": "/blog",
+      "profileName": "desktop",
+      "url": "https://worldcupdex.org/blog",
+      "ok": true,
+      "error": "",
+      "elapsedMs": 8336,
+      "screenshot": "E:\\pc_workspace\\tool\\worldcupdex\\reports\\live-audit-2026-05-27\\desktop-blog.png",
+      "consoleErrors": [
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 ()"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 ()"
+        },
+        {
+          "type": "error",
+          "text": "Failed to load resource: the server responded with a status of 404 ()"
+        },
+        {
+          "type": "warning",
+          "text": "Third-party cookie will be blocked. Learn more in the Issues tab."
+        }
+      ],
+      "requestFailures": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847944316&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AEA&ae=a&cid=1588371293.1779847945&frm=0&pscdl=noapi&rcb=10&sr=1440x1000&uaa=x86&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&_s=1&tag_exp=0~115616986~115938466~115938469~118689382~119034493&sid=1779847945&sct=1&seg=0&dl=https%3A%2F%2Fworldcupdex.org%2Fblog%2F&dt=WorldCupDex%20Blog%20-%20WorldCupDex&en=scroll&_fv=1&_nsi=1&_ss=1&epn.percent_scrolled=90&tfd=2037",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847944316&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=1588371293.1779847945&frm=0&pscdl=noapi&rcb=10&sr=1440x1000&uaa=x86&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=0&uap=Windows&uapv=19.0.0&uaw=0&ul=zh-cn&tag_exp=0~115616986~115938466~115938469~118689382~119034493&dp=%2Fblog&dl=https%3A%2F%2Fworldcupdex.org%2Fblog&dt=WorldCupDex%20Blog%20-%20WorldCupDex&sid=1779847945&sct=1&seg=1&_s=2&tfd=7643",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "badResponses": [
+        {
+          "url": "https://worldcupdex.org/images/blog/format-change.jpg",
+          "status": 404
+        },
+        {
+          "url": "https://worldcupdex.org/images/blog/host-cities-cover.jpg",
+          "status": 404
+        },
+        {
+          "url": "https://worldcupdex.org/images/blog/favorites.jpg",
+          "status": 404
+        }
+      ],
+      "info": {
+        "title": "WorldCupDex Blog - WorldCupDex",
+        "h1": [
+          "WorldCupDex Blog"
+        ],
+        "metaDescription": "WorldCupDex Blog — in-depth coverage of the 2026 FIFA World Cup, including host cities, team tactics and travel guides.",
+        "canonical": "https://worldcupdex.org/blog",
+        "ogTitle": "WorldCupDex Blog - WorldCupDex",
+        "ogImage": "https://worldcupdex.org/images/og-default.png",
+        "jsonLdCount": 0,
+        "textSample": "🏆\nWorldCupDex\nHome\nTeams\nMatches\nFan Pass\nPredictions\nTrivia\nBlog\nDiscord\nEnglish\nHome>WorldCupDex Blog\nWorldCupDex Blog\n\nIn-depth analysis of the 2026 World Cup matches, teams and tactics\n\nPredictions\nFavorites\nWorld Cup\n2026 World Cup Favorites: Who Will Lift the Trophy?\n\nFrance, Brazil, Argentina, or England? We analyze the top five favorites to win the 2026 FIFA World Cup and their chances of glory.\n\nPublished on May 19, 2026\nRead more →\nFormat\nWorld Cup\n48 Teams\n2026 World Cup Format Explained: What 48 Teams Mean for the Tournament\n\nThe 2026 World Cup will feature 48 teams for the first time. How will the group stage work? What about the knockout rounds? Here is everything you need to know.\n\nPublished on May 18, 2026\nRead more →\nworld-cup\nhost-cities\ntravel\nRoad to 2026: A Guide to All 16 Host Cities Across USA, Canada and Mexico\n\nFrom Mexico City to Toronto and Los Angeles — discover every host city, venue and the local culture that will define the first truly continental World Cup.\n\nPublished on May 15, 2026\nRead more →\nPrivacy Policy\nContact\nAbout\nJoin Discord\n🏆\nWorldCupDex\nHome\nTeams\nMatches\nPredictions\n© 2026 WorldCupDex\nAs an affiliate partner, we may earn a commission",
+        "hasMojibake": false,
+        "links": [
+          {
+            "text": "🏆WorldCupDex",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Fan Pass",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "Trivia",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Blog",
+            "href": "https://worldcupdex.org/blog"
+          },
+          {
+            "text": "Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "PredictionsFavoritesWorld Cup2026 World Cup Favorites: Who Will Lift the Trophy?France, Brazil, Argentina, or England? W",
+            "href": "https://worldcupdex.org/blog/2026-world-cup-favorites-and-predictions"
+          },
+          {
+            "text": "FormatWorld Cup48 Teams2026 World Cup Format Explained: What 48 Teams Mean for the TournamentThe 2026 World Cup will fea",
+            "href": "https://worldcupdex.org/blog/2026-world-cup-format-explained"
+          },
+          {
+            "text": "world-cuphost-citiestravelRoad to 2026: A Guide to All 16 Host Cities Across USA, Canada and MexicoFrom Mexico City to T",
+            "href": "https://worldcupdex.org/blog/road-to-2026-world-cup-host-cities"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://worldcupdex.org/privacy"
+          },
+          {
+            "text": "Contact",
+            "href": "https://worldcupdex.org/contact"
+          },
+          {
+            "text": "About",
+            "href": "https://worldcupdex.org/about"
+          },
+          {
+            "text": "Join Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          }
+        ],
+        "bodyLength": 1227
+      }
+    },
+    {
+      "name": "home",
+      "route": "/",
+      "profileName": "mobile",
+      "url": "https://worldcupdex.org/",
+      "ok": true,
+      "error": "",
+      "elapsedMs": 8215,
+      "screenshot": "E:\\pc_workspace\\tool\\worldcupdex\\reports\\live-audit-2026-05-27\\mobile-home.png",
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "Third-party cookie will be blocked. Learn more in the Issues tab."
+        },
+        {
+          "type": "warning",
+          "text": "[nuxt] Cannot load payload  /matches/_payload.json?1c9f97cd-5dba-40cd-839b-495cb38e38e9 SyntaxError: Unexpected token '<', \"<!DOCTYPE \"... is not valid JSON\n    at JSON.parse (<anonymous>)\n    at Cy (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:80560)\n    at xd (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:101736)\n    at Id (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100929)\n    at async lc (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100446)\n    at async https://worldcupdex.org/_nuxt/Da_y-dxd.js"
+        }
+      ],
+      "requestFailures": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847952647&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=494602208.1779847955&frm=0&pscdl=noapi&rcb=4&sr=390x844&uaa=arm&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=1&uap=iOS&uapv=15_0&uaw=0&ul=en-us&_s=1&tag_exp=0~115938465~115938468~118689382~119064971&dp=%2F&dl=https%3A%2F%2Fworldcupdex.org%2F&dt=WorldCupDex%20-%202026%E4%B8%96%E7%95%8C%E6%9D%AF%E7%99%BE%E7%A7%91%E4%B8%8E%E9%A2%84%E6%B5%8B&sid=1779847954&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2705",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847952647&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=494602208.1779847955&frm=0&pscdl=noapi&rcb=4&sr=390x844&uaa=arm&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=1&uap=iOS&uapv=15_0&uaw=0&ul=en-us&_s=2&tag_exp=0~115938465~115938468~118689382~119064971&dp=%2F&dl=https%3A%2F%2Fworldcupdex.org%2F&dt=WorldCupDex%20-%202026%E4%B8%96%E7%95%8C%E6%9D%AF%E7%99%BE%E7%A7%91%E4%B8%8E%E9%A2%84%E6%B5%8B&sid=1779847954&sct=1&seg=1&en=page_view&_ee=1&_et=7&tfd=7716",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "badResponses": [],
+      "info": {
+        "title": "WorldCupDex - 2026世界杯百科与预测",
+        "h1": [
+          "FIFA WORLD CUP 2026™"
+        ],
+        "metaDescription": "2026年FIFA世界杯百科全书，包含球队资料、赛程赛果、比分预测和球迷互动。",
+        "canonical": "https://worldcupdex.org/",
+        "ogTitle": "WorldCupDex - 2026世界杯百科与预测",
+        "ogImage": "https://worldcupdex.org/images/og-default.png",
+        "jsonLdCount": 2,
+        "textSample": "🏆\nWorldCupDex\nEnglish\nFIFA WORLD CUP 2026™\n\nCountdown to Kickoff\n\n15\nDays\n22\nHours\n47\nMin\n20\nSec\nStart Predicting →\nView Schedule\n48 Teams\n·\n104 Matches\n·\n16 Cities\n·\n3 Countries\n🏆 Upcoming Matches\nView All Matches →\nGroup Stage A\n📅\nAdd to Calendar\nMexico\nVS\nSouth Africa\n\n6/11 19:00\n\nMetLife Stadium\n\nMake Pick\nAI Pick\n📺 Watch Party Gear\nGroup Stage A\n📅\nAdd to Calendar\nSouth Korea\nVS\nCzechia\n\n6/12 02:00\n\nAT&T Stadium\n\nMake Pick\nAI Pick\n📺 Watch Party Gear\nGroup Stage B\n📅\nAdd to Calendar\nCanada\nVS\nBosnia-Herzegovina\n\n6/12 19:00\n\nSoFi Stadium\n\nMake Pick\nAI Pick\n📺 Watch Party Gear\nGroup Stage D\n📅\nAdd to Calendar\nUnited States\nVS\nParaguay\n\n6/13 01:00\n\nHard Rock Stadium\n\nMake Pick\nAI Pick\n📺 Watch Party Gear\nGroup Stage B\n📅\nAdd to Calendar\nQatar\nVS\nSwitzerland\n\n6/13 19:00\n\nLincoln Financial Field\n\nMake Pick\nAI Pick\n📺 Watch Party Gear\nGroup Stage C\n📅\nAdd to Calendar\nBrazil\nVS\nMorocco\n\n6/13 22:00\n\nMercedes-Benz Stadium\n\nMake Pick\nAI Pick\n📺 Watch Party Gear\nGroup Stage C\n📅\nAdd to Calendar\nHaiti\nVS\nScotland\n\n6/14 01:00\n\nNRG Stadium\n\nMake Pick\nAI Pick\n📺 Watch Party Gear\nGroup Stage D\n📅\nAdd to Calendar\nAustralia\nVS\nTurkey\n\n6/14 04:00\n\nLumen Field\n\nMake Pick\nAI Pick\n📺 Watch Part",
+        "hasMojibake": false,
+        "links": [
+          {
+            "text": "🏆WorldCupDex",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Fan Pass",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "Trivia",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Blog",
+            "href": "https://worldcupdex.org/blog"
+          },
+          {
+            "text": "Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Start Predicting →",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "View Schedule",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "View All Matches →",
+            "href": "https://worldcupdex.org/matches"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537327"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537328"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537333"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537345"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537334"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537339"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537340"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537346"
+          },
+          {
+            "text": "📺 Watch Party Gear",
+            "href": "https://worldcupdex.org/api/track-affiliate?teamId=global&partner=Amazon&productName=Watch+Party+Essentials"
+          },
+          {
+            "text": "View All Teams →",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Argentina#1",
+            "href": "https://worldcupdex.org/teams/argentina"
+          },
+          {
+            "text": "France#2",
+            "href": "https://worldcupdex.org/teams/france"
+          },
+          {
+            "text": "Spain#3",
+            "href": "https://worldcupdex.org/teams/spain"
+          },
+          {
+            "text": "England#4",
+            "href": "https://worldcupdex.org/teams/england"
+          },
+          {
+            "text": "Brazil#5",
+            "href": "https://worldcupdex.org/teams/brazil"
+          },
+          {
+            "text": "Portugal#6",
+            "href": "https://worldcupdex.org/teams/portugal"
+          },
+          {
+            "text": "Netherlands#7",
+            "href": "https://worldcupdex.org/teams/netherlands"
+          },
+          {
+            "text": "Belgium#8",
+            "href": "https://worldcupdex.org/teams/belgium"
+          },
+          {
+            "text": "",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Test Your Knowledge10 fun questions to challenge your World Cup knowledgeCovers history, stars, tactics and moreEarn exc",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Create Your Fan PassCreate your unique fan identity, show your passionCustomize avatar, team and mottoShare your card, c",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Join Now →",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "遇到问题？来这里反馈",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://worldcupdex.org/privacy"
+          },
+          {
+            "text": "Contact",
+            "href": "https://worldcupdex.org/contact"
+          },
+          {
+            "text": "About",
+            "href": "https://worldcupdex.org/about"
+          },
+          {
+            "text": "Join Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          }
+        ],
+        "bodyLength": 2078
+      }
+    },
+    {
+      "name": "schedule",
+      "route": "/schedule",
+      "profileName": "mobile",
+      "url": "https://worldcupdex.org/schedule",
+      "ok": true,
+      "error": "",
+      "elapsedMs": 8292,
+      "screenshot": "E:\\pc_workspace\\tool\\worldcupdex\\reports\\live-audit-2026-05-27\\mobile-schedule.png",
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "Third-party cookie will be blocked. Learn more in the Issues tab."
+        },
+        {
+          "type": "error",
+          "text": "Hydration completed but contains mismatches."
+        }
+      ],
+      "requestFailures": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847961703&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1335934223.1779847964&frm=0&pscdl=noapi&rcb=19&sr=390x844&uaa=arm&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=1&uap=iOS&uapv=15_0&uaw=0&ul=en-us&_s=1&tag_exp=0~115938466~115938469&dp=%2Fschedule&dl=https%3A%2F%2Fworldcupdex.org%2Fschedule&dt=Schedule%20-%20WorldCupDex&sid=1779847964&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=3402",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "badResponses": [],
+      "info": {
+        "title": "Schedule - WorldCupDex",
+        "h1": [
+          "Schedule"
+        ],
+        "metaDescription": "2026世界杯完整赛程时间表，小组赛到决赛的所有比赛安排。",
+        "canonical": "https://worldcupdex.org/schedule",
+        "ogTitle": "Schedule - WorldCupDex",
+        "ogImage": "https://worldcupdex.org/images/og-default.png",
+        "jsonLdCount": 5,
+        "textSample": "🏆\nWorldCupDex\nEnglish\nHome>Matches & Results>Schedule\nSchedule\n\n2026 FIFA World Cup Full Schedule\n\nAll Matches\nGroup Stage\nKnockout\n⭐ My Schedule\nSelect Date\nThursday, June 11, 2026\nFriday, June 12, 2026\nSaturday, June 13, 2026\nSunday, June 14, 2026\nMonday, June 15, 2026\nTuesday, June 16, 2026\nWednesday, June 17, 2026\nThursday, June 18, 2026\nFriday, June 19, 2026\nSaturday, June 20, 2026\nSunday, June 21, 2026\nMonday, June 22, 2026\nTuesday, June 23, 2026\nWednesday, June 24, 2026\nThursday, June 25, 2026\nFriday, June 26, 2026\nSaturday, June 27, 2026\nSunday, June 28, 2026\nMonday, June 29, 2026\nTuesday, June 30, 2026\nWednesday, July 1, 2026\nThursday, July 2, 2026\nFriday, July 3, 2026\nSaturday, July 4, 2026\nSunday, July 5, 2026\nMonday, July 6, 2026\nTuesday, July 7, 2026\nThursday, July 9, 2026\nFriday, July 10, 2026\nSaturday, July 11, 2026\nSunday, July 12, 2026\nTuesday, July 14, 2026\nWednesday, July 15, 2026\nSaturday, July 18, 2026\nSunday, July 19, 2026\nAll Venues\nMetLife Stadium\nAT&T Stadium\nSoFi Stadium\nHard Rock Stadium\nLincoln Financial Field\nMercedes-Benz Stadium\nNRG Stadium\nLumen Field\nGillette Stadium\nGEHA Field at Arrowhead Stadium\nGEODIS Park\nEstadio Azteca\nEstadio Akron\nEstadio B",
+        "hasMojibake": false,
+        "links": [
+          {
+            "text": "🏆WorldCupDex",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Fan Pass",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "Trivia",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Blog",
+            "href": "https://worldcupdex.org/blog"
+          },
+          {
+            "text": "Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537327"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537328"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537333"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537345"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537334"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537339"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537340"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537346"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537351"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537357"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://worldcupdex.org/privacy"
+          },
+          {
+            "text": "Contact",
+            "href": "https://worldcupdex.org/contact"
+          },
+          {
+            "text": "About",
+            "href": "https://worldcupdex.org/about"
+          },
+          {
+            "text": "Join Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          }
+        ],
+        "bodyLength": 2644
+      }
+    },
+    {
+      "name": "predict",
+      "route": "/predict",
+      "profileName": "mobile",
+      "url": "https://worldcupdex.org/predict",
+      "ok": true,
+      "error": "",
+      "elapsedMs": 7745,
+      "screenshot": "E:\\pc_workspace\\tool\\worldcupdex\\reports\\live-audit-2026-05-27\\mobile-predict.png",
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "Third-party cookie will be blocked. Learn more in the Issues tab."
+        }
+      ],
+      "requestFailures": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847970225&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=334131411.1779847972&frm=0&pscdl=noapi&rcb=12&sr=390x844&uaa=arm&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=1&uap=iOS&uapv=15_0&uaw=0&ul=en-us&_s=1&tag_exp=0~115938465~115938468~118228214~118694324&dp=%2Fpredict&dl=https%3A%2F%2Fworldcupdex.org%2Fpredict&dt=World%20Cup%20Predictions%20-%20WorldCupDex&sid=1779847972&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2827",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "badResponses": [],
+      "info": {
+        "title": "World Cup Predictions - WorldCupDex",
+        "h1": [
+          "World Cup Predictions"
+        ],
+        "metaDescription": "Predict 2026 World Cup match results and generate your exclusive prediction card to share.",
+        "canonical": "https://worldcupdex.org/predict",
+        "ogTitle": "World Cup Predictions - WorldCupDex",
+        "ogImage": "https://worldcupdex.org/images/og-default.png",
+        "jsonLdCount": 0,
+        "textSample": "🏆\nWorldCupDex\nEnglish\nWorld Cup Predictions\n\nPredict match results, generate your exclusive prediction card, share with friends\n\n🏆\nTournament Winner\nChoose your champion team\n→\n⚽\nMatch Prediction\nPredict upcoming matches\n→\n📅 Upcoming Matches\nThu, Jun 11\n19:00\nMexico\nA Group\nvs\nSouth Africa\nA Group\nMake Pick\nAI Pick\n📅\nAdd to Calendar\nDeadline: 18:59:00\nFri, Jun 12\n02:00\nSouth Korea\nA Group\nvs\nCzechia\nA Group\nMake Pick\nAI Pick\n📅\nAdd to Calendar\nDeadline: 01:59:00\nFri, Jun 12\n19:00\nCanada\nB Group\nvs\nBosnia-Herzegovina\nB Group\nMake Pick\nAI Pick\n📅\nAdd to Calendar\nDeadline: 18:59:00\nSat, Jun 13\n01:00\nUnited States\nD Group\nvs\nParaguay\nD Group\nMake Pick\nAI Pick\n📅\nAdd to Calendar\nDeadline: 00:59:00\nSat, Jun 13\n19:00\nQatar\nB Group\nvs\nSwitzerland\nB Group\nMake Pick\nAI Pick\n📅\nAdd to Calendar\nDeadline: 18:59:00\nSat, Jun 13\n22:00\nBrazil\nC Group\nvs\nMorocco\nC Group\nMake Pick\nAI Pick\n📅\nAdd to Calendar\nDeadline: 21:59:00\nView all 104 matches to predict →\nPrivacy Policy\nContact\nAbout\nJoin Discord\n🏆\nWorldCupDex\n© 2026 WorldCupDex\nAs an affiliate partner, we may earn a commission from qualifying purchases.",
+        "hasMojibake": false,
+        "links": [
+          {
+            "text": "🏆WorldCupDex",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Fan Pass",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "Trivia",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Blog",
+            "href": "https://worldcupdex.org/blog"
+          },
+          {
+            "text": "Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "🏆Tournament WinnerChoose your champion team→",
+            "href": "https://worldcupdex.org/predict/champion"
+          },
+          {
+            "text": "⚽Match PredictionPredict upcoming matches→",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537327"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537328"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537333"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537345"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537334"
+          },
+          {
+            "text": "Make Pick",
+            "href": "https://worldcupdex.org/predict/537339"
+          },
+          {
+            "text": "View all 104 matches to predict →",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://worldcupdex.org/privacy"
+          },
+          {
+            "text": "Contact",
+            "href": "https://worldcupdex.org/contact"
+          },
+          {
+            "text": "About",
+            "href": "https://worldcupdex.org/about"
+          },
+          {
+            "text": "Join Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          }
+        ],
+        "bodyLength": 1111
+      }
+    },
+    {
+      "name": "champion",
+      "route": "/predict/champion",
+      "profileName": "mobile",
+      "url": "https://worldcupdex.org/predict/champion",
+      "ok": true,
+      "error": "",
+      "elapsedMs": 8276,
+      "screenshot": "E:\\pc_workspace\\tool\\worldcupdex\\reports\\live-audit-2026-05-27\\mobile-champion.png",
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "Third-party cookie will be blocked. Learn more in the Issues tab."
+        }
+      ],
+      "requestFailures": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847979009&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=642791558.1779847981&frm=0&pscdl=noapi&rcb=12&sr=390x844&uaa=arm&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=1&uap=iOS&uapv=15_0&uaw=0&ul=en-us&_s=1&tag_exp=0~115616986~115938466~115938468&dp=%2Fpredict%2Fchampion&dl=https%3A%2F%2Fworldcupdex.org%2Fpredict%2Fchampion&dt=%E5%86%A0%E5%86%9B%E7%AB%9E%E7%8C%9C%20%7C%20WorldCupDex&sid=1779847980&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=3169",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "badResponses": [],
+      "info": {
+        "title": "冠军竞猜 | WorldCupDex",
+        "h1": [
+          "Pick Your Champion"
+        ],
+        "metaDescription": "选择你支持的球队，生成冠军预测卡片分享给朋友！2026世界杯冠军竞猜。",
+        "canonical": "https://worldcupdex.org/predict/champion",
+        "ogTitle": "冠军竞猜 | WorldCupDex",
+        "ogImage": "https://worldcupdex.org/og/champion-predict.png",
+        "jsonLdCount": 0,
+        "textSample": "🏆\nWorldCupDex\nEnglish\n🏆\nPick Your Champion\n\n48 teams, one ultimate prize! Make your prediction and get a personalized card!\n\nArgentina\nMexico\nEcuador\nColombia\nBrazil\nUnited States\nPanama\nEngland\nNew Zealand\nSpain\nParaguay\nCanada\nGermany\nJapan\nFrance\nMorocco\nIran\nAustralia\nNetherlands\nPortugal\nSouth Africa\nSaudi Arabia\nUruguay\nSouth Korea\nBelgium\nCroatia\nTunisia\nSenegal\nGhana\nTurkey\nⓘ Submit to generate your exclusive champion prediction card ✨\nPrivacy Policy\nContact\nAbout\nJoin Discord\n🏆\nWorldCupDex\n© 2026 WorldCupDex\nAs an affiliate partner, we may earn a commission from qualifying purchases.",
+        "hasMojibake": false,
+        "links": [
+          {
+            "text": "🏆WorldCupDex",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Fan Pass",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "Trivia",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Blog",
+            "href": "https://worldcupdex.org/blog"
+          },
+          {
+            "text": "Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://worldcupdex.org/privacy"
+          },
+          {
+            "text": "Contact",
+            "href": "https://worldcupdex.org/contact"
+          },
+          {
+            "text": "About",
+            "href": "https://worldcupdex.org/about"
+          },
+          {
+            "text": "Join Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          }
+        ],
+        "bodyLength": 602
+      }
+    },
+    {
+      "name": "fan-card",
+      "route": "/fan-card",
+      "profileName": "mobile",
+      "url": "https://worldcupdex.org/fan-card",
+      "ok": true,
+      "error": "",
+      "elapsedMs": 8255,
+      "screenshot": "E:\\pc_workspace\\tool\\worldcupdex\\reports\\live-audit-2026-05-27\\mobile-fan-card.png",
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "Third-party cookie will be blocked. Learn more in the Issues tab."
+        }
+      ],
+      "requestFailures": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847987290&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=1209037910.1779847989&frm=0&pscdl=noapi&rcb=18&sr=390x844&uaa=arm&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=1&uap=iOS&uapv=15_0&uaw=0&ul=en-us&_s=1&tag_exp=0~115938466~115938469~119169248&dp=%2Ffan-card&dl=https%3A%2F%2Fworldcupdex.org%2Ffan-card&dt=Create%20Your%20Fan%20Pass%20-%20WorldCupDex&sid=1779847988&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2426",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847987290&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=1209037910.1779847989&frm=0&pscdl=noapi&rcb=18&sr=390x844&uaa=arm&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=1&uap=iOS&uapv=15_0&uaw=0&ul=en-us&tag_exp=0~115938466~115938469~119169248&dp=%2Ffan-card&dl=https%3A%2F%2Fworldcupdex.org%2Ffan-card&dt=Create%20Your%20Fan%20Pass%20-%20WorldCupDex&sid=1779847988&sct=1&seg=1&_s=2&tfd=7449",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "badResponses": [],
+      "info": {
+        "title": "Create Your Fan Pass - WorldCupDex",
+        "h1": [
+          "Create Your Fan Pass"
+        ],
+        "metaDescription": "Create your exclusive fan card, show your supported team and motto.",
+        "canonical": "https://worldcupdex.org/fan-card",
+        "ogTitle": "Create Your Fan Pass - WorldCupDex",
+        "ogImage": "https://worldcupdex.org/images/og-default.png",
+        "jsonLdCount": 0,
+        "textSample": "🏆\nWorldCupDex\nEnglish\nCreate Your Fan Pass\n\nShow your colors before the World Cup begins\n\n1\n2\nChoose your team\n\nSelect your supported team from all teams to generate your exclusive fan card\n\nFilter by region\nAlgeria\nFIFA #33\nSwitzerland\nFIFA #15\nSweden\nFIFA #23\nCzechia\nFIFA #36\nAustria\nFIFA #22\nEgypt\nFIFA #35\nHaiti\nFIFA #52\nBosnia-Herzegovina\nFIFA #53\nCape Verde Islands\nFIFA #54\nCongo DR\nFIFA #47\nIvory Coast\nFIFA #39\nQatar\nFIFA #48\nJordan\nFIFA #51\nIraq\nFIFA #50\nUzbekistan\nFIFA #49\nNorway\nFIFA #38\nScotland\nFIFA #37\nCuraçao\nFIFA #55\nArgentina\nFIFA #1\nMexico\nFIFA #16\nEcuador\nFIFA #28\nColombia\nFIFA #12\nBrazil\nFIFA #5\nUnited States\nFIFA #17\nPanama\nFIFA #35\nEngland\nFIFA #4\nNew Zealand\nFIFA #42\nSpain\nFIFA #3\nParaguay\nFIFA #39\nCanada\nFIFA #30\nGermany\nFIFA #10\nJapan\nFIFA #15\nFrance\nFIFA #2\nMorocco\nFIFA #14\nIran\nFIFA #20\nAustralia\nFIFA #23\nNetherlands\nFIFA #7\nPortugal\nFIFA #6\nSouth Africa\nFIFA #34\nSaudi Arabia\nFIFA #32\nUruguay\nFIFA #13\nSouth Korea\nFIFA #21\nBelgium\nFIFA #8\nCroatia\nFIFA #11\nTunisia\nFIFA #29\nSenegal\nFIFA #18\nGhana\nFIFA #36\nTurkey\nFIFA #19\n\nCan't find your team?\n\nWe support all FIFA-recognized nations and regions\n\nPrivacy Policy\nContact\nAbout\nJoin Discord\n🏆\nWorldCupDex\n© 2026 ",
+        "hasMojibake": false,
+        "links": [
+          {
+            "text": "🏆WorldCupDex",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Fan Pass",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "Trivia",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Blog",
+            "href": "https://worldcupdex.org/blog"
+          },
+          {
+            "text": "Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://worldcupdex.org/privacy"
+          },
+          {
+            "text": "Contact",
+            "href": "https://worldcupdex.org/contact"
+          },
+          {
+            "text": "About",
+            "href": "https://worldcupdex.org/about"
+          },
+          {
+            "text": "Join Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          }
+        ],
+        "bodyLength": 1288
+      }
+    },
+    {
+      "name": "quiz",
+      "route": "/quiz",
+      "profileName": "mobile",
+      "url": "https://worldcupdex.org/quiz",
+      "ok": true,
+      "error": "",
+      "elapsedMs": 8311,
+      "screenshot": "E:\\pc_workspace\\tool\\worldcupdex\\reports\\live-audit-2026-05-27\\mobile-quiz.png",
+      "consoleErrors": [
+        {
+          "type": "warning",
+          "text": "Third-party cookie will be blocked. Learn more in the Issues tab."
+        }
+      ],
+      "requestFailures": [
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847995829&gcd=13l3l3l3l1l1&npa=0&dma=0&cid=315569.1779847998&frm=0&pscdl=noapi&rcb=3&sr=390x844&uaa=arm&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=1&uap=iOS&uapv=15_0&uaw=0&ul=en-us&_s=1&tag_exp=0~115616986~115938465~115938469~119064591&dp=%2Fquiz&dl=https%3A%2F%2Fworldcupdex.org%2Fquiz&dt=World%20Cup%20IQ%20Challenge%20-%20WorldCupDex&sid=1779847997&sct=1&seg=0&en=page_view&_fv=1&_nsi=1&_ss=1&_ee=1&tfd=2703",
+          "failure": "net::ERR_ABORTED"
+        },
+        {
+          "url": "https://www.google-analytics.com/g/collect?v=2&tid=G-S1QW4612XD&gtm=45je65m1v9252792379za200zd9252792379&_p=1779847995829&gcd=13l3l3l3l1l1&npa=0&dma=0&_eu=AAAAAAQ&cid=315569.1779847998&frm=0&pscdl=noapi&rcb=3&sr=390x844&uaa=arm&uab=64&uafvl=Chromium%3B122.0.6261.70%7CNot(A%253ABrand%3B24.0.0.0%7CHeadlessChrome%3B122.0.6261.70&uam=&uamb=1&uap=iOS&uapv=15_0&uaw=0&ul=en-us&tag_exp=0~115616986~115938465~115938469~119064591&dp=%2Fquiz&dl=https%3A%2F%2Fworldcupdex.org%2Fquiz&dt=World%20Cup%20IQ%20Challenge%20-%20WorldCupDex&sid=1779847997&sct=1&seg=1&_s=2&tfd=7725",
+          "failure": "net::ERR_ABORTED"
+        }
+      ],
+      "badResponses": [],
+      "info": {
+        "title": "World Cup IQ Challenge - WorldCupDex",
+        "h1": [
+          "Test YourWorld Cup IQ"
+        ],
+        "metaDescription": "5 fun questions to test your World Cup knowledge, compete with fans worldwide.",
+        "canonical": "https://worldcupdex.org/quiz",
+        "ogTitle": "World Cup IQ Challenge - WorldCupDex",
+        "ogImage": "https://worldcupdex.org/images/og-default.png",
+        "jsonLdCount": 1,
+        "textSample": "🏆\nWorldCupDex\nEnglish\nTest Your\nWorld Cup IQ\n\n5 fun questions to test your World Cup knowledge\n\n5 Questions\n\nCovering history, players, tactics and more\n\n30 Seconds Per Question\n\nAnswer quickly, aim high, test your reflexes\n\nInstant Results\n\nGet your score instantly, compete with fans worldwide\n\nStart Challenge\n→\n13,426 fans have taken the challenge\n…\n◇ How It Works ◇\n1. Start\n\nClick button to begin\n\n2. Answer\n\n30 seconds per question, pick the best answer\n\n3. Results\n\nSee your score and ranking\n\nPrivacy Policy\nContact\nAbout\nJoin Discord\n🏆\nWorldCupDex\n© 2026 WorldCupDex\nAs an affiliate partner, we may earn a commission from qualifying purchases.",
+        "hasMojibake": false,
+        "links": [
+          {
+            "text": "🏆WorldCupDex",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Fan Pass",
+            "href": "https://worldcupdex.org/fan-card"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          },
+          {
+            "text": "Trivia",
+            "href": "https://worldcupdex.org/quiz"
+          },
+          {
+            "text": "Blog",
+            "href": "https://worldcupdex.org/blog"
+          },
+          {
+            "text": "Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Privacy Policy",
+            "href": "https://worldcupdex.org/privacy"
+          },
+          {
+            "text": "Contact",
+            "href": "https://worldcupdex.org/contact"
+          },
+          {
+            "text": "About",
+            "href": "https://worldcupdex.org/about"
+          },
+          {
+            "text": "Join Discord",
+            "href": "https://discord.gg/zpCBfUZbUn"
+          },
+          {
+            "text": "Home",
+            "href": "https://worldcupdex.org/"
+          },
+          {
+            "text": "Teams",
+            "href": "https://worldcupdex.org/teams"
+          },
+          {
+            "text": "Matches",
+            "href": "https://worldcupdex.org/schedule"
+          },
+          {
+            "text": "Predictions",
+            "href": "https://worldcupdex.org/predict"
+          }
+        ],
+        "bodyLength": 655
+      }
+    }
+  ],
+  "interaction": {
+    "steps": [
+      {
+        "page": "schedule",
+        "buttons": [
+          {
+            "i": 0,
+            "text": "",
+            "aria": "Open menu"
+          },
+          {
+            "i": 1,
+            "text": "English",
+            "aria": ""
+          },
+          {
+            "i": 2,
+            "text": "Español",
+            "aria": ""
+          },
+          {
+            "i": 3,
+            "text": "中文",
+            "aria": ""
+          },
+          {
+            "i": 4,
+            "text": "All Matches",
+            "aria": ""
+          },
+          {
+            "i": 5,
+            "text": "Group Stage",
+            "aria": ""
+          },
+          {
+            "i": 6,
+            "text": "Knockout",
+            "aria": ""
+          },
+          {
+            "i": 7,
+            "text": "⭐ My Schedule",
+            "aria": ""
+          },
+          {
+            "i": 8,
+            "text": "Venue Time",
+            "aria": ""
+          },
+          {
+            "i": 9,
+            "text": "My Time",
+            "aria": ""
+          },
+          {
+            "i": 10,
+            "text": "Export Schedule",
+            "aria": ""
+          },
+          {
+            "i": 11,
+            "text": "<",
+            "aria": ""
+          },
+          {
+            "i": 12,
+            "text": ">",
+            "aria": ""
+          },
+          {
+            "i": 13,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 14,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 15,
+            "text": "AI Pick",
+            "aria": ""
+          },
+          {
+            "i": 16,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 17,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 18,
+            "text": "AI Pick",
+            "aria": ""
+          },
+          {
+            "i": 19,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 20,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 21,
+            "text": "AI Pick",
+            "aria": ""
+          },
+          {
+            "i": 22,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 23,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 24,
+            "text": "AI Pick",
+            "aria": ""
+          },
+          {
+            "i": 25,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 26,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 27,
+            "text": "AI Pick",
+            "aria": ""
+          },
+          {
+            "i": 28,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 29,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 30,
+            "text": "AI Pick",
+            "aria": ""
+          },
+          {
+            "i": 31,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 32,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 33,
+            "text": "AI Pick",
+            "aria": ""
+          },
+          {
+            "i": 34,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 35,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 36,
+            "text": "AI Pick",
+            "aria": ""
+          },
+          {
+            "i": 37,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 38,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 39,
+            "text": "AI Pick",
+            "aria": ""
+          },
+          {
+            "i": 40,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 41,
+            "text": "📅 Add to Calendar",
+            "aria": ""
+          },
+          {
+            "i": 42,
+            "text": "AI Pick",
+            "aria": ""
+          },
+          {
+            "i": 43,
+            "text": "View Full Schedule (72) →",
+            "aria": ""
+          },
+          {
+            "i": 44,
+            "text": "",
+            "aria": "Back to top"
+          }
+        ]
+      },
+      {
+        "page": "schedule",
+        "exportClicked": true
+      },
+      {
+        "page": "fan-card",
+        "firstButtons": [
+          {
+            "i": 1,
+            "text": "English"
+          },
+          {
+            "i": 2,
+            "text": "Español"
+          },
+          {
+            "i": 3,
+            "text": "中文"
+          },
+          {
+            "i": 4,
+            "text": "Filter by region"
+          },
+          {
+            "i": 5,
+            "text": "Algeria FIFA #33"
+          },
+          {
+            "i": 6,
+            "text": "Switzerland FIFA #15"
+          },
+          {
+            "i": 7,
+            "text": "Sweden FIFA #23"
+          },
+          {
+            "i": 8,
+            "text": "Czechia FIFA #36"
+          },
+          {
+            "i": 9,
+            "text": "Austria FIFA #22"
+          },
+          {
+            "i": 10,
+            "text": "Egypt FIFA #35"
+          },
+          {
+            "i": 11,
+            "text": "Haiti FIFA #52"
+          },
+          {
+            "i": 12,
+            "text": "Bosnia-Herzegovina FIFA #53"
+          },
+          {
+            "i": 13,
+            "text": "Cape Verde Islands FIFA #54"
+          },
+          {
+            "i": 14,
+            "text": "Congo DR FIFA #47"
+          },
+          {
+            "i": 15,
+            "text": "Ivory Coast FIFA #39"
+          },
+          {
+            "i": 16,
+            "text": "Qatar FIFA #48"
+          },
+          {
+            "i": 17,
+            "text": "Jordan FIFA #51"
+          },
+          {
+            "i": 18,
+            "text": "Iraq FIFA #50"
+          },
+          {
+            "i": 19,
+            "text": "Uzbekistan FIFA #49"
+          },
+          {
+            "i": 20,
+            "text": "Norway FIFA #38"
+          },
+          {
+            "i": 21,
+            "text": "Scotland FIFA #37"
+          },
+          {
+            "i": 22,
+            "text": "Curaçao FIFA #55"
+          },
+          {
+            "i": 23,
+            "text": "Argentina FIFA #1"
+          },
+          {
+            "i": 24,
+            "text": "Mexico FIFA #16"
+          },
+          {
+            "i": 25,
+            "text": "Ecuador FIFA #28"
+          },
+          {
+            "i": 26,
+            "text": "Colombia FIFA #12"
+          },
+          {
+            "i": 27,
+            "text": "Brazil FIFA #5"
+          },
+          {
+            "i": 28,
+            "text": "United States FIFA #17"
+          },
+          {
+            "i": 29,
+            "text": "Panama FIFA #35"
+          },
+          {
+            "i": 30,
+            "text": "England FIFA #4"
+          },
+          {
+            "i": 31,
+            "text": "New Zealand FIFA #42"
+          },
+          {
+            "i": 32,
+            "text": "Spain FIFA #3"
+          },
+          {
+            "i": 33,
+            "text": "Paraguay FIFA #39"
+          },
+          {
+            "i": 34,
+            "text": "Canada FIFA #30"
+          },
+          {
+            "i": 35,
+            "text": "Germany FIFA #10"
+          },
+          {
+            "i": 36,
+            "text": "Japan FIFA #15"
+          },
+          {
+            "i": 37,
+            "text": "France FIFA #2"
+          },
+          {
+            "i": 38,
+            "text": "Morocco FIFA #14"
+          },
+          {
+            "i": 39,
+            "text": "Iran FIFA #20"
+          },
+          {
+            "i": 40,
+            "text": "Australia FIFA #23"
+          }
+        ]
+      },
+      {
+        "page": "fan-card",
+        "selectedArgentina": true
+      },
+      {
+        "page": "quiz",
+        "urlAfterStart": "https://worldcupdex.org/quiz/play",
+        "title": "World Cup IQ Challenge - WorldCupDex - WorldCupDex"
+      }
+    ],
+    "errors": [
+      "warning: Third-party cookie will be blocked. Learn more in the Issues tab.",
+      "error: Hydration completed but contains mismatches.",
+      "warning: [nuxt] Cannot load payload  /predict/537333/_payload.json?1c9f97cd-5dba-40cd-839b-495cb38e38e9 TypeError: Failed to fetch\n    at Id (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100880)\n    at lc (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100452)\n    at async https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:161641\n    at async Promise.all (index 0)\n    at async S (https://worldcupdex.org/_nuxt/DoadoT6",
+      "warning: [nuxt] Cannot load payload  /_payload.json?1c9f97cd-5dba-40cd-839b-495cb38e38e9 TypeError: Failed to fetch\n    at Id (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100880)\n    at lc (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100452)\n    at async https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:161641\n    at async Promise.all (index 0)\n    at async S (https://worldcupdex.org/_nuxt/DoadoT6n.js:1:3184)\n  ",
+      "warning: [nuxt] Cannot load payload  /predict/537328/_payload.json?1c9f97cd-5dba-40cd-839b-495cb38e38e9 TypeError: Failed to fetch\n    at Id (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100880)\n    at lc (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100452)\n    at async https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:161641\n    at async Promise.all (index 0)\n    at async S (https://worldcupdex.org/_nuxt/DoadoT6",
+      "warning: [nuxt] Cannot load payload  /_payload.json?1c9f97cd-5dba-40cd-839b-495cb38e38e9 TypeError: Failed to fetch\n    at Id (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100880)\n    at lc (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100452)\n    at async https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:161641\n    at async Promise.all (index 0)\n    at async S (https://worldcupdex.org/_nuxt/DoadoT6n.js:1:3184)\n  ",
+      "warning: [nuxt] Cannot load payload  /predict/537345/_payload.json?1c9f97cd-5dba-40cd-839b-495cb38e38e9 TypeError: Failed to fetch\n    at Id (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100880)\n    at lc (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100452)\n    at async https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:161641\n    at async Promise.all (index 0)\n    at async S (https://worldcupdex.org/_nuxt/DoadoT6",
+      "warning: [nuxt] Cannot load payload  /teams/_payload.json?1c9f97cd-5dba-40cd-839b-495cb38e38e9 TypeError: Failed to fetch\n    at Id (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100880)\n    at lc (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100452)\n    at async https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:161641\n    at async Promise.all (index 0)\n    at async S (https://worldcupdex.org/_nuxt/DoadoT6n.js:1:31",
+      "warning: [nuxt] Cannot load payload  /blog/_payload.json?1c9f97cd-5dba-40cd-839b-495cb38e38e9 TypeError: Failed to fetch\n    at Id (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100880)\n    at lc (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100452)\n    at async https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:161641\n    at async Promise.all (index 0)\n    at async S (https://worldcupdex.org/_nuxt/DoadoT6n.js:1:318",
+      "warning: [nuxt] Cannot load payload  /quiz/_payload.json?1c9f97cd-5dba-40cd-839b-495cb38e38e9 TypeError: Failed to fetch\n    at Id (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100880)\n    at lc (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100452)\n    at async https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:161641\n    at async Promise.all (index 0)\n    at async S (https://worldcupdex.org/_nuxt/DoadoT6n.js:1:318",
+      "warning: [nuxt] Cannot load payload  /fan-card/_payload.json?1c9f97cd-5dba-40cd-839b-495cb38e38e9 TypeError: Failed to fetch\n    at Id (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100880)\n    at lc (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100452)\n    at async https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:161641\n    at async Promise.all (index 0)\n    at async S (https://worldcupdex.org/_nuxt/DoadoT6n.js:1",
+      "warning: [nuxt] Cannot load payload  /_payload.json?1c9f97cd-5dba-40cd-839b-495cb38e38e9 TypeError: Failed to fetch\n    at Id (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100880)\n    at lc (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100452)\n    at async https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:161641\n    at async Promise.all (index 0)\n    at async S (https://worldcupdex.org/_nuxt/DoadoT6n.js:1:3184)\n  ",
+      "warning: [nuxt] Cannot load payload  /predict/537327/_payload.json?1c9f97cd-5dba-40cd-839b-495cb38e38e9 TypeError: Failed to fetch\n    at Id (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100880)\n    at lc (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100452)\n    at async https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:161641\n    at async Promise.all (index 0)\n    at async S (https://worldcupdex.org/_nuxt/DoadoT6",
+      "warning: [nuxt] Cannot load payload  /predict/_payload.json?1c9f97cd-5dba-40cd-839b-495cb38e38e9 TypeError: Failed to fetch\n    at Id (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100880)\n    at lc (https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:100452)\n    at async https://worldcupdex.org/_nuxt/Da_y-dxd.js:4:161641\n    at async Promise.all (index 0)\n    at async S (https://worldcupdex.org/_nuxt/DoadoT6n.js:1:",
+      "warning: Third-party cookie will be blocked. Learn more in the Issues tab.",
+      "warning: Third-party cookie will be blocked. Learn more in the Issues tab.",
+      "warning: Third-party cookie will be blocked. Learn more in the Issues tab.",
+      "warning: Third-party cookie will be blocked. Learn more in the Issues tab."
+    ]
+  }
+}

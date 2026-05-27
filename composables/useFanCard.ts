@@ -1,4 +1,4 @@
-import type { FanCardData, MatchItem, ListResponse } from '~/types'
+import type { FanCardData } from '~/types'
 import { TEAM_COLORS, DEFAULT_TEAM_COLORS, type TeamColors } from '~/data/team-colors'
 
 const FAN_CARD_STORAGE_KEY = 'worldcupdex_fan_card'
@@ -58,9 +58,7 @@ export function useFanCard() {
     teamId: string,
   ): Promise<{ opponent: string; opponentEn: string; opponentFlag: string; date: string } | null> {
     try {
-      const response = await $fetch<ListResponse<MatchItem>>('/api/matches', {
-        query: { team: teamId },
-      })
+      const response = getStaticMatchList({ team: teamId })
 
       if (!response.data || response.data.length === 0) return null
 

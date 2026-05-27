@@ -45,11 +45,11 @@ export function useTeamList(params?: UseTeamListParams) {
     return p
   })
 
-  return useFetch<PaginatedResponse<TeamListItem>>('/api/teams', {
-    query: queryParams,
-    key: computed(() => `teams-${JSON.stringify(queryParams.value)}`).value,
-    watch: [queryParams],
-  })
+  return {
+    data: computed(() => getStaticTeamList(queryParams.value)),
+    pending: ref(false),
+    error: ref(null),
+  }
 }
 
 /**
@@ -58,8 +58,9 @@ export function useTeamList(params?: UseTeamListParams) {
 export function useTeamDetail(id: string | Ref<string>) {
   const teamId = computed(() => toValue(id))
 
-  return useFetch<TeamDetail>(() => `/api/teams/${teamId.value}`, {
-    key: computed(() => `team-detail-${teamId.value}`).value,
-    watch: [teamId],
-  })
+  return {
+    data: computed(() => getStaticTeamDetail(teamId.value)),
+    pending: ref(false),
+    error: ref(null),
+  }
 }

@@ -174,6 +174,9 @@ function getFlagUrl(code: string) {
     class="prediction-card" 
     :style="premiumStyleVars"
   >
+    <!-- 为了防止 html2canvas 截图出现透明背景或圆角黑边，在这里垫一层白色实色背景 -->
+    <div style="position: absolute; inset: 0; background: #FFFFFF; z-index: -1;"></div>
+
     <!-- ==================== 1. 基础版 (Basic) ==================== -->
     <template v-if="!isPremium">
       <div class="layout-basic">

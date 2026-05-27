@@ -27,20 +27,7 @@ const cardRef = ref<HTMLElement | null>(null)
 const isJinxMode = ref(false)
 
 // ── 获取球队数据 ──
-const { data: teamsResponse } = useFetch<{
-  data: Array<{
-    id: string
-    nameZh: string
-    nameEn: string
-    code: string
-    group: string
-    flag: string
-    fifaRank: number
-  }>
-  total: number
-}>('/api/teams', {
-  query: { pageSize: 48 },
-})
+const { data: teamsResponse } = useTeamList({ pageSize: 48 })
 
 const teams = computed(() => {
   if (!teamsResponse.value?.data) return []

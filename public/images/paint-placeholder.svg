@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Paint placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5F7FB"/>
+      <stop offset="100%" stop-color="#E6EAF2"/>
+    </linearGradient>
+  </defs>
+  <rect width="240" height="240" fill="url(#bg)"/>
+  <g fill="#000F49" opacity="0.85">
+    <rect x="80" y="80" width="80" height="90" rx="10" />
+    <path d="M100 80 L100 60 L140 60 L140 80 Z" />
+    <circle cx="120" cy="55" r="10" />
+  </g>
+  <g fill="#FFD700">
+    <path d="M100 110 L140 110 L140 140 L100 140 Z" />
+  </g>
+  <text x="120" y="218" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#000F49" font-weight="700" letter-spacing="1">PAINT</text>
+</svg>

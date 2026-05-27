@@ -182,10 +182,13 @@ export default defineNuxtConfig({
     // 页面与 API 的边缘缓存 (SWR) 提升缓存命中率
     '/': { swr: 3600 },
     '/teams/**': { swr: 86400 },
-    '/matches': { swr: 3600 },
+    '/matches': { redirect: { to: '/schedule', statusCode: 301 } },
+    '/matches/': { redirect: { to: '/schedule/', statusCode: 301 } },
+    '/es/matches': { redirect: { to: '/es/schedule', statusCode: 301 } },
+    '/es/matches/': { redirect: { to: '/es/schedule/', statusCode: 301 } },
+    '/zh/matches': { redirect: { to: '/zh/schedule', statusCode: 301 } },
+    '/zh/matches/': { redirect: { to: '/zh/schedule/', statusCode: 301 } },
     '/fan-card': { swr: 86400 },
     '/quiz/**': { swr: 86400 },
-    '/api/matches': { swr: 3600 },
-    '/api/teams': { swr: 86400 },
   },
 })

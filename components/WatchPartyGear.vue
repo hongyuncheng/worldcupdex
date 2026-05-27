@@ -16,21 +16,14 @@ const { locale, t } = useI18n()
 const { track } = useAnalytics()
 
 const products = computed<AffiliateProduct[]>(() => {
-  const list = (affiliateProducts as unknown as Array<Partial<AffiliateProduct> & Record<string, unknown>>) || []
-  return list.filter((p): p is AffiliateProduct => {
+  const list = (affiliateProducts as unknown as any[]) || []
+  return list.filter((p) => {
     return p?.teamId === 'global'
       && typeof p.productUrl === 'string'
       && p.productUrl.length > 0
-  })
+  }) as AffiliateProduct[]
 })
 
-function formatPrice(price: number, currency: string): string {
-  try {
-    return new Intl.NumberFormat(locale.value, { style: 'currency', currency }).format(price)
-  } catch {
-    return `${currency} ${price.toFixed(2)}`
-  }
-}
 
 function buildTrackUrl(p: AffiliateProduct): string {
   const params = new URLSearchParams({
@@ -64,7 +57,7 @@ function handleClick(p: AffiliateProduct): void {
           </h3>
           <p class="text-sm mt-1" style="color: #666;">Level up your game day experience</p>
         </div>
-        <span class="badge badge-warning badge-sm font-semibold uppercase tracking-wider">
+        <span class="badge badge-warning badge-sm font-semibold uppercase tracking-wider px-2 py-3">
           Sponsored
         </span>
       </div>
@@ -96,8 +89,7 @@ function handleClick(p: AffiliateProduct): void {
               <div class="gear-card__partner">{{ p.partner }}</div>
               <div class="gear-card__name" :title="p.productName">{{ p.productName }}</div>
               <div class="gear-card__footer">
-                <span class="gear-card__price">{{ formatPrice(p.price, p.currency) }}</span>
-                <span class="btn btn-primary btn-sm gear-card__btn">
+                <span class="btn btn-primary btn-sm gear-card__btn w-full">
                   View →
                 </span>
               </div>
@@ -215,12 +207,6 @@ function handleClick(p: AffiliateProduct): void {
   padding-top: 8px;
 }
 
-.gear-card__price {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-  font-size: 16px;
-  color: #000F49;
-}
 
 .gear-card__btn {
   border-radius: 999px;
@@ -237,6 +223,17 @@ function handleClick(p: AffiliateProduct): void {
 .gear-card__btn:hover {
   background: #1A237E;
   border-color: #1A237E;
+}
+
+.gear-card__badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 4px 8px;
 }
 
 .gear-disclosure {

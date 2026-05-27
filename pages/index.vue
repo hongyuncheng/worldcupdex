@@ -143,7 +143,7 @@
         <h2 class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 22px; color: #000F49;">
           🏆 {{ $t('home.upcomingMatches') }}
         </h2>
-        <NuxtLinkLocale to="/matches" class="font-semibold hover:opacity-80 transition-opacity" style="color: #4A5578; font-size: 14px;">
+        <NuxtLinkLocale to="/schedule" class="font-semibold hover:opacity-80 transition-opacity" style="color: #4A5578; font-size: 14px;">
           {{ $t('home.viewAllMatches') }}
         </NuxtLinkLocale>
       </div>

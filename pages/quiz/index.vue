@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { t, locale } = useI18n()
+const { t } = useI18n()
 const localePath = useLocalePath()
 const route = useRoute()
 
@@ -52,9 +52,10 @@ function dismissChallengeBanner() {
   showChallengeBanner.value = false
 }
 
-function handleStart() {
-  navigateTo(localePath('/quiz/play'))
-}
+const quizPlayPath = computed(() => {
+  const path = localePath('/quiz/play/')
+  return path.endsWith('/') ? path : `${path}/`
+})
 </script>
 
 <template>
@@ -145,10 +146,10 @@ function handleStart() {
 
     <!-- CTA 按钮区域 -->
     <section class="cta">
-      <button class="cta__button" @click="handleStart">
+      <a class="cta__button" :href="quizPlayPath">
         {{ t('quiz.startChallenge') }}
         <span class="cta__arrow">→</span>
-      </button>
+      </a>
       <div class="cta__participants">
         <span class="cta__count">{{ t('quiz.participantCount', { count: participantCount.toLocaleString() }) }}</span>
         <div class="cta__avatars">
@@ -494,6 +495,7 @@ function handleStart() {
   border-radius: 50px;
   background: #FFD700;
   color: #0a0e2a;
+  text-decoration: none;
   font-size: 1.3rem;
   font-weight: 700;
   border: none;

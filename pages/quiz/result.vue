@@ -43,6 +43,11 @@ const shareUrl = computed(() => {
   return ''
 })
 
+const quizPlayPath = computed(() => {
+  const path = localePath('/quiz/play/')
+  return path.endsWith('/') ? path : `${path}/`
+})
+
 const titleKey = computed(() => getTitle(score.value))
 
 // ========== Premium 状态及主题切换 ==========
@@ -191,7 +196,12 @@ function animateScoreRing() {
 }
 
 function playAgain() {
-  navigateTo(localePath('/quiz/play'))
+  if (import.meta.client) {
+    window.location.assign(quizPlayPath.value)
+    return
+  }
+
+  return navigateTo(quizPlayPath.value)
 }
 
 // ========== 挂载 ==========
@@ -253,6 +263,9 @@ onMounted(() => {
 
     <!-- ====== Score Card ====== -->
     <div ref="cardRef" class="qr-card">
+      <!-- 为了防止 html2canvas 截图出现透明背景或圆角黑边，在这里垫一层纯黑/深色实色背景 -->
+      <div style="position: absolute; inset: 0; background: #0B0E14; z-index: -1;"></div>
+      
       <div 
         class="qr-card__bg" 
         :class="{ 'qr-card__bg--default': !isPremiumUnlocked }"

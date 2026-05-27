@@ -93,6 +93,9 @@ const displayMotto = computed(() => {
 
 <template>
   <div class="fan-card" :class="[`theme-${theme || 'stadium'}`]">
+    <!-- 为了防止 html2canvas 截图出现透明背景或圆角黑边，在这里垫一层纯黑/深色实色背景 -->
+    <div style="position: absolute; inset: 0; background: #0a0e2a; z-index: -1;"></div>
+
     <!-- 背景图层：仅高级版显示图片 -->
     <div
       v-if="theme !== 'basic'"

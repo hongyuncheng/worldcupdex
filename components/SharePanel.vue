@@ -74,20 +74,25 @@ async function saveCardAsImage() {
 
     const file = new File([blob], props.filename, { type: 'image/png' })
 
+      // 检测是否是移动端设备
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+
     // 移动端：尝试使用 Web Share API 直接分享图片
-    if (navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
+    if (isMobile && navigator.share && navigator.canShare && navigator.canShare({ files: [file] })) {
       await navigator.share({
         files: [file],
         title: 'WorldCupDex',
         text: props.shareText,
       })
     } else {
-      // PC端：下载图片
+      // PC端或不支持Web Share的移动端浏览器：直接触发下载
       const url = URL.createObjectURL(blob)
       const a = document.createElement('a')
       a.href = url
       a.download = props.filename
+      document.body.appendChild(a) // 兼容Firefox
       a.click()
+      document.body.removeChild(a)
       URL.revokeObjectURL(url)
     }
   } catch (e) {
