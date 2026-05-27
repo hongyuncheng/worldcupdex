@@ -166,6 +166,14 @@ h1, h2, h3, h4, h5, h6 {
     background: url('/images/index_bg.png') center bottom / 100% 100% no-repeat;
   }
 
+  @media (max-width: 640px) {
+    .hero-background {
+      background-position: 68% bottom;
+      background-size: auto 100%;
+      opacity: 0.82;
+    }
+  }
+
   /* CTA Banner Background - 使用全局 CSS 避免 scoped hydration mismatch */
   .cta-banner-bg {
     background: url('/images/cta_banner.png') center / 100% 100% no-repeat;

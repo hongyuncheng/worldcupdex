@@ -36,13 +36,39 @@
   "home": {
     "title": "2026 世界杯资料库",
     "description": "提供最新的美加墨世界杯赛程、比分、球队数据与预测",
+    "heroSubtitle": "你的世界杯第二屏：选主队、建赛程、做预测、生成可分享的球迷身份。",
+    "heroPrimaryCta": "建立我的赛程",
+    "heroSecondaryCta": "选择我的主队",
+    "pathEyebrow": "赛前工具箱",
+    "pathTitle": "开赛前先完成这 4 件事",
+    "pathSubtitle": "WorldCupDex 把分散的世界杯信息收敛成一条个人球迷路径。",
+    "pathSteps": {
+      "team": {
+        "title": "选择主队",
+        "desc": "关注球队、小组和你最关心的首场比赛。"
+      },
+      "schedule": {
+        "title": "建立我的赛程",
+        "desc": "收藏关键比赛，并导出到你的日历。"
+      },
+      "predict": {
+        "title": "做出预测",
+        "desc": "预测单场胜负，或提前选出你的冠军。"
+      },
+      "share": {
+        "title": "分享球迷卡",
+        "desc": "生成你的球迷身份，把朋友一起带进来。"
+      }
+    },
     "customSchedule": "定制日程",
     "nextMatch": "下一场",
     "upcomingMatches": "即将开始的比赛",
+    "upcomingMatchesSub": "把关键比赛加入你的赛程，或直接进入预测。",
     "viewAllMatches": "查看全部赛程 →",
     "hotTeams": "热门球队",
     "viewAllTeams": "查看全部球队 →",
     "predictThis": "预测此场 →",
+    "addToMySchedule": "我的赛程",
     "predictHuman": "人工预测",
     "predictAi": "AI 预测",
     "groupMatch": "小组赛",
@@ -69,7 +95,8 @@
     "fanCardFeature1": "自定义头像、球队和座右铭",
     "fanCardFeature2": "分享身份卡，结识同好球迷",
     "startChallenge": "开始挑战 →",
-    "generateCard": "生成身份卡 →"
+    "generateCard": "生成身份卡 →",
+    "adPlaceholder": "广告位"
   },
   "common": {
     "viewAll": "查看全部",
@@ -110,6 +137,10 @@
     "sortByGroup": "排序: 按小组",
     "sortByRank": "排序: 按排名",
     "noResults": "未找到匹配的球队",
+    "follow": "关注",
+    "following": "已关注",
+    "followTeam": "关注球队",
+    "followingTeam": "已关注球队",
     "appearances": "参赛次数",
     "bestResult": "最好成绩",
     "fifaRanking": "FIFA排名",
@@ -315,6 +346,7 @@
     "exportSchedule": "导出赛程",
     "downloadAllIcs": "导出 .ICS 文件",
     "addToCalendar": "添加日历",
+    "exportToCalendar": "导出日历",
     "exportAll": "批量导出",
     "stages": "赛程阶段",
     "quickJump": "快速跳转",
@@ -349,10 +381,14 @@
     "groupSuffix": "组",
     "all": "全部",
     "mySchedule": "⭐ 我的关注",
+    "favoriteGuide": "点击“关注比赛”或球队旁的星标，即可生成你的“我的关注”赛程；“导出日历”只用于同步到外部日历。",
+    "followMatch": "关注比赛",
+    "followingMatch": "已关注",
     "venueTime": "举办地时间",
     "myTime": "本地时间",
     "tba": "待定",
-    "emptyFavorites": "暂无关注的球队或比赛。点击右上角 ⭐ 即可加入专属日程！",
+    "emptyFavoritesTitle": "还没有关注内容",
+    "emptyFavorites": "在任意比赛行点击“关注比赛”，或点击球队旁的星标，即可加入你的专属赛程。",
     "maxTeamsLimit": "最多只能关注 5 支球队哦！"
   },
   "dataCenter": {

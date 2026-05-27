@@ -7,8 +7,8 @@
         v-if="match"
         :matches="match" 
         dropdownPosition="right"
-        customClass="!text-gray-500 !bg-transparent hover:!bg-gray-200 !border-transparent !p-1"
-        buttonText=""
+        customClass="!text-gray-500 !bg-gray-50 hover:!bg-gray-100 !border-gray-100 !py-1 !px-2 !text-[11px]"
+        :buttonText="$t('home.addToMySchedule')"
       />
     </div>
     <!-- Teams VS -->

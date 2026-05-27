@@ -140,6 +140,11 @@
       </button>
     </div>
 
+    <div class="favorite-guide" role="note">
+      <span class="favorite-guide-icon">⭐</span>
+      <span>{{ $t('schedule.favoriteGuide') }}</span>
+    </div>
+
     <!-- Two Column Layout -->
     <div class="schedule-layout">
       <!-- Left Sidebar -->
@@ -157,7 +162,7 @@
             >
               <div class="stage-item-left">
                 <div class="stage-name">{{ stage.name }}</div>
-                <div class="stage-date">{{ stage.dateRange }}</div>
+                <div class="stage-date">{{ getStageDateRange(stage.key, stage.dateRange) }}</div>
               </div>
               <span class="stage-badge">{{ stage.count }}{{ locale === 'zh' ? '场' : '' }}</span>
             </li>
@@ -217,8 +222,10 @@
         </div>
 
         <!-- Match Table -->
-        <div v-if="filteredMatches.length === 0 && selectedStageTab === 'favorites'" class="py-12 text-center text-gray-500">
-          {{ $t('schedule.emptyFavorites') }}
+        <div v-if="filteredMatches.length === 0 && selectedStageTab === 'favorites'" class="empty-favorites">
+          <div class="empty-favorites-icon">⭐</div>
+          <h3>{{ $t('schedule.emptyFavoritesTitle') }}</h3>
+          <p>{{ $t('schedule.emptyFavorites') }}</p>
         </div>
         <div v-else class="match-table-wrapper">
           <!-- Table Header -->
@@ -244,21 +251,6 @@
                       <span class="match-time">{{ match.time }}</span>
                     </template>
                   </ClientOnly>
-                  <button 
-                     v-if="isLoaded"
-                     class="text-xl hover:scale-110 transition-transform focus:outline-none"
-                     :class="isMatchFavorited(match.id) ? 'text-yellow-500 drop-shadow-sm' : 'text-gray-200 grayscale opacity-40 hover:opacity-80 hover:grayscale-0'"
-                     @click.prevent.stop="toggleMatch(match.id)"
-                     title="Add to My Schedule"
-                   >
-                     {{ isMatchFavorited(match.id) ? '🔔' : '🔕' }}
-                   </button>
-                   <div class="hidden md:block">
-                     <AddToCalendarButton :matches="match" dropdownPosition="left" customClass="!p-1 !text-gray-400 hover:!bg-gray-100 !border-transparent" buttonText="" />
-                   </div>
-                </div>
-                <div class="md:hidden block absolute right-4 top-4">
-                  <AddToCalendarButton :matches="match" dropdownPosition="right" customClass="!p-1 !text-gray-400 hover:!bg-gray-100 !border-transparent" buttonText="" />
                 </div>
               </div>
               <div class="col-matchup">
@@ -269,11 +261,12 @@
                       {{ locale === 'zh' ? match.homeTeam.nameZh : match.homeTeam.nameEn }}
                       <button 
                         v-if="isLoaded && match.homeTeam.nameEn !== 'TBA'"
-                        class="ml-1 focus:outline-none hover:scale-110 transition-transform"
-                      :class="isTeamFavorited(match.homeTeam.nameEn) ? 'text-yellow-500 drop-shadow-sm' : 'text-gray-200 grayscale opacity-40 hover:opacity-80 hover:grayscale-0'"
-                      @click.prevent="toggleTeam(match.homeTeam.nameEn)"
-                        title="Favorite Team"
-                      >⭐</button>
+                        class="team-follow-star ml-1"
+                        :class="{ 'team-follow-star--active': isTeamFavorited(match.homeTeam.nameEn) }"
+                        :title="isTeamFavorited(match.homeTeam.nameEn) ? $t('teams.followingTeam') : $t('teams.followTeam')"
+                        :aria-label="isTeamFavorited(match.homeTeam.nameEn) ? $t('teams.followingTeam') : $t('teams.followTeam')"
+                        @click.prevent.stop="toggleTeam(match.homeTeam.nameEn)"
+                      >{{ isTeamFavorited(match.homeTeam.nameEn) ? '✓' : '☆' }}</button>
                     </span>
                   </span>
                   <span class="vs-badge">VS</span>
@@ -281,11 +274,12 @@
                     <span class="team-name">
                       <button 
                         v-if="isLoaded && match.awayTeam.nameEn !== 'TBA'"
-                        class="mr-1 focus:outline-none hover:scale-110 transition-transform"
-                      :class="isTeamFavorited(match.awayTeam.nameEn) ? 'text-yellow-500 drop-shadow-sm' : 'text-gray-200 grayscale opacity-40 hover:opacity-80 hover:grayscale-0'"
-                      @click.prevent="toggleTeam(match.awayTeam.nameEn)"
-                        title="Favorite Team"
-                      >⭐</button>
+                        class="team-follow-star mr-1"
+                        :class="{ 'team-follow-star--active': isTeamFavorited(match.awayTeam.nameEn) }"
+                        :title="isTeamFavorited(match.awayTeam.nameEn) ? $t('teams.followingTeam') : $t('teams.followTeam')"
+                        :aria-label="isTeamFavorited(match.awayTeam.nameEn) ? $t('teams.followingTeam') : $t('teams.followTeam')"
+                        @click.prevent.stop="toggleTeam(match.awayTeam.nameEn)"
+                      >{{ isTeamFavorited(match.awayTeam.nameEn) ? '✓' : '☆' }}</button>
                       {{ locale === 'zh' ? match.awayTeam.nameZh : match.awayTeam.nameEn }}
                     </span>
                     <span class="team-flag"><img :src="match.awayTeam.flag" :alt="match.awayTeam.nameEn" style="width: 24px; height: 16px; object-fit: contain;" loading="lazy" decoding="async" /></span>
@@ -301,6 +295,24 @@
               </div>
               <div class="col-actions">
                 <div class="predict-btns">
+                  <button
+                    v-if="isLoaded"
+                    type="button"
+                    class="follow-match-btn"
+                    :class="{ 'follow-match-btn--active': isMatchFavorited(match.id) }"
+                    :aria-pressed="isMatchFavorited(match.id)"
+                    :aria-label="isMatchFavorited(match.id) ? $t('schedule.followingMatch') : $t('schedule.followMatch')"
+                    @click.prevent.stop="toggleMatch(match.id)"
+                  >
+                    <span aria-hidden="true">{{ isMatchFavorited(match.id) ? '✓' : '☆' }}</span>
+                    {{ isMatchFavorited(match.id) ? $t('schedule.followingMatch') : $t('schedule.followMatch') }}
+                  </button>
+                  <AddToCalendarButton
+                    :matches="match"
+                    :buttonText="$t('schedule.exportToCalendar')"
+                    dropdownPosition="right"
+                    customClass="calendar-export-btn"
+                  />
                   <NuxtLinkLocale :to="`/predict/${match.id}`" class="predict-btn predict-btn--human">{{ $t('home.predictHuman') }}</NuxtLinkLocale>
                   <button type="button" class="predict-btn predict-btn--ai" @click.prevent="handleAiPredict(match.homeTeam.nameEn, match.awayTeam.nameEn, 'schedule_list_ai_btn')">{{ $t('home.predictAi') }}</button>
                 </div>
@@ -403,13 +415,35 @@ const stageTabs = computed<{ value: FilterType; label: string }[]>(() => [
   { value: 'favorites', label: t('schedule.mySchedule') },
 ])
 
+function formatStageShortDate(dateStr: string): string {
+  const d = new Date(dateStr + 'T00:00:00')
+  if (locale.value === 'zh') {
+    return `${d.getMonth() + 1}月${d.getDate()}日`
+  }
+  return `${monthNames[d.getMonth()].slice(0, 3)} ${d.getDate()}`
+}
+
+function getStageDateRange(stage: string, fallback: string): string {
+  const dates = allMatches.value
+    .filter(m => m.stage === stage)
+    .map(m => m.date)
+    .filter(Boolean)
+    .sort()
+
+  if (!dates.length) return fallback
+
+  const start = formatStageShortDate(dates[0])
+  const end = formatStageShortDate(dates[dates.length - 1])
+  return start === end ? start : `${start} - ${end}`
+}
+
 // ─── Sidebar Stages ───
 const stages = computed<Stage[]>(() => {
   const countByStage = (stage: string) => allMatches.value.filter(m => m.stage === stage).length
   return [
     { key: 'GROUP_STAGE', name: t('schedule.stageGroupStage'), nameEn: 'Group Stage', dateRange: locale.value === 'zh' ? '6月12日 - 7月3日' : 'Jun 12 - Jul 3', count: countByStage('GROUP_STAGE') || 72 },
-    { key: 'ROUND_OF_32', name: t('schedule.stageRoundOf16'), nameEn: 'Round of 32', dateRange: locale.value === 'zh' ? '7月4日 - 7月7日' : 'Jul 4 - Jul 7', count: countByStage('ROUND_OF_32') || 16 },
-    { key: 'ROUND_OF_16', name: t('schedule.stageRoundOf8'), nameEn: 'Round of 8', dateRange: locale.value === 'zh' ? '7月8日 - 7月11日' : 'Jul 8 - Jul 11', count: countByStage('ROUND_OF_16') || 8 },
+    { key: 'LAST_32', name: t('schedule.stageRoundOf16'), nameEn: 'Round of 32', dateRange: locale.value === 'zh' ? '7月4日 - 7月7日' : 'Jul 4 - Jul 7', count: countByStage('LAST_32') || 16 },
+    { key: 'LAST_16', name: t('schedule.stageRoundOf8'), nameEn: 'Round of 8', dateRange: locale.value === 'zh' ? '7月8日 - 7月11日' : 'Jul 8 - Jul 11', count: countByStage('LAST_16') || 8 },
     { key: 'QUARTER_FINALS', name: t('schedule.stageQuarterFinal'), nameEn: 'Quarter-Final', dateRange: locale.value === 'zh' ? '7月12日 - 7月13日' : 'Jul 12 - Jul 13', count: countByStage('QUARTER_FINALS') || 4 },
     { key: 'SEMI_FINALS', name: t('schedule.stageSemiFinal'), nameEn: 'Semi-Final', dateRange: locale.value === 'zh' ? '7月15日 - 7月16日' : 'Jul 15 - Jul 16', count: countByStage('SEMI_FINALS') || 2 },
     { key: 'THIRD_PLACE', name: t('schedule.stageThirdPlace'), nameEn: 'Third Place', dateRange: locale.value === 'zh' ? '7月18日' : 'Jul 18', count: countByStage('THIRD_PLACE') || 1 },
@@ -463,6 +497,9 @@ const matchDaysByMonth = computed(() => {
 // ─── Filtered Matches ───
 const filteredMatches = computed(() => {
   let result = [...allMatches.value]
+  if (selectedSidebarStage.value) {
+    result = result.filter(m => m.stage === selectedSidebarStage.value)
+  }
   if (selectedStageTab.value === 'favorites') {
     result = result.filter(m => {
       const isFavTeam = favoriteTeams.value.includes(m.homeTeam.nameEn) || favoriteTeams.value.includes(m.awayTeam.nameEn)
@@ -480,8 +517,6 @@ const filteredMatches = computed(() => {
   if (selectedVenue.value) {
     result = result.filter(m => (locale.value === 'zh' ? m.venue.nameZh : m.venue.name) === selectedVenue.value)
   }
-  // 过滤掉 TBD 比赛
-  result = result.filter(m => m.homeTeam.id !== 'tbd' && m.awayTeam.id !== 'tbd')
   return result
 })
 
@@ -757,6 +792,29 @@ function buildSportsEventData(m: MatchItem) {
   border-color: #000F49;
   color: #000F49;
 }
+.favorite-guide {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: -8px 0 18px;
+  padding: 10px 14px;
+  border: 1px solid #FFE08A;
+  border-radius: 8px;
+  background: #FFF9DB;
+  color: #000F49;
+  font-size: 13px;
+  font-weight: 600;
+}
+.favorite-guide-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  background: #FFD700;
+  flex-shrink: 0;
+}
 
 /* ===== Sidebar ===== */
 .sidebar-card {
@@ -926,6 +984,37 @@ function buildSportsEventData(m: MatchItem) {
   outline: none;
   cursor: pointer;
 }
+.empty-favorites {
+  padding: 52px 20px;
+  text-align: center;
+  color: #4A5578;
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.empty-favorites-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  background: #FFF3B0;
+  color: #000F49;
+  font-size: 22px;
+}
+.empty-favorites h3 {
+  margin: 0 0 6px;
+  color: #000F49;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+.empty-favorites p {
+  margin: 0;
+  font-size: 14px;
+}
 
 /* ===== Match Table ===== */
 .match-table-wrapper {
@@ -936,7 +1025,7 @@ function buildSportsEventData(m: MatchItem) {
 }
 .match-table-header {
   display: grid;
-  grid-template-columns: 100px 1fr 80px 180px 120px;
+  grid-template-columns: 100px 1fr 80px 180px 172px;
   padding: 12px 20px;
   background: #FAFAFA;
   border-bottom: 1px solid #F0F0F0;
@@ -954,7 +1043,7 @@ function buildSportsEventData(m: MatchItem) {
 }
 .match-row {
   display: grid;
-  grid-template-columns: 100px 1fr 80px 180px 120px;
+  grid-template-columns: 100px 1fr 80px 180px 172px;
   padding: 14px 20px;
   border-bottom: 1px solid #F5F5F5;
   align-items: center;
@@ -1001,6 +1090,39 @@ function buildSportsEventData(m: MatchItem) {
   color: #000F49;
   white-space: nowrap;
 }
+.team-follow-star {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #D9DEF0;
+  border-radius: 999px;
+  background: #FFFFFF;
+  color: #9AA3B2;
+  font-size: 11px;
+  line-height: 1;
+  vertical-align: middle;
+  transition: all 0.15s;
+}
+.team-follow-star:hover {
+  border-color: #FFD700;
+  background: #FFF9DB;
+  color: #000F49;
+}
+
+.team-follow-star--active {
+  border-color: #000F49;
+  background: #000F49;
+  color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(0, 15, 73, 0.18);
+}
+
+.team-follow-star--active:hover {
+  border-color: #07185F;
+  background: #07185F;
+  color: #FFFFFF;
+}
 .vs-badge {
   font-size: 12px;
   font-weight: 700;
@@ -1041,6 +1163,58 @@ function buildSportsEventData(m: MatchItem) {
   flex-direction: column;
   gap: 6px;
   align-items: center;
+}
+.follow-match-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  min-width: 112px;
+  padding: 5px 12px;
+  border: 1.5px solid #FFD700;
+  border-radius: 999px;
+  background: #FFFBE6;
+  color: #000F49;
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 1.2;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+.follow-match-btn:hover {
+  background: #FFF3B0;
+  color: #000F49;
+  box-shadow: 0 3px 10px rgba(255, 215, 0, 0.18);
+}
+
+.follow-match-btn--active {
+  border-color: #000F49;
+  background: #000F49;
+  color: #FFFFFF;
+  box-shadow: 0 3px 10px rgba(0, 15, 73, 0.18);
+}
+
+.follow-match-btn--active:hover {
+  border-color: #07185F;
+  background: #07185F;
+  color: #FFFFFF;
+}
+:deep(.calendar-export-btn) {
+  min-width: 112px !important;
+  justify-content: center !important;
+  border: 1px solid #D8DDEA !important;
+  background: #FFFFFF !important;
+  color: #4A5578 !important;
+  padding: 5px 12px !important;
+  border-radius: 999px !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  backdrop-filter: none !important;
+}
+:deep(.calendar-export-btn:hover) {
+  border-color: #000F49 !important;
+  color: #000F49 !important;
+  background: #F8F9FC !important;
 }
 .predict-btn {
   display: inline-flex;
@@ -1089,8 +1263,15 @@ function buildSportsEventData(m: MatchItem) {
     justify-content: flex-start;
   }
   .col-group,
+  .col-venue,
   .col-actions {
     justify-content: flex-start;
+  }
+  .col-actions,
+  .predict-btns,
+  .follow-match-btn,
+  :deep(.calendar-export-btn) {
+    width: 100%;
   }
 }
 

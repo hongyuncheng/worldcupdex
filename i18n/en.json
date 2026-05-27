@@ -36,13 +36,39 @@
   "home": {
     "title": "2026 World Cup Database",
     "description": "Latest schedules, scores, team data and predictions for the 2026 World Cup",
+    "heroSubtitle": "Your World Cup second screen: choose a team, build your schedule, make picks and share your fan identity.",
+    "heroPrimaryCta": "Build My Schedule",
+    "heroSecondaryCta": "Choose My Team",
+    "pathEyebrow": "Matchday toolkit",
+    "pathTitle": "Four quick actions before kickoff",
+    "pathSubtitle": "WorldCupDex turns the 2026 World Cup from scattered info into one personal fan workflow.",
+    "pathSteps": {
+      "team": {
+        "title": "Choose your team",
+        "desc": "Follow squads, groups and the first match you care about."
+      },
+      "schedule": {
+        "title": "Build my schedule",
+        "desc": "Save matches and export kickoffs to your calendar."
+      },
+      "predict": {
+        "title": "Make a prediction",
+        "desc": "Pick winners for matches or call your tournament champion."
+      },
+      "share": {
+        "title": "Share a fan card",
+        "desc": "Generate your supporter identity and bring friends in."
+      }
+    },
     "customSchedule": "My Schedule",
     "nextMatch": "Next Match",
     "upcomingMatches": "Upcoming Matches",
+    "upcomingMatchesSub": "Add key games to your schedule or jump straight into predictions.",
     "viewAllMatches": "View All Matches →",
     "hotTeams": "Popular Teams",
     "viewAllTeams": "View All Teams →",
     "predictThis": "Predict →",
+    "addToMySchedule": "My Schedule",
     "predictHuman": "Make Pick",
     "predictAi": "AI Pick",
     "groupMatch": "Group Stage",
@@ -69,7 +95,8 @@
     "fanCardFeature1": "Customize avatar, team and motto",
     "fanCardFeature2": "Share your card, connect with fans",
     "startChallenge": "Start Challenge →",
-    "generateCard": "Generate Card →"
+    "generateCard": "Generate Card →",
+    "adPlaceholder": "Ad space"
   },
   "common": {
     "groupStage": "Group Stage",
@@ -105,6 +132,10 @@
     "sortByGroup": "Sort: By Group",
     "sortByRank": "Sort: By Ranking",
     "noResults": "No teams found",
+    "follow": "Follow",
+    "following": "Following",
+    "followTeam": "Follow team",
+    "followingTeam": "Following team",
     "appearances": "Appearances",
     "bestResult": "Best Result",
     "fifaRanking": "FIFA Ranking",
@@ -323,6 +354,7 @@
     "exportSchedule": "Export Schedule",
     "downloadAllIcs": "Download .ICS",
     "addToCalendar": "Add to Calendar",
+    "exportToCalendar": "Export",
     "exportAll": "Export All",
     "stages": "Stages",
     "quickJump": "Quick Jump",
@@ -356,10 +388,14 @@
     "month": "",
     "groupSuffix": "",
     "mySchedule": "⭐ My Schedule",
+    "favoriteGuide": "Click Follow Match or the team star to build your My Schedule. Export sends a match to your external calendar.",
+    "followMatch": "Follow Match",
+    "followingMatch": "Following",
     "venueTime": "Venue Time",
     "myTime": "My Time",
     "tba": "TBA",
-    "emptyFavorites": "No favorite teams or matches yet. Click ⭐ to build your schedule!",
+    "emptyFavoritesTitle": "No followed matches yet",
+    "emptyFavorites": "Click Follow Match or the team star on any row to build your personal schedule.",
     "maxTeamsLimit": "You can only favorite up to 5 teams!"
   },
   "dataCenter": {

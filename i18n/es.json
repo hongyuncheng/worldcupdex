@@ -34,13 +34,39 @@
     "statsCountries": "3 Países"
   },
   "home": {
+    "heroSubtitle": "Tu segunda pantalla del Mundial: elige equipo, arma tu calendario, predice y comparte tu identidad de fan.",
+    "heroPrimaryCta": "Armar Mi Calendario",
+    "heroSecondaryCta": "Elegir Mi Equipo",
+    "pathEyebrow": "Kit de partido",
+    "pathTitle": "Cuatro acciones antes del inicio",
+    "pathSubtitle": "WorldCupDex convierte la información dispersa del Mundial 2026 en un flujo personal para fans.",
+    "pathSteps": {
+      "team": {
+        "title": "Elige tu equipo",
+        "desc": "Sigue plantillas, grupos y el primer partido que más te importa."
+      },
+      "schedule": {
+        "title": "Arma tu calendario",
+        "desc": "Guarda partidos y exporta horarios a tu calendario."
+      },
+      "predict": {
+        "title": "Haz una predicción",
+        "desc": "Elige ganadores por partido o tu campeón del torneo."
+      },
+      "share": {
+        "title": "Comparte tu pase",
+        "desc": "Genera tu identidad de fan e invita a tus amigos."
+      }
+    },
     "customSchedule": "Mi Calendario",
     "nextMatch": "Próximo Partido",
     "upcomingMatches": "Próximos Partidos",
+    "upcomingMatchesSub": "Añade partidos clave a tu calendario o entra directo a predecir.",
     "viewAllMatches": "Ver Todos los Partidos →",
     "hotTeams": "Equipos Populares",
     "viewAllTeams": "Ver Todos los Equipos →",
     "predictThis": "Predecir →",
+    "addToMySchedule": "Mi Calendario",
     "predictHuman": "Tu Pronóstico",
     "predictAi": "Pronóstico IA",
     "groupMatch": "Fase de Grupos",
@@ -67,7 +93,8 @@
     "fanCardFeature1": "Personaliza avatar, equipo y lema",
     "fanCardFeature2": "Comparte tu tarjeta, conoce otros fans",
     "startChallenge": "Comenzar →",
-    "generateCard": "Generar Tarjeta →"
+    "generateCard": "Generar Tarjeta →",
+    "adPlaceholder": "Espacio publicitario"
   },
   "common": {
     "groupStage": "Fase de Grupos",
@@ -96,6 +123,10 @@
     "sortByGroup": "Orden: Por Grupo",
     "sortByRank": "Orden: Por Ranking",
     "noResults": "No se encontraron equipos",
+    "follow": "Seguir",
+    "following": "Siguiendo",
+    "followTeam": "Seguir equipo",
+    "followingTeam": "Equipo seguido",
     "becomeFan": "Hazte fan de {team}",
     "narrative": {
       "historyTitle": "Historia y legado del equipo",
@@ -138,11 +169,16 @@
     "venueTime": "Hora Local",
     "myTime": "Mi Hora",
     "tba": "Por definir",
-    "emptyFavorites": "Aún no hay equipos o partidos favoritos. ¡Haz clic en ⭐ para crear tu calendario!",
     "maxTeamsLimit": "¡Solo puedes tener hasta 5 equipos favoritos!",
     "downloadAllIcs": "Descargar .ICS",
     "addToCalendar": "Añadir a Calendario",
-    "exportAll": "Exportar todo"
+    "exportToCalendar": "Exportar",
+    "exportAll": "Exportar todo",
+    "favoriteGuide": "Haz clic en Seguir partido o en la estrella del equipo para crear Mi Calendario. Exportar envía el partido a tu calendario externo.",
+    "followMatch": "Seguir partido",
+    "followingMatch": "Siguiendo",
+    "emptyFavoritesTitle": "Aún no sigues partidos",
+    "emptyFavorites": "Haz clic en Seguir partido o en la estrella del equipo para crear tu calendario personal."
   },
   "predict": {
     "title": "Predicciones del Mundial",

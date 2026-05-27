@@ -463,6 +463,18 @@ Hero 背景和两张入口卡占据过多高度，具体比赛下沉。
 - 首页主 CTA 不超过两个。
 - 收藏/预测/分享路径更短。
 
+**执行记录（2026-05-27）**
+
+- 已完成：将首页首屏副标题改为“世界杯第二屏”工具定位，主 CTA 收敛为 `Build My Schedule` 与 `Choose My Team` 两个入口。
+- 已完成：移动端首屏 CTA 改为纵向等宽按钮，并调整首页背景图移动端位置，避免奖杯压到操作按钮。
+- 已完成：新增首页四步主路径模块：选择主队、建立赛程、做预测、分享球迷卡，对应 `/teams`、`/schedule`、`/predict`、`/fan-card`。
+- 已完成：首页比赛卡的日历入口从纯图标改为可理解的 `My Schedule` / `我的赛程`，并保留 `Make Pick` / `AI Pick` 预测动作。
+- 已完成：降低首页 `Ad Space` 占位视觉权重，避免打断核心路径。
+- 构建测试：通过。`npm run build` 成功完成；仍有既有的西语 i18n 缺失 key warning 与 Nuxt Icon timeout warning，与本项无关。
+- 浏览器测试：通过。`http://localhost:3000/` 桌面 1365x900 与移动端 390x844 无 `_nuxt/*.js` 404、无控制台 error、倒计时正常、无 `NaN`、无横向溢出。
+- 点击测试：通过。首页 4 个主路径入口分别正确跳转到 `/schedule`、`/teams`、`/predict`、`/fan-card`。
+- 截图记录：`reports/item-9-home-path-fix/home-desktop.png`、`reports/item-9-home-path-fix/home-mobile.png`。
+
 ---
 
 ## 10. 数据来源与更新时间展示

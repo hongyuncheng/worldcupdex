@@ -101,12 +101,19 @@
         style="box-shadow: 0 2px 8px rgba(0,0,0,0.06); border-radius: 12px; text-decoration: none; display: block;"
       >
         <button 
-            v-if="isLoaded"
-            class="absolute top-2 right-2 p-2 text-2xl hover:scale-110 transition-transform focus:outline-none"
-            :class="isTeamFavorited(team.nameEn) ? 'text-yellow-500 drop-shadow-md' : 'text-gray-200 grayscale opacity-40 hover:opacity-80 hover:grayscale-0'"
-            @click.prevent="toggleTeam(team.nameEn)"
-            title="Favorite Team"
-          >⭐</button>
+          v-if="isLoaded"
+          type="button"
+          class="team-follow-btn absolute top-3 right-3 inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-bold shadow-sm transition-all focus:outline-none focus:ring-2 focus:ring-[#FFD700]/60"
+          :class="isTeamFavorited(team.nameEn)
+            ? 'team-follow-btn--active'
+            : 'team-follow-btn--idle'"
+          :title="isTeamFavorited(team.nameEn) ? $t('teams.followingTeam') : $t('teams.followTeam')"
+          :aria-label="isTeamFavorited(team.nameEn) ? $t('teams.followingTeam') : $t('teams.followTeam')"
+          @click.stop.prevent="toggleTeam(team.nameEn)"
+        >
+          <span aria-hidden="true">{{ isTeamFavorited(team.nameEn) ? '✓' : '☆' }}</span>
+          <span>{{ isTeamFavorited(team.nameEn) ? $t('teams.following') : $t('teams.follow') }}</span>
+        </button>
         <img
           :src="team.flag"
           :alt="team.nameEn"
@@ -302,3 +309,29 @@ useSeoConfig({
   description: '浏览2026世界杯所有参赛球队，了解阵容、历史战绩和小组赛分组。',
 })
 </script>
+
+<style scoped>
+.team-follow-btn {
+  min-width: 64px;
+  justify-content: center;
+}
+.team-follow-btn--idle {
+  border-color: rgba(255, 215, 0, 0.72);
+  background: #FFFFFF;
+  color: #000F49;
+}
+.team-follow-btn--idle:hover {
+  border-color: #FFD700;
+  background: #FFF9DB;
+}
+.team-follow-btn--active {
+  border-color: #000F49;
+  background: #000F49;
+  color: #FFFFFF;
+  box-shadow: 0 4px 10px rgba(0, 15, 73, 0.16);
+}
+.team-follow-btn--active:hover {
+  background: #07185F;
+  border-color: #07185F;
+}
+</style>

@@ -24,3 +24,21 @@
 [36mi[39m [32mpage reload [39m[2mreports/schedule-my-time-fix/my-time-390x844.png[22m
 [32m√[39m Vite server hmr 1 files in 0.003ms
 [32m√[39m Vite server hmr 1 files in 0.003ms
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs, /pages/index.vue?macro=true[22m
+[36mi[39m [32mhmr update [39m[2m/pages/index.vue?direct&vue&type=style&index=0&scoped=02281a80&lang.css, /assets/css/main.css, /assets/css/main.css?direct, /pages/index.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/pages/index.vue?direct&vue&type=style&index=0&scoped=02281a80&lang.css, /assets/css/main.css, /assets/css/main.css?direct, /pages/index.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m[2m (x2)[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs, /pages/index.vue?macro=true[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[32m√[39m Vite server hmr 14 files in 137.482ms
+[36mi[39m [32mhmr update [39m[2m/@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Fi18n-options.mjs, /assets/css/main.css, /assets/css/main.css?direct[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Fi18n-options.mjs[22m
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 1143ms
+[36mi[39m [32mhmr update [39m[2m/@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Fi18n-options.mjs, /assets/css/main.css, /assets/css/main.css?direct[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Fi18n-options.mjs[22m
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 927ms
+[36mi[39m [32mhmr update [39m[2m/@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Fi18n-options.mjs, /assets/css/main.css, /assets/css/main.css?direct[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Fi18n-options.mjs[22m
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 822ms
+[36mi[39m [32mhmr update [39m[2m/@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Fi18n-options.mjs, /assets/css/main.css, /assets/css/main.css?direct[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Fi18n-options.mjs[22m
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 1261ms

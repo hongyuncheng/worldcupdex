@@ -23,7 +23,7 @@
             {{ $t('hero.title') }}
           </h1>
           <p class="text-white/90 mb-6" style="font-family: 'Inter', sans-serif; font-size: clamp(14px, 1.5vw, 16px);">
-            {{ $t('hero.subtitle') }}
+            {{ $t('home.heroSubtitle') }}
           </p>
 
           <ClientOnly>
@@ -42,22 +42,22 @@
           </ClientOnly>
 
           <!-- CTA Buttons -->
-          <div class="flex items-center justify-center gap-4 mb-6 w-full">
-            <NuxtLinkLocale
-              to="/predict"
-              class="inline-flex items-center justify-center border-none font-bold cursor-pointer hover:scale-105 transition-transform shadow-lg"
-              style="background: #FFD700; color: #1A237E; font-family: 'Montserrat', sans-serif; font-size: 15px; border-radius: 8px; padding: 10px 24px;"
-            >
-              {{ $t('hero.startPredict') }}
-            </NuxtLinkLocale>
+          <div class="hero-cta-buttons flex items-center justify-center gap-4 mb-6 w-full">
             <NuxtLinkLocale
               to="/schedule"
-              class="inline-flex items-center justify-center font-bold cursor-pointer transition-colors"
+              class="hero-cta-button inline-flex items-center justify-center border-none font-bold cursor-pointer hover:scale-105 transition-transform shadow-lg"
+              style="background: #FFD700; color: #1A237E; font-family: 'Montserrat', sans-serif; font-size: 15px; border-radius: 8px; padding: 10px 24px;"
+            >
+              {{ $t('home.heroPrimaryCta') }}
+            </NuxtLinkLocale>
+            <NuxtLinkLocale
+              to="/teams"
+              class="hero-cta-button inline-flex items-center justify-center font-bold cursor-pointer transition-colors"
               style="border: 2px solid rgba(255,255,255,0.3); color: #FFF; font-family: 'Montserrat', sans-serif; font-size: 15px; border-radius: 8px; padding: 10px 24px; background: rgba(255,255,255,0.05);"
               @mouseenter="($event.target as HTMLElement).style.background = 'rgba(255,255,255,0.15)'"
               @mouseleave="($event.target as HTMLElement).style.background = 'rgba(255,255,255,0.05)'"
             >
-              {{ $t('hero.viewSchedule') }}
+              {{ $t('home.heroSecondaryCta') }}
             </NuxtLinkLocale>
           </div>
 
@@ -137,13 +137,57 @@
       </div>
     </section>
 
+    <!-- Fan Journey -->
+    <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-8 pb-4">
+      <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-3 mb-5">
+        <div>
+          <p class="font-bold uppercase tracking-normal mb-1" style="font-family: 'Montserrat', sans-serif; font-size: 12px; color: #4A5578;">
+            {{ $t('home.pathEyebrow') }}
+          </p>
+          <h2 class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 24px; color: #000F49;">
+            {{ $t('home.pathTitle') }}
+          </h2>
+        </div>
+        <p class="max-w-2xl leading-relaxed" style="font-family: 'Inter', sans-serif; font-size: 14px; color: #4A5578;">
+          {{ $t('home.pathSubtitle') }}
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+        <NuxtLinkLocale
+          v-for="step in homePathSteps"
+          :key="step.key"
+          :to="step.to"
+          class="group bg-white border border-gray-200 rounded-lg px-4 py-4 shadow-sm hover:shadow-md hover:border-[#FFD700] transition-all no-underline"
+        >
+          <div class="flex items-center justify-between mb-3">
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full font-black text-sm" style="background: #000F49; color: #FFD700;">
+              {{ step.index }}
+            </span>
+            <span class="text-[#4A5578] group-hover:text-[#000F49] transition-colors" aria-hidden="true">→</span>
+          </div>
+          <h3 class="font-bold mb-1" style="font-family: 'Montserrat', sans-serif; font-size: 16px; color: #000F49;">
+            {{ $t(`home.pathSteps.${step.key}.title`) }}
+          </h3>
+          <p class="leading-snug" style="font-family: 'Inter', sans-serif; font-size: 13px; color: #4A5578;">
+            {{ $t(`home.pathSteps.${step.key}.desc`) }}
+          </p>
+        </NuxtLinkLocale>
+      </div>
+    </section>
+
     <!-- Upcoming Matches -->
     <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-8 pb-4">
       <div class="flex items-center justify-between mb-6">
-        <h2 class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 22px; color: #000F49;">
-          🏆 {{ $t('home.upcomingMatches') }}
-        </h2>
-        <NuxtLinkLocale to="/schedule" class="font-semibold hover:opacity-80 transition-opacity" style="color: #4A5578; font-size: 14px;">
+        <div>
+          <h2 class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 22px; color: #000F49;">
+            🏆 {{ $t('home.upcomingMatches') }}
+          </h2>
+          <p class="mt-1" style="font-family: 'Inter', sans-serif; font-size: 13px; color: #4A5578;">
+            {{ $t('home.upcomingMatchesSub') }}
+          </p>
+        </div>
+        <NuxtLinkLocale to="/schedule" class="font-semibold hover:opacity-80 transition-opacity whitespace-nowrap" style="color: #4A5578; font-size: 14px;">
           {{ $t('home.viewAllMatches') }}
         </NuxtLinkLocale>
       </div>
@@ -234,8 +278,8 @@
 
     <!-- AdSense Placeholder -->
     <section class="max-w-7xl mx-auto px-4 lg:px-8 pb-4">
-      <div class="w-full p-4 border border-dashed border-gray-300 rounded-lg text-center text-gray-400 text-sm">
-        Ad Space
+      <div class="w-full py-2 border border-dashed border-gray-200 rounded-lg text-center text-gray-300 text-xs bg-gray-50/40">
+        {{ $t('home.adPlaceholder') }}
       </div>
     </section>
 
@@ -379,6 +423,13 @@ const { favoriteTeams, favoriteMatches, isLoaded } = useFavorites()
 
 const countdownTarget = '2026-06-12T01:00:00Z'
 
+const homePathSteps = [
+  { index: '1', key: 'team', to: '/teams' },
+  { index: '2', key: 'schedule', to: '/schedule' },
+  { index: '3', key: 'predict', to: '/predict' },
+  { index: '4', key: 'share', to: '/fan-card' },
+]
+
 const upcomingFavoriteMatches = computed(() => {
   if (!isLoaded.value) return []
   if (favoriteTeams.value.length === 0 && favoriteMatches.value.length === 0) return []
@@ -484,6 +535,17 @@ const hotTeams = computed(() => {
 @media (max-width: 640px) {
   .hero-section {
     min-height: 400px;
+  }
+
+  .hero-cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+    max-width: 280px;
+  }
+
+  .hero-cta-button {
+    width: 100%;
+    min-height: 48px;
   }
 }
 </style>
