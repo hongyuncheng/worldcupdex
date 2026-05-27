@@ -2,7 +2,7 @@
 title: "2026 World Cup Favorites: Who Will Lift the Trophy?"
 description: "France, Brazil, Argentina, or England? We analyze the top five favorites to win the 2026 FIFA World Cup and their chances of glory."
 publishedAt: "2026-05-19"
-cover: "/images/blog/favorites.jpg"
+cover: "/images/blog/favorites.webp"
 tags: ["Predictions", "Favorites", "World Cup"]
 locale: "en"
 ---

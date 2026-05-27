@@ -297,6 +297,15 @@
 - `/blog` 无 404 控制台错误。
 - 卡片视觉完整。
 
+**执行记录（2026-05-27）**
+
+- 已完成：使用 imagegen 生成 3 张博客封面，并转为 1600x900 WebP。
+- 资源文件：`public/images/blog/format-change.webp`（约 119KB）、`public/images/blog/favorites.webp`（约 99KB）、`public/images/blog/host-cities-cover.webp`（约 189KB）。
+- 内容更新：中英文 6 篇博客 frontmatter 的 `cover` 已从 `.jpg` 更新为 `.webp`。
+- 构建验证：`npm run build` 通过；仍有西语 teams 翻译 key 的既有警告，非本项引入。
+- 浏览器验证：Playwright 访问英文/中文 `/blog` 列表及 6 个详情页，所有 `/images/blog/*.webp` 请求均为 200，图片 `naturalWidth/naturalHeight` 均为 `1600x900`，无控制台错误。
+- 验证截图：`reports/item-5-blog-cover-fix/blog-list.png`、`reports/item-5-blog-cover-fix/blog-detail.png`。
+
 ---
 
 ## 6. 移动端首页首屏重排
@@ -368,6 +377,16 @@
 - 所有筛选项可见或可明显滚动访问。
 - 无文本裁切。
 - 筛选结果正常变化。
+
+**执行记录（2026-05-27）**
+
+- 已完成：将 `pages/schedule/index.vue` 的 stage tabs 包进横向滚动容器，移动端保留 segmented control，并加入右侧淡出遮罩作为可滚动提示。
+- 已完成：移动端 Date / Venue / Group 下拉框、Venue Time / My Time 切换、Export Schedule 按钮统一全宽，不再挤压筛选区。
+- 构建验证：`npm run build` 通过；仍有西语 teams 翻译 key 和 Icon timeout 的既有警告，非本项引入。
+- 浏览器验证：Playwright 在 390x844、430x932 下访问 `/schedule`，页面 `body.scrollWidth` 等于视口宽度，无整体横向溢出；四个 tab 均可点击，Venue Time / My Time 可切换，无 `_nuxt/*.js` 404 和控制台错误。
+- 回归修复：静态 `matches.json` 没有 `timestamp` 字段，导致 `My Time` 出现 `NaN`；已在 `useStaticWorldCupData.ts` 根据球场城市时区补齐 UTC timestamp。复测 `My Time` 无 `NaN` / `undefined`。
+- 数据备注：`Knockout` 当前显示 0 场来自既有逻辑过滤 TBD 对阵，并非本项布局修复导致。
+- 验证截图：`reports/item-7-schedule-filter-fix/schedule-initial-390x844-final.png`、`reports/item-7-schedule-filter-fix/schedule-390x844.png`、`reports/item-7-schedule-filter-fix/schedule-430x932.png`。
 
 ---
 

@@ -2,7 +2,7 @@
 title: "2026 World Cup Format Explained: What 48 Teams Mean for the Tournament"
 description: "The 2026 World Cup will feature 48 teams for the first time. How will the group stage work? What about the knockout rounds? Here is everything you need to know."
 publishedAt: "2026-05-18"
-cover: "/images/blog/format-change.jpg"
+cover: "/images/blog/format-change.webp"
 tags: ["Format", "World Cup", "48 Teams"]
 locale: "en"
 ---

@@ -32,7 +32,68 @@ const teamDetailsById = Object.fromEntries(
   }),
 ) as Record<string, TeamDetail>
 
-const staticMatches = matchesData as MatchItem[]
+const venueTimeZones: Record<string, string> = {
+  'East Rutherford': 'America/New_York',
+  Arlington: 'America/Chicago',
+  Inglewood: 'America/Los_Angeles',
+  'Miami Gardens': 'America/New_York',
+  Philadelphia: 'America/New_York',
+  Atlanta: 'America/New_York',
+  Houston: 'America/Chicago',
+  Seattle: 'America/Los_Angeles',
+  Foxborough: 'America/New_York',
+  'Kansas City': 'America/Chicago',
+  Nashville: 'America/Chicago',
+  'Mexico City': 'America/Mexico_City',
+  Guadalajara: 'America/Mexico_City',
+  Monterrey: 'America/Monterrey',
+  Toronto: 'America/Toronto',
+  Vancouver: 'America/Vancouver',
+}
+
+const getTimeZoneOffsetMs = (timeZone: string, utcMs: number): number => {
+  const parts = new Intl.DateTimeFormat('en-US', {
+    timeZone,
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hourCycle: 'h23',
+  }).formatToParts(new Date(utcMs))
+
+  const values = Object.fromEntries(parts.map(part => [part.type, part.value]))
+  const zonedAsUtc = Date.UTC(
+    Number(values.year),
+    Number(values.month) - 1,
+    Number(values.day),
+    Number(values.hour),
+    Number(values.minute),
+    Number(values.second),
+  )
+
+  return zonedAsUtc - utcMs
+}
+
+const getMatchTimestamp = (match: MatchItem): number => {
+  if (Number.isFinite(match.timestamp)) return match.timestamp
+
+  const [year, month, day] = match.date.split('-').map(Number)
+  const [hour, minute] = (match.time || '00:00').split(':').map(Number)
+  const timeZone = venueTimeZones[match.venue.city] || 'UTC'
+  const localAsUtc = Date.UTC(year, month - 1, day, hour, minute, 0)
+  const offset = getTimeZoneOffsetMs(timeZone, localAsUtc)
+  const firstPass = localAsUtc - offset
+  const correctedOffset = getTimeZoneOffsetMs(timeZone, firstPass)
+
+  return localAsUtc - correctedOffset
+}
+
+const staticMatches = (matchesData as MatchItem[]).map(match => ({
+  ...match,
+  timestamp: getMatchTimestamp(match),
+}))
 const staticTeams = teamsData as TeamListItem[]
 const staticVenues = venuesData as VenueItem[]
 

@@ -2,7 +2,7 @@
 title: "2026 世界杯赛制全面解析：48 支球队带来哪些巨变？"
 description: "2026 年美加墨世界杯将首次扩军至 48 支球队。赛制将发生哪些变化？小组赛如何分组？淘汰赛又有哪些新看点？本文为您全面解析。"
 publishedAt: "2026-05-18"
-cover: "/images/blog/format-change.jpg"
+cover: "/images/blog/format-change.webp"
 tags: ["赛制", "世界杯", "扩军"]
 locale: "zh"
 ---

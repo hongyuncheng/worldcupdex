@@ -38,22 +38,24 @@
     <!-- Filter Bar -->
     <div class="filter-bar mb-6">
       <!-- Left Tabs -->
-      <div class="filter-tabs" style="display: inline-flex; border: 1px solid #E0E0E0; border-radius: 8px; overflow: hidden;">
-        <button
-          v-for="(tab, index) in stageTabs"
-          :key="tab.value"
-          class="text-sm font-semibold transition-all duration-200 cursor-pointer"
-          :style="[
-            'padding: 10px 24px; border: none;',
-            selectedStageTab === tab.value
-              ? 'background: #000F49; color: white;'
-              : 'background: white; color: #333;',
-            index < stageTabs.length - 1 ? 'border-right: 1px solid #E0E0E0;' : ''
-          ].join(' ')"
-          @click="selectedStageTab = tab.value"
-        >
-          {{ tab.label }}
-        </button>
+      <div class="filter-tabs-scroll" aria-label="Schedule stage filters">
+        <div class="filter-tabs" style="display: inline-flex; border: 1px solid #E0E0E0; border-radius: 8px; overflow: hidden;">
+          <button
+            v-for="(tab, index) in stageTabs"
+            :key="tab.value"
+            class="filter-tab text-sm font-semibold transition-all duration-200 cursor-pointer"
+            :style="[
+              'padding: 10px 24px; border: none;',
+              selectedStageTab === tab.value
+                ? 'background: #000F49; color: white;'
+                : 'background: white; color: #333;',
+              index < stageTabs.length - 1 ? 'border-right: 1px solid #E0E0E0;' : ''
+            ].join(' ')"
+            @click="selectedStageTab = tab.value"
+          >
+            {{ tab.label }}
+          </button>
+        </div>
       </div>
 
       <!-- Center Dropdowns -->
@@ -95,7 +97,7 @@
         </div>
 
         <!-- Timezone Toggle -->
-        <div class="relative flex items-center bg-white border border-gray-200 rounded-lg p-1">
+        <div class="filter-timezone relative flex items-center bg-white border border-gray-200 rounded-lg p-1">
           <button 
             @click="timezoneMode = 'venue'"
             :class="['px-3 py-1 text-xs font-semibold rounded-md transition-colors', timezoneMode === 'venue' ? 'bg-[#000F49] text-white' : 'text-gray-500 hover:bg-gray-100']"
@@ -625,22 +627,70 @@ function buildSportsEventData(m: MatchItem) {
   align-items: center;
   gap: 12px;
 }
+.filter-tabs-scroll {
+  max-width: 100%;
+  flex-shrink: 1;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 2px;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+.filter-tabs-scroll::after {
+  content: '';
+  position: sticky;
+  right: 0;
+  display: inline-block;
+  width: 20px;
+  height: 1px;
+  margin-left: -20px;
+  background: linear-gradient(90deg, rgba(255,255,255,0), #fff 70%);
+  pointer-events: none;
+}
 .filter-tabs {
   display: inline-flex;
   flex-shrink: 0;
+}
+.filter-tab {
+  min-height: 42px;
+  white-space: nowrap;
 }
 .filter-dropdowns {
   display: flex;
   gap: 10px;
   flex: 1;
 }
+.filter-dropdowns > .relative {
+  min-width: 0;
+}
 @media (max-width: 1023px) {
   .filter-bar {
     flex-direction: column;
     align-items: stretch;
   }
+  .filter-tabs-scroll {
+    width: 100%;
+    mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 28px), transparent 100%);
+    -webkit-mask-image: linear-gradient(90deg, #000 0, #000 calc(100% - 28px), transparent 100%);
+  }
   .filter-dropdowns {
     flex-direction: column;
+  }
+  .filter-dropdowns > .relative,
+  .filter-timezone,
+  .export-btn {
+    width: 100%;
+  }
+  .filter-timezone {
+    justify-content: stretch;
+  }
+  .filter-timezone button {
+    flex: 1;
+    min-height: 34px;
+  }
+  .export-btn {
+    justify-content: center;
+    min-height: 42px;
   }
   .schedule-sidebar {
     display: none;

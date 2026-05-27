@@ -3,7 +3,7 @@ title: "Road to 2026: A Guide to All 16 Host Cities Across USA, Canada and Mexic
 description: "From Mexico City to Toronto and Los Angeles — discover every host city, venue and the local culture that will define the first truly continental World Cup."
 publishedAt: "2026-05-15"
 author: "WorldCupDex Editorial"
-cover: "/images/blog/host-cities-cover.jpg"
+cover: "/images/blog/host-cities-cover.webp"
 tags:
   - world-cup
   - host-cities

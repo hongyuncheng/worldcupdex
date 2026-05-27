@@ -3,7 +3,7 @@ title: "2026 世界杯 16 座主办城市完整指南：横跨美加墨三国"
 description: "从墨西哥城到多伦多再到洛杉矶 — 一次性看完 2026 世界杯所有主办城市、球场以及当地文化亮点。"
 publishedAt: "2026-05-15"
 author: "WorldCupDex 编辑部"
-cover: "/images/blog/host-cities-cover.jpg"
+cover: "/images/blog/host-cities-cover.webp"
 tags:
   - 世界杯
   - 主办城市

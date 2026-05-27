@@ -2,7 +2,7 @@
 title: "2026 世界杯夺冠赔率与大热球队分析"
 description: "法国、巴西、阿根廷还是英格兰？谁能在美加墨捧起大力神杯？本文为您盘点 2026 年世界杯的五大夺冠热门球队及其优势。"
 publishedAt: "2026-05-19"
-cover: "/images/blog/favorites.jpg"
+cover: "/images/blog/favorites.webp"
 tags: ["预测", "夺冠热门", "世界杯"]
 locale: "zh"
 ---
