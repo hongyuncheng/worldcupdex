@@ -110,6 +110,9 @@
         </div>
       </div>
     </div>
+    <div class="max-w-7xl mx-auto px-4 lg:px-8">
+      <DataSourceNote kind="team" compact />
+    </div>
 
     <!-- Content Area -->
     <div class="max-w-7xl mx-auto px-4 lg:px-8 py-6">
@@ -122,17 +125,15 @@
         >
           ⚽ {{ $t('teams.becomeFan', { team: locale === 'en' ? team.nameEn : team.nameZh }) }}
         </NuxtLinkLocale>
-        <!-- Amazon Affiliate Placeholder -->
-        <a
-          :href="`/api/track-affiliate?teamId=${team.id}&partner=Amazon&productName=Jersey`"
-          target="_blank"
-          rel="nofollow sponsored noopener"
-          class="inline-flex items-center gap-2 font-semibold hover:opacity-90 transition-opacity"
-          style="background: rgb(226 204 239); color: #000F49; font-family: 'Inter', sans-serif; font-size: 14px; border-radius: 8px; padding: 10px 20px;"
-        >
-          👕 {{ $t('fanCard.buyJersey', { team: locale === 'en' ? team.nameEn : team.nameZh }) }}
-        </a>
       </div>
+      <TeamMerchMoment
+        :teams="[{
+          id: team.id,
+          name: locale === 'en' ? team.nameEn : team.nameZh,
+          flag: `https://flagcdn.com/w80/${team.code}.png`,
+        }]"
+        context="team"
+      />
       <!-- Top: Team Info + Key Stats (two-column) -->
       <div class="info-stats-grid">
         <!-- Left: Team Info Card -->
@@ -266,9 +267,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Affiliate: Official Team Jerseys (CJ) -->
-      <JerseyRecommend :team-id="team.id" />
 
       <!-- Player Detail Modal -->
       <Teleport to="body">

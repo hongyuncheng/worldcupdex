@@ -22,3 +22,17 @@
 [32m√[39m Vite server hmr 9 files in 1910.045ms
 [32m√[39m Vite server hmr 1 files in 0.003ms
 [32m√[39m Vite server hmr 1 files in 0.003ms
+[36mi[39m [32mpage reload [39m[2mcomposables/useDataSourceMeta.ts[22m
+[32m√[39m Vite server hmr 3 files in 0.004ms
+[36mi[39m [32mhmr update [39m[2m/pages/schedule/index.vue, /pages/schedule/index.vue?direct&vue&type=style&index=0&scoped=36fbd2c4&lang.css, /assets/css/main.css, /assets/css/main.css?direct, /pages/schedule/index.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs, /pages/schedule/index.vue?macro=true[22m
+[36mi[39m [32mhmr update [39m[2m/pages/teams/index.vue, /assets/css/main.css, /assets/css/main.css?direct, /pages/teams/index.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /pages/teams/index.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /assets/css/main.css?direct, /pages/teams/[id].vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /pages/teams/[id].vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /assets/css/main.css?direct, /pages/predict/[id].vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /pages/predict/[id].vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /assets/css/main.css?direct, /pages/data/index.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /pages/data/index.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /assets/css/main.css?direct, /pages/data/index.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /pages/data/index.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m

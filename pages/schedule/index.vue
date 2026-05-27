@@ -23,6 +23,7 @@
     <p class="mb-6" style="font-size: 16px; color: #666;">
       {{ $t('schedule.subtitle') }}
     </p>
+    <DataSourceNote kind="schedule" compact />
 
     <!-- Loading -->
     <div v-if="pending" class="text-center py-16">

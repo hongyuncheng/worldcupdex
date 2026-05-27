@@ -14,6 +14,7 @@
     <p class="mb-6" style="font-size: 16px; color: #666;">
       {{ $t('teams.subtitle') }}
     </p>
+    <DataSourceNote kind="teams" compact />
 
     <!-- Group Tabs -->
     <div class="flex flex-wrap gap-2 mb-4">

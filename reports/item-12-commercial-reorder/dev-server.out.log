@@ -1,0 +1,40 @@
+
+> dev
+> nuxt dev --host 127.0.0.1 --port 3000
+
+|
+•  [32mNuxt [1m3.21.6[22m[39m[90m (with [39m[90mNitro [1m2.13.4[22m[39m[90m, Vite [1m7.3.3[22m[39m[90m and Vue [1m3.5.34[22m[39m[90m)[39m
+
+[32m  ➜ Local:   [39m [36m[4mhttp://127.0.0.1:[1m3000[22m/[24m[39m
+[90m  ➜ Network:  use [37m--host[90m to expose[39m
+
+[33m  ➜ DevTools: [39m[2mpress [22m[32mShift[39m[2m + [22m[32mAlt[39m[2m + [22m[32mD[39m[2m in the browser (v3.2.4)[22m
+
+[90m[[90m@nuxt/content[90m][39m [32m√[39m Processed 5 collections and 6 files in 66.02ms (6 cached, 0 parsed)
+[36mi[39m Nuxt Icon server bundle mode is set to [36mlocal[39m
+[32m√[39m Vite client built in 64ms
+[32m√[39m Vite server built in 1464ms
+/*! 🌼 daisyUI 5.5.20 */
+[36mi[39m [32mhmr update [39m[2m/app.vue[22m
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 5123ms
+[36mi[39m Vite server warmed up in 1ms
+[36mi[39m Vite client warmed up in 24ms
+[32m√[39m Vite server hmr 9 files in 2425.201ms
+[32m√[39m Vite server hmr 1 files in 0.003ms
+[32m√[39m Vite server hmr 1 files in 0.002ms
+[43m[30m WARN [39m[49m [Icon] Collection [36muil[39m is not found locally
+We suggest to install it via [36mnpm i -D @iconify-json/uil[39m to provide the best end-user experience.
+[affiliate-click] { teamId: 'generic',
+  partner: 'Amazon',
+  productName: 'World Cup 2026 Fan Gear',
+  ts: 1779885966157 }
+[affiliate-click] { teamId: 'generic',
+  partner: 'Amazon',
+  productName: 'National Team Flags',
+  ts: 1779885969492 }
+[43m[30m WARN [39m[49m [Icon] Collection [36mmdi[39m is not found locally
+We suggest to install it via [36mnpm i -D @iconify-json/mdi[39m to provide the best end-user experience.
+[affiliate-click] { teamId: 'generic',
+  partner: 'Amazon',
+  productName: 'World Cup 2026 Fan Gear',
+  ts: 1779886046131 }

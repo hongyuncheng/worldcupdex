@@ -370,6 +370,11 @@ function handleRealShare(platform: 'twitter' | 'facebook' | 'copy') {
           />
         </div>
 
+        <TeamMerchMoment
+          :teams="[{ id: teamId, name: teamName, flag: team?.code ? `https://flagcdn.com/w80/${team.code}.png` : '' }]"
+          context="fan-card"
+        />
+
         <!-- KickIQ Cross-site CTA -->
         <div class="mb-10">
           <KickiqCta source="fan_card_result" />
@@ -401,29 +406,6 @@ function handleRealShare(platform: 'twitter' | 'facebook' | 'copy') {
           </div>
         </div>
 
-        <!-- AdSense Placeholder -->
-        <div class="max-w-md mx-auto text-center p-4 border border-dashed border-white/20 rounded-lg mb-8">
-          <span class="text-white/20 text-sm">Ad Space</span>
-        </div>
-
-        <!-- Fanatics Affiliate Placeholder -->
-        <div
-          class="max-w-md mx-auto text-center p-6 rounded-2xl mb-8"
-          style="background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1);"
-        >
-          <p class="text-white/70 text-sm mb-3" style="font-family: 'Inter', sans-serif;">
-            {{ t('fanCard.supportTeam') }}
-          </p>
-          <a
-            :href="`/api/track-affiliate?teamId=${teamId}&partner=Amazon&productName=Buy+Jersey`"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            class="inline-block px-6 py-2.5 rounded-xl text-[#000F49] font-bold text-sm transition-all hover:scale-105"
-            style="background: #FFD700; font-family: 'Montserrat', sans-serif; box-shadow: 0 4px 15px rgba(255,215,0,0.3);"
-          >
-            {{ t('fanCard.buyJersey', { team: teamName }) }}
-          </a>
-        </div>
       </template>
 
       <!-- 返回按钮 -->

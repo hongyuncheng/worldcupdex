@@ -508,6 +508,15 @@ Hero 背景和两张入口卡占据过多高度，具体比赛下沉。
 - 用户能看到数据更新时间。
 - AI 预测与官方数据边界清晰。
 
+**执行记录（2026-05-27）**
+
+- 已完成：新增 `DataSourceNote` 统一组件与 `useDataSourceMeta` 数据来源元信息，覆盖来源、更新时间、AI 生成状态、非官方/娱乐边界和反馈入口。
+- 已完成：在 `/schedule`、`/teams`、`/teams/[id]`、`/predict/[id]`、`/data` 接入数据透明度说明；预测页明确标注“仅供球迷娱乐；不是官方建议、博彩建议、赔率或赌博内容”。
+- 已完成：`/data` 页旧的固定更新时间从 `2024-05-20 14:30:00` 改为统一数据更新时间 `2026-05-25`。
+- 构建验证：通过。`npm run build` 成功完成；仍有既有西语 teams 翻译 key、Nuxt Icon timeout 与依赖 deprecation warning，非本项引入。
+- 浏览器验证：通过。Playwright 抽查 `/zh/schedule`、`/zh/teams`、`/zh/teams/argentina`、`/zh/predict/537327`、`/zh/data`，以及移动端 `/zh/schedule`、`/zh/predict/537327`；均显示数据说明，无 `_nuxt/*.js` 404、无控制台 error、无 `NaN`、无横向溢出。
+- 截图记录：`reports/item-10-data-source-note/`。
+
 ---
 
 ## 11. 程序化 SEO 页面规划
@@ -572,6 +581,18 @@ Hero 背景和两张入口卡占据过多高度，具体比赛下沉。
 - 不影响核心功能。
 - 合规披露清楚。
 - 点击 tracking 正常。
+
+**执行记录（2026-05-27）**
+
+- 已完成：新增 `TeamMerchMoment` 统一商业化情绪峰值组件，覆盖球队/商品入口、`rel="nofollow sponsored noopener"`、联盟披露与前端 affiliate click 埋点。
+- 已完成：Fan Card 结果页移除普通 `Ad Space` 占位和底部孤立购买按钮，改为在分享面板后展示主队装备推荐。
+- 已完成：预测结果页从单主队购买按钮升级为主客队双推荐位，放在预测卡片生成和分享之后、外部 CTA 之前。
+- 已完成：球队详情页把装备推荐前移到主动作区之后，减少用户滚到球员名单底部才看到转化位的问题。
+- 已完成：加入/导出日历后显示短暂“准备观赛装备”入口，指向 global watch party 推荐，且不阻断日历核心动作。
+- 构建验证：通过。`npm run build` 成功完成；仍有既有西语 teams 翻译 key、Nuxt Icon/deprecation warning，非本项引入。
+- 浏览器验证：通过。抽查 `/zh/predict/537327`、`/zh/fan-card/result`、`/zh/teams/argentina`、`/zh/schedule`；商业位展示、披露展示、`rel` 合规、无 `Ad Space` 占位、无控制台 error、无横向溢出。
+- Tracking 验证：通过。`/api/track-affiliate?teamId=argentina&partner=Amazon&productName=Explore+Argentina+Fan+Shop` 返回 302 到 Amazon 短链；global 观赛装备入口返回 302 到 Amazon 短链。
+- 截图记录：`reports/item-12-commercial-reorder/`。
 
 ---
 

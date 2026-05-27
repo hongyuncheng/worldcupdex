@@ -430,6 +430,8 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
         </div>
 
         <!-- 世界杯历史战绩对比 -->
+        <DataSourceNote kind="prediction" compact />
+
         <div class="predict-page__h2h">
           <div class="predict-page__h2h-title">📊 {{ t('h2h.title') }}</div>
           <div class="predict-page__h2h-cols">
@@ -697,24 +699,21 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
           />
         </div>
 
-        <!-- Fanatics Affiliate Placeholder -->
-        <div
-          class="max-w-md mx-auto text-center p-6 rounded-2xl mb-8"
-          style="background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.08);"
-        >
-          <p class="text-gray-600 text-sm mb-3" style="font-family: 'Inter', sans-serif;">
-            {{ t('fanCard.supportTeam') }}
-          </p>
-          <a
-            :href="`/api/track-affiliate?teamId=${match.homeTeam.id}&partner=Amazon&productName=Buy+Jersey`"
-            target="_blank"
-            rel="nofollow sponsored noopener"
-            class="inline-block px-6 py-2.5 rounded-xl text-[#000F49] font-bold text-sm transition-all hover:scale-105"
-            style="background: #FFD700; font-family: 'Montserrat', sans-serif; box-shadow: 0 4px 15px rgba(255,215,0,0.3);"
-          >
-            {{ t('fanCard.buyJersey', { team: getTeamName(match.homeTeam) }) }}
-          </a>
-        </div>
+        <TeamMerchMoment
+          :teams="[
+            {
+              id: match.homeTeam.id,
+              name: getTeamName(match.homeTeam),
+              flag: `https://flagcdn.com/w80/${match.homeTeam.code.toLowerCase()}.png`,
+            },
+            {
+              id: match.awayTeam.id,
+              name: getTeamName(match.awayTeam),
+              flag: `https://flagcdn.com/w80/${match.awayTeam.code.toLowerCase()}.png`,
+            },
+          ]"
+          context="prediction"
+        />
 
         <!-- External Cta 广告组件 -->
         <KickiqCta source="quiz_result" class="my-6" />

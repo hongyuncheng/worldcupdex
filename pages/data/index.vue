@@ -47,6 +47,7 @@
 
     <!-- Main 3-column layout -->
     <div class="max-w-7xl mx-auto px-4" style="padding-bottom: 40px;">
+      <DataSourceNote kind="data" />
       <div class="data-main-layout">
         <!-- Left Sidebar -->
         <aside class="data-sidebar">
@@ -265,7 +266,7 @@
             <div style="width: 40px; height: 40px; border-radius: 50%; background: #EBF0FF; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0;">⏰</div>
             <div>
               <div style="font-size: 12px; color: #999; margin-bottom: 2px;">{{ $t('dataCenter.lastUpdate') }}</div>
-              <div style="font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: #000F49; margin-bottom: 2px;">2024-05-20 14:30:00</div>
+              <div style="font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: #000F49; margin-bottom: 2px;">{{ dataMeta.lastUpdated }}</div>
               <div style="font-size: 12px; color: #999;">{{ $t('dataCenter.dataSource') }}</div>
             </div>
           </div>
@@ -277,6 +278,7 @@
 
 <script setup lang="ts">
 const { t } = useI18n()
+const dataMeta = useDataSourceMeta('data')
 
 // SEO
 useSeoConfig({
