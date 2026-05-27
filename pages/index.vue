@@ -380,6 +380,11 @@
       </div>
     </section>
 
+    <!-- Wall of Supporters -->
+    <section class="max-w-7xl mx-auto px-4 lg:px-8 pb-8">
+      <WallOfFame />
+    </section>
+
     <!-- CTA Banner -->
     <section class="max-w-7xl mx-auto px-4 lg:px-8 pb-8">
       <div class="rounded-2xl overflow-hidden relative cta-banner-bg">

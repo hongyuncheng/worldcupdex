@@ -19,8 +19,8 @@ export function useSeoConfig(options: {
   const barePath = currentPath.replace(/^\/(zh|en|es)\b/, '') || '/'
 
   // Generate URLs for each locale
-  const zhUrl = `${baseUrl}${barePath}`
-  const enUrl = `${baseUrl}/en${barePath === '/' ? '' : barePath}`
+  const enUrl = `${baseUrl}${barePath}`
+  const zhUrl = `${baseUrl}/zh${barePath === '/' ? '' : barePath}`
   const esUrl = `${baseUrl}/es${barePath === '/' ? '' : barePath}`
 
   const canonicalUrl = `${baseUrl}${currentPath}`
@@ -64,7 +64,7 @@ export function useSeoConfig(options: {
       { rel: 'alternate', hreflang: 'zh', href: zhUrl },
       { rel: 'alternate', hreflang: 'en', href: enUrl },
       { rel: 'alternate', hreflang: 'es', href: esUrl },
-      { rel: 'alternate', hreflang: 'x-default', href: zhUrl },
+      { rel: 'alternate', hreflang: 'x-default', href: enUrl },
     ],
   })
 }
@@ -81,8 +81,8 @@ export function useHreflang(path?: string) {
   const currentPath = path || route.path
   const barePath = currentPath.replace(/^\/(zh|en|es)\b/, '') || '/'
 
-  const zhUrl = `${baseUrl}${barePath}`
-  const enUrl = `${baseUrl}/en${barePath === '/' ? '' : barePath}`
+  const enUrl = `${baseUrl}${barePath}`
+  const zhUrl = `${baseUrl}/zh${barePath === '/' ? '' : barePath}`
   const esUrl = `${baseUrl}/es${barePath === '/' ? '' : barePath}`
 
   useHead({
@@ -90,7 +90,7 @@ export function useHreflang(path?: string) {
       { rel: 'alternate', hreflang: 'zh', href: zhUrl },
       { rel: 'alternate', hreflang: 'en', href: enUrl },
       { rel: 'alternate', hreflang: 'es', href: esUrl },
-      { rel: 'alternate', hreflang: 'x-default', href: zhUrl },
+      { rel: 'alternate', hreflang: 'x-default', href: enUrl },
     ],
   })
 }

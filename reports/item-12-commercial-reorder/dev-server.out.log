@@ -38,3 +38,65 @@ We suggest to install it via [36mnpm i -D @iconify-json/mdi[39m to provide the
   partner: 'Amazon',
   productName: 'World Cup 2026 Fan Gear',
   ts: 1779886046131 }
+[36mi[39m nuxt.config.ts updated. Restarting Nuxt...
+[33m  ➜ DevTools: [39m[2mpress [22m[32mShift[39m[2m + [22m[32mAlt[39m[2m + [22m[32mD[39m[2m in the browser (v3.2.4)[22m
+
+[90m[[90m@nuxt/content[90m][39m [32m√[39m Processed 5 collections and 6 files in 30.25ms (6 cached, 0 parsed)
+[36mi[39m Nuxt Icon server bundle mode is set to [36mlocal[39m
+[32m√[39m Vite client built in 274ms
+[32m√[39m Vite server built in 1472ms
+[36mi[39m [32mpage reload [39m[2mvirtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froute-rules.mjs[22m
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 4519ms
+[36mi[39m Vite server warmed up in 1ms
+[36mi[39m Vite client warmed up in 26ms
+[32m√[39m Vite server hmr 35 files in 2467.63ms
+[32m√[39m Vite server hmr 1 files in 0.004ms
+[32m√[39m Vite server hmr 1 files in 0.003ms
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /pages/predict/[id].vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /assets/css/main.css?direct, /pages/predict/[id].vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /assets/css/main.css?direct, /pages/predict/[id].vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /pages/predict/[id].vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/pages/fan-card/result.vue, /pages/fan-card/result.vue?direct&vue&type=style&index=0&scoped=4fcf2331&lang.css, /assets/css/main.css, /assets/css/main.css?direct, /pages/fan-card/result.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs, /pages/fan-card/result.vue?macro=true[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /assets/css/main.css?direct, /pages/quiz/result.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[36mi[39m [32mhmr update [39m[2m/assets/css/main.css, /pages/quiz/result.vue?macro=true, /@id/virtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froutes.mjs[22m
+[32m√[39m Vite server hmr 19 files in 235.45ms
+[32m√[39m Vite server hmr 1 files in 0.004ms
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 1202ms
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 1176ms
+[36mi[39m nuxt.config.ts updated. Restarting Nuxt...
+[33m  ➜ DevTools: [39m[2mpress [22m[32mShift[39m[2m + [22m[32mAlt[39m[2m + [22m[32mD[39m[2m in the browser (v3.2.4)[22m
+
+[90m[[90m@nuxt/content[90m][39m [32m√[39m Processed 5 collections and 6 files in 23.55ms (6 cached, 0 parsed)
+[36mi[39m Nuxt Icon server bundle mode is set to [36mlocal[39m
+[32m√[39m Vite client built in 270ms
+[32m√[39m Vite server built in 1686ms
+[36mi[39m [32mpage reload [39m[2mvirtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froute-rules.mjs[22m
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mplugins.server.mjs[39m in 700.23ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mplugins.client.mjs[39m in 1037.79ms
+[90m[[90mnuxt[90m][39m [36mi[39m Compiled [36mtypes/plugins.d.ts[39m in 1499.96ms
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 5057ms
+[36mi[39m Vite server warmed up in 1ms
+[36mi[39m Vite client warmed up in 21ms
+[32m√[39m Vite server hmr 35 files in 2511.348ms
+[32m√[39m Vite server hmr 1 files in 0.002ms
+[32m√[39m Vite server hmr 1 files in 0.003ms
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 1034ms
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 1028ms
+
+[32m  ➜ Local:   [39m [36m[4mhttp://127.0.0.1:[1m3000[22m/[24m[39m
+[90m  ➜ Network:  use [37m--host[90m to expose[39m
+
+[33m  ➜ DevTools: [39m[2mpress [22m[32mShift[39m[2m + [22m[32mAlt[39m[2m + [22m[32mD[39m[2m in the browser (v3.2.4)[22m
+
+[90m[[90m@nuxt/content[90m][39m [32m√[39m Processed 5 collections and 6 files in 118.52ms (6 cached, 0 parsed)
+[36mi[39m Nuxt Icon server bundle mode is set to [36mlocal[39m
+[32m√[39m Vite client built in 158ms
+[32m√[39m Vite server built in 1488ms
+/*! 🌼 daisyUI 5.5.20 */
+[36mi[39m [32mpage reload [39m[2mvirtual:nuxt:E%3A%2Fpc_workspace%2Ftool%2Fworldcupdex%2F.nuxt%2Froute-rules.mjs[22m
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 4264ms
+[36mi[39m Vite server warmed up in 1ms
+[36mi[39m Vite client warmed up in 33ms
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 1102ms
+[90m[[90mnitro[90m][39m [32m√[39m Nuxt Nitro server built in 913ms

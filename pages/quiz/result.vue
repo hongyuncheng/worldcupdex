@@ -399,7 +399,7 @@ onMounted(() => {
     </ClientOnly>
 
     <!-- ====== Share Panel ====== -->
-    <div class="mt-8">
+    <div class="mt-8 flex flex-col items-center gap-6">
       <SharePanel
         :share-text="shareText"
         :share-url="shareUrl"
@@ -408,6 +408,11 @@ onMounted(() => {
         :save-button-text="t('quiz.saveImage')"
         :share-title="t('quiz.shareYourScore')"
       />
+
+      <!-- Sponsor CTA (Quiz theme) -->
+      <div class="w-full max-w-[500px]">
+        <SponsorCta theme="quiz" />
+      </div>
     </div>
 
     <!-- ====== KickIQ Cross-site CTA ====== -->

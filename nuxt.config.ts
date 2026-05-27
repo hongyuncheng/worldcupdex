@@ -1,4 +1,5 @@
 import tailwindcss from '@tailwindcss/vite'
+import teamsData from './data/teams.json'
 
 // 注入 GA4 gtag.js 脚本（仅当 NUXT_PUBLIC_GA_ID 存在时）
 const gaId = process.env.NUXT_PUBLIC_GA_ID || ''
@@ -35,6 +36,41 @@ const skimlinksScripts = skimlinksId && process.env.NODE_ENV === 'production'
     ]
   : []
 
+// 注入 Ko-fi Widget 脚本
+const kofiScripts = [
+  {
+    src: 'https://storage.ko-fi.com/cdn/scripts/overlay-widget.js',
+    defer: true,
+  },
+  {
+    innerHTML: `
+      let kofiAttempts = 0;
+      const kofiInterval = setInterval(function() {
+        if (typeof kofiWidgetOverlay !== 'undefined') {
+          clearInterval(kofiInterval);
+          try {
+            kofiWidgetOverlay.draw('worldcupdex', {
+              'type': 'floating-chat',
+              'floating-chat.donateButton.text': 'Support me',
+              'floating-chat.donateButton.background-color': '#00b9fe',
+              'floating-chat.donateButton.text-color': '#fff'
+            });
+          } catch (e) {
+            console.error('Ko-fi Widget initialization failed:', e);
+          }
+        }
+        if (++kofiAttempts > 100) clearInterval(kofiInterval); // 10秒后放弃
+      }, 100);
+    `,
+  }
+]
+
+const teamScheduleRoutes = (teamsData as Array<{ id: string }>).flatMap(team => [
+  `/teams/${team.id}/schedule`,
+  `/zh/teams/${team.id}/schedule`,
+  `/es/teams/${team.id}/schedule`,
+])
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-16',
   devtools: { enabled: true },
@@ -52,7 +88,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
     '@nuxt/content',
-    '@nuxt/icon',
     '@vite-pwa/nuxt',
     '@nuxtjs/sitemap',
   ],
@@ -116,6 +151,7 @@ export default defineNuxtConfig({
 
   sitemap: {
     autoI18n: true,
+    urls: teamScheduleRoutes,
   },
 
   nitro: {
@@ -128,6 +164,7 @@ export default defineNuxtConfig({
         '/blog',
         '/es/blog',
         '/zh/blog',
+        ...teamScheduleRoutes,
       ],
     },
   },
@@ -153,7 +190,7 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap' },
         { rel: 'preload', as: 'image', href: '/images/index_bg.png', fetchpriority: 'high' },
       ],
-      script: [...gaScripts, ...adsenseScripts, ...skimlinksScripts],
+      script: [...gaScripts, ...adsenseScripts, ...skimlinksScripts, ...kofiScripts],
     },
   },
 

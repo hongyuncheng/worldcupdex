@@ -358,7 +358,7 @@ function handleRealShare(platform: 'twitter' | 'facebook' | 'copy') {
         </div>
 
         <!-- 分享面板 -->
-        <div class="mb-10">
+        <div class="mb-10 flex flex-col items-center gap-6">
           <SharePanel
             :share-text="shareText"
             :share-url="shareUrl"
@@ -368,6 +368,11 @@ function handleRealShare(platform: 'twitter' | 'facebook' | 'copy') {
             :on-before-save="onBeforeSave"
             :on-after-save="onAfterSave"
           />
+
+          <!-- Sponsor CTA (Fan theme) -->
+          <div class="w-full max-w-[500px]">
+            <SponsorCta theme="fan" />
+          </div>
         </div>
 
         <TeamMerchMoment

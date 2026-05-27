@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Alex T.",
+    "beers": 3,
+    "message": "Great site! Saved my life for match schedules. 📅",
+    "date": "2024-05-12"
+  },
+  {
+    "id": 2,
+    "name": "SoccerFan99",
+    "beers": 1,
+    "message": "Love the toxic milk predictions 😂",
+    "date": "2024-05-14"
+  },
+  {
+    "id": 3,
+    "name": "Anonymous",
+    "beers": 5,
+    "message": "Keep the servers running! Cheers from Brazil 🇧🇷",
+    "date": "2024-05-15"
+  },
+  {
+    "id": 4,
+    "name": "David W.",
+    "beers": 2,
+    "message": "Best World Cup toolkit I've found so far. Keep it up!",
+    "date": "2024-05-16"
+  },
+  {
+    "id": 5,
+    "name": "Sarah",
+    "beers": 1,
+    "message": "🍺🍺🍺",
+    "date": "2024-05-18"
+  },
+  {
+    "id": 6,
+    "name": "Max M.",
+    "beers": 2,
+    "message": "Used the Fan Pass to show off to my friends. Super cool feature.",
+    "date": "2024-05-20"
+  }
+]

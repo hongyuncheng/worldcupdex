@@ -715,6 +715,11 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
           context="prediction"
         />
 
+        <!-- Sponsor CTA (Jinx theme) -->
+        <div class="w-full max-w-[500px] mx-auto mt-6 mb-6">
+          <SponsorCta theme="jinx" />
+        </div>
+
         <!-- External Cta 广告组件 -->
         <KickiqCta source="quiz_result" class="my-6" />
 
@@ -729,7 +734,7 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
         </div>
       </template>
 
-      <!-- Share to Unlock Modal -->
+        <!-- Share to Unlock Modal -->
       <div v-if="showUnlockModal" class="predict-page__modal-overlay" @click="closeUnlockModal">
         <div class="predict-page__modal" @click.stop>
           <button v-if="unlockStatus === 'idle'" class="predict-page__modal-close" @click="closeUnlockModal">×</button>

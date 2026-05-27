@@ -550,6 +550,20 @@ Hero 背景和两张入口卡占据过多高度，具体比赛下沉。
 - 每页有独立搜索意图。
 - 每页有可用工具或数据，不只是 AI 文案。
 
+**执行记录（2026-05-27）**
+
+- 已完成：选定 `/teams/{team}/schedule` 作为程序化 SEO 第一个试点模板，暂不同时铺开其它长尾模板。
+- 已完成：新增球队赛程页模板，基于静态球队/赛程数据生成每队小组赛，提供对手、开球时间、球场、日历导出、预测入口和相关内链，避免薄内容。
+- 已完成：将球队详情页移动到 `pages/teams/[id]/index.vue`，避免 `/teams/{team}/schedule` 被详情页路由抢占；球队详情页新增“Team Schedule / 查看球队赛程”入口。
+- 已完成：修正 `useSeoConfig` / `useHreflang`，匹配当前 `prefix_except_default` 路由：英文默认无前缀，中文 `/zh`，西语 `/es`，`x-default` 指向英文默认路径。
+- 已完成：将 48 支球队的 en/zh/es 赛程页加入 sitemap urls 和 Nitro prerender routes。
+- 已完成：移除 `@nuxt/icon` 服务端模块注册，新增本地 `Icon.vue` 包装 `@iconify/vue`，解决 clean build 后 Windows prerender 的 `file:///_entry.js` 错误，同时保留现有 `<Icon name="...">` 用法。
+- 构建验证：通过。清理 `.nuxt` / `.output` 后 `npm run build` 可稳定完成；仍有既有西语 teams 翻译 key、Tailwind/DaisyUI CSS 解析提示和依赖 deprecation warning，非本项页面逻辑引入。
+- SEO 验证：通过。抽查 `/teams/argentina/schedule`、`/zh/teams/argentina/schedule`、`/es/teams/argentina/schedule`，均有独立 title/OG/canonical/hreflang，并输出 3 个 `SportsEvent` JSON-LD。
+- Sitemap 验证：通过。`en-US.xml`、`zh-CN.xml`、`es-ES.xml` 均包含 `teams/argentina/schedule` 及对应 alternate 链接。
+- 浏览器验证：通过。桌面与移动端抽查 `/teams/argentina/schedule`，3 张赛程卡正常、无 `NaN`、无横向溢出、无资源 404、无控制台 error；球队详情页入口正常。
+- 截图记录：`reports/item-11-programmatic-seo/`。
+
 ---
 
 ## 12. 商业化位重排

@@ -125,6 +125,13 @@
         >
           ⚽ {{ $t('teams.becomeFan', { team: locale === 'en' ? team.nameEn : team.nameZh }) }}
         </NuxtLinkLocale>
+        <NuxtLinkLocale
+          :to="`/teams/${team.id}/schedule`"
+          class="inline-flex items-center gap-2 font-bold hover:opacity-90 transition-opacity"
+          style="background: #000F49; color: white; font-family: 'Montserrat', sans-serif; font-size: 14px; border-radius: 8px; padding: 10px 20px;"
+        >
+          📅 {{ locale === 'zh' ? '查看球队赛程' : 'Team Schedule' }}
+        </NuxtLinkLocale>
       </div>
       <TeamMerchMoment
         :teams="[{
