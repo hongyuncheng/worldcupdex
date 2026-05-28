@@ -21,7 +21,9 @@ export function useFavorites() {
       if (stored) {
         const data = JSON.parse(stored) as FavoritesData
         favoriteTeams.value = Array.isArray(data.teams) ? data.teams : []
-        favoriteMatches.value = Array.isArray(data.matches) ? data.matches : []
+        favoriteMatches.value = Array.isArray(data.matches)
+          ? data.matches.map(Number).filter(Number.isFinite)
+          : []
       }
     } catch (e) {
       console.error('Failed to load favorites', e)

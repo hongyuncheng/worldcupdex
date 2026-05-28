@@ -1,8 +1,0 @@
-
-> preview
-> nuxt preview --host 127.0.0.1 --port 3001
-
-|
-x  Cannot find [36mnitro.json[39m. Did you run [36mnuxi build[39m first? Search path:
-|  E:/pc_workspace/tool/worldcupdex/127.0.0.1/.output/nitro.json
-|  E:/pc_workspace/tool/worldcupdex/127.0.0.1/.output/nitro.json

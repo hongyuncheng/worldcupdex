@@ -52,7 +52,7 @@
                 : 'background: white; color: #333;',
               index < stageTabs.length - 1 ? 'border-right: 1px solid #E0E0E0;' : ''
             ].join(' ')"
-            @click="selectedStageTab = tab.value"
+            @click="setStageTab(tab.value)"
           >
             {{ tab.label }}
           </button>
@@ -159,7 +159,7 @@
               :key="stage.key"
               class="stage-item"
               :class="{ 'stage-item--active': selectedSidebarStage === stage.key }"
-              @click="selectedSidebarStage = stage.key"
+              @click="setSidebarStage(stage.key)"
             >
               <div class="stage-item-left">
                 <div class="stage-name">{{ stage.name }}</div>
@@ -403,7 +403,7 @@ const selectedStageTab = ref<FilterType>('all')
 const selectedDate = ref('')
 const selectedVenue = ref('')
 const selectedGroup = ref('')
-const selectedSidebarStage = ref('GROUP_STAGE')
+const selectedSidebarStage = ref('')
 const calendarYear = ref(2026)
 const calendarMonth = ref(6)
 const selectedCalendarDay = ref(12)
@@ -452,9 +452,27 @@ const stages = computed<Stage[]>(() => {
   ]
 })
 
+function setStageTab(tab: FilterType) {
+  selectedStageTab.value = tab
+  selectedSidebarStage.value = tab === 'group' ? 'GROUP_STAGE' : ''
+}
+
+function setSidebarStage(stage: string) {
+  selectedSidebarStage.value = stage
+  selectedStageTab.value = stage === 'GROUP_STAGE' ? 'group' : 'knockout'
+}
+
 const currentStageName = computed(() => {
+  if (selectedStageTab.value === 'favorites') return t('schedule.mySchedule')
+  if (selectedStageTab.value === 'all' && !selectedSidebarStage.value) return t('schedule.allMatches')
+  if (selectedStageTab.value === 'knockout' && !selectedSidebarStage.value) return t('schedule.knockoutStage')
+
   const s = stages.value.find(st => st.key === selectedSidebarStage.value)
-  return s ? s.name : ''
+  return s ? s.name : t('schedule.allMatches')
+})
+
+watch([selectedStageTab, selectedVenue, selectedGroup, selectedSidebarStage], () => {
+  showAll.value = false
 })
 
 // ─── Groups ───
@@ -498,19 +516,19 @@ const matchDaysByMonth = computed(() => {
 // ─── Filtered Matches ───
 const filteredMatches = computed(() => {
   let result = [...allMatches.value]
-  if (selectedSidebarStage.value) {
-    result = result.filter(m => m.stage === selectedSidebarStage.value)
-  }
   if (selectedStageTab.value === 'favorites') {
-    result = result.filter(m => {
-      const isFavTeam = favoriteTeams.value.includes(m.homeTeam.nameEn) || favoriteTeams.value.includes(m.awayTeam.nameEn)
-      const isFavMatch = favoriteMatches.value.includes(m.id)
-      return isFavTeam || isFavMatch
-    })
+    result = result.filter(m =>
+      favoriteMatches.value.includes(m.id) ||
+      favoriteTeams.value.includes(m.homeTeam.nameEn) ||
+      favoriteTeams.value.includes(m.awayTeam.nameEn)
+    )
   } else if (selectedStageTab.value === 'group') {
     result = result.filter(m => m.stage === 'GROUP_STAGE')
   } else if (selectedStageTab.value === 'knockout') {
     result = result.filter(m => m.stage !== 'GROUP_STAGE')
+  }
+  if (selectedSidebarStage.value) {
+    result = result.filter(m => m.stage === selectedSidebarStage.value)
   }
   if (selectedGroup.value) {
     result = result.filter(m => m.group === selectedGroup.value)
