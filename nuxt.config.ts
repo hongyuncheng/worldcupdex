@@ -207,6 +207,12 @@ const teamScheduleRoutes = (teamsData as Array<{ id: string }>).flatMap(team => 
   `/es/teams/${team.id}/schedule`,
 ])
 
+const teamBaseRoutes = (teamsData as Array<{ id: string }>).flatMap(team => [
+  `/teams/${team.id}`,
+  `/zh/teams/${team.id}`,
+  `/es/teams/${team.id}`,
+])
+
 const teamRouteTeamIds = new Set([
   ...(teamsData as Array<{ id: string }>).map(team => team.id),
   ...(matchesData as Array<{ stage: string; homeTeam: { id: string }; awayTeam: { id: string } }>).flatMap(match => (
@@ -307,6 +313,7 @@ export default defineNuxtConfig({
   sitemap: {
     autoI18n: true,
     urls: [
+      ...teamBaseRoutes,
       ...teamScheduleRoutes,
       ...teamRouteRoutes,
     ],
@@ -322,6 +329,7 @@ export default defineNuxtConfig({
         '/blog',
         '/es/blog',
         '/zh/blog',
+        ...teamBaseRoutes,
         ...teamScheduleRoutes,
         ...teamRouteRoutes,
       ],
@@ -344,6 +352,8 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'icon', type: 'image/png', href: '/images/icon-192.png' },
+        { rel: 'apple-touch-icon', href: '/images/icon-192.png' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap' },
