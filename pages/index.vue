@@ -176,6 +176,36 @@
       </div>
     </section>
 
+    <!-- Track Team Route -->
+    <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-6 pb-4">
+      <div class="home-route-module">
+        <div>
+          <p class="home-route-module__eyebrow">World Cup 2026</p>
+          <h2>{{ routeModuleCopy.title }}</h2>
+          <p>
+            {{ routeModuleCopy.subtitle }}
+          </p>
+        </div>
+        <div class="home-route-module__side">
+          <div class="home-route-module__side-header">
+            <span>{{ routeModuleCopy.listLabel }}</span>
+            <NuxtLinkLocale to="/teams">{{ routeModuleCopy.cta }}</NuxtLinkLocale>
+          </div>
+          <div class="home-route-module__teams">
+            <NuxtLinkLocale
+              v-for="team in routeTeams"
+              :key="team.id"
+              :to="`/teams/${team.id}/world-cup-2026-route`"
+              class="home-route-module__team"
+            >
+              <img :src="team.flag" :alt="team.nameEn" loading="lazy" decoding="async" />
+              <span>{{ locale === 'zh' ? team.nameZh : team.nameEn }}</span>
+            </NuxtLinkLocale>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Upcoming Matches -->
     <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-8 pb-4">
       <div class="flex items-center justify-between mb-6">
@@ -524,6 +554,60 @@ const hotTeams = computed(() => {
   const teams = teamsResponse.value?.data || []
   return [...teams].sort((a, b) => a.fifaRank - b.fifaRank).slice(0, 8)
 })
+
+const followedRouteTeams = computed(() => {
+  const teams = teamsResponse.value?.data || []
+  if (!isLoaded.value || favoriteTeams.value.length === 0) return []
+
+  const teamsByName = new Map(teams.map(team => [team.nameEn, team]))
+
+  return favoriteTeams.value
+    .map(teamName => teamsByName.get(teamName))
+    .filter((team): team is NonNullable<typeof team> => Boolean(team))
+    .slice(0, 6)
+})
+
+const hasFollowedRouteTeams = computed(() => followedRouteTeams.value.length > 0)
+
+const routeTeams = computed(() => {
+  if (hasFollowedRouteTeams.value) return followedRouteTeams.value
+  return hotTeams.value.filter(team => team.group).slice(0, 6)
+})
+
+const routeModuleCopy = computed(() => {
+  const hasFollowed = hasFollowedRouteTeams.value
+
+  if (locale.value === 'zh') {
+    return {
+      title: hasFollowed ? '追踪你的关注球队路线' : '选择你的球队路线',
+      subtitle: hasFollowed
+        ? '这里优先展示你已关注球队的下一场比赛、本地开球时间、小组赛赛程、日历提醒和官方出线槽位。'
+        : '先从热门球队开始，或进入球队图鉴选择你真正支持的球队路线。',
+      listLabel: hasFollowed ? '你的关注球队' : '热门球队路线',
+      cta: hasFollowed ? '管理球队' : '查看更多球队',
+    }
+  }
+
+  if (locale.value === 'es') {
+    return {
+      title: hasFollowed ? 'Sigue tus equipos favoritos' : 'Elige la ruta de tu equipo',
+      subtitle: hasFollowed
+        ? 'Mira primero los equipos que sigues: proximo partido, hora local, calendario, recordatorios y puestos oficiales.'
+        : 'Empieza con equipos populares o abre el atlas de equipos para elegir el que realmente sigues.',
+      listLabel: hasFollowed ? 'Tus equipos seguidos' : 'Rutas populares',
+      cta: hasFollowed ? 'Gestionar equipos' : 'Ver mas equipos',
+    }
+  }
+
+  return {
+    title: hasFollowed ? 'Track Your Followed Teams' : 'Choose Your Team Route',
+    subtitle: hasFollowed
+      ? 'Your followed teams come first: next match, local kickoff time, group fixtures, calendar reminders and official qualification slots.'
+      : 'Start with popular teams or open the team atlas to choose the team you actually care about.',
+    listLabel: hasFollowed ? 'Your followed teams' : 'Popular team routes',
+    cta: hasFollowed ? 'Manage teams' : 'Browse all teams',
+  }
+})
 </script>
 
 <style scoped>
@@ -531,15 +615,134 @@ const hotTeams = computed(() => {
   min-height: 400px;
   background-color: #000F49;
 }
+
+.home-route-module {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(340px, 0.82fr);
+  gap: 20px;
+  align-items: center;
+  padding: 22px;
+  border: 1px solid #e8edf5;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 15, 73, 0.06);
+}
+
+.home-route-module__eyebrow {
+  margin: 0 0 6px;
+  color: #4a5578;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.home-route-module h2 {
+  margin: 0;
+  color: #000f49;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.home-route-module p:not(.home-route-module__eyebrow) {
+  margin: 8px 0 0;
+  color: #4a5578;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.home-route-module__teams {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.home-route-module__side {
+  min-width: 0;
+}
+
+.home-route-module__side-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.home-route-module__side-header span {
+  color: #4a5578;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.home-route-module__side-header a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  padding: 0 12px;
+  border: 1px solid #d9deea;
+  border-radius: 8px;
+  color: #000f49;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 900;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.home-route-module__side-header a:hover {
+  border-color: #ffd700;
+  background: #fff9d8;
+}
+
+.home-route-module__team {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #f8fafc;
+  color: #000f49;
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.home-route-module__team img {
+  width: 28px;
+  height: 18px;
+  border-radius: 3px;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
+
+.home-route-module__team span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 @media (max-width: 1024px) {
   .hero-section {
     height: auto;
     min-height: 450px;
   }
+
+  .home-route-module {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 640px) {
   .hero-section {
     min-height: 400px;
+  }
+
+  .home-route-module__teams {
+    grid-template-columns: 1fr;
   }
 
   .hero-cta-buttons {

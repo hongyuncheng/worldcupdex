@@ -49,12 +49,17 @@
           <h2>{{ copy.fixturesTitle }}</h2>
           <p>{{ copy.fixturesSubtitle }}</p>
         </div>
-        <AddToCalendarButton
-          :matches="matches"
-          :button-text="copy.exportCalendar"
-          custom-class="!bg-[#000F49] hover:!bg-[#12205f] !text-white !border-[#000F49] !px-4 !py-2"
-          dropdown-position="right"
-        />
+        <div class="team-schedule-tools__actions">
+          <NuxtLinkLocale :to="`/teams/${team.id}/world-cup-2026-route`" class="team-schedule-route-link">
+            {{ copy.viewRoute }}
+          </NuxtLinkLocale>
+          <AddToCalendarButton
+            :matches="matches"
+            :button-text="copy.exportCalendar"
+            custom-class="!bg-[#000F49] hover:!bg-[#12205f] !text-white !border-[#000F49] !px-4 !py-2"
+            dropdown-position="right"
+          />
+        </div>
       </div>
 
       <div class="team-schedule-summary">
@@ -167,6 +172,7 @@ const copy = computed(() => {
       matches: '场比赛',
       fixturesTitle: `${teamName.value}赛程表`,
       fixturesSubtitle: '每场比赛都可以加入日历或直接进入预测。',
+      viewRoute: '追踪球队路线',
       exportCalendar: '导出全部赛程',
       addCalendar: '加入日历',
       predict: '预测比赛',
@@ -190,6 +196,7 @@ const copy = computed(() => {
       matches: 'matches',
       fixturesTitle: `${teamName.value} fixtures`,
       fixturesSubtitle: 'Add every match to your calendar or jump straight into predictions.',
+      viewRoute: 'Track team route',
       exportCalendar: 'Export all fixtures',
       addCalendar: 'Add to calendar',
       predict: 'Predict match',
@@ -212,6 +219,7 @@ const copy = computed(() => {
     matches: 'matches',
     fixturesTitle: `${teamName.value} fixtures`,
     fixturesSubtitle: 'Add every match to your calendar or jump straight into predictions.',
+    viewRoute: 'Track team route',
     exportCalendar: 'Export all fixtures',
     addCalendar: 'Add to calendar',
     predict: 'Predict match',
@@ -424,6 +432,28 @@ function formatMatchDate(match: MatchItem): string {
   margin: 6px 0 0;
   color: #667085;
   font-size: 14px;
+}
+
+.team-schedule-tools__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.team-schedule-route-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: 1px solid #ffd700;
+  background: #fff7c2;
+  color: #000f49;
+  font-size: 13px;
+  font-weight: 900;
+  text-decoration: none;
 }
 
 .team-schedule-summary {

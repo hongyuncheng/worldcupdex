@@ -132,6 +132,13 @@
         >
           📅 {{ locale === 'zh' ? '查看球队赛程' : 'Team Schedule' }}
         </NuxtLinkLocale>
+        <NuxtLinkLocale
+          :to="`/teams/${team.id}/world-cup-2026-route`"
+          class="inline-flex items-center gap-2 font-bold hover:opacity-90 transition-opacity"
+          style="background: #FFF7C2; color: #000F49; border: 1px solid #FFD700; font-family: 'Montserrat', sans-serif; font-size: 14px; border-radius: 8px; padding: 10px 20px;"
+        >
+          {{ locale === 'zh' ? '追踪球队路线' : 'Track Team Route' }}
+        </NuxtLinkLocale>
       </div>
       <TeamMerchMoment
         :teams="[{
