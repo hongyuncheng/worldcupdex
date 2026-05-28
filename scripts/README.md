@@ -31,16 +31,3 @@
    npm run ga4-report
    ```
 4. 脚本会拉取最近 7 天的“来源/媒介 (Source/Medium)”维度流量数据，保存在 `reports/ga4-report-YYYY-MM-DD.md` 中。
-
-## Cloudflare Web Analytics 报告配置
-
-如果你想运行 `npm run cf-report` 获取网站最近 7 天的访问量、流量来源等数据：
-
-1. 登录 Cloudflare 控制台。
-2. 获取当前网站的 **Zone ID**，填入项目根目录 `.env` 文件中的 `CF_ZONE_ID`。
-3. 创建一个具备读取 Analytics 数据权限的 **API Token**（进入 My Profile -> API Tokens -> Create Token -> 模板选 Read analytics and logs），将其填入 `.env` 中的 `CF_ANALYTICS_API_TOKEN`。
-4. 运行命令：
-   ```bash
-   npm run cf-report
-   ```
-5. 脚本会自动在项目根目录创建 `reports/` 文件夹，并在其中生成 Markdown 格式的数据分析报告。

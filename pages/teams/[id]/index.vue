@@ -140,6 +140,20 @@
           {{ locale === 'zh' ? '追踪球队路线' : 'Track Team Route' }}
         </NuxtLinkLocale>
       </div>
+
+      <!-- SEO / Intro text -->
+      <div class="mb-6 p-5 rounded-xl bg-white" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+        <h2 class="font-bold text-xl mb-2" style="color: #000F49; font-family: 'Montserrat', sans-serif;">
+          {{ locale === 'en' ? `About ${team.nameEn} National Football Team` : `关于${team.nameZh}国家队` }}
+        </h2>
+        <p style="color: #666; font-size: 15px; line-height: 1.6;">
+          {{ locale === 'en' 
+            ? `The ${team.nameEn} national football team is gearing up for the 2026 World Cup. Currently ranked #${team.fifaRank} by FIFA, they are placed in Group ${team.group}. Follow the latest ${team.nameEn} World Cup news, explore their full squad roster below, and gear up to support them in the upcoming tournament.`
+            : `${team.nameZh}国家队正积极备战2026年世界杯。目前FIFA世界排名第${team.fifaRank}位，在本次赛事中分在${team.group}组。在这里你可以查看${team.nameZh}队最新的世界杯大名单、主教练信息、赛程以及专属球迷周边。`
+          }}
+        </p>
+      </div>
+
       <TeamMerchMoment
         :teams="[{
           id: team.id,
@@ -519,14 +533,20 @@ const filteredSquad = computed(() => {
 const seoTeamName = computed(() =>
   team.value ? (locale.value === 'en' ? team.value.nameEn : team.value.nameZh) : 'WorldCupDex',
 )
-const seoTitle = computed(() =>
-  team.value ? `${seoTeamName.value} - World Cup 2026 | WorldCupDex` : 'WorldCupDex',
-)
-const seoDescription = computed(() =>
-  team.value
-    ? `${seoTeamName.value}的详细资料，包括FIFA排名#${team.value.fifaRank}、${team.value.group}组小组赛、教练、阵容名单等信息。`
-    : '',
-)
+const seoTitle = computed(() => {
+  if (!team.value) return 'WorldCupDex'
+  if (locale.value === 'en') {
+    return `${team.value.nameEn} World Cup 2026 Roster & Stats | WorldCupDex`
+  }
+  return `${team.value.nameZh}国家队 - 2026世界杯阵容名单与赛程 | WorldCupDex`
+})
+const seoDescription = computed(() => {
+  if (!team.value) return ''
+  if (locale.value === 'en') {
+    return `Get the latest on the ${team.value.nameEn} World Cup team. View the ${team.value.nameEn} 2026 squad roster, FIFA rank #${team.value.fifaRank}, Group ${team.value.group} standings, and fan gear.`
+  }
+  return `${team.value.nameZh}国家队2026世界杯详细资料：FIFA最新排名第${team.value.fifaRank}位，分在${team.value.group}组。查看最新大名单、首发阵容及球迷周边。`
+})
 const seoOgImage = computed(() =>
   team.value ? `https://flagcdn.com/w320/${team.value.code}.png` : '',
 )

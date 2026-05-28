@@ -1,22 +1,8 @@
-/**
- * Google Search Console 搜索表现分析报告生成脚本
- *
- * 使用 GSC API 获取网站搜索表现数据，生成 Markdown 格式分析报告。
- *
- * 使用方法：
- *   node scripts/generate-gsc-report.mjs
- *
- * 环境变量（scripts/.env）：
- *   GSC_CLIENT_ID, GSC_CLIENT_SECRET, GSC_REFRESH_TOKEN, GSC_SITE_URL
- *
- * 首次使用需先运行 gsc-auth.mjs 获取 refresh token。
- */
-
 import { config } from 'dotenv';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { mkdirSync, writeFileSync } from 'fs';
-import { google } from 'googleapis';
+import fetch from 'node-fetch';
 import { HttpsProxyAgent } from 'https-proxy-agent';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -24,27 +10,21 @@ config({ path: resolve(__dirname, '.env') });
 
 const proxyUrl = process.env.HTTPS_PROXY || process.env.HTTP_PROXY || process.env.https_proxy || process.env.http_proxy || 'http://127.0.0.1:10809';
 const agent = proxyUrl ? new HttpsProxyAgent(proxyUrl) : undefined;
-if (agent) {
-  google.options({
-    agent: agent
-  });
-}
 
 const {
   GSC_CLIENT_ID,
   GSC_CLIENT_SECRET,
   GSC_REFRESH_TOKEN,
-  GSC_ACCESS_TOKEN,
   GSC_SITE_URL = 'sc-domain:worldcupdex.org',
 } = process.env;
 
 // ============ 环境变量校验 ============
 
-if (!GSC_CLIENT_ID || !GSC_CLIENT_SECRET || (!GSC_REFRESH_TOKEN && !GSC_ACCESS_TOKEN)) {
+if (!GSC_CLIENT_ID || !GSC_CLIENT_SECRET || !GSC_REFRESH_TOKEN) {
   console.error('❌ 缺少必要的环境变量：');
   if (!GSC_CLIENT_ID) console.error('   - GSC_CLIENT_ID');
   if (!GSC_CLIENT_SECRET) console.error('   - GSC_CLIENT_SECRET');
-  if (!GSC_REFRESH_TOKEN && !GSC_ACCESS_TOKEN) console.error('   - GSC_REFRESH_TOKEN 或 GSC_ACCESS_TOKEN（请先运行 gsc-auth.mjs 获取）');
+  if (!GSC_REFRESH_TOKEN) console.error('   - GSC_REFRESH_TOKEN（请先运行 gsc-auth.mjs 获取）');
   console.error('\n   请检查 scripts/.env 文件');
   process.exit(1);
 }
@@ -107,22 +87,29 @@ function sleep(ms) {
   return new Promise(r => setTimeout(r, ms));
 }
 
-// ============ OAuth 客户端初始化 ============
+// ============ API 调用层 ============
 
-function createAuthClient() {
-  const oauth2Client = new google.auth.OAuth2(
-    GSC_CLIENT_ID,
-    GSC_CLIENT_SECRET,
-  );
-  if (GSC_REFRESH_TOKEN) {
-    oauth2Client.setCredentials({ refresh_token: GSC_REFRESH_TOKEN });
-  } else if (GSC_ACCESS_TOKEN) {
-    oauth2Client.setCredentials({ access_token: GSC_ACCESS_TOKEN });
+async function fetchGscReport(token, siteUrl, requestBody) {
+  const encodedSiteUrl = encodeURIComponent(siteUrl);
+  const url = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodedSiteUrl}/searchAnalytics/query`;
+  
+  const response = await fetch(url, {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(requestBody),
+    agent
+  });
+
+  if (!response.ok) {
+    const errText = await response.text();
+    throw new Error(`GSC API 报错 (${response.status}): ${errText}`);
   }
-  return oauth2Client;
+  
+  return await response.json();
 }
-
-// ============ API 调用层（含重试逻辑） ============
 
 const MAX_RETRIES = 3;
 const RETRY_DELAY_MS = 2000;
@@ -132,476 +119,200 @@ async function withRetry(fn, label) {
     try {
       return await fn();
     } catch (err) {
-      const status = err?.response?.status || err?.code;
-
-      if (status === 401 || status === 403) {
-        throw new Error(
-          `${label} 认证失败 (${status})：请检查 GSC_REFRESH_TOKEN 是否有效。\n` +
-          `   如果 Token 已过期，请重新运行 gsc-auth.mjs 获取新的 Refresh Token。`
-        );
+      if (err.message.includes('401') || err.message.includes('403')) {
+        throw new Error(`${label} 认证失败：请检查 GSC_REFRESH_TOKEN 是否有效。`);
       }
-
-      if (status === 429 || (status >= 500 && attempt < MAX_RETRIES)) {
+      if (err.message.includes('429') || attempt < MAX_RETRIES) {
         const delay = RETRY_DELAY_MS * Math.pow(2, attempt - 1);
-        console.warn(`   ⚠️ ${label} 第${attempt}次请求失败 (${status})，${delay/1000}s 后重试...`);
+        console.warn(`   ⚠️ ${label} 第${attempt}次请求失败，${delay/1000}s 后重试... (${err.message})`);
         await sleep(delay);
         continue;
       }
-
       throw err;
     }
   }
 }
 
-async function fetchSearchAnalytics(searchconsole, params) {
-  return withRetry(async () => {
-    const res = await searchconsole.searchanalytics.query({
-      siteUrl: GSC_SITE_URL,
-      requestBody: params,
-    });
-    return res.data;
-  }, 'SearchAnalytics');
-}
-
-async function fetchSitemaps(searchconsole) {
-  return withRetry(async () => {
-    const res = await searchconsole.sitemaps.list({
-      siteUrl: GSC_SITE_URL,
-    });
-    return res.data;
-  }, 'Sitemaps');
-}
-
-// ============ 数据获取层 ============
-
-async function fetchAllData(searchconsole, startDate, endDate) {
-  console.log('   ▶ 获取搜索表现概览...');
-  const overview = await fetchSearchAnalytics(searchconsole, {
-    startDate,
-    endDate,
-    dimensions: [],
-    rowLimit: 1,
-  });
-
-  console.log('   ▶ 获取每日趋势...');
-  const dailyData = await fetchSearchAnalytics(searchconsole, {
-    startDate,
-    endDate,
-    dimensions: ['date'],
-    rowLimit: 25000,
-  });
-
-  console.log('   ▶ 获取热门查询词 TOP 20...');
-  const queryData = await fetchSearchAnalytics(searchconsole, {
-    startDate,
-    endDate,
-    dimensions: ['query'],
-    rowLimit: 20,
-    dimensionFilterGroups: [],
-  });
-
-  console.log('   ▶ 获取热门页面 TOP 20...');
-  const pageData = await fetchSearchAnalytics(searchconsole, {
-    startDate,
-    endDate,
-    dimensions: ['page'],
-    rowLimit: 20,
-  });
-
-  console.log('   ▶ 获取国家分布 TOP 10...');
-  const countryData = await fetchSearchAnalytics(searchconsole, {
-    startDate,
-    endDate,
-    dimensions: ['country'],
-    rowLimit: 10,
-  });
-
-  console.log('   ▶ 获取设备分布...');
-  const deviceData = await fetchSearchAnalytics(searchconsole, {
-    startDate,
-    endDate,
-    dimensions: ['device'],
-    rowLimit: 10,
-  });
-
-  console.log('   ▶ 获取 Sitemap 状态...');
-  let sitemapData = null;
-  try {
-    sitemapData = await fetchSitemaps(searchconsole);
-  } catch (err) {
-    console.warn(`   ⚠️ 获取 Sitemap 信息失败: ${err.message}`);
-  }
-
-  return { overview, dailyData, queryData, pageData, countryData, deviceData, sitemapData };
-}
-
-// ============ 数据聚合层 ============
-
-function aggregateData(rawData) {
-  const { overview, dailyData, queryData, pageData, countryData, deviceData, sitemapData } = rawData;
-
-  // 概览数据
-  const overviewRow = overview?.rows?.[0] || {};
-  const summary = {
-    clicks: overviewRow.clicks || 0,
-    impressions: overviewRow.impressions || 0,
-    ctr: overviewRow.ctr || 0,
-    position: overviewRow.position || 0,
-  };
-
-  // 每日趋势
-  const daily = (dailyData?.rows || []).map(row => ({
-    date: row.keys[0],
-    clicks: row.clicks,
-    impressions: row.impressions,
-    ctr: row.ctr,
-    position: row.position,
-  })).sort((a, b) => a.date.localeCompare(b.date));
-
-  // 热门查询词
-  const queries = (queryData?.rows || []).map((row, i) => ({
-    rank: i + 1,
-    query: row.keys[0],
-    clicks: row.clicks,
-    impressions: row.impressions,
-    ctr: row.ctr,
-    position: row.position,
-  }));
-
-  // 热门页面
-  const pages = (pageData?.rows || []).map((row, i) => ({
-    rank: i + 1,
-    page: row.keys[0],
-    clicks: row.clicks,
-    impressions: row.impressions,
-    ctr: row.ctr,
-    position: row.position,
-  }));
-
-  // 国家分布
-  const countries = (countryData?.rows || []).map((row, i) => ({
-    rank: i + 1,
-    country: row.keys[0],
-    clicks: row.clicks,
-    impressions: row.impressions,
-    ctr: row.ctr,
-  }));
-
-  // 设备分布
-  const devices = (deviceData?.rows || []).map(row => ({
-    device: row.keys[0],
-    clicks: row.clicks,
-    impressions: row.impressions,
-    ctr: row.ctr,
-    position: row.position,
-  }));
-
-  // Sitemap 状态
-  const sitemaps = (sitemapData?.sitemap || []).map(sm => ({
-    path: sm.path || '',
-    lastSubmitted: sm.lastSubmitted ? sm.lastSubmitted.split('T')[0] : '-',
-    discovered: sm.contents?.[0]?.submitted || '-',
-    indexed: sm.contents?.[0]?.indexed || '-',
-  }));
-
-  return { summary, daily, queries, pages, countries, devices, sitemaps };
-}
-
-// ============ 问题分析层 ============
-
-function analyzeProblems(data) {
-  const problems = [];
-
-  // 排名 > 20 的页面
-  const lowRankPages = data.pages.filter(p => p.position > 20);
-  if (lowRankPages.length > 0) {
-    problems.push(
-      `⚠️ ${lowRankPages.length} 个页面平均排名 > 20，排名需要提升：` +
-      lowRankPages.slice(0, 3).map(p => `\n  - ${extractPath(p.page)}（排名 ${formatPosition(p.position)}）`).join('')
-    );
-  }
-
-  // CTR < 2% 且展示 > 100 的查询词
-  const lowCtrQueries = data.queries.filter(q => q.ctr < 0.02 && q.impressions > 100);
-  if (lowCtrQueries.length > 0) {
-    problems.push(
-      `⚠️ ${lowCtrQueries.length} 个查询词 CTR < 2%（展示量 > 100），标题/描述需优化：` +
-      lowCtrQueries.slice(0, 3).map(q => `\n  - "${q.query}"（CTR ${formatPercent(q.ctr)}，展示 ${q.impressions}）`).join('')
-    );
-  }
-
-  // 展示量高但点击少的页面（展示>50, CTR<1%）
-  const highImprLowClick = data.pages.filter(p => p.impressions > 50 && p.ctr < 0.01);
-  if (highImprLowClick.length > 0) {
-    problems.push(
-      `⚠️ ${highImprLowClick.length} 个页面展示量高但点击少（CTR < 1%），需优化 meta description：` +
-      highImprLowClick.slice(0, 3).map(p => `\n  - ${extractPath(p.page)}（展示 ${p.impressions}，CTR ${formatPercent(p.ctr)}）`).join('')
-    );
-  }
-
-  // 排名在 TOP 3 的关键词
-  const top3Queries = data.queries.filter(q => q.position <= 3);
-  if (top3Queries.length > 0) {
-    problems.push(
-      `✅ ${top3Queries.length} 个关键词排名在 TOP 3，成绩良好：` +
-      top3Queries.slice(0, 5).map(q => `\n  - "${q.query}"（排名 ${formatPosition(q.position)}）`).join('')
-    );
-  }
-
-  // 如果整体无数据
-  if (data.summary.impressions === 0) {
-    problems.push('🚨 暂无搜索展示数据，站点可能尚未被索引或数据延迟中');
-  }
-
-  if (problems.length === 0) {
-    problems.push('✅ 未发现明显问题，各项搜索指标正常');
-  }
-
-  return problems;
-}
-
-function extractPath(fullUrl) {
-  try {
-    const url = new URL(fullUrl);
-    return url.pathname || '/';
-  } catch {
-    return fullUrl;
-  }
-}
-
-// ============ 建议生成层 ============
-
-function generateSuggestions(data) {
-  const suggestions = [];
-  let idx = 1;
-
-  // 基于 CTR 问题
-  const lowCtrQueries = data.queries.filter(q => q.ctr < 0.02 && q.impressions > 100);
-  if (lowCtrQueries.length > 0) {
-    suggestions.push(
-      `${idx++}. **优化标题和描述**：针对 "${lowCtrQueries[0].query}" 等低 CTR 查询词，改进对应页面的 title 和 meta description，使其更有吸引力`
-    );
-  }
-
-  // 基于排名问题
-  const midRankPages = data.pages.filter(p => p.position > 10 && p.position <= 30);
-  if (midRankPages.length > 0) {
-    suggestions.push(
-      `${idx++}. **提升中等排名页面**：${midRankPages.length} 个页面排名在 10-30 之间，通过优化内容质量和内链结构可以提升至首页`
-    );
-  }
-
-  // 基于设备分布
-  const mobileDevice = data.devices.find(d => d.device === 'MOBILE');
-  const desktopDevice = data.devices.find(d => d.device === 'DESKTOP');
-  if (mobileDevice && desktopDevice) {
-    if (mobileDevice.position > desktopDevice.position + 3) {
-      suggestions.push(
-        `${idx++}. **优化移动端体验**：移动端平均排名（${formatPosition(mobileDevice.position)}）明显低于桌面端（${formatPosition(desktopDevice.position)}），需改善移动端页面速度和体验`
-      );
-    }
-  }
-
-  // 基于国际化
-  if (data.countries.length > 0) {
-    const topCountry = data.countries[0];
-    const topCountryShare = data.summary.clicks > 0
-      ? (topCountry.clicks / data.summary.clicks * 100) : 0;
-    if (topCountryShare > 80) {
-      suggestions.push(
-        `${idx++}. **拓展国际流量**：${getCountryName(topCountry.country)} 占总点击 ${topCountryShare.toFixed(0)}%，建议针对其他目标市场增加多语言内容`
-      );
-    }
-  }
-
-  // 通用建议
-  if (data.summary.impressions > 0 && data.summary.ctr < 0.03) {
-    suggestions.push(
-      `${idx++}. **全站 CTR 优化**：整体 CTR 为 ${formatPercent(data.summary.ctr)}，建议为高展示页面添加结构化数据（Rich Snippets）以提升点击率`
-    );
-  }
-
-  if (data.summary.clicks < 50) {
-    suggestions.push(
-      `${idx++}. **增加内容覆盖**：当前搜索点击量较低，建议持续产出高质量内容、覆盖更多长尾关键词，并在社区推广以获取外链`
-    );
-  }
-
-  if (suggestions.length === 0) {
-    suggestions.push('- 各项搜索指标表现良好，建议持续监控并关注排名波动');
-  }
-
-  return suggestions;
-}
-
-// ============ 报告生成层 ============
-
-function generateReport(data, startDate, endDate) {
-  const now = new Date();
-  const genTime = `${formatDate(now)} ${now.toTimeString().slice(0, 5)}`;
-
-  const problems = analyzeProblems(data);
-  const suggestions = generateSuggestions(data);
-
-  let md = `# WorldCupDex Google 搜索表现报告
-> 生成时间：${genTime}
-> 数据范围：${startDate} ~ ${endDate}
-
-## 一、搜索表现概览
-| 指标 | 数值 |
-|------|------|
-| 总点击数 | ${formatNumber(data.summary.clicks)} |
-| 总展示次数 | ${formatNumber(data.summary.impressions)} |
-| 平均点击率 | ${formatPercent(data.summary.ctr)} |
-| 平均排名 | ${formatPosition(data.summary.position)} |
-
-## 二、每日搜索趋势
-| 日期 | 点击 | 展示 | CTR | 平均排名 |
-|------|------|------|-----|----------|
-`;
-
-  if (data.daily.length === 0) {
-    md += '| - | 暂无足够数据 | - | - | - |\n';
-  } else {
-    for (const day of data.daily) {
-      md += `| ${day.date} | ${formatNumber(day.clicks)} | ${formatNumber(day.impressions)} | ${formatPercent(day.ctr)} | ${formatPosition(day.position)} |\n`;
-    }
-  }
-
-  md += `
-## 三、热门搜索词 TOP 20
-| 排名 | 查询词 | 点击 | 展示 | CTR | 平均排名 |
-|------|--------|------|------|-----|----------|
-`;
-
-  if (data.queries.length === 0) {
-    md += '| - | 暂无足够数据 | - | - | - | - |\n';
-  } else {
-    for (const q of data.queries) {
-      md += `| ${q.rank} | ${q.query} | ${formatNumber(q.clicks)} | ${formatNumber(q.impressions)} | ${formatPercent(q.ctr)} | ${formatPosition(q.position)} |\n`;
-    }
-  }
-
-  md += `
-## 四、热门页面 TOP 20
-| 排名 | 页面路径 | 点击 | 展示 | CTR | 平均排名 |
-|------|----------|------|------|-----|----------|
-`;
-
-  if (data.pages.length === 0) {
-    md += '| - | 暂无足够数据 | - | - | - | - |\n';
-  } else {
-    for (const p of data.pages) {
-      md += `| ${p.rank} | ${extractPath(p.page)} | ${formatNumber(p.clicks)} | ${formatNumber(p.impressions)} | ${formatPercent(p.ctr)} | ${formatPosition(p.position)} |\n`;
-    }
-  }
-
-  md += `
-## 五、访客来源国家 TOP 10
-| 排名 | 国家 | 点击 | 展示 | CTR |
-|------|------|------|------|-----|
-`;
-
-  if (data.countries.length === 0) {
-    md += '| - | 暂无足够数据 | - | - | - |\n';
-  } else {
-    for (const c of data.countries) {
-      md += `| ${c.rank} | ${getCountryName(c.country)} | ${formatNumber(c.clicks)} | ${formatNumber(c.impressions)} | ${formatPercent(c.ctr)} |\n`;
-    }
-  }
-
-  md += `
-## 六、设备分布
-| 设备类型 | 点击 | 展示 | CTR | 平均排名 |
-|----------|------|------|-----|----------|
-`;
-
-  if (data.devices.length === 0) {
-    md += '| - | 暂无足够数据 | - | - | - |\n';
-  } else {
-    for (const d of data.devices) {
-      md += `| ${getDeviceName(d.device)} | ${formatNumber(d.clicks)} | ${formatNumber(d.impressions)} | ${formatPercent(d.ctr)} | ${formatPosition(d.position)} |\n`;
-    }
-  }
-
-  md += `
-## 七、Sitemap 状态
-| Sitemap | 提交日期 | 已发现URL | 已索引URL |
-|---------|----------|-----------|-----------|
-`;
-
-  if (data.sitemaps.length === 0) {
-    md += '| - | 暂无 Sitemap 数据 | - | - |\n';
-  } else {
-    for (const sm of data.sitemaps) {
-      md += `| ${sm.path} | ${sm.lastSubmitted} | ${sm.discovered} | ${sm.indexed} |\n`;
-    }
-  }
-
-  md += `
-## 八、存在的问题
-
-`;
-  for (const p of problems) {
-    md += `- ${p}\n`;
-  }
-
-  md += `
-## 九、优化建议
-
-`;
-  for (const s of suggestions) {
-    md += `${s}\n`;
-  }
-
-  return md;
-}
-
 // ============ 主流程 ============
 
 async function main() {
-  console.log('📊 开始生成 Google Search Console 分析报告...\n');
-
+  console.log('📊 开始获取 Google Search Console 数据...');
   const { start, end } = getDateRange();
-  console.log(`   站点: ${GSC_SITE_URL}`);
-  console.log(`   数据范围: ${start} ~ ${end}（最近7天，含3天延迟偏移）\n`);
+  console.log(`   数据范围: ${start} ~ ${end} (GSC数据通常有 2-3 天延迟)`);
+  console.log(`   站点 URL: ${GSC_SITE_URL}`);
 
-  // 初始化 API 客户端
-  let searchconsole;
   try {
-    const auth = createAuthClient();
-    searchconsole = google.searchconsole({ version: 'v1', auth });
+    // 0. 获取 Access Token
+    console.log('   ▶ 正在刷新 Access Token...');
+    const tokenParams = new URLSearchParams({
+      client_id: GSC_CLIENT_ID,
+      client_secret: GSC_CLIENT_SECRET,
+      refresh_token: GSC_REFRESH_TOKEN,
+      grant_type: 'refresh_token'
+    });
+
+    const tokenResponse = await fetch('https://oauth2.googleapis.com/token', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: tokenParams.toString(),
+      agent
+    });
+
+    if (!tokenResponse.ok) throw new Error(`Token 刷新失败`);
+    const { access_token: token } = await tokenResponse.json();
+
+    // 1. 获取全局趋势 (按天)
+    console.log('   ▶ 获取每日搜索趋势...');
+    const dailyRes = await withRetry(() => fetchGscReport(token, GSC_SITE_URL, {
+      startDate: start,
+      endDate: end,
+      dimensions: ['date'],
+      rowLimit: 100
+    }), '每日趋势');
+
+    // 2. 获取热门查询词 (Top Queries)
+    console.log('   ▶ 获取热门搜索词...');
+    const queryRes = await withRetry(() => fetchGscReport(token, GSC_SITE_URL, {
+      startDate: start,
+      endDate: end,
+      dimensions: ['query'],
+      rowLimit: 50
+    }), '热门搜索词');
+
+    // 3. 获取热门落地页 (Top Pages)
+    console.log('   ▶ 获取热门落地页...');
+    const pageRes = await withRetry(() => fetchGscReport(token, GSC_SITE_URL, {
+      startDate: start,
+      endDate: end,
+      dimensions: ['page'],
+      rowLimit: 30
+    }), '热门落地页');
+
+    // 4. 获取国家/地区分布 (Countries)
+    console.log('   ▶ 获取国家/地区分布...');
+    const countryRes = await withRetry(() => fetchGscReport(token, GSC_SITE_URL, {
+      startDate: start,
+      endDate: end,
+      dimensions: ['country'],
+      rowLimit: 20
+    }), '国家分布');
+
+    // 5. 获取设备分布 (Devices)
+    console.log('   ▶ 获取设备分布...');
+    const deviceRes = await withRetry(() => fetchGscReport(token, GSC_SITE_URL, {
+      startDate: start,
+      endDate: end,
+      dimensions: ['device'],
+      rowLimit: 10
+    }), '设备分布');
+
+    console.log('   ▶ 聚合数据并生成洞察报告...');
+
+    const dailyRows = dailyRes.rows || [];
+    const queryRows = queryRes.rows || [];
+    const pageRows = pageRes.rows || [];
+    const countryRows = countryRes.rows || [];
+    const deviceRows = deviceRes.rows || [];
+
+    // 计算全局数据
+    let totalClicks = 0, totalImpressions = 0;
+    dailyRows.forEach(row => {
+      totalClicks += row.clicks;
+      totalImpressions += row.impressions;
+    });
+    const avgCtr = totalImpressions > 0 ? (totalClicks / totalImpressions) : 0;
+    // 近似计算平均排名 (以展示量加权)
+    let posSum = 0;
+    dailyRows.forEach(row => posSum += (row.position * row.impressions));
+    const avgPosition = totalImpressions > 0 ? (posSum / totalImpressions) : 0;
+
+    let md = `# Google 搜索表现与 SEO 运营分析报告 (GSC)\n`;
+    md += `> **生成时间**：${new Date().toLocaleString('zh-CN', { hour12: false })}\n`;
+    md += `> **数据范围**：${start} ~ ${end}（最近 7 天，注：GSC 数据存在 2-3 天延迟）\n`;
+    md += `> **分析站点**：\`${GSC_SITE_URL}\`\n\n`;
+
+    md += `## 💡 核心 SEO 结论与建议 (TL;DR)\n`;
+    md += `- **搜索大盘**：最近 7 天共获得 **${formatNumber(totalImpressions)}** 次谷歌搜索曝光，产生了 **${formatNumber(totalClicks)}** 次点击。\n`;
+    
+    // 自动寻找 "低垂的果实" (SEO Opportunities)
+    const opportunities = queryRows.filter(row => row.position > 10 && row.position <= 30 && row.impressions > 10).slice(0, 5);
+    
+    if (opportunities.length > 0) {
+      md += `- **🚀 快速增长机会 (低垂的果实)**：发现以下关键词目前排名在第 2-3 页，但已经有自然曝光。**强烈建议**在文章中增加这些词的密度，或为它们建立专属落地页/获取外链，一旦挤进前 10 名，流量将成倍爆发：\n`;
+      opportunities.forEach(opp => {
+        md += `  - \`${opp.keys[0]}\` (当前排名：${formatPosition(opp.position)}，展示量：${formatNumber(opp.impressions)})\n`;
+      });
+    } else {
+      md += `- **🚀 增长机会**：目前关键词基数较少，建议持续产出高质量内容以覆盖更多长尾词。\n`;
+    }
+
+    // 寻找标题优化机会
+    const lowCtrHighImpr = queryRows.filter(row => row.position <= 10 && row.ctr < 0.02 && row.impressions > 50).slice(0, 3);
+    if (lowCtrHighImpr.length > 0) {
+      md += `- **⚠️ 标题优化警告**：以下关键词已经排在首页，但点击率 (CTR) 低于 2%，说明用户看到了你的网站但没点进来。建议立刻修改对应页面的 Title 和 Description，增加吸引力（如加上年份、免费等字眼）：\n`;
+      lowCtrHighImpr.forEach(opp => {
+        md += `  - \`${opp.keys[0]}\` (CTR：${formatPercent(opp.ctr)}，展示量：${formatNumber(opp.impressions)})\n`;
+      });
+    }
+
+    md += `\n`;
+
+    md += `## 一、全局搜索表现\n`;
+    md += `| 核心指标 | 数值 | 运营意义 |\n`;
+    md += `|---|---|---|\n`;
+    md += `| **总点击次数 (Clicks)** | ${formatNumber(totalClicks)} | 真正从谷歌进入你网站的真实访客数 |\n`;
+    md += `| **总展示次数 (Impressions)** | ${formatNumber(totalImpressions)} | 你的网站在谷歌搜索结果中被看到的次数 |\n`;
+    md += `| **平均点击率 (CTR)** | ${formatPercent(avgCtr)} | 标题和描述够不够吸引人。低于 2% 需优化 Meta Title/Description |\n`;
+    md += `| **平均排名 (Position)** | ${formatPosition(avgPosition)} | 全站关键词在谷歌的平均位置 |\n\n`;
+
+    md += `## 二、搜索词排行 (Top Queries)\n`;
+    md += `*指导内容创作：用户在谷歌搜什么词看到了你？点击率低的词，说明你的标题没有吸引力。*\n\n`;
+    md += `| 搜索词 (Query) | 排名 (Pos) | 点击量 | 展示量 | 点击率 (CTR) |\n`;
+    md += `|---|---|---|---|---|\n`;
+    queryRows.slice(0, 15).forEach(row => {
+      md += `| ${row.keys[0]} | ${formatPosition(row.position)} | ${formatNumber(row.clicks)} | ${formatNumber(row.impressions)} | ${formatPercent(row.ctr)} |\n`;
+    });
+    md += `\n`;
+
+    md += `## 三、最吸流页面 (Top Landing Pages)\n`;
+    md += `*指导商业变现：这些是谷歌最偏爱的页面。一定要在这些页面里放上最核心的亚马逊联盟链接或打赏按钮。*\n\n`;
+    md += `| 落地页路径 | 排名 (Pos) | 点击量 | 展示量 | 点击率 (CTR) |\n`;
+    md += `|---|---|---|---|---|\n`;
+    pageRows.slice(0, 10).forEach(row => {
+      let pagePath = row.keys[0].replace('https://worldcupdex.org', '').replace('http://worldcupdex.org', '');
+      if (pagePath === '') pagePath = '/';
+      md += `| ${pagePath} | ${formatPosition(row.position)} | ${formatNumber(row.clicks)} | ${formatNumber(row.impressions)} | ${formatPercent(row.ctr)} |\n`;
+    });
+    md += `\n`;
+
+    md += `## 四、搜索用户国家分布 (Countries)\n`;
+    md += `*指导联盟选品：与 GA4 互为验证。GSC 显示的是纯粹的谷歌搜索自然流量来源。*\n\n`;
+    md += `| 国家/地区 | 点击量 | 展示量 | 排名 (Pos) |\n`;
+    md += `|---|---|---|---|\n`;
+    countryRows.slice(0, 10).forEach(row => {
+      md += `| ${getCountryName(row.keys[0])} | ${formatNumber(row.clicks)} | ${formatNumber(row.impressions)} | ${formatPosition(row.position)} |\n`;
+    });
+    md += `\n`;
+
+    md += `## 五、搜索设备分布 (Devices)\n`;
+    md += `*指导页面排版：如果 Mobile 搜索曝光大，但点击率极低，说明你的网页在移动端搜索结果里长得很丑（可能缺了 Favicon 或者移动端 Title 被截断了）。*\n\n`;
+    md += `| 设备类型 | 点击量 | 展示量 | 点击率 (CTR) | 排名 (Pos) |\n`;
+    md += `|---|---|---|---|---|\n`;
+    deviceRows.forEach(row => {
+      md += `| ${getDeviceName(row.keys[0])} | ${formatNumber(row.clicks)} | ${formatNumber(row.impressions)} | ${formatPercent(row.ctr)} | ${formatPosition(row.position)} |\n`;
+    });
+
+    const reportDir = resolve(__dirname, '../reports');
+    try { mkdirSync(reportDir, { recursive: true }); } catch(e) {}
+    
+    const filePath = resolve(reportDir, `${end}-gsc-dashboard.md`);
+    writeFileSync(filePath, md, 'utf-8');
+
+    console.log(`✅ 深度 SEO 运营报告已生成: ${filePath}`);
+
   } catch (err) {
-    console.error(`❌ 初始化 GSC API 客户端失败: ${err.message}`);
-    process.exit(1);
+    console.error('❌ 生成报告失败:', err.message);
   }
-
-  // 获取数据
-  let rawData;
-  try {
-    rawData = await fetchAllData(searchconsole, start, end);
-  } catch (err) {
-    console.error(`\n❌ 数据获取失败: ${err.message}`);
-    process.exit(1);
-  }
-
-  // 聚合数据
-  console.log('\n   ▶ 聚合数据并分析...');
-  const aggregated = aggregateData(rawData);
-
-  // 生成报告
-  console.log('   ▶ 生成 Markdown 报告...');
-  const report = generateReport(aggregated, start, end);
-
-  // 输出文件
-  const reportsDir = resolve(__dirname, '..', 'reports');
-  mkdirSync(reportsDir, { recursive: true });
-
-  const fileName = `${formatDate(new Date())}-gsc-report.md`;
-  const filePath = resolve(reportsDir, fileName);
-  writeFileSync(filePath, report, 'utf-8');
-
-  console.log(`\n✅ GSC 报告已生成: ${filePath}`);
 }
 
 main();
