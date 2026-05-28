@@ -39,7 +39,7 @@ if (!GSC_CLIENT_ID || !GSC_CLIENT_SECRET) {
 
 // ============ 配置 ============
 
-const OAUTH_SCOPE = 'https://www.googleapis.com/auth/webmasters.readonly';
+const OAUTH_SCOPE = 'https://www.googleapis.com/auth/webmasters.readonly https://www.googleapis.com/auth/analytics.readonly';
 const REDIRECT_URI = 'http://localhost:3939/oauth/callback';
 const AUTH_URL = 'https://accounts.google.com/o/oauth2/v2/auth';
 const TOKEN_URL = 'https://oauth2.googleapis.com/token';

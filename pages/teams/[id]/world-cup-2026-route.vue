@@ -119,6 +119,12 @@
         </article>
       </section>
 
+      <TeamMerchMoment
+        :teams="teamMerchTeams"
+        context="team"
+        variant="inline"
+      />
+
       <section class="team-route-section">
         <div class="team-route-section__title">
           <div>
@@ -253,6 +259,11 @@ if (!routeData.value) {
 const team = computed(() => routeData.value!.team)
 const teamName = computed(() => (locale.value === 'zh' ? team.value.nameZh : team.value.nameEn))
 const nextMatch = computed(() => routeData.value!.nextMatch)
+const teamMerchTeams = computed(() => [{
+  id: team.value.id,
+  name: teamName.value,
+  flag: team.value.flag || `https://flagcdn.com/w160/${team.value.code}.png`,
+}])
 const siteUrl = (runtimeConfig.public?.siteUrl as string) || 'https://worldcupdex.org'
 const kickiqBracketUrl = computed(() => {
   const configuredUrl = (runtimeConfig.public?.kickiqUrl as string) || 'https://kickiq.org'

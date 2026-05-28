@@ -46,16 +46,140 @@ const kofiScripts = [
   {
     innerHTML: `
       let kofiAttempts = 0;
+      const kofiStorageKey = 'wcd_kofi_position_v1';
+      function getKofiButtonText() {
+        const path = window.location.pathname;
+        if (path.startsWith('/zh')) return '支持我们';
+        if (path.startsWith('/es')) return 'Apoyar';
+        return 'Support us';
+      }
+      function injectCompactKofiStyle() {
+        if (document.getElementById('wcd-kofi-style')) return;
+        const style = document.createElement('style');
+        style.id = 'wcd-kofi-style';
+        style.textContent = \`
+          .floatingchat-container-wrap {
+            z-index: 80 !important;
+            cursor: grab !important;
+            touch-action: none !important;
+            transform-origin: left bottom !important;
+          }
+          .floatingchat-container-wrap:active {
+            cursor: grabbing !important;
+          }
+          .floatingchat-container-wrap iframe,
+          .floatingchat-container-wrap button,
+          .floatingchat-container-wrap a {
+            transform: scale(0.82) !important;
+            transform-origin: left bottom !important;
+          }
+          .floating-chat-kofi-popup-iframe,
+          .floating-chat-kofi-popup-iframe-closer {
+            z-index: 10000 !important;
+          }
+          @media (max-width: 768px) {
+            .floatingchat-container-wrap iframe,
+            .floatingchat-container-wrap button,
+            .floatingchat-container-wrap a {
+              transform: scale(0.72) !important;
+            }
+          }
+        \`;
+        document.head.appendChild(style);
+      }
+      function getKofiPosition() {
+        try {
+          const saved = JSON.parse(localStorage.getItem(kofiStorageKey) || 'null');
+          if (saved && Number.isFinite(saved.left) && Number.isFinite(saved.bottom)) {
+            return saved;
+          }
+        } catch (e) {}
+        return { left: 14, bottom: 18 };
+      }
+      function applyKofiPosition(element, position) {
+        const width = element.offsetWidth || 150;
+        const height = element.offsetHeight || 48;
+        const left = Math.max(8, Math.min(position.left, window.innerWidth - width - 8));
+        const bottom = Math.max(8, Math.min(position.bottom, window.innerHeight - height - 8));
+        element.style.position = 'fixed';
+        element.style.left = left + 'px';
+        element.style.right = 'auto';
+        element.style.bottom = bottom + 'px';
+        element.style.top = 'auto';
+        return { left, bottom };
+      }
+      function setupDraggableKofiWidget() {
+        injectCompactKofiStyle();
+        const element = document.querySelector('.floatingchat-container-wrap');
+        if (!element || element.dataset.wcdDraggable === 'true') return;
+        element.dataset.wcdDraggable = 'true';
+
+        let position = applyKofiPosition(element, getKofiPosition());
+        let startX = 0;
+        let startY = 0;
+        let startLeft = 0;
+        let startBottom = 0;
+        let moved = false;
+
+        function onPointerMove(event) {
+          const dx = event.clientX - startX;
+          const dy = event.clientY - startY;
+          if (Math.abs(dx) > 4 || Math.abs(dy) > 4) moved = true;
+          if (!moved) return;
+          event.preventDefault();
+          position = applyKofiPosition(element, {
+            left: startLeft + dx,
+            bottom: startBottom - dy,
+          });
+        }
+
+        function onPointerUp(event) {
+          window.removeEventListener('pointermove', onPointerMove);
+          window.removeEventListener('pointerup', onPointerUp);
+          if (moved) {
+            event.preventDefault();
+            event.stopPropagation();
+            localStorage.setItem(kofiStorageKey, JSON.stringify(position));
+            element.dataset.wcdMovedAt = String(Date.now());
+          }
+        }
+
+        element.addEventListener('pointerdown', function(event) {
+          if (event.button !== undefined && event.button !== 0) return;
+          startX = event.clientX;
+          startY = event.clientY;
+          startLeft = position.left;
+          startBottom = position.bottom;
+          moved = false;
+          window.addEventListener('pointermove', onPointerMove, { passive: false });
+          window.addEventListener('pointerup', onPointerUp, { capture: true });
+        });
+
+        element.addEventListener('click', function(event) {
+          const movedAt = Number(element.dataset.wcdMovedAt || 0);
+          if (Date.now() - movedAt < 250) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+        }, true);
+
+        window.addEventListener('resize', function() {
+          position = applyKofiPosition(element, position);
+          localStorage.setItem(kofiStorageKey, JSON.stringify(position));
+        });
+      }
       const kofiInterval = setInterval(function() {
         if (typeof kofiWidgetOverlay !== 'undefined') {
           clearInterval(kofiInterval);
           try {
             kofiWidgetOverlay.draw('worldcupdex', {
               'type': 'floating-chat',
-              'floating-chat.donateButton.text': 'Support me',
-              'floating-chat.donateButton.background-color': '#00b9fe',
-              'floating-chat.donateButton.text-color': '#fff'
+              'floating-chat.donateButton.text': getKofiButtonText(),
+              'floating-chat.donateButton.background-color': '#000F49',
+              'floating-chat.donateButton.text-color': '#FFD700'
             });
+            setTimeout(setupDraggableKofiWidget, 300);
+            setTimeout(setupDraggableKofiWidget, 1000);
           } catch (e) {
             console.error('Ko-fi Widget initialization failed:', e);
           }

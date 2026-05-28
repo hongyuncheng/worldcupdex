@@ -21,8 +21,10 @@ interface AffiliateProduct {
 const props = withDefaults(defineProps<{
   teams: MerchTeam[]
   context?: 'fan-card' | 'prediction' | 'team'
+  variant?: 'card' | 'inline'
 }>(), {
   context: 'team',
+  variant: 'card',
 })
 
 const { locale, t } = useI18n()
@@ -96,7 +98,11 @@ function handleClick(product: AffiliateProduct, team: MerchTeam): void {
 </script>
 
 <template>
-  <section v-if="offers.length > 0" class="merch-moment" :class="`merch-moment--${context}`">
+  <section
+    v-if="offers.length > 0"
+    class="merch-moment"
+    :class="[`merch-moment--${context}`, `merch-moment--${variant}`]"
+  >
     <div class="merch-moment__header">
       <div>
         <div class="merch-moment__eyebrow">{{ t('affiliate.sponsored') }}</div>
@@ -165,11 +171,28 @@ function handleClick(product: AffiliateProduct, team: MerchTeam): void {
   color: #fff;
 }
 
+.merch-moment--inline {
+  max-width: none;
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(260px, 1fr);
+  align-items: center;
+  gap: 14px;
+  margin: 14px 0 22px;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #fffdf5;
+  box-shadow: none;
+}
+
 .merch-moment__header {
   display: flex;
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 16px;
+}
+
+.merch-moment--inline .merch-moment__header {
+  margin-bottom: 0;
 }
 
 .merch-moment__eyebrow {
@@ -185,6 +208,12 @@ function handleClick(product: AffiliateProduct, team: MerchTeam): void {
   text-transform: uppercase;
 }
 
+.merch-moment--inline .merch-moment__eyebrow {
+  height: 20px;
+  padding: 0 8px;
+  font-size: 10px;
+}
+
 .merch-moment__title {
   margin-top: 10px;
   font-family: 'Montserrat', sans-serif;
@@ -192,6 +221,11 @@ function handleClick(product: AffiliateProduct, team: MerchTeam): void {
   line-height: 1.25;
   font-weight: 800;
   color: #000f49;
+}
+
+.merch-moment--inline .merch-moment__title {
+  margin-top: 6px;
+  font-size: 15px;
 }
 
 .merch-moment--fan-card .merch-moment__title {
@@ -205,6 +239,12 @@ function handleClick(product: AffiliateProduct, team: MerchTeam): void {
   line-height: 1.5;
 }
 
+.merch-moment--inline .merch-moment__subtitle {
+  margin-top: 3px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
 .merch-moment--fan-card .merch-moment__subtitle {
   color: rgba(255, 255, 255, 0.72);
 }
@@ -213,6 +253,11 @@ function handleClick(product: AffiliateProduct, team: MerchTeam): void {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 12px;
+}
+
+.merch-moment--inline .merch-moment__grid {
+  grid-template-columns: 1fr;
+  gap: 0;
 }
 
 .merch-offer {
@@ -229,6 +274,14 @@ function handleClick(product: AffiliateProduct, team: MerchTeam): void {
   transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
 }
 
+.merch-moment--inline .merch-offer {
+  grid-template-columns: 54px minmax(0, 1fr);
+  min-height: 64px;
+  padding: 8px;
+  border-radius: 8px;
+  background: #fff;
+}
+
 .merch-moment--fan-card .merch-offer {
   background: rgba(255, 255, 255, 0.10);
   border-color: rgba(255, 255, 255, 0.14);
@@ -238,6 +291,11 @@ function handleClick(product: AffiliateProduct, team: MerchTeam): void {
   transform: translateY(-2px);
   border-color: rgba(255, 215, 0, 0.65);
   box-shadow: 0 10px 22px rgba(0, 15, 73, 0.10);
+}
+
+.merch-moment--inline .merch-offer:hover {
+  transform: none;
+  box-shadow: none;
 }
 
 .merch-offer__media {
@@ -251,6 +309,11 @@ function handleClick(product: AffiliateProduct, team: MerchTeam): void {
   padding: 10px;
 }
 
+.merch-moment--inline .merch-offer__media {
+  border-radius: 7px;
+  padding: 6px;
+}
+
 .merch-offer__flag {
   position: absolute;
   top: 8px;
@@ -262,11 +325,22 @@ function handleClick(product: AffiliateProduct, team: MerchTeam): void {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
 }
 
+.merch-moment--inline .merch-offer__flag {
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 14px;
+}
+
 .merch-offer__product {
   width: 100%;
   height: 100%;
   max-height: 72px;
   object-fit: contain;
+}
+
+.merch-moment--inline .merch-offer__product {
+  max-height: 42px;
 }
 
 .merch-offer__body {
@@ -296,6 +370,11 @@ function handleClick(product: AffiliateProduct, team: MerchTeam): void {
   overflow: hidden;
 }
 
+.merch-moment--inline .merch-offer__name {
+  font-size: 12px;
+  -webkit-line-clamp: 1;
+}
+
 .merch-moment--fan-card .merch-offer__name {
   color: rgba(255, 255, 255, 0.82);
 }
@@ -314,6 +393,13 @@ function handleClick(product: AffiliateProduct, team: MerchTeam): void {
   font-weight: 800;
 }
 
+.merch-moment--inline .merch-offer__cta {
+  height: 24px;
+  margin-top: 6px;
+  padding: 0 10px;
+  font-size: 11px;
+}
+
 .merch-moment__disclosure {
   margin-top: 14px;
   padding-top: 12px;
@@ -321,6 +407,15 @@ function handleClick(product: AffiliateProduct, team: MerchTeam): void {
   font-size: 11px;
   line-height: 1.5;
   color: #7a8291;
+}
+
+.merch-moment--inline .merch-moment__disclosure {
+  grid-column: 1 / -1;
+  margin-top: 0;
+  padding-top: 0;
+  border-top: 0;
+  font-size: 10px;
+  line-height: 1.35;
 }
 
 .merch-moment--fan-card .merch-moment__disclosure {
@@ -336,6 +431,17 @@ function handleClick(product: AffiliateProduct, team: MerchTeam): void {
   .merch-offer {
     grid-template-columns: 72px 1fr;
     min-height: 100px;
+  }
+
+  .merch-moment--inline {
+    grid-template-columns: 1fr;
+    padding: 12px;
+    border-radius: 8px;
+  }
+
+  .merch-moment--inline .merch-offer {
+    grid-template-columns: 50px 1fr;
+    min-height: 60px;
   }
 }
 </style>

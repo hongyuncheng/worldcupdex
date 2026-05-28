@@ -147,6 +147,7 @@
           flag: `https://flagcdn.com/w80/${team.code}.png`,
         }]"
         context="team"
+        variant="inline"
       />
       <!-- Top: Team Info + Key Stats (two-column) -->
       <div class="info-stats-grid">

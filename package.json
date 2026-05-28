@@ -15,15 +15,16 @@
     "generate-predictions": "node scripts/generate-ai-predictions.mjs",
     "gsc-auth": "node scripts/gsc-auth.mjs",
     "gsc-report": "node scripts/generate-gsc-report.mjs",
+    "ga4-report": "node scripts/generate-ga4-report.mjs",
     "cf-report": "node scripts/generate-analytics-report.mjs"
   },
   "dependencies": {
+    "@iconify/vue": "^5.0.1",
     "@nuxt/content": "^3.5.1",
     "@nuxt/icon": "^1.12.0",
     "@nuxtjs/i18n": "^10.3.0",
     "@nuxtjs/sitemap": "^7.2.10",
     "@tailwindcss/vite": "^4.2.4",
-    "@iconify/vue": "^5.0.1",
     "@vueuse/core": "^14.3.0",
     "canvas-confetti": "^1.9.4",
     "daisyui": "^5.0.0",
@@ -36,6 +37,7 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@google-analytics/data": "^6.1.0",
     "@types/canvas-confetti": "^1.9.0",
     "@types/node": "^25.8.0",
     "@vite-pwa/nuxt": "^1.1.1",
