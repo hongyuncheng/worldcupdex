@@ -835,10 +835,11 @@ reports/url-canonical-audit-2026-05-31.md
 
 ### 13.6 执行记录
 
-- 执行日期：
-- 审计报告：
-- 推荐策略：
-- 人工确认：
+- 执行日期：`2026-05-31`
+- 审计报告：`reports/url-canonical-audit-2026-05-31.md`
+- 推荐策略：英文不带 `/en` 前缀；中文使用 `/zh`，西语使用 `/es`；普通页面去除尾斜杠；`/quiz/play/`、`/es/quiz/play/`、`/zh/quiz/play/` 保留尾斜杠例外。旧 `/matches` 路径统一 `301` 到对应 `/schedule`。
+- 测试结果：本地静态审计完成。生产预渲染 HTML 的 canonical 与 hreflang 符合目标策略；sitemap 共 `480` 条 URL，未发现 `/en/**`、重复 locale 前缀或普通尾斜杠 URL；发现旧本地化 `/matches` routeRules 会生成 `/es/es/matches` 与 `/zh/zh/matches` 预渲染目录，已纳入 Item 12 修复范围。当前环境无法连接正式域名，且桌面沙箱不允许启动 localhost 子进程，因此真实 HTTP 状态码与 `Location` 需要部署后复核。
+- 人工确认：用户已明确要求连续执行 Item 11 与 Item 12；按审计结论继续实施 Item 12。
 
 ---
 
@@ -905,11 +906,13 @@ reports/url-canonical-audit-2026-05-31.md
 
 ### 14.6 执行记录
 
-- 执行日期：
-- 修改文件：
-- URL 审计结果：
-- 浏览器回归结果：
-- 人工确认：
+- 执行日期：`2026-05-31`
+- 修改文件：`server/middleware/canonical-redirect.ts`、`nuxt.config.ts`、`reports/url-canonical-audit-2026-05-31.md`
+- 修改内容：新增 Nitro 服务端 URL 规范化中间件，统一执行一次性 `301`：移除旧英文 `/en` 前缀、将旧 `/matches` 路径收敛到对应 `/schedule`、移除普通页面尾斜杠，并保留 `/quiz/play/`、`/es/quiz/play/`、`/zh/quiz/play/` 例外。移除会导致重复 locale 预渲染目录的旧 `/matches` routeRules。
+- URL 审计结果：本地验证通过。隔离旧 Nitro 路由缓存并重新构建后，`/es/es/matches` 与 `/zh/zh/matches` 预渲染目录已消失；三个 sitemap XML 共 `480` 条 URL，未发现 `/en/**`、重复 locale 前缀或普通尾斜杠 URL；生成 HTML 内部链接扫描结果为 `BadInternalLinkCount: 0`；规范化逻辑样本测试全部通过；三种语言 Quiz 的 `index.html` 与 `_payload.json` 均存在；真实数据校验结果为 `Warnings: 151`、`Errors: 0`；默认 Nitro 生产构建与 CI 使用的 `NITRO_PRESET=cloudflare-pages` 构建均通过，Cloudflare `dist/` 产物未发现重复 locale 文件。
+- 浏览器回归结果：当前环境无法连接正式域名，且桌面沙箱不允许启动 localhost 子进程。部署后仍需用浏览器和 `curl` 复核 HTTP `301`、`Location`、无重定向链、Quiz 跳转与 `_payload.json` 请求。
+- 备注：Cloudflare 预设构建提示 Node.js compatibility 尚未启用；当前 `wrangler.toml` 也缺少文档声称存在的 `pages_build_output_dir` 与 `compatibility_flags = ["nodejs_compat"]`。该部署配置风险需单独复核。构建仍存在原有西语球队 i18n key 缺失与依赖 warning，不属于本项。
+- 人工确认：等待确认；部署后需补充正式域名与浏览器回归结果。
 
 ---
 

@@ -380,12 +380,6 @@ export default defineNuxtConfig({
     '/robots.txt': { headers: { 'Cache-Control': 'public, max-age=86400' } },
     
     // 页面与 API 的边缘缓存 (SWR) 提升缓存命中率
-    '/matches': { redirect: { to: '/schedule', statusCode: 301 } },
-    '/matches/': { redirect: { to: '/schedule/', statusCode: 301 } },
-    '/es/matches': { redirect: { to: '/es/schedule', statusCode: 301 } },
-    '/es/matches/': { redirect: { to: '/es/schedule/', statusCode: 301 } },
-    '/zh/matches': { redirect: { to: '/zh/schedule', statusCode: 301 } },
-    '/zh/matches/': { redirect: { to: '/zh/schedule/', statusCode: 301 } },
     ...productionCacheRouteRules,
   },
 })
