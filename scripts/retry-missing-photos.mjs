@@ -8,6 +8,7 @@
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { updateDataMeta } from './lib/update-data-meta.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -28,6 +29,7 @@ const MAX_RETRIES = 3;
 let stats = { total: 0, success: 0, failed: 0 };
 const successPlayers = [];
 const failedPlayers = [];
+let writtenTeamFiles = 0;
 
 function sleep(ms) {
   return new Promise(r => setTimeout(r, ms));
@@ -382,6 +384,7 @@ async function main() {
       teamData.squad[playerIndex].photoThumb = result.thumb;
       teamData.squad[playerIndex].photo = result.cutout || result.thumb || null;
       writeFileSync(teamFilePath, JSON.stringify(teamData, null, 2), 'utf-8');
+      writtenTeamFiles++;
       
       stats.success++;
       successPlayers.push(`${player.name} (${teamName}) [策略: ${strategy}]`);
@@ -413,6 +416,10 @@ async function main() {
   if (failedPlayers.length > 0) {
     console.log(`\n--- 仍未找到的球员 (${failedPlayers.length}) ---`);
     failedPlayers.forEach(p => console.log(`  ✗ ${p}`));
+  }
+
+  if (writtenTeamFiles > 0) {
+    updateDataMeta(['squadsLastUpdated'], 'retry-missing-photos');
   }
 
   console.log('\n完成!');

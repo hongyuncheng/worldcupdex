@@ -29,6 +29,8 @@ export interface SquadPlayer {
   photoThumb?: string | null
 }
 
+export type SquadStatus = 'official' | 'provisional' | 'incomplete'
+
 // 近期比赛（球队详情用）
 export interface RecentMatch {
   date: string
@@ -43,6 +45,9 @@ export interface TeamDetail extends TeamListItem {
   founded: number
   venue: string
   squad: SquadPlayer[]
+  squadStatus: SquadStatus
+  squadLastUpdated: string
+  squadSourceUrl?: string
   recentMatches?: RecentMatch[]
 }
 

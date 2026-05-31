@@ -4,10 +4,12 @@
   "type": "module",
   "scripts": {
     "build": "nuxt build",
+    "prebuild": "npm run validate-data",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
+    "validate-data": "node scripts/validate-data.mjs",
     "fetch-data": "node scripts/fetch-worldcup-data.mjs",
     "enrich-data": "node scripts/enrich-data.mjs",
     "fetch-recent": "node scripts/fetch-recent-matches.mjs",

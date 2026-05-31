@@ -8,6 +8,7 @@
 import { writeFile, readFile, mkdir } from 'fs/promises';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { updateDataMeta } from './lib/update-data-meta.mjs';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -644,9 +645,11 @@ async function main() {
 
     // ---- Merge existing player photos to avoid overwriting them ----
     let existingSquadMap = new Map();
+    let existingTeam = null;
     try {
       const existingRaw = await readFile(filePath, 'utf-8');
       const existing = JSON.parse(existingRaw);
+      existingTeam = existing;
       if (existing.squad && Array.isArray(existing.squad)) {
         for (const p of existing.squad) {
           existingSquadMap.set(p.name, p);
@@ -668,10 +671,19 @@ async function main() {
     }
     // ---- End photo merge ----
 
+    team.squadStatus = existingTeam?.squadStatus || (team.squad.length >= 26 ? 'provisional' : 'incomplete');
+    team.squadLastUpdated = new Date().toISOString().slice(0, 10);
+    team.squadSourceUrl = existingTeam?.squadSourceUrl
+      || 'https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements';
+
     await writeFile(filePath, JSON.stringify(team, null, 2), 'utf-8');
     totalPlayers += team.squad?.length || 0;
   }
   log(`  ✓ Written ${teamsDetailed.length} team detail files to data/teams/`);
+  updateDataMeta(
+    ['scheduleLastUpdated', 'teamsLastUpdated', 'squadsLastUpdated', 'rankingsLastUpdated'],
+    'fetch-worldcup-data',
+  );
 
   // ---- Summary ----
   console.log('');

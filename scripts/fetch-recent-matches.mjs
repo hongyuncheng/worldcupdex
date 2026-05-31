@@ -8,6 +8,7 @@
  */
 
 import { readFile, writeFile } from 'fs/promises';
+import { updateDataMeta } from './lib/update-data-meta.mjs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -290,6 +291,10 @@ async function main() {
     if (i < entries.length - 1) {
       await delay(REQUEST_DELAY_MS);
     }
+  }
+
+  if (stats.success > 0) {
+    updateDataMeta(['squadsLastUpdated'], 'fetch-recent-matches');
   }
 
   // ---- Summary ----

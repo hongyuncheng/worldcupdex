@@ -11,7 +11,7 @@
       </p>
     </div>
     <div class="data-source-note__facts">
-      <span class="data-source-note__pill">{{ labels.updated }} {{ formattedDate }}</span>
+      <time class="data-source-note__pill" :datetime="meta.lastUpdated" :title="meta.lastUpdated">{{ labels.updated }} {{ formattedDate }}</time>
       <span class="data-source-note__pill">{{ labels.ai }} {{ meta.aiGenerated ? labels.yes : labels.no }}</span>
       <NuxtLinkLocale to="/contact" class="data-source-note__link">{{ labels.feedback }}</NuxtLinkLocale>
     </div>
@@ -20,6 +20,7 @@
 
 <script setup lang="ts">
 import type { DataSourceKind } from '~/composables/useDataSourceMeta'
+import { formatDataSourceDate } from '~/composables/useDataSourceMeta'
 
 const props = defineProps<{
   kind: DataSourceKind
@@ -66,16 +67,7 @@ function localized(value: { en: string; zh: string; es: string }) {
 }
 
 const formattedDate = computed(() => {
-  const date = new Date(`${meta.value.lastUpdated}T00:00:00Z`)
-  if (locale.value === 'zh') {
-    return `${date.getUTCFullYear()}年${date.getUTCMonth() + 1}月${date.getUTCDate()}日`
-  }
-  return date.toLocaleDateString(locale.value === 'es' ? 'es-ES' : 'en-US', {
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-    timeZone: 'UTC',
-  })
+  return formatDataSourceDate(meta.value.lastUpdated, locale.value)
 })
 </script>
 

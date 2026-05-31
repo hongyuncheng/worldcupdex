@@ -148,6 +148,69 @@ async function main() {
     reportMarkdown += `*💡 **运营建议**: 关注用户是否高频点击了特定按钮。这里会展示自带事件(如 page_view, scroll)和我们埋点的高价值事件(如生成卡片、点击外链、分享)。*\n\n`;
     reportMarkdown += buildMarkdownTable(eventsData, ['事件名称', '触发次数']);
 
+    // 维度 4.5: 出站点击去向 (他们离开网站去了哪？)
+    console.log('拉取 出站点击去向 数据...');
+    const outboundData = await fetchGa4Report(token, propertyId, {
+      dateRanges: [{ startDate: '7daysAgo', endDate: 'today' }],
+      dimensions: [{ name: 'outbound' }, { name: 'linkUrl' }], // 尝试同时获取 outbound 布尔值和 linkUrl
+      metrics: [{ name: 'eventCount' }],
+      dimensionFilter: {
+        filter: {
+          fieldName: 'eventName',
+          stringFilter: {
+            value: 'click' // 增强型测量 (Enhanced Measurement) 中，出站点击的事件名通常是 'click'
+          }
+        }
+      },
+      orderBys: [{ metric: { metricName: 'eventCount' }, desc: true }],
+      limit: 20
+    });
+    
+    // 如果没有查到数据，或者是我们自己手动埋点的 cross_site_click
+    let finalOutboundData = outboundData;
+    if (!outboundData.rows || outboundData.rows.length === 0) {
+      const backupOutboundData = await fetchGa4Report(token, propertyId, {
+        dateRanges: [{ startDate: '7daysAgo', endDate: 'today' }],
+        dimensions: [{ name: 'linkUrl' }],
+        metrics: [{ name: 'eventCount' }],
+        dimensionFilter: {
+          filter: {
+            fieldName: 'eventName',
+            stringFilter: { value: 'cross_site_click' }
+          }
+        },
+        orderBys: [{ metric: { metricName: 'eventCount' }, desc: true }],
+        limit: 20
+      });
+      finalOutboundData = backupOutboundData;
+    }
+
+    // 过滤并清理数据，因为有些 URL 可能为空
+    if (finalOutboundData.rows) {
+      const filteredRows = [];
+      for (const row of finalOutboundData.rows) {
+        // 找到 linkUrl 的值 (如果是增强型 click，它可能是第二个维度；如果是自定义，它是第一个)
+        const urlValue = row.dimensionValues.length > 1 ? row.dimensionValues[1].value : row.dimensionValues[0].value;
+        const count = row.metricValues[0].value;
+        
+        if (urlValue && urlValue !== '(not set)' && urlValue.trim() !== '') {
+          filteredRows.push({
+            dimensionValues: [{ value: urlValue }],
+            metricValues: [{ value: count }]
+          });
+        }
+      }
+      finalOutboundData.rows = filteredRows;
+    }
+
+    reportMarkdown += `## 4.5. 流量出站去向 (Outbound Links)\n`;
+    reportMarkdown += `*💡 **运营建议**: 这里统计了用户点击离开你网站的链接地址。如果是商业化链接（如亚马逊联盟、Ko-fi），高点击意味着转化率不错；如果这里能看到大量流向 \`kickiq.app\` 或 \`kickiq.org\` 的链接，说明你的交叉引流策略非常成功！*\n\n`;
+    if (finalOutboundData.rows && finalOutboundData.rows.length > 0) {
+      reportMarkdown += buildMarkdownTable(finalOutboundData, ['目标 URL', '点击次数']);
+    } else {
+      reportMarkdown += `> 暂无明显的外部链接点击数据 (或数据延迟中)。\n\n`;
+    }
+
     // 维度 5: 设备分布 (用什么看？)
     console.log('拉取 设备分布 数据...');
     const deviceData = await fetchGa4Report(token, propertyId, {

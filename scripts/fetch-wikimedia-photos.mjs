@@ -8,6 +8,7 @@
 
 import fs from 'fs';
 import path from 'path';
+import { updateDataMeta } from './lib/update-data-meta.mjs';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -228,6 +229,10 @@ async function main() {
     for (const p of notFoundList) {
       console.log(`  ✗ ${p}`);
     }
+  }
+
+  if (found > 0) {
+    updateDataMeta(['squadsLastUpdated'], 'fetch-wikimedia-photos');
   }
 }
 

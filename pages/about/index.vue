@@ -98,7 +98,7 @@
       :data="{
         name: 'WorldCupDex',
         url: 'https://worldcupdex.org',
-        logo: 'https://worldcupdex.org/logo.png',
+        logo: 'https://worldcupdex.org/images/logo.png',
         description: t('pages.about.metaDescription'),
         sameAs: ['https://kickiq.app'],
       }"

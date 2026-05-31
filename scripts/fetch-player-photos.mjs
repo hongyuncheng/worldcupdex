@@ -8,6 +8,7 @@
  */
 
 import { readFileSync, writeFileSync } from 'fs';
+import { updateDataMeta } from './lib/update-data-meta.mjs';
 import { resolve, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -38,6 +39,7 @@ let stats = {
 
 // 失败记录
 const failedPlayers = [];
+let writtenTeamFiles = 0;
 
 /**
  * 延迟函数
@@ -212,6 +214,7 @@ async function processTeam(teamId, teamIndex, totalTeams) {
 
   // 保存更新后的文件
   writeFileSync(teamFilePath, JSON.stringify(teamData, null, 2), 'utf-8');
+  writtenTeamFiles++;
   console.log(`  → 完成: 成功 ${teamSuccess}, 失败 ${teamFailed}, 跳过 ${teamSkipped}`);
 }
 
@@ -254,6 +257,10 @@ async function main() {
     if (i < teamsToProcess.length - 1) {
       await sleep(REQUEST_DELAY_MS);
     }
+  }
+
+  if (writtenTeamFiles > 0) {
+    updateDataMeta(['squadsLastUpdated'], 'fetch-player-photos');
   }
 
   // 打印统计摘要

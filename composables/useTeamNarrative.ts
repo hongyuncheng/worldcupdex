@@ -52,23 +52,23 @@ function getRankTier(rank: number, locale: Locale): string {
   return 'a competitive participant'
 }
 
-function getAdvanceOdds(rank: number, locale: Locale): string {
+function getAdvanceOutlook(rank: number, locale: Locale): string {
   if (locale === 'zh') {
-    if (rank <= 5) return '极高（>90%）'
-    if (rank <= 15) return '很高（75-90%）'
-    if (rank <= 30) return '中等偏上（55-75%）'
-    return '有一定挑战（40-55%）'
+    if (rank <= 5) return '被广泛看好'
+    if (rank <= 15) return '值得期待'
+    if (rank <= 30) return '具备竞争力'
+    return '充满挑战，但仍有机会'
   }
   if (locale === 'es') {
-    if (rank <= 5) return 'muy alta (>90%)'
-    if (rank <= 15) return 'alta (75-90%)'
-    if (rank <= 30) return 'moderada-alta (55-75%)'
-    return 'moderada (40-55%)'
+    if (rank <= 5) return 'muy favorable'
+    if (rank <= 15) return 'prometedor'
+    if (rank <= 30) return 'competitivo'
+    return 'exigente, aunque con opciones'
   }
-  if (rank <= 5) return 'very high (>90%)'
-  if (rank <= 15) return 'high (75-90%)'
-  if (rank <= 30) return 'moderate to high (55-75%)'
-  return 'moderate (40-55%)'
+  if (rank <= 5) return 'widely viewed as favorable'
+  if (rank <= 15) return 'promising'
+  if (rank <= 30) return 'competitive'
+  return 'challenging, but still open'
 }
 
 // ========== Chinese Templates ==========
@@ -95,21 +95,21 @@ function generateHistoryZh(team: TeamDetail, stat: HistoricalStat | undefined): 
 function generatePredictionZh(team: TeamDetail, stat: HistoricalStat | undefined): string {
   const name = team.nameZh
   const tier = getRankTier(team.fifaRank, 'zh')
-  const odds = getAdvanceOdds(team.fifaRank, 'zh')
+  const outlook = getAdvanceOutlook(team.fifaRank, 'zh')
 
   if (stat && stat.titles >= 2) {
     return `作为${tier}，${name}以FIFA排名第${team.fifaRank}位的身份来到2026年世界杯。凭借${stat.titles}次夺冠的深厚底蕴和丰富的大赛经验，他们是本届赛事夺冠热门之一。
 
-小组出线概率预估为${odds}。在主教练${team.coach.nameZh}的战术体系下，球队的整体配合与临场应变能力都处于上乘水平。如果核心球员保持健康且状态稳定，${name}有望在淘汰赛阶段走得很远，甚至再次站上最高领奖台。
+从当前排名和阵容深度来看，${name}的小组出线前景${outlook}。在主教练${team.coach.nameZh}的战术体系下，球队的整体配合与临场应变能力都处于上乘水平。如果核心球员保持健康且状态稳定，${name}有望在淘汰赛阶段走得很远，甚至再次站上最高领奖台。
 
 不过世界杯向来是充满变数的赛事。密集的赛程、陌生的气候条件以及对手的针对性部署都可能成为变量。${name}能否在2026年重返巅峰，让我们拭目以待。`
   }
 
   return `${name}目前FIFA排名第${team.fifaRank}位，被视为${tier}。在主教练${team.coach.nameZh}的执教下，球队展现出了不错的竞技状态和战术纪律性。
 
-根据目前的排名和近期表现，${name}的小组出线概率预估为${odds}。虽然他们可能不是夺冠的最大热门，但在世界杯这样的舞台上，任何球队都有创造奇迹的可能。
+根据目前的排名和阵容表现，${name}的小组出线前景${outlook}。虽然他们可能不是夺冠的最大热门，但在世界杯这样的舞台上，任何球队都有创造奇迹的可能。
 
-2026年世界杯采用48队赛制，小组前两名直接出线，这为更多球队提供了晋级机会。${name}若能在小组赛中把握住关键比赛，完全有机会闯入淘汰赛阶段。球迷们期待着${name}在这届世界杯上留下属于自己的精彩篇章。`
+2026年世界杯采用48队赛制，每组前两名和8支成绩最好的小组第三名晋级32强淘汰赛。${name}若能在小组赛中把握住关键比赛，完全有机会闯入淘汰赛阶段。球迷们期待着${name}在这届世界杯上留下属于自己的精彩篇章。`
 }
 
 function generateGroupAnalysisZh(team: TeamDetail): string {
@@ -119,9 +119,9 @@ function generateGroupAnalysisZh(team: TeamDetail): string {
 
   return `${name}被分入${team.group}组，同组对手包括${mateNames}。这个小组的整体实力分布将直接影响${name}的出线前景。
 
-从FIFA排名来看，${name}在${team.group}组中${team.fifaRank <= Math.min(...mates.map(m => m.fifaRank)) ? '排名最高，理论上占据一定优势' : '需要全力以赴才能确保出线'}。2026年世界杯采用全新的48队赛制，每组4支球队，前两名直接晋级32强淘汰赛，第三名仍有可能通过附加赛获得晋级资格。
+从FIFA排名来看，${name}在${team.group}组中${team.fifaRank <= Math.min(...mates.map(m => m.fifaRank)) ? '排名最高，理论上占据一定优势' : '需要全力以赴才能确保出线'}。2026年世界杯采用全新的48队赛制，每组4支球队，前两名直接晋级32强淘汰赛，8支成绩最好的小组第三名也将晋级32强。
 
-小组赛的关键在于首战。世界杯历史数据表明，首战取胜的球队出线概率超过85%。${name}需要在首场比赛中就展现出最佳状态，建立信心和节奏。同时，合理的轮换策略和板凳深度也将成为小组赛阶段的重要考量。无论排名高低，世界杯小组赛从来不缺冷门，每一场比赛都可能改写出线格局。`
+小组赛的关键在于首战。开局取胜能够帮助球队建立信心和节奏，但新的晋级规则也让三场小组赛的每一个积分都更重要。${name}需要尽快进入状态。同时，合理的轮换策略和板凳深度也将成为小组赛阶段的重要考量。无论排名高低，世界杯小组赛从来不缺冷门，每一场比赛都可能改写出线格局。`
 }
 
 // ========== English Templates ==========
@@ -148,21 +148,21 @@ The 2026 FIFA World Cup marks a significant milestone for ${name}. Drawn into Gr
 function generatePredictionEn(team: TeamDetail, stat: HistoricalStat | undefined): string {
   const name = team.nameEn
   const tier = getRankTier(team.fifaRank, 'en')
-  const odds = getAdvanceOdds(team.fifaRank, 'en')
+  const outlook = getAdvanceOutlook(team.fifaRank, 'en')
 
   if (stat && stat.titles >= 2) {
     return `As ${tier}, ${name} arrive at the 2026 World Cup ranked #${team.fifaRank} in the world. With ${stat.titles} World Cup titles in their trophy cabinet, they carry the weight of history and the expectation of success in equal measure.
 
-Their probability of advancing from the group stage is assessed as ${odds}. Head coach ${team.coach.nameEn} has developed a tactical system that maximizes the squad's strengths, blending individual flair with collective discipline. If key players stay fit and hit peak form, ${name} have the quality to go deep into the knockout rounds and challenge for the ultimate prize.
+Based on their ranking and squad depth, ${name}'s group-stage outlook is ${outlook}. Head coach ${team.coach.nameEn} has developed a tactical system that maximizes the squad's strengths, blending individual flair with collective discipline. If key players stay fit and hit peak form, ${name} have the quality to go deep into the knockout rounds and challenge for the ultimate prize.
 
 However, the World Cup is famously unpredictable. Fixture congestion, climate variations across three host countries, and opponents' targeted game plans all represent potential obstacles. Whether ${name} can translate their ranking and heritage into another championship run remains one of the most compelling storylines of the 2026 tournament.`
   }
 
   return `Ranked #${team.fifaRank} by FIFA, ${name} enter the 2026 World Cup as ${tier}. Under the tactical direction of ${team.coach.nameEn}, the team has shown promising form and competitive discipline in recent qualifying campaigns.
 
-Based on current rankings and recent performances, their group-stage advancement probability is estimated at ${odds}. While they may not be among the outright favorites, the World Cup has a long tradition of producing upsets and breakthrough performances from underdog teams.
+Based on current rankings and squad performances, their group-stage outlook is ${outlook}. While they may not be among the outright favorites, the World Cup has a long tradition of producing upsets and breakthrough performances from underdog teams.
 
-The 2026 World Cup's expanded 48-team format means the top two teams from each group advance directly to the Round of 32, providing more pathways to the knockout stage. If ${name} can deliver in the decisive group-stage matches, a place in the elimination rounds is well within reach. Fans and pundits alike will be watching closely to see if this squad can produce a tournament to remember.`
+The 2026 World Cup's expanded 48-team format means the top two teams from each group and the eight best third-placed teams advance to the Round of 32. If ${name} can deliver in the decisive group-stage matches, a place in the elimination rounds is well within reach. Fans and pundits alike will be watching closely to see if this squad can produce a tournament to remember.`
 }
 
 function generateGroupAnalysisEn(team: TeamDetail): string {
@@ -172,9 +172,9 @@ function generateGroupAnalysisEn(team: TeamDetail): string {
 
   return `${name} have been drawn into Group ${team.group}, where they will face ${mateDesc}. The competitive balance within this group will play a decisive role in determining ${name}'s path to the knockout stage.
 
-In terms of FIFA rankings, ${name} ${team.fifaRank <= Math.min(...mates.map(m => m.fifaRank)) ? 'hold the highest position in the group, giving them a theoretical edge' : 'will need to be at their best to secure qualification'}. The 2026 World Cup introduces a new 48-team format with groups of four, where the top two teams advance directly to the Round of 32 and third-placed teams may still qualify via a playoff round.
+In terms of FIFA rankings, ${name} ${team.fifaRank <= Math.min(...mates.map(m => m.fifaRank)) ? 'hold the highest position in the group, giving them a theoretical edge' : 'will need to be at their best to secure qualification'}. The 2026 World Cup introduces a new 48-team format with groups of four, where the top two teams and the eight best third-placed teams advance to the Round of 32.
 
-The opening match is critical. Historical World Cup data shows that teams winning their first group match advance with over 85% probability. ${name} must come out strong and set the tone early. Squad depth, rotation management and adaptability across different venues and conditions will be equally important. Regardless of rankings, the World Cup group stage never fails to deliver surprises — every matchday has the potential to reshape the qualification picture.`
+The opening match matters: a strong start can establish confidence and rhythm, while the new qualification rules make every group-stage point valuable. ${name} must settle quickly and set the tone early. Squad depth, rotation management and adaptability across different venues and conditions will be equally important. Regardless of rankings, the World Cup group stage never fails to deliver surprises — every matchday has the potential to reshape the qualification picture.`
 }
 
 // ========== Spanish Templates ==========
@@ -201,21 +201,21 @@ El Mundial 2026 representa un hito importante para ${name}. Ubicados en el Grupo
 function generatePredictionEs(team: TeamDetail, stat: HistoricalStat | undefined): string {
   const name = team.nameEn
   const tier = getRankTier(team.fifaRank, 'es')
-  const odds = getAdvanceOdds(team.fifaRank, 'es')
+  const outlook = getAdvanceOutlook(team.fifaRank, 'es')
 
   if (stat && stat.titles >= 2) {
     return `Como ${tier}, ${name} llega al Mundial 2026 como número ${team.fifaRank} del ranking FIFA. Con ${stat.titles} títulos mundiales en su palmarés, cargan tanto con el peso de la historia como con la expectativa de éxito.
 
-Su probabilidad de avanzar de la fase de grupos se estima como ${odds}. El seleccionador ${team.coach.nameEn} ha desarrollado un sistema táctico que potencia las virtudes del plantel, combinando talento individual con disciplina colectiva. Si los jugadores clave mantienen la forma, ${name} tiene calidad de sobra para avanzar lejos en la fase eliminatoria y disputar el trofeo.
+Por su ranking y la profundidad de la plantilla, el panorama de ${name} en la fase de grupos es ${outlook}. El seleccionador ${team.coach.nameEn} ha desarrollado un sistema táctico que potencia las virtudes del plantel, combinando talento individual con disciplina colectiva. Si los jugadores clave mantienen la forma, ${name} tiene calidad de sobra para avanzar lejos en la fase eliminatoria y disputar el trofeo.
 
 Sin embargo, el Mundial es famoso por su imprevisibilidad. La acumulación de partidos, las variaciones climáticas entre tres países sede y los planteamientos específicos de los rivales representan variables que pueden alterar cualquier pronóstico. Si ${name} logrará traducir su ranking y su legado en otra gesta mundialista es una de las grandes incógnitas del torneo.`
   }
 
   return `En el puesto ${team.fifaRank} del ranking FIFA, ${name} llega al Mundial 2026 como ${tier}. Bajo la batuta de ${team.coach.nameEn}, el equipo ha mostrado una forma prometedora y buena disciplina táctica en las recientes eliminatorias.
 
-Según el ranking y las actuaciones recientes, su probabilidad de avanzar de la fase de grupos es ${odds}. Aunque quizá no estén entre los máximos favoritos, el Mundial tiene una larga tradición de sorpresas y revelaciones.
+Según el ranking y las actuaciones de la plantilla, su panorama en la fase de grupos es ${outlook}. Aunque quizá no estén entre los máximos favoritos, el Mundial tiene una larga tradición de sorpresas y revelaciones.
 
-El formato ampliado de 48 selecciones del Mundial 2026 clasifica a los dos primeros de cada grupo directamente a los octavos de final, ofreciendo más vías hacia la fase eliminatoria. Si ${name} logra imponerse en los partidos decisivos, alcanzar la siguiente ronda está al alcance de la mano. Aficionados y analistas estarán atentos para ver si este equipo puede protagonizar un torneo para el recuerdo.`
+El formato ampliado de 48 selecciones del Mundial 2026 clasifica a los dos primeros de cada grupo y a los ocho mejores terceros a los dieciseisavos de final. Si ${name} logra imponerse en los partidos decisivos, alcanzar la siguiente ronda está al alcance de la mano. Aficionados y analistas estarán atentos para ver si este equipo puede protagonizar un torneo para el recuerdo.`
 }
 
 function generateGroupAnalysisEs(team: TeamDetail): string {
@@ -225,9 +225,9 @@ function generateGroupAnalysisEs(team: TeamDetail): string {
 
   return `${name} ha quedado encuadrado en el Grupo ${team.group}, donde se enfrentará a ${mateDesc}. El equilibrio competitivo dentro de este grupo será determinante en el camino hacia la fase eliminatoria.
 
-En términos de ranking FIFA, ${name} ${team.fifaRank <= Math.min(...mates.map(m => m.fifaRank)) ? 'ocupa la posición más alta del grupo, lo que le otorga una ventaja teórica' : 'necesitará rendir al máximo para asegurar la clasificación'}. El Mundial 2026 introduce un nuevo formato de 48 selecciones con grupos de cuatro, donde los dos primeros avanzan directamente a los octavos y el tercer clasificado aún podría obtener plaza vía repesca.
+En términos de ranking FIFA, ${name} ${team.fifaRank <= Math.min(...mates.map(m => m.fifaRank)) ? 'ocupa la posición más alta del grupo, lo que le otorga una ventaja teórica' : 'necesitará rendir al máximo para asegurar la clasificación'}. El Mundial 2026 introduce un nuevo formato de 48 selecciones con grupos de cuatro, donde los dos primeros y los ocho mejores terceros avanzan a los dieciseisavos de final.
 
-El partido inaugural es crucial. Los datos históricos de Mundiales demuestran que las selecciones que ganan su primer encuentro de grupo avanzan con más del 85% de probabilidad. ${name} debe salir con todo desde el primer minuto y marcar el ritmo. La profundidad de plantilla, la gestión de rotaciones y la capacidad de adaptación a distintas sedes y condiciones serán igualmente importantes. Sea cual sea el ranking, la fase de grupos del Mundial nunca defrauda — cada jornada tiene el potencial de alterar el panorama de clasificación.`
+El partido inaugural importa: un buen comienzo ayuda a construir confianza y ritmo, mientras que el nuevo sistema de clasificación aumenta el valor de cada punto. ${name} debe adaptarse rápido y marcar el tono desde el inicio. La profundidad de plantilla, la gestión de rotaciones y la capacidad de adaptación a distintas sedes y condiciones serán igualmente importantes. Sea cual sea el ranking, la fase de grupos del Mundial nunca defrauda — cada jornada tiene el potencial de alterar el panorama de clasificación.`
 }
 
 // ========== Main Composable ==========

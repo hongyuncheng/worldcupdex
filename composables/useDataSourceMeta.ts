@@ -1,3 +1,5 @@
+import metaData from '~/data/meta.json'
+
 export type DataSourceKind = 'schedule' | 'teams' | 'team' | 'prediction' | 'data'
 
 export interface DataSourceMeta {
@@ -20,7 +22,22 @@ export interface DataSourceMeta {
   }
 }
 
-const DATA_LAST_UPDATED = '2026-05-25'
+function latestTimestamp(...values: string[]) {
+  return [...values].sort().at(-1) || ''
+}
+
+const DATA_LAST_UPDATED: Record<DataSourceKind, string> = {
+  schedule: metaData.scheduleLastUpdated,
+  teams: latestTimestamp(metaData.teamsLastUpdated, metaData.rankingsLastUpdated),
+  team: latestTimestamp(metaData.teamsLastUpdated, metaData.squadsLastUpdated, metaData.rankingsLastUpdated),
+  prediction: metaData.scheduleLastUpdated,
+  data: latestTimestamp(
+    metaData.scheduleLastUpdated,
+    metaData.teamsLastUpdated,
+    metaData.squadsLastUpdated,
+    metaData.rankingsLastUpdated,
+  ),
+}
 
 const baseUpdateMethod = {
   en: 'Static dataset refreshed by the GitHub scheduled workflow.',
@@ -35,7 +52,7 @@ export const dataSourceMeta: Record<DataSourceKind, DataSourceMeta> = {
       zh: 'FIFA 公开赛程、场馆资料与 WorldCupDex 静态赛程数据集。',
       es: 'Calendario publico de FIFA, datos de sedes y dataset estatico de WorldCupDex.',
     },
-    lastUpdated: DATA_LAST_UPDATED,
+    lastUpdated: DATA_LAST_UPDATED.schedule,
     updateMethod: baseUpdateMethod,
     aiGenerated: false,
     disclaimer: {
@@ -50,7 +67,7 @@ export const dataSourceMeta: Record<DataSourceKind, DataSourceMeta> = {
       zh: 'WorldCupDex 球队数据集，整理自公开协会资料、FIFA 排名与赛事信息。',
       es: 'Dataset de selecciones de WorldCupDex basado en datos publicos, ranking FIFA e informacion del torneo.',
     },
-    lastUpdated: DATA_LAST_UPDATED,
+    lastUpdated: DATA_LAST_UPDATED.teams,
     updateMethod: baseUpdateMethod,
     aiGenerated: false,
     disclaimer: {
@@ -65,7 +82,7 @@ export const dataSourceMeta: Record<DataSourceKind, DataSourceMeta> = {
       zh: 'WorldCupDex 球队详情数据集，包含公开名单、排名、场馆与分组信息。',
       es: 'Dataset de perfiles de WorldCupDex con plantillas, rankings, sedes y grupos.',
     },
-    lastUpdated: DATA_LAST_UPDATED,
+    lastUpdated: DATA_LAST_UPDATED.team,
     updateMethod: baseUpdateMethod,
     aiGenerated: false,
     disclaimer: {
@@ -80,7 +97,7 @@ export const dataSourceMeta: Record<DataSourceKind, DataSourceMeta> = {
       zh: '比赛数据来自 WorldCupDex 静态数据集；预测卡由用户生成，文案可能包含 AI 辅助。',
       es: 'Datos del partido desde el dataset estatico de WorldCupDex; las tarjetas son generadas por usuarios y pueden incluir texto asistido por IA.',
     },
-    lastUpdated: DATA_LAST_UPDATED,
+    lastUpdated: DATA_LAST_UPDATED.prediction,
     updateMethod: baseUpdateMethod,
     aiGenerated: true,
     disclaimer: {
@@ -95,7 +112,7 @@ export const dataSourceMeta: Record<DataSourceKind, DataSourceMeta> = {
       zh: 'WorldCupDex 历史与赛事数据集，整理自公开世界杯记录与项目静态数据。',
       es: 'Datasets historicos y del torneo compilados desde registros publicos y datos estaticos del proyecto.',
     },
-    lastUpdated: DATA_LAST_UPDATED,
+    lastUpdated: DATA_LAST_UPDATED.data,
     updateMethod: baseUpdateMethod,
     aiGenerated: false,
     disclaimer: {
@@ -108,4 +125,18 @@ export const dataSourceMeta: Record<DataSourceKind, DataSourceMeta> = {
 
 export function useDataSourceMeta(kind: DataSourceKind) {
   return dataSourceMeta[kind]
+}
+
+export function formatDataSourceDate(timestamp: string, locale: string) {
+  const date = new Date(timestamp)
+  if (Number.isNaN(date.getTime())) return timestamp
+  if (locale === 'zh') {
+    return `${date.getUTCFullYear()}年${date.getUTCMonth() + 1}月${date.getUTCDate()}日`
+  }
+  return date.toLocaleDateString(locale === 'es' ? 'es-ES' : 'en-US', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+    timeZone: 'UTC',
+  })
 }

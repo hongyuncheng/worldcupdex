@@ -8,6 +8,7 @@ import { execSync } from 'child_process';
 import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { updateDataMeta } from './lib/update-data-meta.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const teamsDir = join(__dirname, '..', 'data', 'teams');
@@ -71,3 +72,7 @@ console.log(`\n=== 恢复完成 ===`);
 console.log(`处理文件: ${files.length}`);
 console.log(`当前总球员: ${totalPlayers}`);
 console.log(`恢复照片数: ${totalRestored}`);
+
+if (totalRestored > 0) {
+  updateDataMeta(['squadsLastUpdated'], 'restore-player-photos');
+}

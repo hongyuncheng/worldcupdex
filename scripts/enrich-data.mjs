@@ -7,6 +7,7 @@ import { readFileSync, writeFileSync, readdirSync } from 'fs'
 import { resolve, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import { PLAYER_NAME_ZH } from './player-names-zh.mjs'
+import { updateDataMeta } from './lib/update-data-meta.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const dataDir = resolve(__dirname, '..', 'data')
@@ -393,6 +394,10 @@ function main() {
 
   writeFileSync(matchesPath, JSON.stringify(matches, null, 2), 'utf-8')
   console.log(`✅ matches.json 已更新：${venueAssigned} 场比赛分配了场馆`)
+  updateDataMeta(
+    ['scheduleLastUpdated', 'teamsLastUpdated', 'squadsLastUpdated', 'rankingsLastUpdated'],
+    'enrich-data',
+  )
 
   // 摘要
   console.log('\n=== 补充摘要 ===')

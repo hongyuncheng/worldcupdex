@@ -6,7 +6,7 @@ export function getOrganizationSchema(siteUrl: string, kickiqUrl?: string) {
   return {
     name: 'WorldCupDex',
     url: siteUrl,
-    logo: `${siteUrl}/logo.png`,
+    logo: `${siteUrl}/images/logo.png`,
     sameAs: kickiqUrl ? [kickiqUrl] : [],
   }
 }
@@ -19,11 +19,6 @@ export function getWebSiteSchema(siteUrl: string) {
     name: 'WorldCupDex',
     url: siteUrl,
     description: '2026 FIFA World Cup Encyclopedia & Predictions',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: `${siteUrl}/data?q={search_term_string}`,
-      'query-input': 'required name=search_term_string',
-    },
   }
 }
 
@@ -58,7 +53,7 @@ export function getArticleSchema(opts: {
       name: 'WorldCupDex',
       logo: {
         '@type': 'ImageObject',
-        url: `${opts.siteUrl}/logo.png`,
+        url: `${opts.siteUrl}/images/logo.png`,
       },
     },
     mainEntityOfPage: {

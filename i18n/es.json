@@ -34,6 +34,8 @@
     "statsCountries": "3 Países"
   },
   "home": {
+    "title": "Base de datos del Mundial 2026",
+    "description": "Calendario, resultados, equipos y predicciones del Mundial 2026",
     "heroSubtitle": "Tu segunda pantalla del Mundial: elige equipo, arma tu calendario, predice y comparte tu identidad de fan.",
     "heroPrimaryCta": "Armar Mi Calendario",
     "heroSecondaryCta": "Elegir Mi Equipo",

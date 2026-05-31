@@ -316,5 +316,8 @@
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/n0yoi71778804799.jpg"
     }
   ],
-  "recentMatches": []
+  "recentMatches": [],
+  "squadStatus": "incomplete",
+  "squadLastUpdated": "2026-05-25",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
 }

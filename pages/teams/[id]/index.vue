@@ -232,9 +232,20 @@
       <!-- Bottom: Full Squad -->
       <div class="bg-white rounded-xl p-6 mt-6" style="box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-6">
-          <h3 class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 18px; color: #000F49;">
-            {{ $t('teams.squad') }} ({{ team.squad?.length || 0 }})
-          </h3>
+          <div>
+            <div class="flex flex-wrap items-center gap-2">
+              <h3 class="font-bold" style="font-family: 'Montserrat', sans-serif; font-size: 18px; color: #000F49;">
+                {{ $t('teams.squad') }} ({{ team.squad?.length || 0 }})
+              </h3>
+              <span class="squad-status-pill" :class="`squad-status-pill--${team.squadStatus}`">
+                {{ squadStatusLabel }}
+              </span>
+            </div>
+            <p class="squad-status-note">
+              {{ squadStatusNote }}
+              <span v-if="team.squadLastUpdated"> {{ squadUpdatedLabel }} {{ team.squadLastUpdated }}</span>
+            </p>
+          </div>
           <!-- Position Filter -->
           <div class="flex flex-wrap gap-2">
             <button
@@ -529,6 +540,34 @@ const filteredSquad = computed(() => {
   return squad
 })
 
+const squadStatusLabel = computed(() => {
+  const status = team.value?.squadStatus || 'incomplete'
+  if (locale.value === 'zh') {
+    return status === 'official' ? '官方 26 人名单' : status === 'provisional' ? '临时名单' : '名单更新中'
+  }
+  if (locale.value === 'es') {
+    return status === 'official' ? 'Plantilla oficial de 26' : status === 'provisional' ? 'Plantilla provisional' : 'Plantilla en actualización'
+  }
+  return status === 'official' ? 'Official 26-player squad' : status === 'provisional' ? 'Provisional squad' : 'Squad data is being updated'
+})
+
+const squadStatusNote = computed(() => {
+  const status = team.value?.squadStatus || 'incomplete'
+  if (locale.value === 'zh') {
+    return status === 'official' ? '名单已根据官方最终公告确认。' : status === 'provisional' ? '名单仍可能在最终确认前调整。' : '当前名单数据尚未补齐，请稍后再查看。'
+  }
+  if (locale.value === 'es') {
+    return status === 'official' ? 'La plantilla esta confirmada con el anuncio oficial final.' : status === 'provisional' ? 'La plantilla puede cambiar antes de la confirmacion final.' : 'Los datos de la plantilla aun se estan actualizando.'
+  }
+  return status === 'official' ? 'This squad is confirmed from the final official announcement.' : status === 'provisional' ? 'This squad may change before final confirmation.' : 'This squad dataset is still being completed.'
+})
+
+const squadUpdatedLabel = computed(() => {
+  if (locale.value === 'zh') return '更新时间：'
+  if (locale.value === 'es') return 'Actualizado:'
+  return 'Updated:'
+})
+
 // SEO - dynamic based on team data
 const seoTeamName = computed(() =>
   team.value ? (locale.value === 'en' ? team.value.nameEn : team.value.nameZh) : 'WorldCupDex',
@@ -626,6 +665,34 @@ const sportsTeamSchemaData = computed(() => {
   display: grid;
   grid-template-columns: 1fr;
   gap: 16px;
+}
+
+.squad-status-pill {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+}
+.squad-status-pill--official {
+  background: #DCFCE7;
+  color: #166534;
+}
+.squad-status-pill--provisional {
+  background: #FEF3C7;
+  color: #92400E;
+}
+.squad-status-pill--incomplete {
+  background: #FEE2E2;
+  color: #991B1B;
+}
+.squad-status-note {
+  margin-top: 5px;
+  color: #6B7280;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 @media (min-width: 640px) {

@@ -489,9 +489,12 @@ function formatLocalTime(timestamp: number) {
 const countdownFallbackKeys = ['hero.days', 'hero.hours', 'hero.minutes', 'hero.seconds']
 
 // SEO
+const seoTitle = computed(() => t('home.title'))
+const seoDescription = computed(() => t('home.description'))
+
 useSeoConfig({
-  title: 'WorldCupDex - 2026世界杯百科与预测',
-  description: '2026年FIFA世界杯百科全书，包含球队资料、赛程赛果、比分预测和球迷互动。',
+  title: seoTitle,
+  description: seoDescription,
 })
 
 // JSON-LD Structured Data — data objects rendered via <SchemaOrg> in template
@@ -503,7 +506,7 @@ const discordUrl = (runtimeConfig.public?.discordUrl as string) || 'https://disc
 const organizationData = {
   name: 'WorldCupDex',
   url: siteUrl,
-  logo: `${siteUrl}/logo.png`,
+  logo: `${siteUrl}/images/logo.png`,
   sameAs: [kickiqUrl],
 }
 
@@ -511,11 +514,6 @@ const webSiteData = {
   name: 'WorldCupDex',
   url: siteUrl,
   description: '2026 FIFA World Cup Encyclopedia & Predictions',
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: `${siteUrl}/data?q={search_term_string}`,
-    'query-input': 'required name=search_term_string',
-  },
 }
 
 const teamsScrollRef = ref<HTMLElement | null>(null)

@@ -300,6 +300,10 @@ export default defineNuxtConfig({
     },
   },
 
+  experimental: {
+    appManifest: false,
+  },
+
   site: {
     url: 'https://worldcupdex.org',
   },

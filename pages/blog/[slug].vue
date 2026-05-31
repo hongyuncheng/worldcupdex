@@ -110,6 +110,25 @@ const contentPath = computed(() => {
   return `/${locale.value}/blog/${route.params.slug}`
 })
 
+const blogLocales = ['en', 'zh', 'es'] as const
+const { data: availableLocales } = await useAsyncData(
+  `blog-locales-${route.params.slug}`,
+  async () => {
+    const localePages = await Promise.all(
+      blogLocales.map(async (localeCode) => ({
+        localeCode,
+        page: await queryCollection('blog')
+          .path(`/${localeCode}/blog/${route.params.slug}`)
+          .first(),
+      })),
+    )
+
+    return localePages
+      .filter(({ page }) => page && !page.draft)
+      .map(({ localeCode }) => localeCode)
+  },
+)
+
 const { data: page } = await useAsyncData(
   `blog-${route.params.slug}`,
   () => queryCollection('blog').path(contentPath.value).first(),
@@ -147,13 +166,15 @@ if (page.value) {
     description: page.value.description || t('blog.metaDescription'),
     ogImage: page.value.cover,
     ogType: 'article',
-    path: contentPath.value,
+    path: route.path,
+    availableLocales: availableLocales.value || [],
   })
 } else {
   useSeoConfig({
     title: `Blog - WorldCupDex`,
     description: t('blog.metaDescription'),
-    path: contentPath.value,
+    path: route.path,
+    availableLocales: availableLocales.value || [],
   })
 }
 </script>

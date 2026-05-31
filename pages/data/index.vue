@@ -266,7 +266,7 @@
             <div style="width: 40px; height: 40px; border-radius: 50%; background: #EBF0FF; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0;">⏰</div>
             <div>
               <div style="font-size: 12px; color: #999; margin-bottom: 2px;">{{ $t('dataCenter.lastUpdate') }}</div>
-              <div style="font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: #000F49; margin-bottom: 2px;">{{ dataMeta.lastUpdated }}</div>
+              <time :datetime="dataMeta.lastUpdated" :title="dataMeta.lastUpdated" style="font-family: 'Montserrat', sans-serif; font-size: 16px; font-weight: 700; color: #000F49; margin-bottom: 2px;">{{ formattedLastUpdated }}</time>
               <div style="font-size: 12px; color: #999;">{{ $t('dataCenter.dataSource') }}</div>
             </div>
           </div>
@@ -277,8 +277,9 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const dataMeta = useDataSourceMeta('data')
+const formattedLastUpdated = computed(() => formatDataSourceDate(dataMeta.lastUpdated, locale.value))
 
 // SEO
 useSeoConfig({

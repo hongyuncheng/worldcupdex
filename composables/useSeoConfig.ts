@@ -8,6 +8,7 @@ export function useSeoConfig(options: {
   ogType?: string
   path?: string
   noindex?: boolean
+  availableLocales?: Array<'en' | 'zh' | 'es'>
 }) {
   const { locale } = useI18n()
   const route = useRoute()
@@ -22,6 +23,11 @@ export function useSeoConfig(options: {
   const enUrl = `${baseUrl}${barePath}`
   const zhUrl = `${baseUrl}/zh${barePath === '/' ? '' : barePath}`
   const esUrl = `${baseUrl}/es${barePath === '/' ? '' : barePath}`
+  const localeUrls = { en: enUrl, zh: zhUrl, es: esUrl }
+  const availableLocales = options.availableLocales?.length
+    ? options.availableLocales
+    : ['en', 'zh', 'es'] as const
+  const defaultLocale = availableLocales.includes('en') ? 'en' : availableLocales[0]
 
   const canonicalUrl = `${baseUrl}${currentPath}`
 
@@ -61,10 +67,12 @@ export function useSeoConfig(options: {
     meta: metaTags,
     link: [
       { rel: 'canonical', href: canonicalUrl },
-      { rel: 'alternate', hreflang: 'zh', href: zhUrl },
-      { rel: 'alternate', hreflang: 'en', href: enUrl },
-      { rel: 'alternate', hreflang: 'es', href: esUrl },
-      { rel: 'alternate', hreflang: 'x-default', href: enUrl },
+      ...availableLocales.map(localeCode => ({
+        rel: 'alternate',
+        hreflang: localeCode,
+        href: localeUrls[localeCode],
+      })),
+      { rel: 'alternate', hreflang: 'x-default', href: localeUrls[defaultLocale] },
     ],
   })
 }
