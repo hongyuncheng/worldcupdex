@@ -15,6 +15,16 @@ useSeoConfig({
 // ─── 获取比赛数据 ───
 const matchesResponse = computed(() => getStaticMatchList())
 const match = computed(() => matchesResponse.value.data.find(m => m.id === matchId) || null)
+const breadcrumbItems = computed(() => [
+  { name: t('nav.home'), path: '/' },
+  { name: t('nav.predict'), path: '/predict' },
+  {
+    name: match.value
+      ? `${getTeamName(match.value.homeTeam)} vs ${getTeamName(match.value.awayTeam)}`
+      : t('predictDetail.title'),
+    path: `/predict/${matchId}`,
+  },
+])
 
 // ─── 表单状态 ───
 const selectedResult = ref<'HOME_WIN' | 'AWAY_WIN' | 'DRAW' | null>(null)
@@ -343,6 +353,7 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
 <template>
   <div class="predict-page">
     <div class="predict-page__container">
+      <BreadcrumbSchema :items="breadcrumbItems" nav-class="breadcrumb-schema pt-5" />
       <!-- Loading -->
       <div v-if="!match" class="predict-page__loading">
         <span>{{ t('common.loading') }}...</span>

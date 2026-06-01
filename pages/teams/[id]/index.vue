@@ -20,13 +20,7 @@
     <template v-else-if="team">
     <!-- Breadcrumb -->
     <div class="max-w-7xl mx-auto px-4 lg:px-8" style="padding-top: 20px; padding-bottom: 16px;">
-      <nav style="font-size: 13px; color: #999;">
-        <NuxtLinkLocale to="/" class="hover:text-[#000F49] transition-colors">{{ $t('nav.home') }}</NuxtLinkLocale>
-        <span style="margin: 0 6px;">&gt;</span>
-        <NuxtLinkLocale to="/teams" class="hover:text-[#000F49] transition-colors">{{ $t('teams.title') }}</NuxtLinkLocale>
-        <span style="margin: 0 6px;">&gt;</span>
-        <span style="color: #666;">{{ locale === 'en' ? team.nameEn : team.nameZh }}</span>
-      </nav>
+      <BreadcrumbSchema :items="breadcrumbItems" separator=">" />
     </div>
 
     <!-- Hero Banner -->
@@ -589,6 +583,11 @@ const seoDescription = computed(() => {
 const seoOgImage = computed(() =>
   team.value ? `https://flagcdn.com/w320/${team.value.code}.png` : '',
 )
+const breadcrumbItems = computed(() => team.value ? [
+  { name: t('nav.home'), path: '/' },
+  { name: t('teams.title'), path: '/teams' },
+  { name: seoTeamName.value, path: `/teams/${team.value.id}` },
+] : [])
 useSeoConfig({ title: seoTitle, description: seoDescription, ogImage: seoOgImage, ogType: 'profile' })
 
 // JSON-LD SportsTeam schema data

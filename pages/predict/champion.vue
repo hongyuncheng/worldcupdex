@@ -5,6 +5,11 @@ import { usePredictions } from '~/composables/usePredictions'
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
 const { hasUnlockedPremium, unlockPremium } = usePredictions()
+const breadcrumbItems = computed(() => [
+  { name: t('nav.home'), path: '/' },
+  { name: t('nav.predict'), path: '/predict' },
+  { name: t('predict.champion'), path: '/predict/champion' },
+])
 
 // SEO
 useSeoConfig({
@@ -203,6 +208,7 @@ onMounted(() => {
     <div class="champion-page__bg" aria-hidden="true"></div>
 
     <div class="champion-page__container">
+      <BreadcrumbSchema :items="breadcrumbItems" nav-class="breadcrumb-schema pt-5" />
       <!-- 选择区域 -->
       <template v-if="!showResult">
         <!-- Hero -->

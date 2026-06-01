@@ -2,10 +2,18 @@
 title: "2026 World Cup Format Explained: What 48 Teams Mean for the Tournament"
 description: "The 2026 World Cup will feature 48 teams for the first time. How will the group stage work? What about the knockout rounds? Here is everything you need to know."
 publishedAt: "2026-05-18"
+updatedAt: "2026-06-01"
+author: "WorldCupDex Editorial"
 cover: "/images/blog/format-change.webp"
 tags: ["Format", "World Cup", "48 Teams"]
 locale: "en"
 ---
+
+## TL;DR
+
+- The 2026 World Cup expands to 48 teams in 12 groups of four.
+- The top two teams in each group and the eight best third-placed teams advance.
+- The new Round of 32 means the finalists will each play eight matches.
 
 The 2026 FIFA World Cup, hosted by the USA, Canada, and Mexico, is set to be the biggest in history. The most significant change is the expansion from 32 to **48 participating nations**. This shift not only opens the door for more countries to compete on the global stage but also drastically alters the tournament's structure and schedule.
 
@@ -44,3 +52,22 @@ The expansion heavily benefits confederations that historically had fewer spots.
 With 48 teams, 104 matches, and 3 host nations, the 2026 World Cup will be an unprecedented spectacle. While the road to glory is longer, fans can look forward to more football, new rivalries, and unforgettable moments.
 
 Get ready for the biggest tournament ever and start making your predictions on WorldCupDex!
+
+## Sources and official references
+
+- [FIFA: World Cup 2026 tournament hub](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
+- [FIFA: World Cup 2026 match centre](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center)
+
+## Frequently asked questions
+
+### How many teams will play at the 2026 World Cup?
+
+The tournament will feature 48 national teams.
+
+### How many teams advance from the group stage?
+
+Thirty-two teams advance: the top two in each of the 12 groups plus the eight best third-placed teams.
+
+### How many matches will be played?
+
+The expanded tournament includes 104 matches.

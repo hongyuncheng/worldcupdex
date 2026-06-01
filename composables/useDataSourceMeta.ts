@@ -15,12 +15,25 @@ export interface DataSourceMeta {
     es: string
   }
   aiGenerated: boolean
+  links: DataSourceLink[]
   disclaimer?: {
     en: string
     zh: string
     es: string
   }
 }
+
+export interface DataSourceLink {
+  kind: 'schedule' | 'teams' | 'squads' | 'rankings' | 'tournament'
+  url: string
+  official: boolean
+}
+
+const officialLink = (kind: DataSourceLink['kind']): DataSourceLink => ({
+  kind,
+  url: metaData.sourceUrls[kind],
+  official: true,
+})
 
 function latestTimestamp(...values: string[]) {
   return [...values].sort().at(-1) || ''
@@ -55,6 +68,7 @@ export const dataSourceMeta: Record<DataSourceKind, DataSourceMeta> = {
     lastUpdated: DATA_LAST_UPDATED.schedule,
     updateMethod: baseUpdateMethod,
     aiGenerated: false,
+    links: [officialLink('schedule'), officialLink('tournament')],
     disclaimer: {
       en: 'Not affiliated with FIFA. Match participants marked TBD will be updated when official slots are confirmed.',
       zh: '本站非 FIFA 官方网站；TBD 对阵会在官方席位确认后更新。',
@@ -70,6 +84,7 @@ export const dataSourceMeta: Record<DataSourceKind, DataSourceMeta> = {
     lastUpdated: DATA_LAST_UPDATED.teams,
     updateMethod: baseUpdateMethod,
     aiGenerated: false,
+    links: [officialLink('teams'), officialLink('rankings'), officialLink('tournament')],
     disclaimer: {
       en: 'Team squads and rankings can change before the tournament.',
       zh: '球队名单与排名在开赛前仍可能变化。',
@@ -85,6 +100,7 @@ export const dataSourceMeta: Record<DataSourceKind, DataSourceMeta> = {
     lastUpdated: DATA_LAST_UPDATED.team,
     updateMethod: baseUpdateMethod,
     aiGenerated: false,
+    links: [officialLink('teams'), officialLink('squads'), officialLink('rankings')],
     disclaimer: {
       en: 'Player photos and squad details may be refreshed as official rosters evolve.',
       zh: '球员照片与名单会随官方名单变化继续更新。',
@@ -100,6 +116,7 @@ export const dataSourceMeta: Record<DataSourceKind, DataSourceMeta> = {
     lastUpdated: DATA_LAST_UPDATED.prediction,
     updateMethod: baseUpdateMethod,
     aiGenerated: true,
+    links: [officialLink('schedule')],
     disclaimer: {
       en: 'For fan entertainment only. Not official advice, betting advice, odds, or gambling content.',
       zh: '仅供球迷娱乐；不是官方建议、博彩建议、赔率或赌博内容。',
@@ -115,6 +132,13 @@ export const dataSourceMeta: Record<DataSourceKind, DataSourceMeta> = {
     lastUpdated: DATA_LAST_UPDATED.data,
     updateMethod: baseUpdateMethod,
     aiGenerated: false,
+    links: [
+      officialLink('schedule'),
+      officialLink('teams'),
+      officialLink('squads'),
+      officialLink('rankings'),
+      officialLink('tournament'),
+    ],
     disclaimer: {
       en: 'Use this page as a transparent overview of what powers the tools on WorldCupDex.',
       zh: '本页用于透明展示 WorldCupDex 工具背后的数据基础。',

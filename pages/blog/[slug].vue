@@ -27,12 +27,7 @@
 
       <!-- Article -->
       <div class="max-w-3xl mx-auto px-4 lg:px-6 py-8">
-        <!-- Back link -->
-        <div class="mb-6">
-          <NuxtLinkLocale to="/blog" style="font-size: 14px; color: #000F49; font-weight: 600;">
-            {{ $t('blog.backToList') }}
-          </NuxtLinkLocale>
-        </div>
+        <BreadcrumbSchema v-if="page" :items="breadcrumbItems" nav-class="breadcrumb-schema mb-6" />
 
         <!-- Tags -->
         <div v-if="page.tags?.length" class="flex flex-wrap gap-1.5 mb-4">
@@ -54,6 +49,7 @@
         <!-- Meta row -->
         <div class="flex flex-wrap items-center gap-x-4 gap-y-1 mb-8 pb-6" style="border-bottom: 1px solid #eee; font-size: 14px; color: #999;">
           <span>{{ $t('blog.publishedOn') }} {{ formatDate(page.publishedAt) }}</span>
+          <span v-if="page.updatedAt">{{ $t('blog.updatedOn') }} {{ formatDate(page.updatedAt) }}</span>
           <span v-if="page.author">{{ $t('blog.by') }} <strong style="color: #555;">{{ page.author }}</strong></span>
         </div>
 
@@ -158,6 +154,12 @@ const articleSchema = computed(() => {
     author: page.value.author,
   })
 })
+
+const breadcrumbItems = computed(() => page.value ? [
+  { name: t('nav.home'), path: '/' },
+  { name: 'Blog', path: '/blog' },
+  { name: page.value.title, path: `/blog/${route.params.slug}` },
+] : [])
 
 // SEO
 if (page.value) {

@@ -969,11 +969,11 @@ curl.exe -s https://worldcupdex.org/robots.txt
 
 ### 15.6 执行记录
 
-- 执行日期：
-- 训练爬虫决策：
-- 修改文件：
-- 测试结果：
-- 人工确认：
+- 执行日期：`2026-06-01`
+- 训练爬虫决策：允许 `OAI-SearchBot` 抓取公开页面，用于 ChatGPT Search 搜索发现；显式禁止 `GPTBot` 抓取，暂不开放训练用途。搜索发现与训练用途分开管理。
+- 修改文件：`public/robots.txt`
+- 测试结果：本地 `robots.txt` 已显式包含 `User-agent: OAI-SearchBot` 与 `Allow: /`；已保留通用爬虫的 `/api/`、`/data/` 禁止规则；已新增 `User-agent: GPTBot` 与 `Disallow: /`。`git diff --check` 通过，默认 Nitro 生产构建通过。部署后仍需通过 `curl.exe -s https://worldcupdex.org/robots.txt` 复核线上文件。
+- 人工确认：等待确认。
 
 ---
 
@@ -1024,11 +1024,11 @@ curl.exe -s https://worldcupdex.org/robots.txt
 
 ### 16.6 执行记录
 
-- 执行日期：
-- 修改文件：
-- 验证 URL：
-- 测试结果：
-- 人工确认：
+- 执行日期：`2026-06-01`
+- 修改文件：`components/BreadcrumbSchema.vue`、`components/SchemaOrg.vue`、`pages/blog/[slug].vue`、`pages/teams/[id]/index.vue`、`pages/teams/[id]/schedule.vue`、`pages/teams/[id]/world-cup-2026-route.vue`、`pages/predict/index.vue`、`pages/predict/champion.vue`、`pages/predict/[id].vue`
+- 验证 URL：`/teams/france`、`/teams/france/schedule`、`/teams/france/world-cup-2026-route`、`/zh/teams/france/schedule`、`/es/teams/france/world-cup-2026-route`、`/blog/2026-world-cup-format-explained`、`/predict`、`/predict/champion`、`/predict/537327`
+- 测试结果：新增统一 `BreadcrumbSchema` 组件，由同一份 items 同时输出可视化 breadcrumb 与 `BreadcrumbList` JSON-LD；每一层均包含 `position`、`name`、`item`，并按当前语言生成规范 URL。已覆盖 Blog 详情、球队详情、球队赛程、球队路线、预测入口、冠军预测与单场预测页。隔离旧 Nitro 路由缓存并重新构建后，默认 Nitro 生产构建通过；抽查英中西三种语言页面均通过；全量扫描预渲染 HTML 共发现 `660` 个 `BreadcrumbList`，`InvalidBreadcrumbItems: 0`；`git diff --check` 通过。构建仍存在原有西语球队 i18n key 缺失与依赖 warning，不属于本项。
+- 人工确认：等待确认；部署后建议使用 Schema.org Validator 与 Google Rich Results Test 抽查正式域名。
 
 ---
 
@@ -1098,11 +1098,11 @@ Source:
 
 ### 17.6 执行记录
 
-- 执行日期：
-- 修改文件：
-- 测试 URL：
-- 测试结果：
-- 人工确认：
+- 执行日期：`2026-06-01`
+- 修改文件：`components/GeoAnswerBlock.vue`、`pages/teams/[id]/schedule.vue`、`pages/teams/[id]/world-cup-2026-route.vue`
+- 测试 URL：`/teams/france/world-cup-2026-route`、`/teams/canada/world-cup-2026-route`、`/teams/spain/schedule`、`/zh/teams/france/world-cup-2026-route`
+- 测试结果：新增 SSR 输出的 `GeoAnswerBlock` 可引用答案块，直接展示下一场比赛对手、开球时间、球场、本地显示时间、小组、名单状态、最后核验日期与可点击 FIFA 官方来源。答案块使用语义化 `<aside>`、`<h2>`、`<dl>`、`<dt>`、`<dd>`、`<time>` 和 `<a>`，不依赖 JavaScript，也不使用 `FAQPage` 或 `QAPage`。移动端将四列布局收敛为两列。隔离旧 Nitro 路由缓存并重新构建后，英中样本抽查通过；全量扫描预渲染 HTML 共发现 `288` 个答案块，`GeoAnswersWithoutSourceLink: 0`；默认 Nitro 生产构建通过。
+- 人工确认：等待确认；部署后建议抽查移动端视觉效果。
 
 ---
 
@@ -1147,11 +1147,11 @@ Source:
 
 ### 18.5 执行记录
 
-- 执行日期：
-- 修改文件：
-- 来源链接：
-- 测试结果：
-- 人工确认：
+- 执行日期：`2026-06-01`
+- 修改文件：`data/meta.json`、`composables/useDataSourceMeta.ts`、`components/DataSourceNote.vue`
+- 来源链接：FIFA 赛事主页、FIFA 赛程与结果页、FIFA 参赛球队页、FIFA 名单公告页、FIFA 男足世界排名页。URL 集中配置于 `data/meta.json` 的 `sourceUrls`。
+- 测试结果：数据来源已按赛程、球队、名单、排名和赛事主页分类，并在 `DataSourceNote` 中输出可点击外部链接、官方标识和 `noopener noreferrer`。原有非官方声明保留；预测页继续显示 `AI-generated: Yes` 与“仅供球迷娱乐，不构成博彩建议”边界说明。浏览器核实五个 FIFA 官方来源 URL 均可访问；本地抽查 `/schedule`、`/teams`、`/teams/france`、`/predict/537327` 预渲染 HTML 均通过；全量扫描共发现 `657` 个带来源说明的 SSR 页面，`SourceNotesWithoutExternalLinks: 0`；数据校验结果为 `Warnings: 151`、`Errors: 0`；`git diff --check` 与默认 Nitro 生产构建通过。构建仍存在原有西语球队 i18n key 缺失与依赖 warning，不属于本项。
+- 人工确认：等待确认。
 
 ---
 
@@ -1278,10 +1278,22 @@ usa world cup schedule
 
 ### 20.6 执行记录
 
-- 执行日期：
-- 修改文章：
+- 执行日期：2026-06-01
+- 修改文章：已优化首批 3 个主题及其现有中英文内容，共 6 篇文章：
+  - 48 队赛制解释：英文、中文。
+  - 16 座主办城市指南：英文、中文。
+  - 夺冠热门球队分析：英文、中文。
+- 内容调整：
+  - 全部文章增加 `TL;DR`、作者、更新时间、官方参考链接和 FAQ 文本。
+  - 夺冠热门文章明确标注为 WorldCupDex 编辑部主观看法，不是 FIFA 官方排名、实时赔率或博彩建议。
+  - Blog 详情模板增加更新时间展示；`Article` Schema 继续输出 `datePublished`、`dateModified` 和作者。
 - 测试结果：
-- 人工确认：
+  - 6 篇文章结构检查通过：`updatedAt`、作者、`TL;DR`、官方参考链接、FAQ 均存在。
+  - 6 个预渲染详情页逐页检查通过：canonical、`Article` Schema、`dateModified: 2026-06-01`、更新时间文本和封面引用均存在。
+  - 3 个封面图文件均存在：`format-change.webp`、`host-cities-cover.webp`、`favorites.webp`。
+  - `node scripts/validate-data.mjs` 通过：`Errors: 0`；保留原有球队资料完整度提醒。
+  - `nuxt build` 通过；保留原有西语球队字段缺失提示和依赖弃用提示。
+- 人工确认：待确认。
 
 ---
 
@@ -1327,10 +1339,17 @@ curl.exe -s https://worldcupdex.org/sitemap.xml | Select-String '/en/'
 
 ### 21.4 执行记录
 
-- 执行日期：
-- sitemap URL 数量：
-- GSC 提交结果：
-- 人工确认：
+- 执行日期：2026-06-01
+- 本地生成结果：
+  - `/sitemap.xml` 已生成跳转页，跳转至 `/sitemap_index.xml`。
+  - sitemap index 已包含 `en-US.xml`、`es-ES.xml`、`zh-CN.xml`。
+  - URL 总数：480；唯一 URL：480；重复 URL：0。
+  - 英文默认语言 `/en/` URL：0。
+  - 球队赛程页：144 条；球队路线页：144 条，覆盖 48 队 × 3 种语言。
+  - Blog 详情页：6 条；不存在无内容的西语 Blog 详情页。
+  - 语言拆分：英文 161 条，西语 158 条，中文 161 条。
+- GSC 提交结果：待部署后人工提交 `https://worldcupdex.org/sitemap.xml`。
+- 人工确认：待部署并在 GSC 验证。
 
 ---
 

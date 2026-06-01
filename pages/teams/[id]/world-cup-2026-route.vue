@@ -10,15 +10,7 @@
 
     <section class="team-route-hero">
       <div class="team-route-container">
-        <nav class="team-route-breadcrumb">
-          <NuxtLinkLocale to="/">{{ t('nav.home') }}</NuxtLinkLocale>
-          <span>/</span>
-          <NuxtLinkLocale to="/teams">{{ t('teams.title') }}</NuxtLinkLocale>
-          <span>/</span>
-          <NuxtLinkLocale :to="`/teams/${team.id}`">{{ teamName }}</NuxtLinkLocale>
-          <span>/</span>
-          <span>{{ copy.route }}</span>
-        </nav>
+        <BreadcrumbSchema :items="breadcrumbItems" nav-class="team-route-breadcrumb" />
 
         <div class="team-route-hero__content">
           <img
@@ -44,6 +36,7 @@
 
     <section class="team-route-container team-route-content">
       <DataSourceNote kind="schedule" compact />
+      <GeoAnswerBlock :team="team" :match="nextMatch" :group="routeData.group" />
 
       <section class="team-route-grid team-route-grid--top">
         <article class="team-route-card team-route-card--next">
@@ -411,6 +404,13 @@ const copy = computed(() => {
     fullSchedule: 'Full schedule',
   }
 })
+
+const breadcrumbItems = computed(() => [
+  { name: t('nav.home'), path: '/' },
+  { name: t('teams.title'), path: '/teams' },
+  { name: teamName.value, path: `/teams/${team.value.id}` },
+  { name: copy.value.route, path: `/teams/${team.value.id}/world-cup-2026-route` },
+])
 
 const seoDescription = computed(() =>
   `${teamName.value} World Cup 2026 route with next match, local kickoff time, group fixtures, venues, calendar export and official qualification slot notes.`,

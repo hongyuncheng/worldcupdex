@@ -2,6 +2,7 @@
 title: "Road to 2026: A Guide to All 16 Host Cities Across USA, Canada and Mexico"
 description: "From Mexico City to Toronto and Los Angeles — discover every host city, venue and the local culture that will define the first truly continental World Cup."
 publishedAt: "2026-05-15"
+updatedAt: "2026-06-01"
 author: "WorldCupDex Editorial"
 cover: "/images/blog/host-cities-cover.webp"
 tags:
@@ -12,6 +13,12 @@ tags:
 locale: "en"
 draft: false
 ---
+
+## TL;DR
+
+- The 2026 World Cup will be staged across 16 host cities in Canada, Mexico, and the United States.
+- Travel planning matters more than ever because the tournament spans three countries and several time zones.
+- Start with your team's route, then compare match dates before booking transport or accommodation.
 
 The 2026 FIFA World Cup will be the first to span three host countries — the United States, Canada and Mexico — and the first to feature an expanded 48-team format with 104 matches across 16 host cities. For the global football community, that means more matchdays, more iconic venues, and more local stories to discover than any World Cup in history. This guide walks you through every city on the tournament map, the stadium that will host its matches, and what makes the destination worth visiting beyond the football.
 
@@ -100,3 +107,18 @@ A continental World Cup means a new kind of tournament. Fans can follow their te
 Whatever city you visit, whatever team you follow, 2026 will be a World Cup defined by movement, diversity and discovery. The road begins here — pick your destinations, follow your team, and meet the rest of the football world somewhere along the way.
 
 *Looking for more World Cup coverage? Explore [all 48 participating teams](/teams), check the [full match schedule](/schedule), or take the [World Cup IQ Quiz](/quiz) to see how your knowledge stacks up.*
+
+## Sources and official references
+
+- [FIFA: World Cup 2026 tournament hub](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026)
+- [FIFA: World Cup 2026 match centre](https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/match-center)
+
+## Frequently asked questions
+
+### How many host cities are there for the 2026 World Cup?
+
+The tournament will use 16 host cities across Canada, Mexico, and the United States.
+
+### Should I book travel based on one city or my team's route?
+
+Start with your team's likely route and confirmed match dates. The three-country footprint makes transport planning important.

@@ -6,6 +6,14 @@
         <strong>{{ labels.source }}</strong>
         {{ localized(meta.source) }}
       </p>
+      <ul class="data-source-note__sources" :aria-label="labels.links">
+        <li v-for="link in meta.links" :key="link.kind">
+          <a :href="link.url" target="_blank" rel="noopener noreferrer">
+            {{ labels.sourceKinds[link.kind] }}
+          </a>
+          <span v-if="link.official">{{ labels.official }}</span>
+        </li>
+      </ul>
       <p v-if="meta.disclaimer" class="data-source-note__text data-source-note__text--muted">
         {{ localized(meta.disclaimer) }}
       </p>
@@ -39,6 +47,15 @@ const dictionary = {
     yes: 'Yes',
     no: 'No',
     feedback: 'Report an issue',
+    links: 'Verifiable sources',
+    official: 'Official',
+    sourceKinds: {
+      schedule: 'FIFA match schedule',
+      teams: 'FIFA teams',
+      squads: 'FIFA squad announcements',
+      rankings: 'FIFA men’s ranking',
+      tournament: 'FIFA tournament hub',
+    },
   },
   zh: {
     title: '数据透明度',
@@ -48,6 +65,15 @@ const dictionary = {
     yes: '是',
     no: '否',
     feedback: '反馈问题',
+    links: '可核验来源',
+    official: '官方',
+    sourceKinds: {
+      schedule: 'FIFA 赛程',
+      teams: 'FIFA 参赛球队',
+      squads: 'FIFA 名单公告',
+      rankings: 'FIFA 男足排名',
+      tournament: 'FIFA 赛事主页',
+    },
   },
   es: {
     title: 'Transparencia de datos',
@@ -57,6 +83,15 @@ const dictionary = {
     yes: 'Si',
     no: 'No',
     feedback: 'Informar error',
+    links: 'Fuentes verificables',
+    official: 'Oficial',
+    sourceKinds: {
+      schedule: 'Calendario FIFA',
+      teams: 'Selecciones FIFA',
+      squads: 'Anuncios de plantillas FIFA',
+      rankings: 'Ranking masculino FIFA',
+      tournament: 'Portal del torneo FIFA',
+    },
   },
 }
 
@@ -108,6 +143,27 @@ const formattedDate = computed(() => {
 .data-source-note__text--muted {
   margin-top: 3px;
   color: #6A7288;
+}
+.data-source-note__sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  margin: 7px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.data-source-note__sources li {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #6A7288;
+  font-size: 12px;
+}
+.data-source-note__sources a {
+  color: #000F49;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 .data-source-note__facts {
   display: flex;

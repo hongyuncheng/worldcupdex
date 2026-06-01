@@ -1,5 +1,8 @@
 <template>
   <div class="predict-page">
+    <div class="max-w-7xl mx-auto px-4 lg:px-8 pt-5">
+      <BreadcrumbSchema :items="breadcrumbItems" nav-class="breadcrumb-schema" />
+    </div>
     <!-- Hero 区域 -->
     <section class="predict-hero">
       <div class="hero__inner">
@@ -132,6 +135,10 @@ import type { MatchItem } from '~/types'
 
 const { t, locale } = useI18n()
 const { handleAiPredict } = useAiPredict()
+const breadcrumbItems = computed(() => [
+  { name: t('nav.home'), path: '/' },
+  { name: t('nav.predict'), path: '/predict' },
+])
 
 // ─── SEO ───
 useSeoConfig({

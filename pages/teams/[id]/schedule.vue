@@ -9,15 +9,7 @@
 
     <section class="team-schedule-hero">
       <div class="team-schedule-hero__inner">
-        <nav class="team-schedule-breadcrumb">
-          <NuxtLinkLocale to="/">{{ t('nav.home') }}</NuxtLinkLocale>
-          <span>/</span>
-          <NuxtLinkLocale to="/teams">{{ t('teams.title') }}</NuxtLinkLocale>
-          <span>/</span>
-          <NuxtLinkLocale :to="`/teams/${team.id}`">{{ teamName }}</NuxtLinkLocale>
-          <span>/</span>
-          <span>{{ copy.schedule }}</span>
-        </nav>
+        <BreadcrumbSchema :items="breadcrumbItems" nav-class="team-schedule-breadcrumb" />
 
         <div class="team-schedule-hero__content">
           <img
@@ -43,6 +35,7 @@
 
     <section class="team-schedule-content">
       <DataSourceNote kind="schedule" compact />
+      <GeoAnswerBlock :team="team" :match="nextMatch" :group="team.group" />
 
       <div class="team-schedule-tools">
         <div>
@@ -233,6 +226,13 @@ const copy = computed(() => {
     predictions: 'Predictions',
   }
 })
+
+const breadcrumbItems = computed(() => [
+  { name: t('nav.home'), path: '/' },
+  { name: t('teams.title'), path: '/teams' },
+  { name: teamName.value, path: `/teams/${team.value!.id}` },
+  { name: copy.value.schedule, path: `/teams/${team.value!.id}/schedule` },
+])
 
 const seoDescription = computed(() => {
   if (!team.value) return ''

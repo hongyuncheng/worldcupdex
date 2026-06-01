@@ -66,7 +66,7 @@ export function getArticleSchema(opts: {
 
 <script setup lang="ts">
 const props = defineProps<{
-  type: 'Organization' | 'WebSite' | 'SportsTeam' | 'SportsEvent' | 'Quiz' | 'Article'
+  type: 'Organization' | 'WebSite' | 'SportsTeam' | 'SportsEvent' | 'Quiz' | 'Article' | 'BreadcrumbList'
   data: Record<string, any>
 }>()
 

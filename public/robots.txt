@@ -1,3 +1,10 @@
+User-agent: OAI-SearchBot
+Allow: /
+
+# 搜索发现与训练用途分开管理
+User-agent: GPTBot
+Disallow: /
+
 User-agent: *
 Allow: /
 Disallow: /api/
