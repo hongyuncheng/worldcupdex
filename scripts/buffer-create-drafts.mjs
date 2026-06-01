@@ -231,7 +231,9 @@ function createPostInput(post, channelId) {
 }
 
 async function assertPublicUrl(url) {
-  const response = await fetch(url, { method: "HEAD", redirect: "follow" });
+  const cacheBustUrl = new URL(url);
+  cacheBustUrl.searchParams.set("_buffer_check", Date.now().toString());
+  const response = await fetch(cacheBustUrl, { method: "GET", redirect: "follow" });
   if (!response.ok) throw new Error(`Image is not public yet (${response.status}): ${url}`);
   if (!response.headers.get("content-type")?.startsWith("image/")) {
     throw new Error(`URL does not return an image: ${url}`);
