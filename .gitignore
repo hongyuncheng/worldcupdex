@@ -9,5 +9,6 @@ dist
 # data/
 scripts/.env
 .env
+secrets/
 reports/*.md
 scripts/generate-analytics-report.mjs

@@ -18,7 +18,11 @@
     "gsc-auth": "node scripts/gsc-auth.mjs",
     "gsc-report": "node scripts/generate-gsc-report.mjs",
     "ga4-report": "node scripts/generate-ga4-report.mjs",
-    "cf-report": "node scripts/generate-analytics-report.mjs"
+    "cf-report": "node scripts/generate-analytics-report.mjs",
+    "buffer:prepare": "node scripts/buffer-prepare-media.mjs",
+    "buffer:channels": "node scripts/buffer-create-drafts.mjs --list-channels",
+    "buffer:drafts": "node scripts/buffer-create-drafts.mjs",
+    "buffer:drafts:dry-run": "node scripts/buffer-create-drafts.mjs --dry-run"
   },
   "dependencies": {
     "@iconify/vue": "^5.0.1",
