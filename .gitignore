@@ -11,4 +11,5 @@ scripts/.env
 .env
 secrets/
 reports/*.md
+reports/social-promotion-*/buffer-results.json
 scripts/generate-analytics-report.mjs
