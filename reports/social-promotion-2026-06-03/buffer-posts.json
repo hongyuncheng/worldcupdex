@@ -1,0 +1,72 @@
+{
+  "date": "2026-06-03",
+  "strategy": {
+    "instagram": "paused_until_account_review",
+    "riskControls": [
+      "No Instagram draft created",
+      "X has one opinion-only post without a link",
+      "No hard CTA language",
+      "No official/FIFA/team logo claims",
+      "No betting or odds language"
+    ]
+  },
+  "posts": [
+    {
+      "id": "WCD-X-20260603-01",
+      "platform": "twitter",
+      "channelName": "CupDex66613",
+      "text": "A World Cup squad is not a star ranking.\n\nIt is a stress test waiting to happen: one suspension, one tired fullback, one bad travel day, and suddenly the quiet backup matters more than the headline name.\n\nDepth is not glamorous in June. It wins arguments in July.\n\n#WorldCup2026",
+      "imageUrl": "https://worldcupdex.org/social/2026-06-03/x-01-depth-not-stars.png",
+      "altText": "A football analysis desk with a tactics board, plain shirt markers and an empty training pitch in the background."
+    },
+    {
+      "id": "WCD-X-20260603-02",
+      "platform": "twitter",
+      "channelName": "CupDex66613",
+      "text": "8 days to the opener.\n\nThe bigger the tournament gets, the more useful a smaller plan becomes. Pick the team you actually care about. Know the route. Let the rest of the noise stay optional.\n\nFixtures and team paths:\nhttps://worldcupdex.org/teams?utm_source=x&utm_medium=social&utm_campaign=20260603_safer_social&utm_content=x_02_team_paths\n\n#WorldCup2026",
+      "imageUrl": "https://worldcupdex.org/social/2026-06-03/x-02-eight-days-opener.png",
+      "altText": "A street scene outside a large football stadium with fans walking past a vendor's table of plain scarves."
+    },
+    {
+      "id": "WCD-X-20260603-03",
+      "platform": "twitter",
+      "channelName": "CupDex66613",
+      "text": "Trying to follow all 104 matches sounds heroic until the third late kickoff.\n\nThe better move: follow one route closely, then let the surprise matches find you.\n\nBuild a practical match plan:\nhttps://worldcupdex.org/schedule?utm_source=x&utm_medium=social&utm_campaign=20260603_safer_social&utm_content=x_03_match_plan\n\n#WorldCup2026 #WorldCupDex",
+      "imageUrl": "https://worldcupdex.org/social/2026-06-03/x-03-follow-one-team.png",
+      "altText": "A fan planning table with a map, pins, a blank calendar, notebook, scarf and coffee."
+    },
+    {
+      "id": "WCD-PIN-20260603-01",
+      "platform": "pinterest",
+      "channelName": "worldcupdex",
+      "title": "World Cup 2026 Squad Depth Checklist for Fans",
+      "text": "A simple way to look beyond the biggest names: compare squad balance, backup roles and the positions where one injury could change everything. Save this fan checklist before the group stage starts.",
+      "destinationUrl": "https://worldcupdex.org/teams?utm_source=pinterest&utm_medium=social&utm_campaign=20260603_safer_social&utm_content=pin_01_squad_depth",
+      "boardServiceId": "1083115847823823044",
+      "imageUrl": "https://worldcupdex.org/social/2026-06-03/pinterest-01-squad-depth-checklist.png",
+      "altText": "A vertical football squad planning board with plain shirt cards, a checklist and a training pitch view."
+    },
+    {
+      "id": "WCD-PIN-20260603-02",
+      "platform": "pinterest",
+      "channelName": "worldcupdex",
+      "title": "How to Follow One Team Through World Cup 2026",
+      "text": "The 48-team World Cup is easier to enjoy when you start with one team route. Save fixtures, local kickoff times and possible paths, then let the rest of the tournament unfold around it.",
+      "destinationUrl": "https://worldcupdex.org/teams?utm_source=pinterest&utm_medium=social&utm_campaign=20260603_safer_social&utm_content=pin_02_one_team_route",
+      "boardServiceId": "1083115847823823044",
+      "imageUrl": "https://worldcupdex.org/social/2026-06-03/pinterest-02-one-team-route.png",
+      "altText": "A vertical map and route planning table with colored pins, blank notes, coffee and a plain scarf."
+    },
+    {
+      "id": "WCD-PIN-20260603-03",
+      "platform": "pinterest",
+      "channelName": "worldcupdex",
+      "title": "A Simple 104-Match World Cup Planning Board",
+      "text": "World Cup 2026 has 104 matches across three host countries. Instead of chasing every fixture, build a small fan board: your team, must-watch nights and the matches worth saving.",
+      "destinationUrl": "https://worldcupdex.org/schedule?utm_source=pinterest&utm_medium=social&utm_campaign=20260603_safer_social&utm_content=pin_03_104_match_planner",
+      "boardServiceId": "1083115847823823044",
+      "imageUrl": "https://worldcupdex.org/social/2026-06-03/pinterest-03-104-match-planner.png",
+      "altText": "A vertical cork planning board with many plain football shirt cutouts, route markers and fixture strips."
+    }
+  ]
+}
