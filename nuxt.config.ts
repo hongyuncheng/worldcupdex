@@ -226,6 +226,30 @@ const teamRouteRoutes = Array.from(teamRouteTeamIds)
   ]
 })
 
+const predictionRoutes = (teamsData as Array<{ id: string }>).flatMap(team => [
+  `/predictions/${team.id}-world-cup-2026`,
+  `/zh/predictions/${team.id}-world-cup-2026`,
+  `/es/predictions/${team.id}-world-cup-2026`,
+])
+
+const matchPredictionRoutes = (matchesData as Array<{ homeTeam: { id: string }, awayTeam: { id: string } }>).flatMap(match => {
+  const slug = `${match.homeTeam.id}-vs-${match.awayTeam.id}-world-cup-2026`
+  return [
+    `/predictions/match-${slug}`,
+    `/zh/predictions/match-${slug}`,
+    `/es/predictions/match-${slug}`,
+  ]
+})
+
+const staticPromoRoutes = [
+  '/free-world-cup-prediction-card',
+  '/zh/free-world-cup-prediction-card',
+  '/es/free-world-cup-prediction-card',
+  '/ai-world-cup-predictions',
+  '/zh/ai-world-cup-predictions',
+  '/es/ai-world-cup-predictions',
+]
+
 export default defineNuxtConfig({
   compatibilityDate: '2025-05-16',
   devtools: { enabled: true },
@@ -313,6 +337,9 @@ export default defineNuxtConfig({
     urls: [
       ...teamScheduleRoutes,
       ...teamRouteRoutes,
+      ...predictionRoutes,
+      ...matchPredictionRoutes,
+      ...staticPromoRoutes,
     ],
   },
 
@@ -328,6 +355,9 @@ export default defineNuxtConfig({
         '/zh/blog',
         ...teamScheduleRoutes,
         ...teamRouteRoutes,
+        ...predictionRoutes,
+        ...matchPredictionRoutes,
+        ...staticPromoRoutes,
       ],
     },
   },
