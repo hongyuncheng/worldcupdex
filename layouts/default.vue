@@ -137,7 +137,10 @@
       <div class="max-w-7xl mx-auto px-4 lg:px-8 py-4">
         <!-- Compliance links: Privacy / Contact / About -->
         <div class="flex flex-wrap justify-center gap-4 text-sm mb-2" style="color: rgba(255,255,255,0.85); font-family: 'Inter', sans-serif;">
+          <NuxtLinkLocale to="/pricing" class="link link-hover hover:text-[#FFD700] transition-colors">Pricing</NuxtLinkLocale>
+          <NuxtLinkLocale to="/terms" class="link link-hover hover:text-[#FFD700] transition-colors">Terms</NuxtLinkLocale>
           <NuxtLinkLocale to="/privacy" class="link link-hover hover:text-[#FFD700] transition-colors">{{ $t('nav.privacy') }}</NuxtLinkLocale>
+          <NuxtLinkLocale to="/refund" class="link link-hover hover:text-[#FFD700] transition-colors">Refunds</NuxtLinkLocale>
           <NuxtLinkLocale to="/contact" class="link link-hover hover:text-[#FFD700] transition-colors">{{ $t('nav.contact') }}</NuxtLinkLocale>
           <NuxtLinkLocale to="/about" class="link link-hover hover:text-[#FFD700] transition-colors">{{ $t('nav.about') }}</NuxtLinkLocale>
           <a :href="discordUrl" target="_blank" rel="noopener noreferrer" class="link link-hover hover:text-[#5865F2] transition-colors flex items-center gap-1.5 font-semibold">
