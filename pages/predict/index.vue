@@ -50,8 +50,8 @@
           >
             <!-- 左侧日期时间 -->
             <div class="match-item__date">
-              <div class="match-item__date-day">{{ formatDateLine(match.date) }}</div>
-              <div class="match-item__date-time">{{ match.time }}</div>
+              <div class="match-item__date-day">{{ formatDateLine(match) }}</div>
+              <div class="match-item__date-time">{{ formatMatchClock(match, locale, 'venue') }}</div>
             </div>
 
             <!-- 分隔线 -->
@@ -83,7 +83,7 @@
                 <button type="button" class="btn-predict btn-predict--ai" @click.prevent="handleAiPredict(match.homeTeam.nameEn, match.awayTeam.nameEn, 'predict_list_ai_btn')">{{ $t('home.predictAi') }}</button>
                 <AddToCalendarButton :matches="match" dropdownPosition="right" customClass="!p-1 !text-gray-400 hover:!bg-gray-100 !border-transparent" buttonText="" />
               </div>
-              <span class="match-item__deadline">{{ $t('predict.deadline') }}: {{ formatDeadline(match.date, match.time) }}</span>
+              <span class="match-item__deadline">{{ $t('predict.deadline') }}: {{ formatDeadline(match) }}</span>
             </div>
           </div>
 
@@ -184,26 +184,33 @@ const myPredictions = computed(() => {
 })
 
 // ─── 日期行格式化，根据语言切换格式 ───
-function formatDateLine(date: string): string {
-  const d = new Date(date + 'T00:00:00')
+function formatDateLine(match: MatchItem): string {
+  const parts = formatMatchDateParts(match, locale.value, 'venue')
   if (locale.value === 'zh') {
-    const month = d.getMonth() + 1
-    const day = d.getDate()
-    const weekdays = ['日', '一', '二', '三', '四', '五', '六']
-    return `${month}月${day}日 周${weekdays[d.getDay()]}`
+    const weekdays: Record<string, string> = {
+      星期日: '日',
+      星期一: '一',
+      星期二: '二',
+      星期三: '三',
+      星期四: '四',
+      星期五: '五',
+      星期六: '六',
+    }
+    return `${parts.month}月${parts.day}日 周${weekdays[parts.weekday] || parts.weekday}`
   }
-  return d.toLocaleDateString(locale.value === 'es' ? 'es-ES' : 'en-US', {
-    month: 'short', day: 'numeric', weekday: 'short',
-  })
+  return formatMatchShortDate(match, locale.value, 'venue')
 }
 
 // ─── 截止时间 (比赛前1分钟) ───
-function formatDeadline(date: string, time: string): string {
-  const d = new Date(date + 'T' + time)
-  d.setMinutes(d.getMinutes() - 1)
-  const hh = String(d.getHours()).padStart(2, '0')
-  const mm = String(d.getMinutes()).padStart(2, '0')
-  return `${hh}:${mm}:00`
+function formatDeadline(match: MatchItem): string {
+  const deadline = new Date(getMatchDate(match).getTime() - 60 * 1000)
+  return new Intl.DateTimeFormat(locale.value === 'zh' ? 'zh-CN' : locale.value === 'es' ? 'es-ES' : 'en-US', {
+    timeZone: getMatchTimeZone(match),
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hourCycle: 'h23',
+  }).format(deadline)
 }
 
 // ─── 获取队名 ───

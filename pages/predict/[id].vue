@@ -267,14 +267,20 @@ function bestResultKey(result: string) {
   return `h2h.bestResult_${result}`
 }
 
+function formatPredictionCardDate(match: MatchItem) {
+  const parts = formatMatchDateParts(match, locale.value, 'venue')
+  if (locale.value === 'zh') return `${parts.month}月${parts.day}日`
+  if (locale.value === 'es') return `${parts.day}/${parts.month}`
+  return `${parts.month}/${parts.day}`
+}
+
 // ─── 比赛是否已过期/完赛 ───
 const isMatchFinished = computed(() => {
   return !!match.value?.score
 })
 const isMatchLocked = computed(() => {
   if (!match.value) return false
-  const matchTime = new Date(match.value.date + 'T' + match.value.time).getTime()
-  return Date.now() >= matchTime
+  return Date.now() >= getMatchDate(match.value).getTime()
 })
 
 // ─── 解锁处理 ───
@@ -429,7 +435,7 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
 
           <div class="predict-page__match-meta">
             <div class="flex items-center gap-2 justify-center">
-              <span>📅 {{ match.date }} {{ match.time }}</span>
+              <span>📅 {{ formatMatchShortDateTime(match, locale, 'venue') }}</span>
               <AddToCalendarButton 
                 :matches="match" 
                 dropdownPosition="right"
@@ -625,8 +631,8 @@ function getTeamName(team: { nameZh: string; nameEn: string }) {
               :home-team="match.homeTeam"
               :away-team="match.awayTeam"
               :group="match.group"
-              :match-date="match.date"
-              :match-time="match.time"
+              :match-date="formatPredictionCardDate(match)"
+              :match-time="formatMatchClock(match, locale, 'venue')"
               :venue="locale === 'zh' ? match.venue.nameZh : match.venue.name"
               :city="locale === 'zh' ? match.venue.cityZh : match.venue.city"
               :predicted-result="selectedResult!"

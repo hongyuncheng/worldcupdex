@@ -30,7 +30,7 @@
 
         <div class="text-center border-t dark:border-gray-700 pt-8">
           <p class="mb-6 text-lg text-gray-600 dark:text-gray-400">
-            Who do you think will win this {{ match.stage === 'GROUP_STAGE' ? 'Group Stage' : 'Knockout' }} match on {{ match.date }}?
+            Who do you think will win this {{ match.stage === 'GROUP_STAGE' ? 'Group Stage' : 'Knockout' }} match on {{ formatMatchShortDateTime(match, 'en', 'venue') }}?
           </p>
           <NuxtLink :to="`/predict/${match.id}`" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-full text-lg transition duration-300 inline-block shadow-md">
             Predict the Winner Now
@@ -95,7 +95,7 @@ const faqSchemaData = computed(() => {
         "name": `When is the ${match.value.homeTeam.nameEn} vs ${match.value.awayTeam.nameEn} match?`,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `The match between ${match.value.homeTeam.nameEn} and ${match.value.awayTeam.nameEn} is scheduled for ${match.value.date}.`
+            "text": `The match between ${match.value.homeTeam.nameEn} and ${match.value.awayTeam.nameEn} is scheduled for ${formatMatchShortDateTime(match.value, 'en', 'venue')}.`
         }
       },
       {
