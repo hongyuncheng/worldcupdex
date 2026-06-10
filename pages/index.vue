@@ -91,7 +91,7 @@
                   <div class="text-[11px] text-white/90 mb-2 flex justify-between items-center font-medium">
                     <span class="bg-white/20 px-2 py-0.5 rounded">{{ $t(`common.${match.stage}`) }}</span>
                     <div class="flex items-center gap-1.5">
-                      <span class="text-white">{{ formatLocalTime(match.timestamp) }}</span>
+                      <span class="text-white">{{ formatLocalTime(match) }}</span>
                       <AddToCalendarButton 
                         :matches="match" 
                         dropdownPosition="right"

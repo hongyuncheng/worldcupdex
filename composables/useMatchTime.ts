@@ -22,7 +22,8 @@ const venueTimeZonesByCity: Record<string, string> = {
 
 export type MatchTimeMode = 'venue' | 'local'
 
-export function getMatchDate(match: Pick<MatchItem, 'date' | 'time' | 'timestamp'>): Date {
+export function getMatchDate(match?: Pick<MatchItem, 'date' | 'time' | 'timestamp'> | null): Date {
+  if (!match) return new Date(Number.NaN)
   if (Number.isFinite(match.timestamp)) return new Date(match.timestamp)
   return new Date(`${match.date}T${match.time || '00:00'}:00Z`)
 }
