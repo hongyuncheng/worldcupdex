@@ -240,7 +240,7 @@
           :team2-name="locale === 'zh' ? match.awayTeam.nameZh : match.awayTeam.nameEn"
           :team2-name-en="match.awayTeam.nameEn"
           :team2-flag="match.awayTeam.flag"
-          :date="formatMatchDate(match.date, match.time)"
+          :date="formatMatchDate(match)"
           :venue="locale === 'zh' ? match.venue.nameZh : match.venue.name"
         />
       </div>
@@ -476,13 +476,12 @@ const upcomingFavoriteMatches = computed(() => {
   })
 
   // 仅显示还未结束的比赛（score为空），并按时间排序，取前两场
-  const upcoming = favMatches.filter(m => !m.score).sort((a, b) => a.timestamp - b.timestamp)
+  const upcoming = favMatches.filter(m => !m.score).sort((a, b) => getMatchDate(a).getTime() - getMatchDate(b).getTime())
   return upcoming.slice(0, 2)
 })
 
-function formatLocalTime(timestamp: number) {
-  if (!timestamp) return ''
-  return new Intl.DateTimeFormat(locale.value, { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' }).format(new Date(timestamp))
+function formatLocalTime(match: MatchItem) {
+  return formatMatchShortDateTime(match, locale.value, 'local')
 }
 
 // Fallback placeholder keys for CountdownTimer (rendered during SSR)
@@ -526,19 +525,16 @@ function scrollTeams() {
 void scrollTeams
 
 // Date formatting helper
-function formatMatchDate(dateStr: string, time: string): string {
-  const parts = dateStr.split('-')
-  if (parts.length !== 3) return dateStr
-
-  const month = parseInt(parts[1], 10)
-  const day = parseInt(parts[2], 10)
+function formatMatchDate(match: MatchItem): string {
+  const parts = formatMatchDateParts(match, locale.value, 'venue')
+  const time = formatMatchClock(match, locale.value, 'venue')
 
   if (locale.value === 'zh') {
-    return `${month}月${day}日 ${time}`
+    return `${parts.month}月${parts.day}日 ${time}`
   } else if (locale.value === 'es') {
-    return `${day}/${month} ${time}`
+    return `${parts.day}/${parts.month} ${time}`
   } else {
-    return `${month}/${day} ${time}`
+    return `${parts.month}/${parts.day} ${time}`
   }
 }
 
