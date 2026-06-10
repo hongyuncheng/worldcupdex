@@ -5,16 +5,25 @@
   "code": "mx",
   "group": "A",
   "confederation": "CONCACAF",
-  "fifaRank": 16,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/mx.png",
   "coach": {
     "nameEn": "Javier Aguirre",
-    "nameZh": "哈维尔·阿吉雷",
-    "nationality": ""
+    "nameZh": "Javier Aguirre",
+    "nationality": "Mexico"
   },
   "founded": 1927,
-  "venue": "Levi's Stadium",
+  "venue": "",
   "squad": [
+    {
+      "name": "Guillermo Ochoa",
+      "nameZh": "Guillermo Ochoa",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1985-07-13",
+      "nationality": "Mexico",
+      "shirtNumber": null
+    },
     {
       "name": "Carlos Acevedo",
       "nameZh": "Carlos Acevedo",
@@ -34,6 +43,123 @@
       "shirtNumber": null
     },
     {
+      "name": "Jesús Gallardo",
+      "nameZh": "Jesús Gallardo",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1994-08-15",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/syauia1776427423.png",
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/syauia1776427423.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9ytdlu1633943700.jpg"
+    },
+    {
+      "name": "César Montes",
+      "nameZh": "César Montes",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-02-24",
+      "nationality": "Mexico",
+      "shirtNumber": null
+    },
+    {
+      "name": "Johan Vásquez",
+      "nameZh": "Johan Vásquez",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-10-22",
+      "nationality": "Mexico",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jorge Sánchez",
+      "nameZh": "Jorge Sánchez",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-12-10",
+      "nationality": "Mexico",
+      "shirtNumber": null
+    },
+    {
+      "name": "Israel Reyes",
+      "nameZh": "Israel Reyes",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-05-23",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gopczi1750327134.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/gopczi1750327134.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tgo7f11718257649.jpg"
+    },
+    {
+      "name": "Mateo Chávez",
+      "nameZh": "Mateo Chávez",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2004-05-12",
+      "nationality": "Mexico",
+      "shirtNumber": null
+    },
+    {
+      "name": "Edson Álvarez",
+      "nameZh": "Edson Álvarez",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-10-24",
+      "nationality": "Mexico",
+      "shirtNumber": null
+    },
+    {
+      "name": "Orbelín Pineda",
+      "nameZh": "Orbelín Pineda",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1996-03-24",
+      "nationality": "Mexico",
+      "shirtNumber": null
+    },
+    {
+      "name": "Luis Chávez",
+      "nameZh": "Luis Chávez",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1996-01-15",
+      "nationality": "Mexico",
+      "shirtNumber": null
+    },
+    {
+      "name": "Luis Romo",
+      "nameZh": "Luis Romo",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1995-06-05",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/w5g1po1716821279.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/w5g1po1716821279.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/itb8ss1630152227.jpg"
+    },
+    {
+      "name": "Erik Lira",
+      "nameZh": "Erik Lira",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-05-08",
+      "nationality": "Mexico",
+      "shirtNumber": null
+    },
+    {
+      "name": "Álvaro Fidalgo",
+      "nameZh": "Álvaro Fidalgo",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-04-09",
+      "nationality": "Spain",
+      "shirtNumber": null
+    },
+    {
       "name": "Brian Gutiérrez",
       "nameZh": "Brian Gutiérrez",
       "position": "Midfield",
@@ -46,85 +172,46 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xvievy1641399205.jpg"
     },
     {
+      "name": "Obed Vargas",
+      "nameZh": "Obed Vargas",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2005-08-05",
+      "nationality": "Mexico",
+      "shirtNumber": null
+    },
+    {
       "name": "Gilberto Mora",
       "nameZh": "Gilberto Mora",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
+      "position": "Midfield",
+      "positionZh": "中场",
       "dateOfBirth": "2008-10-14",
       "nationality": "Mexico",
       "shirtNumber": null
     },
     {
-      "name": "Armando González",
-      "nameZh": "Armando González",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "2003-04-20",
+      "name": "Raúl Jiménez",
+      "nameZh": "Raúl Jiménez",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1991-05-05",
       "nationality": "Mexico",
       "shirtNumber": null
     },
     {
-      "name": "Israel Reyes",
-      "nameZh": "Israel Reyes",
-      "position": "Right-Back",
-      "positionZh": "Right-Back",
-      "dateOfBirth": "2000-05-23",
-      "nationality": "Mexico",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gopczi1750327134.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/gopczi1750327134.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tgo7f11718257649.jpg"
-    },
-    {
-      "name": "Erik Lira",
-      "nameZh": "埃里克·利拉",
-      "position": "Defensive Midfield",
-      "positionZh": "Defensive Midfield",
-      "dateOfBirth": "2000-05-08",
-      "nationality": "Mexico",
+      "name": "Julián Quiñones",
+      "nameZh": "Julián Quiñones",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1997-03-24",
+      "nationality": "Colombia",
       "shirtNumber": null
-    },
-    {
-      "name": "Luis Romo",
-      "nameZh": "路易斯·罗莫",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "1995-06-05",
-      "nationality": "Mexico",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/w5g1po1716821279.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/w5g1po1716821279.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/itb8ss1630152227.jpg"
-    },
-    {
-      "name": "Guillermo Martínez",
-      "nameZh": "Guillermo Martínez",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "1995-03-15",
-      "nationality": "Mexico",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/j0m63f1716820105.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/j0m63f1716820105.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5fsmaq1716820014.jpg"
-    },
-    {
-      "name": "Alexis Vega",
-      "nameZh": "阿莱克西斯·贝加",
-      "position": "Left Winger",
-      "positionZh": "Left Winger",
-      "dateOfBirth": "1997-11-25",
-      "nationality": "Mexico",
-      "shirtNumber": null,
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/0mmqo91776412620.png",
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/0mmqo91776412620.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bhp6641630155739.jpg"
     },
     {
       "name": "Roberto Alvarado",
-      "nameZh": "罗伯托·阿尔瓦拉多",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
+      "nameZh": "Roberto Alvarado",
+      "position": "Offence",
+      "positionZh": "前锋",
       "dateOfBirth": "1998-09-07",
       "nationality": "Mexico",
       "shirtNumber": null,
@@ -133,20 +220,59 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/87rtz01630164375.jpg"
     },
     {
-      "name": "Jesús Gallardo",
-      "nameZh": "赫苏斯·加亚尔多",
-      "position": "Left-Back",
-      "positionZh": "Left-Back",
-      "dateOfBirth": "1994-08-15",
+      "name": "Santiago Giménez",
+      "nameZh": "Santiago Giménez",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-04-18",
+      "nationality": "Mexico",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alexis Vega",
+      "nameZh": "Alexis Vega",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1997-11-25",
       "nationality": "Mexico",
       "shirtNumber": null,
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/syauia1776427423.png",
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/syauia1776427423.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9ytdlu1633943700.jpg"
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/0mmqo91776412620.png",
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/0mmqo91776412620.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bhp6641630155739.jpg"
+    },
+    {
+      "name": "Guillermo Martínez",
+      "nameZh": "Guillermo Martínez",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1995-03-15",
+      "nationality": "Mexico",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/j0m63f1716820105.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/j0m63f1716820105.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5fsmaq1716820014.jpg"
+    },
+    {
+      "name": "César Huerta",
+      "nameZh": "César Huerta",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-12-03",
+      "nationality": "Mexico",
+      "shirtNumber": null
+    },
+    {
+      "name": "Armando González",
+      "nameZh": "Armando González",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2003-04-20",
+      "nationality": "Mexico",
+      "shirtNumber": null
     }
   ],
-  "recentMatches": [],
   "squadStatus": "incomplete",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

@@ -3,17 +3,17 @@
   "nameZh": "日本",
   "nameEn": "Japan",
   "code": "jp",
-  "group": "E",
+  "group": "F",
   "confederation": "AFC",
-  "fifaRank": 15,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/jp.png",
   "coach": {
     "nameEn": "Hajime Moriyasu",
     "nameZh": "森保一",
-    "nationality": ""
+    "nationality": "Japan"
   },
   "founded": 1921,
-  "venue": "Stadion Galgenwaard",
+  "venue": "",
   "squad": [
     {
       "name": "Keisuke Ōsako",
@@ -63,6 +63,61 @@
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Yuto_Nagatomo_in_2018.jpg?width=500"
     },
     {
+      "name": "Takehiro Tomiyasu",
+      "nameZh": "Takehiro Tomiyasu",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-11-05",
+      "nationality": "Japan",
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Takehiro_Tomiyasu,_2019_AFC_Asian_Cup_1.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Takehiro_Tomiyasu,_2019_AFC_Asian_Cup_1.jpg?width=500"
+    },
+    {
+      "name": "Hiroki Ito",
+      "nameZh": "Hiroki Ito",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-05-12",
+      "nationality": "Japan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Yukinari Sugawara",
+      "nameZh": "Yukinari Sugawara",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-06-28",
+      "nationality": "Japan",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9znmfg1763666295.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9znmfg1763666295.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2a85n91679158480.jpg"
+    },
+    {
+      "name": "Ko Itakura",
+      "nameZh": "Ko Itakura",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-01-27",
+      "nationality": "Japan",
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kō_Itakura_-_板倉堰.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Kō_Itakura_-_板倉堰.jpg?width=500"
+    },
+    {
+      "name": "Shogo Taniguchi",
+      "nameZh": "Shogo Taniguchi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1991-07-15",
+      "nationality": "Japan",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jo3sz21767196242.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/jo3sz21767196242.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ppe91r1668623199.jpg"
+    },
+    {
       "name": "Ayumu Seko",
       "nameZh": "Ayumu Seko",
       "position": "Defence",
@@ -87,16 +142,74 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/j2g80k1683813405.jpg"
     },
     {
-      "name": "Shogo Taniguchi",
-      "nameZh": "Shogo Taniguchi",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1991-07-15",
+      "name": "Junnosuke Suzuki",
+      "nameZh": "Junnosuke Suzuki",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2003-07-12",
       "nationality": "Japan",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jo3sz21767196242.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/jo3sz21767196242.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ppe91r1668623199.jpg"
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/duood61779016362.png",
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/duood61779016362.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ufudlf1762288681.jpg"
+    },
+    {
+      "name": "Wataru Endō",
+      "nameZh": "Wataru Endō",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1993-02-09",
+      "nationality": "Japan",
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Wataru_endo.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Wataru_endo.jpg?width=500"
+    },
+    {
+      "name": "Daichi Kamada",
+      "nameZh": "Daichi Kamada",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1996-08-05",
+      "nationality": "Japan",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xajscx1761492482.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xajscx1761492482.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ol23bf1772140877.jpg"
+    },
+    {
+      "name": "Takefusa Kubo",
+      "nameZh": "久保建英",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-06-04",
+      "nationality": "Japan",
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Takefusa_Kubo_2019.png?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Takefusa_Kubo_2019.png?width=500"
+    },
+    {
+      "name": "Keito Nakamura",
+      "nameZh": "Keito Nakamura",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-07-28",
+      "nationality": "Japan",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rvg6ub1678454947.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rvg6ub1678454947.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/6blhf21678454876.jpg"
+    },
+    {
+      "name": "Ao Tanaka",
+      "nameZh": "Ao Tanaka",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-09-10",
+      "nationality": "Japan",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xptxxr1424975941.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xptxxr1424975941.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/wwsxtv1432843083.jpg"
     },
     {
       "name": "Kaishu Sano",
@@ -111,20 +224,32 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ux088i1741702335.jpg"
     },
     {
-      "name": "Junnosuke Suzuki",
-      "nameZh": "Junnosuke Suzuki",
+      "name": "Yuito Suzuki",
+      "nameZh": "Yuito Suzuki",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "2003-07-12",
+      "dateOfBirth": "2001-10-25",
       "nationality": "Japan",
       "shirtNumber": null,
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/duood61779016362.png",
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/duood61779016362.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ufudlf1762288681.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/f0e6t11763329132.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/f0e6t11763329132.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/06wuk11681570896.jpg"
+    },
+    {
+      "name": "Ritsu Doan",
+      "nameZh": "Ritsu Doan",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1998-06-16",
+      "nationality": "Japan",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6526j01762287692.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6526j01762287692.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iwhry11605453793.jpg"
     },
     {
       "name": "Daizen Maeda",
-      "nameZh": "前田大然",
+      "nameZh": "Daizen Maeda",
       "position": "Offence",
       "positionZh": "前锋",
       "dateOfBirth": "1997-10-20",
@@ -135,16 +260,40 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/b7h2mt1668618535.jpg"
     },
     {
-      "name": "Yuito Suzuki",
-      "nameZh": "Yuito Suzuki",
+      "name": "Koki Ogawa",
+      "nameZh": "Koki Ogawa",
       "position": "Offence",
       "positionZh": "前锋",
-      "dateOfBirth": "2001-10-25",
+      "dateOfBirth": "1997-08-08",
       "nationality": "Japan",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/f0e6t11763329132.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/f0e6t11763329132.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/06wuk11681570896.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8lo6s51759758672.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8lo6s51759758672.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7o2k3r1701020512.jpg"
+    },
+    {
+      "name": "Junya Ito",
+      "nameZh": "Junya Ito",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1993-03-09",
+      "nationality": "Japan",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/sl5pc01767641839.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/sl5pc01767641839.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iunpjk1668541347.jpg"
+    },
+    {
+      "name": "Ayase Ueda",
+      "nameZh": "Ayase Ueda",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1998-08-28",
+      "nationality": "Japan",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5ezc8v1758188908.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5ezc8v1758188908.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/l14g0v1668623556.jpg"
     },
     {
       "name": "Kento Shiogai",
@@ -169,159 +318,10 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ek0h0b1767196386.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ek0h0b1767196386.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gd2i271767196523.jpg"
-    },
-    {
-      "name": "Ayase Ueda",
-      "nameZh": "上田绮世",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "1998-09-10",
-      "nationality": "Japan",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5ezc8v1758188908.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5ezc8v1758188908.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/l14g0v1668623556.jpg"
-    },
-    {
-      "name": "Ao Tanaka",
-      "nameZh": "田中碧",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "1998-09-10",
-      "nationality": "Japan",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xptxxr1424975941.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xptxxr1424975941.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/wwsxtv1432843083.jpg"
-    },
-    {
-      "name": "Junya Ito",
-      "nameZh": "伊东纯也",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
-      "dateOfBirth": "1993-03-09",
-      "nationality": "Japan",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/sl5pc01767641839.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/sl5pc01767641839.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iunpjk1668541347.jpg"
-    },
-    {
-      "name": "Ko Itakura",
-      "nameZh": "Ko Itakura",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1997-01-27",
-      "nationality": "Japan",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kō_Itakura_-_板倉堰.jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Kō_Itakura_-_板倉堰.jpg?width=500"
-    },
-    {
-      "name": "Yukinari Sugawara",
-      "nameZh": "菅原由势",
-      "position": "Right-Back",
-      "positionZh": "Right-Back",
-      "dateOfBirth": "2000-06-28",
-      "nationality": "Japan",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9znmfg1763666295.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9znmfg1763666295.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2a85n91679158480.jpg"
-    },
-    {
-      "name": "Koki Ogawa",
-      "nameZh": "Koki Ogawa",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "1997-08-08",
-      "nationality": "Japan",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8lo6s51759758672.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8lo6s51759758672.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7o2k3r1701020512.jpg"
-    },
-    {
-      "name": "Hiroki Ito",
-      "nameZh": "伊藤洋辉",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1999-05-12",
-      "nationality": "Japan",
-      "shirtNumber": null
-    },
-    {
-      "name": "Keito Nakamura",
-      "nameZh": "中村敬斗",
-      "position": "Left Winger",
-      "positionZh": "Left Winger",
-      "dateOfBirth": "2000-07-28",
-      "nationality": "Japan",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rvg6ub1678454947.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rvg6ub1678454947.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/6blhf21678454876.jpg"
-    },
-    {
-      "name": "Takefusa Kubo",
-      "nameZh": "久保建英",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
-      "dateOfBirth": "2001-06-04",
-      "nationality": "Japan",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Takefusa_Kubo_2019.png?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Takefusa_Kubo_2019.png?width=500"
-    },
-    {
-      "name": "Takehiro Tomiyasu",
-      "nameZh": "Takehiro Tomiyasu",
-      "position": "Right-Back",
-      "positionZh": "Right-Back",
-      "dateOfBirth": "1998-11-05",
-      "nationality": "Japan",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Takehiro_Tomiyasu,_2019_AFC_Asian_Cup_1.jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Takehiro_Tomiyasu,_2019_AFC_Asian_Cup_1.jpg?width=500"
-    },
-    {
-      "name": "Ritsu Doan",
-      "nameZh": "堂安律",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
-      "dateOfBirth": "1998-06-16",
-      "nationality": "Japan",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6526j01762287692.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6526j01762287692.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iwhry11605453793.jpg"
-    },
-    {
-      "name": "Daichi Kamada",
-      "nameZh": "镰田大地",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
-      "dateOfBirth": "1996-08-05",
-      "nationality": "Japan",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xajscx1761492482.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xajscx1761492482.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ol23bf1772140877.jpg"
-    },
-    {
-      "name": "Wataru Endō",
-      "nameZh": "Wataru Endō",
-      "position": "Defensive Midfield",
-      "positionZh": "Defensive Midfield",
-      "dateOfBirth": "1993-02-09",
-      "nationality": "Japan",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Wataru_endo.jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Wataru_endo.jpg?width=500"
     }
   ],
-  "recentMatches": [],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

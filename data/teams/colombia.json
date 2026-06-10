@@ -3,14 +3,14 @@
   "nameZh": "哥伦比亚",
   "nameEn": "Colombia",
   "code": "co",
-  "group": "A",
+  "group": "K",
   "confederation": "CONMEBOL",
-  "fifaRank": 12,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/co.png",
   "coach": {
     "nameEn": "Néstor Lorenzo",
-    "nameZh": "内斯托尔·洛伦佐",
-    "nationality": ""
+    "nameZh": "内斯托尔·洛伦索",
+    "nationality": "Argentina"
   },
   "founded": 1924,
   "venue": "",
@@ -29,7 +29,7 @@
     },
     {
       "name": "David Ospina",
-      "nameZh": "大卫·奥斯皮纳",
+      "nameZh": "David Ospina",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1988-08-31",
@@ -64,16 +64,106 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0sagca1534441163.jpg"
     },
     {
-      "name": "Juan Fernando Quintero",
-      "nameZh": "胡安·费尔南多·金特罗",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1993-01-18",
+      "name": "Johan Mojica",
+      "nameZh": "Johan Mojica",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1992-08-21",
       "nationality": "Colombia",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ysk0b21764106676.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ysk0b21764106676.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/vidnzx1716470939.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8uf3w61762524256.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8uf3w61762524256.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/hgpitb1724400403.jpg"
+    },
+    {
+      "name": "Yerry Mina",
+      "nameZh": "Yerry Mina",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1994-09-23",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Davinson Sánchez",
+      "nameZh": "Davinson Sánchez",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-06-12",
+      "nationality": "Colombia",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fwqgth1769178122.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/fwqgth1769178122.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ukweyz1703592911.jpg"
+    },
+    {
+      "name": "Deiver Machado",
+      "nameZh": "Deiver Machado",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1993-09-02",
+      "nationality": "Colombia",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lgl06t1765877830.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lgl06t1765877830.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/vfxnyi1631111885.jpg"
+    },
+    {
+      "name": "Daniel Muñoz",
+      "nameZh": "Daniel Muñoz",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-05-26",
+      "nationality": "Colombia",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qoxqre1761492462.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qoxqre1761492462.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/uj6kg51623859002.jpg"
+    },
+    {
+      "name": "Jhon Lucumí",
+      "nameZh": "Jhon Lucumí",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-06-26",
+      "nationality": "Colombia",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kifz5o1758896707.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/kifz5o1758896707.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/r7hnhc1723963266.jpg"
+    },
+    {
+      "name": "Willer Ditta",
+      "nameZh": "Willer Ditta",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-01-23",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "James Rodríguez",
+      "nameZh": "James Rodríguez",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1991-07-12",
+      "nationality": "Colombia",
+      "shirtNumber": null,
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/2604ez1778161086.png",
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/2604ez1778161086.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yvnyty1565443385.jpg"
+    },
+    {
+      "name": "Jefferson Lerma",
+      "nameZh": "Jefferson Lerma",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1994-10-25",
+      "nationality": "Colombia",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5h7eyz1772141174.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5h7eyz1772141174.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yvbhxc1772141189.jpg"
     },
     {
       "name": "Jhon Arias",
@@ -112,6 +202,15 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/re6wit1723963135.jpg"
     },
     {
+      "name": "Juan Quintero",
+      "nameZh": "Juan Quintero",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1993-01-18",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
       "name": "Jaminton Campaz",
       "nameZh": "Jaminton Campaz",
       "position": "Midfield",
@@ -136,6 +235,27 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3sivzv1725066629.jpg"
     },
     {
+      "name": "Juan Portilla",
+      "nameZh": "Juan Portilla",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-09-12",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Gustavo Puerta",
+      "nameZh": "Gustavo Puerta",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2003-07-23",
+      "nationality": "Colombia",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/i8ab5x1724962808.jpg",
+      "photoCutout": null,
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i8ab5x1724962808.jpg"
+    },
+    {
       "name": "Jhon Córdoba",
       "nameZh": "Jhon Córdoba",
       "position": "Offence",
@@ -148,16 +268,16 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/keihnd1725067643.jpg"
     },
     {
-      "name": "Johan Carbonero",
-      "nameZh": "Johan Carbonero",
+      "name": "Luis Díaz",
+      "nameZh": "Luis Díaz",
       "position": "Offence",
       "positionZh": "前锋",
-      "dateOfBirth": "1999-07-20",
+      "dateOfBirth": "1997-01-13",
       "nationality": "Colombia",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/uqrblo1767558080.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/uqrblo1767558080.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yr0dl01716469260.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/emmcyf1756408968.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/emmcyf1756408968.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i4s5pw1770543222.jpg"
     },
     {
       "name": "Luis Suárez",
@@ -172,161 +292,26 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nd8zl11770024667.jpg"
     },
     {
-      "name": "Carlos Andrés Gómez",
-      "nameZh": "Carlos Andrés Gómez",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
-      "dateOfBirth": "2002-09-22",
+      "name": "Cucho Hernández",
+      "nameZh": "Cucho Hernández",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1999-04-20",
       "nationality": "Colombia",
       "shirtNumber": null
     },
     {
-      "name": "Gustavo Puerta",
-      "nameZh": "Gustavo Puerta",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "2003-07-23",
+      "name": "Carlos Gómez",
+      "nameZh": "Carlos Gómez",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2002-09-12",
       "nationality": "Colombia",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/i8ab5x1724962808.jpg",
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i8ab5x1724962808.jpg"
-    },
-    {
-      "name": "Yerson Mosquera",
-      "nameZh": "Yerson Mosquera",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "2001-05-02",
-      "nationality": "Colombia",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/heac4r1725565715.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/heac4r1725565715.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iygv581772032682.jpg"
-    },
-    {
-      "name": "Juan Cabal",
-      "nameZh": "Juan Cabal",
-      "position": "Left-Back",
-      "positionZh": "Left-Back",
-      "dateOfBirth": "2001-01-08",
-      "nationality": "Colombia",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qbfpln1759225060.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qbfpln1759225060.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gkryi81724146194.jpg"
-    },
-    {
-      "name": "Luis Díaz",
-      "nameZh": "路易斯·迪亚斯",
-      "position": "Left Winger",
-      "positionZh": "Left Winger",
-      "dateOfBirth": "1997-01-13",
-      "nationality": "Colombia",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/emmcyf1756408968.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/emmcyf1756408968.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i4s5pw1770543222.jpg"
-    },
-    {
-      "name": "Jhon Lucumí",
-      "nameZh": "Jhon Lucumí",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1998-06-26",
-      "nationality": "Colombia",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kifz5o1758896707.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/kifz5o1758896707.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/r7hnhc1723963266.jpg"
-    },
-    {
-      "name": "Daniel Muñoz",
-      "nameZh": "Daniel Muñoz",
-      "position": "Right-Back",
-      "positionZh": "Right-Back",
-      "dateOfBirth": "1996-05-26",
-      "nationality": "Colombia",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qoxqre1761492462.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qoxqre1761492462.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/uj6kg51623859002.jpg"
-    },
-    {
-      "name": "Rafael Borré",
-      "nameZh": "拉斐尔·博雷",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "1995-09-15",
-      "nationality": "Colombia",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tsfv7s1767558322.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tsfv7s1767558322.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7joipx1650006024.jpg"
-    },
-    {
-      "name": "Deiver Machado",
-      "nameZh": "Deiver Machado",
-      "position": "Left-Back",
-      "positionZh": "Left-Back",
-      "dateOfBirth": "1993-09-02",
-      "nationality": "Colombia",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lgl06t1765877830.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lgl06t1765877830.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/vfxnyi1631111885.jpg"
-    },
-    {
-      "name": "Jefferson Lerma",
-      "nameZh": "杰弗森·莱尔马",
-      "position": "Defensive Midfield",
-      "positionZh": "Defensive Midfield",
-      "dateOfBirth": "1994-10-25",
-      "nationality": "Colombia",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5h7eyz1772141174.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5h7eyz1772141174.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yvbhxc1772141189.jpg"
-    },
-    {
-      "name": "Davinson Sánchez",
-      "nameZh": "达文森·桑切斯",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1996-06-12",
-      "nationality": "Colombia",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fwqgth1769178122.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/fwqgth1769178122.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ukweyz1703592911.jpg"
-    },
-    {
-      "name": "Johan Mojica",
-      "nameZh": "Johan Mojica",
-      "position": "Left-Back",
-      "positionZh": "Left-Back",
-      "dateOfBirth": "1992-08-21",
-      "nationality": "Colombia",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8uf3w61762524256.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8uf3w61762524256.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/hgpitb1724400403.jpg"
-    },
-    {
-      "name": "James Rodríguez",
-      "nameZh": "哈梅斯·罗德里格斯",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
-      "dateOfBirth": "1991-07-12",
-      "nationality": "Colombia",
-      "shirtNumber": null,
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/2604ez1778161086.png",
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/2604ez1778161086.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yvnyty1565443385.jpg"
+      "shirtNumber": null
     }
   ],
-  "recentMatches": [],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

@@ -5,12 +5,12 @@
   "code": "py",
   "group": "D",
   "confederation": "CONMEBOL",
-  "fifaRank": 39,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/py.png",
   "coach": {
-    "nameEn": "Alfaro Moreno",
-    "nameZh": "阿尔法罗·莫雷诺",
-    "nationality": ""
+    "nameEn": "Gustavo Alfaro",
+    "nameZh": "古斯塔沃·阿尔法罗",
+    "nationality": "Argentina"
   },
   "founded": 1906,
   "venue": "",
@@ -21,7 +21,7 @@
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "1993-04-21",
-      "nationality": "Uruguay",
+      "nationality": "Paraguay",
       "shirtNumber": null
     },
     {
@@ -85,16 +85,16 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/j86qux1629469673.jpg"
     },
     {
-      "name": "Nicolás Fernández",
-      "nameZh": "Nicolás Fernández",
+      "name": "Omar Alderete",
+      "nameZh": "Omar Alderete",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "1998-03-02",
-      "nationality": "Uruguay",
+      "dateOfBirth": "1996-12-26",
+      "nationality": "Paraguay",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/9kgtx91715625750.jpg",
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9kgtx91715625750.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jny02g1756903939.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/jny02g1756903939.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ieybgs1606749169.jpg"
     },
     {
       "name": "Juan Cáceres",
@@ -109,18 +109,6 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i75q401754402141.jpg"
     },
     {
-      "name": "Alan Benitez",
-      "nameZh": "Alan Benitez",
-      "position": "Defence",
-      "positionZh": "后卫",
-      "dateOfBirth": "1994-01-25",
-      "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ku5led1767558490.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ku5led1767558490.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3utpgw1662391562.jpg"
-    },
-    {
       "name": "Gustavo Velázquez",
       "nameZh": "Gustavo Velázquez",
       "position": "Defence",
@@ -133,6 +121,18 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7hkw3p1716825424.jpg"
     },
     {
+      "name": "José Canale",
+      "nameZh": "José Canale",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-07-20",
+      "nationality": "Paraguay",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/j79gba1764933319.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/j79gba1764933319.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/872ips1764933239.jpg"
+    },
+    {
       "name": "Alexandro Maidana",
       "nameZh": "Alexandro Maidana",
       "position": "Defence",
@@ -142,12 +142,42 @@
       "shirtNumber": null
     },
     {
+      "name": "Andrés Cubas",
+      "nameZh": "Andrés Cubas",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1996-05-11",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kaku",
+      "nameZh": "Kaku",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1995-01-11",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Miguel Almirón",
+      "nameZh": "Miguel Almirón",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1994-02-10",
+      "nationality": "Paraguay",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/35lxqh1757447624.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/35lxqh1757447624.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pfmcgv1665915778.jpg"
+    },
+    {
       "name": "Mauricio",
       "nameZh": "Mauricio",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "2001-06-22",
-      "nationality": "Brazil",
+      "nationality": "Paraguay",
       "shirtNumber": null,
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tpsysv1424977861.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tpsysv1424977861.png",
@@ -190,28 +220,28 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/fhquot1767799708.jpg"
     },
     {
-      "name": "Gustavo Caballero",
-      "nameZh": "Gustavo Caballero",
+      "name": "Diego Gómez",
+      "nameZh": "Diego Gómez",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "2001-09-21",
+      "dateOfBirth": "2003-03-27",
       "nationality": "Paraguay",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6cohox1767781247.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6cohox1767781247.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/dmymf31767781182.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/alorj01756993808.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/alorj01756993808.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mpmz961772016796.jpg"
     },
     {
-      "name": "Lucas Romero",
-      "nameZh": "Lucas Romero",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "2002-08-29",
+      "name": "Antonio Sanabria",
+      "nameZh": "Antonio Sanabria",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1996-03-04",
       "nationality": "Paraguay",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/efz9tw1767454513.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/efz9tw1767454513.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/k7cidp1767454547.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3vkhoo1758886470.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3vkhoo1758886470.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gtfkf11503229618.jpg"
     },
     {
       "name": "Gabriel Ávalos",
@@ -226,6 +256,51 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/c6olwm1715699177.jpg"
     },
     {
+      "name": "Isidro Pitta",
+      "nameZh": "Isidro Pitta",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1999-08-14",
+      "nationality": "Paraguay",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ramón Sosa",
+      "nameZh": "Ramón Sosa",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1999-08-31",
+      "nationality": "Paraguay",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8x4cso1767691390.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8x4cso1767691390.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i47sag1767691355.jpg"
+    },
+    {
+      "name": "Julio Enciso",
+      "nameZh": "Julio Enciso",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2004-01-23",
+      "nationality": "Paraguay",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/mvazxz1766053932.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/mvazxz1766053932.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ftjgw81661021582.jpg"
+    },
+    {
+      "name": "Gustavo Caballero",
+      "nameZh": "Gustavo Caballero",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-09-21",
+      "nationality": "Paraguay",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6cohox1767781247.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6cohox1767781247.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/dmymf31767781182.jpg"
+    },
+    {
       "name": "Alex Arce",
       "nameZh": "Alex Arce",
       "position": "Offence",
@@ -236,94 +311,10 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7r2uma1764333620.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7r2uma1764333620.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jzznyw1723918235.jpg"
-    },
-    {
-      "name": "Diego Gómez",
-      "nameZh": "Diego Gómez",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "2003-03-27",
-      "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/alorj01756993808.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/alorj01756993808.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mpmz961772016796.jpg"
-    },
-    {
-      "name": "José Canale",
-      "nameZh": "José Canale",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1996-07-20",
-      "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/j79gba1764933319.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/j79gba1764933319.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/872ips1764933239.jpg"
-    },
-    {
-      "name": "Julio Enciso",
-      "nameZh": "Julio Enciso",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
-      "dateOfBirth": "2004-01-23",
-      "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/mvazxz1766053932.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/mvazxz1766053932.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ftjgw81661021582.jpg"
-    },
-    {
-      "name": "Ramón Sosa",
-      "nameZh": "Ramón Sosa",
-      "position": "Left Winger",
-      "positionZh": "Left Winger",
-      "dateOfBirth": "1999-08-31",
-      "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8x4cso1767691390.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8x4cso1767691390.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i47sag1767691355.jpg"
-    },
-    {
-      "name": "Miguel Almirón",
-      "nameZh": "Miguel Almirón",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
-      "dateOfBirth": "1994-02-10",
-      "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/35lxqh1757447624.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/35lxqh1757447624.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pfmcgv1665915778.jpg"
-    },
-    {
-      "name": "Omar Alderete",
-      "nameZh": "Omar Alderete",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1996-12-26",
-      "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/jny02g1756903939.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/jny02g1756903939.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ieybgs1606749169.jpg"
-    },
-    {
-      "name": "Antonio Sanabria",
-      "nameZh": "Antonio Sanabria",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "1996-03-04",
-      "nationality": "Paraguay",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3vkhoo1758886470.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3vkhoo1758886470.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gtfkf11503229618.jpg"
     }
   ],
-  "recentMatches": [],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

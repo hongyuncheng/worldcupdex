@@ -1,14 +1,16 @@
 {
-  "scheduleLastUpdated": "2026-05-25T00:00:00Z",
-  "teamsLastUpdated": "2026-05-25T00:00:00Z",
-  "squadsLastUpdated": "2026-05-25T00:00:00Z",
-  "rankingsLastUpdated": "2026-05-25T00:00:00Z",
-  "source": "initial-migration",
+  "scheduleLastUpdated": "2026-06-10T08:32:49.716Z",
+  "teamsLastUpdated": "2026-06-10T07:25:10.080Z",
+  "squadsLastUpdated": "2026-06-10T07:31:27.336Z",
+  "rankingsLastUpdated": "2026-06-10T07:25:10.080Z",
+  "source": "official-schedule-venues",
   "sourceUrls": {
     "schedule": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
     "teams": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams",
     "squads": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
     "rankings": "https://inside.fifa.com/fifa-world-ranking/men",
-    "tournament": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026"
+    "tournament": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
+    "scheduleVenueTable": "https://www.britannica.com/event/2026-FIFA-World-Cup",
+    "knockoutVenueCrossCheck": "https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket"
   }
 }

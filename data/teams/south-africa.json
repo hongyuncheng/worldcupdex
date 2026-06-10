@@ -3,14 +3,14 @@
   "nameZh": "南非",
   "nameEn": "South Africa",
   "code": "za",
-  "group": "I",
+  "group": "A",
   "confederation": "CAF",
-  "fifaRank": 34,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/za.png",
   "coach": {
     "nameEn": "Hugo Broos",
-    "nameZh": "雨果·布鲁斯",
-    "nationality": ""
+    "nameZh": "Hugo Broos",
+    "nationality": "Belgium"
   },
   "founded": 1991,
   "venue": "",
@@ -26,6 +26,15 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kd7edx1750875629.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/kd7edx1750875629.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5i9esk1751086301.jpg"
+    },
+    {
+      "name": "Sipho Chaine",
+      "nameZh": "Sipho Chaine",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1996-12-14",
+      "nationality": "South Africa",
+      "shirtNumber": null
     },
     {
       "name": "Ricardo Goss",
@@ -59,6 +68,36 @@
       "photo": "https://www.thesportsdb.com/images/media/player/cutout/m45e0b1777992147.png",
       "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/m45e0b1777992147.png",
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/rvftvr1777992083.jpg"
+    },
+    {
+      "name": "Khuliso Mudau",
+      "nameZh": "Khuliso Mudau",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-04-26",
+      "nationality": "South Africa",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ods0zi1750875546.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ods0zi1750875546.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i0cq7o1706105807.jpg"
+    },
+    {
+      "name": "Olwethu Makhanya",
+      "nameZh": "Olwethu Makhanya",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2004-04-30",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Bradley Cross",
+      "nameZh": "Bradley Cross",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-01-30",
+      "nationality": "South Africa",
+      "shirtNumber": null
     },
     {
       "name": "Samukelo Kabini",
@@ -133,27 +172,6 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4124n61751085355.jpg"
     },
     {
-      "name": "Khuliso Mudau",
-      "nameZh": "Khuliso Mudau",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1995-04-26",
-      "nationality": "South Africa",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ods0zi1750875546.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ods0zi1750875546.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i0cq7o1706105807.jpg"
-    },
-    {
-      "name": "Oswin Appollis",
-      "nameZh": "Oswin Appollis",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "2001-08-25",
-      "nationality": "South Africa",
-      "shirtNumber": null
-    },
-    {
       "name": "Sphephelo Sithole",
       "nameZh": "Sphephelo Sithole",
       "position": "Midfield",
@@ -179,20 +197,11 @@
       "nameZh": "Thapelo Maseko",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "2002-11-11",
+      "dateOfBirth": "2003-11-11",
       "nationality": "South Africa",
       "shirtNumber": null,
       "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Go_Ahead_Eagles_-_Mamelodi_Sundowns_FC_-_53066145739.jpg?width=500",
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Go_Ahead_Eagles_-_Mamelodi_Sundowns_FC_-_53066145739.jpg?width=500"
-    },
-    {
-      "name": "Relebohile Mofokeng",
-      "nameZh": "Relebohile Mofokeng",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "2004-10-23",
-      "nationality": "South Africa",
-      "shirtNumber": null
     },
     {
       "name": "Thalente Mbatha",
@@ -204,25 +213,43 @@
       "shirtNumber": null
     },
     {
-      "name": "Tshepang Moremi",
-      "nameZh": "Tshepang Moremi",
+      "name": "Kamogelo Sebelebele",
+      "nameZh": "Kamogelo Sebelebele",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "2000-10-02",
+      "dateOfBirth": "2002-07-21",
       "nationality": "South Africa",
       "shirtNumber": null
     },
     {
-      "name": "Bongokuhle Hlongwane",
-      "nameZh": "Bongokuhle Hlongwane",
+      "name": "Lyle Foster",
+      "nameZh": "Lyle Foster",
       "position": "Offence",
       "positionZh": "前锋",
-      "dateOfBirth": "2000-06-20",
+      "dateOfBirth": "2000-09-04",
       "nationality": "South Africa",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/n6r7bg1766426097.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/n6r7bg1766426097.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/48crnx1652881700.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0fo5fd1757174497.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0fo5fd1757174497.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/svdhbu1772369157.jpg"
+    },
+    {
+      "name": "Oswin Appollis",
+      "nameZh": "Oswin Appollis",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-08-25",
+      "nationality": "South Africa",
+      "shirtNumber": null
+    },
+    {
+      "name": "Iqraam Rayners",
+      "nameZh": "Iqraam Rayners",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1995-12-19",
+      "nationality": "South Africa",
+      "shirtNumber": null
     },
     {
       "name": "Evidence Makgopa",
@@ -237,20 +264,26 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/lmp3081705589519.jpg"
     },
     {
-      "name": "Lyle Foster",
-      "nameZh": "Lyle Foster",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "2000-09-04",
+      "name": "Relebohile Mofokeng",
+      "nameZh": "Relebohile Mofokeng",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2004-10-23",
       "nationality": "South Africa",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0fo5fd1757174497.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0fo5fd1757174497.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/svdhbu1772369157.jpg"
+      "shirtNumber": null
+    },
+    {
+      "name": "Tshepang Moremi",
+      "nameZh": "Tshepang Moremi",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-10-02",
+      "nationality": "South Africa",
+      "shirtNumber": null
     }
   ],
-  "recentMatches": [],
   "squadStatus": "incomplete",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

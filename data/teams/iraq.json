@@ -3,18 +3,27 @@
   "nameZh": "伊拉克",
   "nameEn": "Iraq",
   "code": "iq",
-  "group": "",
+  "group": "I",
   "confederation": "",
-  "fifaRank": 50,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/iq.png",
   "coach": {
-    "nameEn": "Jesús Casas",
-    "nameZh": "赫苏斯·卡萨斯",
-    "nationality": ""
+    "nameEn": "Graham Arnold",
+    "nameZh": "格雷厄姆·阿诺德",
+    "nationality": "Australia"
   },
   "founded": 1948,
   "venue": "",
   "squad": [
+    {
+      "name": "Jalal Hassan",
+      "nameZh": "Jalal Hassan",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1991-05-18",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
     {
       "name": "Fahad Talib",
       "nameZh": "Fahad Talib",
@@ -36,31 +45,16 @@
       "shirtNumber": null
     },
     {
-      "name": "Kumel Al Rekabe",
-      "nameZh": "Kumel Al Rekabe",
-      "position": "Goalkeeper",
-      "positionZh": "门将",
-      "dateOfBirth": "2004-08-19",
-      "nationality": "Iraq",
-      "shirtNumber": null
-    },
-    {
-      "name": "Frans Dhia Putros",
-      "nameZh": "Frans Dhia Putros",
+      "name": "Hussein Ali",
+      "nameZh": "Hussein Ali",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "1993-07-14",
+      "dateOfBirth": "2002-03-01",
       "nationality": "Iraq",
-      "shirtNumber": null
-    },
-    {
-      "name": "Maytham Jabbar",
-      "nameZh": "Maytham Jabbar",
-      "position": "Defence",
-      "positionZh": "后卫",
-      "dateOfBirth": "2000-11-10",
-      "nationality": "Iraq",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/35b2qb1728931694.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/35b2qb1728931694.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7takw11701263808.jpg"
     },
     {
       "name": "Merchas Doski",
@@ -85,6 +79,33 @@
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/240519_FC_서울_포토타임_(Rebin_Sulaka).jpg?width=500"
     },
     {
+      "name": "Mustafa Saadoun",
+      "nameZh": "Mustafa Saadoun",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-05-25",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ahmed Yahya",
+      "nameZh": "Ahmed Yahya",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-07-01",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Frans Putros",
+      "nameZh": "Frans Putros",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1993-07-14",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
       "name": "Zaid Tahseen",
       "nameZh": "Zaid Tahseen",
       "position": "Defence",
@@ -103,20 +124,11 @@
       "shirtNumber": null
     },
     {
-      "name": "Ahmed Maknazi",
-      "nameZh": "Ahmed Maknazi",
+      "name": "Akam Hashem",
+      "nameZh": "Akam Hashem",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "2001-09-24",
-      "nationality": "Iraq",
-      "shirtNumber": null
-    },
-    {
-      "name": "Zaid Ismail",
-      "nameZh": "Zaid Ismail",
-      "position": "Defence",
-      "positionZh": "后卫",
-      "dateOfBirth": "2002-01-03",
+      "dateOfBirth": "1998-08-16",
       "nationality": "Iraq",
       "shirtNumber": null
     },
@@ -133,15 +145,6 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/l4yhxn1718051391.jpg"
     },
     {
-      "name": "Peter Gwargis",
-      "nameZh": "Peter Gwargis",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "2000-09-04",
-      "nationality": "Sweden",
-      "shirtNumber": null
-    },
-    {
       "name": "Kevin Yakob",
       "nameZh": "Kevin Yakob",
       "position": "Midfield",
@@ -152,15 +155,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fpov9x1765314414.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/fpov9x1765314414.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/utmajp1701812435.jpg"
-    },
-    {
-      "name": "Karar Nabeel",
-      "nameZh": "Karar Nabeel",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1998-01-16",
-      "nationality": "Iraq",
-      "shirtNumber": null
     },
     {
       "name": "Aimar Sher",
@@ -197,29 +191,32 @@
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/4822944_AE7I9304_(cropped).jpg?width=500"
     },
     {
-      "name": "Marko Farji",
-      "nameZh": "Marko Farji",
+      "name": "Ahmed Qasem",
+      "nameZh": "Ahmed Qasem",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "2004-03-16",
+      "dateOfBirth": "2003-07-12",
       "nationality": "Iraq",
       "shirtNumber": null
     },
     {
-      "name": "Hasan Abdulkareem",
-      "nameZh": "Hasan Abdulkareem",
+      "name": "Zidane Iqbal",
+      "nameZh": "Zidane Iqbal",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "1999-01-01",
+      "dateOfBirth": "2003-04-27",
       "nationality": "Iraq",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/m60b8d1723059508.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/m60b8d1723059508.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/zbtnwy1697485915.jpg"
     },
     {
-      "name": "Akam Hashem",
-      "nameZh": "Akam Hashem",
+      "name": "Zaid Ismail",
+      "nameZh": "Zaid Ismail",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "1998-08-16",
+      "dateOfBirth": "2002-01-03",
       "nationality": "Iraq",
       "shirtNumber": null
     },
@@ -235,6 +232,36 @@
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/AH_(cropped).jpg?width=500"
     },
     {
+      "name": "Ali Al-Hamadi",
+      "nameZh": "Ali Al-Hamadi",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2002-03-01",
+      "nationality": "Iraq",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/c2vni01766070789.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/c2vni01766070789.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/kwj85e1667753198.jpg"
+    },
+    {
+      "name": "Marko Farji",
+      "nameZh": "Marko Farji",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2004-03-16",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ali Jassim El-Aibi",
+      "nameZh": "Ali Jassim El-Aibi",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2004-01-20",
+      "nationality": "Iraq",
+      "shirtNumber": null
+    },
+    {
       "name": "Mohanad Ali",
       "nameZh": "Mohanad Ali",
       "position": "Offence",
@@ -246,53 +273,17 @@
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Mohanad_Ali.jpg?width=500"
     },
     {
-      "name": "Ali Jassim El-Aibi",
-      "nameZh": "Ali Jassim El-Aibi",
-      "position": "Left Winger",
-      "positionZh": "Left Winger",
-      "dateOfBirth": "2004-01-20",
+      "name": "Ali Yousif",
+      "nameZh": "Ali Yousif",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1996-01-19",
       "nationality": "Iraq",
       "shirtNumber": null
-    },
-    {
-      "name": "Ali Al-Hamadi",
-      "nameZh": "Ali Al-Hamadi",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "2002-03-01",
-      "nationality": "Iraq",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/c2vni01766070789.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/c2vni01766070789.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/kwj85e1667753198.jpg"
-    },
-    {
-      "name": "Zidane Iqbal",
-      "nameZh": "Zidane Iqbal",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "2003-04-27",
-      "nationality": "Iraq",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/m60b8d1723059508.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/m60b8d1723059508.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/zbtnwy1697485915.jpg"
-    },
-    {
-      "name": "Hussein Ali",
-      "nameZh": "Hussein Ali",
-      "position": "Right-Back",
-      "positionZh": "Right-Back",
-      "dateOfBirth": "2002-03-01",
-      "nationality": "Iraq",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/35b2qb1728931694.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/35b2qb1728931694.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7takw11701263808.jpg"
     }
   ],
-  "recentMatches": [],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

@@ -3,17 +3,17 @@
   "nameZh": "美国",
   "nameEn": "United States",
   "code": "us",
-  "group": "B",
+  "group": "D",
   "confederation": "CONCACAF",
-  "fifaRank": 17,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/us.png",
   "coach": {
     "nameEn": "Mauricio Pochettino",
     "nameZh": "毛里西奥·波切蒂诺",
-    "nationality": ""
+    "nationality": "Argentina"
   },
   "founded": 1913,
-  "venue": "Raymond James Stadium",
+  "venue": "",
   "squad": [
     {
       "name": "Matt Turner",
@@ -52,16 +52,28 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qnxahd1641383839.jpg"
     },
     {
-      "name": "Patrick Schulte",
-      "nameZh": "Patrick Schulte",
-      "position": "Goalkeeper",
-      "positionZh": "门将",
-      "dateOfBirth": "2001-03-13",
+      "name": "Antonee Robinson",
+      "nameZh": "Antonee Robinson",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-08-08",
       "nationality": "USA",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7llyfe1766428010.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7llyfe1766428010.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/eapjj41663331297.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q5wlej1757070520.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q5wlej1757070520.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/310oc61772026492.jpg"
+    },
+    {
+      "name": "Tim Ream",
+      "nameZh": "Tim Ream",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1987-10-05",
+      "nationality": "USA",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lbav9r1771754456.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lbav9r1771754456.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mld9co1771754514.jpg"
     },
     {
       "name": "Miles Robinson",
@@ -88,6 +100,51 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/dschej1641660200.jpg"
     },
     {
+      "name": "Mark McKenzie",
+      "nameZh": "Mark McKenzie",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-02-25",
+      "nationality": "USA",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2f11kz1765967134.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/2f11kz1765967134.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rn0lhd1717947263.jpg"
+    },
+    {
+      "name": "Joseph Scally",
+      "nameZh": "Joseph Scally",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2002-12-31",
+      "nationality": "USA",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5i06fh1756313309.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5i06fh1756313309.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yuvee01628889417.jpg"
+    },
+    {
+      "name": "Sergiño Dest",
+      "nameZh": "Sergiño Dest",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-11-03",
+      "nationality": "USA",
+      "shirtNumber": null
+    },
+    {
+      "name": "Chris Richards",
+      "nameZh": "Chris Richards",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-03-28",
+      "nationality": "USA",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/l1yb8m1761492382.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/l1yb8m1761492382.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/b5mhg01772141314.jpg"
+    },
+    {
       "name": "Alex Freeman",
       "nameZh": "Alex Freeman",
       "position": "Defence",
@@ -98,6 +155,27 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9ik1yx1766511635.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9ik1yx1766511635.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tg90jm1661805422.jpg"
+    },
+    {
+      "name": "Weston McKennie",
+      "nameZh": "韦斯顿·麦肯尼",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-08-28",
+      "nationality": "USA",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ct34v01759225325.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ct34v01759225325.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/k5lx3p1621545726.jpg"
+    },
+    {
+      "name": "Alejandro Zendejas",
+      "nameZh": "Alejandro Zendejas",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-02-07",
+      "nationality": "USA",
+      "shirtNumber": null
     },
     {
       "name": "Cristian Roldan",
@@ -112,6 +190,39 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qjzo2x1547923285.jpg"
     },
     {
+      "name": "Tyler Adams",
+      "nameZh": "Tyler Adams",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-02-14",
+      "nationality": "USA",
+      "shirtNumber": null
+    },
+    {
+      "name": "Brenden Aaronson",
+      "nameZh": "Brenden Aaronson",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2000-10-22",
+      "nationality": "USA",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tt8t951757075870.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tt8t951757075870.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/giy6s01610921052.jpg"
+    },
+    {
+      "name": "Gio Reyna",
+      "nameZh": "Gio Reyna",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-11-13",
+      "nationality": "USA",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xsovcs1762966653.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xsovcs1762966653.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/w6fpka1585494268.jpg"
+    },
+    {
       "name": "Sebastian Berhalter",
       "nameZh": "Sebastian Berhalter",
       "position": "Midfield",
@@ -124,6 +235,75 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gz2uk71679513092.jpg"
     },
     {
+      "name": "Malik Tillman",
+      "nameZh": "Malik Tillman",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-05-28",
+      "nationality": "USA",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8d8h2y1756316767.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8d8h2y1756316767.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/hebcen1631044913.jpg"
+    },
+    {
+      "name": "Christian Pulisic",
+      "nameZh": "克里斯蒂安·普利希奇",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1998-09-18",
+      "nationality": "USA",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qwii9r1758893548.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qwii9r1758893548.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/40pxda1669799830.jpg"
+    },
+    {
+      "name": "Tim Weah",
+      "nameZh": "Tim Weah",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-02-22",
+      "nationality": "USA",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/mxdwu11766153578.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/mxdwu11766153578.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jol9jt1533466615.jpg"
+    },
+    {
+      "name": "Haji Wright",
+      "nameZh": "Haji Wright",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1998-03-27",
+      "nationality": "USA",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ricardo Pepi",
+      "nameZh": "Ricardo Pepi",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2003-01-09",
+      "nationality": "USA",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xmhafw1764595238.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xmhafw1764595238.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/lrow6b1660051462.jpg"
+    },
+    {
+      "name": "Folarin Balogun",
+      "nameZh": "Folarin Balogun",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-07-03",
+      "nationality": "USA",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rpqt0c1766237910.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rpqt0c1766237910.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/wk1dt01719528941.jpg"
+    },
+    {
       "name": "Max Arfsten",
       "nameZh": "Max Arfsten",
       "position": "Offence",
@@ -134,211 +314,10 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wk51wq1766427990.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wk51wq1766427990.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5h0jko1688388866.jpg"
-    },
-    {
-      "name": "Patrick Agyemang",
-      "nameZh": "Patrick Agyemang",
-      "position": "Offence",
-      "positionZh": "前锋",
-      "dateOfBirth": "2000-11-07",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4000552.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/4000552.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qw8nti1738184150.jpg"
-    },
-    {
-      "name": "Malik Tillman",
-      "nameZh": "Malik Tillman",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
-      "dateOfBirth": "2002-05-28",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8d8h2y1756316767.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8d8h2y1756316767.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/hebcen1631044913.jpg"
-    },
-    {
-      "name": "Tanner Tessmann",
-      "nameZh": "Tanner Tessmann",
-      "position": "Defensive Midfield",
-      "positionZh": "Defensive Midfield",
-      "dateOfBirth": "2001-09-24",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/txkxbo1766146622.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/txkxbo1766146622.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mgn5cn1632944365.jpg"
-    },
-    {
-      "name": "Aidan Morris",
-      "nameZh": "Aidan Morris",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "2001-11-16",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/0owrpq1761830382.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/0owrpq1761830382.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nf5id81608041123.jpg"
-    },
-    {
-      "name": "Gio Reyna",
-      "nameZh": "吉奥·雷纳",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
-      "dateOfBirth": "2002-11-13",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xsovcs1762966653.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xsovcs1762966653.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/w6fpka1585494268.jpg"
-    },
-    {
-      "name": "Folarin Balogun",
-      "nameZh": "福拉林·巴洛贡",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "2001-07-03",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rpqt0c1766237910.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rpqt0c1766237910.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/wk1dt01719528941.jpg"
-    },
-    {
-      "name": "Johnny",
-      "nameZh": "Johnny",
-      "position": "Defensive Midfield",
-      "positionZh": "Defensive Midfield",
-      "dateOfBirth": "2001-09-20",
-      "nationality": "USA",
-      "shirtNumber": null
-    },
-    {
-      "name": "Ricardo Pepi",
-      "nameZh": "Ricardo Pepi",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "2003-01-09",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xmhafw1764595238.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xmhafw1764595238.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/lrow6b1660051462.jpg"
-    },
-    {
-      "name": "Brenden Aaronson",
-      "nameZh": "布伦登·阿伦森",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
-      "dateOfBirth": "2000-10-22",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tt8t951757075870.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tt8t951757075870.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/giy6s01610921052.jpg"
-    },
-    {
-      "name": "Chris Richards",
-      "nameZh": "Chris Richards",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "2000-03-28",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/l1yb8m1761492382.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/l1yb8m1761492382.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/b5mhg01772141314.jpg"
-    },
-    {
-      "name": "Joseph Scally",
-      "nameZh": "Joseph Scally",
-      "position": "Right-Back",
-      "positionZh": "Right-Back",
-      "dateOfBirth": "2002-12-31",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/5i06fh1756313309.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/5i06fh1756313309.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yuvee01628889417.jpg"
-    },
-    {
-      "name": "Mark McKenzie",
-      "nameZh": "Mark McKenzie",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1999-02-25",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2f11kz1765967134.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/2f11kz1765967134.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rn0lhd1717947263.jpg"
-    },
-    {
-      "name": "Tim Weah",
-      "nameZh": "蒂莫西·韦阿",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
-      "dateOfBirth": "2000-02-22",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/mxdwu11766153578.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/mxdwu11766153578.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jol9jt1533466615.jpg"
-    },
-    {
-      "name": "Weston McKennie",
-      "nameZh": "韦斯顿·麦肯尼",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "1998-08-28",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ct34v01759225325.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ct34v01759225325.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/k5lx3p1621545726.jpg"
-    },
-    {
-      "name": "Tim Ream",
-      "nameZh": "Tim Ream",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1987-10-05",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lbav9r1771754456.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lbav9r1771754456.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mld9co1771754514.jpg"
-    },
-    {
-      "name": "Antonee Robinson",
-      "nameZh": "Antonee Robinson",
-      "position": "Left-Back",
-      "positionZh": "Left-Back",
-      "dateOfBirth": "1997-08-08",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q5wlej1757070520.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q5wlej1757070520.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/310oc61772026492.jpg"
-    },
-    {
-      "name": "Christian Pulisic",
-      "nameZh": "克里斯蒂安·普利西奇",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
-      "dateOfBirth": "1998-09-18",
-      "nationality": "USA",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qwii9r1758893548.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qwii9r1758893548.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/40pxda1669799830.jpg"
     }
   ],
-  "recentMatches": [],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

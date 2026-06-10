@@ -3,14 +3,14 @@
   "nameZh": "厄瓜多尔",
   "nameEn": "Ecuador",
   "code": "ec",
-  "group": "A",
+  "group": "E",
   "confederation": "CONMEBOL",
-  "fifaRank": 28,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/ec.png",
   "coach": {
     "nameEn": "Sebastián Beccacece",
-    "nameZh": "塞巴斯蒂安·贝卡塞塞",
-    "nationality": ""
+    "nameZh": "Sebastián Beccacece",
+    "nationality": "Argentina"
   },
   "founded": 1925,
   "venue": "",
@@ -28,16 +28,13 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/a3j9uz1717175074.jpg"
     },
     {
-      "name": "David Cabezas",
-      "nameZh": "David Cabezas",
+      "name": "Gonzalo Valle",
+      "nameZh": "Gonzalo Valle",
       "position": "Goalkeeper",
       "positionZh": "门将",
-      "dateOfBirth": "1995-06-12",
+      "dateOfBirth": "1996-02-28",
       "nationality": "Ecuador",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/thumb/cg43pd1548187775.jpg",
-      "photoCutout": null,
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/cg43pd1548187775.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Moisés Ramírez",
@@ -50,15 +47,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/thumb/o5h2k91717175779.jpg",
       "photoCutout": null,
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/o5h2k91717175779.jpg"
-    },
-    {
-      "name": "Gonzalo Valle",
-      "nameZh": "Gonzalo Valle",
-      "position": "Goalkeeper",
-      "positionZh": "门将",
-      "dateOfBirth": "1960-04-08",
-      "nationality": "",
-      "shirtNumber": null
     },
     {
       "name": "Ángelo Preciado",
@@ -85,25 +73,49 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/p2cvim1717177138.jpg"
     },
     {
-      "name": "Leonardo Realpe",
-      "nameZh": "Leonardo Realpe",
+      "name": "Pervis Estupiñán",
+      "nameZh": "Pervis Estupiñán",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "2001-02-26",
+      "dateOfBirth": "1998-01-21",
+      "nationality": "Ecuador",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qc2kib1758892363.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qc2kib1758892363.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/vuzi4g1604867431.jpg"
+    },
+    {
+      "name": "William Pacho",
+      "nameZh": "William Pacho",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-10-16",
       "nationality": "Ecuador",
       "shirtNumber": null
     },
     {
-      "name": "José Hurtado",
-      "nameZh": "José Hurtado",
+      "name": "Jackson Porozo",
+      "nameZh": "Jackson Porozo",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "2001-12-23",
+      "dateOfBirth": "2000-08-04",
       "nationality": "Ecuador",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/eaxanf1766834998.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/eaxanf1766834998.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2hj29t1717181625.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/uzoed21668544710.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/uzoed21668544710.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yl2g2b1717180011.jpg"
+    },
+    {
+      "name": "Piero Hincapié",
+      "nameZh": "Piero Hincapié",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2002-01-09",
+      "nationality": "Ecuador",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7dltx01769330396.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7dltx01769330396.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/c7dpnp1769332212.jpg"
     },
     {
       "name": "Joel Ordoñez",
@@ -118,22 +130,16 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ei6m671717177985.jpg"
     },
     {
-      "name": "Bryan Ramírez",
-      "nameZh": "Bryan Ramírez",
+      "name": "Yaimar Medina",
+      "nameZh": "Yaimar Medina",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "2000-08-11",
+      "dateOfBirth": "2004-11-05",
       "nationality": "Ecuador",
-      "shirtNumber": null
-    },
-    {
-      "name": "Janner Corozo",
-      "nameZh": "Janner Corozo",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1995-09-08",
-      "nationality": "Ecuador",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fnesac1767641951.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/fnesac1767641951.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/akphab1767540890.jpg"
     },
     {
       "name": "Alan Franco",
@@ -160,16 +166,40 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bkjnza1641305759.jpg"
     },
     {
-      "name": "Anthony Valencia",
-      "nameZh": "Anthony Valencia",
+      "name": "Gonzalo Plata",
+      "nameZh": "Gonzalo Plata",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "2003-07-21",
+      "dateOfBirth": "2000-11-01",
       "nationality": "Ecuador",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9oieu71767980537.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9oieu71767980537.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9o97hw1767979562.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/sdclx01751003063.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/sdclx01751003063.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0ile871668542657.jpg"
+    },
+    {
+      "name": "Moisés Caicedo",
+      "nameZh": "Moisés Caicedo",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-11-02",
+      "nationality": "Ecuador",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/u3feyy1757002398.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/u3feyy1757002398.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/b32gfw1771426837.jpg"
+    },
+    {
+      "name": "Pedro Vite",
+      "nameZh": "Pedro Vite",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-03-09",
+      "nationality": "Ecuador",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7bgdk81683141166.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7bgdk81683141166.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jp890g1652281216.jpg"
     },
     {
       "name": "Alan Minda",
@@ -182,18 +212,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7ejsp81767799895.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7ejsp81767799895.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/w387l51767801780.jpg"
-    },
-    {
-      "name": "Yaimar Medina",
-      "nameZh": "Yaimar Medina",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "2004-11-05",
-      "nationality": "Ecuador",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fnesac1767641951.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/fnesac1767641951.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/akphab1767540890.jpg"
     },
     {
       "name": "Ray Paez",
@@ -220,27 +238,6 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gcjwdu1742899394.jpg"
     },
     {
-      "name": "Jeremy",
-      "nameZh": "Jeremy",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "2005-03-19",
-      "nationality": "Spain",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/repk0t1497097596.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/repk0t1497097596.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/x1hins1527519697.jpg"
-    },
-    {
-      "name": "Elias Legendre Quiñonez",
-      "nameZh": "Elias Legendre Quiñonez",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "2008-04-22",
-      "nationality": "Ecuador",
-      "shirtNumber": null
-    },
-    {
       "name": "Jordy Caicedo",
       "nameZh": "Jordy Caicedo",
       "position": "Offence",
@@ -265,76 +262,10 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/dakcfv1767607482.jpg"
     },
     {
-      "name": "Gonzalo Plata",
-      "nameZh": "Gonzalo Plata",
-      "position": "Offence",
-      "positionZh": "前锋",
-      "dateOfBirth": "2000-11-01",
-      "nationality": "Ecuador",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/sdclx01751003063.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/sdclx01751003063.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0ile871668542657.jpg"
-    },
-    {
-      "name": "Pedro Vite",
-      "nameZh": "Pedro Vite",
-      "position": "Offence",
-      "positionZh": "前锋",
-      "dateOfBirth": "2002-03-09",
-      "nationality": "Ecuador",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7bgdk81683141166.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7bgdk81683141166.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jp890g1652281216.jpg"
-    },
-    {
-      "name": "John Mercado",
-      "nameZh": "John Mercado",
-      "position": "Offence",
-      "positionZh": "前锋",
-      "dateOfBirth": "2002-06-03",
-      "nationality": "Ecuador",
-      "shirtNumber": null
-    },
-    {
-      "name": "Moisés Caicedo",
-      "nameZh": "Moisés Caicedo",
-      "position": "Defensive Midfield",
-      "positionZh": "Defensive Midfield",
-      "dateOfBirth": "2001-11-02",
-      "nationality": "Ecuador",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/u3feyy1757002398.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/u3feyy1757002398.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/b32gfw1771426837.jpg"
-    },
-    {
-      "name": "Jackson Porozo",
-      "nameZh": "Jackson Porozo",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "2000-08-04",
-      "nationality": "Ecuador",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/uzoed21668544710.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/uzoed21668544710.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yl2g2b1717180011.jpg"
-    },
-    {
-      "name": "William Pacho",
-      "nameZh": "William Pacho",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "2001-10-16",
-      "nationality": "Ecuador",
-      "shirtNumber": null
-    },
-    {
       "name": "John Yeboah",
       "nameZh": "John Yeboah",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
+      "position": "Offence",
+      "positionZh": "前锋",
       "dateOfBirth": "2000-06-23",
       "nationality": "Ecuador",
       "shirtNumber": null,
@@ -343,32 +274,50 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xv21mj1735536238.jpg"
     },
     {
-      "name": "Pervis Estupiñán",
-      "nameZh": "Pervis Estupiñán",
-      "position": "Left-Back",
-      "positionZh": "Left-Back",
-      "dateOfBirth": "1998-01-21",
+      "name": "Anthony Valencia",
+      "nameZh": "Anthony Valencia",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2003-07-21",
       "nationality": "Ecuador",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qc2kib1758892363.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qc2kib1758892363.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/vuzi4g1604867431.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9oieu71767980537.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9oieu71767980537.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9o97hw1767979562.jpg"
     },
     {
-      "name": "Piero Hincapié",
-      "nameZh": "Piero Hincapié",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "2002-01-09",
+      "name": "Nilson Angulo",
+      "nameZh": "Nilson Angulo",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2003-06-19",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kevin Rodríguez",
+      "nameZh": "Kevin Rodríguez",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-03-04",
+      "nationality": "Ecuador",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jeremy",
+      "nameZh": "Jeremy",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2005-03-19",
       "nationality": "Ecuador",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7dltx01769330396.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7dltx01769330396.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/c7dpnp1769332212.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/repk0t1497097596.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/repk0t1497097596.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/x1hins1527519697.jpg"
     }
   ],
-  "recentMatches": [],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

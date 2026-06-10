@@ -291,18 +291,11 @@ function getVenueCity(match: MatchItem): string {
 }
 
 function formatDay(match: MatchItem): string {
-  return new Intl.DateTimeFormat(locale.value === 'zh' ? 'zh-CN' : locale.value === 'es' ? 'es-ES' : 'en-US', {
-    month: 'short',
-    day: 'numeric',
-    weekday: 'short',
-  }).format(new Date(match.timestamp))
+  return formatMatchShortDate(match, locale.value, 'venue')
 }
 
 function formatTime(match: MatchItem): string {
-  return new Intl.DateTimeFormat(locale.value === 'zh' ? 'zh-CN' : locale.value === 'es' ? 'es-ES' : 'en-US', {
-    hour: '2-digit',
-    minute: '2-digit',
-  }).format(new Date(match.timestamp))
+  return formatMatchClock(match, locale.value, 'venue')
 }
 
 function formatMatchDate(match: MatchItem): string {

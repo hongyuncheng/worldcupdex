@@ -76,6 +76,7 @@ export interface MatchItem {
     nameZh: string
     city: string
     cityZh: string
+    timeZone?: string
   }
   group: string | null
   stage: string
@@ -95,6 +96,7 @@ export interface VenueItem {
   cityZh: string
   country: string
   countryZh: string
+  timeZone?: string
 }
 
 // API 响应格式

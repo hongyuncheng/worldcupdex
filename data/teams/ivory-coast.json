@@ -3,14 +3,14 @@
   "nameZh": "科特迪瓦",
   "nameEn": "Ivory Coast",
   "code": "ci",
-  "group": "",
+  "group": "E",
   "confederation": "",
-  "fifaRank": 39,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/ci.png",
   "coach": {
-    "nameEn": "Faé Emerse",
-    "nameZh": "法埃·埃梅尔塞",
-    "nationality": ""
+    "nameEn": "Emerse Faé",
+    "nameZh": "Emerse Faé",
+    "nationality": "Ivory Coast"
   },
   "founded": 1960,
   "venue": "",
@@ -52,6 +52,24 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jcwy671767729807.jpg"
     },
     {
+      "name": "Evan N'Dicka",
+      "nameZh": "Evan N'Dicka",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-08-20",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Christopher Operi",
+      "nameZh": "Christopher Operi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-04-29",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
       "name": "Ghislain Konan",
       "nameZh": "Ghislain Konan",
       "position": "Defence",
@@ -64,6 +82,18 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gtjiz91640623227.jpg"
     },
     {
+      "name": "Wilfried Singo",
+      "nameZh": "Wilfried Singo",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-12-25",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zwfgmo1769177983.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zwfgmo1769177983.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/emwwrg1769177944.jpg"
+    },
+    {
       "name": "Guela Doué",
       "nameZh": "Guela Doué",
       "position": "Defence",
@@ -71,6 +101,30 @@
       "dateOfBirth": "2002-10-17",
       "nationality": "Ivory Coast",
       "shirtNumber": null
+    },
+    {
+      "name": "Emmanuel Agbadou",
+      "nameZh": "Emmanuel Agbadou",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-06-17",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vwlqq91756975538.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/vwlqq91756975538.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1qojn71674743693.jpg"
+    },
+    {
+      "name": "Odilon Kossounou",
+      "nameZh": "Odilon Kossounou",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-01-04",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/p876cf1764331393.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/p876cf1764331393.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qx8rn71623838893.jpg"
     },
     {
       "name": "Ousmane Diomande",
@@ -97,6 +151,30 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jjgcgk1771663908.jpg"
     },
     {
+      "name": "Seko Fofana",
+      "nameZh": "Seko Fofana",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1995-05-07",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hu70nu1766137589.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hu70nu1766137589.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jby1d51546354375.jpg"
+    },
+    {
+      "name": "Ibrahim Sangaré",
+      "nameZh": "Ibrahim Sangaré",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-12-02",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qc7kcv1757163183.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qc7kcv1757163183.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i5th491601324310.jpg"
+    },
+    {
       "name": "Jean Michaël Seri",
       "nameZh": "Jean Michaël Seri",
       "position": "Midfield",
@@ -107,6 +185,18 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hlszmt1694794523.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hlszmt1694794523.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/w2snmk1629231742.jpg"
+    },
+    {
+      "name": "Amad Diallo",
+      "nameZh": "Amad Diallo",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-07-11",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8p6wbg1766826668.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8p6wbg1766826668.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/f8maua1706525745.jpg"
     },
     {
       "name": "Parfait Guiagon",
@@ -121,10 +211,85 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/r4paxx1767727388.jpg"
     },
     {
-      "name": "Bazoumana Touré",
-      "nameZh": "Bazoumana Touré",
+      "name": "Christ Ravynel Inao Oulaï",
+      "nameZh": "Christ Ravynel Inao Oulaï",
       "position": "Midfield",
       "positionZh": "中场",
+      "dateOfBirth": "2006-04-06",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nicolas Pépé",
+      "nameZh": "Nicolas Pépé",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1995-05-29",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xeui221762889301.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xeui221762889301.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7ewjmz1724779988.jpg"
+    },
+    {
+      "name": "Evann Guessand",
+      "nameZh": "Evann Guessand",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-07-01",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/x99loi1772141649.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/x99loi1772141649.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2jox8i1770200799.jpg"
+    },
+    {
+      "name": "Ange-Yoan Bonny",
+      "nameZh": "Ange-Yoan Bonny",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2003-10-25",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Sepe Elye Wahi",
+      "nameZh": "Sepe Elye Wahi",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2003-01-02",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/uuqh371762287642.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/uuqh371762287642.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mqn7ty1609261791.jpg"
+    },
+    {
+      "name": "Simon Adingra",
+      "nameZh": "Simon Adingra",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2002-01-01",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rxw49v1762198657.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rxw49v1762198657.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ps0isw1752176102.jpg"
+    },
+    {
+      "name": "Oumar Diakite",
+      "nameZh": "Oumar Diakite",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2003-12-20",
+      "nationality": "Ivory Coast",
+      "shirtNumber": null
+    },
+    {
+      "name": "Bazoumana Touré",
+      "nameZh": "Bazoumana Touré",
+      "position": "Offence",
+      "positionZh": "前锋",
       "dateOfBirth": "2006-03-02",
       "nationality": "Ivory Coast",
       "shirtNumber": null,
@@ -140,178 +305,10 @@
       "dateOfBirth": "2006-11-14",
       "nationality": "Ivory Coast",
       "shirtNumber": null
-    },
-    {
-      "name": "Christ Ravynel Inao Oulaï",
-      "nameZh": "Christ Ravynel Inao Oulaï",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "2006-04-06",
-      "nationality": "Cote d'Ivoire",
-      "shirtNumber": null
-    },
-    {
-      "name": "Oumar Diakite",
-      "nameZh": "Oumar Diakite",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "2003-12-20",
-      "nationality": "Ivory Coast",
-      "shirtNumber": null
-    },
-    {
-      "name": "Clement Akpa",
-      "nameZh": "Clement Akpa",
-      "position": "Left-Back",
-      "positionZh": "Left-Back",
-      "dateOfBirth": "2001-11-24",
-      "nationality": "Ivory Coast",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vwlxdt1765920817.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/vwlxdt1765920817.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/riq9bk1765918127.jpg"
-    },
-    {
-      "name": "Odilon Kossounou",
-      "nameZh": "Odilon Kossounou",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "2001-01-04",
-      "nationality": "Ivory Coast",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/p876cf1764331393.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/p876cf1764331393.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qx8rn71623838893.jpg"
-    },
-    {
-      "name": "Simon Adingra",
-      "nameZh": "Simon Adingra",
-      "position": "Left Winger",
-      "positionZh": "Left Winger",
-      "dateOfBirth": "2002-01-01",
-      "nationality": "Ivory Coast",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rxw49v1762198657.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rxw49v1762198657.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ps0isw1752176102.jpg"
-    },
-    {
-      "name": "Sepe Elye Wahi",
-      "nameZh": "Sepe Elye Wahi",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "2003-01-02",
-      "nationality": "France",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/uuqh371762287642.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/uuqh371762287642.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mqn7ty1609261791.jpg"
-    },
-    {
-      "name": "Ange-Yoan Bonny",
-      "nameZh": "Ange-Yoan Bonny",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "2003-10-25",
-      "nationality": "Ivory Coast",
-      "shirtNumber": null
-    },
-    {
-      "name": "Emmanuel Agbadou",
-      "nameZh": "Emmanuel Agbadou",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1997-06-17",
-      "nationality": "Ivory Coast",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/vwlqq91756975538.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/vwlqq91756975538.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1qojn71674743693.jpg"
-    },
-    {
-      "name": "Amad Diallo",
-      "nameZh": "Amad Diallo",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
-      "dateOfBirth": "2002-07-11",
-      "nationality": "Ivory Coast",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8p6wbg1766826668.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8p6wbg1766826668.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/f8maua1706525745.jpg"
-    },
-    {
-      "name": "Evann Guessand",
-      "nameZh": "Evann Guessand",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "2001-07-01",
-      "nationality": "Ivory Coast",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/x99loi1772141649.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/x99loi1772141649.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2jox8i1770200799.jpg"
-    },
-    {
-      "name": "Wilfried Singo",
-      "nameZh": "Wilfried Singo",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "2000-12-25",
-      "nationality": "Ivory Coast",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zwfgmo1769177983.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zwfgmo1769177983.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/emwwrg1769177944.jpg"
-    },
-    {
-      "name": "Nicolas Pépé",
-      "nameZh": "Nicolas Pépé",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
-      "dateOfBirth": "1995-05-29",
-      "nationality": "Ivory Coast",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xeui221762889301.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xeui221762889301.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7ewjmz1724779988.jpg"
-    },
-    {
-      "name": "Ibrahim Sangaré",
-      "nameZh": "Ibrahim Sangaré",
-      "position": "Defensive Midfield",
-      "positionZh": "Defensive Midfield",
-      "dateOfBirth": "1997-12-02",
-      "nationality": "Ivory Coast",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qc7kcv1757163183.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qc7kcv1757163183.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/i5th491601324310.jpg"
-    },
-    {
-      "name": "Seko Fofana",
-      "nameZh": "Seko Fofana",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "1995-05-07",
-      "nationality": "France",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hu70nu1766137589.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hu70nu1766137589.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jby1d51546354375.jpg"
-    },
-    {
-      "name": "Evan N'Dicka",
-      "nameZh": "Evan N'Dicka",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1999-08-20",
-      "nationality": "Ivory Coast",
-      "shirtNumber": null
     }
   ],
-  "recentMatches": [],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

@@ -3,17 +3,17 @@
   "nameZh": "土耳其",
   "nameEn": "Turkey",
   "code": "tr",
-  "group": "L",
+  "group": "D",
   "confederation": "UEFA",
-  "fifaRank": 19,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/tr.png",
   "coach": {
     "nameEn": "Vincenzo Montella",
     "nameZh": "文森佐·蒙特拉",
-    "nationality": ""
+    "nationality": "Italy"
   },
   "founded": 1923,
-  "venue": "Ali Sami Yen Stadyumu",
+  "venue": "",
   "squad": [
     {
       "name": "Mert Günok",
@@ -40,15 +40,6 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/8meai71770993191.jpg"
     },
     {
-      "name": "Muhammed Şengezer",
-      "nameZh": "Muhammed Şengezer",
-      "position": "Goalkeeper",
-      "positionZh": "门将",
-      "dateOfBirth": "1997-01-05",
-      "nationality": "Turkey",
-      "shirtNumber": null
-    },
-    {
       "name": "Uğurcan Çakır",
       "nameZh": "Uğurcan Çakır",
       "position": "Goalkeeper",
@@ -58,6 +49,39 @@
       "shirtNumber": null,
       "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Uğurcan_Çakır_-_beIN-Sports-Reklam_(2021)_(cropped).png?width=500",
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Uğurcan_Çakır_-_beIN-Sports-Reklam_(2021)_(cropped).png?width=500"
+    },
+    {
+      "name": "Çağlar Söyüncü",
+      "nameZh": "Çağlar Söyüncü",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-05-23",
+      "nationality": "Turkey",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kaan Ayhan",
+      "nameZh": "Kaan Ayhan",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1994-11-10",
+      "nationality": "Turkey",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/nlihpf1717533911.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/nlihpf1717533911.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/hr7gab1578086111.jpg"
+    },
+    {
+      "name": "Ferdi Kadıoğlu",
+      "nameZh": "Ferdi Kadıoğlu",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-10-07",
+      "nationality": "Turkey",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/enrtu21756994489.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/enrtu21756994489.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qn0nr21772017123.jpg"
     },
     {
       "name": "Mert Müldür",
@@ -72,6 +96,18 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5o5qpu1610882908.jpg"
     },
     {
+      "name": "Zeki Çelik",
+      "nameZh": "Zeki Çelik",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-02-17",
+      "nationality": "Turkey",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b8hg8o1758816005.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/b8hg8o1758816005.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mqqhyw1737351973.jpg"
+    },
+    {
       "name": "Abdülkerim Bardakcı",
       "nameZh": "Abdülkerim Bardakcı",
       "position": "Defence",
@@ -81,6 +117,18 @@
       "shirtNumber": null,
       "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Abdülkerim_Bardakçı_-_beIN-Sports-Reklam_(2021)_(cropped).png?width=500",
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Abdülkerim_Bardakçı_-_beIN-Sports-Reklam_(2021)_(cropped).png?width=500"
+    },
+    {
+      "name": "Ozan Kabak",
+      "nameZh": "Ozan Kabak",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-03-25",
+      "nationality": "Turkey",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gtnzmr1763494412.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/gtnzmr1763494412.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1tla181578151924.jpg"
     },
     {
       "name": "Merih Demiral",
@@ -113,37 +161,40 @@
       "shirtNumber": null
     },
     {
-      "name": "Kaan Ayhan",
-      "nameZh": "Kaan Ayhan",
+      "name": "Salih Özcan",
+      "nameZh": "Salih Özcan",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "1994-11-10",
+      "dateOfBirth": "1998-01-11",
       "nationality": "Turkey",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/nlihpf1717533911.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/nlihpf1717533911.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/hr7gab1578086111.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8dw4231756326486.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8dw4231756326486.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/c7h0uk1609169225.jpg"
     },
     {
-      "name": "İrfan Can Kahveci",
-      "nameZh": "İrfan Can Kahveci",
+      "name": "Hakan Çalhanoğlu",
+      "nameZh": "Hakan Çalhanoğlu",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "1995-07-15",
+      "dateOfBirth": "1994-02-08",
       "nationality": "Turkey",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/812fda1724854456.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/812fda1724854456.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/idqm1b1724854433.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hw8uxm1759408821.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hw8uxm1759408821.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ays7ot1737352882.jpg"
     },
     {
-      "name": "Mustafa Eskihellaç",
-      "nameZh": "Mustafa Eskihellaç",
+      "name": "Orkun Kökçü",
+      "nameZh": "Orkun Kökçü",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "1997-05-05",
+      "dateOfBirth": "2000-12-29",
       "nationality": "Turkey",
-      "shirtNumber": null
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zrp45u1769170024.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zrp45u1769170024.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2eet401737352595.jpg"
     },
     {
       "name": "İsmail Yüksek",
@@ -158,16 +209,16 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/4evqg11724846137.jpg"
     },
     {
-      "name": "Muhammed Kerem Aktürkoğlu",
-      "nameZh": "Muhammed Kerem Aktürkoğlu",
+      "name": "Arda Guler",
+      "nameZh": "Arda Guler",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "1998-10-21",
+      "dateOfBirth": "2005-02-25",
       "nationality": "Turkey",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ix8aeh1769179066.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ix8aeh1769179066.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3xbd8h1717532026.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lwnog21768499165.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lwnog21768499165.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0saeov1771265107.jpg"
     },
     {
       "name": "Oguz Aydin",
@@ -188,46 +239,19 @@
       "shirtNumber": null
     },
     {
-      "name": "Deniz Gul",
-      "nameZh": "Deniz Gul",
-      "position": "Offence",
-      "positionZh": "前锋",
-      "dateOfBirth": "2004-07-02",
-      "nationality": "Sweden",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hs9gkb1718133677.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hs9gkb1718133677.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/31c9dg1718138743.jpg"
-    },
-    {
-      "name": "Kenan Yıldız",
-      "nameZh": "Kenan Yıldız",
-      "position": "Left Winger",
-      "positionZh": "Left Winger",
-      "dateOfBirth": "2005-05-04",
+      "name": "İrfan Kahveci",
+      "nameZh": "İrfan Kahveci",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1995-07-15",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zgep4d1759225554.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zgep4d1759225554.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xnp5uz1698226958.jpg"
-    },
-    {
-      "name": "Arda Guler",
-      "nameZh": "Arda Guler",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
-      "dateOfBirth": "2005-02-25",
-      "nationality": "Turkey",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lwnog21768499165.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lwnog21768499165.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0saeov1771265107.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Yunus Akgün",
       "nameZh": "Yunus Akgün",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
+      "position": "Offence",
+      "positionZh": "前锋",
       "dateOfBirth": "2000-07-07",
       "nationality": "Turkey",
       "shirtNumber": null,
@@ -236,92 +260,53 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bp6lxi1693170072.jpg"
     },
     {
-      "name": "Ozan Kabak",
-      "nameZh": "Ozan Kabak",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "2000-03-25",
+      "name": "Muhammed Kerem Aktürkoğlu",
+      "nameZh": "Muhammed Kerem Aktürkoğlu",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1998-10-21",
       "nationality": "Turkey",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gtnzmr1763494412.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/gtnzmr1763494412.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1tla181578151924.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ix8aeh1769179066.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ix8aeh1769179066.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3xbd8h1717532026.jpg"
     },
     {
-      "name": "Zeki Çelik",
-      "nameZh": "Zeki Çelik",
-      "position": "Right-Back",
-      "positionZh": "Right-Back",
-      "dateOfBirth": "1997-02-17",
+      "name": "Deniz Gul",
+      "nameZh": "Deniz Gul",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2004-07-02",
       "nationality": "Turkey",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/b8hg8o1758816005.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/b8hg8o1758816005.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mqqhyw1737351973.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hs9gkb1718133677.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hs9gkb1718133677.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/31c9dg1718138743.jpg"
     },
     {
-      "name": "Ferdi Kadıoğlu",
-      "nameZh": "Ferdi Kadıoğlu",
-      "position": "Left-Back",
-      "positionZh": "Left-Back",
-      "dateOfBirth": "1999-10-07",
+      "name": "Kenan Yıldız",
+      "nameZh": "Kenan Yıldız",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2005-05-04",
       "nationality": "Turkey",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/enrtu21756994489.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/enrtu21756994489.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qn0nr21772017123.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zgep4d1759225554.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zgep4d1759225554.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xnp5uz1698226958.jpg"
     },
     {
-      "name": "Orkun Kökçü",
-      "nameZh": "Orkun Kökçü",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "2000-12-29",
+      "name": "Can Uzun",
+      "nameZh": "Can Uzun",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2005-11-11",
       "nationality": "Turkey",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zrp45u1769170024.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zrp45u1769170024.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/2eet401737352595.jpg"
-    },
-    {
-      "name": "Atakan Karazor",
-      "nameZh": "Atakan Karazor",
-      "position": "Defensive Midfield",
-      "positionZh": "Defensive Midfield",
-      "dateOfBirth": "1996-10-13",
-      "nationality": "Turkey",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ph1o781763586281.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ph1o781763586281.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qwr2v61605732848.jpg"
-    },
-    {
-      "name": "Hakan Çalhanoğlu",
-      "nameZh": "Hakan Çalhanoğlu",
-      "position": "Defensive Midfield",
-      "positionZh": "Defensive Midfield",
-      "dateOfBirth": "1994-02-08",
-      "nationality": "Turkey",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hw8uxm1759408821.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hw8uxm1759408821.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ays7ot1737352882.jpg"
-    },
-    {
-      "name": "Salih Özcan",
-      "nameZh": "Salih Özcan",
-      "position": "Defensive Midfield",
-      "positionZh": "Defensive Midfield",
-      "dateOfBirth": "1998-01-11",
-      "nationality": "Turkey",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8dw4231756326486.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8dw4231756326486.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/c7h0uk1609169225.jpg"
+      "shirtNumber": null
     }
   ],
-  "recentMatches": [],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

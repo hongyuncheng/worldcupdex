@@ -3,14 +3,14 @@
   "nameZh": "库拉索",
   "nameEn": "Curaçao",
   "code": "cw",
-  "group": "",
+  "group": "E",
   "confederation": "",
-  "fifaRank": 55,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/cw.png",
   "coach": {
     "nameEn": "Dick Advocaat",
-    "nameZh": "迪克·阿德沃卡特",
-    "nationality": ""
+    "nameZh": "Dick Advocaat",
+    "nationality": "Netherlands"
   },
   "founded": null,
   "venue": "",
@@ -51,6 +51,18 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/afjubh1760793261.jpg"
     },
     {
+      "name": "Roshon van Eijma",
+      "nameZh": "Roshon van Eijma",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-06-09",
+      "nationality": "Curaçao",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hgru9i1728844106.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hgru9i1728844106.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tpxfxb1723489613.jpg"
+    },
+    {
       "name": "Joshua Brenet",
       "nameZh": "Joshua Brenet",
       "position": "Defence",
@@ -63,16 +75,37 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/175wim1700398518.jpg"
     },
     {
-      "name": "Juninho Bacuna",
-      "nameZh": "Juninho Bacuna",
+      "name": "Armando Obispo",
+      "nameZh": "Armando Obispo",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "1997-08-07",
+      "dateOfBirth": "1999-03-05",
       "nationality": "Curaçao",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/j801h91694549422.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/j801h91694549422.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ktoqhe1609601525.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ja4e471764595048.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ja4e471764595048.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/n5p6md1679496829.jpg"
+    },
+    {
+      "name": "Sheral Floranus",
+      "nameZh": "Sheral Floranus",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-08-23",
+      "nationality": "Curaçao",
+      "shirtNumber": null
+    },
+    {
+      "name": "Riechedly Bazoer",
+      "nameZh": "Riechedly Bazoer",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-10-12",
+      "nationality": "Curaçao",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6nytgf1722969191.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6nytgf1722969191.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/emal8x1557865240.jpg"
     },
     {
       "name": "Juriën Gaari",
@@ -85,6 +118,30 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zug9lu1701203378.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zug9lu1701203378.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/6hts7h1701120658.jpg"
+    },
+    {
+      "name": "Shurandy Sambo",
+      "nameZh": "Shurandy Sambo",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-08-19",
+      "nationality": "Curaçao",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q64ulf1764623574.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q64ulf1764623574.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7l23d01696917526.jpg"
+    },
+    {
+      "name": "Ar'jany Martha",
+      "nameZh": "Ar'jany Martha",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2003-09-04",
+      "nationality": "Curaçao",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q9fomd1766332561.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q9fomd1766332561.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9rkwa51700835641.jpg"
     },
     {
       "name": "Livano Comenencia",
@@ -101,7 +158,7 @@
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "2003-05-16",
-      "nationality": "Netherlands",
+      "nationality": "Curaçao",
       "shirtNumber": null,
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hw2j9p1764536584.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hw2j9p1764536584.png",
@@ -120,37 +177,64 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/enymza1758110045.jpg"
     },
     {
-      "name": "Gervane Kastaneer",
-      "nameZh": "Gervane Kastaneer",
+      "name": "Leandro Bacuna",
+      "nameZh": "Leandro Bacuna",
       "position": "Midfield",
       "positionZh": "中场",
+      "dateOfBirth": "1991-08-21",
+      "nationality": "Curaçao",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/13dolh1726605947.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/13dolh1726605947.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0dmfnu1505913368.jpg"
+    },
+    {
+      "name": "Godfried Roemeratoe",
+      "nameZh": "Godfried Roemeratoe",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-08-19",
+      "nationality": "Curaçao",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tkhrrb1728848806.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tkhrrb1728848806.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/invk6l1701192884.jpg"
+    },
+    {
+      "name": "Juninho Bacuna",
+      "nameZh": "Juninho Bacuna",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-08-07",
+      "nationality": "Curaçao",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/j801h91694549422.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/j801h91694549422.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ktoqhe1609601525.jpg"
+    },
+    {
+      "name": "Kevin Felida",
+      "nameZh": "Kevin Felida",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-11-11",
+      "nationality": "Curaçao",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ileyua1728844502.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ileyua1728844502.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rjgevz1701120574.jpg"
+    },
+    {
+      "name": "Gervane Kastaneer",
+      "nameZh": "Gervane Kastaneer",
+      "position": "Offence",
+      "positionZh": "前锋",
       "dateOfBirth": "1996-06-09",
       "nationality": "Curaçao",
       "shirtNumber": null,
       "photo": "https://r2.thesportsdb.com/images/media/player/thumb/uvilvt1750627686.jpg",
       "photoCutout": null,
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/uvilvt1750627686.jpg"
-    },
-    {
-      "name": "Jearl Margaritha",
-      "nameZh": "Jearl Margaritha",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "2000-04-10",
-      "nationality": "Curaçao",
-      "shirtNumber": null
-    },
-    {
-      "name": "Brandley Kuwas",
-      "nameZh": "Brandley Kuwas",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1992-09-19",
-      "nationality": "Curaçao",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/n02hes1759782833.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/n02hes1759782833.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/oxa15d1759782798.jpg"
     },
     {
       "name": "Kenji Gorré",
@@ -176,55 +260,10 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bhbhqz1663098055.jpg"
     },
     {
-      "name": "Ar'jany Martha",
-      "nameZh": "Ar'jany Martha",
-      "position": "Offence",
-      "positionZh": "前锋",
-      "dateOfBirth": "2003-09-04",
-      "nationality": "Curaçao",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q9fomd1766332561.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q9fomd1766332561.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9rkwa51700835641.jpg"
-    },
-    {
-      "name": "Jeremy Antonisse",
-      "nameZh": "Jeremy Antonisse",
-      "position": "Left Winger",
-      "positionZh": "Left Winger",
-      "dateOfBirth": "2002-03-29",
-      "nationality": "Curaçao",
-      "shirtNumber": null
-    },
-    {
-      "name": "Shurandy Sambo",
-      "nameZh": "Shurandy Sambo",
-      "position": "Right-Back",
-      "positionZh": "Right-Back",
-      "dateOfBirth": "2001-08-19",
-      "nationality": "Curaçao",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q64ulf1764623574.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q64ulf1764623574.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7l23d01696917526.jpg"
-    },
-    {
-      "name": "Sontje Hansen",
-      "nameZh": "Sontje Hansen",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
-      "dateOfBirth": "2000-05-18",
-      "nationality": "Curaçao",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fnreac1761830116.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/fnreac1761830116.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tgls171701019754.jpg"
-    },
-    {
       "name": "Tahith Chong",
       "nameZh": "Tahith Chong",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
+      "position": "Offence",
+      "positionZh": "前锋",
       "dateOfBirth": "1999-12-04",
       "nationality": "Curaçao",
       "shirtNumber": null,
@@ -233,89 +272,50 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/1aygqk1585668693.jpg"
     },
     {
-      "name": "Kevin Felida",
-      "nameZh": "Kevin Felida",
-      "position": "Defensive Midfield",
-      "positionZh": "Defensive Midfield",
-      "dateOfBirth": "1999-11-11",
+      "name": "Sontje Hansen",
+      "nameZh": "Sontje Hansen",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2002-05-18",
       "nationality": "Curaçao",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ileyua1728844502.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ileyua1728844502.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rjgevz1701120574.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/fnreac1761830116.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/fnreac1761830116.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tgls171701019754.jpg"
     },
     {
-      "name": "Riechedly Bazoer",
-      "nameZh": "Riechedly Bazoer",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1996-10-12",
-      "nationality": "Curaçao",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6nytgf1722969191.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6nytgf1722969191.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/emal8x1557865240.jpg"
-    },
-    {
-      "name": "Sheral Floranus",
-      "nameZh": "Sheral Floranus",
-      "position": "Right-Back",
-      "positionZh": "Right-Back",
-      "dateOfBirth": "1998-08-23",
+      "name": "Jearl Margaritha",
+      "nameZh": "Jearl Margaritha",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-04-10",
       "nationality": "Curaçao",
       "shirtNumber": null
     },
     {
-      "name": "Armando Obispo",
-      "nameZh": "Armando Obispo",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1999-03-05",
+      "name": "Jeremy Antonisse",
+      "nameZh": "Jeremy Antonisse",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2002-03-29",
       "nationality": "Curaçao",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ja4e471764595048.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ja4e471764595048.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/n5p6md1679496829.jpg"
+      "shirtNumber": null
     },
     {
-      "name": "Godfried Roemeratoe",
-      "nameZh": "Godfried Roemeratoe",
-      "position": "Defensive Midfield",
-      "positionZh": "Defensive Midfield",
-      "dateOfBirth": "1999-08-19",
+      "name": "Brandley Kuwas",
+      "nameZh": "Brandley Kuwas",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1992-09-19",
       "nationality": "Curaçao",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tkhrrb1728848806.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tkhrrb1728848806.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/invk6l1701192884.jpg"
-    },
-    {
-      "name": "Roshon van Eijma",
-      "nameZh": "Roshon van Eijma",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1998-06-09",
-      "nationality": "Curaçao",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hgru9i1728844106.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hgru9i1728844106.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tpxfxb1723489613.jpg"
-    },
-    {
-      "name": "Leandro Bacuna",
-      "nameZh": "Leandro Bacuna",
-      "position": "Right-Back",
-      "positionZh": "Right-Back",
-      "dateOfBirth": "1991-08-21",
-      "nationality": "Curaçao",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/13dolh1726605947.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/13dolh1726605947.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0dmfnu1505913368.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/n02hes1759782833.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/n02hes1759782833.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/oxa15d1759782798.jpg"
     }
   ],
-  "recentMatches": [],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

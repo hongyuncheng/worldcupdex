@@ -192,14 +192,104 @@ const kofiScripts = [
 
 const isProduction = process.env.NODE_ENV === 'production'
 
+const localizedStaticRoutes = [
+  '/',
+  '/zh',
+  '/es',
+  '/teams',
+  '/zh/teams',
+  '/es/teams',
+  '/schedule',
+  '/zh/schedule',
+  '/es/schedule',
+  '/fan-card',
+  '/zh/fan-card',
+  '/es/fan-card',
+  '/quiz',
+  '/zh/quiz',
+  '/es/quiz',
+  '/predict',
+  '/zh/predict',
+  '/es/predict',
+  '/predict/champion',
+  '/zh/predict/champion',
+  '/es/predict/champion',
+  '/data',
+  '/zh/data',
+  '/es/data',
+  '/blog',
+  '/zh/blog',
+  '/es/blog',
+  '/wiki',
+  '/zh/wiki',
+  '/es/wiki',
+  '/about',
+  '/zh/about',
+  '/es/about',
+  '/contact',
+  '/zh/contact',
+  '/es/contact',
+  '/privacy',
+  '/zh/privacy',
+  '/es/privacy',
+  '/terms',
+  '/zh/terms',
+  '/es/terms',
+  '/refund',
+  '/zh/refund',
+  '/es/refund',
+  '/pricing',
+  '/zh/pricing',
+  '/es/pricing',
+]
+
 const productionCacheRouteRules = isProduction
   ? {
       '/': { swr: 3600 },
       '/teams/**': { swr: 86400 },
+      '/schedule': { swr: 86400 },
+      '/zh/schedule': { swr: 86400 },
+      '/es/schedule': { swr: 86400 },
       '/fan-card': { swr: 86400 },
+      '/zh/fan-card': { swr: 86400 },
+      '/es/fan-card': { swr: 86400 },
       '/quiz/**': { swr: 86400 },
+      '/predict/**': { swr: 86400 },
+      '/predictions/**': { swr: 86400 },
+      '/blog/**': { swr: 86400 },
+      '/data': { swr: 86400 },
+      '/zh/data': { swr: 86400 },
+      '/es/data': { swr: 86400 },
+      '/wiki': { swr: 86400 },
+      '/zh/wiki': { swr: 86400 },
+      '/es/wiki': { swr: 86400 },
+      '/about': { swr: 86400 },
+      '/zh/about': { swr: 86400 },
+      '/es/about': { swr: 86400 },
+      '/contact': { swr: 86400 },
+      '/zh/contact': { swr: 86400 },
+      '/es/contact': { swr: 86400 },
+      '/privacy': { swr: 86400 },
+      '/zh/privacy': { swr: 86400 },
+      '/es/privacy': { swr: 86400 },
+      '/terms': { swr: 86400 },
+      '/zh/terms': { swr: 86400 },
+      '/es/terms': { swr: 86400 },
+      '/refund': { swr: 86400 },
+      '/zh/refund': { swr: 86400 },
+      '/es/refund': { swr: 86400 },
+      '/pricing': { swr: 86400 },
+      '/zh/pricing': { swr: 86400 },
+      '/es/pricing': { swr: 86400 },
+      '/api/wc-stats': { swr: 86400 },
     }
   : {}
+
+const teamDetailRoutes = (teamsData as Array<{ id: string }>).flatMap(team => [
+  `/teams/${team.id}`,
+  `/zh/teams/${team.id}`,
+  `/es/teams/${team.id}`,
+])
 
 const teamScheduleRoutes = (teamsData as Array<{ id: string }>).flatMap(team => [
   `/teams/${team.id}/schedule`,
@@ -240,6 +330,12 @@ const matchPredictionRoutes = (matchesData as Array<{ homeTeam: { id: string }, 
     `/es/predictions/match-${slug}`,
   ]
 })
+
+const predictMatchRoutes = (matchesData as Array<{ id: string | number }>).flatMap(match => [
+  `/predict/${match.id}`,
+  `/zh/predict/${match.id}`,
+  `/es/predict/${match.id}`,
+])
 
 const staticPromoRoutes = [
   '/free-world-cup-prediction-card',
@@ -350,11 +446,11 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: true,
       routes: [
-        '/blog',
-        '/es/blog',
-        '/zh/blog',
+        ...localizedStaticRoutes,
+        ...teamDetailRoutes,
         ...teamScheduleRoutes,
         ...teamRouteRoutes,
+        ...predictMatchRoutes,
         ...predictionRoutes,
         ...matchPredictionRoutes,
         ...staticPromoRoutes,
@@ -406,7 +502,9 @@ export default defineNuxtConfig({
       },
     },
     '/images/**': { headers: { 'Cache-Control': 'public, max-age=31536000, immutable' } },
+    '/social/**': { headers: { 'Cache-Control': 'public, max-age=31536000, immutable' } },
     '/favicon.svg': { headers: { 'Cache-Control': 'public, max-age=31536000, immutable' } },
+    '/ads.txt': { headers: { 'Cache-Control': 'public, max-age=86400' } },
     '/robots.txt': { headers: { 'Cache-Control': 'public, max-age=86400' } },
     
     // 页面与 API 的边缘缓存 (SWR) 提升缓存命中率

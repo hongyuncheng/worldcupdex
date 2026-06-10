@@ -509,26 +509,11 @@ function formatFixtureMeta(match: MatchItem) {
 }
 
 function formatDateTime(match: MatchItem, mode: 'local' | 'venue') {
-  if (mode === 'venue') return formatVenueDateTime(match)
-
-  return new Intl.DateTimeFormat(locale.value === 'zh' ? 'zh-CN' : locale.value === 'es' ? 'es-ES' : 'en-US', {
-    weekday: 'short',
-    month: 'short',
-    day: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-  }).format(new Date(match.timestamp))
+  return formatMatchShortDateTime(match, locale.value, mode)
 }
 
 function formatVenueDateTime(match: MatchItem) {
-  const date = new Date(`${match.date}T00:00:00`)
-  const day = new Intl.DateTimeFormat(locale.value === 'zh' ? 'zh-CN' : locale.value === 'es' ? 'es-ES' : 'en-US', {
-    weekday: 'short',
-    month: 'short',
-    day: 'numeric',
-  }).format(date)
-
-  return `${day}, ${match.time || 'TBD'}`
+  return formatMatchShortDateTime(match, locale.value, 'venue')
 }
 </script>
 

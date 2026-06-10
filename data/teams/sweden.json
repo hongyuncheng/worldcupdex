@@ -3,17 +3,17 @@
   "nameZh": "瑞典",
   "nameEn": "Sweden",
   "code": "se",
-  "group": "",
+  "group": "F",
   "confederation": "",
-  "fifaRank": 23,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/se.png",
   "coach": {
-    "nameEn": "Jon Dahl Tomasson",
-    "nameZh": "约翰·达尔·托马森",
-    "nationality": ""
+    "nameEn": "Graham Potter",
+    "nameZh": "Graham Potter",
+    "nationality": "England"
   },
   "founded": 1904,
-  "venue": "Friends Arena",
+  "venue": "",
   "squad": [
     {
       "name": "Kristoffer Nordfeldt",
@@ -50,6 +50,65 @@
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/FC_RB_Salzburg_gegen_Derby_County_(2025-07-18_Testspiel)_24.jpg?width=500"
     },
     {
+      "name": "Victor Nilsson-Lindelöf",
+      "nameZh": "Victor Nilsson-Lindelöf",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1994-07-17",
+      "nationality": "Sweden",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/07mdel1756984093.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/07mdel1756984093.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/hjtxpz1778612707.jpg"
+    },
+    {
+      "name": "Carl Starfelt",
+      "nameZh": "Carl Starfelt",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-06-01",
+      "nationality": "Sweden",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/c4lvf91724492100.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/c4lvf91724492100.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/zb4ki31723545733.jpg"
+    },
+    {
+      "name": "Gabriel Gudmundsson",
+      "nameZh": "Gabriel Gudmundsson",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-04-29",
+      "nationality": "Sweden",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/d1q18t1757075757.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/d1q18t1757075757.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pz0u8x1772199916.jpg"
+    },
+    {
+      "name": "Hjalmar Ekdal",
+      "nameZh": "Hjalmar Ekdal",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-10-21",
+      "nationality": "Sweden",
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hjalmar_Ekdal_(Sirius,_2020,_cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Hjalmar_Ekdal_(Sirius,_2020,_cropped).jpg?width=500"
+    },
+    {
+      "name": "Eric Smith",
+      "nameZh": "Eric Smith",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-01-08",
+      "nationality": "Sweden",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/29vzn11756310989.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/29vzn11756310989.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/u2enyz1778627381.jpg"
+    },
+    {
       "name": "Daniel Svensson",
       "nameZh": "Daniel Svensson",
       "position": "Defence",
@@ -72,6 +131,84 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3sbqva1726607896.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3sbqva1726607896.png",
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/8xvfl21778612514.jpg"
+    },
+    {
+      "name": "Isak Hien",
+      "nameZh": "Isak Hien",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-01-13",
+      "nationality": "Sweden",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ed5d0g1731837971.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ed5d0g1731837971.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/cet0p11778627200.jpg"
+    },
+    {
+      "name": "Herman Johansson",
+      "nameZh": "Herman Johansson",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-10-16",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Elliot Stroud",
+      "nameZh": "Elliot Stroud",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2002-06-22",
+      "nationality": "Sweden",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9u94c51718821528.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9u94c51718821528.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/og43c61718911762.jpg"
+    },
+    {
+      "name": "Ken Sema",
+      "nameZh": "Ken Sema",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1993-09-30",
+      "nationality": "Sweden",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mattias Svanberg",
+      "nameZh": "Mattias Svanberg",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-01-05",
+      "nationality": "Sweden",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/k8h06w1763669622.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/k8h06w1763669622.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/aat5yl1778626009.jpg"
+    },
+    {
+      "name": "Jesper Karlström",
+      "nameZh": "Jesper Karlström",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1995-06-21",
+      "nationality": "Sweden",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/r1owct1764172392.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/r1owct1764172392.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/sofcs51778612331.jpg"
+    },
+    {
+      "name": "Yasin Ayari",
+      "nameZh": "Yasin Ayari",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2003-10-06",
+      "nationality": "Sweden",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xah7d91756994132.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xah7d91756994132.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/xg6mwr1778610967.jpg"
     },
     {
       "name": "Besfort Zeneli",
@@ -98,16 +235,39 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9uchnm1703768896.jpg"
     },
     {
-      "name": "Elliot Stroud",
-      "nameZh": "Elliot Stroud",
+      "name": "Lucas Bergvall",
+      "nameZh": "Lucas Bergvall",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "2002-06-22",
+      "dateOfBirth": "2006-02-02",
       "nationality": "Sweden",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/9u94c51718821528.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/9u94c51718821528.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/og43c61718911762.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6hbkx51757016291.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6hbkx51757016291.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/ajpbsd1778608966.jpg"
+    },
+    {
+      "name": "Alexander Isak",
+      "nameZh": "Alexander Isak",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1999-09-21",
+      "nationality": "Sweden",
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/UEFA_EURO_qualifiers_Sweden_vs_Spain_20191015_Alexander_Isak_56_(cropped).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/UEFA_EURO_qualifiers_Sweden_vs_Spain_20191015_Alexander_Isak_56_(cropped).jpg?width=500"
+    },
+    {
+      "name": "Viktor Gyökeres",
+      "nameZh": "Viktor Gyökeres",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1998-06-04",
+      "nationality": "Sweden",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ubnx241769330610.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ubnx241769330610.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/83hsmp1778608876.jpg"
     },
     {
       "name": "Gustaf Nilsson",
@@ -134,69 +294,10 @@
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/pesyy11778613039.jpg"
     },
     {
-      "name": "Lucas Bergvall",
-      "nameZh": "Lucas Bergvall",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "2006-02-02",
-      "nationality": "Sweden",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/6hbkx51757016291.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/6hbkx51757016291.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/ajpbsd1778608966.jpg"
-    },
-    {
-      "name": "Isak Hien",
-      "nameZh": "Isak Hien",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1999-01-13",
-      "nationality": "Sweden",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ed5d0g1731837971.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ed5d0g1731837971.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/cet0p11778627200.jpg"
-    },
-    {
-      "name": "Anthony Elanga",
-      "nameZh": "Anthony Elanga",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
-      "dateOfBirth": "2002-04-27",
-      "nationality": "Sweden",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zptapf1770796138.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zptapf1770796138.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/qr7rw21778611524.jpg"
-    },
-    {
-      "name": "Yasin Ayari",
-      "nameZh": "Yasin Ayari",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "2003-10-06",
-      "nationality": "Sweden",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/xah7d91756994132.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/xah7d91756994132.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/xg6mwr1778610967.jpg"
-    },
-    {
-      "name": "Emil Holm",
-      "nameZh": "Emil Holm",
-      "position": "Right-Back",
-      "positionZh": "Right-Back",
-      "dateOfBirth": "2000-05-13",
-      "nationality": "Sweden",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Emil_Holm_(Sweden_vs_Moldova,_12_October_2023).jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Emil_Holm_(Sweden_vs_Moldova,_12_October_2023).jpg?width=500"
-    },
-    {
       "name": "Alexander Bernhardsson",
       "nameZh": "Alexander Bernhardsson",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
+      "position": "Offence",
+      "positionZh": "前锋",
       "dateOfBirth": "1998-09-08",
       "nationality": "Sweden",
       "shirtNumber": null,
@@ -204,123 +305,20 @@
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/2025-02-19_Alexander_Bernhardsson_1.jpg?width=500"
     },
     {
-      "name": "Eric Smith",
-      "nameZh": "Eric Smith",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1997-01-08",
+      "name": "Anthony Elanga",
+      "nameZh": "Anthony Elanga",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2002-04-27",
       "nationality": "Sweden",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/29vzn11756310989.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/29vzn11756310989.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/u2enyz1778627381.jpg"
-    },
-    {
-      "name": "Hjalmar Ekdal",
-      "nameZh": "Hjalmar Ekdal",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1998-10-21",
-      "nationality": "Sweden",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hjalmar_Ekdal_(Sirius,_2020,_cropped).jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Hjalmar_Ekdal_(Sirius,_2020,_cropped).jpg?width=500"
-    },
-    {
-      "name": "Gabriel Gudmundsson",
-      "nameZh": "Gabriel Gudmundsson",
-      "position": "Left-Back",
-      "positionZh": "Left-Back",
-      "dateOfBirth": "1999-04-29",
-      "nationality": "Sweden",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/d1q18t1757075757.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/d1q18t1757075757.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pz0u8x1772199916.jpg"
-    },
-    {
-      "name": "Jesper Karlström",
-      "nameZh": "Jesper Karlström",
-      "position": "Defensive Midfield",
-      "positionZh": "Defensive Midfield",
-      "dateOfBirth": "1995-06-21",
-      "nationality": "Sweden",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/r1owct1764172392.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/r1owct1764172392.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/sofcs51778612331.jpg"
-    },
-    {
-      "name": "Carl Starfelt",
-      "nameZh": "Carl Starfelt",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1995-06-01",
-      "nationality": "Sweden",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/c4lvf91724492100.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/c4lvf91724492100.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/zb4ki31723545733.jpg"
-    },
-    {
-      "name": "Mattias Svanberg",
-      "nameZh": "Mattias Svanberg",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "1999-01-05",
-      "nationality": "Sweden",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/k8h06w1763669622.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/k8h06w1763669622.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/aat5yl1778626009.jpg"
-    },
-    {
-      "name": "Viktor Gyökeres",
-      "nameZh": "Viktor Gyökeres",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "1998-06-04",
-      "nationality": "Sweden",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ubnx241769330610.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ubnx241769330610.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/83hsmp1778608876.jpg"
-    },
-    {
-      "name": "Alexander Isak",
-      "nameZh": "Alexander Isak",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "1999-09-21",
-      "nationality": "Sweden",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/UEFA_EURO_qualifiers_Sweden_vs_Spain_20191015_Alexander_Isak_56_(cropped).jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/UEFA_EURO_qualifiers_Sweden_vs_Spain_20191015_Alexander_Isak_56_(cropped).jpg?width=500"
-    },
-    {
-      "name": "Ken Sema",
-      "nameZh": "Ken Sema",
-      "position": "Left Winger",
-      "positionZh": "Left Winger",
-      "dateOfBirth": "1993-09-30",
-      "nationality": "Sweden",
-      "shirtNumber": null
-    },
-    {
-      "name": "Victor Nilsson-Lindelöf",
-      "nameZh": "Victor Nilsson-Lindelöf",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1994-07-17",
-      "nationality": "Sweden",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/07mdel1756984093.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/07mdel1756984093.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/hjtxpz1778612707.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zptapf1770796138.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zptapf1770796138.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/qr7rw21778611524.jpg"
     }
   ],
-  "recentMatches": [],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

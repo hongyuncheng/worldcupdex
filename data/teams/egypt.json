@@ -3,14 +3,14 @@
   "nameZh": "埃及",
   "nameEn": "Egypt",
   "code": "eg",
-  "group": "",
+  "group": "G",
   "confederation": "",
-  "fifaRank": 35,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/eg.png",
   "coach": {
     "nameEn": "Hossam Hassan",
-    "nameZh": "侯赛姆·哈桑",
-    "nationality": ""
+    "nameZh": "Hossam Hassan",
+    "nationality": "Egypt"
   },
   "founded": 1921,
   "venue": "",
@@ -28,11 +28,38 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rlo4d41705485138.jpg"
     },
     {
+      "name": "Mohamed Alaa",
+      "nameZh": "Mohamed Alaa",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1999-09-01",
+      "nationality": "Egypt",
+      "shirtNumber": null
+    },
+    {
       "name": "Oufa Shobeir",
       "nameZh": "Oufa Shobeir",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "2000-03-17",
+      "nationality": "Egypt",
+      "shirtNumber": null
+    },
+    {
+      "name": "El Mahdi Soliman",
+      "nameZh": "El Mahdi Soliman",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1987-06-08",
+      "nationality": "Egypt",
+      "shirtNumber": null
+    },
+    {
+      "name": "Karim Hafez",
+      "nameZh": "Karim Hafez",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-03-12",
       "nationality": "Egypt",
       "shirtNumber": null
     },
@@ -47,27 +74,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/oie0ki1750398278.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/oie0ki1750398278.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/5q3emh1643147003.jpg"
-    },
-    {
-      "name": "Mohamed Alaa",
-      "nameZh": "Mohamed Alaa",
-      "position": "Defence",
-      "positionZh": "后卫",
-      "dateOfBirth": "1999-09-01",
-      "nationality": "Qatar",
-      "shirtNumber": null
-    },
-    {
-      "name": "Ramy Rabia",
-      "nameZh": "Ramy Rabia",
-      "position": "Defence",
-      "positionZh": "后卫",
-      "dateOfBirth": "1993-05-20",
-      "nationality": "Egypt",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zcxga31750752688.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zcxga31750752688.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jrp8xj1750752659.jpg"
     },
     {
       "name": "Yasser Ibrahim",
@@ -91,6 +97,27 @@
       "shirtNumber": null
     },
     {
+      "name": "Mohamed Abdelmonem",
+      "nameZh": "Mohamed Abdelmonem",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-02-01",
+      "nationality": "Egypt",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/v3aiug1766319519.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/v3aiug1766319519.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3teppl1705484933.jpg"
+    },
+    {
+      "name": "Rami Rabia",
+      "nameZh": "Rami Rabia",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1993-05-20",
+      "nationality": "Egypt",
+      "shirtNumber": null
+    },
+    {
       "name": "Hossam Abdelmaguid",
       "nameZh": "Hossam Abdelmaguid",
       "position": "Defence",
@@ -102,25 +129,13 @@
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Hossam_Abdel_Maguid.jpg?width=500"
     },
     {
-      "name": "Khaled Sobhy",
-      "nameZh": "Khaled Sobhy",
+      "name": "Tarek Alaa",
+      "nameZh": "Tarek Alaa",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "1995-05-04",
+      "dateOfBirth": "2002-01-05",
       "nationality": "Egypt",
       "shirtNumber": null
-    },
-    {
-      "name": "Trezeguet",
-      "nameZh": "Trezeguet",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1994-01-10",
-      "nationality": "Egypt",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kd5p321750397912.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/kd5p321750397912.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/lt5tc11563981420.jpg"
     },
     {
       "name": "Zizo",
@@ -135,16 +150,13 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/l4l7271705485290.jpg"
     },
     {
-      "name": "Haissem Hassan",
-      "nameZh": "Haissem Hassan",
+      "name": "Nabil Dunga",
+      "nameZh": "Nabil Dunga",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "2002-02-08",
-      "nationality": "France",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hht3iz1762620398.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hht3iz1762620398.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/s4ajn11762616728.jpg"
+      "dateOfBirth": "1996-04-06",
+      "nationality": "Egypt",
+      "shirtNumber": null
     },
     {
       "name": "Hamdy Fathy",
@@ -157,6 +169,18 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/x2vi4j1750397927.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/x2vi4j1750397927.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/e4m03l1705485729.jpg"
+    },
+    {
+      "name": "Trezeguet",
+      "nameZh": "Trezeguet",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1994-10-01",
+      "nationality": "Egypt",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kd5p321750397912.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/kd5p321750397912.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/lt5tc11563981420.jpg"
     },
     {
       "name": "Emam Ashour",
@@ -192,16 +216,57 @@
       "photoThumb": null
     },
     {
-      "name": "Ahmed Koka",
-      "nameZh": "Ahmed Koka",
+      "name": "Mahmoud Saber",
+      "nameZh": "Mahmoud Saber",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "2001-07-04",
+      "dateOfBirth": "2001-07-30",
       "nationality": "Egypt",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/mito941750398296.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/mito941750398296.png",
-      "photoThumb": null
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Egypt_vs._Morocco_2024_Summer_Olympics_men's_association_football_02_(cropped4).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Egypt_vs._Morocco_2024_Summer_Olympics_men's_association_football_02_(cropped4).jpg?width=500"
+    },
+    {
+      "name": "Mostafa Ziko",
+      "nameZh": "Mostafa Ziko",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1997-04-27",
+      "nationality": "Egypt",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mohamed Salah",
+      "nameZh": "穆罕默德·萨拉赫",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1992-06-15",
+      "nationality": "Egypt",
+      "shirtNumber": null
+    },
+    {
+      "name": "Omar Marmoush",
+      "nameZh": "Omar Marmoush",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1999-02-07",
+      "nationality": "Egypt",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kgn5451757098568.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/kgn5451757098568.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/w1jx521658324336.jpg"
+    },
+    {
+      "name": "Haissem Hassan",
+      "nameZh": "Haissem Hassan",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2002-02-08",
+      "nationality": "Egypt",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hht3iz1762620398.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hht3iz1762620398.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/s4ajn11762616728.jpg"
     },
     {
       "name": "Ibrahim Adel",
@@ -215,55 +280,17 @@
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Ibrahim_Adel_2025.jpg?width=500"
     },
     {
-      "name": "Mahmoud Saber",
-      "nameZh": "Mahmoud Saber",
+      "name": "Hamza Abdelkarim",
+      "nameZh": "Hamza Abdelkarim",
       "position": "Offence",
       "positionZh": "前锋",
-      "dateOfBirth": "2001-07-30",
+      "dateOfBirth": "2008-01-01",
       "nationality": "Egypt",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Egypt_vs._Morocco_2024_Summer_Olympics_men's_association_football_02_(cropped4).jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Egypt_vs._Morocco_2024_Summer_Olympics_men's_association_football_02_(cropped4).jpg?width=500"
-    },
-    {
-      "name": "Mohamed Abdelmonem",
-      "nameZh": "Mohamed Abdelmonem",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1999-02-01",
-      "nationality": "Egypt",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/v3aiug1766319519.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/v3aiug1766319519.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3teppl1705484933.jpg"
-    },
-    {
-      "name": "Mostafa Mohamed",
-      "nameZh": "Mostafa Mohamed",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "1997-11-28",
-      "nationality": "Egypt",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ebm0591765877211.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ebm0591765877211.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/q5znkh1674746538.jpg"
-    },
-    {
-      "name": "Omar Marmoush",
-      "nameZh": "Omar Marmoush",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "1999-02-07",
-      "nationality": "Egypt",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kgn5451757098568.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/kgn5451757098568.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/w1jx521658324336.jpg"
+      "shirtNumber": null
     }
   ],
-  "recentMatches": [],
   "squadStatus": "incomplete",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

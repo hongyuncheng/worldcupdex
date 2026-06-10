@@ -3,14 +3,14 @@
   "nameZh": "新西兰",
   "nameEn": "New Zealand",
   "code": "nz",
-  "group": "C",
+  "group": "G",
   "confederation": "OFC",
-  "fifaRank": 42,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/nz.png",
   "coach": {
     "nameEn": "Darren Bazeley",
-    "nameZh": "达伦·巴兹利",
-    "nationality": ""
+    "nameZh": "Darren Bazeley",
+    "nationality": "England"
   },
   "founded": 1891,
   "venue": "",
@@ -52,6 +52,26 @@
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/9l26de1778732191.jpg"
     },
     {
+      "name": "Liberato Cacace",
+      "nameZh": "Liberato Cacace",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-09-27",
+      "nationality": "New Zealand",
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Liberato_Cacace_30082025_(1).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Liberato_Cacace_30082025_(1).jpg?width=500"
+    },
+    {
+      "name": "Tommy Smith",
+      "nameZh": "Tommy Smith",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1990-03-31",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
       "name": "Michael Boxall",
       "nameZh": "Michael Boxall",
       "position": "Defence",
@@ -61,6 +81,18 @@
       "shirtNumber": null,
       "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Boxall_(36975336216)_(cropped).jpg?width=500",
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael_Boxall_(36975336216)_(cropped).jpg?width=500"
+    },
+    {
+      "name": "Francis De Vries",
+      "nameZh": "Francis De Vries",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1994-11-28",
+      "nationality": "New Zealand",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/95i9uf1765702871.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/95i9uf1765702871.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/x9owpm1730090361.jpg"
     },
     {
       "name": "Callan Elliot",
@@ -143,16 +175,28 @@
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarpreet_Singh_Training_2019-07-28_FC_Bayern_Munich.png?width=500"
     },
     {
-      "name": "Francis De Vries",
-      "nameZh": "Francis De Vries",
+      "name": "Ryan Thomas",
+      "nameZh": "Ryan Thomas",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "1994-11-28",
+      "dateOfBirth": "1994-12-20",
       "nationality": "New Zealand",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/95i9uf1765702871.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/95i9uf1765702871.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/x9owpm1730090361.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wqc6xf1764540033.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wqc6xf1764540033.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/0omjbr1778734869.jpg"
+    },
+    {
+      "name": "Callum McCowatt",
+      "nameZh": "Callum McCowatt",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-04-30",
+      "nationality": "New Zealand",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wy8ibg1765647125.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wy8ibg1765647125.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nwqmt51702554287.jpg"
     },
     {
       "name": "Joe Bell",
@@ -179,6 +223,18 @@
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/m2mhtx1778734686.jpg"
     },
     {
+      "name": "Ben Old",
+      "nameZh": "Ben Old",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-08-13",
+      "nationality": "New Zealand",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/u99llb1727952719.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/u99llb1727952719.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/5hsb761778732035.jpg"
+    },
+    {
       "name": "Kosta Barbarouses",
       "nameZh": "Kosta Barbarouses",
       "position": "Offence",
@@ -189,6 +245,15 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7rkwj31765802941.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7rkwj31765802941.png",
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/kuflmc1778729940.jpg"
+    },
+    {
+      "name": "Chris Wood",
+      "nameZh": "Chris Wood",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1991-12-07",
+      "nationality": "New Zealand",
+      "shirtNumber": null
     },
     {
       "name": "Ben Waine",
@@ -215,16 +280,13 @@
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/ppikbx1778731424.jpg"
     },
     {
-      "name": "Callum McCowatt",
-      "nameZh": "Callum McCowatt",
+      "name": "Matthew Garbett",
+      "nameZh": "Matthew Garbett",
       "position": "Offence",
       "positionZh": "前锋",
-      "dateOfBirth": "1999-04-30",
+      "dateOfBirth": "2002-04-13",
       "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wy8ibg1765647125.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wy8ibg1765647125.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nwqmt51702554287.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Lachlan Bayliss",
@@ -249,63 +311,10 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/clfg801765704716.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/clfg801765704716.png",
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/tkqmms1778733518.jpg"
-    },
-    {
-      "name": "Matthew Garbett",
-      "nameZh": "Matthew Garbett",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "2002-04-13",
-      "nationality": "New Zealand",
-      "shirtNumber": null
-    },
-    {
-      "name": "Ben Old",
-      "nameZh": "Ben Old",
-      "position": "Left Winger",
-      "positionZh": "Left Winger",
-      "dateOfBirth": "2002-08-13",
-      "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/u99llb1727952719.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/u99llb1727952719.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/5hsb761778732035.jpg"
-    },
-    {
-      "name": "Chris Wood",
-      "nameZh": "Chris Wood",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "1991-12-07",
-      "nationality": "New Zealand",
-      "shirtNumber": null
-    },
-    {
-      "name": "Ryan Thomas",
-      "nameZh": "Ryan Thomas",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "1994-12-20",
-      "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/wqc6xf1764540033.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/wqc6xf1764540033.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/0omjbr1778734869.jpg"
-    },
-    {
-      "name": "Liberato Cacace",
-      "nameZh": "Liberato Cacace",
-      "position": "Left-Back",
-      "positionZh": "Left-Back",
-      "dateOfBirth": "2000-09-27",
-      "nationality": "New Zealand",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Liberato_Cacace_30082025_(1).jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Liberato_Cacace_30082025_(1).jpg?width=500"
     }
   ],
-  "recentMatches": [],
   "squadStatus": "incomplete",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

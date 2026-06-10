@@ -3,28 +3,26 @@
   "nameZh": "约旦",
   "nameEn": "Jordan",
   "code": "jo",
-  "group": "",
+  "group": "J",
   "confederation": "",
-  "fifaRank": 51,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/jo.png",
   "coach": {
-    "nameEn": "Hussein Ammouta",
-    "nameZh": "侯赛因·阿穆塔",
+    "nameEn": "",
+    "nameZh": null,
     "nationality": ""
   },
   "founded": 1949,
   "venue": "",
   "squad": [
     {
-      "name": "Yazeed Abulaila",
-      "nameZh": "Yazeed Abulaila",
+      "name": "Yazeed Abu Layla",
+      "nameZh": "Yazeed Abu Layla",
       "position": "Goalkeeper",
       "positionZh": "门将",
-      "dateOfBirth": "1993-01-06",
+      "dateOfBirth": "1993-01-08",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Asian_Nations_Cup_-_Jordan_and_South_Korea_(53)_(cropped).jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Asian_Nations_Cup_-_Jordan_and_South_Korea_(53)_(cropped).jpg?width=500"
+      "shirtNumber": null
     },
     {
       "name": "Abdallah Al Fakhouri",
@@ -36,12 +34,21 @@
       "shirtNumber": null
     },
     {
-      "name": "Ahmad Assaf",
-      "nameZh": "Ahmad Assaf",
+      "name": "Noureddin Bani Ateyah",
+      "nameZh": "Noureddin Bani Ateyah",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1993-01-25",
+      "nationality": "Jordan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ehsan Haddad",
+      "nameZh": "Ehsan Haddad",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "1999-07-21",
-      "nationality": "Germany",
+      "dateOfBirth": "1994-02-05",
+      "nationality": "Jordan",
       "shirtNumber": null
     },
     {
@@ -68,7 +75,7 @@
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "2001-02-08",
-      "nationality": "USA",
+      "nationality": "Jordan",
       "shirtNumber": null
     },
     {
@@ -81,38 +88,29 @@
       "shirtNumber": null
     },
     {
-      "name": "Mohammad Abu Hasheesh",
-      "nameZh": "Mohammad Abu Hasheesh",
+      "name": "Saed Al Rosan",
+      "nameZh": "Saed Al Rosan",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "1995-05-09",
+      "dateOfBirth": "1997-02-01",
       "nationality": "Jordan",
       "shirtNumber": null
     },
     {
-      "name": "Yousef Abu Al Jazar",
-      "nameZh": "Yousef Abu Al Jazar",
+      "name": "Husam Abu Dahab",
+      "nameZh": "Husam Abu Dahab",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "1999-10-25",
+      "dateOfBirth": "2000-05-13",
       "nationality": "Jordan",
       "shirtNumber": null
     },
     {
-      "name": "Mahmoud Al Mardi",
-      "nameZh": "Mahmoud Al Mardi",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1993-10-06",
-      "nationality": "Jordan",
-      "shirtNumber": null
-    },
-    {
-      "name": "Yousef Qashi",
-      "nameZh": "Yousef Qashi",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "2005-04-15",
+      "name": "Anas Badawi",
+      "nameZh": "Anas Badawi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-09-13",
       "nationality": "Jordan",
       "shirtNumber": null
     },
@@ -126,11 +124,29 @@
       "shirtNumber": null
     },
     {
+      "name": "Rajaei Ayed",
+      "nameZh": "Rajaei Ayed",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1993-07-25",
+      "nationality": "Jordan",
+      "shirtNumber": null
+    },
+    {
       "name": "Noor Al Rawabdeh",
       "nameZh": "Noor Al Rawabdeh",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "1997-02-24",
+      "nationality": "Jordan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mohammad Abu Hasheesh",
+      "nameZh": "Mohammad Abu Hasheesh",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1995-05-09",
       "nationality": "Jordan",
       "shirtNumber": null
     },
@@ -144,11 +160,50 @@
       "shirtNumber": null
     },
     {
-      "name": "Baha' Faisal",
-      "nameZh": "Baha' Faisal",
+      "name": "Mohammad Al-Dawoud",
+      "nameZh": "Mohammad Al-Dawoud",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1992-12-04",
+      "nationality": "Jordan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Amer Jamous",
+      "nameZh": "Amer Jamous",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-07-03",
+      "nationality": "Jordan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Musa Al Taamari",
+      "nameZh": "Musa Al Taamari",
       "position": "Offence",
       "positionZh": "前锋",
-      "dateOfBirth": "1995-05-30",
+      "dateOfBirth": "1997-06-10",
+      "nationality": "Jordan",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/r8omzu1766136576.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/r8omzu1766136576.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bvis231700559097.jpg"
+    },
+    {
+      "name": "Mahmoud Al Mardi",
+      "nameZh": "Mahmoud Al Mardi",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1993-10-06",
+      "nationality": "Jordan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Ali Olwan",
+      "nameZh": "Ali Olwan",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-03-26",
       "nationality": "Jordan",
       "shirtNumber": null
     },
@@ -158,6 +213,15 @@
       "position": "Offence",
       "positionZh": "前锋",
       "dateOfBirth": "2003-02-02",
+      "nationality": "Jordan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mohammad Abu Zrayq",
+      "nameZh": "Mohammad Abu Zrayq",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1997-12-30",
       "nationality": "Jordan",
       "shirtNumber": null
     },
@@ -173,20 +237,26 @@
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Player_Ibraheem_Sabra.jpg?width=500"
     },
     {
-      "name": "Musa Al Taamari",
-      "nameZh": "Musa Al Taamari",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
-      "dateOfBirth": "1997-06-10",
+      "name": "Odeh Fakhoury",
+      "nameZh": "Odeh Fakhoury",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2005-11-20",
       "nationality": "Jordan",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/r8omzu1766136576.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/r8omzu1766136576.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bvis231700559097.jpg"
+      "shirtNumber": null
+    },
+    {
+      "name": "Ali Azaizeh",
+      "nameZh": "Ali Azaizeh",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2004-04-13",
+      "nationality": "Jordan",
+      "shirtNumber": null
     }
   ],
-  "recentMatches": [],
   "squadStatus": "incomplete",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

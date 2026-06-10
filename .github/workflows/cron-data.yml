@@ -4,6 +4,7 @@ on:
   schedule:
     # 全期使用 30 分钟一次的 cron，由下方 stage gate 在赛前阶段过滤为每日 04:00 UTC 1 次
     # 注意：由于缓存命中率问题，在世界杯开赛前 (2026-06-11前) 必须严格控制部署频率
+    - cron: '0 4 * * *'
     - cron: '*/30 * * * *'
   workflow_dispatch:
 
@@ -53,21 +54,22 @@ jobs:
           TODAY=$(date -u +%Y-%m-%d)
           HOUR=$(date -u +%H)
           MIN=$(date -u +%M)
+          SCHEDULE="${{ github.event.schedule }}"
           IN_TOURNAMENT="false"
           if [[ "$TODAY" > "2026-06-10" && "$TODAY" < "2026-07-21" ]]; then
             IN_TOURNAMENT="true"
           fi
-          echo "UTC now: ${TODAY}T${HOUR}:${MIN}Z, in_tournament=${IN_TOURNAMENT}"
+          echo "UTC now: ${TODAY}T${HOUR}:${MIN}Z, schedule=${SCHEDULE}, in_tournament=${IN_TOURNAMENT}"
           if [[ "$IN_TOURNAMENT" == "true" ]]; then
             echo "In-tournament stage: every 30 min, proceed."
             exit 0
           fi
           # 赛前/赛后阶段：仅允许 UTC 04:00 整点执行（每日 1 次，约北京 12:00）
-          if [[ "$HOUR" == "04" && "$MIN" == "00" ]]; then
-            echo "Pre/post-tournament stage @ 04:00 UTC, proceed (daily slot)."
+          if [[ "$SCHEDULE" == "0 4 * * *" ]]; then
+            echo "Pre/post-tournament daily schedule, proceed."
             exit 0
           fi
-          echo "Pre/post-tournament stage but not at 04:00 UTC; skipping this run."
+          echo "Pre/post-tournament stage on high-frequency schedule; skipping this run."
           echo "skip=true" >> "$GITHUB_OUTPUT"
           # 通过设置后续步骤的 if 条件实现优雅跳过
           exit 0
@@ -82,11 +84,21 @@ jobs:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
         run: npm run fetch-data
 
+      - name: Apply official schedule venues
+        if: steps.gate.outputs.skip != 'true'
+        run: npm run apply-official-schedule
+
       - name: Fetch recent matches
         if: steps.gate.outputs.skip != 'true'
         env:
           FOOTBALL_DATA_API_KEY: ${{ secrets.FOOTBALL_DATA_API_KEY }}
         run: node scripts/fetch-recent-matches.mjs
+
+      - name: Verify data quality
+        if: steps.gate.outputs.skip != 'true'
+        run: |
+          npm run validate-data
+          npm run verify-data
 
       - name: Detect data diff
         if: steps.gate.outputs.skip != 'true'

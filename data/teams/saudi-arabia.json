@@ -3,33 +3,30 @@
   "nameZh": "沙特阿拉伯",
   "nameEn": "Saudi Arabia",
   "code": "sa",
-  "group": "I",
+  "group": "H",
   "confederation": "AFC",
-  "fifaRank": 32,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/sa.png",
   "coach": {
-    "nameEn": "Roberto Mancini",
-    "nameZh": "罗伯托·曼奇尼",
-    "nationality": ""
+    "nameEn": "Giorgios Donis",
+    "nameZh": "Giorgios Donis",
+    "nationality": "Greece"
   },
   "founded": 1956,
   "venue": "",
   "squad": [
     {
-      "name": "Mohammed Al-Rubaie",
-      "nameZh": "Mohammed Al-Rubaie",
+      "name": "Mohammed Al Owais",
+      "nameZh": "Mohammed Al Owais",
       "position": "Goalkeeper",
       "positionZh": "门将",
-      "dateOfBirth": "1997-08-14",
-      "nationality": "",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/tes9z81668855550.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/tes9z81668855550.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/p006691668855653.jpg"
+      "dateOfBirth": "1991-10-10",
+      "nationality": "Saudi Arabia",
+      "shirtNumber": null
     },
     {
-      "name": "Nawaf Alaqidi",
-      "nameZh": "Nawaf Alaqidi",
+      "name": "Nawaf Al Aqidi",
+      "nameZh": "Nawaf Al Aqidi",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "2000-05-10",
@@ -58,11 +55,32 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rpr0x81668714479.jpg"
     },
     {
-      "name": "Muteb Al Mufarrij",
-      "nameZh": "Muteb Al Mufarrij",
+      "name": "Saud Abdulhamid",
+      "nameZh": "Saud Abdulhamid",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "1996-08-18",
+      "dateOfBirth": "1999-07-18",
+      "nationality": "Saudi Arabia",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/37g75w1766004681.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/37g75w1766004681.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/opcqpo1668712724.jpg"
+    },
+    {
+      "name": "Ali Lajami",
+      "nameZh": "Ali Lajami",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-04-24",
+      "nationality": "Saudi Arabia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Hassan Al Tambakti",
+      "nameZh": "Hassan Al Tambakti",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-02-09",
       "nationality": "Saudi Arabia",
       "shirtNumber": null
     },
@@ -76,41 +94,65 @@
       "shirtNumber": null
     },
     {
-      "name": "Rayane Hamed",
-      "nameZh": "Rayane Hamed",
+      "name": "Moteb Al Harbi",
+      "nameZh": "Moteb Al Harbi",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "2002-04-13",
+      "dateOfBirth": "2000-02-20",
       "nationality": "Saudi Arabia",
       "shirtNumber": null
     },
     {
-      "name": "Mohamed Kanno",
-      "nameZh": "Mohamed Kanno",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1994-09-22",
-      "nationality": "Saudi Arabia",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/rd52j51750753527.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/rd52j51750753527.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/jergmq1668799922.jpg"
-    },
-    {
-      "name": "Turki Al Ammar",
-      "nameZh": "Turki Al Ammar",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1999-09-24",
+      "name": "Ali Majrashi",
+      "nameZh": "Ali Majrashi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-10-01",
       "nationality": "Saudi Arabia",
       "shirtNumber": null
     },
     {
-      "name": "Sultan Mandash",
-      "nameZh": "Sultan Mandash",
+      "name": "Jehad Thakri",
+      "nameZh": "Jehad Thakri",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-07-21",
+      "nationality": "Saudi Arabia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nawaf Boushal",
+      "nameZh": "Nawaf Boushal",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-09-16",
+      "nationality": "Saudi Arabia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Salem Al Dawsari",
+      "nameZh": "Salem Al Dawsari",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "1994-10-17",
+      "dateOfBirth": "1991-08-19",
+      "nationality": "Saudi Arabia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Abdullah Al Khaibari",
+      "nameZh": "Abdullah Al Khaibari",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1996-08-16",
+      "nationality": "Saudi Arabia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nasser Al Dawsari",
+      "nameZh": "Nasser Al Dawsari",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-12-19",
       "nationality": "Saudi Arabia",
       "shirtNumber": null
     },
@@ -127,30 +169,6 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/89q03i1647505365.jpg"
     },
     {
-      "name": "Salman Al-Faraj",
-      "nameZh": "Salman Al-Faraj",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1989-08-01",
-      "nationality": "",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kxnga11668795519.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/kxnga11668795519.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/uiyzof1668795250.jpg"
-    },
-    {
-      "name": "Khalid Al Ghannam",
-      "nameZh": "Khalid Al Ghannam",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "2000-11-07",
-      "nationality": "Saudi Arabia",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/v416ya1750760441.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/v416ya1750760441.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nssbjo1750760511.jpg"
-    },
-    {
       "name": "Musab Al Juwayr",
       "nameZh": "Musab Al Juwayr",
       "position": "Midfield",
@@ -163,68 +181,95 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ypk4yz1750751799.jpg"
     },
     {
-      "name": "Marwan Al Sahafi",
-      "nameZh": "Marwan Al Sahafi",
+      "name": "Mohammed Kanno",
+      "nameZh": "Mohammed Kanno",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "2004-02-17",
+      "dateOfBirth": "1994-09-22",
       "nationality": "Saudi Arabia",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lkg1ec1767170753.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lkg1ec1767170753.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ucy6xd1767170707.jpg"
+      "shirtNumber": null
+    },
+    {
+      "name": "Ziyad Al-Johani",
+      "nameZh": "Ziyad Al-Johani",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-11-11",
+      "nationality": "Saudi Arabia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mohammed Abu Al Shamat",
+      "nameZh": "Mohammed Abu Al Shamat",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-08-11",
+      "nationality": "Saudi Arabia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alaa Al Hejji",
+      "nameZh": "Alaa Al Hejji",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1995-12-03",
+      "nationality": "Saudi Arabia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Sultan Mandash",
+      "nameZh": "Sultan Mandash",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1994-10-17",
+      "nationality": "Saudi Arabia",
+      "shirtNumber": null
+    },
+    {
+      "name": "Saleh Al Shehri",
+      "nameZh": "Saleh Al Shehri",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1993-11-01",
+      "nationality": "Saudi Arabia",
+      "shirtNumber": null
     },
     {
       "name": "Abdullah Al-Hamdan",
       "nameZh": "Abdullah Al-Hamdan",
-      "position": "",
-      "positionZh": "",
+      "position": "Offence",
+      "positionZh": "前锋",
       "dateOfBirth": "1999-09-12",
-      "nationality": "",
+      "nationality": "Saudi Arabia",
       "shirtNumber": null,
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/50ktuu1750680643.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/50ktuu1750680643.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qngvi21676223148.jpg"
     },
     {
-      "name": "Saleh Al-Shehri",
-      "nameZh": "Saleh Al-Shehri",
-      "position": "",
-      "positionZh": "",
-      "dateOfBirth": "1993-11-01",
-      "nationality": "",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/w8tfh21668850118.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/w8tfh21668850118.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/8scycx1668850397.jpg"
-    },
-    {
-      "name": "Firas Al-Buraikan",
-      "nameZh": "Firas Al-Buraikan",
-      "position": "",
-      "positionZh": "",
-      "dateOfBirth": "2000-05-14",
-      "nationality": "",
-      "shirtNumber": null,
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/16sp4v1777237767.png",
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/16sp4v1777237767.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/6wnro21668844708.jpg"
-    },
-    {
-      "name": "Saud Abdulhamid",
-      "nameZh": "Saud Abdulhamid",
-      "position": "Right-Back",
-      "positionZh": "Right-Back",
-      "dateOfBirth": "1999-07-18",
+      "name": "Khalid Al Ghannam",
+      "nameZh": "Khalid Al Ghannam",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-11-07",
       "nationality": "Saudi Arabia",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/37g75w1766004681.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/37g75w1766004681.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/opcqpo1668712724.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/v416ya1750760441.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/v416ya1750760441.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nssbjo1750760511.jpg"
+    },
+    {
+      "name": "Firas Al Brikan",
+      "nameZh": "Firas Al Brikan",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-05-14",
+      "nationality": "Saudi Arabia",
+      "shirtNumber": null
     }
   ],
-  "recentMatches": [],
   "squadStatus": "incomplete",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

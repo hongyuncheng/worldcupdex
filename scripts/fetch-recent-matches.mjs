@@ -294,7 +294,7 @@ async function main() {
   }
 
   if (stats.success > 0) {
-    updateDataMeta(['squadsLastUpdated'], 'fetch-recent-matches');
+    updateDataMeta(['squadsLastUpdated'], 'football-data+official-schedule-venues');
   }
 
   // ---- Summary ----

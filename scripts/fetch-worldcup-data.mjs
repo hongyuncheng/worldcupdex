@@ -609,6 +609,26 @@ async function main() {
   const apiMatches = matchesData.matches || [];
   const matches = apiMatches.map((m, i) => processMatch(m, i));
 
+  // Use the match feed as the source of truth for group assignment. The
+  // football-data team endpoint does not expose 2026 groups, and the fallback
+  // mapping above can go stale after the draw changes.
+  const groupByTeamId = new Map();
+  for (const match of matches) {
+    if (match.stage !== 'GROUP_STAGE' || !match.group) continue;
+    for (const side of ['homeTeam', 'awayTeam']) {
+      const teamId = match[side]?.id;
+      if (teamId && teamId !== 'tbd') groupByTeamId.set(teamId, match.group);
+    }
+  }
+  for (const team of teamsBasic) {
+    const group = groupByTeamId.get(team.id);
+    if (group) team.group = group;
+  }
+  for (const team of teamsDetailed) {
+    const group = groupByTeamId.get(team.id);
+    if (group) team.group = group;
+  }
+
   // Extract venues
   const venues = extractVenues(matches);
 

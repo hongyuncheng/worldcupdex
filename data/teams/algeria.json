@@ -3,14 +3,14 @@
   "nameZh": "阿尔及利亚",
   "nameEn": "Algeria",
   "code": "dz",
-  "group": "",
+  "group": "J",
   "confederation": "",
-  "fifaRank": 33,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/dz.png",
   "coach": {
     "nameEn": "Vladimir Petković",
-    "nameZh": "弗拉迪米尔·佩特科维奇",
-    "nationality": ""
+    "nameZh": "Vladimir Petković",
+    "nationality": "Switzerland"
   },
   "founded": 1962,
   "venue": "",
@@ -28,16 +28,13 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/8j590l1630065433.jpg"
     },
     {
-      "name": "Anthony Mandrea",
-      "nameZh": "Anthony Mandrea",
+      "name": "Oussama Benbout",
+      "nameZh": "Oussama Benbout",
       "position": "Goalkeeper",
       "positionZh": "门将",
-      "dateOfBirth": "1996-12-25",
+      "dateOfBirth": "1994-10-11",
       "nationality": "Algeria",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/dx403l1653404913.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/dx403l1653404913.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/om326l1551886089.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Melvin Mastil",
@@ -49,12 +46,57 @@
       "shirtNumber": null
     },
     {
-      "name": "Kilian Belazzoug",
-      "nameZh": "Kilian Belazzoug",
-      "position": "Goalkeeper",
-      "positionZh": "门将",
-      "dateOfBirth": "2006-07-18",
-      "nationality": "France",
+      "name": "Aïssa Mandi",
+      "nameZh": "Aïssa Mandi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1991-10-22",
+      "nationality": "Algeria",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/u0lyro1766078291.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/u0lyro1766078291.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/daf6z21503235226.jpg"
+    },
+    {
+      "name": "Rayan Aït Nouri",
+      "nameZh": "Rayan Aït Nouri",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-06-06",
+      "nationality": "Algeria",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pxl8n91769182693.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pxl8n91769182693.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9yw7w11570031997.jpg"
+    },
+    {
+      "name": "Ramy Bensebaini",
+      "nameZh": "Ramy Bensebaini",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-04-16",
+      "nationality": "Algeria",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/z5sfyp1756326052.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/z5sfyp1756326052.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mq8sma1578119085.jpg"
+    },
+    {
+      "name": "Samir Chergui",
+      "nameZh": "Samir Chergui",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-02-06",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jaouen Hadjam",
+      "nameZh": "Jaouen Hadjam",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2003-03-26",
+      "nationality": "Algeria",
       "shirtNumber": null
     },
     {
@@ -70,15 +112,6 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/vfqhwg1759162273.jpg"
     },
     {
-      "name": "Mehdi Dorval",
-      "nameZh": "Mehdi Dorval",
-      "position": "Defence",
-      "positionZh": "后卫",
-      "dateOfBirth": "2001-02-09",
-      "nationality": "Algeria",
-      "shirtNumber": null
-    },
-    {
       "name": "Zinédine Belaïd",
       "nameZh": "Zinédine Belaïd",
       "position": "Defence",
@@ -88,16 +121,90 @@
       "shirtNumber": null
     },
     {
-      "name": "Riyad Mahrez",
-      "nameZh": "Riyad Mahrez",
+      "name": "Amine Tougai",
+      "nameZh": "Amine Tougai",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-01-22",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Achref Abada",
+      "nameZh": "Achref Abada",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-06-15",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nabil Bentaleb",
+      "nameZh": "Nabil Bentaleb",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "1991-02-21",
+      "dateOfBirth": "1994-11-24",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Houssem Aouar",
+      "nameZh": "Houssem Aouar",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-06-30",
       "nationality": "Algeria",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/g0ay2p1771662753.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/g0ay2p1771662753.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iq8t6p1771662698.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hm39tt1681230801.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hm39tt1681230801.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pmyp5u1534013134.jpg"
+    },
+    {
+      "name": "Hicham Boudaoui",
+      "nameZh": "Hicham Boudaoui",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-09-23",
+      "nationality": "Algeria",
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Boudaoui_asse_ogcn_2425.png?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Boudaoui_asse_ogcn_2425.png?width=500"
+    },
+    {
+      "name": "Ramiz Zerrouki",
+      "nameZh": "Ramiz Zerrouki",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-05-26",
+      "nationality": "Algeria",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/22jlww1759840799.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/22jlww1759840799.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xdbl1g1696837141.jpg"
+    },
+    {
+      "name": "Fares Chaïbi",
+      "nameZh": "Fares Chaïbi",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-11-28",
+      "nationality": "Algeria",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/736ole1762287487.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/736ole1762287487.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/if8k4w1678360127.jpg"
+    },
+    {
+      "name": "Ibrahim Maza",
+      "nameZh": "Ibrahim Maza",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2005-11-24",
+      "nationality": "Algeria",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pp1m6o1756315346.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pp1m6o1756315346.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7z9c2k1756315185.jpg"
     },
     {
       "name": "Yacine Titraoui",
@@ -110,6 +217,39 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/u8k8vz1767730925.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/u8k8vz1767730925.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mie1ch1767728622.jpg"
+    },
+    {
+      "name": "Adil Boulbina",
+      "nameZh": "Adil Boulbina",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2003-05-02",
+      "nationality": "Algeria",
+      "shirtNumber": null
+    },
+    {
+      "name": "Riyad Mahrez",
+      "nameZh": "Riyad Mahrez",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1991-02-21",
+      "nationality": "Algeria",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/g0ay2p1771662753.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/g0ay2p1771662753.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iq8t6p1771662698.jpg"
+    },
+    {
+      "name": "Amine Gouiri",
+      "nameZh": "Amine Gouiri",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-02-16",
+      "nationality": "Algeria",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/74eam91766152411.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/74eam91766152411.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xl6as41534013643.jpg"
     },
     {
       "name": "Mohammed Amoura",
@@ -133,157 +273,26 @@
       "shirtNumber": null
     },
     {
-      "name": "Amin Chiakha",
-      "nameZh": "Amin Chiakha",
+      "name": "Anis Moussa",
+      "nameZh": "Anis Moussa",
       "position": "Offence",
       "positionZh": "前锋",
-      "dateOfBirth": "2006-03-12",
+      "dateOfBirth": "2002-02-11",
       "nationality": "Algeria",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/lri0471765801330.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/lri0471765801330.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/w2wli91742485182.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Farés Ghedjemis",
       "nameZh": "Farés Ghedjemis",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
+      "position": "Offence",
+      "positionZh": "前锋",
       "dateOfBirth": "2002-09-06",
       "nationality": "Algeria",
       "shirtNumber": null
-    },
-    {
-      "name": "Sohaib Nair",
-      "nameZh": "Sohaib Nair",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "2002-04-23",
-      "nationality": "Algeria",
-      "shirtNumber": null
-    },
-    {
-      "name": "Ibrahim Maza",
-      "nameZh": "Ibrahim Maza",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
-      "dateOfBirth": "2005-11-24",
-      "nationality": "Algeria",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pp1m6o1756315346.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pp1m6o1756315346.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7z9c2k1756315185.jpg"
-    },
-    {
-      "name": "Fares Chaïbi",
-      "nameZh": "Fares Chaïbi",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
-      "dateOfBirth": "2002-11-28",
-      "nationality": "Algeria",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/736ole1762287487.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/736ole1762287487.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/if8k4w1678360127.jpg"
-    },
-    {
-      "name": "Adil Aouchiche",
-      "nameZh": "Adil Aouchiche",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
-      "dateOfBirth": "2002-07-15",
-      "nationality": "Algeria",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/twcpiw1773610875.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/twcpiw1773610875.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/0gh40s1609235427.jpg"
-    },
-    {
-      "name": "Ramiz Zerrouki",
-      "nameZh": "Ramiz Zerrouki",
-      "position": "Defensive Midfield",
-      "positionZh": "Defensive Midfield",
-      "dateOfBirth": "1998-05-26",
-      "nationality": "Algeria",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/22jlww1759840799.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/22jlww1759840799.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xdbl1g1696837141.jpg"
-    },
-    {
-      "name": "Hicham Boudaoui",
-      "nameZh": "Hicham Boudaoui",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "1999-09-23",
-      "nationality": "Algeria",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Boudaoui_asse_ogcn_2425.png?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Boudaoui_asse_ogcn_2425.png?width=500"
-    },
-    {
-      "name": "Ramy Bensebaini",
-      "nameZh": "Ramy Bensebaini",
-      "position": "Left-Back",
-      "positionZh": "Left-Back",
-      "dateOfBirth": "1995-04-16",
-      "nationality": "Algeria",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/z5sfyp1756326052.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/z5sfyp1756326052.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mq8sma1578119085.jpg"
-    },
-    {
-      "name": "Rayan Aït Nouri",
-      "nameZh": "Rayan Aït Nouri",
-      "position": "Left-Back",
-      "positionZh": "Left-Back",
-      "dateOfBirth": "2001-06-06",
-      "nationality": "Algeria",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pxl8n91769182693.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pxl8n91769182693.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9yw7w11570031997.jpg"
-    },
-    {
-      "name": "Amine Gouiri",
-      "nameZh": "Amine Gouiri",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "2000-02-16",
-      "nationality": "Algeria",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/74eam91766152411.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/74eam91766152411.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xl6as41534013643.jpg"
-    },
-    {
-      "name": "Houssem Aouar",
-      "nameZh": "Houssem Aouar",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "1998-06-30",
-      "nationality": "Algeria",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/hm39tt1681230801.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/hm39tt1681230801.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pmyp5u1534013134.jpg"
-    },
-    {
-      "name": "Aïssa Mandi",
-      "nameZh": "Aïssa Mandi",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1991-10-22",
-      "nationality": "Algeria",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/u0lyro1766078291.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/u0lyro1766078291.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/daf6z21503235226.jpg"
     }
   ],
-  "recentMatches": [],
   "squadStatus": "incomplete",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

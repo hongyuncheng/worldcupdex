@@ -3,14 +3,14 @@
   "nameZh": "佛得角",
   "nameEn": "Cape Verde Islands",
   "code": "cv",
-  "group": "",
+  "group": "H",
   "confederation": "",
-  "fifaRank": 54,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/cv.png",
   "coach": {
     "nameEn": "Bubista",
-    "nameZh": "布比斯塔",
-    "nationality": ""
+    "nameZh": "Bubista",
+    "nationality": "Cape Verde Islands"
   },
   "founded": 1982,
   "venue": "",
@@ -44,7 +44,7 @@
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "2000-08-24",
-      "nationality": "USA",
+      "nationality": "Cape Verde Islands",
       "shirtNumber": null,
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ngtq6m1750329281.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ngtq6m1750329281.png",
@@ -63,6 +63,17 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/m7dkfl1691077984.jpg"
     },
     {
+      "name": "Logan Costa",
+      "nameZh": "Logan Costa",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-04-01",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Logan_Costa_-_2023-02-01_(cropped_medium_shot).jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Logan_Costa_-_2023-02-01_(cropped_medium_shot).jpg?width=500"
+    },
+    {
       "name": "Roberto Lopes",
       "nameZh": "Roberto Lopes",
       "position": "Defence",
@@ -73,6 +84,15 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/73sp9f1705487377.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/73sp9f1705487377.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tzl2ni1705487160.jpg"
+    },
+    {
+      "name": "Diney Borges",
+      "nameZh": "Diney Borges",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-01-17",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
     },
     {
       "name": "Stopira",
@@ -91,7 +111,16 @@
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "2002-09-18",
-      "nationality": "Netherlands",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Wagner Pina",
+      "nameZh": "Wagner Pina",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2002-11-03",
+      "nationality": "Cape Verde Islands",
       "shirtNumber": null
     },
     {
@@ -161,6 +190,15 @@
       "shirtNumber": null
     },
     {
+      "name": "Telmo Arcanjo",
+      "nameZh": "Telmo Arcanjo",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2001-06-21",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
       "name": "Jamiro Monteiro",
       "nameZh": "Jamiro Monteiro",
       "position": "Midfield",
@@ -171,6 +209,15 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2uh5az1764539734.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/2uh5az1764539734.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nr9slg1652709187.jpg"
+    },
+    {
+      "name": "João Paulo",
+      "nameZh": "João Paulo",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-05-26",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
     },
     {
       "name": "Willy Semedo",
@@ -207,6 +254,39 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/rbga4d1643744891.jpg"
     },
     {
+      "name": "Gilson Tavares",
+      "nameZh": "Gilson Tavares",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-12-29",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null
+    },
+    {
+      "name": "Nuno Da Costa",
+      "nameZh": "Nuno Da Costa",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1991-02-10",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qoetyz1680955675.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qoetyz1680955675.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/faywzi1605100264.jpg"
+    },
+    {
+      "name": "Dailon Rocha Livramento",
+      "nameZh": "Dailon Rocha Livramento",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-05-04",
+      "nationality": "Cape Verde Islands",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zb6vte1741897417.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zb6vte1741897417.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mwu5tv1741897409.jpg"
+    },
+    {
       "name": "Hélio Varela",
       "nameZh": "Hélio Varela",
       "position": "Offence",
@@ -217,63 +297,10 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/znj0qi1767870998.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/znj0qi1767870998.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/phf9f11767870978.jpg"
-    },
-    {
-      "name": "Wagner Pina",
-      "nameZh": "Wagner Pina",
-      "position": "Right-Back",
-      "positionZh": "Right-Back",
-      "dateOfBirth": "2002-11-03",
-      "nationality": "Cape Verde Islands",
-      "shirtNumber": null
-    },
-    {
-      "name": "Dailon Rocha Livramento",
-      "nameZh": "Dailon Rocha Livramento",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "2001-05-04",
-      "nationality": "Netherlands",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/zb6vte1741897417.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/zb6vte1741897417.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mwu5tv1741897409.jpg"
-    },
-    {
-      "name": "Nuno Da Costa",
-      "nameZh": "Nuno Da Costa",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "1991-02-10",
-      "nationality": "Cape Verde Islands",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qoetyz1680955675.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qoetyz1680955675.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/faywzi1605100264.jpg"
-    },
-    {
-      "name": "Telmo Arcanjo",
-      "nameZh": "Telmo Arcanjo",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
-      "dateOfBirth": "2001-06-21",
-      "nationality": "Portugal",
-      "shirtNumber": null
-    },
-    {
-      "name": "Logan Costa",
-      "nameZh": "Logan Costa",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "2001-04-01",
-      "nationality": "Cape Verde Islands",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Logan_Costa_-_2023-02-01_(cropped_medium_shot).jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Logan_Costa_-_2023-02-01_(cropped_medium_shot).jpg?width=500"
     }
   ],
-  "recentMatches": [],
   "squadStatus": "incomplete",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

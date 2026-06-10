@@ -3,14 +3,14 @@
   "nameZh": "伊朗",
   "nameEn": "Iran",
   "code": "ir",
-  "group": "F",
+  "group": "G",
   "confederation": "AFC",
-  "fifaRank": 20,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/ir.png",
   "coach": {
     "nameEn": "Amir Ghalenoei",
-    "nameZh": "阿米尔·加莱诺伊",
-    "nationality": ""
+    "nameZh": "Amir Ghalenoei",
+    "nationality": "Iran"
   },
   "founded": 1920,
   "venue": "",
@@ -76,15 +76,6 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/a1m7o01668786760.jpg"
     },
     {
-      "name": "Roozbeh Cheshmi",
-      "nameZh": "Roozbeh Cheshmi",
-      "position": "Defence",
-      "positionZh": "后卫",
-      "dateOfBirth": "1993-07-24",
-      "nationality": "Iran",
-      "shirtNumber": null
-    },
-    {
       "name": "Milad Mohammadi",
       "nameZh": "Milad Mohammadi",
       "position": "Defence",
@@ -97,34 +88,29 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/uw0wfw1668785895.jpg"
     },
     {
-      "name": "Omid Noorafkan",
-      "nameZh": "Omid Noorafkan",
-      "position": "Defence",
-      "positionZh": "后卫",
-      "dateOfBirth": "1997-04-09",
-      "nationality": "Iran",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Omid_noorafkan_Sepahan_2023.jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Omid_noorafkan_Sepahan_2023.jpg?width=500"
-    },
-    {
-      "name": "Hossein Kanaani",
-      "nameZh": "Hossein Kanaani",
+      "name": "Hossein Kanaanizadegan",
+      "nameZh": "Hossein Kanaanizadegan",
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "1994-03-23",
       "nationality": "Iran",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kffsom1668782969.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/kffsom1668782969.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/kbj1jy1668782864.jpg"
+      "shirtNumber": null
     },
     {
-      "name": "Shoja Khalilzadeh",
-      "nameZh": "Shoja Khalilzadeh",
+      "name": "Shojae Khalilzadeh",
+      "nameZh": "Shojae Khalilzadeh",
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "1989-05-14",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Rouzbeh Cheshmi",
+      "nameZh": "Rouzbeh Cheshmi",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1993-07-24",
       "nationality": "Iran",
       "shirtNumber": null
     },
@@ -133,42 +119,38 @@
       "nameZh": "Saleh Hardani",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "1998-09-14",
-      "nationality": "",
+      "dateOfBirth": "1998-12-26",
+      "nationality": "Iran",
       "shirtNumber": null,
       "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Esteghlal_Celebrate_IPL_Title_Win_at_Azadi_Stadium_-_020.jpg?width=500",
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Esteghlal_Celebrate_IPL_Title_Win_at_Azadi_Stadium_-_020.jpg?width=500"
     },
     {
-      "name": "Ariya Yousefi",
-      "nameZh": "Ariya Yousefi",
+      "name": "Ali Nemati",
+      "nameZh": "Ali Nemati",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "2002-04-22",
+      "dateOfBirth": "1996-02-07",
       "nationality": "Iran",
       "shirtNumber": null
     },
     {
-      "name": "Aref Aghasi",
-      "nameZh": "Aref Aghasi",
+      "name": "Danial Eiri",
+      "nameZh": "Danial Eiri",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "1997-01-02",
+      "dateOfBirth": "2003-10-26",
       "nationality": "Iran",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Esteghlal_FC_in_training,_29_September_2021_-_08.jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Esteghlal_FC_in_training,_29_September_2021_-_08.jpg?width=500"
+      "shirtNumber": null
     },
     {
-      "name": "Amirhossein Hosseinzadeh",
-      "nameZh": "Amirhossein Hosseinzadeh",
+      "name": "Saeid Ezatolahi",
+      "nameZh": "Saeid Ezatolahi",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "2000-10-30",
+      "dateOfBirth": "1996-10-01",
       "nationality": "Iran",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Esteghlal_FC_in_training,_29_September_2021_-_09.jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Esteghlal_FC_in_training,_29_September_2021_-_09.jpg?width=500"
+      "shirtNumber": null
     },
     {
       "name": "Mehdi Torabi",
@@ -183,41 +165,118 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/hwmkr81668787170.jpg"
     },
     {
-      "name": "Mehdi Hashemnejad",
-      "nameZh": "Mehdi Hashemnejad",
+      "name": "Mohammad Ghorbani",
+      "nameZh": "Mohammad Ghorbani",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "2001-10-27",
-      "nationality": "",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/مقدماتی_جام_جهانی_۲۰۲۶؛_تیم‌های_ملی_ایران_و_کره_شمالی_(15)_(cropped)_Mehdi_Hashemnejad.jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/مقدماتی_جام_جهانی_۲۰۲۶؛_تیم‌های_ملی_ایران_و_کره_شمالی_(15)_(cropped)_Mehdi_Hashemnejad.jpg?width=500"
+      "dateOfBirth": "2001-05-21",
+      "nationality": "Iran",
+      "shirtNumber": null
     },
     {
-      "name": "Kasra Taheri",
-      "nameZh": "Kasra Taheri",
+      "name": "Ariya Yousefi",
+      "nameZh": "Ariya Yousefi",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-04-22",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Medhi Ghayedi",
+      "nameZh": "Medhi Ghayedi",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-12-05",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Amir Razzaghinia",
+      "nameZh": "Amir Razzaghinia",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2006-04-11",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Alireza Jahanbakhsh",
+      "nameZh": "Alireza Jahanbakhsh",
       "position": "Offence",
       "positionZh": "前锋",
-      "dateOfBirth": "2006-08-06",
+      "dateOfBirth": "1993-08-11",
       "nationality": "Iran",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kasra_Taheri.jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Kasra_Taheri.jpg?width=500"
+      "shirtNumber": null
+    },
+    {
+      "name": "Mehdi Taremi",
+      "nameZh": "Mehdi Taremi",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1992-07-18",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Dennis Eckert",
+      "nameZh": "Dennis Eckert",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1997-01-09",
+      "nationality": "Iran",
+      "shirtNumber": null
     },
     {
       "name": "Ali Alipour",
       "nameZh": "Ali Alipour",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
+      "position": "Offence",
+      "positionZh": "前锋",
       "dateOfBirth": "1995-11-11",
       "nationality": "Iran",
       "shirtNumber": null,
       "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Persepolis_F.C._v_Shahr_Khodro_F.C.,_27_February_2020_(13)_(cropped).jpg?width=500",
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Persepolis_F.C._v_Shahr_Khodro_F.C.,_27_February_2020_(13)_(cropped).jpg?width=500"
+    },
+    {
+      "name": "Shahriar Moghanlou",
+      "nameZh": "Shahriar Moghanlou",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1994-12-21",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Mohammad Mohebi",
+      "nameZh": "Mohammad Mohebi",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1998-12-20",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Saman Ghoddos",
+      "nameZh": "Saman Ghoddos",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1993-09-06",
+      "nationality": "Iran",
+      "shirtNumber": null
+    },
+    {
+      "name": "Amir Hosseinzadeh",
+      "nameZh": "Amir Hosseinzadeh",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-10-30",
+      "nationality": "Iran",
+      "shirtNumber": null
     }
   ],
-  "recentMatches": [],
   "squadStatus": "incomplete",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

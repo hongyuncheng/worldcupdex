@@ -3,36 +3,33 @@
   "nameZh": "乌兹别克斯坦",
   "nameEn": "Uzbekistan",
   "code": "uz",
-  "group": "",
+  "group": "K",
   "confederation": "",
-  "fifaRank": 49,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/uz.png",
   "coach": {
-    "nameEn": "Srecko Katanec",
-    "nameZh": "斯雷奇科·卡塔内茨",
-    "nationality": ""
+    "nameEn": "Fabio Cannavaro",
+    "nameZh": "Fabio Cannavaro",
+    "nationality": "Italy"
   },
   "founded": 1946,
-  "venue": "Al-Hamriya Sports Club Stadium",
+  "venue": "",
   "squad": [
-    {
-      "name": "Botirali Ergashev",
-      "nameZh": "Botirali Ergashev",
-      "position": "Goalkeeper",
-      "positionZh": "门将",
-      "dateOfBirth": "1995-06-23",
-      "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photo": "https://www.thesportsdb.com/images/media/player/thumb/gu1y9n1778633321.jpg",
-      "photoCutout": null,
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/gu1y9n1778633321.jpg"
-    },
     {
       "name": "Abduvakhid Nematov",
       "nameZh": "Abduvakhid Nematov",
       "position": "Goalkeeper",
       "positionZh": "门将",
       "dateOfBirth": "2001-03-20",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Botir Ergashev",
+      "nameZh": "Botir Ergashev",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "1995-06-23",
       "nationality": "Uzbekistan",
       "shirtNumber": null
     },
@@ -71,6 +68,17 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/thumb/fq3ery1712553481.jpg",
       "photoCutout": null,
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/fq3ery1712553481.jpg"
+    },
+    {
+      "name": "Abdukodir Khusanov",
+      "nameZh": "Abdukodir Khusanov",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2004-02-29",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null,
+      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Khusanov_ASSE_RCL_2425.jpg?width=500",
+      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Khusanov_ASSE_RCL_2425.jpg?width=500"
     },
     {
       "name": "Jakhongir O'rozov",
@@ -115,11 +123,29 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/h9md341712557018.jpg"
     },
     {
-      "name": "Mukhammadkodir Khamraliev",
-      "nameZh": "Mukhammadkodir Khamraliev",
+      "name": "Abdulla Abdullayev",
+      "nameZh": "Abdulla Abdullayev",
       "position": "Defence",
       "positionZh": "后卫",
-      "dateOfBirth": "2001-07-06",
+      "dateOfBirth": "1997-09-01",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Bekhruz Karimov",
+      "nameZh": "Bekhruz Karimov",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2007-08-07",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Avazbek Ulmasaliev",
+      "nameZh": "Avazbek Ulmasaliev",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-03-27",
       "nationality": "Uzbekistan",
       "shirtNumber": null
     },
@@ -177,16 +203,13 @@
       "shirtNumber": null
     },
     {
-      "name": "Umarali Rahmonaliyev",
-      "nameZh": "Umarali Rahmonaliyev",
+      "name": "Abbosbek Fayzullaev",
+      "nameZh": "Abbosbek Fayzullaev",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "2003-08-18",
+      "dateOfBirth": "2003-10-03",
       "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/mhb1111691312216.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/mhb1111691312216.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/efuvwr1691312081.jpg"
+      "shirtNumber": null
     },
     {
       "name": "Azizjon Ganiev",
@@ -209,11 +232,32 @@
       "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Odiljon_Hamrobekov_2020.jpg?width=500"
     },
     {
-      "name": "Ibrokhim Ibrokhimov",
-      "nameZh": "Ibrokhim Ibrokhimov",
+      "name": "Sherzod Esanov",
+      "nameZh": "Sherzod Esanov",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "2001-01-12",
+      "dateOfBirth": "2003-02-01",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
+    },
+    {
+      "name": "Eldor Shomurodov",
+      "nameZh": "Eldor Shomurodov",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1995-06-29",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pzj8ab1697923953.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pzj8ab1697923953.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iv5mef1608646798.jpg"
+    },
+    {
+      "name": "Jaloliddin Masharipov",
+      "nameZh": "Jaloliddin Masharipov",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1993-09-01",
       "nationality": "Uzbekistan",
       "shirtNumber": null
     },
@@ -230,40 +274,17 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nauv5z1712557510.jpg"
     },
     {
-      "name": "Alisher Odilov",
-      "nameZh": "Alisher Odilov",
+      "name": "Azizbek Amonov",
+      "nameZh": "Azizbek Amonov",
       "position": "Offence",
       "positionZh": "前锋",
-      "dateOfBirth": "2001-07-15",
+      "dateOfBirth": "1997-10-30",
       "nationality": "Uzbekistan",
       "shirtNumber": null
-    },
-    {
-      "name": "Abdukodir Khusanov",
-      "nameZh": "Abdukodir Khusanov",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "2004-02-29",
-      "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Khusanov_ASSE_RCL_2425.jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Khusanov_ASSE_RCL_2425.jpg?width=500"
-    },
-    {
-      "name": "Eldor Shomurodov",
-      "nameZh": "Eldor Shomurodov",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "1995-06-29",
-      "nationality": "Uzbekistan",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pzj8ab1697923953.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pzj8ab1697923953.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iv5mef1608646798.jpg"
     }
   ],
-  "recentMatches": [],
   "squadStatus": "incomplete",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

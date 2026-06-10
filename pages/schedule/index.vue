@@ -376,25 +376,11 @@ function formatDateLabel(dateStr: string, loc: string): string {
 const timezoneMode = ref<'venue' | 'local'>('venue')
 
 function formatMatchDate(m: MatchItem, loc: string, mode: 'venue' | 'local'): string {
-  if (mode === 'venue') {
-    return formatDateLabel(m.date, loc)
-  } else {
-    const d = new Date(m.timestamp)
-    const year = d.getFullYear()
-    const month = d.getMonth() + 1
-    const day = d.getDate()
-    const weekday = d.getDay()
-    if (loc === 'zh') {
-      return `${year}年${month}月${day}日 ${weekdayNamesZh[weekday]}`
-    }
-    return `${weekdayNamesEn[weekday]}, ${monthNames[d.getMonth()]} ${day}, ${year}`
-  }
+  return formatMatchDateLabel(m, loc, mode)
 }
 
 function formatMatchTime(m: MatchItem, mode: 'venue' | 'local'): string {
-  if (mode === 'venue') return m.time || '00:00'
-  const d = new Date(m.timestamp)
-  return `${d.getHours().toString().padStart(2, '0')}:${d.getMinutes().toString().padStart(2, '0')}`
+  return formatMatchClock(m, locale.value, mode)
 }
 
 const showAll = ref(false)
@@ -620,10 +606,9 @@ const upcomingMatchesForSchema = computed<MatchItem[]>(() => {
   return allMatches.value
     .filter((m) => {
       if (m.homeTeam.id === 'tbd' || m.awayTeam.id === 'tbd') return false
-      const ts = new Date(`${m.date}T${m.time || '00:00'}:00`).getTime()
-      return Number.isFinite(ts) && ts >= now
+      return Number.isFinite(m.timestamp) && m.timestamp >= now
     })
-    .sort((a, b) => `${a.date}T${a.time}`.localeCompare(`${b.date}T${b.time}`))
+    .sort((a, b) => a.timestamp - b.timestamp)
     .slice(0, 5)
 })
 
@@ -633,7 +618,7 @@ function buildSportsEventData(m: MatchItem) {
 
   return {
     name: `${m.homeTeam.nameEn} vs ${m.awayTeam.nameEn}`,
-    startDate: `${m.date}T${m.time || '00:00'}:00`,
+    startDate: getMatchIsoStart(m),
     location: {
       '@type': 'Place',
       name: venueName,

@@ -3,17 +3,17 @@
   "nameZh": "挪威",
   "nameEn": "Norway",
   "code": "no",
-  "group": "",
+  "group": "I",
   "confederation": "",
-  "fifaRank": 38,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/no.png",
   "coach": {
     "nameEn": "Ståle Solbakken",
-    "nameZh": "斯塔勒·索尔巴肯",
-    "nationality": ""
+    "nameZh": "Ståle Solbakken",
+    "nationality": "Norway"
   },
   "founded": 1902,
-  "venue": "Ullevaal Stadion",
+  "venue": "",
   "squad": [
     {
       "name": "Ørjan Nyland",
@@ -28,18 +28,6 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/21h7hi1706259019.jpg"
     },
     {
-      "name": "Viljar Myhra",
-      "nameZh": "Viljar Myhra",
-      "position": "Goalkeeper",
-      "positionZh": "门将",
-      "dateOfBirth": "1996-07-21",
-      "nationality": "Norway",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/apsa571765552054.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/apsa571765552054.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/egpqw71765545296.jpg"
-    },
-    {
       "name": "Egil Selvik",
       "nameZh": "Egil Selvik",
       "position": "Goalkeeper",
@@ -52,16 +40,142 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/k9bzoa1739973004.jpg"
     },
     {
-      "name": "Fredrik André Björkan",
-      "nameZh": "Fredrik André Björkan",
+      "name": "Sander Tangvik",
+      "nameZh": "Sander Tangvik",
+      "position": "Goalkeeper",
+      "positionZh": "门将",
+      "dateOfBirth": "2002-11-29",
+      "nationality": "Norway",
+      "shirtNumber": null
+    },
+    {
+      "name": "Kristoffer Ajer",
+      "nameZh": "Kristoffer Ajer",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1998-04-17",
+      "nationality": "Norway",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/f1m43k1765972202.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/f1m43k1765972202.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tf4cgc1771938666.jpg"
+    },
+    {
+      "name": "Torbjørn Heggem",
+      "nameZh": "Torbjørn Heggem",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-01-12",
+      "nationality": "Norway",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1l1l641758897053.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1l1l641758897053.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3zsl9f1717613261.jpg"
+    },
+    {
+      "name": "Fredrik Bjørkan",
+      "nameZh": "Fredrik Bjørkan",
       "position": "Defence",
       "positionZh": "后卫",
       "dateOfBirth": "1998-08-21",
       "nationality": "Norway",
+      "shirtNumber": null
+    },
+    {
+      "name": "Marcus Pedersen",
+      "nameZh": "Marcus Pedersen",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-07-16",
+      "nationality": "Norway",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/bc3jn51769181808.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/bc3jn51769181808.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mjl99d1610705595.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8slbdf1758814099.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8slbdf1758814099.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/slee8j1622647830.jpg"
+    },
+    {
+      "name": "Julian Ryerson",
+      "nameZh": "Julian Ryerson",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1997-11-17",
+      "nationality": "Norway",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3cofj41756326544.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3cofj41756326544.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/c3ru7l1680185000.jpg"
+    },
+    {
+      "name": "Leo Østigård",
+      "nameZh": "Leo Østigård",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-11-28",
+      "nationality": "Norway",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/riue4t1758997507.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/riue4t1758997507.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qklf4l1609594775.jpg"
+    },
+    {
+      "name": "Henrik Falchener",
+      "nameZh": "Henrik Falchener",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2003-05-08",
+      "nationality": "Norway",
+      "shirtNumber": null
+    },
+    {
+      "name": "Sondre Langås",
+      "nameZh": "Sondre Langås",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-02-02",
+      "nationality": "Norway",
+      "shirtNumber": null
+    },
+    {
+      "name": "David Wolfe",
+      "nameZh": "David Wolfe",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2002-04-23",
+      "nationality": "Norway",
+      "shirtNumber": null
+    },
+    {
+      "name": "Morten Thorsby",
+      "nameZh": "Morten Thorsby",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1996-05-05",
+      "nationality": "Norway",
+      "shirtNumber": null,
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/n3xi251776936734.png",
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/n3xi251776936734.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9qr03n1610561687.jpg"
+    },
+    {
+      "name": "Martin Ødegaard",
+      "nameZh": "Martin Ødegaard",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-12-17",
+      "nationality": "Norway",
+      "shirtNumber": null
+    },
+    {
+      "name": "Sander Berge",
+      "nameZh": "Sander Berge",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1998-02-14",
+      "nationality": "Norway",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/plhdsy1757070706.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/plhdsy1757070706.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/g1l0f61772024825.jpg"
     },
     {
       "name": "Patrick Berg",
@@ -76,46 +190,34 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pfehs91610705491.jpg"
     },
     {
-      "name": "Odin Lurås Bjørtuft",
-      "nameZh": "Odin Lurås Bjørtuft",
+      "name": "Fredrik Aursnes",
+      "nameZh": "Fredrik Aursnes",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "1998-12-19",
-      "nationality": "Norway",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1it5ea1769181895.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1it5ea1769181895.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gaoayy1762291344.jpg"
-    },
-    {
-      "name": "Felix Myhre",
-      "nameZh": "Felix Myhre",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1999-03-04",
+      "dateOfBirth": "1995-12-10",
       "nationality": "Norway",
       "shirtNumber": null
     },
     {
-      "name": "Henrik Falchener",
-      "nameZh": "Henrik Falchener",
+      "name": "Kristian Thorstvedt",
+      "nameZh": "Kristian Thorstvedt",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "2003-05-08",
-      "nationality": "Norway",
-      "shirtNumber": null
-    },
-    {
-      "name": "Andreas Schjelderup",
-      "nameZh": "Andreas Schjelderup",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "2004-06-01",
+      "dateOfBirth": "1999-03-13",
       "nationality": "Norway",
       "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ihgav61758216246.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ihgav61758216246.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/j5t0vz1702209151.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2kqceq1764106371.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/2kqceq1764106371.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/lc8edn1623869248.jpg"
+    },
+    {
+      "name": "Thelo Aasgaard",
+      "nameZh": "Thelo Aasgaard",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2002-05-02",
+      "nationality": "Norway",
+      "shirtNumber": null
     },
     {
       "name": "Antonio Nusa",
@@ -132,8 +234,8 @@
     {
       "name": "Oscar Bobb",
       "nameZh": "Oscar Bobb",
-      "position": "Right Winger",
-      "positionZh": "Right Winger",
+      "position": "Midfield",
+      "positionZh": "中场",
       "dateOfBirth": "2003-07-12",
       "nationality": "Norway",
       "shirtNumber": null,
@@ -142,142 +244,10 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/mibugx1695157686.jpg"
     },
     {
-      "name": "David Møller Wolfe",
-      "nameZh": "David Møller Wolfe",
-      "position": "Left-Back",
-      "positionZh": "Left-Back",
-      "dateOfBirth": "2002-04-23",
-      "nationality": "Norway",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/4l6gxn1756975791.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/4l6gxn1756975791.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gf2mmd1772031901.jpg"
-    },
-    {
-      "name": "Kristian Thorstvedt",
-      "nameZh": "Kristian Thorstvedt",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
-      "dateOfBirth": "1999-03-13",
-      "nationality": "Norway",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/2kqceq1764106371.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/2kqceq1764106371.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/lc8edn1623869248.jpg"
-    },
-    {
-      "name": "Leo Østigård",
-      "nameZh": "Leo Østigård",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1999-11-28",
-      "nationality": "Norway",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/riue4t1758997507.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/riue4t1758997507.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/qklf4l1609594775.jpg"
-    },
-    {
-      "name": "Julian Ryerson",
-      "nameZh": "Julian Ryerson",
-      "position": "Right-Back",
-      "positionZh": "Right-Back",
-      "dateOfBirth": "1997-11-17",
-      "nationality": "Norway",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/3cofj41756326544.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/3cofj41756326544.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/c3ru7l1680185000.jpg"
-    },
-    {
-      "name": "Marcus Pedersen",
-      "nameZh": "Marcus Pedersen",
-      "position": "Right Midfield",
-      "positionZh": "Right Midfield",
-      "dateOfBirth": "2000-07-16",
-      "nationality": "Norway",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8slbdf1758814099.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8slbdf1758814099.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/slee8j1622647830.jpg"
-    },
-    {
-      "name": "Jørgen Larsen",
-      "nameZh": "Jørgen Larsen",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "2000-02-06",
-      "nationality": "Norway",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/kalrqi1772136115.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/kalrqi1772136115.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iklw8s1772140820.jpg"
-    },
-    {
-      "name": "Erling Haaland",
-      "nameZh": "埃尔林·哈兰德",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "2000-07-21",
-      "nationality": "Norway",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/un3jr11769182465.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/un3jr11769182465.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bb1agj1727415216.jpg"
-    },
-    {
-      "name": "Jens Hauge",
-      "nameZh": "Jens Hauge",
-      "position": "Left Winger",
-      "positionZh": "Left Winger",
-      "dateOfBirth": "1999-10-12",
-      "nationality": "Norway",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ccgqei1769181969.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ccgqei1769181969.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pvg93m1602960359.jpg"
-    },
-    {
-      "name": "Torbjørn Heggem",
-      "nameZh": "Torbjørn Heggem",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1999-01-12",
-      "nationality": "Norway",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/1l1l641758897053.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/1l1l641758897053.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/3zsl9f1717613261.jpg"
-    },
-    {
-      "name": "Kristoffer Ajer",
-      "nameZh": "Kristoffer Ajer",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1998-04-17",
-      "nationality": "Norway",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/f1m43k1765972202.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/f1m43k1765972202.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/tf4cgc1771938666.jpg"
-    },
-    {
-      "name": "Sander Berge",
-      "nameZh": "Sander Berge",
-      "position": "Defensive Midfield",
-      "positionZh": "Defensive Midfield",
-      "dateOfBirth": "1998-02-14",
-      "nationality": "Norway",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/plhdsy1757070706.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/plhdsy1757070706.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/g1l0f61772024825.jpg"
-    },
-    {
       "name": "Alexander Sørloth",
       "nameZh": "Alexander Sørloth",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
+      "position": "Offence",
+      "positionZh": "前锋",
       "dateOfBirth": "1995-12-05",
       "nationality": "Norway",
       "shirtNumber": null,
@@ -286,20 +256,53 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/slx8ts1724311500.jpg"
     },
     {
-      "name": "Morten Thorsby",
-      "nameZh": "Morten Thorsby",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "1996-05-05",
+      "name": "Jens Hauge",
+      "nameZh": "Jens Hauge",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1999-10-12",
       "nationality": "Norway",
       "shirtNumber": null,
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/n3xi251776936734.png",
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/n3xi251776936734.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/9qr03n1610561687.jpg"
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ccgqei1769181969.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ccgqei1769181969.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/pvg93m1602960359.jpg"
+    },
+    {
+      "name": "Erling Haaland",
+      "nameZh": "埃尔林·哈兰德",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-07-21",
+      "nationality": "Norway",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/un3jr11769182465.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/un3jr11769182465.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/bb1agj1727415216.jpg"
+    },
+    {
+      "name": "Andreas Schjelderup",
+      "nameZh": "Andreas Schjelderup",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2004-06-01",
+      "nationality": "Norway",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/ihgav61758216246.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/ihgav61758216246.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/j5t0vz1702209151.jpg"
+    },
+    {
+      "name": "Jørgen Strand Larsen",
+      "nameZh": "Jørgen Strand Larsen",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2000-02-06",
+      "nationality": "Norway",
+      "shirtNumber": null
     }
   ],
-  "recentMatches": [],
   "squadStatus": "incomplete",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }

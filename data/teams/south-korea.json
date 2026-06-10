@@ -3,14 +3,14 @@
   "nameZh": "韩国",
   "nameEn": "South Korea",
   "code": "kr",
-  "group": "J",
+  "group": "A",
   "confederation": "AFC",
-  "fifaRank": 21,
+  "fifaRank": null,
   "flag": "https://flagcdn.com/w80/kr.png",
   "coach": {
-    "nameEn": "Hong Myung-bo",
-    "nameZh": "洪明甫",
-    "nationality": ""
+    "nameEn": "Hong Myungbo",
+    "nameZh": "Hong Myungbo",
+    "nationality": "South Korea"
   },
   "founded": 1928,
   "venue": "",
@@ -52,6 +52,18 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/unbf8w1751085788.jpg"
     },
     {
+      "name": "Min-Jae Kim",
+      "nameZh": "Min-Jae Kim",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1996-11-15",
+      "nationality": "South Korea",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/m4uh701756408877.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/m4uh701756408877.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/flx3cd1778971805.jpg"
+    },
+    {
       "name": "Moon-hwan Kim",
       "nameZh": "Moon-hwan Kim",
       "position": "Defence",
@@ -62,18 +74,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/eufzv71647866451.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/eufzv71647866451.png",
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/8a8x381778972090.jpg"
-    },
-    {
-      "name": "Yu-min Cho",
-      "nameZh": "Yu-min Cho",
-      "position": "Defence",
-      "positionZh": "后卫",
-      "dateOfBirth": "1996-11-17",
-      "nationality": "South Korea",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/qp523b1668774294.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/qp523b1668774294.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/0485bk1778970539.jpg"
     },
     {
       "name": "Han-bum Lee",
@@ -97,6 +97,18 @@
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/cy4mju1778973897.jpg"
     },
     {
+      "name": "Jin-seob Park",
+      "nameZh": "Jin-seob Park",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1995-10-23",
+      "nationality": "South Korea",
+      "shirtNumber": null,
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/ywsr8n1779016081.png",
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/ywsr8n1779016081.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/e6nmfe1778973764.jpg"
+    },
+    {
       "name": "Tae-hyeon Kim",
       "nameZh": "Tae-hyeon Kim",
       "position": "Defence",
@@ -107,6 +119,15 @@
       "photo": "https://www.thesportsdb.com/images/media/player/cutout/1ppynw1779015093.png",
       "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/1ppynw1779015093.png",
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/67ov861778972188.jpg"
+    },
+    {
+      "name": "Gi-hyuk Lee",
+      "nameZh": "Gi-hyuk Lee",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2000-07-07",
+      "nationality": "South Korea",
+      "shirtNumber": null
     },
     {
       "name": "Tae-seok Lee",
@@ -121,8 +142,26 @@
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/5htf671778973218.jpg"
     },
     {
+      "name": "Cho Wi-Je",
+      "nameZh": "Cho Wi-Je",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "2001-08-25",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Jens Castrop",
+      "nameZh": "Jens Castrop",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "2003-07-29",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
       "name": "In-beom Hwang",
-      "nameZh": "黄仁范",
+      "nameZh": "In-beom Hwang",
       "position": "Midfield",
       "positionZh": "中场",
       "dateOfBirth": "1996-09-20",
@@ -149,18 +188,6 @@
       "dateOfBirth": "1992-08-10",
       "nationality": "South Korea",
       "shirtNumber": null
-    },
-    {
-      "name": "Hyun-jun Yang",
-      "nameZh": "Hyun-jun Yang",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "2002-05-25",
-      "nationality": "South Korea",
-      "shirtNumber": null,
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/oyaijs1777019832.png",
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/oyaijs1777019832.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/mlrn6y1778974742.jpg"
     },
     {
       "name": "Jin-Gyu Kim",
@@ -193,29 +220,50 @@
       "shirtNumber": null
     },
     {
-      "name": "Jin-seob Park",
-      "nameZh": "Jin-seob Park",
+      "name": "Joon-ho Bae",
+      "nameZh": "Joon-ho Bae",
       "position": "Midfield",
       "positionZh": "中场",
-      "dateOfBirth": "1995-10-23",
-      "nationality": "South Korea",
-      "shirtNumber": null,
-      "photo": "https://www.thesportsdb.com/images/media/player/cutout/ywsr8n1779016081.png",
-      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/ywsr8n1779016081.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/e6nmfe1778973764.jpg"
-    },
-    {
-      "name": "Gi-hyuk Lee",
-      "nameZh": "Gi-hyuk Lee",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "2000-07-07",
+      "dateOfBirth": "2003-08-21",
       "nationality": "South Korea",
       "shirtNumber": null
     },
     {
+      "name": "Hwang Heechan",
+      "nameZh": "Hwang Heechan",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1996-01-26",
+      "nationality": "South Korea",
+      "shirtNumber": null
+    },
+    {
+      "name": "Heung-min Son",
+      "nameZh": "Heung-min Son",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1992-07-08",
+      "nationality": "South Korea",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/a5cqf81766425262.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/a5cqf81766425262.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/r5abfl1778974278.jpg"
+    },
+    {
+      "name": "Hyun-jun Yang",
+      "nameZh": "Hyun-jun Yang",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2002-05-25",
+      "nationality": "South Korea",
+      "shirtNumber": null,
+      "photo": "https://www.thesportsdb.com/images/media/player/cutout/oyaijs1777019832.png",
+      "photoCutout": "https://www.thesportsdb.com/images/media/player/cutout/oyaijs1777019832.png",
+      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/mlrn6y1778974742.jpg"
+    },
+    {
       "name": "Gue-Sung Cho",
-      "nameZh": "赵圭成",
+      "nameZh": "Gue-Sung Cho",
       "position": "Offence",
       "positionZh": "前锋",
       "dateOfBirth": "1998-01-25",
@@ -237,69 +285,18 @@
     {
       "name": "Ji-sung Eom",
       "nameZh": "Ji-sung Eom",
-      "position": "Left Winger",
-      "positionZh": "Left Winger",
+      "position": "Offence",
+      "positionZh": "前锋",
       "dateOfBirth": "2002-05-09",
       "nationality": "South Korea",
       "shirtNumber": null,
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/q607s71761234673.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/q607s71761234673.png",
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/xh03u31778971093.jpg"
-    },
-    {
-      "name": "Joon-ho Bae",
-      "nameZh": "Joon-ho Bae",
-      "position": "Attacking Midfield",
-      "positionZh": "Attacking Midfield",
-      "dateOfBirth": "2003-08-21",
-      "nationality": "South Korea",
-      "shirtNumber": null
-    },
-    {
-      "name": "Heung-min Son",
-      "nameZh": "孙兴慜",
-      "position": "Left Winger",
-      "positionZh": "Left Winger",
-      "dateOfBirth": "1992-07-08",
-      "nationality": "South Korea",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/a5cqf81766425262.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/a5cqf81766425262.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/r5abfl1778974278.jpg"
-    },
-    {
-      "name": "Min-Jae Kim",
-      "nameZh": "金玟哉",
-      "position": "Centre-Back",
-      "positionZh": "Centre-Back",
-      "dateOfBirth": "1996-11-15",
-      "nationality": "South Korea",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/m4uh701756408877.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/m4uh701756408877.png",
-      "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/flx3cd1778971805.jpg"
-    },
-    {
-      "name": "Jens Castrop",
-      "nameZh": "Jens Castrop",
-      "position": "Central Midfield",
-      "positionZh": "Central Midfield",
-      "dateOfBirth": "2003-07-29",
-      "nationality": "South Korea",
-      "shirtNumber": null
-    },
-    {
-      "name": "Hwang Heechan",
-      "nameZh": "黄喜灿",
-      "position": "Centre-Forward",
-      "positionZh": "Centre-Forward",
-      "dateOfBirth": "1996-01-26",
-      "nationality": "South Korea",
-      "shirtNumber": null
     }
   ],
-  "recentMatches": [],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-05-25",
-  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements"
+  "squadLastUpdated": "2026-06-10",
+  "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
+  "recentMatches": []
 }
