@@ -1,9 +1,9 @@
 {
-  "scheduleLastUpdated": "2026-06-10T08:32:49.716Z",
-  "teamsLastUpdated": "2026-06-10T07:25:10.080Z",
-  "squadsLastUpdated": "2026-06-10T07:31:27.336Z",
-  "rankingsLastUpdated": "2026-06-10T07:25:10.080Z",
-  "source": "official-schedule-venues",
+  "scheduleLastUpdated": "2026-06-11T13:04:29.231Z",
+  "teamsLastUpdated": "2026-06-11T13:04:28.856Z",
+  "squadsLastUpdated": "2026-06-11T13:09:50.655Z",
+  "rankingsLastUpdated": "2026-06-11T13:04:28.856Z",
+  "source": "football-data+official-schedule-venues",
   "sourceUrls": {
     "schedule": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
     "teams": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams",
