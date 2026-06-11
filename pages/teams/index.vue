@@ -16,6 +16,13 @@
     </p>
     <DataSourceNote kind="teams" compact />
 
+    <section class="mb-6">
+      <div class="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_320px] gap-4 items-start">
+        <WatchPartyGear variant="rail" :max-items="3" />
+        <SponsorCta theme="fan" btn-style="outline" />
+      </div>
+    </section>
+
     <!-- Group Tabs -->
     <div class="flex flex-wrap gap-2 mb-4">
       <button

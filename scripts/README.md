@@ -1,33 +1,56 @@
-# WorldCupDex 脚本工具集
+# WorldCupDex 脚本说明
 
-这里包含了用于维护和监控 WorldCupDex 网站数据的自动化脚本。
+所有本地凭据统一放在项目根目录 `.env`，不要再使用 `scripts/.env`。
 
-## 脚本列表
+如果本机访问 Google API 需要代理，也把代理写在根目录 `.env`：
 
-| 脚本文件 | 功能说明 | 运行命令 | 所需环境变量 / 配置 |
-|----------|----------|----------|---------------------|
-| `fetch-worldcup-data.mjs` | 获取世界杯基础数据 | `npm run fetch-data` | `FOOTBALL_DATA_API_KEY` |
-| `enrich-data.mjs` | 丰富球队与比赛数据 | `npm run enrich-data` | - |
-| `fetch-recent-matches.mjs` | 获取近期比赛结果 | `npm run fetch-recent` | `FOOTBALL_DATA_API_KEY` |
-| `fetch-player-photos.mjs` | 抓取球员头像 | `npm run fetch-photos` | - |
-| `generate-ai-predictions.mjs` | 生成 AI 预测数据 | `npm run generate-predictions`| - |
+```env
+HTTPS_PROXY=http://127.0.0.1:10809
+```
 
-| `gsc-auth.mjs` | Google Search Console 授权 | `npm run gsc-auth` | 需配置 `credentials.json` |
-| `generate-gsc-report.mjs` | 生成 GSC 数据报告 | `npm run gsc-report` | 需先完成 `gsc-auth` 授权 |
-| `generate-ga4-report.mjs` | **生成 GA4 流量分析报告** | `npm run ga4-report` | 需配置 `credentials.json` 及 `GA4_PROPERTY_ID` |
-| `generate-analytics-report.mjs` | 生成 Cloudflare 分析报告 | `npm run cf-report` | `CF_ANALYTICS_API_TOKEN`, `CF_ZONE_ID` |
+## 关键脚本
 
-## Google Analytics 4 (GA4) 报告配置
+| 脚本 | 用途 | 命令 | 必要变量 |
+| --- | --- | --- | --- |
+| `gsc-auth.mjs` | 获取 Google OAuth refresh token | `node scripts/gsc-auth.mjs` | `GSC_CLIENT_ID`, `GSC_CLIENT_SECRET` |
+| `generate-gsc-report.mjs` | 生成 GSC 搜索报告 | `npm run gsc-report` | `GSC_CLIENT_ID`, `GSC_CLIENT_SECRET`, `GSC_REFRESH_TOKEN`, `GSC_SITE_URL` |
+| `generate-ga4-report.mjs` | 生成 GA4 流量报告 | `npm run ga4-report` | `GSC_CLIENT_ID`, `GSC_CLIENT_SECRET`, `GSC_REFRESH_TOKEN`, `GA4_PROPERTY_ID`, `GA4_HOSTNAME` |
+| `generate-ops-report.mjs` | 生成每日运营报告 | `npm run ops:report` | 上述 Google 变量 + Cloudflare 变量 |
 
-基于你提供的 GA4 数据视图链接（`.../a395191586p538207577/...`），你的 Property ID 是 **538207577**。
+## `.env` 最小配置
 
-1. **设置认证凭据**：GA4 脚本使用与 GSC 相同的 Google Cloud 服务账号。请确保项目根目录下已有 `credentials.json`，且该服务账号邮箱已被添加为你 GA4 媒体资源（Property）的“查看者”权限。
-2. **设置环境变量**：在项目根目录 `.env` 文件中，添加你的 Property ID：
-   ```env
-   GA4_PROPERTY_ID=538207577
-   ```
-3. **运行脚本**：
-   ```bash
-   npm run ga4-report
-   ```
-4. 脚本会拉取最近 7 天的“来源/媒介 (Source/Medium)”维度流量数据，保存在 `reports/ga4-report-YYYY-MM-DD.md` 中。
+参考根目录 `.env.example`。至少需要以下变量：
+
+```env
+GA4_PROPERTY_ID=538207577
+GA4_HOSTNAME=worldcupdex.org
+GSC_SITE_URL=sc-domain:worldcupdex.org
+GSC_CLIENT_ID=your_client_id.apps.googleusercontent.com
+GSC_CLIENT_SECRET=your_client_secret
+GSC_REFRESH_TOKEN=your_refresh_token
+```
+
+## 建立 Google OAuth 三元组
+
+1. 在 Google Cloud Console 创建 OAuth Client，类型选 Desktop app。
+2. 将 `GSC_CLIENT_ID` 和 `GSC_CLIENT_SECRET` 写入根目录 `.env`。
+3. 确保同一个 Google 账号同时拥有：
+   - Search Console 对 `sc-domain:worldcupdex.org` 的读取权限
+   - GA4 Property `538207577` 的读取权限
+4. 运行：
+
+```bash
+node scripts/gsc-auth.mjs
+```
+
+5. 浏览器完成授权后，把终端打印出的 `GSC_REFRESH_TOKEN` 写回根目录 `.env`。
+
+## 验证
+
+```bash
+npm run gsc-report
+npm run ga4-report
+npm run ops:report
+```
+
+如果 Google 变量可用，这三个命令都不应再报“缺少 Google OAuth 三元组”。

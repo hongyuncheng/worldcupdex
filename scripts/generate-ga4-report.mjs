@@ -1,242 +1,202 @@
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import dotenv from 'dotenv';
-import { google } from 'googleapis';
-import { HttpsProxyAgent } from 'https-proxy-agent';
-import fetch from 'node-fetch';
+import fs from "fs";
+import path from "path";
+import fetch from "node-fetch";
+import { HttpsProxyAgent } from "https-proxy-agent";
+import { loadProjectEnv } from "./load-project-env.mjs";
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const rootDir = path.resolve(__dirname, '..');
-
-dotenv.config({ path: path.resolve(__dirname, '.env') });
-
-const proxyUrl = process.env.HTTPS_PROXY || process.env.HTTP_PROXY || process.env.https_proxy || process.env.http_proxy || 'http://127.0.0.1:10809';
-const agent = proxyUrl ? new HttpsProxyAgent(proxyUrl) : undefined;
+const { rootDir, rootEnvPath } = loadProjectEnv(import.meta.url);
 
 const {
   GSC_CLIENT_ID,
   GSC_CLIENT_SECRET,
   GSC_REFRESH_TOKEN,
-  GA4_PROPERTY_ID = '538207577'
+  GA4_PROPERTY_ID = "538207577",
+  GA4_HOSTNAME = "worldcupdex.org",
 } = process.env;
 
-// 通用的 GA4 数据请求封装函数
-async function fetchGa4Report(token, propertyId, requestBody) {
-  const url = `https://analyticsdata.googleapis.com/v1beta/properties/${propertyId}:runReport`;
-  const response = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${token}`,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(requestBody),
-    agent
-  });
-
-  if (!response.ok) {
-    const errText = await response.text();
-    throw new Error(`GA4 API 报错 (${response.status}): ${errText}`);
-  }
-  return await response.json();
+if (!GSC_CLIENT_ID || !GSC_CLIENT_SECRET || !GSC_REFRESH_TOKEN) {
+  console.error("缺少 Google OAuth 三元组。");
+  console.error(`请检查 ${rootEnvPath} 中是否包含：`);
+  if (!GSC_CLIENT_ID) console.error("- GSC_CLIENT_ID");
+  if (!GSC_CLIENT_SECRET) console.error("- GSC_CLIENT_SECRET");
+  if (!GSC_REFRESH_TOKEN) console.error("- GSC_REFRESH_TOKEN");
+  process.exit(1);
 }
 
-// 辅助函数：将 API 响应转换为 Markdown 表格
-function buildMarkdownTable(data, columns) {
-  let table = `| ${columns.join(' | ')} |\n`;
-  table += `| ${columns.map(() => ':---').join(' | ')} |\n`;
+function getProxyAgent() {
+  const proxyUrl = process.env.OPS_HTTPS_PROXY
+    || process.env.HTTPS_PROXY
+    || process.env.HTTP_PROXY
+    || process.env.https_proxy
+    || process.env.http_proxy;
 
-  if (data.rows && data.rows.length > 0) {
-    data.rows.forEach(row => {
-      const rowData = [];
-      if (row.dimensionValues) row.dimensionValues.forEach(d => rowData.push(d.value));
-      if (row.metricValues) row.metricValues.forEach(m => rowData.push(m.value));
-      table += `| ${rowData.join(' | ')} |\n`;
-    });
-  } else {
-    table += `| ${columns.map(() => '-').join(' | ')} |\n`;
-  }
-  return table + '\n';
+  return proxyUrl ? new HttpsProxyAgent(proxyUrl) : undefined;
 }
 
-async function main() {
-  if (!GSC_CLIENT_ID || !GSC_CLIENT_SECRET || !GSC_REFRESH_TOKEN) {
-    console.error('❌ 缺少必要的 OAuth2 环境变量');
-    process.exit(1);
-  }
+function formatNumber(value) {
+  return Number(value || 0).toLocaleString("en-US");
+}
 
-  const propertyId = GA4_PROPERTY_ID;
-  console.log(`正在获取 GA4 (Property ID: ${propertyId}) 的多维度运营数据...`);
+function table(rows, headers, mapper) {
+  const head = `| ${headers.join(" | ")} |`;
+  const divider = `| ${headers.map(() => "---").join(" | ")} |`;
+  const body = rows.length
+    ? rows.map((row) => `| ${mapper(row).join(" | ")} |`).join("\n")
+    : `| ${headers.map(() => "-").join(" | ")} |`;
 
-  try {
-    // 1. 获取 Token
-    const tokenParams = new URLSearchParams({
+  return `${head}\n${divider}\n${body}\n`;
+}
+
+async function refreshAccessToken() {
+  const response = await fetch("https://oauth2.googleapis.com/token", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
       client_id: GSC_CLIENT_ID,
       client_secret: GSC_CLIENT_SECRET,
       refresh_token: GSC_REFRESH_TOKEN,
-      grant_type: 'refresh_token'
-    });
+      grant_type: "refresh_token",
+    }).toString(),
+    agent: getProxyAgent(),
+  });
 
-    const tokenResponse = await fetch('https://oauth2.googleapis.com/token', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: tokenParams.toString(),
-      agent
-    });
-
-    if (!tokenResponse.ok) throw new Error(`Token 刷新失败`);
-    const { access_token: token } = await tokenResponse.json();
-
-    let reportMarkdown = `# 网站持续运营数据看板 (GA4)\n\n`;
-    reportMarkdown += `> **生成时间**: ${new Date().toLocaleString()}\n`;
-    reportMarkdown += `> **数据范围**: 过去 7 天\n\n`;
-
-    // 维度 1: 流量获取 (他们从哪里来？)
-    console.log('拉取 流量获取 数据...');
-    const trafficData = await fetchGa4Report(token, propertyId, {
-      dateRanges: [{ startDate: '7daysAgo', endDate: 'today' }],
-      dimensions: [{ name: 'sessionSourceMedium' }],
-      metrics: [{ name: 'activeUsers' }, { name: 'sessions' }],
-      orderBys: [{ metric: { metricName: 'activeUsers' }, desc: true }],
-      limit: 10
-    });
-    reportMarkdown += `## 1. 流量来源池 (Traffic Acquisition)\n`;
-    reportMarkdown += `*💡 **运营建议**: 监控哪些渠道带来的用户最多。如果是 direct，说明品牌效应在建立；如果是 referral，看是哪个社交平台发力了。*\n\n`;
-    reportMarkdown += buildMarkdownTable(trafficData, ['来源/媒介', '活跃用户数', '会话数']);
-    reportMarkdown += `**📋 数据名词解释与洞察：**\n`;
-    reportMarkdown += `- **(direct) / (none)**：直接流量。代表用户直接在浏览器输入网址或通过书签访问了你的网站。\n`;
-    reportMarkdown += `- **referral (引荐流量)**：从其他外部网站点击链接跳过来的流量。例如 \`kickiq / referral\` 意味着从兄弟网站 kickiq 导流过来的用户。如果“活跃用户数”为 4，“会话数”为 17，说明有 **4个真实的独立用户** 点了链接过来，并且他们总共发起了 **17次访问**（这代表从 kickiq 过来的用户粘性极高，不仅来了，还会反复打开网站）。\n`;
-    reportMarkdown += `- **带下划线的参数 (如 match_card_ai_btn)**：这是自定义的 UTM 追踪标记，代表通过带有特定标记的分享链接或按钮拉回来的流量。\n\n`;
-
-    // 维度 2: 国家/地区分布 (用户是谁？)
-    console.log('拉取 国家/地区 数据...');
-    const geoData = await fetchGa4Report(token, propertyId, {
-      dateRanges: [{ startDate: '7daysAgo', endDate: 'today' }],
-      dimensions: [{ name: 'country' }],
-      metrics: [{ name: 'activeUsers' }],
-      orderBys: [{ metric: { metricName: 'activeUsers' }, desc: true }],
-      limit: 10
-    });
-    reportMarkdown += `## 2. 受众地域分布 (User Geography)\n`;
-    reportMarkdown += `*💡 **运营建议**: 指导亚马逊联盟的选品和地域。如果美国用户多，就主推 Amazon.com；如果拉美用户多，就要考虑不同国家的购物习惯和多语言支持。*\n\n`;
-    reportMarkdown += buildMarkdownTable(geoData, ['国家/地区', '活跃用户数']);
-
-    // 维度 3: 页面受欢迎程度 (他们喜欢看什么？)
-    console.log('拉取 页面浏览 数据...');
-    const pagesData = await fetchGa4Report(token, propertyId, {
-      dateRanges: [{ startDate: '7daysAgo', endDate: 'today' }],
-      dimensions: [{ name: 'pagePath' }],
-      metrics: [{ name: 'screenPageViews' }, { name: 'activeUsers' }],
-      orderBys: [{ metric: { metricName: 'screenPageViews' }, desc: true }],
-      limit: 10
-    });
-    reportMarkdown += `## 3. 热门内容排行 (Top Pages)\n`;
-    reportMarkdown += `*💡 **运营建议**: 看用户最喜欢停留在哪个页面（比如是球队详情、毒奶预测还是球迷卡）。把 **商业推广位** 和 **Ko-fi 打赏按钮** 集中放在流量最大的页面上。*\n\n`;
-    reportMarkdown += buildMarkdownTable(pagesData, ['页面路径', '浏览量 (PV)', '活跃用户数']);
-
-    // 维度 4: 核心互动事件 (他们做了什么动作？)
-    console.log('拉取 核心事件 数据...');
-    const eventsData = await fetchGa4Report(token, propertyId, {
-      dateRanges: [{ startDate: '7daysAgo', endDate: 'today' }],
-      dimensions: [{ name: 'eventName' }],
-      metrics: [{ name: 'eventCount' }],
-      orderBys: [{ metric: { metricName: 'eventCount' }, desc: true }],
-      limit: 15
-    });
-    reportMarkdown += `## 4. 用户行为与转化 (Core Events)\n`;
-    reportMarkdown += `*💡 **运营建议**: 关注用户是否高频点击了特定按钮。这里会展示自带事件(如 page_view, scroll)和我们埋点的高价值事件(如生成卡片、点击外链、分享)。*\n\n`;
-    reportMarkdown += buildMarkdownTable(eventsData, ['事件名称', '触发次数']);
-
-    // 维度 4.5: 出站点击去向 (他们离开网站去了哪？)
-    console.log('拉取 出站点击去向 数据...');
-    const outboundData = await fetchGa4Report(token, propertyId, {
-      dateRanges: [{ startDate: '7daysAgo', endDate: 'today' }],
-      dimensions: [{ name: 'outbound' }, { name: 'linkUrl' }], // 尝试同时获取 outbound 布尔值和 linkUrl
-      metrics: [{ name: 'eventCount' }],
-      dimensionFilter: {
-        filter: {
-          fieldName: 'eventName',
-          stringFilter: {
-            value: 'click' // 增强型测量 (Enhanced Measurement) 中，出站点击的事件名通常是 'click'
-          }
-        }
-      },
-      orderBys: [{ metric: { metricName: 'eventCount' }, desc: true }],
-      limit: 20
-    });
-    
-    // 如果没有查到数据，或者是我们自己手动埋点的 cross_site_click
-    let finalOutboundData = outboundData;
-    if (!outboundData.rows || outboundData.rows.length === 0) {
-      const backupOutboundData = await fetchGa4Report(token, propertyId, {
-        dateRanges: [{ startDate: '7daysAgo', endDate: 'today' }],
-        dimensions: [{ name: 'linkUrl' }],
-        metrics: [{ name: 'eventCount' }],
-        dimensionFilter: {
-          filter: {
-            fieldName: 'eventName',
-            stringFilter: { value: 'cross_site_click' }
-          }
-        },
-        orderBys: [{ metric: { metricName: 'eventCount' }, desc: true }],
-        limit: 20
-      });
-      finalOutboundData = backupOutboundData;
-    }
-
-    // 过滤并清理数据，因为有些 URL 可能为空
-    if (finalOutboundData.rows) {
-      const filteredRows = [];
-      for (const row of finalOutboundData.rows) {
-        // 找到 linkUrl 的值 (如果是增强型 click，它可能是第二个维度；如果是自定义，它是第一个)
-        const urlValue = row.dimensionValues.length > 1 ? row.dimensionValues[1].value : row.dimensionValues[0].value;
-        const count = row.metricValues[0].value;
-        
-        if (urlValue && urlValue !== '(not set)' && urlValue.trim() !== '') {
-          filteredRows.push({
-            dimensionValues: [{ value: urlValue }],
-            metricValues: [{ value: count }]
-          });
-        }
-      }
-      finalOutboundData.rows = filteredRows;
-    }
-
-    reportMarkdown += `## 4.5. 流量出站去向 (Outbound Links)\n`;
-    reportMarkdown += `*💡 **运营建议**: 这里统计了用户点击离开你网站的链接地址。如果是商业化链接（如亚马逊联盟、Ko-fi），高点击意味着转化率不错；如果这里能看到大量流向 \`kickiq.app\` 或 \`kickiq.org\` 的链接，说明你的交叉引流策略非常成功！*\n\n`;
-    if (finalOutboundData.rows && finalOutboundData.rows.length > 0) {
-      reportMarkdown += buildMarkdownTable(finalOutboundData, ['目标 URL', '点击次数']);
-    } else {
-      reportMarkdown += `> 暂无明显的外部链接点击数据 (或数据延迟中)。\n\n`;
-    }
-
-    // 维度 5: 设备分布 (用什么看？)
-    console.log('拉取 设备分布 数据...');
-    const deviceData = await fetchGa4Report(token, propertyId, {
-      dateRanges: [{ startDate: '7daysAgo', endDate: 'today' }],
-      dimensions: [{ name: 'deviceCategory' }],
-      metrics: [{ name: 'activeUsers' }],
-      orderBys: [{ metric: { metricName: 'activeUsers' }, desc: true }]
-    });
-    reportMarkdown += `## 5. 访问设备 (Device Category)\n`;
-    reportMarkdown += `*💡 **运营建议**: 如果 Mobile 占比超过 80%，在开发新功能（如球迷卡生成）时，必须优先保证手机端的操作体验和截图兼容性。*\n\n`;
-    reportMarkdown += buildMarkdownTable(deviceData, ['设备类型', '活跃用户数']);
-
-    // Save report
-    const reportsDir = path.resolve(rootDir, 'reports');
-    if (!fs.existsSync(reportsDir)) fs.mkdirSync(reportsDir);
-
-    const dateStr = new Date().toISOString().split('T')[0];
-    const reportPath = path.resolve(reportsDir, `ga4-dashboard-${dateStr}.md`);
-    fs.writeFileSync(reportPath, reportMarkdown, 'utf-8');
-
-    console.log(`✅ 详细运营看板生成成功！`);
-    console.log(`📄 报告已保存至: ${reportPath}`);
-
-  } catch (error) {
-    console.error('❌ 获取 GA4 数据失败:', error);
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(`Google OAuth 刷新失败 (${response.status}): ${text}`);
   }
+
+  const json = await response.json();
+  return json.access_token;
 }
 
-main();
+async function fetchGa4Report(token, requestBody) {
+  const response = await fetch(`https://analyticsdata.googleapis.com/v1beta/properties/${GA4_PROPERTY_ID}:runReport`, {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${token}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      ...requestBody,
+      dimensionFilter: {
+        filter: {
+          fieldName: "hostName",
+          stringFilter: { matchType: "EXACT", value: GA4_HOSTNAME },
+        },
+      },
+    }),
+    agent: getProxyAgent(),
+  });
+
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(`GA4 API 失败 (${response.status}): ${text}`);
+  }
+
+  return response.json();
+}
+
+function mapRows(response, mapper) {
+  return (response.rows || []).map(mapper);
+}
+
+async function main() {
+  const token = await refreshAccessToken();
+
+  const [traffic, pages, events, devices] = await Promise.all([
+    fetchGa4Report(token, {
+      dateRanges: [{ startDate: "7daysAgo", endDate: "today" }],
+      dimensions: [{ name: "hostName" }, { name: "sessionSourceMedium" }],
+      metrics: [{ name: "activeUsers" }, { name: "sessions" }],
+      orderBys: [{ metric: { metricName: "activeUsers" }, desc: true }],
+      limit: 10,
+    }),
+    fetchGa4Report(token, {
+      dateRanges: [{ startDate: "7daysAgo", endDate: "today" }],
+      dimensions: [{ name: "hostName" }, { name: "pagePath" }],
+      metrics: [{ name: "screenPageViews" }, { name: "activeUsers" }],
+      orderBys: [{ metric: { metricName: "screenPageViews" }, desc: true }],
+      limit: 10,
+    }),
+    fetchGa4Report(token, {
+      dateRanges: [{ startDate: "7daysAgo", endDate: "today" }],
+      dimensions: [{ name: "hostName" }, { name: "eventName" }],
+      metrics: [{ name: "eventCount" }],
+      orderBys: [{ metric: { metricName: "eventCount" }, desc: true }],
+      limit: 15,
+    }),
+    fetchGa4Report(token, {
+      dateRanges: [{ startDate: "7daysAgo", endDate: "today" }],
+      dimensions: [{ name: "hostName" }, { name: "deviceCategory" }],
+      metrics: [{ name: "activeUsers" }],
+      orderBys: [{ metric: { metricName: "activeUsers" }, desc: true }],
+      limit: 5,
+    }),
+  ]);
+
+  const pageViews = (pages.rows || []).reduce((sum, row) => sum + Number(row.metricValues?.[0]?.value || 0), 0);
+  const activeUsers = (traffic.rows || []).reduce((sum, row) => sum + Number(row.metricValues?.[0]?.value || 0), 0);
+  const sessions = (traffic.rows || []).reduce((sum, row) => sum + Number(row.metricValues?.[1]?.value || 0), 0);
+  const dateStr = new Date().toISOString().split("T")[0];
+
+  const report = [
+    `# GA4 Dashboard - ${dateStr}`,
+    "",
+    `- Property ID: \`${GA4_PROPERTY_ID}\``,
+    `- Hostname filter: \`${GA4_HOSTNAME}\``,
+    `- 近 7 天 PV: ${formatNumber(pageViews)}`,
+    `- 近 7 天活跃用户: ${formatNumber(activeUsers)}`,
+    `- 近 7 天会话: ${formatNumber(sessions)}`,
+    "",
+    "## 流量来源",
+    table(mapRows(traffic, (row) => ({
+      sourceMedium: row.dimensionValues?.[1]?.value || "-",
+      activeUsers: row.metricValues?.[0]?.value || 0,
+      sessions: row.metricValues?.[1]?.value || 0,
+    })), ["Source / Medium", "Active Users", "Sessions"], (row) => [
+      row.sourceMedium,
+      formatNumber(row.activeUsers),
+      formatNumber(row.sessions),
+    ]),
+    "## 热门页面",
+    table(mapRows(pages, (row) => ({
+      pagePath: row.dimensionValues?.[1]?.value || "-",
+      views: row.metricValues?.[0]?.value || 0,
+      activeUsers: row.metricValues?.[1]?.value || 0,
+    })), ["Page Path", "Views", "Active Users"], (row) => [
+      row.pagePath,
+      formatNumber(row.views),
+      formatNumber(row.activeUsers),
+    ]),
+    "## 核心事件",
+    table(mapRows(events, (row) => ({
+      eventName: row.dimensionValues?.[1]?.value || "-",
+      count: row.metricValues?.[0]?.value || 0,
+    })), ["Event", "Count"], (row) => [
+      row.eventName,
+      formatNumber(row.count),
+    ]),
+    "## 设备",
+    table(mapRows(devices, (row) => ({
+      device: row.dimensionValues?.[1]?.value || "-",
+      activeUsers: row.metricValues?.[0]?.value || 0,
+    })), ["Device", "Active Users"], (row) => [
+      row.device,
+      formatNumber(row.activeUsers),
+    ]),
+  ].join("\n");
+
+  const reportsDir = path.resolve(rootDir, "reports");
+  if (!fs.existsSync(reportsDir)) {
+    fs.mkdirSync(reportsDir, { recursive: true });
+  }
+
+  const reportPath = path.resolve(reportsDir, `ga4-dashboard-${dateStr}.md`);
+  fs.writeFileSync(reportPath, report, "utf8");
+  console.log(`GA4 report saved: ${reportPath}`);
+}
+
+main().catch((error) => {
+  console.error(`生成 GA4 报告失败: ${error.message}`);
+  process.exit(1);
+});

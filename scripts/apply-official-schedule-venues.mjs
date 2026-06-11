@@ -7,8 +7,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const PROJECT_ROOT = join(__dirname, '..');
 const DATA_DIR = join(PROJECT_ROOT, 'data');
+const FALLBACK_SCHEDULE_PATH = join(DATA_DIR, 'official-schedule-venues.json');
 
-const BRITANNICA_SCHEDULE_URL = 'https://www.britannica.com/event/2026-FIFA-World-Cup';
+const BRITANNICA_SCHEDULE_URL = process.env.OFFICIAL_SCHEDULE_URL || 'https://www.britannica.com/event/2026-FIFA-World-Cup';
 const ESPN_KNOCKOUT_SCHEDULE_URL = 'https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket';
 
 const VENUES = {
@@ -286,6 +287,43 @@ function parseGroupVenueRows(html) {
   return rows;
 }
 
+async function readFallbackGroupVenueRows() {
+  const rows = JSON.parse(await readFile(FALLBACK_SCHEDULE_PATH, 'utf-8'));
+  if (!Array.isArray(rows) || rows.length !== 72) {
+    throw new Error(`Expected 72 fallback schedule rows, received ${Array.isArray(rows) ? rows.length : 'invalid JSON'}.`);
+  }
+
+  for (const row of rows) {
+    if (!row.id || !row.group || !row.homeTeam || !row.awayTeam || !VENUES[row.venueName]) {
+      throw new Error(`Invalid fallback schedule row: ${JSON.stringify(row)}`);
+    }
+  }
+
+  return rows;
+}
+
+async function fetchOfficialGroupVenueRows() {
+  try {
+    console.log('Fetching official schedule venue source...');
+    const response = await fetch(BRITANNICA_SCHEDULE_URL, {
+      headers: { 'user-agent': 'WorldCupDex data refresh (+https://worldcupdex.org)' },
+    });
+    if (!response.ok) {
+      throw new Error(`HTTP ${response.status}`);
+    }
+
+    const html = await response.text();
+    const rows = parseGroupVenueRows(html);
+    return { rows, source: 'remote' };
+  } catch (error) {
+    console.warn(`Official schedule source unavailable (${error.message}); using checked-in fallback schedule venues.`);
+    return {
+      rows: await readFallbackGroupVenueRows(),
+      source: 'fallback',
+    };
+  }
+}
+
 function toMatchVenue(venueName) {
   const venue = VENUES[venueName];
   if (!venue) throw new Error(`Unknown venue: ${venueName}`);
@@ -314,22 +352,14 @@ function groupMatchKey(match) {
 }
 
 async function main() {
-  console.log('Fetching official schedule venue source...');
-  const response = await fetch(BRITANNICA_SCHEDULE_URL, {
-    headers: { 'user-agent': 'WorldCupDex data refresh (+https://worldcupdex.org)' },
-  });
-  if (!response.ok) {
-    throw new Error(`Failed to fetch schedule source: HTTP ${response.status}`);
-  }
-
-  const html = await response.text();
-  const officialGroupRows = parseGroupVenueRows(html);
+  const { rows: officialGroupRows, source: scheduleSource } = await fetchOfficialGroupVenueRows();
   const groupVenueByKey = new Map(
     officialGroupRows.map(row => [
       [row.group, row.homeTeam, row.awayTeam].join('|'),
       row.venueName,
     ]),
   );
+  const groupVenueById = new Map(officialGroupRows.map(row => [String(row.id), row.venueName]));
 
   const matchesPath = join(DATA_DIR, 'matches.json');
   const matches = JSON.parse(await readFile(matchesPath, 'utf-8'));
@@ -338,7 +368,7 @@ async function main() {
 
   let groupUpdated = 0;
   for (const match of groupMatches) {
-    const venueName = groupVenueByKey.get(groupMatchKey(match));
+    const venueName = groupVenueByKey.get(groupMatchKey(match)) || groupVenueById.get(String(match.id));
     if (!venueName) {
       throw new Error(`No official venue found for group match ${match.id}: ${groupMatchKey(match)}`);
     }
@@ -376,6 +406,7 @@ async function main() {
 
   console.log(`Updated ${groupUpdated} group-stage venues and ${knockoutUpdated} knockout venues.`);
   console.log(`Written ${venues.length} venues to data/venues.json.`);
+  console.log(`Schedule venue source: ${scheduleSource}.`);
 }
 
 main().catch(error => {

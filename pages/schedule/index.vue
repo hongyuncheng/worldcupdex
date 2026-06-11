@@ -146,6 +146,13 @@
       <span>{{ $t('schedule.favoriteGuide') }}</span>
     </div>
 
+    <section class="mb-6">
+      <div class="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_320px] gap-4 items-start">
+        <WatchPartyGear variant="rail" :max-items="3" />
+        <SponsorCta theme="generic" btn-style="outline" />
+      </div>
+    </section>
+
     <!-- Two Column Layout -->
     <div class="schedule-layout">
       <!-- Left Sidebar -->

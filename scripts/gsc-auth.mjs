@@ -1,67 +1,50 @@
-/**
- * Google Search Console OAuth 授权辅助工具
- *
- * 首次运行时帮助用户获取 refresh token，后续脚本使用 refresh token 自动刷新 access token。
- *
- * 使用方法：
- *   node scripts/gsc-auth.mjs
- *
- * 前置条件：
- *   1. 在 Google Cloud Console 创建 OAuth 2.0 客户端 ID（桌面应用类型）
- *   2. 将 Client ID 和 Client Secret 写入 scripts/.env
- */
+import http from "http";
+import { HttpsProxyAgent } from "https-proxy-agent";
+import fetch from "node-fetch";
+import { loadProjectEnv } from "./load-project-env.mjs";
 
-import { config } from 'dotenv';
-import { resolve, dirname } from 'path';
-import { fileURLToPath } from 'url';
-import http from 'http';
-import { ProxyAgent, setGlobalDispatcher } from 'undici';
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-config({ path: resolve(__dirname, '.env') });
-
-// 代理支持：自动检测 HTTPS_PROXY / HTTP_PROXY 环境变量
-const proxyUrl = process.env.HTTPS_PROXY || process.env.HTTP_PROXY || process.env.https_proxy || process.env.http_proxy;
-if (proxyUrl) {
-  console.log(`🌐 检测到代理: ${proxyUrl}`);
-  setGlobalDispatcher(new ProxyAgent(proxyUrl));
-}
+const { rootEnvPath } = loadProjectEnv(import.meta.url);
 
 const { GSC_CLIENT_ID, GSC_CLIENT_SECRET } = process.env;
 
+const OAUTH_SCOPE = [
+  "https://www.googleapis.com/auth/webmasters.readonly",
+  "https://www.googleapis.com/auth/analytics.readonly",
+].join(" ");
+const REDIRECT_URI = "http://localhost:3939/oauth/callback";
+const AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth";
+const TOKEN_URL = "https://oauth2.googleapis.com/token";
+
 if (!GSC_CLIENT_ID || !GSC_CLIENT_SECRET) {
-  console.error('❌ 缺少必要的环境变量: GSC_CLIENT_ID, GSC_CLIENT_SECRET');
-  console.error('   请在 scripts/.env 中配置以下变量：');
-  console.error('   GSC_CLIENT_ID=your_client_id.apps.googleusercontent.com');
-  console.error('   GSC_CLIENT_SECRET=your_client_secret');
+  console.error("缺少 Google OAuth 客户端变量。");
+  console.error(`请先在 ${rootEnvPath} 中设置：`);
+  console.error("GSC_CLIENT_ID=your_client_id.apps.googleusercontent.com");
+  console.error("GSC_CLIENT_SECRET=your_client_secret");
   process.exit(1);
 }
 
-// ============ 配置 ============
+function getProxyAgent() {
+  const proxyUrl = process.env.OPS_HTTPS_PROXY
+    || process.env.HTTPS_PROXY
+    || process.env.HTTP_PROXY
+    || process.env.https_proxy
+    || process.env.http_proxy;
 
-const OAUTH_SCOPE = 'https://www.googleapis.com/auth/webmasters.readonly https://www.googleapis.com/auth/analytics.readonly';
-const REDIRECT_URI = 'http://localhost:3939/oauth/callback';
-const AUTH_URL = 'https://accounts.google.com/o/oauth2/v2/auth';
-const TOKEN_URL = 'https://oauth2.googleapis.com/token';
-
-// ============ 生成授权 URL ============
+  return proxyUrl ? new HttpsProxyAgent(proxyUrl) : undefined;
+}
 
 function buildAuthUrl() {
   const params = new URLSearchParams({
     client_id: GSC_CLIENT_ID,
     redirect_uri: REDIRECT_URI,
-    response_type: 'code',
+    response_type: "code",
     scope: OAUTH_SCOPE,
-    access_type: 'offline',
-    prompt: 'consent',
+    access_type: "offline",
+    prompt: "consent",
   });
+
   return `${AUTH_URL}?${params.toString()}`;
 }
-
-// ============ 交换 Token ============
-import { HttpProxyAgent } from 'http-proxy-agent';
-import { HttpsProxyAgent } from 'https-proxy-agent';
-import fetch from 'node-fetch';
 
 async function exchangeCodeForTokens(code) {
   const body = new URLSearchParams({
@@ -69,128 +52,107 @@ async function exchangeCodeForTokens(code) {
     client_id: GSC_CLIENT_ID,
     client_secret: GSC_CLIENT_SECRET,
     redirect_uri: REDIRECT_URI,
-    grant_type: 'authorization_code',
+    grant_type: "authorization_code",
   });
 
-  const proxyUrl = process.env.HTTPS_PROXY || process.env.HTTP_PROXY || process.env.https_proxy || process.env.http_proxy || 'http://127.0.0.1:10809';
-  const agent = proxyUrl ? new HttpsProxyAgent(proxyUrl) : undefined;
-
-  const resp = await fetch(TOKEN_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+  const response = await fetch(TOKEN_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: body.toString(),
-    agent,
+    agent: getProxyAgent(),
   });
 
-  if (!resp.ok) {
-    const text = await resp.text();
-    throw new Error(`Token 交换失败 (${resp.status}): ${text}`);
+  if (!response.ok) {
+    const text = await response.text();
+    throw new Error(`Token 交换失败 (${response.status}): ${text}`);
   }
 
-  return resp.json();
+  return response.json();
 }
-
-// ============ 启动回调服务器 ============
 
 function startCallbackServer() {
   return new Promise((resolvePromise, reject) => {
     const server = http.createServer(async (req, res) => {
-      const url = new URL(req.url, `http://localhost:3939`);
+      const url = new URL(req.url, "http://localhost:3939");
 
-      if (url.pathname !== '/oauth/callback') {
+      if (url.pathname !== "/oauth/callback") {
         res.writeHead(404);
-        res.end('Not Found');
+        res.end("Not Found");
         return;
       }
 
-      const code = url.searchParams.get('code');
-      const error = url.searchParams.get('error');
+      const code = url.searchParams.get("code");
+      const error = url.searchParams.get("error");
 
       if (error) {
-        res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-        res.end(`<h1>❌ 授权失败</h1><p>错误：${error}</p>`);
+        res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+        res.end(`<h1>授权失败</h1><p>${error}</p>`);
         server.close();
         reject(new Error(`OAuth 授权被拒绝: ${error}`));
         return;
       }
 
       if (!code) {
-        res.writeHead(400, { 'Content-Type': 'text/html; charset=utf-8' });
-        res.end('<h1>❌ 缺少 authorization code</h1>');
+        res.writeHead(400, { "Content-Type": "text/html; charset=utf-8" });
+        res.end("<h1>缺少授权码</h1>");
         return;
       }
 
       try {
-        console.log('\n✅ 收到授权回调，正在交换 Token...');
         const tokens = await exchangeCodeForTokens(code);
-
-        res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-        res.end(`
-          <h1>✅ 授权成功！</h1>
-          <p>Refresh Token 已获取，请回到终端查看。</p>
-          <p>你可以关闭此页面。</p>
-        `);
-
+        res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
+        res.end("<h1>授权成功</h1><p>请回到终端复制 refresh token。</p>");
         server.close();
         resolvePromise(tokens);
-      } catch (err) {
-        res.writeHead(500, { 'Content-Type': 'text/html; charset=utf-8' });
-        res.end(`<h1>❌ Token 交换失败</h1><p>${err.message}</p>`);
+      } catch (error) {
+        res.writeHead(500, { "Content-Type": "text/html; charset=utf-8" });
+        res.end(`<h1>Token 交换失败</h1><p>${error.message}</p>`);
         server.close();
-        reject(err);
+        reject(error);
       }
     });
 
     server.listen(3939, () => {
-      console.log('🌐 回调服务器已启动，监听 http://localhost:3939/oauth/callback');
+      console.log("已监听 http://localhost:3939/oauth/callback");
     });
 
-    server.on('error', (err) => {
-      if (err.code === 'EADDRINUSE') {
-        reject(new Error('端口 3939 已被占用，请关闭占用进程后重试'));
-      } else {
-        reject(err);
+    server.on("error", (error) => {
+      if (error.code === "EADDRINUSE") {
+        reject(new Error("端口 3939 已被占用，请先关闭占用进程。"));
+        return;
       }
+
+      reject(error);
     });
   });
 }
 
-// ============ 主流程 ============
-
 async function main() {
-  console.log('🔑 Google Search Console OAuth 授权工具\n');
-  console.log('=' .repeat(60));
-
-  const authUrl = buildAuthUrl();
-
-  console.log('\n📋 请在浏览器中打开以下 URL 进行授权：\n');
-  console.log(authUrl);
-  console.log('\n' + '='.repeat(60));
-  console.log('⏳ 等待授权回调...\n');
+  console.log("Google OAuth 授权工具");
+  console.log("");
+  console.log("1. 在浏览器中打开下方 URL。");
+  console.log("2. 使用已拥有 GSC 和 GA4 读取权限的 Google 账号授权。");
+  console.log("3. 把终端打印出的 GSC_REFRESH_TOKEN 写回根目录 .env。");
+  console.log("");
+  console.log(buildAuthUrl());
+  console.log("");
 
   try {
     const tokens = await startCallbackServer();
 
-    console.log('\n' + '='.repeat(60));
-    console.log('🎉 授权成功！\n');
-
     if (tokens.refresh_token) {
-      console.log('📝 请将以下 Refresh Token 保存到 scripts/.env 文件中：\n');
+      console.log(`请把下列变量写入 ${rootEnvPath}：`);
       console.log(`GSC_REFRESH_TOKEN=${tokens.refresh_token}`);
-      console.log('\n' + '='.repeat(60));
-      console.log('💡 提示：Refresh Token 只在首次授权时返回。');
-      console.log('   如果需要重新获取，请在 Google 账号设置中撤销应用权限后重试。');
     } else {
-      console.log('⚠️ 未返回 Refresh Token。');
-      console.log('   这通常是因为之前已经授权过。');
-      console.log('   请在 https://myaccount.google.com/permissions 撤销应用权限后重试。');
+      console.log("这次没有返回 refresh token。");
+      console.log("如果你之前授权过，请先到 https://myaccount.google.com/permissions 撤销该应用权限后重试。");
     }
 
     if (tokens.access_token) {
-      console.log(`\n📎 Access Token（临时，约1小时有效）：\n${tokens.access_token}`);
+      console.log("已获取临时 access token，可用于本次联调。");
     }
-  } catch (err) {
-    console.error(`\n❌ 授权流程失败: ${err.message}`);
+  } catch (error) {
+    console.error(`授权流程失败: ${error.message}`);
     process.exit(1);
   }
 }

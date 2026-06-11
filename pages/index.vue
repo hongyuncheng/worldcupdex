@@ -246,6 +246,10 @@
       </div>
     </section>
 
+    <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-2 pb-4">
+      <WatchPartyGear variant="rail" :max-items="3" />
+    </section>
+
     <!-- Hot Teams -->
     <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-6 pb-4">
       <div class="flex items-center justify-between mb-6">
