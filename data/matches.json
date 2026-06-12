@@ -18,10 +18,11 @@
       "flag": "https://flagcdn.com/w80/za.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Mexico City Stadium",
+      "nameZh": "墨西哥城体育场",
+      "city": "Mexico City",
+      "cityZh": "墨西哥城",
+      "timeZone": "America/Mexico_City"
     },
     "group": "A",
     "stage": "GROUP_STAGE",
@@ -50,10 +51,11 @@
       "flag": "https://flagcdn.com/w80/cz.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Estadio Guadalajara",
+      "nameZh": "瓜达拉哈拉体育场",
+      "city": "Zapopan",
+      "cityZh": "萨波潘",
+      "timeZone": "America/Mexico_City"
     },
     "group": "A",
     "stage": "GROUP_STAGE",
@@ -82,10 +84,11 @@
       "flag": "https://flagcdn.com/w80/ba.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Toronto Stadium",
+      "nameZh": "多伦多体育场",
+      "city": "Toronto",
+      "cityZh": "多伦多",
+      "timeZone": "America/Toronto"
     },
     "group": "B",
     "stage": "GROUP_STAGE",
@@ -111,10 +114,11 @@
       "flag": "https://flagcdn.com/w80/py.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Los Angeles Stadium",
+      "nameZh": "洛杉矶体育场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "D",
     "stage": "GROUP_STAGE",
@@ -140,10 +144,11 @@
       "flag": "https://flagcdn.com/w80/ch.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "San Francisco Bay Area Stadium",
+      "nameZh": "旧金山湾区体育场",
+      "city": "Santa Clara",
+      "cityZh": "圣克拉拉",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "B",
     "stage": "GROUP_STAGE",
@@ -169,10 +174,11 @@
       "flag": "https://flagcdn.com/w80/ma.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "New York New Jersey Stadium",
+      "nameZh": "纽约新泽西体育场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福",
+      "timeZone": "America/New_York"
     },
     "group": "C",
     "stage": "GROUP_STAGE",
@@ -198,10 +204,11 @@
       "flag": "https://flagcdn.com/w80/gb-sct.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Boston Stadium",
+      "nameZh": "波士顿体育场",
+      "city": "Foxborough",
+      "cityZh": "福克斯堡",
+      "timeZone": "America/New_York"
     },
     "group": "C",
     "stage": "GROUP_STAGE",
@@ -227,10 +234,11 @@
       "flag": "https://flagcdn.com/w80/tr.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "BC Place Vancouver",
+      "nameZh": "温哥华 BC 体育场",
+      "city": "Vancouver",
+      "cityZh": "温哥华",
+      "timeZone": "America/Vancouver"
     },
     "group": "D",
     "stage": "GROUP_STAGE",
@@ -256,10 +264,11 @@
       "flag": "https://flagcdn.com/w80/cw.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Houston Stadium",
+      "nameZh": "休斯顿体育场",
+      "city": "Houston",
+      "cityZh": "休斯顿",
+      "timeZone": "America/Chicago"
     },
     "group": "E",
     "stage": "GROUP_STAGE",
@@ -285,10 +294,11 @@
       "flag": "https://flagcdn.com/w80/jp.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Dallas Stadium",
+      "nameZh": "达拉斯体育场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿",
+      "timeZone": "America/Chicago"
     },
     "group": "F",
     "stage": "GROUP_STAGE",
@@ -314,10 +324,11 @@
       "flag": "https://flagcdn.com/w80/ec.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Philadelphia Stadium",
+      "nameZh": "费城体育场",
+      "city": "Philadelphia",
+      "cityZh": "费城",
+      "timeZone": "America/New_York"
     },
     "group": "E",
     "stage": "GROUP_STAGE",
@@ -343,10 +354,11 @@
       "flag": "https://flagcdn.com/w80/tn.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Estadio Monterrey",
+      "nameZh": "蒙特雷体育场",
+      "city": "Guadalupe",
+      "cityZh": "瓜达卢佩",
+      "timeZone": "America/Monterrey"
     },
     "group": "F",
     "stage": "GROUP_STAGE",
@@ -372,10 +384,11 @@
       "flag": "https://flagcdn.com/w80/cv.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Atlanta Stadium",
+      "nameZh": "亚特兰大体育场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大",
+      "timeZone": "America/New_York"
     },
     "group": "H",
     "stage": "GROUP_STAGE",
@@ -401,10 +414,11 @@
       "flag": "https://flagcdn.com/w80/eg.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Seattle Stadium",
+      "nameZh": "西雅图体育场",
+      "city": "Seattle",
+      "cityZh": "西雅图",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "G",
     "stage": "GROUP_STAGE",
@@ -430,10 +444,11 @@
       "flag": "https://flagcdn.com/w80/uy.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Miami Stadium",
+      "nameZh": "迈阿密体育场",
+      "city": "Miami Gardens",
+      "cityZh": "迈阿密花园",
+      "timeZone": "America/New_York"
     },
     "group": "H",
     "stage": "GROUP_STAGE",
@@ -459,10 +474,11 @@
       "flag": "https://flagcdn.com/w80/nz.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Los Angeles Stadium",
+      "nameZh": "洛杉矶体育场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "G",
     "stage": "GROUP_STAGE",
@@ -488,10 +504,11 @@
       "flag": "https://flagcdn.com/w80/sn.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "New York New Jersey Stadium",
+      "nameZh": "纽约新泽西体育场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福",
+      "timeZone": "America/New_York"
     },
     "group": "I",
     "stage": "GROUP_STAGE",
@@ -517,10 +534,11 @@
       "flag": "https://flagcdn.com/w80/no.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Boston Stadium",
+      "nameZh": "波士顿体育场",
+      "city": "Foxborough",
+      "cityZh": "福克斯堡",
+      "timeZone": "America/New_York"
     },
     "group": "I",
     "stage": "GROUP_STAGE",
@@ -546,10 +564,11 @@
       "flag": "https://flagcdn.com/w80/dz.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Kansas City Stadium",
+      "nameZh": "堪萨斯城体育场",
+      "city": "Kansas City",
+      "cityZh": "堪萨斯城",
+      "timeZone": "America/Chicago"
     },
     "group": "J",
     "stage": "GROUP_STAGE",
@@ -575,10 +594,11 @@
       "flag": "https://flagcdn.com/w80/jo.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "San Francisco Bay Area Stadium",
+      "nameZh": "旧金山湾区体育场",
+      "city": "Santa Clara",
+      "cityZh": "圣克拉拉",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "J",
     "stage": "GROUP_STAGE",
@@ -604,10 +624,11 @@
       "flag": "https://flagcdn.com/w80/cd.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Houston Stadium",
+      "nameZh": "休斯顿体育场",
+      "city": "Houston",
+      "cityZh": "休斯顿",
+      "timeZone": "America/Chicago"
     },
     "group": "K",
     "stage": "GROUP_STAGE",
@@ -633,10 +654,11 @@
       "flag": "https://flagcdn.com/w80/hr.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Dallas Stadium",
+      "nameZh": "达拉斯体育场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿",
+      "timeZone": "America/Chicago"
     },
     "group": "L",
     "stage": "GROUP_STAGE",
@@ -662,10 +684,11 @@
       "flag": "https://flagcdn.com/w80/pa.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Toronto Stadium",
+      "nameZh": "多伦多体育场",
+      "city": "Toronto",
+      "cityZh": "多伦多",
+      "timeZone": "America/Toronto"
     },
     "group": "L",
     "stage": "GROUP_STAGE",
@@ -691,10 +714,11 @@
       "flag": "https://flagcdn.com/w80/co.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Mexico City Stadium",
+      "nameZh": "墨西哥城体育场",
+      "city": "Mexico City",
+      "cityZh": "墨西哥城",
+      "timeZone": "America/Mexico_City"
     },
     "group": "K",
     "stage": "GROUP_STAGE",
@@ -720,10 +744,11 @@
       "flag": "https://flagcdn.com/w80/za.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Atlanta Stadium",
+      "nameZh": "亚特兰大体育场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大",
+      "timeZone": "America/New_York"
     },
     "group": "A",
     "stage": "GROUP_STAGE",
@@ -749,10 +774,11 @@
       "flag": "https://flagcdn.com/w80/ba.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Los Angeles Stadium",
+      "nameZh": "洛杉矶体育场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "B",
     "stage": "GROUP_STAGE",
@@ -778,10 +804,11 @@
       "flag": "https://flagcdn.com/w80/qa.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "BC Place Vancouver",
+      "nameZh": "温哥华 BC 体育场",
+      "city": "Vancouver",
+      "cityZh": "温哥华",
+      "timeZone": "America/Vancouver"
     },
     "group": "B",
     "stage": "GROUP_STAGE",
@@ -807,10 +834,11 @@
       "flag": "https://flagcdn.com/w80/kr.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Estadio Guadalajara",
+      "nameZh": "瓜达拉哈拉体育场",
+      "city": "Zapopan",
+      "cityZh": "萨波潘",
+      "timeZone": "America/Mexico_City"
     },
     "group": "A",
     "stage": "GROUP_STAGE",
@@ -836,10 +864,11 @@
       "flag": "https://flagcdn.com/w80/au.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Seattle Stadium",
+      "nameZh": "西雅图体育场",
+      "city": "Seattle",
+      "cityZh": "西雅图",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "D",
     "stage": "GROUP_STAGE",
@@ -865,10 +894,11 @@
       "flag": "https://flagcdn.com/w80/ma.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Boston Stadium",
+      "nameZh": "波士顿体育场",
+      "city": "Foxborough",
+      "cityZh": "福克斯堡",
+      "timeZone": "America/New_York"
     },
     "group": "C",
     "stage": "GROUP_STAGE",
@@ -894,10 +924,11 @@
       "flag": "https://flagcdn.com/w80/ht.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Philadelphia Stadium",
+      "nameZh": "费城体育场",
+      "city": "Philadelphia",
+      "cityZh": "费城",
+      "timeZone": "America/New_York"
     },
     "group": "C",
     "stage": "GROUP_STAGE",
@@ -923,10 +954,11 @@
       "flag": "https://flagcdn.com/w80/py.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "San Francisco Bay Area Stadium",
+      "nameZh": "旧金山湾区体育场",
+      "city": "Santa Clara",
+      "cityZh": "圣克拉拉",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "D",
     "stage": "GROUP_STAGE",
@@ -952,10 +984,11 @@
       "flag": "https://flagcdn.com/w80/se.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Houston Stadium",
+      "nameZh": "休斯顿体育场",
+      "city": "Houston",
+      "cityZh": "休斯顿",
+      "timeZone": "America/Chicago"
     },
     "group": "F",
     "stage": "GROUP_STAGE",
@@ -981,10 +1014,11 @@
       "flag": "https://flagcdn.com/w80/ci.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Toronto Stadium",
+      "nameZh": "多伦多体育场",
+      "city": "Toronto",
+      "cityZh": "多伦多",
+      "timeZone": "America/Toronto"
     },
     "group": "E",
     "stage": "GROUP_STAGE",
@@ -1010,10 +1044,11 @@
       "flag": "https://flagcdn.com/w80/cw.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Kansas City Stadium",
+      "nameZh": "堪萨斯城体育场",
+      "city": "Kansas City",
+      "cityZh": "堪萨斯城",
+      "timeZone": "America/Chicago"
     },
     "group": "E",
     "stage": "GROUP_STAGE",
@@ -1039,10 +1074,11 @@
       "flag": "https://flagcdn.com/w80/jp.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Estadio Monterrey",
+      "nameZh": "蒙特雷体育场",
+      "city": "Guadalupe",
+      "cityZh": "瓜达卢佩",
+      "timeZone": "America/Monterrey"
     },
     "group": "F",
     "stage": "GROUP_STAGE",
@@ -1068,10 +1104,11 @@
       "flag": "https://flagcdn.com/w80/sa.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Atlanta Stadium",
+      "nameZh": "亚特兰大体育场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大",
+      "timeZone": "America/New_York"
     },
     "group": "H",
     "stage": "GROUP_STAGE",
@@ -1097,10 +1134,11 @@
       "flag": "https://flagcdn.com/w80/ir.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Los Angeles Stadium",
+      "nameZh": "洛杉矶体育场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "G",
     "stage": "GROUP_STAGE",
@@ -1126,10 +1164,11 @@
       "flag": "https://flagcdn.com/w80/cv.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Miami Stadium",
+      "nameZh": "迈阿密体育场",
+      "city": "Miami Gardens",
+      "cityZh": "迈阿密花园",
+      "timeZone": "America/New_York"
     },
     "group": "H",
     "stage": "GROUP_STAGE",
@@ -1155,10 +1194,11 @@
       "flag": "https://flagcdn.com/w80/eg.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "BC Place Vancouver",
+      "nameZh": "温哥华 BC 体育场",
+      "city": "Vancouver",
+      "cityZh": "温哥华",
+      "timeZone": "America/Vancouver"
     },
     "group": "G",
     "stage": "GROUP_STAGE",
@@ -1184,10 +1224,11 @@
       "flag": "https://flagcdn.com/w80/at.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Dallas Stadium",
+      "nameZh": "达拉斯体育场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿",
+      "timeZone": "America/Chicago"
     },
     "group": "J",
     "stage": "GROUP_STAGE",
@@ -1213,10 +1254,11 @@
       "flag": "https://flagcdn.com/w80/iq.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Philadelphia Stadium",
+      "nameZh": "费城体育场",
+      "city": "Philadelphia",
+      "cityZh": "费城",
+      "timeZone": "America/New_York"
     },
     "group": "I",
     "stage": "GROUP_STAGE",
@@ -1242,10 +1284,11 @@
       "flag": "https://flagcdn.com/w80/sn.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "New York New Jersey Stadium",
+      "nameZh": "纽约新泽西体育场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福",
+      "timeZone": "America/New_York"
     },
     "group": "I",
     "stage": "GROUP_STAGE",
@@ -1271,10 +1314,11 @@
       "flag": "https://flagcdn.com/w80/dz.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "San Francisco Bay Area Stadium",
+      "nameZh": "旧金山湾区体育场",
+      "city": "Santa Clara",
+      "cityZh": "圣克拉拉",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "J",
     "stage": "GROUP_STAGE",
@@ -1300,10 +1344,11 @@
       "flag": "https://flagcdn.com/w80/uz.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Houston Stadium",
+      "nameZh": "休斯顿体育场",
+      "city": "Houston",
+      "cityZh": "休斯顿",
+      "timeZone": "America/Chicago"
     },
     "group": "K",
     "stage": "GROUP_STAGE",
@@ -1329,10 +1374,11 @@
       "flag": "https://flagcdn.com/w80/gh.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Boston Stadium",
+      "nameZh": "波士顿体育场",
+      "city": "Foxborough",
+      "cityZh": "福克斯堡",
+      "timeZone": "America/New_York"
     },
     "group": "L",
     "stage": "GROUP_STAGE",
@@ -1358,10 +1404,11 @@
       "flag": "https://flagcdn.com/w80/hr.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Toronto Stadium",
+      "nameZh": "多伦多体育场",
+      "city": "Toronto",
+      "cityZh": "多伦多",
+      "timeZone": "America/Toronto"
     },
     "group": "L",
     "stage": "GROUP_STAGE",
@@ -1387,10 +1434,11 @@
       "flag": "https://flagcdn.com/w80/cd.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Estadio Guadalajara",
+      "nameZh": "瓜达拉哈拉体育场",
+      "city": "Zapopan",
+      "cityZh": "萨波潘",
+      "timeZone": "America/Mexico_City"
     },
     "group": "K",
     "stage": "GROUP_STAGE",
@@ -1416,10 +1464,11 @@
       "flag": "https://flagcdn.com/w80/ca.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "BC Place Vancouver",
+      "nameZh": "温哥华 BC 体育场",
+      "city": "Vancouver",
+      "cityZh": "温哥华",
+      "timeZone": "America/Vancouver"
     },
     "group": "B",
     "stage": "GROUP_STAGE",
@@ -1445,10 +1494,11 @@
       "flag": "https://flagcdn.com/w80/qa.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Seattle Stadium",
+      "nameZh": "西雅图体育场",
+      "city": "Seattle",
+      "cityZh": "西雅图",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "B",
     "stage": "GROUP_STAGE",
@@ -1474,10 +1524,11 @@
       "flag": "https://flagcdn.com/w80/ht.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Atlanta Stadium",
+      "nameZh": "亚特兰大体育场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大",
+      "timeZone": "America/New_York"
     },
     "group": "C",
     "stage": "GROUP_STAGE",
@@ -1503,10 +1554,11 @@
       "flag": "https://flagcdn.com/w80/br.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Miami Stadium",
+      "nameZh": "迈阿密体育场",
+      "city": "Miami Gardens",
+      "cityZh": "迈阿密花园",
+      "timeZone": "America/New_York"
     },
     "group": "C",
     "stage": "GROUP_STAGE",
@@ -1532,10 +1584,11 @@
       "flag": "https://flagcdn.com/w80/mx.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Mexico City Stadium",
+      "nameZh": "墨西哥城体育场",
+      "city": "Mexico City",
+      "cityZh": "墨西哥城",
+      "timeZone": "America/Mexico_City"
     },
     "group": "A",
     "stage": "GROUP_STAGE",
@@ -1561,10 +1614,11 @@
       "flag": "https://flagcdn.com/w80/kr.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Estadio Monterrey",
+      "nameZh": "蒙特雷体育场",
+      "city": "Guadalupe",
+      "cityZh": "瓜达卢佩",
+      "timeZone": "America/Monterrey"
     },
     "group": "A",
     "stage": "GROUP_STAGE",
@@ -1590,10 +1644,11 @@
       "flag": "https://flagcdn.com/w80/de.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "New York New Jersey Stadium",
+      "nameZh": "纽约新泽西体育场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福",
+      "timeZone": "America/New_York"
     },
     "group": "E",
     "stage": "GROUP_STAGE",
@@ -1619,10 +1674,11 @@
       "flag": "https://flagcdn.com/w80/ci.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Philadelphia Stadium",
+      "nameZh": "费城体育场",
+      "city": "Philadelphia",
+      "cityZh": "费城",
+      "timeZone": "America/New_York"
     },
     "group": "E",
     "stage": "GROUP_STAGE",
@@ -1648,10 +1704,11 @@
       "flag": "https://flagcdn.com/w80/nl.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Kansas City Stadium",
+      "nameZh": "堪萨斯城体育场",
+      "city": "Kansas City",
+      "cityZh": "堪萨斯城",
+      "timeZone": "America/Chicago"
     },
     "group": "F",
     "stage": "GROUP_STAGE",
@@ -1677,10 +1734,11 @@
       "flag": "https://flagcdn.com/w80/se.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Dallas Stadium",
+      "nameZh": "达拉斯体育场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿",
+      "timeZone": "America/Chicago"
     },
     "group": "F",
     "stage": "GROUP_STAGE",
@@ -1706,10 +1764,11 @@
       "flag": "https://flagcdn.com/w80/us.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Los Angeles Stadium",
+      "nameZh": "洛杉矶体育场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "D",
     "stage": "GROUP_STAGE",
@@ -1735,10 +1794,11 @@
       "flag": "https://flagcdn.com/w80/au.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "San Francisco Bay Area Stadium",
+      "nameZh": "旧金山湾区体育场",
+      "city": "Santa Clara",
+      "cityZh": "圣克拉拉",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "D",
     "stage": "GROUP_STAGE",
@@ -1764,10 +1824,11 @@
       "flag": "https://flagcdn.com/w80/fr.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Boston Stadium",
+      "nameZh": "波士顿体育场",
+      "city": "Foxborough",
+      "cityZh": "福克斯堡",
+      "timeZone": "America/New_York"
     },
     "group": "I",
     "stage": "GROUP_STAGE",
@@ -1793,10 +1854,11 @@
       "flag": "https://flagcdn.com/w80/iq.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Toronto Stadium",
+      "nameZh": "多伦多体育场",
+      "city": "Toronto",
+      "cityZh": "多伦多",
+      "timeZone": "America/Toronto"
     },
     "group": "I",
     "stage": "GROUP_STAGE",
@@ -1822,10 +1884,11 @@
       "flag": "https://flagcdn.com/w80/es.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Estadio Guadalajara",
+      "nameZh": "瓜达拉哈拉体育场",
+      "city": "Zapopan",
+      "cityZh": "萨波潘",
+      "timeZone": "America/Mexico_City"
     },
     "group": "H",
     "stage": "GROUP_STAGE",
@@ -1851,10 +1914,11 @@
       "flag": "https://flagcdn.com/w80/sa.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Houston Stadium",
+      "nameZh": "休斯顿体育场",
+      "city": "Houston",
+      "cityZh": "休斯顿",
+      "timeZone": "America/Chicago"
     },
     "group": "H",
     "stage": "GROUP_STAGE",
@@ -1880,10 +1944,11 @@
       "flag": "https://flagcdn.com/w80/be.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "BC Place Vancouver",
+      "nameZh": "温哥华 BC 体育场",
+      "city": "Vancouver",
+      "cityZh": "温哥华",
+      "timeZone": "America/Vancouver"
     },
     "group": "G",
     "stage": "GROUP_STAGE",
@@ -1909,10 +1974,11 @@
       "flag": "https://flagcdn.com/w80/ir.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Seattle Stadium",
+      "nameZh": "西雅图体育场",
+      "city": "Seattle",
+      "cityZh": "西雅图",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "G",
     "stage": "GROUP_STAGE",
@@ -1938,10 +2004,11 @@
       "flag": "https://flagcdn.com/w80/gb-eng.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "New York New Jersey Stadium",
+      "nameZh": "纽约新泽西体育场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福",
+      "timeZone": "America/New_York"
     },
     "group": "L",
     "stage": "GROUP_STAGE",
@@ -1967,10 +2034,11 @@
       "flag": "https://flagcdn.com/w80/gh.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Philadelphia Stadium",
+      "nameZh": "费城体育场",
+      "city": "Philadelphia",
+      "cityZh": "费城",
+      "timeZone": "America/New_York"
     },
     "group": "L",
     "stage": "GROUP_STAGE",
@@ -1996,10 +2064,11 @@
       "flag": "https://flagcdn.com/w80/pt.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Miami Stadium",
+      "nameZh": "迈阿密体育场",
+      "city": "Miami Gardens",
+      "cityZh": "迈阿密花园",
+      "timeZone": "America/New_York"
     },
     "group": "K",
     "stage": "GROUP_STAGE",
@@ -2025,10 +2094,11 @@
       "flag": "https://flagcdn.com/w80/uz.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Atlanta Stadium",
+      "nameZh": "亚特兰大体育场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大",
+      "timeZone": "America/New_York"
     },
     "group": "K",
     "stage": "GROUP_STAGE",
@@ -2054,10 +2124,11 @@
       "flag": "https://flagcdn.com/w80/ar.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Dallas Stadium",
+      "nameZh": "达拉斯体育场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿",
+      "timeZone": "America/Chicago"
     },
     "group": "J",
     "stage": "GROUP_STAGE",
@@ -2083,10 +2154,11 @@
       "flag": "https://flagcdn.com/w80/at.png"
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Kansas City Stadium",
+      "nameZh": "堪萨斯城体育场",
+      "city": "Kansas City",
+      "cityZh": "堪萨斯城",
+      "timeZone": "America/Chicago"
     },
     "group": "J",
     "stage": "GROUP_STAGE",
@@ -2112,10 +2184,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Los Angeles Stadium",
+      "nameZh": "洛杉矶体育场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2141,10 +2214,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Houston Stadium",
+      "nameZh": "休斯顿体育场",
+      "city": "Houston",
+      "cityZh": "休斯顿",
+      "timeZone": "America/Chicago"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2170,10 +2244,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Boston Stadium",
+      "nameZh": "波士顿体育场",
+      "city": "Foxborough",
+      "cityZh": "福克斯堡",
+      "timeZone": "America/New_York"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2199,10 +2274,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Estadio Monterrey",
+      "nameZh": "蒙特雷体育场",
+      "city": "Guadalupe",
+      "cityZh": "瓜达卢佩",
+      "timeZone": "America/Monterrey"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2228,10 +2304,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Dallas Stadium",
+      "nameZh": "达拉斯体育场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿",
+      "timeZone": "America/Chicago"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2257,10 +2334,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "New York New Jersey Stadium",
+      "nameZh": "纽约新泽西体育场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福",
+      "timeZone": "America/New_York"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2286,10 +2364,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Mexico City Stadium",
+      "nameZh": "墨西哥城体育场",
+      "city": "Mexico City",
+      "cityZh": "墨西哥城",
+      "timeZone": "America/Mexico_City"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2315,10 +2394,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Atlanta Stadium",
+      "nameZh": "亚特兰大体育场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大",
+      "timeZone": "America/New_York"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2344,10 +2424,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Seattle Stadium",
+      "nameZh": "西雅图体育场",
+      "city": "Seattle",
+      "cityZh": "西雅图",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2373,10 +2454,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "San Francisco Bay Area Stadium",
+      "nameZh": "旧金山湾区体育场",
+      "city": "Santa Clara",
+      "cityZh": "圣克拉拉",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2402,10 +2484,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Los Angeles Stadium",
+      "nameZh": "洛杉矶体育场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2431,10 +2514,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Toronto Stadium",
+      "nameZh": "多伦多体育场",
+      "city": "Toronto",
+      "cityZh": "多伦多",
+      "timeZone": "America/Toronto"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2460,10 +2544,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "BC Place Vancouver",
+      "nameZh": "温哥华 BC 体育场",
+      "city": "Vancouver",
+      "cityZh": "温哥华",
+      "timeZone": "America/Vancouver"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2489,10 +2574,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Dallas Stadium",
+      "nameZh": "达拉斯体育场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿",
+      "timeZone": "America/Chicago"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2518,10 +2604,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Miami Stadium",
+      "nameZh": "迈阿密体育场",
+      "city": "Miami Gardens",
+      "cityZh": "迈阿密花园",
+      "timeZone": "America/New_York"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2547,10 +2634,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Kansas City Stadium",
+      "nameZh": "堪萨斯城体育场",
+      "city": "Kansas City",
+      "cityZh": "堪萨斯城",
+      "timeZone": "America/Chicago"
     },
     "group": "",
     "stage": "LAST_32",
@@ -2576,10 +2664,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Houston Stadium",
+      "nameZh": "休斯顿体育场",
+      "city": "Houston",
+      "cityZh": "休斯顿",
+      "timeZone": "America/Chicago"
     },
     "group": "",
     "stage": "LAST_16",
@@ -2605,10 +2694,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Philadelphia Stadium",
+      "nameZh": "费城体育场",
+      "city": "Philadelphia",
+      "cityZh": "费城",
+      "timeZone": "America/New_York"
     },
     "group": "",
     "stage": "LAST_16",
@@ -2634,10 +2724,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "New York New Jersey Stadium",
+      "nameZh": "纽约新泽西体育场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福",
+      "timeZone": "America/New_York"
     },
     "group": "",
     "stage": "LAST_16",
@@ -2663,10 +2754,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Mexico City Stadium",
+      "nameZh": "墨西哥城体育场",
+      "city": "Mexico City",
+      "cityZh": "墨西哥城",
+      "timeZone": "America/Mexico_City"
     },
     "group": "",
     "stage": "LAST_16",
@@ -2692,10 +2784,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Dallas Stadium",
+      "nameZh": "达拉斯体育场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿",
+      "timeZone": "America/Chicago"
     },
     "group": "",
     "stage": "LAST_16",
@@ -2721,10 +2814,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Seattle Stadium",
+      "nameZh": "西雅图体育场",
+      "city": "Seattle",
+      "cityZh": "西雅图",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "",
     "stage": "LAST_16",
@@ -2750,10 +2844,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Atlanta Stadium",
+      "nameZh": "亚特兰大体育场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大",
+      "timeZone": "America/New_York"
     },
     "group": "",
     "stage": "LAST_16",
@@ -2779,10 +2874,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "BC Place Vancouver",
+      "nameZh": "温哥华 BC 体育场",
+      "city": "Vancouver",
+      "cityZh": "温哥华",
+      "timeZone": "America/Vancouver"
     },
     "group": "",
     "stage": "LAST_16",
@@ -2808,10 +2904,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Boston Stadium",
+      "nameZh": "波士顿体育场",
+      "city": "Foxborough",
+      "cityZh": "福克斯堡",
+      "timeZone": "America/New_York"
     },
     "group": "",
     "stage": "QUARTER_FINALS",
@@ -2837,10 +2934,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Los Angeles Stadium",
+      "nameZh": "洛杉矶体育场",
+      "city": "Inglewood",
+      "cityZh": "英格尔伍德",
+      "timeZone": "America/Los_Angeles"
     },
     "group": "",
     "stage": "QUARTER_FINALS",
@@ -2866,10 +2964,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Miami Stadium",
+      "nameZh": "迈阿密体育场",
+      "city": "Miami Gardens",
+      "cityZh": "迈阿密花园",
+      "timeZone": "America/New_York"
     },
     "group": "",
     "stage": "QUARTER_FINALS",
@@ -2895,10 +2994,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Kansas City Stadium",
+      "nameZh": "堪萨斯城体育场",
+      "city": "Kansas City",
+      "cityZh": "堪萨斯城",
+      "timeZone": "America/Chicago"
     },
     "group": "",
     "stage": "QUARTER_FINALS",
@@ -2924,10 +3024,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Dallas Stadium",
+      "nameZh": "达拉斯体育场",
+      "city": "Arlington",
+      "cityZh": "阿灵顿",
+      "timeZone": "America/Chicago"
     },
     "group": "",
     "stage": "SEMI_FINALS",
@@ -2953,10 +3054,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Atlanta Stadium",
+      "nameZh": "亚特兰大体育场",
+      "city": "Atlanta",
+      "cityZh": "亚特兰大",
+      "timeZone": "America/New_York"
     },
     "group": "",
     "stage": "SEMI_FINALS",
@@ -2982,10 +3084,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "Miami Stadium",
+      "nameZh": "迈阿密体育场",
+      "city": "Miami Gardens",
+      "cityZh": "迈阿密花园",
+      "timeZone": "America/New_York"
     },
     "group": "",
     "stage": "THIRD_PLACE",
@@ -3011,10 +3114,11 @@
       "flag": ""
     },
     "venue": {
-      "name": "",
-      "nameZh": "",
-      "city": "",
-      "cityZh": ""
+      "name": "New York New Jersey Stadium",
+      "nameZh": "纽约新泽西体育场",
+      "city": "East Rutherford",
+      "cityZh": "东卢瑟福",
+      "timeZone": "America/New_York"
     },
     "group": "",
     "stage": "FINAL",
