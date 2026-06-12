@@ -22,12 +22,22 @@
           >
             {{ $t('hero.title') }}
           </h1>
-          <p class="text-white/90 mb-6" style="font-family: 'Inter', sans-serif; font-size: clamp(14px, 1.5vw, 16px);">
-            {{ $t('home.heroSubtitle') }}
+          <p class="text-white/90 mb-3" style="font-family: 'Inter', sans-serif; font-size: clamp(14px, 1.5vw, 16px);">
+            {{ heroStatusCopy.subtitle }}
           </p>
 
+          <div class="mb-3 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-white/90 backdrop-blur-md">
+            <span
+              class="inline-block h-2.5 w-2.5 rounded-full"
+              :style="{ background: heroStatusCopy.dotColor }"
+            />
+            <span style="font-family: 'Inter', sans-serif; font-size: 13px;">
+              {{ heroStatusCopy.badge }}
+            </span>
+          </div>
+
           <ClientOnly>
-            <CountdownTimer class="mb-6" :target-date="countdownTarget" />
+            <CountdownTimer class="mb-4" :target-date="heroCountdownTarget" />
             <template #fallback>
               <!-- SSR Placeholder -->
               <div class="flex items-center justify-center gap-3 mb-6">
@@ -40,6 +50,10 @@
               </div>
             </template>
           </ClientOnly>
+
+          <p class="text-white/75 mb-6" style="font-family: 'Inter', sans-serif; font-size: 13px;">
+            {{ heroStatusCopy.meta }}
+          </p>
 
           <!-- CTA Buttons -->
           <div class="hero-cta-buttons flex items-center justify-center gap-4 mb-6 w-full">
@@ -501,6 +515,11 @@ const { favoriteTeams, favoriteMatches, isLoaded } = useFavorites()
 const { track } = useAnalytics()
 
 const countdownTarget = '2026-06-12T01:00:00Z'
+const tournamentKickoffMs = new Date(countdownTarget).getTime()
+const tournamentFinalMs = Math.max(...(matchesData as MatchItem[]).map(match => getMatchDate(match).getTime()))
+const matchLiveWindowMs = 3 * 60 * 60 * 1000
+const nowMs = ref(Date.now())
+let heroClockTimer: ReturnType<typeof setInterval> | null = null
 
 const homePathSteps = [
   { index: '1', key: 'team', to: '/teams' },
@@ -519,8 +538,10 @@ const upcomingFavoriteMatches = computed(() => {
     return isFavTeam || isFavMatch
   })
 
-  // 仅显示还未结束的比赛（score为空），并按时间排序，取前两场
-  const upcoming = favMatches.filter(m => !m.score).sort((a, b) => getMatchDate(a).getTime() - getMatchDate(b).getTime())
+  // 开赛后按“当前时间之后”筛选，避免已开打比赛继续出现在 upcoming 区域
+  const upcoming = favMatches
+    .filter(m => !m.score && getMatchDate(m).getTime() >= nowMs.value)
+    .sort((a, b) => getMatchDate(a).getTime() - getMatchDate(b).getTime())
   return upcoming.slice(0, 2)
 })
 
@@ -530,6 +551,123 @@ function formatLocalTime(match: MatchItem) {
 
 // Fallback placeholder keys for CountdownTimer (rendered during SSR)
 const countdownFallbackKeys = ['hero.days', 'hero.hours', 'hero.minutes', 'hero.seconds']
+
+const nextScheduledMatch = computed(() => {
+  return (matchesData as MatchItem[])
+    .filter(match => getMatchDate(match).getTime() > nowMs.value)
+    .sort((a, b) => getMatchDate(a).getTime() - getMatchDate(b).getTime())[0] || null
+})
+
+const liveMatch = computed(() => {
+  const now = nowMs.value
+  return (matchesData as MatchItem[])
+    .find(match => {
+      const start = getMatchDate(match).getTime()
+      return start <= now && now < start + matchLiveWindowMs
+    }) || null
+})
+
+const heroPhase = computed<'pre' | 'live' | 'post'>(() => {
+  const now = nowMs.value
+  if (now < tournamentKickoffMs) return 'pre'
+  if (nextScheduledMatch.value || now < tournamentFinalMs + matchLiveWindowMs) return 'live'
+  return 'post'
+})
+
+const heroCountdownTarget = computed(() => {
+  if (heroPhase.value === 'pre') return countdownTarget
+  if (heroPhase.value === 'live' && nextScheduledMatch.value) return getMatchDate(nextScheduledMatch.value).toISOString()
+  return new Date().toISOString()
+})
+
+const heroStatusCopy = computed(() => {
+  if (heroPhase.value === 'pre') {
+    if (locale.value === 'zh') {
+      return {
+        subtitle: '距离世界杯揭幕战',
+        badge: '倒计时进行中',
+        meta: '首页应聚焦开幕前准备、球队路线和首轮赛程。',
+        dotColor: '#FFD700',
+      }
+    }
+    if (locale.value === 'es') {
+      return {
+        subtitle: 'Cuenta atrás para el partido inaugural',
+        badge: 'Previo al torneo',
+        meta: 'La home debe centrarse en el arranque, las rutas de equipos y la primera jornada.',
+        dotColor: '#FFD700',
+      }
+    }
+    return {
+      subtitle: 'Countdown to the opening match',
+      badge: 'Pre-tournament',
+      meta: 'The homepage should focus on kickoff prep, team routes and the first wave of fixtures.',
+      dotColor: '#FFD700',
+    }
+  }
+
+  if (heroPhase.value === 'live') {
+    const nextMatch = nextScheduledMatch.value
+    const liveNow = liveMatch.value
+    if (locale.value === 'zh') {
+      return {
+        subtitle: liveNow ? '世界杯进行中' : '距离下一场开球',
+        badge: liveNow
+          ? `进行中：${liveNow.homeTeam.nameZh} vs ${liveNow.awayTeam.nameZh}`
+          : '赛程持续更新中',
+        meta: nextMatch
+          ? `下一场：${nextMatch.homeTeam.nameZh} vs ${nextMatch.awayTeam.nameZh}，应优先引导用户去赛程和预测。`
+          : '赛事已进入进行期，首页不应继续展示开幕倒计时。',
+        dotColor: '#22C55E',
+      }
+    }
+    if (locale.value === 'es') {
+      return {
+        subtitle: liveNow ? 'El Mundial ya está en marcha' : 'Cuenta atrás para el próximo kickoff',
+        badge: liveNow
+          ? `En juego: ${liveNow.homeTeam.nameEn} vs ${liveNow.awayTeam.nameEn}`
+          : 'Calendario en actualización',
+        meta: nextMatch
+          ? `Siguiente: ${nextMatch.homeTeam.nameEn} vs ${nextMatch.awayTeam.nameEn}. La home debe empujar calendario y predicciones.`
+          : 'El torneo ya empezó; la home no debe seguir contando hacia el debut.',
+        dotColor: '#22C55E',
+      }
+    }
+    return {
+      subtitle: liveNow ? 'The tournament is live' : 'Countdown to the next kickoff',
+      badge: liveNow
+        ? `Live now: ${liveNow.homeTeam.nameEn} vs ${liveNow.awayTeam.nameEn}`
+        : 'Fixtures updating throughout the tournament',
+      meta: nextMatch
+        ? `Next up: ${nextMatch.homeTeam.nameEn} vs ${nextMatch.awayTeam.nameEn}. The homepage should now push schedule and prediction actions.`
+        : 'The World Cup is underway, so the homepage should no longer count down to the opener.',
+      dotColor: '#22C55E',
+    }
+  }
+
+  if (locale.value === 'zh') {
+    return {
+      subtitle: '世界杯赛程已全部完成',
+      badge: '赛事已结束',
+      meta: '届时首页应切换为复盘、数据汇总和最佳预测内容。',
+      dotColor: '#94A3B8',
+    }
+  }
+  if (locale.value === 'es') {
+    return {
+      subtitle: 'El torneo ya terminó',
+      badge: 'Torneo finalizado',
+      meta: 'La home debería pasar a resúmenes, datos finales y mejores predicciones.',
+      dotColor: '#94A3B8',
+    }
+  }
+  return {
+    subtitle: 'The tournament has finished',
+    badge: 'Tournament complete',
+    meta: 'The homepage should eventually switch to recap, final data and best prediction content.',
+    dotColor: '#94A3B8',
+  }
+})
 
 // SEO
 const seoTitle = computed(() => t('home.title'))
@@ -722,6 +860,19 @@ function handleHomeStoreClick() {
     price: homeRevenueOffer.value.price,
   })
 }
+
+onMounted(() => {
+  heroClockTimer = setInterval(() => {
+    nowMs.value = Date.now()
+  }, 1000)
+})
+
+onUnmounted(() => {
+  if (heroClockTimer) {
+    clearInterval(heroClockTimer)
+    heroClockTimer = null
+  }
+})
 </script>
 
 <style scoped>

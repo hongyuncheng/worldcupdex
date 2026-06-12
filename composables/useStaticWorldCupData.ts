@@ -82,14 +82,10 @@ export function getStaticMatchList(params: StaticMatchParams = {}): ListResponse
 }
 
 export function getStaticUpcomingMatches(limit = 5): MatchItem[] {
-  const now = new Date()
-  const year = now.getFullYear()
-  const month = String(now.getMonth() + 1).padStart(2, '0')
-  const day = String(now.getDate()).padStart(2, '0')
-  const today = `${year}-${month}-${day}`
+  const now = Date.now()
 
   return staticMatches
-    .filter(match => match.timestamp >= Date.parse(`${today}T00:00:00Z`))
+    .filter(match => match.timestamp >= now)
     .sort((a, b) => a.timestamp - b.timestamp)
     .slice(0, limit)
 }

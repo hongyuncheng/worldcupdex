@@ -12,11 +12,12 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+const props = defineProps<{
+  targetDate: string | number | Date
+}>()
 
-// The opening match is June 11, 2026, 19:00 (Mexico City Time, UTC-6)
-// This is equivalent to June 12, 2026, 01:00 UTC
-const targetDate = new Date('2026-06-12T01:00:00Z').getTime()
+const { t } = useI18n()
+const targetTimestamp = computed(() => new Date(props.targetDate).getTime())
 
 const days = ref(0)
 const hours = ref(0)
@@ -32,13 +33,13 @@ const timeBlocks = computed(() => [
 
 function updateCountdown() {
   // 处理可能传入的无效日期或不支持的日期格式
-  if (isNaN(targetDate)) {
-    console.warn('Invalid targetDate provided to CountdownTimer:', targetDate)
+  if (isNaN(targetTimestamp.value)) {
+    console.warn('Invalid targetDate provided to CountdownTimer:', props.targetDate)
     return
   }
 
   const now = Date.now()
-  const diff = targetDate - now
+  const diff = targetTimestamp.value - now
 
   if (diff <= 0) {
     days.value = 0

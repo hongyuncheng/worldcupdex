@@ -160,9 +160,8 @@ const filteredMatches = computed(() => {
 // ─── 全部待预测比赛数 ───
 const allMatchesResponse = computed(() => getStaticMatchList())
 const totalUpcoming = computed(() => {
-  const today = new Date().toISOString().split('T')[0]
   return allMatchesResponse.value.data.filter(
-    match => match.date >= today && match.homeTeam.id !== 'TBD' && match.awayTeam.id !== 'TBD',
+    match => match.timestamp >= Date.now() && match.homeTeam.id !== 'TBD' && match.awayTeam.id !== 'TBD',
   ).length
 })
 
