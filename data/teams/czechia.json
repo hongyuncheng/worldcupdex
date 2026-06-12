@@ -46,18 +46,6 @@
       "shirtNumber": null
     },
     {
-      "name": "Ladislav Krejčí",
-      "nameZh": "Ladislav Krejčí",
-      "position": "Defence",
-      "positionZh": "后卫",
-      "dateOfBirth": "1999-04-20",
-      "nationality": "Czech Republic",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/koz6bp1772026272.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/koz6bp1772026272.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xgnzth1772026135.jpg"
-    },
-    {
       "name": "Jaroslav Zelený",
       "nameZh": "Jaroslav Zelený",
       "position": "Defence",
@@ -137,6 +125,18 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/gbjykc1762291812.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/gbjykc1762291812.png",
       "photoThumb": null
+    },
+    {
+      "name": "Ladislav Krejčí",
+      "nameZh": "Ladislav Krejčí",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1999-04-20",
+      "nationality": "Czech Republic",
+      "shirtNumber": null,
+      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/koz6bp1772026272.png",
+      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/koz6bp1772026272.png",
+      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/xgnzth1772026135.jpg"
     },
     {
       "name": "Vladimír Darida",
@@ -307,5 +307,15 @@
   "squadStatus": "incomplete",
   "squadLastUpdated": "2026-06-12",
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
-  "recentMatches": []
+  "recentMatches": [
+    {
+      "date": "2026-06-12",
+      "competition": "FIFA World Cup",
+      "homeTeam": "South Korea",
+      "awayTeam": "Czechia",
+      "scoreHome": 2,
+      "scoreAway": 1,
+      "result": "L"
+    }
+  ]
 }

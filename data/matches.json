@@ -60,7 +60,10 @@
     "group": "A",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null
+    "score": {
+      "home": 2,
+      "away": 1
+    }
   },
   {
     "id": 537333,
