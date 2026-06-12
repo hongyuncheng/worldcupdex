@@ -5,6 +5,7 @@
  * Usage: FOOTBALL_DATA_API_KEY=your_key node scripts/fetch-worldcup-data.mjs
  */
 
+import 'dotenv/config';
 import { writeFile, readFile, mkdir } from 'fs/promises';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';

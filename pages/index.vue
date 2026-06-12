@@ -6,16 +6,16 @@
 
     <!-- Hero Section -->
     <section
-      class="relative flex flex-col items-center justify-center overflow-hidden hero-section lg:h-[400px]"
+      class="relative flex flex-col items-center justify-center overflow-hidden hero-section lg:min-h-[580px]"
     >
       <!-- Background image -->
       <div class="absolute inset-0 hero-background"></div>
 
 
       <!-- Content Wrapper -->
-      <div class="relative z-10 w-full max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-center h-full pt-8 lg:pt-0 pb-8 lg:pb-0 overflow-y-auto lg:overflow-visible scrollbar-hide">
+      <div class="relative z-10 w-full max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center justify-center h-full pt-8 lg:pt-12 pb-8 lg:pb-12 lg:pr-[360px] xl:pr-[380px] overflow-y-auto lg:overflow-visible scrollbar-hide">
         <!-- Main Content (Absolute Centered on desktop, regular flow on mobile) -->
-        <div class="flex flex-col items-center text-center w-full max-w-3xl my-auto">
+        <div class="flex flex-col items-center text-center w-full max-w-3xl lg:-mt-6">
           <h1
             class="font-bold text-white mb-2 tracking-tight drop-shadow-lg"
             style="font-family: 'Montserrat', sans-serif; font-size: clamp(28px, 4vw, 48px); text-shadow: 0 4px 12px rgba(0,0,0,0.3);"
@@ -37,7 +37,7 @@
           </div>
 
           <ClientOnly>
-            <CountdownTimer class="mb-4" :target-date="heroCountdownTarget" />
+            <CountdownTimer class="mb-3" :target-date="heroCountdownTarget" />
             <template #fallback>
               <!-- SSR Placeholder -->
               <div class="flex items-center justify-center gap-3 mb-6">
@@ -51,12 +51,12 @@
             </template>
           </ClientOnly>
 
-          <p class="text-white/75 mb-6" style="font-family: 'Inter', sans-serif; font-size: 13px;">
+          <p class="text-white/75 mb-4 max-w-xl leading-relaxed" style="font-family: 'Inter', sans-serif; font-size: 12px;">
             {{ heroStatusCopy.meta }}
           </p>
 
           <!-- CTA Buttons -->
-          <div class="hero-cta-buttons flex items-center justify-center gap-4 mb-6 w-full">
+          <div class="hero-cta-buttons flex items-center justify-center gap-4 mb-4 w-full">
             <NuxtLinkLocale
               to="/schedule"
               class="hero-cta-button inline-flex items-center justify-center border-none font-bold cursor-pointer hover:scale-105 transition-transform shadow-lg"
@@ -76,7 +76,7 @@
           </div>
 
           <!-- Stats row -->
-          <div class="flex flex-wrap items-center justify-center gap-3 text-white/80 text-sm shadow-sm" style="font-family: 'Inter', sans-serif;">
+          <div class="flex flex-wrap items-center justify-center gap-3 text-white/80 text-xs shadow-sm" style="font-family: 'Inter', sans-serif;">
             <span>{{ $t('hero.statsTeams') }}</span>
             <span style="opacity:0.5;">·</span>
             <span>{{ $t('hero.statsMatches') }}</span>
@@ -89,7 +89,7 @@
 
         <!-- Right: Custom Schedule (Absolute positioned on desktop, regular flow on mobile) -->
         <ClientOnly>
-          <div v-if="upcomingFavoriteMatches.length > 0" class="lg:absolute lg:right-4 xl:right-8 lg:top-[60%] lg:-translate-y-1/2 w-full max-w-[340px] lg:w-[320px] xl:w-[340px] animate-fade-in z-20 mt-4 lg:mt-0">
+          <div v-if="upcomingFavoriteMatches.length > 0" class="lg:absolute lg:right-4 xl:right-8 lg:top-1/2 lg:-translate-y-1/2 w-full max-w-[340px] lg:w-[320px] xl:w-[340px] animate-fade-in z-20 mt-4 lg:mt-0">
             <div class="bg-white/10 backdrop-blur-md border border-white/30 rounded-xl p-1 shadow-[0_8px_32px_rgba(0,0,0,0.5)]">
               <h3 class="text-white font-bold text-[15px] mb-2 flex items-center gap-1.5">
                 <span class="text-yellow-400 drop-shadow-md text-sm">⭐</span> {{ $t('home.customSchedule') }}
@@ -616,7 +616,7 @@ const heroStatusCopy = computed(() => {
           ? `进行中：${liveNow.homeTeam.nameZh} vs ${liveNow.awayTeam.nameZh}`
           : '赛程持续更新中',
         meta: nextMatch
-          ? `下一场：${nextMatch.homeTeam.nameZh} vs ${nextMatch.awayTeam.nameZh}，应优先引导用户去赛程和预测。`
+          ? `下一场：${nextMatch.homeTeam.nameZh} vs ${nextMatch.awayTeam.nameZh}，赛程与预测持续更新。`
           : '赛事已进入进行期，首页不应继续展示开幕倒计时。',
         dotColor: '#22C55E',
       }
@@ -628,7 +628,7 @@ const heroStatusCopy = computed(() => {
           ? `En juego: ${liveNow.homeTeam.nameEn} vs ${liveNow.awayTeam.nameEn}`
           : 'Calendario en actualización',
         meta: nextMatch
-          ? `Siguiente: ${nextMatch.homeTeam.nameEn} vs ${nextMatch.awayTeam.nameEn}. La home debe empujar calendario y predicciones.`
+          ? `Siguiente: ${nextMatch.homeTeam.nameEn} vs ${nextMatch.awayTeam.nameEn}. El calendario y las predicciones siguen actualizándose.`
           : 'El torneo ya empezó; la home no debe seguir contando hacia el debut.',
         dotColor: '#22C55E',
       }
@@ -639,7 +639,7 @@ const heroStatusCopy = computed(() => {
         ? `Live now: ${liveNow.homeTeam.nameEn} vs ${liveNow.awayTeam.nameEn}`
         : 'Fixtures updating throughout the tournament',
       meta: nextMatch
-        ? `Next up: ${nextMatch.homeTeam.nameEn} vs ${nextMatch.awayTeam.nameEn}. The homepage should now push schedule and prediction actions.`
+        ? `Next up: ${nextMatch.homeTeam.nameEn} vs ${nextMatch.awayTeam.nameEn}. Schedule and predictions are updating throughout the tournament.`
         : 'The World Cup is underway, so the homepage should no longer count down to the opener.',
       dotColor: '#22C55E',
     }
