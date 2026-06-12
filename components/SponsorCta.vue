@@ -11,12 +11,14 @@ interface Props {
   btnStyle?: 'solid' | 'outline' | 'ghost'
   // 自定义链接（如果不填则跳转 Ko-fi 主页）
   url?: string
+  placement?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
   theme: 'generic',
   btnStyle: 'solid',
-  url: 'https://ko-fi.com/worldcupdex'
+  url: 'https://ko-fi.com/worldcupdex',
+  placement: 'sponsor_cta',
 })
 
 const themeConfig = computed(() => {
@@ -59,7 +61,7 @@ const themeConfig = computed(() => {
 
 function handleClick(): void {
   track(AnalyticsEvents.CROSS_SITE_CLICK, {
-    source: `sponsor_cta_${props.theme}`,
+    source: `${props.placement}_${props.theme}`,
     target: 'ko-fi',
   })
 }

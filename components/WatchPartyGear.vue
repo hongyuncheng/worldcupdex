@@ -15,11 +15,19 @@ interface AffiliateProduct {
 interface Props {
   variant?: 'panel' | 'rail'
   maxItems?: number
+  placement?: string
+  eyebrow?: string
+  title?: string
+  subtitle?: string
 }
 
 const props = withDefaults(defineProps<Props>(), {
   variant: 'panel',
   maxItems: 3,
+  placement: 'watch_party_gear',
+  eyebrow: '',
+  title: 'Watch Party Essentials',
+  subtitle: 'Level up your game day experience',
 })
 
 const { t } = useI18n()
@@ -41,6 +49,7 @@ function buildTrackUrl(p: AffiliateProduct): string {
     teamId: p.teamId,
     partner: p.partner,
     productName: p.productName,
+    placement: props.placement,
   })
   return `/api/track-affiliate?${params.toString()}`
 }
@@ -50,6 +59,7 @@ function handleClick(p: AffiliateProduct): void {
     team_id: p.teamId,
     partner: p.partner,
     product_name: p.productName,
+    placement: props.placement,
     currency: p.currency,
     price: p.price,
   })
@@ -64,9 +74,9 @@ function handleClick(p: AffiliateProduct): void {
     >
       <div class="gear-header">
         <div class="gear-header__copy">
-          <p v-if="props.variant === 'rail'" class="gear-header__eyebrow">Matchday picks</p>
-          <h3 class="gear-header__title">Watch Party Essentials</h3>
-          <p v-if="props.variant === 'panel'" class="gear-header__subtitle">Level up your game day experience</p>
+          <p v-if="props.eyebrow || props.variant === 'rail'" class="gear-header__eyebrow">{{ props.eyebrow || 'Matchday picks' }}</p>
+          <h3 class="gear-header__title">{{ props.title }}</h3>
+          <p v-if="props.subtitle" class="gear-header__subtitle">{{ props.subtitle }}</p>
         </div>
         <span class="gear-badge">Sponsored</span>
       </div>

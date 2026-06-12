@@ -206,6 +206,47 @@
       </div>
     </section>
 
+    <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-3 pb-4">
+      <div class="rounded-2xl border border-[#E6EAF2] bg-[#FFFDF6] px-4 py-3 shadow-sm">
+        <div class="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+          <div class="min-w-0">
+            <p class="font-bold uppercase tracking-normal mb-1" style="font-family: 'Montserrat', sans-serif; font-size: 11px; color: #4A5578;">
+              {{ homeRevenueCopy.eyebrow }}
+            </p>
+            <p style="font-family: 'Inter', sans-serif; font-size: 13px; color: #4A5578;">
+              {{ homeRevenueCopy.subtitle }}
+            </p>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-2 lg:justify-end">
+            <a
+              href="https://ko-fi.com/worldcupdex"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center rounded-full border border-[#000F49]/12 bg-white px-4 py-2 text-sm font-bold text-[#000F49] transition-colors hover:border-[#000F49]/25 hover:bg-[#F8FAFF]"
+              @click="handleHomeSupportClick"
+            >
+              {{ homeRevenueCopy.supportCta }}
+            </a>
+            <a
+              v-if="homeRevenueOffer"
+              :href="homeRevenueOffer.href"
+              target="_blank"
+              rel="nofollow sponsored noopener"
+              class="inline-flex items-center justify-center rounded-full bg-[#000F49] px-4 py-2 text-sm font-bold text-[#FFD700] transition-opacity hover:opacity-90"
+              @click="handleHomeStoreClick"
+            >
+              {{ homeRevenueCopy.storeCta }}
+            </a>
+          </div>
+        </div>
+
+        <p class="mt-2 text-[11px] leading-relaxed text-[#8A93A6]">
+          {{ homeRevenueCopy.disclosure }}
+        </p>
+      </div>
+    </section>
+
     <!-- Upcoming Matches -->
     <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-8 pb-4">
       <div class="flex items-center justify-between mb-6">
@@ -244,10 +285,6 @@
           :venue="locale === 'zh' ? match.venue.nameZh : match.venue.name"
         />
       </div>
-    </section>
-
-    <section class="max-w-7xl mx-auto px-4 lg:px-8 pt-2 pb-4">
-      <WatchPartyGear variant="rail" :max-items="3" />
     </section>
 
     <!-- Hot Teams -->
@@ -455,10 +492,13 @@
 import { ref, computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import type { MatchItem } from '~/types'
+import affiliateProducts from '~/data/affiliate-products.json'
+import { AnalyticsEvents } from '~/composables/analyticsEvents'
 
 import matchesData from '~/data/matches.json'
 const { locale, t } = useI18n()
 const { favoriteTeams, favoriteMatches, isLoaded } = useFavorites()
+const { track } = useAnalytics()
 
 const countdownTarget = '2026-06-12T01:00:00Z'
 
@@ -606,6 +646,82 @@ const routeModuleCopy = computed(() => {
     cta: hasFollowed ? 'Manage teams' : 'Browse all teams',
   }
 })
+
+const homeRevenueOffer = computed(() => {
+  const offer = ((affiliateProducts as unknown as Array<Record<string, unknown>>) || []).find((item) => {
+    return item?.teamId === 'global'
+      && typeof item.partner === 'string'
+      && typeof item.productName === 'string'
+      && typeof item.productUrl === 'string'
+      && item.productUrl.length > 0
+  })
+
+  if (!offer) return null
+
+  const params = new URLSearchParams({
+    teamId: String(offer.teamId),
+    partner: String(offer.partner),
+    productName: String(offer.productName),
+    placement: 'home_support_strip',
+  })
+
+  return {
+    href: `/api/track-affiliate?${params.toString()}`,
+    partner: String(offer.partner),
+    productName: String(offer.productName),
+    price: Number(offer.price || 0),
+    currency: String(offer.currency || 'USD'),
+  }
+})
+
+const homeRevenueCopy = computed(() => {
+  if (locale.value === 'zh') {
+    return {
+      eyebrow: '支持 WorldCupDex',
+      subtitle: '如果这个站点对你有帮助，可以直接支持我们，或者顺手挑一件看球装备。两种入口都尽量不打断浏览。',
+      supportCta: '支持站点运行',
+      storeCta: '看球装备',
+      disclosure: '支持入口会打开 Ko-fi；商品入口为赞助链接，合格购买可能为本站带来佣金。',
+    }
+  }
+
+  if (locale.value === 'es') {
+    return {
+      eyebrow: 'Apoya WorldCupDex',
+      subtitle: 'Si este sitio te resulta útil, puedes apoyar el proyecto o abrir una sugerencia rápida para tu watch party sin salir del flujo principal.',
+      supportCta: 'Apoyar el sitio',
+      storeCta: 'Ver equipo',
+      disclosure: 'El apoyo directo abre Ko-fi; los enlaces de productos son patrocinados y pueden generar comisión.',
+    }
+  }
+
+  return {
+    eyebrow: 'Support WorldCupDex',
+    subtitle: 'If the site is useful, you can support it directly or open a quick matchday gear pick without breaking the browsing flow.',
+    supportCta: 'Support the site',
+    storeCta: 'View gear',
+    disclosure: 'Direct support opens Ko-fi; product links are sponsored and may earn us a commission.',
+  }
+})
+
+function handleHomeSupportClick() {
+  track(AnalyticsEvents.CROSS_SITE_CLICK, {
+    source: 'home_support_strip_fan',
+    target: 'ko-fi',
+  })
+}
+
+function handleHomeStoreClick() {
+  if (!homeRevenueOffer.value) return
+  track(AnalyticsEvents.AFFILIATE_CLICK, {
+    team_id: 'global',
+    partner: homeRevenueOffer.value.partner,
+    product_name: homeRevenueOffer.value.productName,
+    placement: 'home_support_strip',
+    currency: homeRevenueOffer.value.currency,
+    price: homeRevenueOffer.value.price,
+  })
+}
 </script>
 
 <style scoped>

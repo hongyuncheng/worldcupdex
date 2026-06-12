@@ -23,6 +23,8 @@ export default defineEventHandler(async (event) => {
   const teamId = String(query.teamId || '')
   const partner = String(query.partner || '')
   const productName = String(query.productName || '')
+  const placement = String(query.placement || 'unknown')
+  const sourcePath = getRequestURL(event).pathname
 
   if (!teamId) {
     setResponseStatus(event, 400)
@@ -56,6 +58,8 @@ export default defineEventHandler(async (event) => {
     teamId: product.teamId,
     partner: product.partner,
     productName: product.productName,
+    placement,
+    sourcePath,
     ts: Date.now(),
   })
 
