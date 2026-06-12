@@ -16,10 +16,12 @@
     </p>
     <DataSourceNote kind="teams" compact />
 
-    <section class="mb-6">
-      <div class="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_320px] gap-4 items-start">
+    <section class="teams-affiliate-strip mb-6">
+      <div class="teams-affiliate-strip__main">
         <WatchPartyGear variant="rail" :max-items="3" />
-        <SponsorCta theme="fan" btn-style="outline" />
+      </div>
+      <div class="teams-affiliate-strip__cta">
+        <SponsorCta theme="fan" btn-style="outline" layout="inline" placement="teams_support_inline" />
       </div>
     </section>
 
@@ -317,6 +319,19 @@ useSeoConfig({
   description: '浏览2026世界杯所有参赛球队，了解阵容、历史战绩和小组赛分组。',
 })
 </script>
+
+<style scoped>
+.teams-affiliate-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.teams-affiliate-strip__main,
+.teams-affiliate-strip__cta {
+  width: 100%;
+}
+</style>
 
 <style scoped>
 .team-follow-btn {
