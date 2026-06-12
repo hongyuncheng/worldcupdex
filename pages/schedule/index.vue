@@ -146,10 +146,12 @@
       <span>{{ $t('schedule.favoriteGuide') }}</span>
     </div>
 
-    <section class="mb-6">
-      <div class="grid grid-cols-1 xl:grid-cols-[minmax(0,1fr)_320px] gap-4 items-start">
+    <section class="schedule-affiliate-strip mb-6">
+      <div class="schedule-affiliate-strip__main">
         <WatchPartyGear variant="rail" :max-items="3" />
-        <SponsorCta theme="generic" btn-style="outline" />
+      </div>
+      <div class="schedule-affiliate-strip__cta">
+        <SponsorCta theme="generic" btn-style="outline" layout="inline" placement="schedule_support_inline" />
       </div>
     </section>
 
@@ -647,6 +649,17 @@ function buildSportsEventData(m: MatchItem) {
 
 <style scoped>
 /* ===== Layout ===== */
+.schedule-affiliate-strip {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.schedule-affiliate-strip__main,
+.schedule-affiliate-strip__cta {
+  width: 100%;
+}
+
 .schedule-layout {
   display: flex;
   flex-direction: column;

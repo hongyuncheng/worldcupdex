@@ -9,6 +9,7 @@ interface Props {
   theme?: 'generic' | 'jinx' | 'fan' | 'quiz'
   // 决定按钮外观
   btnStyle?: 'solid' | 'outline' | 'ghost'
+  layout?: 'card' | 'inline'
   // 自定义链接（如果不填则跳转 Ko-fi 主页）
   url?: string
   placement?: string
@@ -17,6 +18,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   theme: 'generic',
   btnStyle: 'solid',
+  layout: 'card',
   url: 'https://ko-fi.com/worldcupdex',
   placement: 'sponsor_cta',
 })
@@ -68,7 +70,8 @@ function handleClick(): void {
 </script>
 
 <template>
-  <div class="sponsor-cta relative overflow-hidden rounded-2xl p-4 border shadow-sm" :class="[
+  <div class="sponsor-cta relative overflow-hidden border shadow-sm" :class="[
+    props.layout === 'inline' ? 'sponsor-cta--inline rounded-xl px-4 py-3' : 'sponsor-cta--card rounded-2xl p-4',
     props.theme === 'jinx' ? 'bg-blue-50/50 border-blue-100' :
     props.theme === 'fan' ? 'bg-pink-50/50 border-pink-100' :
     props.theme === 'quiz' ? 'bg-orange-50/50 border-orange-100' :
@@ -78,12 +81,12 @@ function handleClick(): void {
       <div class="w-32 h-32 rounded-full bg-gradient-to-br" :class="themeConfig.color"></div>
     </div>
 
-    <div class="relative z-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+    <div class="relative z-10 flex items-start justify-between gap-3" :class="props.layout === 'inline' ? 'sponsor-cta__content--inline' : 'flex-col sm:flex-row sm:items-center'">
       <div class="flex items-start gap-3 text-left">
-        <div class="sponsor-cta__icon">{{ themeConfig.icon }}</div>
+        <div class="sponsor-cta__icon" :class="props.layout === 'inline' ? 'sponsor-cta__icon--inline' : ''">{{ themeConfig.icon }}</div>
         <div>
-          <h4 class="font-bold text-gray-900 text-base mb-1">{{ themeConfig.title }}</h4>
-          <p class="text-sm text-gray-600 m-0 leading-snug">{{ themeConfig.desc }}</p>
+          <h4 class="font-bold text-gray-900 mb-1" :class="props.layout === 'inline' ? 'text-[15px] leading-5' : 'text-base'">{{ themeConfig.title }}</h4>
+          <p class="text-gray-600 m-0 leading-snug" :class="props.layout === 'inline' ? 'text-[13px]' : 'text-sm'">{{ themeConfig.desc }}</p>
         </div>
       </div>
 
@@ -91,8 +94,9 @@ function handleClick(): void {
         :href="props.url" 
         target="_blank" 
         rel="noopener noreferrer"
-        class="sponsor-cta__button flex-shrink-0 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full font-bold text-sm transition-colors"
+        class="sponsor-cta__button flex-shrink-0 inline-flex items-center justify-center gap-2 rounded-full font-bold text-sm transition-colors"
         :class="[
+          props.layout === 'inline' ? 'px-4 py-2' : 'px-5 py-2.5',
           props.btnStyle === 'solid' ? `bg-gradient-to-r ${themeConfig.color} text-white border-none` :
           props.btnStyle === 'outline' ? 'bg-white border-2 border-gray-200 text-gray-800 hover:border-gray-300' :
           'bg-transparent text-gray-800 hover:bg-gray-100 shadow-none'
@@ -119,7 +123,33 @@ function handleClick(): void {
   line-height: 1;
 }
 
+.sponsor-cta--inline {
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.72) 0%, rgba(255, 255, 255, 0.4) 100%);
+}
+
+.sponsor-cta__content--inline {
+  align-items: center;
+}
+
+.sponsor-cta__icon--inline {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
 .sponsor-cta__button {
   min-height: 42px;
+}
+
+@media (max-width: 767px) {
+  .sponsor-cta__content--inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .sponsor-cta__content--inline .sponsor-cta__button {
+    width: 100%;
+  }
 }
 </style>
