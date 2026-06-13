@@ -99,14 +99,20 @@ const { t, locale } = useI18n()
 const route = useRoute()
 const runtimeConfig = useRuntimeConfig()
 const siteUrl = (runtimeConfig.public?.siteUrl as string) || 'https://worldcupdex.org'
+const blogLocales = ['en', 'zh', 'es'] as const
+
+const routeLocale = computed<typeof blogLocales[number]>(() => {
+  return blogLocales.includes(locale.value as typeof blogLocales[number])
+    ? locale.value as typeof blogLocales[number]
+    : 'en'
+})
 
 // Build the content path from the route.
 // Since files are placed in `content/{locale}/blog/...`, the DB path is `/{locale}/blog/{slug}`
 const contentPath = computed(() => {
-  return `/${locale.value}/blog/${route.params.slug}`
+  return `/${routeLocale.value}/blog/${route.params.slug}`
 })
 
-const blogLocales = ['en', 'zh', 'es'] as const
 const { data: availableLocales } = await useAsyncData(
   `blog-locales-${route.params.slug}`,
   async () => {
@@ -126,7 +132,7 @@ const { data: availableLocales } = await useAsyncData(
 )
 
 const { data: page } = await useAsyncData(
-  `blog-${route.params.slug}`,
+  `blog-${routeLocale.value}-${route.params.slug}`,
   () => queryCollection('blog').path(contentPath.value).first(),
 )
 

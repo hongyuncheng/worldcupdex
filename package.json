@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
+    "build": "nuxt build && node scripts/patch-cloudflare-pages-routes.mjs",
     "prebuild": "npm run validate-data",
     "dev": "nuxt dev",
     "generate": "nuxt generate",

@@ -88,7 +88,7 @@
 const { t, locale } = useI18n()
 
 // Query all blog posts
-const { data: posts, status } = await useAsyncData('blog-list', () =>
+const { data: posts, status } = await useAsyncData(`blog-list-${locale.value}`, () =>
   queryCollection('blog')
     .order('publishedAt', 'DESC')
     .all(),
