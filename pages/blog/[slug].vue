@@ -54,7 +54,7 @@
         </div>
 
         <!-- Body -->
-        <div class="prose prose-lg max-w-none" style="color: #374151; line-height: 1.8;">
+        <div class="blog-prose prose prose-lg max-w-none" style="color: #374151; line-height: 1.8;">
           <ContentRenderer :value="page" />
         </div>
 
@@ -186,3 +186,97 @@ if (page.value) {
   })
 }
 </script>
+
+<style scoped>
+.blog-prose :deep(h2) {
+  margin-top: 2.2rem;
+  margin-bottom: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.65rem;
+  line-height: 1.3;
+  color: #000f49;
+}
+
+.blog-prose :deep(h3) {
+  margin-top: 1.6rem;
+  margin-bottom: 0.65rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: #102a72;
+}
+
+.blog-prose :deep(p) {
+  margin: 0 0 1rem;
+  color: #374151;
+}
+
+.blog-prose :deep(ul),
+.blog-prose :deep(ol) {
+  margin: 0 0 1.1rem 1.25rem;
+}
+
+.blog-prose :deep(li) {
+  margin-bottom: 0.45rem;
+}
+
+.blog-prose :deep(a) {
+  color: #0f3fb8;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+  text-decoration-color: rgba(255, 196, 0, 0.9);
+  transition: color 0.18s ease, text-decoration-color 0.18s ease;
+}
+
+.blog-prose :deep(a:hover) {
+  color: #000f49;
+  text-decoration-color: #000f49;
+}
+
+.blog-prose :deep(strong) {
+  color: #111827;
+}
+
+.blog-prose :deep(blockquote) {
+  margin: 1.4rem 0;
+  padding: 0.9rem 1rem;
+  border-left: 4px solid #ffd700;
+  background: #f8fbff;
+  color: #24324a;
+  border-radius: 0 10px 10px 0;
+}
+
+.blog-prose :deep(table) {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  margin: 1.25rem 0 1.6rem;
+  border-collapse: collapse;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 15, 73, 0.06);
+}
+
+.blog-prose :deep(thead tr) {
+  background: #0b1b59;
+}
+
+.blog-prose :deep(th) {
+  color: #fff;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.blog-prose :deep(th),
+.blog-prose :deep(td) {
+  padding: 0.8rem 0.9rem;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+  vertical-align: top;
+}
+
+.blog-prose :deep(tbody tr:nth-child(odd)) {
+  background: #f9fbff;
+}
+</style>
