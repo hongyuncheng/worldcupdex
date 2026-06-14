@@ -323,5 +323,15 @@
   "squadStatus": "provisional",
   "squadLastUpdated": "2026-06-14",
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
-  "recentMatches": []
+  "recentMatches": [
+    {
+      "date": "2026-06-14",
+      "competition": "FIFA World Cup",
+      "homeTeam": "Netherlands",
+      "awayTeam": "Japan",
+      "scoreHome": 2,
+      "scoreAway": 2,
+      "result": "D"
+    }
+  ]
 }
