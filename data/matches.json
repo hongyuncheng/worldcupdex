@@ -324,7 +324,10 @@
     "group": "F",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null
+    "score": {
+      "home": 1,
+      "away": 1
+    }
   },
   {
     "id": 537352,
