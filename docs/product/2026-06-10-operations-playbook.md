@@ -32,3 +32,4 @@ Build measurable search, traffic, trust, and monetization readiness without hurt
 - Watch core routes, sitemap availability, 404/5xx status, search impressions, and conversion events.
 - Treat monetization as readiness work until ad/affiliate accounts are explicitly confirmed.
 - During matchdays, follow `docs/product/2026-06-13-daily-matchday-content-playbook.md` for daily content selection, drafting, publishing, and review.
+- For daily SEO article sourcing, enforce `docs/product/2026-06-14-external-content-sourcing-standard.md`: official sources first, public community signals second, local repo data only for cross-check and onsite routing.
