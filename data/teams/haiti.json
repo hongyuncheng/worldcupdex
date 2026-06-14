@@ -112,6 +112,15 @@
       "shirtNumber": null
     },
     {
+      "name": "Garven-Michee Metusala",
+      "nameZh": "Garven-Michee Metusala",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-12-31",
+      "nationality": "Haiti",
+      "shirtNumber": null
+    },
+    {
       "name": "Keeto Thermoncy",
       "nameZh": "Keeto Thermoncy",
       "position": "Defence",
@@ -131,15 +140,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/pcndmt1767018044.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/pcndmt1767018044.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/sfd4he1767012159.jpg"
-    },
-    {
-      "name": "Leverton Pierre",
-      "nameZh": "Leverton Pierre",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1998-03-09",
-      "nationality": "Haiti",
-      "shirtNumber": null
     },
     {
       "name": "Jean-Ricner Bellegarde",
