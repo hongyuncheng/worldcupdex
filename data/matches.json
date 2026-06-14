@@ -193,7 +193,7 @@
     "stage": "GROUP_STAGE",
     "matchday": 1,
     "score": {
-      "home": 0,
+      "home": 1,
       "away": 1
     }
   },
