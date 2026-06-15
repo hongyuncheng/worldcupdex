@@ -1,7 +1,26 @@
 import { readFile, writeFile } from 'node:fs/promises'
 
 const routesPath = new URL('../dist/_routes.json', import.meta.url)
-const requiredExcludes = ['/blog/*', '/zh/blog/*', '/es/blog/*']
+const requiredExcludes = [
+  '/blog/*',
+  '/zh/blog/*',
+  '/es/blog/*',
+  '/fan-card/*',
+  '/zh/fan-card/*',
+  '/es/fan-card/*',
+  '/teams/*',
+  '/teams/*/*',
+  '/zh/teams/*',
+  '/zh/teams/*/*',
+  '/es/teams/*',
+  '/es/teams/*/*',
+  '/predict/*',
+  '/zh/predict/*',
+  '/es/predict/*',
+  '/predictions/*',
+  '/zh/predictions/*',
+  '/es/predictions/*',
+]
 
 const routes = JSON.parse(await readFile(routesPath, 'utf8'))
 const existingExcludes = Array.isArray(routes.exclude) ? routes.exclude : []
