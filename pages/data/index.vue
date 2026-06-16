@@ -48,6 +48,27 @@
     <!-- Main 3-column layout -->
     <div class="max-w-7xl mx-auto px-4" style="padding-bottom: 40px;">
       <DataSourceNote kind="data" />
+      <section style="margin: 16px 0 24px; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); padding: 20px 24px;">
+        <div style="font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #2563EB; margin-bottom: 8px;">
+          {{ dataCenterIntro.eyebrow }}
+        </div>
+        <h2 style="font-family: 'Montserrat', sans-serif; font-size: 24px; font-weight: 800; color: #000F49; margin: 0 0 10px;">
+          {{ dataCenterIntro.title }}
+        </h2>
+        <p style="font-size: 14px; line-height: 1.7; color: #44506A; margin: 0 0 14px;">
+          {{ dataCenterIntro.description }}
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+          <NuxtLink
+            v-for="link in dataCenterIntro.links"
+            :key="link.to"
+            :to="localePath(link.to)"
+            style="display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; padding: 9px 14px; background: #F0F4FF; color: #16378A; font-size: 13px; font-weight: 700; text-decoration: none;"
+          >
+            {{ link.label }}
+          </NuxtLink>
+        </div>
+      </section>
       <div class="data-main-layout">
         <!-- Left Sidebar -->
         <aside class="data-sidebar">
@@ -278,13 +299,64 @@
 
 <script setup lang="ts">
 const { t, locale } = useI18n()
+const localePath = useLocalePath()
 const dataMeta = useDataSourceMeta('data')
 const formattedLastUpdated = computed(() => formatDataSourceDate(dataMeta.lastUpdated, locale.value))
 
 // SEO
 useSeoConfig({
   title: `${t('dataCenter.title')} - WorldCupDex`,
-  description: '世界杯历史数据中心，包含球队、球员、比赛和历史数据分析。',
+  description: computed(() => {
+    if (locale.value === 'zh') {
+      return 'World Cup database：查看 2026 世界杯球队资料、完整赛程、历史统计和可继续深入的预测入口。'
+    }
+    if (locale.value === 'es') {
+      return 'Base de datos del Mundial con equipos, calendario, estadisticas historicas y accesos directos a predicciones para 2026.'
+    }
+    return 'World Cup database with 2026 team profiles, full schedule, historical stats, and direct paths into predictions.'
+  }),
+})
+
+const dataCenterIntro = computed(() => {
+  if (locale.value === 'zh') {
+    return {
+      eyebrow: 'World Cup Database',
+      title: '把世界杯资料、赛程和可用入口集中到一个页面',
+      description: '这个数据中心更适合用来快速查球队、小组、赛程和历史统计。如果你是从“world cup database”这类需求进来，建议先从球队页、完整赛程和今日文章入口开始，再决定要不要继续做预测或生成球迷卡。',
+      links: [
+        { to: '/teams', label: '48 支球队资料' },
+        { to: '/schedule', label: '完整赛程' },
+        { to: '/predict', label: '进入预测' },
+        { to: '/blog', label: '今日文章与专题' },
+      ],
+    }
+  }
+
+  if (locale.value === 'es') {
+    return {
+      eyebrow: 'World Cup Database',
+      title: 'Un solo lugar para datos, calendario y rutas utiles del Mundial',
+      description: 'Este centro funciona mejor como entrada rapida para consultar selecciones, grupos, calendario y estadisticas historicas. Si llegaste buscando una base de datos del Mundial, empieza por equipos, calendario completo y articulos del dia antes de saltar a predicciones o fan cards.',
+      links: [
+        { to: '/teams', label: '48 selecciones' },
+        { to: '/schedule', label: 'Calendario completo' },
+        { to: '/predict', label: 'Predicciones' },
+        { to: '/blog', label: 'Articulos y contexto' },
+      ],
+    }
+  }
+
+  return {
+    eyebrow: 'World Cup Database',
+    title: 'One page for teams, schedule, stats, and practical World Cup paths',
+    description: 'This data center works best as a fast entry point for team profiles, groups, fixtures, and historical numbers. If you arrived looking for a World Cup database, start with teams, the full schedule, and matchday articles before deciding whether to move into predictions or fan cards.',
+    links: [
+      { to: '/teams', label: '48 team profiles' },
+      { to: '/schedule', label: 'Full schedule' },
+      { to: '/predict', label: 'Prediction hub' },
+      { to: '/blog', label: 'Matchday articles' },
+    ],
+  }
 })
 
 const searchQuery = ref('')
