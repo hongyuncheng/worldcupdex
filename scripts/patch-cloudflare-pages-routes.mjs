@@ -22,9 +22,22 @@ const requiredExcludes = [
   '/es/predictions/*',
 ]
 
+function globToRegExp(pattern) {
+  const escaped = pattern.replace(/[.+?^${}()|[\]\\]/g, '\\$&')
+  const withWildcards = escaped.replace(/\*/g, '[^/]+')
+  return new RegExp(`^${withWildcards}$`)
+}
+
+function isCoveredByOtherPattern(route, patterns) {
+  return patterns.some((pattern) => {
+    if (pattern === route || !pattern.includes('*')) return false
+    return globToRegExp(pattern).test(route)
+  })
+}
+
 const routes = JSON.parse(await readFile(routesPath, 'utf8'))
 const existingExcludes = Array.isArray(routes.exclude) ? routes.exclude : []
-const dedupedExcludes = [
+const mergedExcludes = [
   ...requiredExcludes,
   ...existingExcludes.filter(route => (
     !requiredExcludes.includes(route)
@@ -32,7 +45,10 @@ const dedupedExcludes = [
   )),
 ]
 
-routes.exclude = dedupedExcludes
+const dedupedExcludes = [...new Set(mergedExcludes)]
+const collapsedExcludes = dedupedExcludes.filter(route => !isCoveredByOtherPattern(route, dedupedExcludes))
+
+routes.exclude = collapsedExcludes
 
 await writeFile(routesPath, `${JSON.stringify(routes, null, 2)}\n`)
-console.log(`Patched Cloudflare Pages routes: ${requiredExcludes.join(', ')}`)
+console.log(`Patched Cloudflare Pages routes: ${routes.exclude.length} total excludes`)
