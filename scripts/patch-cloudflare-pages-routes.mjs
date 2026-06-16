@@ -9,11 +9,8 @@ const requiredExcludes = [
   '/zh/fan-card/*',
   '/es/fan-card/*',
   '/teams/*',
-  '/teams/*/*',
   '/zh/teams/*',
-  '/zh/teams/*/*',
   '/es/teams/*',
-  '/es/teams/*/*',
   '/predict/*',
   '/zh/predict/*',
   '/es/predict/*',
@@ -24,7 +21,7 @@ const requiredExcludes = [
 
 function globToRegExp(pattern) {
   const escaped = pattern.replace(/[.+?^${}()|[\]\\]/g, '\\$&')
-  const withWildcards = escaped.replace(/\*/g, '[^/]+')
+  const withWildcards = escaped.replace(/\*/g, '.+')
   return new RegExp(`^${withWildcards}$`)
 }
 
