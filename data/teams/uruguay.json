@@ -316,7 +316,17 @@
     }
   ],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-06-15",
+  "squadLastUpdated": "2026-06-16",
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
-  "recentMatches": []
+  "recentMatches": [
+    {
+      "date": "2026-06-15",
+      "competition": "FIFA World Cup",
+      "homeTeam": "Saudi Arabia",
+      "awayTeam": "Uruguay",
+      "scoreHome": 1,
+      "scoreAway": 1,
+      "result": "D"
+    }
+  ]
 }
