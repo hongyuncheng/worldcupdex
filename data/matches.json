@@ -689,7 +689,7 @@
     "matchday": 1,
     "score": {
       "home": 1,
-      "away": 0
+      "away": 1
     }
   },
   {
@@ -720,7 +720,10 @@
     "group": "L",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null
+    "score": {
+      "home": 1,
+      "away": 0
+    }
   },
   {
     "id": 537410,
