@@ -308,7 +308,17 @@
     }
   ],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-06-16",
+  "squadLastUpdated": "2026-06-17",
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
-  "recentMatches": []
+  "recentMatches": [
+    {
+      "date": "2026-06-17",
+      "competition": "FIFA World Cup",
+      "homeTeam": "Argentina",
+      "awayTeam": "Algeria",
+      "scoreHome": 3,
+      "scoreAway": 0,
+      "result": "W"
+    }
+  ]
 }

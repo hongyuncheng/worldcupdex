@@ -590,7 +590,7 @@
     "matchday": 1,
     "score": {
       "home": 1,
-      "away": 2
+      "away": 4
     }
   },
   {
@@ -621,7 +621,10 @@
     "group": "J",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null
+    "score": {
+      "home": 3,
+      "away": 0
+    }
   },
   {
     "id": 537398,
@@ -651,7 +654,10 @@
     "group": "J",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": null
+    "score": {
+      "home": 1,
+      "away": 0
+    }
   },
   {
     "id": 537403,
