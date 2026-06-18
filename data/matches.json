@@ -852,7 +852,10 @@
     "group": "B",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null
+    "score": {
+      "home": 4,
+      "away": 1
+    }
   },
   {
     "id": 537336,
@@ -882,7 +885,10 @@
     "group": "B",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null
+    "score": {
+      "home": 0,
+      "away": 0
+    }
   },
   {
     "id": 537330,

@@ -317,6 +317,15 @@
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
   "recentMatches": [
     {
+      "date": "2026-06-18",
+      "competition": "FIFA World Cup",
+      "homeTeam": "Switzerland",
+      "awayTeam": "Bosnia-Herzegovina",
+      "scoreHome": 4,
+      "scoreAway": 1,
+      "result": "L"
+    },
+    {
       "date": "2026-06-12",
       "competition": "FIFA World Cup",
       "homeTeam": "Canada",
