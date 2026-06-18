@@ -309,6 +309,15 @@
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
   "recentMatches": [
     {
+      "date": "2026-06-18",
+      "competition": "FIFA World Cup",
+      "homeTeam": "Czechia",
+      "awayTeam": "South Africa",
+      "scoreHome": 1,
+      "scoreAway": 1,
+      "result": "D"
+    },
+    {
       "date": "2026-06-12",
       "competition": "FIFA World Cup",
       "homeTeam": "South Korea",
