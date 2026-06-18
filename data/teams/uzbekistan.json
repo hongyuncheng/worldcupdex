@@ -253,15 +253,6 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/iv5mef1608646798.jpg"
     },
     {
-      "name": "Jaloliddin Masharipov",
-      "nameZh": "Jaloliddin Masharipov",
-      "position": "Offence",
-      "positionZh": "前锋",
-      "dateOfBirth": "1993-09-01",
-      "nationality": "Uzbekistan",
-      "shirtNumber": null
-    },
-    {
       "name": "Igor Sergeev",
       "nameZh": "Igor Sergeev",
       "position": "Offence",
@@ -272,6 +263,15 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/thumb/nauv5z1712557510.jpg",
       "photoCutout": null,
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/nauv5z1712557510.jpg"
+    },
+    {
+      "name": "Ruslanbek Jiyanov",
+      "nameZh": "Ruslanbek Jiyanov",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "2001-06-05",
+      "nationality": "Uzbekistan",
+      "shirtNumber": null
     },
     {
       "name": "Azizbek Amonov",
