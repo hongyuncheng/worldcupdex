@@ -88,6 +88,15 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/uc1jmw1770201046.jpg"
     },
     {
+      "name": "Trevoh Chalobah",
+      "nameZh": "Trevoh Chalobah",
+      "position": "Defence",
+      "positionZh": "后卫",
+      "dateOfBirth": "1999-07-05",
+      "nationality": "England",
+      "shirtNumber": null
+    },
+    {
       "name": "Reece James",
       "nameZh": "Reece James",
       "position": "Defence",
@@ -119,18 +128,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/842bfy1771748128.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/842bfy1771748128.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/wqgmpl1609183670.jpg"
-    },
-    {
-      "name": "Valentino Livramento",
-      "nameZh": "Valentino Livramento",
-      "position": "Defence",
-      "positionZh": "后卫",
-      "dateOfBirth": "2002-11-12",
-      "nationality": "England",
-      "shirtNumber": null,
-      "photo": "https://r2.thesportsdb.com/images/media/player/cutout/74gkwv1766824667.png",
-      "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/74gkwv1766824667.png",
-      "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/gs2z9r1629228185.jpg"
     },
     {
       "name": "Jarell Quansah",

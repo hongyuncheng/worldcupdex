@@ -247,6 +247,15 @@
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/kuflmc1778729940.jpg"
     },
     {
+      "name": "Logan Rogerson",
+      "nameZh": "Logan Rogerson",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1998-05-28",
+      "nationality": "New Zealand",
+      "shirtNumber": null
+    },
+    {
       "name": "Chris Wood",
       "nameZh": "Chris Wood",
       "position": "Offence",
@@ -278,15 +287,6 @@
       "photo": "https://www.thesportsdb.com/images/media/player/thumb/ppikbx1778731424.jpg",
       "photoCutout": null,
       "photoThumb": "https://www.thesportsdb.com/images/media/player/thumb/ppikbx1778731424.jpg"
-    },
-    {
-      "name": "Matthew Garbett",
-      "nameZh": "Matthew Garbett",
-      "position": "Offence",
-      "positionZh": "前锋",
-      "dateOfBirth": "2002-04-13",
-      "nationality": "New Zealand",
-      "shirtNumber": null
     },
     {
       "name": "Lachlan Bayliss",
