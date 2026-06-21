@@ -315,9 +315,18 @@
     }
   ],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-06-20",
+  "squadLastUpdated": "2026-06-21",
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
   "recentMatches": [
+    {
+      "date": "2026-06-21",
+      "competition": "FIFA World Cup",
+      "homeTeam": "Ecuador",
+      "awayTeam": "Curaçao",
+      "scoreHome": 0,
+      "scoreAway": 0,
+      "result": "D"
+    },
     {
       "date": "2026-06-14",
       "competition": "FIFA World Cup",
