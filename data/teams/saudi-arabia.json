@@ -273,6 +273,15 @@
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
   "recentMatches": [
     {
+      "date": "2026-06-21",
+      "competition": "FIFA World Cup",
+      "homeTeam": "Spain",
+      "awayTeam": "Saudi Arabia",
+      "scoreHome": 4,
+      "scoreAway": 0,
+      "result": "L"
+    },
+    {
       "date": "2026-06-15",
       "competition": "FIFA World Cup",
       "homeTeam": "Saudi Arabia",
