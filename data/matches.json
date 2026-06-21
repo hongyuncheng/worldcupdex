@@ -1182,7 +1182,10 @@
     "group": "F",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null
+    "score": {
+      "home": 0,
+      "away": 4
+    }
   },
   {
     "id": 537371,
