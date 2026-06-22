@@ -290,9 +290,18 @@
     }
   ],
   "squadStatus": "incomplete",
-  "squadLastUpdated": "2026-06-21",
+  "squadLastUpdated": "2026-06-22",
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
   "recentMatches": [
+    {
+      "date": "2026-06-22",
+      "competition": "FIFA World Cup",
+      "homeTeam": "New Zealand",
+      "awayTeam": "Egypt",
+      "scoreHome": 1,
+      "scoreAway": 3,
+      "result": "W"
+    },
     {
       "date": "2026-06-15",
       "competition": "FIFA World Cup",

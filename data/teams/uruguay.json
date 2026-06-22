@@ -316,9 +316,18 @@
     }
   ],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-06-21",
+  "squadLastUpdated": "2026-06-22",
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
   "recentMatches": [
+    {
+      "date": "2026-06-21",
+      "competition": "FIFA World Cup",
+      "homeTeam": "Uruguay",
+      "awayTeam": "Cape Verde Islands",
+      "scoreHome": 2,
+      "scoreAway": 2,
+      "result": "D"
+    },
     {
       "date": "2026-06-15",
       "competition": "FIFA World Cup",
