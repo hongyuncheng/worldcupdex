@@ -67,7 +67,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="#999" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" /><path d="M16 2v4M8 2v4M3 10h18" /></svg>
           </span>
           <select
-            v-model="selectedDate"
+            v-model="dateSelectValue"
             class="filter-select"
             style="padding-left: 32px;"
           >
@@ -568,6 +568,15 @@ const defaultScheduleDate = computed(() => {
   return dates.find(date => date >= today) ?? dates[dates.length - 1]
 })
 
+const dateSelectValue = computed({
+  get: () => selectedDate.value || defaultScheduleDate.value,
+  set: (value: string) => {
+    selectedDate.value = value
+  }
+})
+
+const activeDate = computed(() => dateSelectValue.value || '')
+
 watch(availableDateValues, (dates) => {
   if (!dates.length) {
     selectedDate.value = ''
@@ -575,15 +584,12 @@ watch(availableDateValues, (dates) => {
     return
   }
 
-  if (!selectedDate.value || !dates.includes(selectedDate.value)) {
-    selectedDate.value = defaultScheduleDate.value
-    return
+  if (selectedDate.value && !dates.includes(selectedDate.value)) {
+    selectedDate.value = ''
   }
-
-  syncCalendarToDate(selectedDate.value)
 }, { immediate: true })
 
-watch(selectedDate, (date) => {
+watch(activeDate, (date) => {
   if (!date) {
     selectedCalendarDay.value = 0
     return
@@ -602,9 +608,9 @@ const sortedMatches = computed(() => {
 const displayedMatches = computed(() => {
   if (showAll.value) return sortedMatches.value
   if (sortOrder.value === 'desc') return sortedMatches.value.slice(0, 10)
-  if (!selectedDate.value) return sortedMatches.value.slice(0, 10)
+  if (!activeDate.value) return sortedMatches.value.slice(0, 10)
 
-  const anchorIndex = sortedMatches.value.findIndex(match => match.date === selectedDate.value)
+  const anchorIndex = sortedMatches.value.findIndex(match => match.date === activeDate.value)
   if (anchorIndex === -1) return sortedMatches.value.slice(0, 10)
 
   return sortedMatches.value.slice(anchorIndex, anchorIndex + 10)
