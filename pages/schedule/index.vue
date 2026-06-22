@@ -72,7 +72,7 @@
             style="padding-left: 32px;"
           >
             <option value="">{{ $t('schedule.selectDate') }}</option>
-            <option v-for="d in availableDates" :key="d" :value="d">{{ d }}</option>
+            <option v-for="d in dateOptions" :key="d.value" :value="d.value">{{ d.label }}</option>
           </select>
           <svg class="select-arrow" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -221,8 +221,9 @@
           <div class="main-top-right">
             <span style="font-size: 13px; color: #666;">{{ $t('schedule.totalMatches', { count: filteredMatches.length }) }}</span>
             <div class="relative">
-              <select class="sort-select">
-                <option>{{ $t('schedule.sortByTime') }}</option>
+              <select v-model="sortOrder" class="sort-select">
+                <option value="asc">{{ $t('schedule.sortByTime') }}</option>
+                <option value="desc">{{ $t('schedule.sortLatestFirst') }}</option>
               </select>
               <svg class="select-arrow-sm" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
@@ -401,7 +402,8 @@ const selectedGroup = ref('')
 const selectedSidebarStage = ref('')
 const calendarYear = ref(2026)
 const calendarMonth = ref(6)
-const selectedCalendarDay = ref(12)
+const selectedCalendarDay = ref(0)
+const sortOrder = ref<'asc' | 'desc'>('asc')
 
 // ─── Stage Tabs ───
 const stageTabs = computed<{ value: FilterType; label: string }[]>(() => [
@@ -466,7 +468,7 @@ const currentStageName = computed(() => {
   return s ? s.name : t('schedule.allMatches')
 })
 
-watch([selectedStageTab, selectedVenue, selectedGroup, selectedSidebarStage], () => {
+watch([selectedStageTab, selectedVenue, selectedGroup, selectedSidebarStage, selectedDate, sortOrder], () => {
   showAll.value = false
 })
 
@@ -499,7 +501,7 @@ const availableDates = computed(() => {
 // ─── Match dates for calendar highlighting ───
 const matchDaysByMonth = computed(() => {
   const map: Record<string, Set<number>> = {}
-  allMatches.value.forEach(m => {
+  filteredMatches.value.forEach(m => {
     const d = new Date(m.date + 'T00:00:00')
     const key = `${d.getFullYear()}-${d.getMonth() + 1}`
     if (!map[key]) map[key] = new Set()
@@ -534,10 +536,78 @@ const filteredMatches = computed(() => {
   return result
 })
 
+const dateOptions = computed(() => {
+  const dates = [...new Set(filteredMatches.value.map(m => m.date))].sort()
+  return dates.map(d => ({
+    value: d,
+    label: formatDateLabel(d, locale.value),
+  }))
+})
+
+const availableDateValues = computed(() => dateOptions.value.map(date => date.value))
+
+function toIsoDate(date: Date): string {
+  const year = date.getFullYear()
+  const month = `${date.getMonth() + 1}`.padStart(2, '0')
+  const day = `${date.getDate()}`.padStart(2, '0')
+  return `${year}-${month}-${day}`
+}
+
+function syncCalendarToDate(dateStr: string) {
+  const date = new Date(dateStr + 'T00:00:00')
+  calendarYear.value = date.getFullYear()
+  calendarMonth.value = date.getMonth() + 1
+  selectedCalendarDay.value = date.getDate()
+}
+
+const defaultScheduleDate = computed(() => {
+  const dates = availableDateValues.value
+  if (!dates.length) return ''
+
+  const today = toIsoDate(new Date())
+  return dates.find(date => date >= today) ?? dates[dates.length - 1]
+})
+
+watch(availableDateValues, (dates) => {
+  if (!dates.length) {
+    selectedDate.value = ''
+    selectedCalendarDay.value = 0
+    return
+  }
+
+  if (!selectedDate.value || !dates.includes(selectedDate.value)) {
+    selectedDate.value = defaultScheduleDate.value
+    return
+  }
+
+  syncCalendarToDate(selectedDate.value)
+}, { immediate: true })
+
+watch(selectedDate, (date) => {
+  if (!date) {
+    selectedCalendarDay.value = 0
+    return
+  }
+
+  syncCalendarToDate(date)
+}, { immediate: true })
+
+const sortedMatches = computed(() => {
+  return [...filteredMatches.value].sort((a, b) => {
+    return sortOrder.value === 'asc' ? a.timestamp - b.timestamp : b.timestamp - a.timestamp
+  })
+})
+
 // ─── Displayed Matches (折叠/展开) ───
 const displayedMatches = computed(() => {
-  if (showAll.value) return filteredMatches.value
-  return filteredMatches.value.slice(0, 10)
+  if (showAll.value) return sortedMatches.value
+  if (sortOrder.value === 'desc') return sortedMatches.value.slice(0, 10)
+  if (!selectedDate.value) return sortedMatches.value.slice(0, 10)
+
+  const anchorIndex = sortedMatches.value.findIndex(match => match.date === selectedDate.value)
+  if (anchorIndex === -1) return sortedMatches.value.slice(0, 10)
+
+  return sortedMatches.value.slice(anchorIndex, anchorIndex + 10)
 })
 
 // ─── Grouped by date ───
@@ -600,7 +670,7 @@ function nextMonth() {
 }
 
 function selectCalendarDate(day: number) {
-  selectedCalendarDay.value = day
+  selectedDate.value = `${calendarYear.value}-${`${calendarMonth.value}`.padStart(2, '0')}-${`${day}`.padStart(2, '0')}`
 }
 
 // ─── SEO ───

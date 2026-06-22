@@ -368,6 +368,7 @@
     "viewFullSchedule": "View Full Schedule",
     "totalMatches": "{count} matches total",
     "sortByTime": "Sort by Time",
+    "sortLatestFirst": "Latest First",
     "stageGroupStage": "Group Stage",
     "stageRoundOf16": "Round of 16",
     "stageRoundOf8": "Round of 8",

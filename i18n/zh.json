@@ -360,6 +360,7 @@
     "viewFullSchedule": "查看完整赛程",
     "totalMatches": "共{count}场比赛",
     "sortByTime": "按时间排序",
+    "sortLatestFirst": "最新在前",
     "stageGroupStage": "小组赛",
     "stageRoundOf16": "1/16决赛",
     "stageRoundOf8": "1/8决赛",

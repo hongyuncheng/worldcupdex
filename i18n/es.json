@@ -176,6 +176,8 @@
     "addToCalendar": "Añadir a Calendario",
     "exportToCalendar": "Exportar",
     "exportAll": "Exportar todo",
+    "sortByTime": "Ordenar por hora",
+    "sortLatestFirst": "M谩s recientes primero",
     "favoriteGuide": "Haz clic en Seguir partido o en la estrella del equipo para crear Mi Calendario. Exportar envía el partido a tu calendario externo.",
     "followMatch": "Seguir partido",
     "followingMatch": "Siguiendo",
