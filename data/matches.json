@@ -93,10 +93,7 @@
     "group": "B",
     "stage": "GROUP_STAGE",
     "matchday": 1,
-    "score": {
-      "home": 1,
-      "away": 1
-    }
+    "score": null
   },
   {
     "id": 537345,
@@ -1380,7 +1377,10 @@
     "group": "I",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null
+    "score": {
+      "home": 1,
+      "away": 0
+    }
   },
   {
     "id": 537394,
