@@ -1611,7 +1611,10 @@
     "group": "B",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 1,
+      "away": 0
+    }
   },
   {
     "id": 537338,
@@ -1641,7 +1644,10 @@
     "group": "B",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 2,
+      "away": 1
+    }
   },
   {
     "id": 537344,
@@ -2368,11 +2374,11 @@
     "date": "2026-06-29",
     "time": "20:30",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "germany",
+      "nameZh": "德国",
+      "nameEn": "Germany",
+      "code": "de",
+      "flag": "https://flagcdn.com/w80/de.png"
     },
     "awayTeam": {
       "id": "tbd",
@@ -2488,11 +2494,11 @@
     "date": "2026-07-01",
     "time": "01:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "mexico",
+      "nameZh": "墨西哥",
+      "nameEn": "Mexico",
+      "code": "mx",
+      "flag": "https://flagcdn.com/w80/mx.png"
     },
     "awayTeam": {
       "id": "tbd",
@@ -2578,11 +2584,11 @@
     "date": "2026-07-02",
     "time": "00:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "united-states",
+      "nameZh": "美国",
+      "nameEn": "United States",
+      "code": "us",
+      "flag": "https://flagcdn.com/w80/us.png"
     },
     "awayTeam": {
       "id": "tbd",
@@ -2728,11 +2734,11 @@
     "date": "2026-07-03",
     "time": "22:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "argentina",
+      "nameZh": "阿根廷",
+      "nameEn": "Argentina",
+      "code": "ar",
+      "flag": "https://flagcdn.com/w80/ar.png"
     },
     "awayTeam": {
       "id": "tbd",
