@@ -154,6 +154,15 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/yvnyty1565443385.jpg"
     },
     {
+      "name": "Juan Fernando Quintero",
+      "nameZh": "Juan Fernando Quintero",
+      "position": "Midfield",
+      "positionZh": "中场",
+      "dateOfBirth": "1993-01-18",
+      "nationality": "Colombia",
+      "shirtNumber": null
+    },
+    {
       "name": "Jefferson Lerma",
       "nameZh": "Jefferson Lerma",
       "position": "Midfield",
@@ -200,15 +209,6 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/7e88si1750270583.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/7e88si1750270583.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/re6wit1723963135.jpg"
-    },
-    {
-      "name": "Juan Quintero",
-      "nameZh": "Juan Quintero",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1993-01-18",
-      "nationality": "Colombia",
-      "shirtNumber": null
     },
     {
       "name": "Jaminton Campaz",
@@ -314,6 +314,15 @@
   "squadLastUpdated": "2026-06-24",
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
   "recentMatches": [
+    {
+      "date": "2026-06-24",
+      "competition": "FIFA World Cup",
+      "homeTeam": "Colombia",
+      "awayTeam": "Congo DR",
+      "scoreHome": 1,
+      "scoreAway": 0,
+      "result": "W"
+    },
     {
       "date": "2026-06-18",
       "competition": "FIFA World Cup",
