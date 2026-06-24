@@ -1677,7 +1677,10 @@
     "group": "C",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 2,
+      "away": 2
+    }
   },
   {
     "id": 537343,
@@ -1707,7 +1710,10 @@
     "group": "C",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 0,
+      "away": 2
+    }
   },
   {
     "id": 537331,
