@@ -1545,7 +1545,10 @@
     "group": "L",
     "stage": "GROUP_STAGE",
     "matchday": 2,
-    "score": null
+    "score": {
+      "home": 0,
+      "away": 0
+    }
   },
   {
     "id": 537406,
