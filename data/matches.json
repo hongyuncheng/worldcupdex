@@ -2386,11 +2386,11 @@
     "date": "2026-06-29",
     "time": "20:30",
     "homeTeam": {
-      "id": "germany",
-      "nameZh": "德国",
-      "nameEn": "Germany",
-      "code": "de",
-      "flag": "https://flagcdn.com/w80/de.png"
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
     },
     "awayTeam": {
       "id": "tbd",
@@ -2506,11 +2506,11 @@
     "date": "2026-07-01",
     "time": "01:00",
     "homeTeam": {
-      "id": "mexico",
-      "nameZh": "墨西哥",
-      "nameEn": "Mexico",
-      "code": "mx",
-      "flag": "https://flagcdn.com/w80/mx.png"
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
     },
     "awayTeam": {
       "id": "tbd",
@@ -2596,11 +2596,11 @@
     "date": "2026-07-02",
     "time": "00:00",
     "homeTeam": {
-      "id": "united-states",
-      "nameZh": "美国",
-      "nameEn": "United States",
-      "code": "us",
-      "flag": "https://flagcdn.com/w80/us.png"
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
     },
     "awayTeam": {
       "id": "tbd",
@@ -2746,11 +2746,11 @@
     "date": "2026-07-03",
     "time": "22:00",
     "homeTeam": {
-      "id": "argentina",
-      "nameZh": "阿根廷",
-      "nameEn": "Argentina",
-      "code": "ar",
-      "flag": "https://flagcdn.com/w80/ar.png"
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
     },
     "awayTeam": {
       "id": "tbd",
