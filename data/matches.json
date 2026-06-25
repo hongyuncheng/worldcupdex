@@ -1678,7 +1678,7 @@
     "stage": "GROUP_STAGE",
     "matchday": 3,
     "score": {
-      "home": 2,
+      "home": 4,
       "away": 2
     }
   },
@@ -1712,7 +1712,7 @@
     "matchday": 3,
     "score": {
       "home": 0,
-      "away": 2
+      "away": 3
     }
   },
   {
@@ -1743,7 +1743,10 @@
     "group": "A",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 0,
+      "away": 0
+    }
   },
   {
     "id": 537332,
@@ -1773,7 +1776,10 @@
     "group": "A",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 0,
+      "away": 0
+    }
   },
   {
     "id": 537355,
