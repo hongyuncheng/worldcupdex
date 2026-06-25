@@ -1745,7 +1745,7 @@
     "matchday": 3,
     "score": {
       "home": 0,
-      "away": 0
+      "away": 3
     }
   },
   {
@@ -1777,7 +1777,7 @@
     "stage": "GROUP_STAGE",
     "matchday": 3,
     "score": {
-      "home": 0,
+      "home": 1,
       "away": 0
     }
   },
