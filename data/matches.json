@@ -2344,18 +2344,18 @@
     "date": "2026-06-28",
     "time": "19:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "south-africa",
+      "nameZh": "南非",
+      "nameEn": "South Africa",
+      "code": "za",
+      "flag": "https://flagcdn.com/w80/za.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "canada",
+      "nameZh": "加拿大",
+      "nameEn": "Canada",
+      "code": "ca",
+      "flag": "https://flagcdn.com/w80/ca.png"
     },
     "venue": {
       "name": "Los Angeles Stadium",
@@ -2374,18 +2374,18 @@
     "date": "2026-06-29",
     "time": "17:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "brazil",
+      "nameZh": "巴西",
+      "nameEn": "Brazil",
+      "code": "br",
+      "flag": "https://flagcdn.com/w80/br.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "japan",
+      "nameZh": "日本",
+      "nameEn": "Japan",
+      "code": "jp",
+      "flag": "https://flagcdn.com/w80/jp.png"
     },
     "venue": {
       "name": "Houston Stadium",
@@ -2404,11 +2404,11 @@
     "date": "2026-06-29",
     "time": "20:30",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "germany",
+      "nameZh": "德国",
+      "nameEn": "Germany",
+      "code": "de",
+      "flag": "https://flagcdn.com/w80/de.png"
     },
     "awayTeam": {
       "id": "tbd",
@@ -2434,18 +2434,18 @@
     "date": "2026-06-30",
     "time": "01:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "netherlands",
+      "nameZh": "荷兰",
+      "nameEn": "Netherlands",
+      "code": "nl",
+      "flag": "https://flagcdn.com/w80/nl.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "morocco",
+      "nameZh": "摩洛哥",
+      "nameEn": "Morocco",
+      "code": "ma",
+      "flag": "https://flagcdn.com/w80/ma.png"
     },
     "venue": {
       "name": "Estadio Monterrey",
@@ -2524,11 +2524,11 @@
     "date": "2026-07-01",
     "time": "01:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "mexico",
+      "nameZh": "墨西哥",
+      "nameEn": "Mexico",
+      "code": "mx",
+      "flag": "https://flagcdn.com/w80/mx.png"
     },
     "awayTeam": {
       "id": "tbd",
@@ -2614,18 +2614,18 @@
     "date": "2026-07-02",
     "time": "00:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "united-states",
+      "nameZh": "美国",
+      "nameEn": "United States",
+      "code": "us",
+      "flag": "https://flagcdn.com/w80/us.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "bosnia-herzegovina",
+      "nameZh": "波黑",
+      "nameEn": "Bosnia-Herzegovina",
+      "code": "ba",
+      "flag": "https://flagcdn.com/w80/ba.png"
     },
     "venue": {
       "name": "San Francisco Bay Area Stadium",
@@ -2704,11 +2704,11 @@
     "date": "2026-07-03",
     "time": "03:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "switzerland",
+      "nameZh": "瑞士",
+      "nameEn": "Switzerland",
+      "code": "ch",
+      "flag": "https://flagcdn.com/w80/ch.png"
     },
     "awayTeam": {
       "id": "tbd",
@@ -2734,11 +2734,11 @@
     "date": "2026-07-03",
     "time": "18:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "australia",
+      "nameZh": "澳大利亚",
+      "nameEn": "Australia",
+      "code": "au",
+      "flag": "https://flagcdn.com/w80/au.png"
     },
     "awayTeam": {
       "id": "tbd",
@@ -2764,11 +2764,11 @@
     "date": "2026-07-03",
     "time": "22:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "argentina",
+      "nameZh": "阿根廷",
+      "nameEn": "Argentina",
+      "code": "ar",
+      "flag": "https://flagcdn.com/w80/ar.png"
     },
     "awayTeam": {
       "id": "tbd",
