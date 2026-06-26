@@ -287,6 +287,15 @@
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
   "recentMatches": [
     {
+      "date": "2026-06-26",
+      "competition": "FIFA World Cup",
+      "homeTeam": "Senegal",
+      "awayTeam": "Iraq",
+      "scoreHome": 5,
+      "scoreAway": 0,
+      "result": "L"
+    },
+    {
       "date": "2026-06-22",
       "competition": "FIFA World Cup",
       "homeTeam": "France",
