@@ -2007,7 +2007,10 @@
     "group": "I",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 1,
+      "away": 3
+    }
   },
   {
     "id": 537396,
@@ -2037,7 +2040,10 @@
     "group": "I",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 1,
+      "away": 0
+    }
   },
   {
     "id": 537373,
