@@ -2073,7 +2073,10 @@
     "group": "H",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 0,
+      "away": 1
+    }
   },
   {
     "id": 537374,
@@ -2103,7 +2106,10 @@
     "group": "H",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 0,
+      "away": 0
+    }
   },
   {
     "id": 537367,
