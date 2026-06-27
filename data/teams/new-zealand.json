@@ -318,6 +318,15 @@
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
   "recentMatches": [
     {
+      "date": "2026-06-27",
+      "competition": "FIFA World Cup",
+      "homeTeam": "New Zealand",
+      "awayTeam": "Belgium",
+      "scoreHome": 1,
+      "scoreAway": 5,
+      "result": "L"
+    },
+    {
       "date": "2026-06-22",
       "competition": "FIFA World Cup",
       "homeTeam": "New Zealand",

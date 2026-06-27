@@ -2007,10 +2007,7 @@
     "group": "I",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": {
-      "home": 1,
-      "away": 4
-    }
+    "score": null
   },
   {
     "id": 537396,
@@ -2040,10 +2037,7 @@
     "group": "I",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": {
-      "home": 5,
-      "away": 0
-    }
+    "score": null
   },
   {
     "id": 537373,
@@ -2139,7 +2133,10 @@
     "group": "G",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 1,
+      "away": 5
+    }
   },
   {
     "id": 537368,
@@ -2169,7 +2166,10 @@
     "group": "G",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 1,
+      "away": 2
+    }
   },
   {
     "id": 537413,
