@@ -2007,10 +2007,7 @@
     "group": "I",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": {
-      "home": 1,
-      "away": 4
-    }
+    "score": null
   },
   {
     "id": 537396,
@@ -2040,10 +2037,7 @@
     "group": "I",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": {
-      "home": 5,
-      "away": 0
-    }
+    "score": null
   },
   {
     "id": 537373,
@@ -2174,7 +2168,7 @@
     "matchday": 3,
     "score": {
       "home": 1,
-      "away": 1
+      "away": 2
     }
   },
   {
@@ -2205,7 +2199,10 @@
     "group": "L",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 0,
+      "away": 0
+    }
   },
   {
     "id": 537414,
@@ -2235,7 +2232,10 @@
     "group": "L",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 0,
+      "away": 0
+    }
   },
   {
     "id": 537407,
@@ -2482,11 +2482,11 @@
     "date": "2026-06-30",
     "time": "17:00",
     "homeTeam": {
-      "id": "ivory-coast",
-      "nameZh": "科特迪瓦",
-      "nameEn": "Ivory Coast",
-      "code": "ci",
-      "flag": "https://flagcdn.com/w80/ci.png"
+      "id": "tbd",
+      "nameZh": "TBD",
+      "nameEn": "TBD",
+      "code": "",
+      "flag": ""
     },
     "awayTeam": {
       "id": "tbd",
