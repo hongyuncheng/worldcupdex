@@ -2447,11 +2447,11 @@
       "flag": "https://flagcdn.com/w80/de.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "paraguay",
+      "nameZh": "巴拉圭",
+      "nameEn": "Paraguay",
+      "code": "py",
+      "flag": "https://flagcdn.com/w80/py.png"
     },
     "venue": {
       "name": "Boston Stadium",
@@ -2507,11 +2507,11 @@
       "flag": "https://flagcdn.com/w80/ci.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "norway",
+      "nameZh": "挪威",
+      "nameEn": "Norway",
+      "code": "no",
+      "flag": "https://flagcdn.com/w80/no.png"
     },
     "venue": {
       "name": "Dallas Stadium",
@@ -2530,18 +2530,18 @@
     "date": "2026-06-30",
     "time": "21:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "france",
+      "nameZh": "法国",
+      "nameEn": "France",
+      "code": "fr",
+      "flag": "https://flagcdn.com/w80/fr.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "sweden",
+      "nameZh": "瑞典",
+      "nameEn": "Sweden",
+      "code": "se",
+      "flag": "https://flagcdn.com/w80/se.png"
     },
     "venue": {
       "name": "New York New Jersey Stadium",
@@ -2567,11 +2567,11 @@
       "flag": "https://flagcdn.com/w80/mx.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "ecuador",
+      "nameZh": "厄瓜多尔",
+      "nameEn": "Ecuador",
+      "code": "ec",
+      "flag": "https://flagcdn.com/w80/ec.png"
     },
     "venue": {
       "name": "Mexico City Stadium",
@@ -2590,18 +2590,18 @@
     "date": "2026-07-01",
     "time": "16:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "england",
+      "nameZh": "英格兰",
+      "nameEn": "England",
+      "code": "gb-eng",
+      "flag": "https://flagcdn.com/w80/gb-eng.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "congo-dr",
+      "nameZh": "刚果(金)",
+      "nameEn": "Congo DR",
+      "code": "cd",
+      "flag": "https://flagcdn.com/w80/cd.png"
     },
     "venue": {
       "name": "Atlanta Stadium",
@@ -2620,18 +2620,18 @@
     "date": "2026-07-01",
     "time": "20:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "belgium",
+      "nameZh": "比利时",
+      "nameEn": "Belgium",
+      "code": "be",
+      "flag": "https://flagcdn.com/w80/be.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "senegal",
+      "nameZh": "塞内加尔",
+      "nameEn": "Senegal",
+      "code": "sn",
+      "flag": "https://flagcdn.com/w80/sn.png"
     },
     "venue": {
       "name": "Seattle Stadium",
@@ -2680,18 +2680,18 @@
     "date": "2026-07-02",
     "time": "19:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "spain",
+      "nameZh": "西班牙",
+      "nameEn": "Spain",
+      "code": "es",
+      "flag": "https://flagcdn.com/w80/es.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "austria",
+      "nameZh": "奥地利",
+      "nameEn": "Austria",
+      "code": "at",
+      "flag": "https://flagcdn.com/w80/at.png"
     },
     "venue": {
       "name": "Los Angeles Stadium",
@@ -2710,18 +2710,18 @@
     "date": "2026-07-02",
     "time": "23:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "portugal",
+      "nameZh": "葡萄牙",
+      "nameEn": "Portugal",
+      "code": "pt",
+      "flag": "https://flagcdn.com/w80/pt.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "croatia",
+      "nameZh": "克罗地亚",
+      "nameEn": "Croatia",
+      "code": "hr",
+      "flag": "https://flagcdn.com/w80/hr.png"
     },
     "venue": {
       "name": "Toronto Stadium",
@@ -2747,11 +2747,11 @@
       "flag": "https://flagcdn.com/w80/ch.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "algeria",
+      "nameZh": "阿尔及利亚",
+      "nameEn": "Algeria",
+      "code": "dz",
+      "flag": "https://flagcdn.com/w80/dz.png"
     },
     "venue": {
       "name": "BC Place Vancouver",
@@ -2777,11 +2777,11 @@
       "flag": "https://flagcdn.com/w80/au.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "egypt",
+      "nameZh": "埃及",
+      "nameEn": "Egypt",
+      "code": "eg",
+      "flag": "https://flagcdn.com/w80/eg.png"
     },
     "venue": {
       "name": "Dallas Stadium",
@@ -2807,11 +2807,11 @@
       "flag": "https://flagcdn.com/w80/ar.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "cape-verde-islands",
+      "nameZh": "佛得角",
+      "nameEn": "Cape Verde Islands",
+      "code": "cv",
+      "flag": "https://flagcdn.com/w80/cv.png"
     },
     "venue": {
       "name": "Miami Stadium",
@@ -2830,18 +2830,18 @@
     "date": "2026-07-04",
     "time": "01:30",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "colombia",
+      "nameZh": "哥伦比亚",
+      "nameEn": "Colombia",
+      "code": "co",
+      "flag": "https://flagcdn.com/w80/co.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "ghana",
+      "nameZh": "加纳",
+      "nameEn": "Ghana",
+      "code": "gh",
+      "flag": "https://flagcdn.com/w80/gh.png"
     },
     "venue": {
       "name": "Kansas City Stadium",
