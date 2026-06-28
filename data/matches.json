@@ -2305,7 +2305,7 @@
     "stage": "GROUP_STAGE",
     "matchday": 3,
     "score": {
-      "home": 1,
+      "home": 3,
       "away": 1
     }
   },
@@ -2337,7 +2337,10 @@
     "group": "J",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 1,
+      "away": 3
+    }
   },
   {
     "id": 537402,
@@ -2367,7 +2370,10 @@
     "group": "J",
     "stage": "GROUP_STAGE",
     "matchday": 3,
-    "score": null
+    "score": {
+      "home": 3,
+      "away": 3
+    }
   },
   {
     "id": 537417,
