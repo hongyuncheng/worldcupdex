@@ -321,9 +321,18 @@
     }
   ],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-06-27",
+  "squadLastUpdated": "2026-06-28",
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
   "recentMatches": [
+    {
+      "date": "2026-06-27",
+      "competition": "FIFA World Cup",
+      "homeTeam": "Croatia",
+      "awayTeam": "Ghana",
+      "scoreHome": 2,
+      "scoreAway": 1,
+      "result": "W"
+    },
     {
       "date": "2026-06-23",
       "competition": "FIFA World Cup",
