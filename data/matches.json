@@ -2863,11 +2863,11 @@
     "date": "2026-07-04",
     "time": "17:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "canada",
+      "nameZh": "加拿大",
+      "nameEn": "Canada",
+      "code": "ca",
+      "flag": "https://flagcdn.com/w80/ca.png"
     },
     "awayTeam": {
       "id": "tbd",
