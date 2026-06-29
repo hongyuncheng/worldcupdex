@@ -2469,7 +2469,10 @@
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null
+    "score": {
+      "home": 1,
+      "away": 1
+    }
   },
   {
     "id": 537418,
