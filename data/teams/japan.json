@@ -154,17 +154,6 @@
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/ufudlf1762288681.jpg"
     },
     {
-      "name": "Wataru Endō",
-      "nameZh": "Wataru Endō",
-      "position": "Midfield",
-      "positionZh": "中场",
-      "dateOfBirth": "1993-02-09",
-      "nationality": "Japan",
-      "shirtNumber": null,
-      "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Wataru_endo.jpg?width=500",
-      "photoThumb": "https://commons.wikimedia.org/wiki/Special:FilePath/Wataru_endo.jpg?width=500"
-    },
-    {
       "name": "Daichi Kamada",
       "nameZh": "Daichi Kamada",
       "position": "Midfield",
@@ -270,6 +259,15 @@
       "photo": "https://r2.thesportsdb.com/images/media/player/cutout/8lo6s51759758672.png",
       "photoCutout": "https://r2.thesportsdb.com/images/media/player/cutout/8lo6s51759758672.png",
       "photoThumb": "https://r2.thesportsdb.com/images/media/player/thumb/7o2k3r1701020512.jpg"
+    },
+    {
+      "name": "Shuto Machino",
+      "nameZh": "Shuto Machino",
+      "position": "Offence",
+      "positionZh": "前锋",
+      "dateOfBirth": "1999-09-30",
+      "nationality": "Japan",
+      "shirtNumber": null
     },
     {
       "name": "Junya Ito",
