@@ -2503,8 +2503,8 @@
     "stage": "LAST_32",
     "matchday": null,
     "score": {
-      "home": 0,
-      "away": 0
+      "home": 3,
+      "away": 4
     }
   },
   {
@@ -2879,11 +2879,11 @@
       "flag": "https://flagcdn.com/w80/ca.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "morocco",
+      "nameZh": "摩洛哥",
+      "nameEn": "Morocco",
+      "code": "ma",
+      "flag": "https://flagcdn.com/w80/ma.png"
     },
     "venue": {
       "name": "Houston Stadium",
@@ -2902,11 +2902,11 @@
     "date": "2026-07-04",
     "time": "21:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "paraguay",
+      "nameZh": "巴拉圭",
+      "nameEn": "Paraguay",
+      "code": "py",
+      "flag": "https://flagcdn.com/w80/py.png"
     },
     "awayTeam": {
       "id": "tbd",
@@ -2932,11 +2932,11 @@
     "date": "2026-07-05",
     "time": "20:00",
     "homeTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "brazil",
+      "nameZh": "巴西",
+      "nameEn": "Brazil",
+      "code": "br",
+      "flag": "https://flagcdn.com/w80/br.png"
     },
     "awayTeam": {
       "id": "tbd",
