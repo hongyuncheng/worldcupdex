@@ -306,6 +306,15 @@
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
   "recentMatches": [
     {
+      "date": "2026-06-30",
+      "competition": "FIFA World Cup",
+      "homeTeam": "Ivory Coast",
+      "awayTeam": "Norway",
+      "scoreHome": 1,
+      "scoreAway": 2,
+      "result": "W"
+    },
+    {
       "date": "2026-06-26",
       "competition": "FIFA World Cup",
       "homeTeam": "Norway",
