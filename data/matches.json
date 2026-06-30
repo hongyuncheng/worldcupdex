@@ -2535,7 +2535,10 @@
     "group": "",
     "stage": "LAST_32",
     "matchday": null,
-    "score": null
+    "score": {
+      "home": 0,
+      "away": 1
+    }
   },
   {
     "id": 537416,
