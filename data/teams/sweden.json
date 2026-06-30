@@ -322,6 +322,15 @@
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
   "recentMatches": [
     {
+      "date": "2026-06-30",
+      "competition": "FIFA World Cup",
+      "homeTeam": "France",
+      "awayTeam": "Sweden",
+      "scoreHome": 3,
+      "scoreAway": 0,
+      "result": "L"
+    },
+    {
       "date": "2026-06-25",
       "competition": "FIFA World Cup",
       "homeTeam": "Japan",
