@@ -314,9 +314,18 @@
     }
   ],
   "squadStatus": "provisional",
-  "squadLastUpdated": "2026-06-29",
+  "squadLastUpdated": "2026-06-30",
   "squadSourceUrl": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/all-world-cup-squad-announcements",
   "recentMatches": [
+    {
+      "date": "2026-06-29",
+      "competition": "FIFA World Cup",
+      "homeTeam": "Germany",
+      "awayTeam": "Paraguay",
+      "scoreHome": 4,
+      "scoreAway": 5,
+      "result": "W"
+    },
     {
       "date": "2026-06-26",
       "competition": "FIFA World Cup",
