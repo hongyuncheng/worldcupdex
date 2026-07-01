@@ -2918,11 +2918,11 @@
       "flag": "https://flagcdn.com/w80/py.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "france",
+      "nameZh": "法国",
+      "nameEn": "France",
+      "code": "fr",
+      "flag": "https://flagcdn.com/w80/fr.png"
     },
     "venue": {
       "name": "Philadelphia Stadium",
@@ -2948,11 +2948,11 @@
       "flag": "https://flagcdn.com/w80/br.png"
     },
     "awayTeam": {
-      "id": "tbd",
-      "nameZh": "TBD",
-      "nameEn": "TBD",
-      "code": "",
-      "flag": ""
+      "id": "norway",
+      "nameZh": "挪威",
+      "nameEn": "Norway",
+      "code": "no",
+      "flag": "https://flagcdn.com/w80/no.png"
     },
     "venue": {
       "name": "New York New Jersey Stadium",
